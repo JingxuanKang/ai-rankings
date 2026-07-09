@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Signal Rank — only the podium counts</title>
+<meta name="description" content="An awards-only ranking of AI institutions: orals, best papers and test-of-time awards, credited to first- and corresponding-author affiliations at publication time.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wordmark-block">
+    <div class="wordmark-rule"></div>
+    <h1 class="wordmark">Signal&nbsp;Rank</h1>
+    <div class="wordmark-rule"></div>
+  </div>
+  <p class="manifesto">
+    Paper counts stopped meaning anything. What still means something is the podium —
+    <span class="gold">orals</span>, <span class="gold">best papers</span>,
+    <span class="gold">test-of-time awards</span> — credited to the institutions on the
+    byline <em>when the work was done</em>.
+  </p>
+  <div class="kpi-row" role="group" aria-label="dataset headline stats">
+    <div class="stat"><div class="stat-value" id="kpi-papers">—</div><div class="stat-label">honored papers</div></div>
+    <div class="stat"><div class="stat-value" id="kpi-insts">—</div><div class="stat-label">institutions credited</div></div>
+    <div class="stat"><div class="stat-value" id="kpi-venues">8</div><div class="stat-label">venues</div></div>
+    <div class="stat"><div class="stat-value stat-value-sm" id="kpi-window">—</div><div class="stat-label">award window</div></div>
+  </div>
+</header>
+
+<nav class="dock" id="dock" aria-label="ranking controls">
+  <div class="dock-inner">
+    <div class="dock-group" role="radiogroup" aria-label="attribution">
+      <span class="dock-label">Credit</span>
+      <div class="seg" id="seg-attr">
+        <button data-v="both" class="on">1st + corr.</button>
+        <button data-v="first">1st author</button>
+        <button data-v="corr">Corresponding</button>
+      </div>
+    </div>
+    <div class="dock-group" role="radiogroup" aria-label="lens">
+      <span class="dock-label">Lens</span>
+      <div class="seg" id="seg-lens">
+        <button data-v="alltime" class="on">All-time</button>
+        <button data-v="now">Present-day</button>
+      </div>
+      <label class="halflife" id="halflife-wrap" hidden>
+        half-life <output id="halflife-out">5</output>y
+        <input type="range" id="halflife" min="2" max="15" value="5" step="1" aria-label="decay half-life in years">
+      </label>
+    </div>
+    <div class="dock-group">
+      <span class="dock-label">Industry</span>
+      <label class="switch">
+        <input type="checkbox" id="toggle-industry" checked>
+        <span class="track"><span class="thumb"></span></span>
+        <span class="switch-text" id="industry-text">included</span>
+      </label>
+    </div>
+    <div class="dock-group dock-venues" role="group" aria-label="venue filter">
+      <span class="dock-label">Venues</span>
+      <div class="chips" id="venue-chips"></div>
+    </div>
+    <details class="weights" id="weights">
+      <summary>Weights</summary>
+      <div class="weights-pop" id="weights-pop"></div>
+    </details>
+  </div>
+</nav>
+
+<main>
+
+<section class="section" id="podium-section" aria-label="top three institutions">
+  <div class="podium" id="podium"></div>
+</section>
+
+<section class="section" id="board-section">
+  <div class="section-head">
+    <h2>The Board</h2>
+    <div class="legend" id="tier-legend" aria-label="award tiers"></div>
+    <div class="seg seg-sm" id="seg-view">
+      <button data-v="chart" class="on">Chart</button>
+      <button data-v="table">Table</button>
+    </div>
+  </div>
+  <p class="section-sub" id="board-sub"></p>
+  <div id="board" class="board"></div>
+  <div id="board-table-wrap" class="table-wrap" hidden></div>
+  <button class="more-btn" id="board-more">show top 50</button>
+</section>
+
+<section class="section" id="canon-section">
+  <div class="section-head">
+    <h2>The Canon</h2>
+    <div class="seg seg-sm" id="seg-axis">
+      <button data-v="yw" class="on">year of work</button>
+      <button data-v="ya">year awarded</button>
+    </div>
+  </div>
+  <p class="section-sub">Every point of light is one honored paper. On the <em>year-of-work</em> axis,
+  test-of-time awards fall back to the year the work was actually done — the faint arcs are the
+  ten-plus years between doing something great and the field admitting it.</p>
+  <div class="canon-wrap">
+    <canvas id="canon"></canvas>
+    <div id="canon-axis" class="canon-axis"></div>
+  </div>
+</section>
+
+<section class="section" id="paths-section">
+  <div class="section-head"><h2>Trajectories</h2></div>
+  <p class="section-sub">Cumulative rank as awards accrued, 2021 → 2026 (by award year). Hover or tap a line.</p>
+  <div class="bump-wrap"><svg id="bump" role="img" aria-label="rank trajectories of leading institutions"></svg></div>
+</section>
+
+</main>
+
+<aside class="dossier" id="dossier" aria-label="institution dossier" hidden>
+  <div class="dossier-head">
+    <div>
+      <div class="dossier-rank" id="dossier-rank"></div>
+      <h3 id="dossier-name"></h3>
+      <div class="dossier-meta" id="dossier-meta"></div>
+    </div>
+    <button class="dossier-close" id="dossier-close" aria-label="close">×</button>
+  </div>
+  <div class="dossier-score"><span id="dossier-score"></span><span class="dossier-score-label">weighted score</span></div>
+  <div class="dossier-tiers" id="dossier-tiers"></div>
+  <h4>Score by year</h4>
+  <svg id="dossier-spark" class="dossier-spark"></svg>
+  <h4>By venue</h4>
+  <div class="dossier-venues" id="dossier-venues"></div>
+  <h4>The record</h4>
+  <ol class="dossier-list" id="dossier-list"></ol>
+</aside>
+<div class="scrim" id="scrim" hidden></div>
+
+<div class="tooltip" id="tooltip" role="tooltip" hidden></div>
+
+<footer>
+  <h2>Method</h2>
+  <div class="method-grid">
+    <div>
+      <h4>What counts</h4>
+      <p>Only papers the community itself singled out: conference orals, best-paper–tier awards
+      (incl. outstanding papers), honorable mentions / award candidates, and test-of-time prizes at
+      NeurIPS, ICML, ICLR, CVPR, ICCV, ECCV, ACL and EMNLP. Regular acceptances score zero, by design.</p>
+    </div>
+    <div>
+      <h4>Who gets credit</h4>
+      <p>The first author's and the corresponding author's institutions <em>as printed on the paper</em>
+      (via OpenAlex authorship records) — so a test-of-time award for 2014 work credits the 2014 lab,
+      not the authors' current employers. Where no corresponding author is flagged, the last author
+      stands in, per AI convention.</p>
+    </div>
+    <div>
+      <h4>Latency, modelled</h4>
+      <p>Every award event carries two timestamps: the year it was <em>granted</em> and the year the
+      work was <em>done</em>. The all-time lens credits the year of work at full value; the present-day
+      lens decays each event by the age of the work with a half-life you control — a ten-year-old
+      triumph says less about a lab today than last year's does.</p>
+    </div>
+    <div>
+      <h4>Default weights</h4>
+      <p>Test of time 10 · best paper 8 · honorable mention 3 · oral 1 — adjustable live. Credit splits
+      50 / 50 between first and corresponding institutions (full credit when they coincide), and equally
+      across an author's multiple affiliations.</p>
+    </div>
+  </div>
+  <p class="footnote" id="coverage-note"></p>
+  <p class="footnote">TPAMI is deliberately absent: journals have no oral / best-paper mechanism, and the PAMI
+  community's test-of-time prize (Longuet-Higgins) is awarded at CVPR, which is covered. AAAI / IJCAI are
+  excluded for low signal density.</p>
+  <p class="footnote" id="generated-note"></p>
+</footer>
+
+<script src="vendor/d3.v7.min.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
