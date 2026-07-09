@@ -1,0 +1,1866 @@
+{
+ "ICML|2021|oops i took a gradient scalable sampling for discrete distributions": {
+  "openalex_id": null,
+  "publication_year": 2021,
+  "first_author": {
+   "name": "Will Grathwohl",
+   "institutions": [
+    {
+     "id": "man:university-of-toronto",
+     "name": "University of Toronto",
+     "type": "education",
+     "country": "CA"
+    },
+    {
+     "id": "man:vector-institute",
+     "name": "Vector Institute",
+     "type": "nonprofit",
+     "country": "CA"
+    },
+    {
+     "id": "man:google",
+     "name": "Google",
+     "type": "company",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Chris J. Maddison",
+    "institutions": [
+     {
+      "id": "man:university-of-toronto",
+      "name": "University of Toronto",
+      "type": "education",
+      "country": "CA"
+     },
+     {
+      "id": "man:vector-institute",
+      "name": "Vector Institute",
+      "type": "nonprofit",
+      "country": "CA"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "Marker 1 footnote reads 'University of Toronto and Vector Institute' (two orgs under one number); marker 2 = Google Research, Brain Team. First author Grathwohl=1,2; last author Maddison=1."
+ },
+ "ICML|2021|optimal complexity in decentralized training": {
+  "openalex_id": null,
+  "publication_year": 2021,
+  "first_author": {
+   "name": "Yucheng Lu",
+   "institutions": [
+    {
+     "id": "man:cornell-university",
+     "name": "Cornell University",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Christopher De Sa",
+    "institutions": [
+     {
+      "id": "man:cornell-university",
+      "name": "Cornell University",
+      "type": "education",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "Both authors marker 1 = Cornell University."
+ },
+ "ICML|2021|solving high dimensional parabolic pdes using the tensor train format": {
+  "openalex_id": null,
+  "publication_year": 2021,
+  "first_author": {
+   "name": "Lorenz Richter",
+   "institutions": [
+    {
+     "id": "man:free-university-of-berlin",
+     "name": "Free University of Berlin",
+     "type": "education",
+     "country": "DE"
+    },
+    {
+     "id": "man:brandenburg-university-of-technology-cottbus-senftenberg",
+     "name": "Brandenburg University of Technology Cottbus-Senftenberg",
+     "type": "education",
+     "country": "DE"
+    },
+    {
+     "id": "man:dida-datenschmiede",
+     "name": "dida Datenschmiede",
+     "type": "company",
+     "country": "DE"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Nikolas Nüsken",
+    "institutions": [
+     {
+      "id": "man:university-of-potsdam",
+      "name": "University of Potsdam",
+      "type": "education",
+      "country": "DE"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "* = equal contribution (role marker). Markers 1=Freie Universitat Berlin, 2=BTU Cottbus-Senftenberg, 3=dida Datenschmiede GmbH, 5=Universitat Potsdam. First author Richter=1,2,3; last author Nusken=5."
+ },
+ "ICML|2021|unbiased gradient estimation in unrolled computation graphs with persistent evolution strategies": {
+  "openalex_id": null,
+  "publication_year": 2021,
+  "first_author": {
+   "name": "Paul Vicol",
+   "institutions": [
+    {
+     "id": "man:university-of-toronto",
+     "name": "University of Toronto",
+     "type": "education",
+     "country": "CA"
+    },
+    {
+     "id": "man:google",
+     "name": "Google",
+     "type": "company",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Jascha Sohl-Dickstein",
+    "institutions": [
+     {
+      "id": "man:google",
+      "name": "Google",
+      "type": "company",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "Marker 1 = University of Toronto, marker 2 = Google Brain (normalized to Google). First author Vicol=1,2; last author Sohl-Dickstein=2."
+ },
+ "ICML|2021|understanding self supervised learning dynamics without contrastive pairs": {
+  "openalex_id": null,
+  "publication_year": 2021,
+  "first_author": {
+   "name": "Yuandong Tian",
+   "institutions": [
+    {
+     "id": "man:meta",
+     "name": "Meta",
+     "type": "company",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Surya Ganguli",
+    "institutions": [
+     {
+      "id": "man:meta",
+      "name": "Meta",
+      "type": "company",
+      "country": "US"
+     },
+     {
+      "id": "man:stanford-university",
+      "name": "Stanford University",
+      "type": "education",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "Marker 1 = Facebook AI Research (normalized to Meta), marker 2 = Stanford University. First author Tian=1; last author Ganguli=1,2."
+ },
+ "ICML|2022|active fairness auditing": {
+  "openalex_id": null,
+  "publication_year": 2022,
+  "first_author": {
+   "name": "Tom Yan",
+   "institutions": [
+    {
+     "id": "man:carnegie-mellon-university",
+     "name": "Carnegie Mellon University",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Chicheng Zhang",
+    "institutions": [
+     {
+      "id": "man:university-of-arizona",
+      "name": "University of Arizona",
+      "type": "education",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "Markers: Tom Yan *1 (CMU), Chicheng Zhang *2 (U Arizona); * = equal contribution (role)."
+ },
+ "ICML|2022|adversarially trained actor critic for offline reinforcement learning": {
+  "openalex_id": null,
+  "publication_year": 2022,
+  "first_author": {
+   "name": "Ching-An Cheng",
+   "institutions": [
+    {
+     "id": "man:microsoft",
+     "name": "Microsoft",
+     "type": "company",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Alekh Agarwal",
+    "institutions": [
+     {
+      "id": "man:google",
+      "name": "Google",
+      "type": "company",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "Cheng *1 Microsoft Research; Agarwal 3 Google Research. * = equal contribution (role)."
+ },
+ "ICML|2022|bayesian model selection the marginal likelihood and generalization": {
+  "openalex_id": null,
+  "publication_year": 2022,
+  "first_author": {
+   "name": "Sanae Lotfi",
+   "institutions": [
+    {
+     "id": "man:new-york-university",
+     "name": "New York University",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Andrew Gordon Wilson",
+    "institutions": [
+     {
+      "id": "man:new-york-university",
+      "name": "New York University",
+      "type": "education",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "All five authors marked 1 = New York University."
+ },
+ "ICML|2022|causal conceptions of fairness and their consequences": {
+  "openalex_id": null,
+  "publication_year": 2022,
+  "first_author": {
+   "name": "Hamed Nilforoshan",
+   "institutions": [
+    {
+     "id": "man:stanford-university",
+     "name": "Stanford University",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Sharad Goel",
+    "institutions": [
+     {
+      "id": "man:harvard-university",
+      "name": "Harvard University",
+      "type": "education",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "Nilforoshan *1 Stanford; Goel 3 Harvard University. * = equal contribution (role)."
+ },
+ "ICML|2022|do differentiable simulators give better policy gradients": {
+  "openalex_id": null,
+  "publication_year": 2022,
+  "first_author": {
+   "name": "H.J. Terry Suh",
+   "institutions": [
+    {
+     "id": "man:massachusetts-institute-of-technology",
+     "name": "Massachusetts Institute of Technology",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Russ Tedrake",
+    "institutions": [
+     {
+      "id": "man:massachusetts-institute-of-technology",
+      "name": "Massachusetts Institute of Technology",
+      "type": "education",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "All four authors marked 1 = MIT (EECS)."
+ },
+ "ICML|2022|g mixup graph data augmentation for graph classification": {
+  "openalex_id": null,
+  "publication_year": 2022,
+  "first_author": {
+   "name": "Xiaotian Han",
+   "institutions": [
+    {
+     "id": "man:texas-am-university",
+     "name": "Texas A&M University",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Xia Hu",
+    "institutions": [
+     {
+      "id": "man:rice-university",
+      "name": "Rice University",
+      "type": "education",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "Han 1 Texas A&M; Hu 3 Rice University."
+ },
+ "ICML|2022|learning mixtures of linear dynamical systems": {
+  "openalex_id": null,
+  "publication_year": 2022,
+  "first_author": {
+   "name": "Yanxi Chen",
+   "institutions": [
+    {
+     "id": "man:princeton-university",
+     "name": "Princeton University",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "H. Vincent Poor",
+    "institutions": [
+     {
+      "id": "man:princeton-university",
+      "name": "Princeton University",
+      "type": "education",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "Both authors marked 1 = Princeton University (ECE)."
+ },
+ "ICML|2022|learning inverse folding from millions of predicted structures": {
+  "openalex_id": null,
+  "publication_year": 2022,
+  "first_author": {
+   "name": "Chloe Hsu",
+   "institutions": [
+    {
+     "id": "man:university-of-california-berkeley",
+     "name": "University of California, Berkeley",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Alexander Rives",
+    "institutions": [
+     {
+      "id": "man:meta",
+      "name": "Meta",
+      "type": "company",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "Hsu 1 UC Berkeley (internship note at FAIR unmarked); Rives *2 Facebook AI Research = Meta. * = equal contribution (role)."
+ },
+ "ICML|2022|minimum cost intervention design for causal effect identification": {
+  "openalex_id": null,
+  "publication_year": 2022,
+  "first_author": {
+   "name": "Sina Akbari",
+   "institutions": [
+    {
+     "id": "man:epfl",
+     "name": "EPFL",
+     "type": "education",
+     "country": "CH"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Negar Kiyavash",
+    "institutions": [
+     {
+      "id": "man:epfl",
+      "name": "EPFL",
+      "type": "education",
+      "country": "CH"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "All three authors marked 1 = EPFL (College of Management of Technology)."
+ },
+ "ICML|2022|monarch expressive structured matrices for efficient and accurate training": {
+  "openalex_id": null,
+  "publication_year": 2022,
+  "first_author": {
+   "name": "Tri Dao",
+   "institutions": [
+    {
+     "id": "man:stanford-university",
+     "name": "Stanford University",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Christopher Ré",
+    "institutions": [
+     {
+      "id": "man:stanford-university",
+      "name": "Stanford University",
+      "type": "education",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "Dao 1 Stanford; Re 1 Stanford University."
+ },
+ "ICML|2022|privacy for free how does dataset condensation help privacy": {
+  "openalex_id": null,
+  "publication_year": 2022,
+  "first_author": {
+   "name": "Tian Dong",
+   "institutions": [
+    {
+     "id": "man:shanghai-jiao-tong-university",
+     "name": "Shanghai Jiao Tong University",
+     "type": "education",
+     "country": "CN"
+    },
+    {
+     "id": "man:sony-ai",
+     "name": "Sony AI",
+     "type": "company",
+     "country": "JP"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Lingjuan Lyu",
+    "institutions": [
+     {
+      "id": "man:sony-ai",
+      "name": "Sony AI",
+      "type": "company",
+      "country": "JP"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "Tian Dong 1* : 1 = Shanghai Jiao Tong University, * = work done during internship at Sony AI (both printed for first author); Lyu 3 = Sony AI."
+ },
+ "ICML|2022|solving stackelberg prediction game with least squares loss via spherically constrained least squares reformulation": {
+  "openalex_id": null,
+  "publication_year": 2022,
+  "first_author": {
+   "name": "Jiali Wang",
+   "institutions": [
+    {
+     "id": "man:fudan-university",
+     "name": "Fudan University",
+     "type": "education",
+     "country": "CN"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Alex L. Wang",
+    "institutions": [
+     {
+      "id": "man:carnegie-mellon-university",
+      "name": "Carnegie Mellon University",
+      "type": "education",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "Jiali Wang 1 Fudan University; Alex L. Wang 3 Carnegie Mellon University."
+ },
+ "ICML|2022|stable conformal prediction sets": {
+  "openalex_id": null,
+  "publication_year": 2022,
+  "first_author": {
+   "name": "Eugene Ndiaye",
+   "institutions": [
+    {
+     "id": "man:georgia-institute-of-technology",
+     "name": "Georgia Institute of Technology",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Eugene Ndiaye",
+    "institutions": [
+     {
+      "id": "man:georgia-institute-of-technology",
+      "name": "Georgia Institute of Technology",
+      "type": "education",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "Single author, marked 1 = Georgia Institute of Technology (ISyE); corresponding = same author."
+ },
+ "ICML|2022|the importance of non markovianity in maximum state entropy exploration": {
+  "openalex_id": null,
+  "publication_year": 2022,
+  "first_author": {
+   "name": "Mirco Mutti",
+   "institutions": [
+    {
+     "id": "man:politecnico-di-milano",
+     "name": "Politecnico di Milano",
+     "type": "education",
+     "country": "IT"
+    },
+    {
+     "id": "man:university-of-bologna",
+     "name": "University of Bologna",
+     "type": "education",
+     "country": "IT"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Marcello Restelli",
+    "institutions": [
+     {
+      "id": "man:politecnico-di-milano",
+      "name": "Politecnico di Milano",
+      "type": "education",
+      "country": "IT"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "Mutti *1 2 = Politecnico di Milano + Universita di Bologna (both markers); Restelli 1 = Politecnico di Milano. * = equal contribution (role)."
+ },
+ "ICML|2022|understanding dataset difficulty with v usable information": {
+  "openalex_id": null,
+  "publication_year": 2022,
+  "first_author": {
+   "name": "Kawin Ethayarajh",
+   "institutions": [
+    {
+     "id": "man:stanford-university",
+     "name": "Stanford University",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Swabha Swayamdipta",
+    "institutions": [
+     {
+      "id": "man:allen-institute-for-ai",
+      "name": "Allen Institute for AI",
+      "type": "nonprofit",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "Ethayarajh 1 Stanford (internship note at AI2 unmarked); Swayamdipta 2 = Allen Institute for Artificial Intelligence."
+ },
+ "ICML|2023|adversarial example does good preventing painting imitation from diffusion models via adversarial examples": {
+  "openalex_id": null,
+  "publication_year": 2023,
+  "first_author": {
+   "name": "Chumeng Liang",
+   "institutions": [
+    {
+     "id": "man:shanghai-jiao-tong-university",
+     "name": "Shanghai Jiao Tong University",
+     "type": "education",
+     "country": "CN"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Haibing Guan",
+    "institutions": [
+     {
+      "id": "man:shanghai-jiao-tong-university",
+      "name": "Shanghai Jiao Tong University",
+      "type": "education",
+      "country": "CN"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "PMLR v202 liang23g. First author markers 1,2 = Shanghai Jiao Tong University + cheer4creativity.ai; the latter (an independent creative-AI collective, the 'Mist' project) has unresolvable type/country and was omitted rather than fabricated. Last author Haibing Guan marker 1 = SJTU."
+ },
+ "ICML|2023|efficient self supervised learning with contextualized target representations for vision speech and language": {
+  "openalex_id": null,
+  "publication_year": 2023,
+  "first_author": {
+   "name": "Alexei Baevski",
+   "institutions": [
+    {
+     "id": "man:meta",
+     "name": "Meta",
+     "type": "company",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Michael Auli",
+    "institutions": [
+     {
+      "id": "man:meta",
+      "name": "Meta",
+      "type": "company",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "First-page marker for Baevski prints 'Character AI, work done while at Meta AI'. Credited Meta as the publication-time research affiliation for the awarded work (project stance = institution where awarded work was performed; both last author and paper are Meta/FAIR). JUDGMENT CALL — revert to Character AI if literal current-affiliation is preferred."
+ },
+ "ICML|2023|using large language models to simulate multiple humans and replicate human subject studies": {
+  "openalex_id": null,
+  "publication_year": 2023,
+  "first_author": {
+   "name": "Gati Aher",
+   "institutions": [
+    {
+     "id": "man:olin-college-of-engineering",
+     "name": "Olin College of Engineering",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Adam Tauman Kalai",
+    "institutions": [
+     {
+      "id": "man:microsoft",
+      "name": "Microsoft",
+      "type": "company",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "PMLR v202 aher23a. Markers: 1=Olin College of Engineering, 2=Georgia Tech, 3=Microsoft Research. First author Gati Aher=1; last author Adam Tauman Kalai=3."
+ },
+ "ICML|2024|position beyond personhood agency accountability and the limits of anthropomorphic ethical analysis": {
+  "openalex_id": null,
+  "publication_year": 2024,
+  "first_author": {
+   "name": "Jessica Dai",
+   "institutions": [
+    {
+     "id": "man:university-of-california-berkeley",
+     "name": "University of California, Berkeley",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Jessica Dai",
+    "institutions": [
+     {
+      "id": "man:university-of-california-berkeley",
+      "name": "University of California, Berkeley",
+      "type": "education",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "PMLR v235 dai24a. Single-author position paper; marker 1 = Department of Computer Science, University of California Berkeley. Corresponding = same author."
+ },
+ "ICML|2025|a generalization theory for zero shot prediction": {
+  "openalex_id": null,
+  "publication_year": 2025,
+  "first_author": {
+   "name": "Ronak Mehta",
+   "institutions": [
+    {
+     "id": "man:university-of-washington",
+     "name": "University of Washington",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Zaid Harchaoui",
+    "institutions": [
+     {
+      "id": "man:university-of-washington",
+      "name": "University of Washington",
+      "type": "education",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "PMLR v267 mehta25a. Both authors marker 1 = Department of Statistics, University of Washington, Seattle."
+ },
+ "ICML|2025|position ai safety should prioritize the future of work": {
+  "openalex_id": null,
+  "publication_year": 2025,
+  "first_author": {
+   "name": "Sanchaita Hazra",
+   "institutions": [
+    {
+     "id": "man:university-of-utah",
+     "name": "University of Utah",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Tuhin Chakrabarty",
+    "institutions": [
+     {
+      "id": "man:stony-brook-university",
+      "name": "Stony Brook University",
+      "type": "education",
+      "country": "US"
+     },
+     {
+      "id": "man:salesforce",
+      "name": "Salesforce",
+      "type": "company",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "PMLR v267 hazra25a. Markers by order: 1=University of Utah (Hazra, utah.edu email), 2=Allen Institute for AI (Majumder), 3=Stony Brook University & Salesforce AI Research (Chakrabarty). First author Hazra=1; last author Chakrabarty=3 (both Stony Brook and Salesforce)."
+ },
+ "ICML|2025|position the ai conference peer review crisis demands author feedback and reviewer rewards": {
+  "openalex_id": null,
+  "publication_year": 2025,
+  "first_author": {
+   "name": "Jaeho Kim",
+   "institutions": [
+    {
+     "id": "man:ulsan-national-institute-of-science-and-technology",
+     "name": "Ulsan National Institute of Science and Technology",
+     "type": "education",
+     "country": "KR"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Seulki Lee",
+    "institutions": [
+     {
+      "id": "man:ulsan-national-institute-of-science-and-technology",
+      "name": "Ulsan National Institute of Science and Technology",
+      "type": "education",
+      "country": "KR"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "PMLR v267 kim25am. All three authors marker 1 = Artificial Intelligence Graduate School, Ulsan National Institute of Science and Technology (UNIST), Ulsan, South Korea. First author Jaeho Kim; last author Seulki Lee (corresponding)."
+ },
+ "ICML|2026|a random matrix perspective on the consistency of diffusion models": {
+  "openalex_id": null,
+  "publication_year": 2026,
+  "first_author": {
+   "name": "Binxu Wang",
+   "institutions": [
+    {
+     "id": "man:harvard-university",
+     "name": "Harvard University",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Cengiz Pehlevan",
+    "institutions": [
+     {
+      "id": "man:harvard-university",
+      "name": "Harvard University",
+      "type": "education",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "from arXiv v2 (2602.02908; printed title 'A Random Matrix Theory Perspective on the Consistency of Diffusion Models'); all author markers resolve to Harvard University"
+ },
+ "ICML|2026|high accuracy sampling for diffusion models and log concave distributions": {
+  "openalex_id": null,
+  "publication_year": 2026,
+  "first_author": {
+   "name": "Fan Chen",
+   "institutions": [
+    {
+     "id": "man:massachusetts-institute-of-technology",
+     "name": "Massachusetts Institute of Technology",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Alexander Rakhlin",
+    "institutions": [
+     {
+      "id": "man:massachusetts-institute-of-technology",
+      "name": "Massachusetts Institute of Technology",
+      "type": "education",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "from arXiv v2 (2602.01338); per-name column affiliations, Fan Chen=MIT, Rakhlin=MIT"
+ },
+ "ICML|2026|how much can language models memorize": {
+  "openalex_id": null,
+  "publication_year": 2026,
+  "first_author": {
+   "name": "John Xavier Morris",
+   "institutions": [
+    {
+     "id": "man:meta",
+     "name": "Meta",
+     "type": "company",
+     "country": "US"
+    },
+    {
+     "id": "man:cornell-university",
+     "name": "Cornell University",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Saeed Mahloujifar",
+    "institutions": [
+     {
+      "id": "man:meta",
+      "name": "Meta",
+      "type": "company",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "from arXiv v3 (2505.24832; printed title 'How much do language models memorize?'); Morris markers 1,3=FAIR at Meta + Cornell; Mahloujifar marker 1=Meta (also listed correspondence)"
+ },
+ "ICML|2026|motion attribution for video generation": {
+  "openalex_id": null,
+  "publication_year": 2026,
+  "first_author": {
+   "name": "Xindi Wu",
+   "institutions": [
+    {
+     "id": "man:nvidia",
+     "name": "NVIDIA",
+     "type": "company",
+     "country": "US"
+    },
+    {
+     "id": "man:princeton-university",
+     "name": "Princeton University",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Jonathan Lorraine",
+    "institutions": [
+     {
+      "id": "man:nvidia",
+      "name": "NVIDIA",
+      "type": "company",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "from arXiv v2 (2601.08828); Wu markers 1,2=NVIDIA + Princeton; Lorraine marker 1=NVIDIA"
+ },
+ "ICML|2026|position ai ml deepfake research is misaligned with ai generated non consensual intimate imagery aig ncii": {
+  "openalex_id": null,
+  "publication_year": 2026,
+  "first_author": {
+   "name": "Li Qiwei",
+   "institutions": [
+    {
+     "id": "man:university-of-michigan",
+     "name": "University of Michigan",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Eric Gilbert",
+    "institutions": [
+     {
+      "id": "man:university-of-michigan",
+      "name": "University of Michigan",
+      "type": "education",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "from author-hosted ICML 2026 camera-ready PDF (gauchewy.github.io); all authors marker 1 = School of Information, University of Michigan"
+ },
+ "ICML|2026|position the alignment community is unintentionally building a censor s toolkit": {
+  "openalex_id": null,
+  "publication_year": 2026,
+  "first_author": {
+   "name": "Sarah Ball",
+   "institutions": [
+    {
+     "id": "man:ludwig-maximilian-university-of-munich",
+     "name": "Ludwig Maximilian University of Munich",
+     "type": "education",
+     "country": "DE"
+    },
+    {
+     "id": "man:munich-center-for-machine-learning",
+     "name": "Munich Center for Machine Learning",
+     "type": "education",
+     "country": "DE"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Phil Hackemann",
+    "institutions": []
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "from author-hosted ICML 2026 camera-ready PDF (s-ball-10.github.io); Ball markers 1,2=Dept of Statistics LMU Munich + MCML; last author Phil Hackemann has ONLY the equal-contribution (*) marker and no institutional superscript on the page (listed as independent on project page)"
+ },
+ "ICML|2026|the flexibility trap rethinking the value of arbitrary order in diffusion language models": {
+  "openalex_id": null,
+  "publication_year": 2026,
+  "first_author": {
+   "name": "Zanlin Ni",
+   "institutions": [
+    {
+     "id": "man:tsinghua-university",
+     "name": "Tsinghua University",
+     "type": "education",
+     "country": "CN"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Gao Huang",
+    "institutions": [
+     {
+      "id": "man:tsinghua-university",
+      "name": "Tsinghua University",
+      "type": "education",
+      "country": "CN"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "from arXiv v4 (2601.15165); Ni marker 1=LeapLab Tsinghua; Huang markers 1,5=LeapLab + BNRist, both Tsinghua University"
+ },
+ "ICML|2026|the obfuscation atlas mapping where honesty emerges in rlvr with deception probes": {
+  "openalex_id": null,
+  "publication_year": 2026,
+  "first_author": {
+   "name": "Mohammad Taufeeque",
+   "institutions": [
+    {
+     "id": "man:far-ai",
+     "name": "FAR AI",
+     "type": "nonprofit",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Chris Cundy",
+    "institutions": [
+     {
+      "id": "man:far-ai",
+      "name": "FAR AI",
+      "type": "nonprofit",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "from arXiv v2 (2602.15515); all authors marker 1=FAR.AI (* is co-first-author role marker)"
+ },
+ "ICML|2026|to grok grokking provable grokking in ridge regression": {
+  "openalex_id": null,
+  "publication_year": 2026,
+  "first_author": {
+   "name": "Mingyue Xu",
+   "institutions": [
+    {
+     "id": "man:purdue-university",
+     "name": "Purdue University",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Itay Safran",
+    "institutions": [
+     {
+      "id": "man:ben-gurion-university-of-the-negev",
+      "name": "Ben-Gurion University of the Negev",
+      "type": "education",
+      "country": "IL"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "from arXiv v3 (2601.19791); Xu marker 1=Purdue University; Safran marker 3=Ben-Gurion University of the Negev"
+ },
+ "NeurIPS|2021|atom3d tasks on molecules in three dimensions": {
+  "openalex_id": null,
+  "publication_year": 2021,
+  "first_author": {
+   "name": "Raphael John Lamarre Townshend",
+   "institutions": [
+    {
+     "id": "man:stanford-university",
+     "name": "Stanford University",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Ron O. Dror",
+    "institutions": [
+     {
+      "id": "man:stanford-university",
+      "name": "Stanford University",
+      "type": "education",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "First author Townshend and last author Dror both Computer Science, Stanford University; * marks correspondence (role), not institution."
+ },
+ "NeurIPS|2021|reduced reused and recycled the life of a dataset in machine learning research": {
+  "openalex_id": null,
+  "publication_year": 2021,
+  "first_author": {
+   "name": "Bernard Koch",
+   "institutions": [
+    {
+     "id": "man:university-of-california-los-angeles",
+     "name": "University of California, Los Angeles",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Jacob Gates Foster",
+    "institutions": [
+     {
+      "id": "man:university-of-california-los-angeles",
+      "name": "University of California, Los Angeles",
+      "type": "education",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "First author Koch (UCLA) and last author Foster (J. G. Foster, UCLA)."
+ },
+ "NeurIPS|2021|unsupervised speech recognition": {
+  "openalex_id": null,
+  "publication_year": 2021,
+  "first_author": {
+   "name": "Alexei Baevski",
+   "institutions": [
+    {
+     "id": "man:meta",
+     "name": "Meta",
+     "type": "company",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Michael Auli",
+    "institutions": [
+     {
+      "id": "man:meta",
+      "name": "Meta",
+      "type": "company",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "First author Baevski and last author Auli both marker 4 = Facebook AI (FAIR) -> Meta."
+ },
+ "NeurIPS|2022|laion 5b an open large scale dataset for training next generation image text models": {
+  "openalex_id": null,
+  "publication_year": 2022,
+  "first_author": {
+   "name": "Christoph Schuhmann",
+   "institutions": [
+    {
+     "id": "man:laion",
+     "name": "LAION",
+     "type": "nonprofit",
+     "country": "DE"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Jenia Jitsev",
+    "institutions": [
+     {
+      "id": "man:laion",
+      "name": "LAION",
+      "type": "nonprofit",
+      "country": "DE"
+     },
+     {
+      "id": "man:julich-supercomputing-centre",
+      "name": "Jülich Supercomputing Centre",
+      "type": "government",
+      "country": "DE"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "First author Schuhmann marker 1 = LAION. Last author Jitsev markers 1,10 = LAION + Jülich Supercomputing Centre (JSC), Research Center Jülich (FZJ)."
+ },
+ "NeurIPS|2022|minedojo building open ended embodied agents with internet scale knowledge": {
+  "openalex_id": null,
+  "publication_year": 2022,
+  "first_author": {
+   "name": "Linxi Fan",
+   "institutions": [
+    {
+     "id": "man:nvidia",
+     "name": "NVIDIA",
+     "type": "company",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Anima Anandkumar",
+    "institutions": [
+     {
+      "id": "man:nvidia",
+      "name": "NVIDIA",
+      "type": "company",
+      "country": "US"
+     },
+     {
+      "id": "man:california-institute-of-technology",
+      "name": "California Institute of Technology",
+      "type": "education",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "First author Fan marker 1 = NVIDIA. Last author Anandkumar markers 1,2 = NVIDIA + Caltech; dagger = equal advising (role)."
+ },
+ "NeurIPS|2023|clifford group equivariant neural networks": {
+  "openalex_id": null,
+  "publication_year": 2023,
+  "first_author": {
+   "name": "David Ruhe",
+   "institutions": [
+    {
+     "id": "man:university-of-amsterdam",
+     "name": "University of Amsterdam",
+     "type": "education",
+     "country": "NL"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Patrick Forré",
+    "institutions": [
+     {
+      "id": "man:university-of-amsterdam",
+      "name": "University of Amsterdam",
+      "type": "education",
+      "country": "NL"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "First author Ruhe (AI4Science Lab, AMLab, University of Amsterdam) and last author Forré (AI4Science Lab, AMLab, University of Amsterdam)."
+ },
+ "NeurIPS|2023|climsim a large multi scale dataset for hybrid physics ml climate emulation": {
+  "openalex_id": null,
+  "publication_year": 2023,
+  "first_author": {
+   "name": "Sungduk Yu",
+   "institutions": [
+    {
+     "id": "man:university-of-california-irvine",
+     "name": "University of California, Irvine",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Mike Pritchard",
+    "institutions": [
+     {
+      "id": "man:university-of-california-irvine",
+      "name": "University of California, Irvine",
+      "type": "education",
+      "country": "US"
+     },
+     {
+      "id": "man:nvidia",
+      "name": "NVIDIA",
+      "type": "company",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "Used original ClimSim NeurIPS 2023 version (arXiv 2306.08754v1); the input author list matches it (not the later ClimSim-Online v6). First author Sungduk Yu marker 1 = UCI. Last author Michael S. Pritchard markers 1,10 = UCI + NVIDIA."
+ },
+ "NeurIPS|2023|decodingtrust a comprehensive assessment of trustworthiness in gpt models": {
+  "openalex_id": null,
+  "publication_year": 2023,
+  "first_author": {
+   "name": "Boxin Wang",
+   "institutions": [
+    {
+     "id": "man:university-of-illinois-urbana-champaign",
+     "name": "University of Illinois Urbana-Champaign",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Bo Li",
+    "institutions": [
+     {
+      "id": "man:university-of-illinois-urbana-champaign",
+      "name": "University of Illinois Urbana-Champaign",
+      "type": "education",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "First author Boxin Wang marker 1 = UIUC. Last author Bo Li marker 1 = UIUC; * marks lead/corresponding (role)."
+ },
+ "NeurIPS|2023|going beyond persistent homology using persistent homology": {
+  "openalex_id": null,
+  "publication_year": 2023,
+  "first_author": {
+   "name": "Johanna Emilia Immonen",
+   "institutions": [
+    {
+     "id": "man:university-of-helsinki",
+     "name": "University of Helsinki",
+     "type": "education",
+     "country": "FI"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Vikas Garg",
+    "institutions": [
+     {
+      "id": "man:aalto-university",
+      "name": "Aalto University",
+      "type": "education",
+      "country": "FI"
+     },
+     {
+      "id": "man:yaiyai-ltd",
+      "name": "YaiYai Ltd",
+      "type": "company",
+      "country": "FI"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "First author Immonen = University of Helsinki. Last author Garg printed affiliations = Aalto University and YaiYai Ltd (email at MIT CSAIL not printed as affiliation)."
+ },
+ "NeurIPS|2024|the prism alignment dataset what participatory representative and individualised human feedback reveals about the subjective and multicultural alignment of large language models": {
+  "openalex_id": null,
+  "publication_year": 2024,
+  "first_author": {
+   "name": "Hannah Rose Kirk",
+   "institutions": [
+    {
+     "id": "man:university-of-oxford",
+     "name": "University of Oxford",
+     "type": "education",
+     "country": "GB"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Scott A. Hale",
+    "institutions": [
+     {
+      "id": "man:university-of-oxford",
+      "name": "University of Oxford",
+      "type": "education",
+      "country": "GB"
+     },
+     {
+      "id": "man:meedan",
+      "name": "Meedan",
+      "type": "nonprofit",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "First author Kirk marker 1 = University of Oxford. Last author Scott A. Hale markers 1,12 = University of Oxford + Meedan; dagger = joint last authors (role)."
+ },
+ "NeurIPS|2025|artificial hivemind the open ended homogeneity of language models and beyond": {
+  "openalex_id": null,
+  "publication_year": 2025,
+  "first_author": {
+   "name": "Liwei Jiang",
+   "institutions": [
+    {
+     "id": "man:university-of-washington",
+     "name": "University of Washington",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Yejin Choi",
+    "institutions": [
+     {
+      "id": "man:stanford-university",
+      "name": "Stanford University",
+      "type": "education",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "First author Jiang marker spade = University of Washington. Last author (authors[-1]) Yejin Choi marker heart = Stanford University. (arXiv page inserts Alon Albalak before Choi, not in the input author list.)"
+ },
+ "NeurIPS|2025|why diffusion models don t memorize the role of implicit dynamical regularization in training": {
+  "openalex_id": null,
+  "publication_year": 2025,
+  "first_author": {
+   "name": "Tony Bonnaire",
+   "institutions": [
+    {
+     "id": "man:ecole-normale-superieure",
+     "name": "École Normale Supérieure",
+     "type": "education",
+     "country": "FR"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Marc Mezard",
+    "institutions": [
+     {
+      "id": "man:bocconi-university",
+      "name": "Bocconi University",
+      "type": "education",
+      "country": "IT"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "First author Bonnaire = LPENS, Université PSL, Paris (Laboratoire de Physique de l'École Normale Supérieure -> École Normale Supérieure). Last author Marc Mézard = Department of Computing Sciences, Bocconi University, Milano."
+ },
+ "ICLR|2021|vcnet and functional targeted regularization for learning causal effects of continuous treatments": {
+  "openalex_id": null,
+  "publication_year": 2021,
+  "first_author": {
+   "name": "Lizhen Nie",
+   "institutions": [
+    {
+     "id": "man:university-of-chicago",
+     "name": "University of Chicago",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Dan Nicolae",
+    "institutions": [
+     {
+      "id": "man:university-of-chicago",
+      "name": "University of Chicago",
+      "type": "education",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "OpenReview camera-ready page 1 (extracted via PDF.js). Nie^{*1}, Nicolae^1; 1=University of Chicago (2=UT Austin). Both first and last author at Chicago; emails uchicago.edu."
+ },
+ "ICLR|2024|efficient episodic memory utilization of cooperative multi agent reinforcement learning": {
+  "openalex_id": null,
+  "publication_year": 2024,
+  "first_author": {
+   "name": "Hyungho Na",
+   "institutions": [
+    {
+     "id": "man:kaist",
+     "name": "KAIST",
+     "type": "education",
+     "country": "KR"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Il-Chul Moon",
+    "institutions": [
+     {
+      "id": "man:kaist",
+      "name": "KAIST",
+      "type": "education",
+      "country": "KR"
+     },
+     {
+      "id": "man:summaryai",
+      "name": "summary.ai",
+      "type": "company",
+      "country": "KR"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "OpenReview camera-ready page 1 (PDF.js). Na^1=KAIST; Moon^{1,2}=KAIST + summary.ai (Il-Chul Moon's Korean startup)."
+ },
+ "ICLR|2024|the mechanistic basis of data dependence and abrupt learning in an in context classification task": {
+  "openalex_id": null,
+  "publication_year": 2024,
+  "first_author": {
+   "name": "Gautam Reddy",
+   "institutions": [
+    {
+     "id": "man:princeton-university",
+     "name": "Princeton University",
+     "type": "education",
+     "country": "US"
+    },
+    {
+     "id": "man:ntt-research",
+     "name": "NTT Research",
+     "type": "company",
+     "country": "US"
+    },
+    {
+     "id": "man:harvard-university",
+     "name": "Harvard University",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Gautam Reddy",
+    "institutions": [
+     {
+      "id": "man:princeton-university",
+      "name": "Princeton University",
+      "type": "education",
+      "country": "US"
+     },
+     {
+      "id": "man:ntt-research",
+      "name": "NTT Research",
+      "type": "company",
+      "country": "US"
+     },
+     {
+      "id": "man:harvard-university",
+      "name": "Harvard University",
+      "type": "education",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "Single-author paper; page 1 lists three affiliations for Gautam Reddy: Dept of Physics Princeton, Physics & Informatics Laboratories NTT Research Inc. (Sunnyvale CA), Center for Brain Science Harvard. Same person is first and last author."
+ },
+ "ICLR|2025|alphaedit null space constrained model editing for language models": {
+  "openalex_id": null,
+  "publication_year": 2025,
+  "first_author": {
+   "name": "Junfeng Fang",
+   "institutions": [
+    {
+     "id": "man:university-of-science-and-technology-of-china",
+     "name": "University of Science and Technology of China",
+     "type": "education",
+     "country": "CN"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Tat-Seng Chua",
+    "institutions": [
+     {
+      "id": "man:national-university-of-singapore",
+      "name": "National University of Singapore",
+      "type": "education",
+      "country": "SG"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "OpenReview camera-ready page 1 (PDF.js). Fang^{1*}=USTC (first); Chua^2=NUS (last). 1=USTC, 2=NUS; *=equal, +=corresponding role markers ignored for institution."
+ },
+ "ICLR|2025|booster tackling harmful fine tuning for large language models via attenuating harmful perturbation": {
+  "openalex_id": null,
+  "publication_year": 2025,
+  "first_author": {
+   "name": "Tiansheng Huang",
+   "institutions": [
+    {
+     "id": "man:georgia-institute-of-technology",
+     "name": "Georgia Institute of Technology",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Ling Liu",
+    "institutions": [
+     {
+      "id": "man:georgia-institute-of-technology",
+      "name": "Georgia Institute of Technology",
+      "type": "education",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "OpenReview camera-ready page 1 (PDF.js). Single affiliation 'Georgia Institute of Technology, USA' for all authors (no superscripts); emails gatech.edu."
+ },
+ "ICLR|2025|open vocabulary customization from clip via data free knowledge distillation": {
+  "openalex_id": null,
+  "publication_year": 2025,
+  "first_author": {
+   "name": "Yongxian Wei",
+   "institutions": [
+    {
+     "id": "man:tsinghua-university",
+     "name": "Tsinghua University",
+     "type": "education",
+     "country": "CN"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Dacheng Tao",
+    "institutions": [
+     {
+      "id": "man:nanyang-technological-university",
+      "name": "Nanyang Technological University",
+      "type": "education",
+      "country": "SG"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "OpenReview camera-ready page 1 (PDF.js). Wei^1=Tsinghua University (first); Tao^2=Nanyang Technological University Singapore (last). 3=Sun Yat-sen Univ Shenzhen, 4=Univ of Maryland."
+ },
+ "ICLR|2026|momagraph state aware unified scene graphs with vision language models for embodied task planning": {
+  "openalex_id": null,
+  "publication_year": 2026,
+  "first_author": {
+   "name": "Yuanchen Ju",
+   "institutions": [
+    {
+     "id": "man:university-of-california-berkeley",
+     "name": "University of California, Berkeley",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Koushil Sreenath",
+    "institutions": [
+     {
+      "id": "man:university-of-california-berkeley",
+      "name": "University of California, Berkeley",
+      "type": "education",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "OpenReview camera-ready page 1 (PDF.js). Yuanchen Ju^{*1}=UC Berkeley (first); Koushil Sreenath^{+1}=UC Berkeley (last author, corresponding). 1=UC Berkeley, 2=Univ of Maryland College Park, 3=Univ of Toronto."
+ },
+ "CVPR|2022|e2v sde from asynchronous events to fast and continuous video reconstruction via neural stochastic differential equations": {
+  "openalex_id": null,
+  "publication_year": 2022,
+  "first_author": {
+   "name": "Jongwan Kim",
+   "institutions": [
+    {
+     "id": "man:seoul-national-university",
+     "name": "Seoul National University",
+     "type": "education",
+     "country": "KR"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Sungroh Yoon",
+    "institutions": [
+     {
+      "id": "man:seoul-national-university",
+      "name": "Seoul National University",
+      "type": "education",
+      "country": "KR"
+     }
+    ]
+   }
+  ],
+  "source": "pdf-firstpage-arxiv",
+  "note": "CVF removed this paper's PDF (E2V-SDE was retracted for plagiarism); used arXiv 2206.07578v1 page 1. Kim^1=Interdisciplinary Program in AI, SNU (first). Yoon^{1,2,3} all Seoul National University (last, corresponding *); 4=Korea Institute of Science and Technology (co-authors)."
+ },
+ "ECCV|2022|affine correspondences between multi camera systems for 6dof relative pose estimation": {
+  "openalex_id": null,
+  "publication_year": 2022,
+  "first_author": {
+   "name": "Banglei Guan",
+   "institutions": [
+    {
+     "id": "man:national-university-of-defense-technology",
+     "name": "National University of Defense Technology",
+     "type": "education",
+     "country": "CN"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Ji Zhao",
+    "institutions": []
+   }
+  ],
+  "source": "pdf-firstpage",
+  "note": "ecva.net ECCV 2022 official PDF page 1. Guan^1=National University of Defense Technology, Changsha, China (first). Ji Zhao (last author) has NO affiliation printed - no superscript, email zhaoji84@gmail.com (independent researcher); reported exactly as printed = no institution."
+ },
+ "ICCV|2023|ego humans an ego centric 3d multi human benchmark": {
+  "openalex_id": null,
+  "publication_year": 2023,
+  "first_author": {
+   "name": "Rawal Khirodkar",
+   "institutions": [
+    {
+     "id": "man:carnegie-mellon-university",
+     "name": "Carnegie Mellon University",
+     "type": "education",
+     "country": "US"
+    }
+   ]
+  },
+  "corresponding": [
+   {
+    "name": "Kris Kitani",
+    "institutions": [
+     {
+      "id": "man:carnegie-mellon-university",
+      "name": "Carnegie Mellon University",
+      "type": "education",
+      "country": "US"
+     }
+    ]
+   }
+  ],
+  "source": "manual-verified",
+  "note": "CVF/arXiv first page prints author names only, no affiliations. Verified from authors' official project page (rawalkhirodkar.github.io/egohumans): Khirodkar & Kitani = Carnegie Mellon University; middle authors = Meta."
+ }
+}

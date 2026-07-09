@@ -14,6 +14,7 @@ data/overrides.json (optional) patches enrichment per paper_key — used to
 hand-fix high-weight papers (test-of-time / best paper) OpenAlex gets wrong.
 """
 import datetime
+import html
 import json
 import re
 import sys
@@ -74,14 +75,36 @@ ALIASES = {
     "university of washington (seattle)": "University of Washington",
     "new york university (nyu)": "New York University",
     "johns hopkins university (jhu)": "Johns Hopkins University",
+    "google ai": "Google", "google (united states)": "Google",
+    "fair at meta": "Meta", "meta genai": "Meta", "meta ai (fair)": "Meta",
+    "meta reality labs": "Meta", "meta reality labs research": "Meta", "meta fundamental ai research": "Meta",
+    "research microsoft": "Microsoft",
+    "stanford": "Stanford University",
+    "cmu carnegie mellon university": "Carnegie Mellon University",
+    "tsinghua univeristy": "Tsinghua University", "tsinghua univsersity": "Tsinghua University",
+    "tsinghua university tsinghua university": "Tsinghua University",
+    "uc berkeley icsi": "UC Berkeley",
+    "university of california berkeley (uc berkeley)": "UC Berkeley",
+    "univ of california berkeley": "UC Berkeley",
+    "univeristy of texas at austin": "UT Austin",
 }
 
 
 def norm_inst(name: str) -> str:
-    n = name.lower()
+    n = html.unescape(name).lower()
     n = re.sub(r"[^a-z0-9 ]+", " ", n)
     n = re.sub(r"\s+", " ", n).strip()
     return n
+
+
+# alias keys must live in norm_inst space or they never match
+ALIASES = {norm_inst(k): v for k, v in ALIASES.items()}
+ALIASES.update({
+    "meta reality labs zurich": "Meta",
+    "meta reality labs z rich": "Meta",
+    "facebook ai research fair meta": "Meta",
+    "meta israel": "Meta",
+})
 
 
 def main():
@@ -106,10 +129,20 @@ def main():
     events = []
     unresolved = Counter()
 
+    UC_DOMAIN = {"berkeley.edu": "UC Berkeley", "ucsd.edu": "UC San Diego",
+                 "ucla.edu": "UCLA", "ucsb.edu": "UC Santa Barbara", "uci.edu": "UC Irvine",
+                 "ucdavis.edu": "UC Davis", "ucr.edu": "UC Riverside", "ucsc.edu": "UC Santa Cruz",
+                 "ucmerced.edu": "UC Merced", "ucsf.edu": "UC San Francisco"}
+
     def reg(insts):
         ids = []
         for i in insts:
-            display = ALIASES.get(norm_inst(i["name"]), i["name"])
+            name = i["name"]
+            # profiles sometimes carry the UC system name; the domain has the campus
+            if norm_inst(name) == "university of california":
+                dom = i["id"].removeprefix("or:")
+                name = UC_DOMAIN.get(dom, name)
+            display = ALIASES.get(norm_inst(name), name)
             key = norm_inst(display)
             cid = canon_by_name.get(key)
             if cid is None:

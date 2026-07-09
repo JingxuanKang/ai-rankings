@@ -42,9 +42,26 @@ def fetch(url, retries=4):
             time.sleep(2 * (i + 1))
 
 
+UC_CAMPUSES = ("berkeley", "los angeles", "san diego", "santa barbara", "irvine",
+               "davis", "riverside", "santa cruz", "merced", "san francisco")
+
+
 def pick_org(raw: str) -> str:
     """From 'Dept. of CS, Stanford University, CA' pick the org segment."""
     segs = [s.strip() for s in re.split(r"[;,]", raw) if s.strip()]
+    # rejoin campus systems split by the comma: "University of California, Berkeley"
+    joined = []
+    i = 0
+    while i < len(segs):
+        s = segs[i]
+        if (i + 1 < len(segs) and s.lower() in ("university of california", "california state university", "university of texas", "university of illinois", "university of colorado", "university of maryland", "university of massachusetts", "university of north carolina")
+                and (segs[i + 1].lower() in UC_CAMPUSES or segs[i + 1].lower().startswith(("at ", "austin", "urbana", "boulder", "college park", "amherst", "chapel hill")))):
+            joined.append(s + ", " + segs[i + 1])
+            i += 2
+        else:
+            joined.append(s)
+            i += 1
+    segs = joined
     # known company names first
     for s in segs:
         if s.lower() in COMPANY_NAMES:
