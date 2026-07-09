@@ -15,30 +15,43 @@ Resumable: results cached line-by-line in data/enriched/cache.jsonl.
 import difflib
 import json
 import sys
+import threading
 import time
 import urllib.parse
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 
 from common import ENRICH_DIR, DATA_DIR, load_json, dump_json, norm_title, paper_key
 
 MAILTO = "jxkang01@gmail.com"
 API = "https://api.openalex.org/works"
 CACHE = ENRICH_DIR / "cache.jsonl"
-SLEEP = 0.12  # stay well inside the polite-pool 10 rps
+WORKERS = 3  # OpenAlex 429s above ~5 rps in practice; stay conservative
 
 
-def fetch(url, retries=4):
+class FetchError(RuntimeError):
+    """Transport/rate-limit failure — distinct from 'no match', never cached."""
+
+
+def fetch(url, retries=6):
     for i in range(retries):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": f"signal-rank (mailto:{MAILTO})"})
             with urllib.request.urlopen(req, timeout=30) as r:
                 return json.load(r)
-        except Exception as e:  # 429/5xx/network: back off and retry
+        except urllib.error.HTTPError as e:
+            if e.code == 429:
+                retry_after = e.headers.get("Retry-After")
+                time.sleep(float(retry_after) if retry_after else 3 * (2 ** i))
+            elif i == retries - 1:
+                raise FetchError(str(e))
+            else:
+                time.sleep(2 ** i)
+        except Exception as e:
             if i == retries - 1:
-                print(f"  !! giving up: {e}")
-                return None
+                raise FetchError(str(e))
             time.sleep(2 ** i)
-    return None
+    raise FetchError("rate-limited after all retries")
 
 
 def candidates_for(title):
@@ -46,14 +59,10 @@ def candidates_for(title):
     out = []
     safe = title.replace(",", " ").replace(":", " ").replace("|", " ")
     q1 = f"{API}?filter=title.search:{urllib.parse.quote(safe)}&per-page=10&mailto={MAILTO}"
-    r = fetch(q1)
-    if r:
-        out.extend(r.get("results", []))
+    out.extend(fetch(q1).get("results", []))
     if not out:
         q2 = f"{API}?search={urllib.parse.quote(title)}&per-page=10&mailto={MAILTO}"
-        r = fetch(q2)
-        if r:
-            out.extend(r.get("results", []))
+        out.extend(fetch(q2).get("results", []))
     return out
 
 
@@ -124,20 +133,38 @@ def main():
                 cache[rec["key"]] = rec["result"]
 
     todo = [e for e in merged if paper_key(e) not in cache]
-    print(f"{len(merged)} papers, {len(cache)} cached, {len(todo)} to fetch")
+    print(f"{len(merged)} papers, {len(cache)} cached, {len(todo)} to fetch", flush=True)
 
-    with open(CACHE, "a") as out:
-        for n, e in enumerate(todo, 1):
+    lock = threading.Lock()
+    done = [0]
+    errors = [0]
+
+    def work(e):
+        try:
             cands = candidates_for(e["title"])
-            m = pick_match(e, cands)
-            result = extract(m) if m else None
+        except FetchError as ex:
+            with lock:
+                errors[0] += 1
+                if errors[0] % 20 == 1:
+                    print(f"  !! fetch error (not cached): {ex}", flush=True)
+            time.sleep(2)
+            return
+        m = pick_match(e, cands)
+        result = extract(m) if m else None
+        with lock:
             out.write(json.dumps({"key": paper_key(e), "result": result}, ensure_ascii=False) + "\n")
             out.flush()
             cache[paper_key(e)] = result
-            if n % 50 == 0:
+            done[0] += 1
+            if done[0] % 50 == 0:
                 ok = sum(1 for v in cache.values() if v)
-                print(f"  {n}/{len(todo)} fetched (running match rate {ok}/{len(cache)})")
-            time.sleep(SLEEP)
+                print(f"  {done[0]}/{len(todo)} fetched, {errors[0]} errors "
+                      f"(running match rate {ok}/{len(cache)})", flush=True)
+        time.sleep(0.25)
+
+    with open(CACHE, "a") as out:
+        with ThreadPoolExecutor(max_workers=WORKERS) as pool:
+            list(pool.map(work, todo))
 
     matched = sum(1 for e in merged if cache.get(paper_key(e)))
     print(f"\nmatch rate: {matched}/{len(merged)} = {matched/len(merged):.1%}")

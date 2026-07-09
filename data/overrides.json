@@ -1,0 +1,1862 @@
+{
+  "ACL|2021|a maximum entropy approach to natural language processing": {
+    "openalex_id": null,
+    "publication_year": 1996,
+    "first_author": {
+      "name": "Adam L. Berger",
+      "institutions": [
+        {
+          "id": "man:ibm",
+          "name": "IBM",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Vincent J. Della Pietra",
+        "institutions": [
+          {
+            "id": "man:ibm",
+            "name": "IBM",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Computational Linguistics 1996 (J96-1002). The printed journal header lists 'now at' addresses (Berger=Columbia University, Vincent J. Della Pietra=Renaissance Technologies), but the first-page footnote states the research was conducted while all authors were at the IBM T.J. Watson Research Center. Credited to IBM as the institution that produced the honored work (same principle as crediting work-location over later moves). JUDGMENT CALL - flagged for review."
+  },
+  "ACL|2021|assessing agreement on classification tasks the kappa statistic": {
+    "openalex_id": null,
+    "publication_year": 1996,
+    "first_author": {
+      "name": "Jean Carletta",
+      "institutions": [
+        {
+          "id": "man:university-of-edinburgh",
+          "name": "University of Edinburgh",
+          "type": "education",
+          "country": "GB"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Jean Carletta",
+        "institutions": [
+          {
+            "id": "man:university-of-edinburgh",
+            "name": "University of Edinburgh",
+            "type": "education",
+            "country": "GB"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Single author; 'University of Edinburgh' printed under the name on the 1996 Computational Linguistics PDF (J96-2004)."
+  },
+  "ACL|2021|finding deceptive opinion spam by any stretch of the imagination": {
+    "openalex_id": null,
+    "publication_year": 2011,
+    "first_author": {
+      "name": "Myle Ott",
+      "institutions": [
+        {
+          "id": "man:cornell-university",
+          "name": "Cornell University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Jeff Hancock",
+        "institutions": [
+          {
+            "id": "man:cornell-university",
+            "name": "Cornell University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ACL 2011 (P11-1032). All four authors at Cornell University, Ithaca NY; Ott/Choi/Cardie in Computer Science, Hancock in Communication."
+  },
+  "ACL|2021|lexicon based methods for sentiment analysis": {
+    "openalex_id": null,
+    "publication_year": 2011,
+    "first_author": {
+      "name": "Maite Taboada",
+      "institutions": [
+        {
+          "id": "man:simon-fraser-university",
+          "name": "Simon Fraser University",
+          "type": "education",
+          "country": "CA"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Manfred Stede",
+        "institutions": [
+          {
+            "id": "man:university-of-potsdam",
+            "name": "University of Potsdam",
+            "type": "education",
+            "country": "DE"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Computational Linguistics 2011 (J11-2001). Taboada (first) = Simon Fraser University; Stede (last) = University of Potsdam."
+  },
+  "ACL|2022|machine transliteration": {
+    "openalex_id": null,
+    "publication_year": 1997,
+    "first_author": {
+      "name": "Kevin Knight",
+      "institutions": [
+        {
+          "id": "man:usc-information-sciences-institute",
+          "name": "USC Information Sciences Institute",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Jonathan Graehl",
+        "institutions": [
+          {
+            "id": "man:usc-information-sciences-institute",
+            "name": "USC Information Sciences Institute",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ACL 1997 (P97-1017). Both authors at Information Sciences Institute, University of Southern California, Marina del Rey CA (@isi.edu)."
+  },
+  "ACL|2022|midge generating image descriptions from computer vision detections": {
+    "openalex_id": null,
+    "publication_year": 2012,
+    "first_author": {
+      "name": "Margaret Mitchell",
+      "institutions": [
+        {
+          "id": "man:university-of-aberdeen",
+          "name": "University of Aberdeen",
+          "type": "education",
+          "country": "GB"
+        },
+        {
+          "id": "man:oregon-health-and-science-university",
+          "name": "Oregon Health and Science University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Hal Daumé III",
+        "institutions": [
+          {
+            "id": "man:university-of-maryland",
+            "name": "University of Maryland",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "EACL 2012 (E12-1076). Mitchell (first) printed with dual affiliation 'U. of Aberdeen and Oregon Health and Science University' (m.mitchell@abdn.ac.uk); Daumé III (last) = University of Maryland."
+  },
+  "ACL|2022|open language learning for information extraction": {
+    "openalex_id": null,
+    "publication_year": 2012,
+    "first_author": {
+      "name": "Mausam",
+      "institutions": [
+        {
+          "id": "man:university-of-washington",
+          "name": "University of Washington",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Oren Etzioni",
+        "institutions": [
+          {
+            "id": "man:university-of-washington",
+            "name": "University of Washington",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "EMNLP-CoNLL 2012 (D12-1048). All authors at Turing Center, Computer Science & Engineering, University of Washington, Seattle."
+  },
+  "ACL|2022|three generative lexicalised models for statistical parsing": {
+    "openalex_id": null,
+    "publication_year": 1997,
+    "first_author": {
+      "name": "Michael Collins",
+      "institutions": [
+        {
+          "id": "man:university-of-pennsylvania",
+          "name": "University of Pennsylvania",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Michael Collins",
+        "institutions": [
+          {
+            "id": "man:university-of-pennsylvania",
+            "name": "University of Pennsylvania",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Single author; ACL 1997 (P97-1003). Dept. of Computer and Information Science, University of Pennsylvania."
+  },
+  "ACL|2023|automatic word sense discrimination": {
+    "openalex_id": null,
+    "publication_year": 1998,
+    "first_author": {
+      "name": "Hinrich Schütze",
+      "institutions": [
+        {
+          "id": "man:xerox-parc",
+          "name": "Xerox PARC",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Hinrich Schütze",
+        "institutions": [
+          {
+            "id": "man:xerox-parc",
+            "name": "Xerox PARC",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Single author; Computational Linguistics 1998 (J98-1004). Printed affiliation Xerox Palo Alto Research Center, Palo Alto CA."
+  },
+  "ACL|2023|generation that exploits corpus based statistical knowledge": {
+    "openalex_id": null,
+    "publication_year": 1998,
+    "first_author": {
+      "name": "Irene Langkilde",
+      "institutions": [
+        {
+          "id": "man:usc-information-sciences-institute",
+          "name": "USC Information Sciences Institute",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Kevin Knight",
+        "institutions": [
+          {
+            "id": "man:usc-information-sciences-institute",
+            "name": "USC Information Sciences Institute",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ACL-COLING 1998 (P98-1116). Both authors at Information Sciences Institute, University of Southern California, Marina del Rey CA."
+  },
+  "ACL|2023|recursive deep models for semantic compositionality over a sentiment treebank": {
+    "openalex_id": null,
+    "publication_year": 2013,
+    "first_author": {
+      "name": "Richard Socher",
+      "institutions": [
+        {
+          "id": "man:stanford-university",
+          "name": "Stanford University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Christopher Potts",
+        "institutions": [
+          {
+            "id": "man:stanford-university",
+            "name": "Stanford University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "EMNLP 2013 (D13-1170). All seven authors at Stanford University."
+  },
+  "ACL|2023|universal dependency annotation for multilingual parsing": {
+    "openalex_id": null,
+    "publication_year": 2013,
+    "first_author": {
+      "name": "Ryan McDonald",
+      "institutions": [
+        {
+          "id": "man:google",
+          "name": "Google",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Jungmee Lee",
+        "institutions": [
+          {
+            "id": "man:appen-butler-hill",
+            "name": "Appen-Butler-Hill",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ACL 2013 (P13-2017). Affiliation footnotes: McDonald (first) = Google; last author Jungmee Lee = Appen-Butler-Hill (a language-services company). Country US for the Butler Hill operating entity (parent Appen is AU)."
+  },
+  "ACL|2024|glove global vectors for word representation": {
+    "openalex_id": null,
+    "publication_year": 2014,
+    "first_author": {
+      "name": "Jeffrey Pennington",
+      "institutions": [
+        {
+          "id": "man:stanford-university",
+          "name": "Stanford University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Christopher Manning",
+        "institutions": [
+          {
+            "id": "man:stanford-university",
+            "name": "Stanford University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "EMNLP 2014 (D14-1162). All three authors at Computer Science Department, Stanford University."
+  },
+  "ACL|2024|measures of distributional similarity": {
+    "openalex_id": null,
+    "publication_year": 1999,
+    "first_author": {
+      "name": "Lillian Lee",
+      "institutions": [
+        {
+          "id": "man:cornell-university",
+          "name": "Cornell University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Lillian Lee",
+        "institutions": [
+          {
+            "id": "man:cornell-university",
+            "name": "Cornell University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Single author; ACL 1999 (P99-1004). Department of Computer Science, Cornell University."
+  },
+  "ACL|2025|automatic labeling of semantic roles": {
+    "openalex_id": null,
+    "publication_year": 2000,
+    "first_author": {
+      "name": "Daniel Gildea",
+      "institutions": [
+        {
+          "id": "man:university-of-california-berkeley",
+          "name": "University of California, Berkeley",
+          "type": "education",
+          "country": "US"
+        },
+        {
+          "id": "man:international-computer-science-institute",
+          "name": "International Computer Science Institute",
+          "type": "nonprofit",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Daniel Jurafsky",
+        "institutions": [
+          {
+            "id": "man:university-of-colorado-boulder",
+            "name": "University of Colorado Boulder",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ACL 2000 (P00-1065). Gildea (first) dual = UC Berkeley + International Computer Science Institute; Jurafsky (last) = University of Colorado Boulder. Different institutions."
+  },
+  "ACL|2025|effective approaches to attention based neural machine translation": {
+    "openalex_id": null,
+    "publication_year": 2015,
+    "first_author": {
+      "name": "Minh-Thang Luong",
+      "institutions": [
+        {
+          "id": "man:stanford-university",
+          "name": "Stanford University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Christopher D. Manning",
+        "institutions": [
+          {
+            "id": "man:stanford-university",
+            "name": "Stanford University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "EMNLP 2015 (D15-1166). All three authors at Computer Science Department, Stanford University."
+  },
+  "ACL|2025|weakly supervised learning of semantic parsers for mapping instructions to actions": {
+    "openalex_id": null,
+    "publication_year": 2013,
+    "first_author": {
+      "name": "Yoav Artzi",
+      "institutions": [
+        {
+          "id": "man:university-of-washington",
+          "name": "University of Washington",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Luke Zettlemoyer",
+        "institutions": [
+          {
+            "id": "man:university-of-washington",
+            "name": "University of Washington",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "TACL 2013 (Q13-1005). Both authors at Computer Science & Engineering, University of Washington, Seattle."
+  },
+  "CVPR|2021|baby talk understanding and generating simple image descriptions": {
+    "openalex_id": null,
+    "publication_year": 2011,
+    "first_author": {
+      "name": "Girish Kulkarni",
+      "institutions": [
+        {
+          "id": "man:stony-brook-university",
+          "name": "Stony Brook University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Tamara L. Berg",
+        "institutions": [
+          {
+            "id": "man:stony-brook-university",
+            "name": "Stony Brook University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "CVPR 2011. All seven authors under a single affiliation: Stony Brook University, NY."
+  },
+  "CVPR|2021|real time human pose recognition in parts from single depth images": {
+    "openalex_id": null,
+    "publication_year": 2011,
+    "first_author": {
+      "name": "Jamie Shotton",
+      "institutions": [
+        {
+          "id": "man:microsoft",
+          "name": "Microsoft",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Andrew Blake",
+        "institutions": [
+          {
+            "id": "man:microsoft",
+            "name": "Microsoft",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "CVPR 2011 (Kinect body-part recognition). Printed affiliation 'Microsoft Research Cambridge & Xbox Incubation'. First (Shotton) and last (Blake) both at Microsoft Research Cambridge, UK lab. id man:microsoft kept country US for aggregation consistency."
+  },
+  "CVPR|2022|are we ready for autonomous driving the kitti vision benchmark suite": {
+    "openalex_id": null,
+    "publication_year": 2012,
+    "first_author": {
+      "name": "Andreas Geiger",
+      "institutions": [
+        {
+          "id": "man:karlsruhe-institute-of-technology",
+          "name": "Karlsruhe Institute of Technology",
+          "type": "education",
+          "country": "DE"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Raquel Urtasun",
+        "institutions": [
+          {
+            "id": "man:toyota-technological-institute-at-chicago",
+            "name": "Toyota Technological Institute at Chicago",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "CVPR 2012. Geiger & Lenz = Karlsruhe Institute of Technology; Urtasun (last) = Toyota Technological Institute at Chicago (rurtasun@ttic.edu)."
+  },
+  "CVPR|2023|online object tracking a benchmark": {
+    "openalex_id": null,
+    "publication_year": 2013,
+    "first_author": {
+      "name": "Yi Wu",
+      "institutions": [
+        {
+          "id": "man:university-of-california-merced",
+          "name": "University of California, Merced",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Ming-Hsuan Yang",
+        "institutions": [
+          {
+            "id": "man:university-of-california-merced",
+            "name": "University of California, Merced",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "CVPR 2013. Printed: Yi Wu (first) and Ming-Hsuan Yang (last) both University of California, Merced (@ucmerced.edu); no Temple/Nanjing affiliation on the paper. Middle author Jongwoo Lim = Hanyang University."
+  },
+  "CVPR|2024|rich feature hierarchies for accurate object detection and semantic segmentation": {
+    "openalex_id": null,
+    "publication_year": 2014,
+    "first_author": {
+      "name": "Ross Girshick",
+      "institutions": [
+        {
+          "id": "man:university-of-california-berkeley",
+          "name": "University of California, Berkeley",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Jitendra Malik",
+        "institutions": [
+          {
+            "id": "man:university-of-california-berkeley",
+            "name": "University of California, Berkeley",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "CVPR 2014 (R-CNN) / arXiv 1311.2524. All four authors at UC Berkeley (@eecs.berkeley.edu)."
+  },
+  "CVPR|2025|fully convolutional networks for semantic segmentation": {
+    "openalex_id": null,
+    "publication_year": 2015,
+    "first_author": {
+      "name": "Jonathan Long",
+      "institutions": [
+        {
+          "id": "man:university-of-california-berkeley",
+          "name": "University of California, Berkeley",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Trevor Darrell",
+        "institutions": [
+          {
+            "id": "man:university-of-california-berkeley",
+            "name": "University of California, Berkeley",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "CVPR 2015 (FCN) / arXiv 1411.4038. Long, Shelhamer, Darrell all UC Berkeley."
+  },
+  "CVPR|2025|going deeper with convolutions": {
+    "openalex_id": null,
+    "publication_year": 2015,
+    "first_author": {
+      "name": "Christian Szegedy",
+      "institutions": [
+        {
+          "id": "man:google",
+          "name": "Google",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Andrew Rabinovich",
+        "institutions": [
+          {
+            "id": "man:google",
+            "name": "Google",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "CVPR 2015 (GoogLeNet) / arXiv 1409.4842. First (Szegedy) and last (Rabinovich) both Google Inc.; only middle authors Wei Liu (UNC Chapel Hill) and Scott Reed (U. Michigan) carry university affiliations."
+  },
+  "CVPR|2026|deep residual learning for image recognition": {
+    "openalex_id": null,
+    "publication_year": 2016,
+    "first_author": {
+      "name": "Kaiming He",
+      "institutions": [
+        {
+          "id": "man:microsoft",
+          "name": "Microsoft",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Jian Sun",
+        "institutions": [
+          {
+            "id": "man:microsoft",
+            "name": "Microsoft",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "CVPR 2016 (ResNet) / arXiv 1512.03385. All four authors printed 'Microsoft Research' (work done at Microsoft Research Asia, Beijing). id man:microsoft kept country US for aggregation consistency."
+  },
+  "CVPR|2026|you only look once unified real time object detection": {
+    "openalex_id": null,
+    "publication_year": 2016,
+    "first_author": {
+      "name": "Joseph Redmon",
+      "institutions": [
+        {
+          "id": "man:university-of-washington",
+          "name": "University of Washington",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Ali Farhadi",
+        "institutions": [
+          {
+            "id": "man:university-of-washington",
+            "name": "University of Washington",
+            "type": "education",
+            "country": "US"
+          },
+          {
+            "id": "man:allen-institute-for-artificial-intelligence",
+            "name": "Allen Institute for Artificial Intelligence",
+            "type": "nonprofit",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "CVPR 2016 (YOLO) / arXiv 1506.02640. Redmon (first) = University of Washington; Farhadi (last) dual = University of Washington + Allen Institute for AI. Middle author Girshick = Facebook AI Research."
+  },
+  "ECCV|2022|a naturalistic open source movie for optical flow evaluation": {
+    "openalex_id": null,
+    "publication_year": 2012,
+    "first_author": {
+      "name": "Daniel J. Butler",
+      "institutions": [
+        {
+          "id": "man:university-of-washington",
+          "name": "University of Washington",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Michael J. Black",
+        "institutions": [
+          {
+            "id": "man:max-planck-institute-for-intelligent-systems",
+            "name": "Max Planck Institute for Intelligent Systems",
+            "type": "nonprofit",
+            "country": "DE"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ECCV 2012 (MPI-Sintel). Butler (first) = University of Washington; Black (last) = Max Planck Institute for Intelligent Systems, Tübingen. Middle: Wulff (MPI-IS), Stanley (Georgia Tech)."
+  },
+  "ECCV|2022|indoor segmentation and support inference from rgbd images": {
+    "openalex_id": null,
+    "publication_year": 2012,
+    "first_author": {
+      "name": "Nathan Silberman",
+      "institutions": [
+        {
+          "id": "man:new-york-university",
+          "name": "New York University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Rob Fergus",
+        "institutions": [
+          {
+            "id": "man:new-york-university",
+            "name": "New York University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ECCV 2012 (NYU Depth v2). Silberman & Fergus = Courant Institute, New York University; Hoiem = UIUC; Kohli = Microsoft Research Cambridge."
+  },
+  "ECCV|2024|lsd slam large scale direct monocular slam": {
+    "openalex_id": null,
+    "publication_year": 2014,
+    "first_author": {
+      "name": "Jakob Engel",
+      "institutions": [
+        {
+          "id": "man:technical-university-of-munich",
+          "name": "Technical University of Munich",
+          "type": "education",
+          "country": "DE"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Daniel Cremers",
+        "institutions": [
+          {
+            "id": "man:technical-university-of-munich",
+            "name": "Technical University of Munich",
+            "type": "education",
+            "country": "DE"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ECCV 2014 (LSD-SLAM). All three authors (Engel, Schöps, Cremers) at Technical University of Munich."
+  },
+  "ECCV|2024|microsoft coco common objects in context": {
+    "openalex_id": null,
+    "publication_year": 2014,
+    "first_author": {
+      "name": "Tsung-Yi Lin",
+      "institutions": [
+        {
+          "id": "man:cornell-university",
+          "name": "Cornell University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "C. Lawrence Zitnick",
+        "institutions": [
+          {
+            "id": "man:microsoft",
+            "name": "Microsoft",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ECCV 2014 (MS COCO) / arXiv 1405.0312. Lin (first) = Cornell University (Cornell NYC Tech, advisor Belongie); Zitnick (last) = Microsoft Research, Redmond."
+  },
+  "ICCV|2021|dtam dense tracking and mapping in real time": {
+    "openalex_id": null,
+    "publication_year": 2011,
+    "first_author": {
+      "name": "Richard A. Newcombe",
+      "institutions": [
+        {
+          "id": "man:imperial-college-london",
+          "name": "Imperial College London",
+          "type": "education",
+          "country": "GB"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Andrew J. Davison",
+        "institutions": [
+          {
+            "id": "man:imperial-college-london",
+            "name": "Imperial College London",
+            "type": "education",
+            "country": "GB"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICCV 2011 (DTAM). All three authors (Newcombe, Lovegrove, Davison) at Department of Computing, Imperial College London."
+  },
+  "ICCV|2021|hmdb a large video database for human motion recognition": {
+    "openalex_id": null,
+    "publication_year": 2011,
+    "first_author": {
+      "name": "Hilde Kuehne",
+      "institutions": [
+        {
+          "id": "man:karlsruhe-institute-of-technology",
+          "name": "Karlsruhe Institute of Technology",
+          "type": "education",
+          "country": "DE"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Thomas Serre",
+        "institutions": [
+          {
+            "id": "man:brown-university",
+            "name": "Brown University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICCV 2011 (HMDB51). Kuehne (first) = Karlsruhe Institute of Technology; Serre (last) = Brown University. Middle authors Jhuang, Garrote, Poggio = MIT."
+  },
+  "ICCV|2021|orb an efficient alternative to sift or surf": {
+    "openalex_id": null,
+    "publication_year": 2011,
+    "first_author": {
+      "name": "Ethan Rublee",
+      "institutions": [
+        {
+          "id": "man:willow-garage",
+          "name": "Willow Garage",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Gary Bradski",
+        "institutions": [
+          {
+            "id": "man:willow-garage",
+            "name": "Willow Garage",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICCV 2011 (ORB). All four authors (Rublee, Rabaud, Konolige, Bradski) at Willow Garage, Menlo Park, CA."
+  },
+  "ICCV|2023|action recognition with improved trajectories": {
+    "openalex_id": null,
+    "publication_year": 2013,
+    "first_author": {
+      "name": "Heng Wang",
+      "institutions": [
+        {
+          "id": "man:inria",
+          "name": "Inria",
+          "type": "government",
+          "country": "FR"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Cordelia Schmid",
+        "institutions": [
+          {
+            "id": "man:inria",
+            "name": "Inria",
+            "type": "government",
+            "country": "FR"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICCV 2013. Both authors = LEAR team, Inria, France."
+  },
+  "ICCV|2025|delving deep into rectifiers surpassing human level performance on imagenet classification": {
+    "openalex_id": null,
+    "publication_year": 2015,
+    "first_author": {
+      "name": "Kaiming He",
+      "institutions": [
+        {
+          "id": "man:microsoft",
+          "name": "Microsoft",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Jian Sun",
+        "institutions": [
+          {
+            "id": "man:microsoft",
+            "name": "Microsoft",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICCV 2015 (PReLU) / arXiv 1502.01852. All four authors printed 'Microsoft Research' (Microsoft Research Asia, Beijing). id man:microsoft kept country US for aggregation consistency."
+  },
+  "ICCV|2025|fast r cnn": {
+    "openalex_id": null,
+    "publication_year": 2015,
+    "first_author": {
+      "name": "Ross Girshick",
+      "institutions": [
+        {
+          "id": "man:microsoft",
+          "name": "Microsoft",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Ross Girshick",
+        "institutions": [
+          {
+            "id": "man:microsoft",
+            "name": "Microsoft",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICCV 2015 (Fast R-CNN) / arXiv 1504.08083. Single-author; first_author == corresponding. Printed 'Microsoft Research', Redmond WA."
+  },
+  "ICLR|2024|auto encoding variational bayes": {
+    "openalex_id": null,
+    "publication_year": 2014,
+    "first_author": {
+      "name": "Diederik P. Kingma",
+      "institutions": [
+        {
+          "id": "man:university-of-amsterdam",
+          "name": "University of Amsterdam",
+          "type": "education",
+          "country": "NL"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Max Welling",
+        "institutions": [
+          {
+            "id": "man:university-of-amsterdam",
+            "name": "University of Amsterdam",
+            "type": "education",
+            "country": "NL"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICLR 2014 / arXiv 1312.6114. Both authors under Machine Learning Group, Universiteit van Amsterdam."
+  },
+  "ICLR|2024|intriguing properties of neural networks": {
+    "openalex_id": null,
+    "publication_year": 2014,
+    "first_author": {
+      "name": "Christian Szegedy",
+      "institutions": [
+        {
+          "id": "man:google",
+          "name": "Google",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Rob Fergus",
+        "institutions": [
+          {
+            "id": "man:new-york-university",
+            "name": "New York University",
+            "type": "education",
+            "country": "US"
+          },
+          {
+            "id": "man:facebook",
+            "name": "Facebook",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICLR 2014 / arXiv 1312.6199. Szegedy (first) = Google; Fergus (last) printed with dual affiliation New York University + Facebook Inc."
+  },
+  "ICLR|2025|adam a method for stochastic optimization": {
+    "openalex_id": null,
+    "publication_year": 2015,
+    "first_author": {
+      "name": "Diederik P. Kingma",
+      "institutions": [
+        {
+          "id": "man:university-of-amsterdam",
+          "name": "University of Amsterdam",
+          "type": "education",
+          "country": "NL"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Jimmy Lei Ba",
+        "institutions": [
+          {
+            "id": "man:university-of-toronto",
+            "name": "University of Toronto",
+            "type": "education",
+            "country": "CA"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICLR 2015 / arXiv 1412.6980 v1 header (Dec 2014): Kingma = University of Amsterdam, Ba = University of Toronto. Later arXiv revisions added 'OpenAI' to Kingma, but OpenAI did not exist until Dec 2015 - publication-time affiliation is University of Amsterdam only."
+  },
+  "ICLR|2025|neural machine translation by jointly learning to align and translate": {
+    "openalex_id": null,
+    "publication_year": 2015,
+    "first_author": {
+      "name": "Dzmitry Bahdanau",
+      "institutions": [
+        {
+          "id": "man:jacobs-university-bremen",
+          "name": "Jacobs University Bremen",
+          "type": "education",
+          "country": "DE"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Yoshua Bengio",
+        "institutions": [
+          {
+            "id": "man:universite-de-montreal",
+            "name": "Université de Montréal",
+            "type": "education",
+            "country": "CA"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICLR 2015 / arXiv 1409.0473. First author Bahdanau printed under 'Jacobs University Bremen, Germany' (differs from senior authors); Cho and Bengio under Université de Montréal."
+  },
+  "ICLR|2026|continuous control with deep reinforcement learning": {
+    "openalex_id": null,
+    "publication_year": 2016,
+    "first_author": {
+      "name": "Timothy P. Lillicrap",
+      "institutions": [
+        {
+          "id": "man:google-deepmind",
+          "name": "Google DeepMind",
+          "type": "company",
+          "country": "GB"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Daan Wierstra",
+        "institutions": [
+          {
+            "id": "man:google-deepmind",
+            "name": "Google DeepMind",
+            "type": "company",
+            "country": "GB"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICLR 2016 / arXiv 1509.02971. All authors under Google DeepMind, London UK."
+  },
+  "ICLR|2026|unsupervised representation learning with deep convolutional generative adversarial networks": {
+    "openalex_id": null,
+    "publication_year": 2016,
+    "first_author": {
+      "name": "Alec Radford",
+      "institutions": [
+        {
+          "id": "man:indico-research",
+          "name": "indico Research",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Soumith Chintala",
+        "institutions": [
+          {
+            "id": "man:facebook",
+            "name": "Facebook",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICLR 2016 / arXiv 1511.06434. Radford (and Metz) under 'indico Research, Boston MA'; Chintala (last) under Facebook AI Research, New York."
+  },
+  "ICML|2021|bayesian learning via stochastic gradient langevin dynamics": {
+    "openalex_id": null,
+    "publication_year": 2011,
+    "first_author": {
+      "name": "Max Welling",
+      "institutions": [
+        {
+          "id": "man:university-of-california-irvine",
+          "name": "University of California, Irvine",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Yee Whye Teh",
+        "institutions": [
+          {
+            "id": "man:university-college-london",
+            "name": "University College London",
+            "type": "education",
+            "country": "GB"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICML 2011. Welling (first) = D. Bren School of ICS, University of California, Irvine; Teh (last) = Gatsby Computational Neuroscience Unit, University College London. Different institutions."
+  },
+  "ICML|2022|building high level features using large scale unsupervised learning": {
+    "openalex_id": null,
+    "publication_year": 2012,
+    "first_author": {
+      "name": "Quoc V. Le",
+      "institutions": [
+        {
+          "id": "man:stanford-university",
+          "name": "Stanford University",
+          "type": "education",
+          "country": "US"
+        },
+        {
+          "id": "man:google",
+          "name": "Google",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Andrew Y. Ng",
+        "institutions": [
+          {
+            "id": "man:stanford-university",
+            "name": "Stanford University",
+            "type": "education",
+            "country": "US"
+          },
+          {
+            "id": "man:google",
+            "name": "Google",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICML 2012 / arXiv 1112.6209 ('cat neuron' paper). The paper prints Stanford emails for Le (first) and Ng (last); the other six authors use google.com. This is the Google Brain project - Le was a Stanford PhD student working at Google Brain, Ng a Stanford professor who co-led Google Brain - so both credited dual Stanford + Google. JUDGMENT CALL - drop Google if strict as-printed only."
+  },
+  "ICML|2022|on causal and anticausal learning": {
+    "openalex_id": null,
+    "publication_year": 2012,
+    "first_author": {
+      "name": "Bernhard Schölkopf",
+      "institutions": [
+        {
+          "id": "man:max-planck-institute-for-intelligent-systems",
+          "name": "Max Planck Institute for Intelligent Systems",
+          "type": "nonprofit",
+          "country": "DE"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Joris M. Mooij",
+        "institutions": [
+          {
+            "id": "man:radboud-university",
+            "name": "Radboud University",
+            "type": "education",
+            "country": "NL"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICML 2012. Schölkopf (first, + Janzing/Peters/Sgouritsa/Zhang) = Max Planck Institute for Intelligent Systems, Tübingen; Mooij (last) = Radboud University, Nijmegen. Different institutions."
+  },
+  "ICML|2022|poisoning attacks against support vector machines": {
+    "openalex_id": null,
+    "publication_year": 2012,
+    "first_author": {
+      "name": "Battista Biggio",
+      "institutions": [
+        {
+          "id": "man:university-of-cagliari",
+          "name": "University of Cagliari",
+          "type": "education",
+          "country": "IT"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Pavel Laskov",
+        "institutions": [
+          {
+            "id": "man:university-of-tubingen",
+            "name": "University of Tübingen",
+            "type": "education",
+            "country": "DE"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICML 2012 / arXiv 1206.6389. Biggio (first) = University of Cagliari, Italy; Nelson & Laskov (last) = University of Tübingen, Germany."
+  },
+  "ICML|2023|deep canonical correlation analysis": {
+    "openalex_id": null,
+    "publication_year": 2013,
+    "first_author": {
+      "name": "Galen Andrew",
+      "institutions": [
+        {
+          "id": "man:university-of-washington",
+          "name": "University of Washington",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Karen Livescu",
+        "institutions": [
+          {
+            "id": "man:toyota-technological-institute-at-chicago",
+            "name": "Toyota Technological Institute at Chicago",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICML 2013 (PMLR v28). Andrew (first) & Bilmes = University of Washington; Arora & Livescu (last) = Toyota Technological Institute at Chicago. First and last at different institutions."
+  },
+  "ICML|2023|learning fair representations": {
+    "openalex_id": null,
+    "publication_year": 2013,
+    "first_author": {
+      "name": "Richard Zemel",
+      "institutions": [
+        {
+          "id": "man:university-of-toronto",
+          "name": "University of Toronto",
+          "type": "education",
+          "country": "CA"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Cynthia Dwork",
+        "institutions": [
+          {
+            "id": "man:microsoft",
+            "name": "Microsoft",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICML 2013 (PMLR v28). Zemel/Wu/Swersky/Pitassi = University of Toronto; Dwork (last) = Microsoft Research, Mountain View."
+  },
+  "ICML|2023|making a science of model search hyperparameter optimization in hundreds of dimensions for vision architectures": {
+    "openalex_id": null,
+    "publication_year": 2013,
+    "first_author": {
+      "name": "James Bergstra",
+      "institutions": [
+        {
+          "id": "man:harvard-university",
+          "name": "Harvard University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "David Cox",
+        "institutions": [
+          {
+            "id": "man:harvard-university",
+            "name": "Harvard University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICML 2013 / arXiv 1209.5111. Bergstra (first) & Cox (last) = Rowland Institute at Harvard (Harvard University); Bergstra was a postdoc there at publication time (moved to Waterloo later). Middle author Yamins was at MIT."
+  },
+  "ICML|2024|decaf a deep convolutional activation feature for generic visual recognition": {
+    "openalex_id": null,
+    "publication_year": 2014,
+    "first_author": {
+      "name": "Jeff Donahue",
+      "institutions": [
+        {
+          "id": "man:university-of-california-berkeley",
+          "name": "University of California, Berkeley",
+          "type": "education",
+          "country": "US"
+        },
+        {
+          "id": "man:international-computer-science-institute",
+          "name": "International Computer Science Institute",
+          "type": "nonprofit",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Trevor Darrell",
+        "institutions": [
+          {
+            "id": "man:university-of-california-berkeley",
+            "name": "University of California, Berkeley",
+            "type": "education",
+            "country": "US"
+          },
+          {
+            "id": "man:international-computer-science-institute",
+            "name": "International Computer Science Institute",
+            "type": "nonprofit",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICML 2014 / arXiv 1310.1531. Single shared header 'UC Berkeley & ICSI, Berkeley CA' for all authors (@eecs.berkeley.edu); both Donahue (first) and Darrell (last) carry the dual affiliation as printed."
+  },
+  "ICML|2025|batch normalization accelerating deep network training by reducing internal covariate shift": {
+    "openalex_id": null,
+    "publication_year": 2015,
+    "first_author": {
+      "name": "Sergey Ioffe",
+      "institutions": [
+        {
+          "id": "man:google",
+          "name": "Google",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Christian Szegedy",
+        "institutions": [
+          {
+            "id": "man:google",
+            "name": "Google",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICML 2015 / arXiv 1502.03167. Both authors at Google Inc."
+  },
+  "ICML|2025|trust region policy optimization": {
+    "openalex_id": null,
+    "publication_year": 2015,
+    "first_author": {
+      "name": "John Schulman",
+      "institutions": [
+        {
+          "id": "man:university-of-california-berkeley",
+          "name": "University of California, Berkeley",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Pieter Abbeel",
+        "institutions": [
+          {
+            "id": "man:university-of-california-berkeley",
+            "name": "University of California, Berkeley",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICML 2015 / arXiv 1502.05477. All five authors (Schulman, Levine, Moritz, Jordan, Abbeel) at Dept. of EECS, University of California, Berkeley."
+  },
+  "ICML|2025|variational inference with normalizing flows": {
+    "openalex_id": null,
+    "publication_year": 2015,
+    "first_author": {
+      "name": "Danilo Jimenez Rezende",
+      "institutions": [
+        {
+          "id": "man:google-deepmind",
+          "name": "Google DeepMind",
+          "type": "company",
+          "country": "GB"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Shakir Mohamed",
+        "institutions": [
+          {
+            "id": "man:google-deepmind",
+            "name": "Google DeepMind",
+            "type": "company",
+            "country": "GB"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICML 2015 / arXiv 1505.05770. Both authors at Google DeepMind, London."
+  },
+  "ICML|2026|asynchronous methods for deep reinforcement learning": {
+    "openalex_id": null,
+    "publication_year": 2016,
+    "first_author": {
+      "name": "Volodymyr Mnih",
+      "institutions": [
+        {
+          "id": "man:google-deepmind",
+          "name": "Google DeepMind",
+          "type": "company",
+          "country": "GB"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Koray Kavukcuoglu",
+        "institutions": [
+          {
+            "id": "man:google-deepmind",
+            "name": "Google DeepMind",
+            "type": "company",
+            "country": "GB"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICML 2016 / arXiv 1602.01783. Two affiliations printed (Google DeepMind; MILA, Univ. of Montreal). First author Mnih and last author Kavukcuoglu both = Google DeepMind; only middle author Mirza carries the Montreal affiliation."
+  },
+  "NeurIPS|2021|online learning for latent dirichlet allocation": {
+    "openalex_id": null,
+    "publication_year": 2010,
+    "first_author": {
+      "name": "Matthew D. Hoffman",
+      "institutions": [
+        {
+          "id": "man:princeton-university",
+          "name": "Princeton University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Francis Bach",
+        "institutions": [
+          {
+            "id": "man:inria",
+            "name": "Inria",
+            "type": "government",
+            "country": "FR"
+          },
+          {
+            "id": "man:ecole-normale-superieure",
+            "name": "École Normale Supérieure",
+            "type": "education",
+            "country": "FR"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "NIPS 2010. Hoffman (first) & Blei = Computer Science, Princeton University; Bach (last) = 'INRIA - Ecole Normale Supérieure, Paris' (joint Inria/ENS team, dual affiliation)."
+  },
+  "NeurIPS|2022|imagenet classification with deep convolutional neural networks": {
+    "openalex_id": null,
+    "publication_year": 2012,
+    "first_author": {
+      "name": "Alex Krizhevsky",
+      "institutions": [
+        {
+          "id": "man:university-of-toronto",
+          "name": "University of Toronto",
+          "type": "education",
+          "country": "CA"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Geoffrey E. Hinton",
+        "institutions": [
+          {
+            "id": "man:university-of-toronto",
+            "name": "University of Toronto",
+            "type": "education",
+            "country": "CA"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "NIPS 2012 (AlexNet). All three authors (Krizhevsky, Sutskever, Hinton) at University of Toronto."
+  },
+  "NeurIPS|2023|distributed representations of words and phrases and their compositionality": {
+    "openalex_id": null,
+    "publication_year": 2013,
+    "first_author": {
+      "name": "Tomas Mikolov",
+      "institutions": [
+        {
+          "id": "man:google",
+          "name": "Google",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Jeffrey Dean",
+        "institutions": [
+          {
+            "id": "man:google",
+            "name": "Google",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "NIPS 2013 (word2vec). All authors at Google Inc., Mountain View."
+  },
+  "NeurIPS|2024|generative adversarial nets": {
+    "openalex_id": null,
+    "publication_year": 2014,
+    "first_author": {
+      "name": "Ian J. Goodfellow",
+      "institutions": [
+        {
+          "id": "man:universite-de-montreal",
+          "name": "Université de Montréal",
+          "type": "education",
+          "country": "CA"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Yoshua Bengio",
+        "institutions": [
+          {
+            "id": "man:universite-de-montreal",
+            "name": "Université de Montréal",
+            "type": "education",
+            "country": "CA"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "NIPS 2014 / arXiv 1406.2661v1. Single affiliation block for all authors: Département d'informatique et de recherche opérationnelle, Université de Montréal. Not Goodfellow's later Google/OpenAI."
+  },
+  "NeurIPS|2024|sequence to sequence learning with neural networks": {
+    "openalex_id": null,
+    "publication_year": 2014,
+    "first_author": {
+      "name": "Ilya Sutskever",
+      "institutions": [
+        {
+          "id": "man:google",
+          "name": "Google",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Quoc V. Le",
+        "institutions": [
+          {
+            "id": "man:google",
+            "name": "Google",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "NIPS 2014 / arXiv 1409.3215 (seq2seq). All three authors (Sutskever, Vinyals, Le) at Google."
+  },
+  "NeurIPS|2025|faster r cnn towards real time object detection with region proposal networks": {
+    "openalex_id": null,
+    "publication_year": 2015,
+    "first_author": {
+      "name": "Shaoqing Ren",
+      "institutions": [
+        {
+          "id": "man:university-of-science-and-technology-of-china",
+          "name": "University of Science and Technology of China",
+          "type": "education",
+          "country": "CN"
+        },
+        {
+          "id": "man:microsoft",
+          "name": "Microsoft",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Jian Sun",
+        "institutions": [
+          {
+            "id": "man:microsoft",
+            "name": "Microsoft",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "NIPS 2015 / arXiv 1506.01497. Footnote: 'S. Ren is with USTC, Hefei; this work was done when S. Ren was an intern at Microsoft Research' -> dual USTC + Microsoft. He & Sun (last) = Visual Computing Group, Microsoft Research -> Sun = Microsoft."
+  }
+}

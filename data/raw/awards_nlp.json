@@ -1,0 +1,4539 @@
+{
+  "coverage_notes": "覆盖 ACL 与 EMNLP 各 2021-2025 共 10 个会议届次的论文级奖项（ACL 2026/EMNLP 2026 截至 2026-07-09 未办，跳过）。奖项类型映射：Best Paper 及 Best Theme/Resource/Social-Impact/Reproduction/Linguistic-Insight/People's-Choice/Industry-Track/TACL 等特别最佳奖=best_paper（note 记具体奖名）；Outstanding Paper 与 runner-up/honorable-mention=honorable_mention（note 记 'outstanding paper' 或 'honorable mention'）；Test of Time=test_of_time（year_work 已查原论文发表年）。每条均带官方或权威 source_url。逐届说明：ACL 2021：官方 accept 页给 1 Best+1 Best Theme+6 Outstanding，ToT 官方公告 25yr(1996)x2+10yr(2011)x2。ACL 2022：官方 best-paper 页 1 Best+3 特别奖(Theme/Resource/Linguistic Insight)+8 Outstanding（该届 outstanding 仅 8 篇，非 20-40），ToT 25yr(1997)x2+10yr(2012)x2。ACL 2023：官方 best_papers 页 3 Best+4 特别奖+38 Outstanding+13 Honorable Mention，ToT 25yr(1998)x2+10yr(2013)x2；另有 12 篇 Area Chair Award 已排除（可按需追加）。ACL 2024：官方 best_papers 页 7 Best+3 Social Impact+3 Resource+1 Theme+35 Outstanding，ToT 25yr(1999,Lillian Lee)+10yr(2014,GloVe)；另有 21 篇 Area Chair Award 已排除。ACL 2025（Vienna）：官方 awards 页 4 Best+2 Social Impact+3 Resource+3 Theme+26 Outstanding+Industry Track(1 Best+2 HM)+TACL Best 1，ToT 25yr(2000,Gildea&Jurafsky)+10yr(2015,Luong)+TACL ToT(2013,Artzi&Zettlemoyer)；另有 47 篇 SAC Highlights 已排除（该届 SAC Highlights 为高级领域主席推荐名单而非竞争性奖，数量大且会严重倾斜数据集，如需可整批追加）。EMNLP 2021：官方公告(Wayback 存档) Best Long+Best Short+4 Outstanding。EMNLP 2022（Abu Dhabi）：该届未设 Outstanding 批次，仅 Best Long+Best Short+1 Honorable Mention（多源交叉确认，主源为机器之心闭幕报道）。EMNLP 2023：官方 best_papers 页 4 Best(Long/Short/Theme/Industry)+25 Outstanding。EMNLP 2024（Miami）：官方 best_papers 页 5 Best+3 Social Impact+2 Resource+1 Theme+20 Outstanding。EMNLP 2025（Suzhou）：官方 awards 页 1 Best+1 Theme+1 Resource+1 Social Impact+1 People's Choice+7 Outstanding；另有约 35 篇 SAC Highlights 未采（同 ACL 2025 理由）。EMNLP 各届均无 Test of Time Award（ACL Test-of-Time 为 ACL 层级奖，已归入对应 ACL 届次，未重复计入 EMNLP）。Best Demo Paper 按要求全部跳过。Orals/posters 官方不发独立名单且近年区分不稳定，未收。排除的 Area Chair Award(ACL2023:12, ACL2024:21) 与 SAC Highlights(ACL2025:47, EMNLP2025:~35) 未含在本文件，如需纳入可重跑对应 agent。",
+  "entries": [
+    {
+      "venue": "ACL",
+      "year_awarded": 2021,
+      "award": "best_paper",
+      "title": "Vocabulary Learning via Optimal Transport for Neural Machine Translation",
+      "authors": [
+        "Jingjing Xu",
+        "Hao Zhou",
+        "Chun Gan",
+        "Zaixiang Zheng",
+        "Lei Li"
+      ],
+      "year_work": 2021,
+      "source_url": "https://2021.aclweb.org/program/accept/",
+      "note": "best paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2021,
+      "award": "best_paper",
+      "title": "Including Signed Languages in Natural Language Processing",
+      "authors": [
+        "Kayo Yin",
+        "Amit Moryossef",
+        "Julie Hochgesang",
+        "Yoav Goldberg",
+        "Malihe Alikhani"
+      ],
+      "year_work": 2021,
+      "source_url": "https://2021.aclweb.org/program/accept/",
+      "note": "best theme paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2021,
+      "award": "honorable_mention",
+      "title": "All That's 'Human' Is Not Gold: Evaluating Human Evaluation of Generated Text",
+      "authors": [
+        "Elizabeth Clark",
+        "Tal August",
+        "Sofia Serrano",
+        "Nikita Haduong",
+        "Suchin Gururangan",
+        "Noah A. Smith"
+      ],
+      "year_work": 2021,
+      "source_url": "https://2021.aclweb.org/program/accept/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2021,
+      "award": "honorable_mention",
+      "title": "Intrinsic Dimensionality Explains the Effectiveness of Language Model Fine-Tuning",
+      "authors": [
+        "Armen Aghajanyan",
+        "Sonal Gupta",
+        "Luke Zettlemoyer"
+      ],
+      "year_work": 2021,
+      "source_url": "https://2021.aclweb.org/program/accept/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2021,
+      "award": "honorable_mention",
+      "title": "Mind Your Outliers! Investigating the Negative Impact of Outliers on Active Learning for Visual Question Answering",
+      "authors": [
+        "Siddharth Karamcheti",
+        "Ranjay Krishna",
+        "Li Fei-Fei",
+        "Christopher Manning"
+      ],
+      "year_work": 2021,
+      "source_url": "https://2021.aclweb.org/program/accept/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2021,
+      "award": "honorable_mention",
+      "title": "Neural Machine Translation with Monolingual Translation Memory",
+      "authors": [
+        "Deng Cai",
+        "Yan Wang",
+        "Huayang Li",
+        "Wai Lam",
+        "Lemao Liu"
+      ],
+      "year_work": 2021,
+      "source_url": "https://2021.aclweb.org/program/accept/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2021,
+      "award": "honorable_mention",
+      "title": "Scientific Credibility of Machine Translation Research: A Meta-Evaluation of 769 Papers",
+      "authors": [
+        "Benjamin Marie",
+        "Atsushi Fujita",
+        "Raphael Rubino"
+      ],
+      "year_work": 2021,
+      "source_url": "https://2021.aclweb.org/program/accept/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2021,
+      "award": "honorable_mention",
+      "title": "UnNatural Language Inference",
+      "authors": [
+        "Koustuv Sinha",
+        "Prasanna Parthasarathi",
+        "Joelle Pineau",
+        "Adina Williams"
+      ],
+      "year_work": 2021,
+      "source_url": "https://2021.aclweb.org/program/accept/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2021,
+      "award": "test_of_time",
+      "title": "A Maximum Entropy Approach to Natural Language Processing",
+      "authors": [
+        "Adam Berger",
+        "Stephen Della Pietra",
+        "Vincent Della Pietra"
+      ],
+      "year_work": 1996,
+      "source_url": "https://www.aclweb.org/portal/content/announcement-2021-acl-test-time-paper-award",
+      "note": "25-year test-of-time award"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2021,
+      "award": "test_of_time",
+      "title": "Assessing Agreement on Classification Tasks: The Kappa Statistic",
+      "authors": [
+        "Jean Carletta"
+      ],
+      "year_work": 1996,
+      "source_url": "https://www.aclweb.org/portal/content/announcement-2021-acl-test-time-paper-award",
+      "note": "25-year test-of-time award"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2021,
+      "award": "test_of_time",
+      "title": "Lexicon-Based Methods for Sentiment Analysis",
+      "authors": [
+        "Maite Taboada",
+        "Julian Brooke",
+        "Milan Tofiloski",
+        "Kimberly Voll",
+        "Manfred Stede"
+      ],
+      "year_work": 2011,
+      "source_url": "https://www.aclweb.org/portal/content/announcement-2021-acl-test-time-paper-award",
+      "note": "10-year test-of-time award"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2021,
+      "award": "test_of_time",
+      "title": "Finding Deceptive Opinion Spam by Any Stretch of the Imagination",
+      "authors": [
+        "Myle Ott",
+        "Yejin Choi",
+        "Claire Cardie",
+        "Jeff Hancock"
+      ],
+      "year_work": 2011,
+      "source_url": "https://www.aclweb.org/portal/content/announcement-2021-acl-test-time-paper-award",
+      "note": "10-year test-of-time award"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2022,
+      "award": "best_paper",
+      "title": "Learned Incremental Representations for Parsing",
+      "authors": [
+        "Nikita Kitaev",
+        "Thomas Lu",
+        "Dan Klein"
+      ],
+      "year_work": 2022,
+      "source_url": "https://2022.aclweb.org/best-paper-awards.html",
+      "note": "best paper award"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2022,
+      "award": "best_paper",
+      "title": "Requirements and Motivations of Low-Resource Speech Synthesis for Language Revitalization",
+      "authors": [
+        "Aidan Pine",
+        "Dan Wells",
+        "Nathan Brinklow",
+        "Patrick William Littell",
+        "Korin Richmond"
+      ],
+      "year_work": 2022,
+      "source_url": "https://2022.aclweb.org/best-paper-awards.html",
+      "note": "best special theme paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2022,
+      "award": "best_paper",
+      "title": "DiBiMT: A Novel Benchmark for Measuring Word Sense Disambiguation Biases in Machine Translation",
+      "authors": [
+        "Niccolò Campolungo",
+        "Federico Martelli",
+        "Francesco Saina",
+        "Roberto Navigli"
+      ],
+      "year_work": 2022,
+      "source_url": "https://2022.aclweb.org/best-paper-awards.html",
+      "note": "best resource paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2022,
+      "award": "best_paper",
+      "title": "KinyaBERT: a Morphology-aware Kinyarwanda Language Model",
+      "authors": [
+        "Antoine Nzeyimana",
+        "Andre Niyongabo Rubungo"
+      ],
+      "year_work": 2022,
+      "source_url": "https://2022.aclweb.org/best-paper-awards.html",
+      "note": "best linguistic insight paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2022,
+      "award": "honorable_mention",
+      "title": "Evaluating Factuality in Text Simplification",
+      "authors": [
+        "Ashwin Devaraj",
+        "William Berkeley Sheffield",
+        "Byron C Wallace",
+        "Junyi Jessy Li"
+      ],
+      "year_work": 2022,
+      "source_url": "https://2022.aclweb.org/best-paper-awards.html",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2022,
+      "award": "honorable_mention",
+      "title": "Online Semantic Parsing for Latency Reduction in Task-Oriented Dialogue",
+      "authors": [
+        "Jiawei Zhou",
+        "Jason Eisner",
+        "Michael Newman",
+        "Emmanouil Antonios Platanios",
+        "Sam Thomson"
+      ],
+      "year_work": 2022,
+      "source_url": "https://2022.aclweb.org/best-paper-awards.html",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2022,
+      "award": "honorable_mention",
+      "title": "Learning to Generalize to More: Continuous Semantic Augmentation for Neural Machine Translation",
+      "authors": [
+        "Xiangpeng Wei",
+        "Heng Yu",
+        "Yue Hu",
+        "Rongxiang Weng",
+        "Weihua Luo",
+        "Rong Jin"
+      ],
+      "year_work": 2022,
+      "source_url": "https://2022.aclweb.org/best-paper-awards.html",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2022,
+      "award": "honorable_mention",
+      "title": "Fantastically Ordered Prompts and Where to Find Them: Overcoming Few-Shot Prompt Order Sensitivity",
+      "authors": [
+        "Yao Lu",
+        "Max Bartolo",
+        "Alastair Moore",
+        "Sebastian Riedel",
+        "Pontus Stenetorp"
+      ],
+      "year_work": 2022,
+      "source_url": "https://2022.aclweb.org/best-paper-awards.html",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2022,
+      "award": "honorable_mention",
+      "title": "Inducing Positive Perspectives with Text Reframing",
+      "authors": [
+        "Caleb Ziems",
+        "Minzhi Li",
+        "Anthony Zhang",
+        "Diyi Yang"
+      ],
+      "year_work": 2022,
+      "source_url": "https://2022.aclweb.org/best-paper-awards.html",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2022,
+      "award": "honorable_mention",
+      "title": "Ditch the Gold Standard: Re-evaluating Conversational Question Answering",
+      "authors": [
+        "Huihan Li",
+        "Tianyu Gao",
+        "Manan Goenka",
+        "Danqi Chen"
+      ],
+      "year_work": 2022,
+      "source_url": "https://2022.aclweb.org/best-paper-awards.html",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2022,
+      "award": "honorable_mention",
+      "title": "Active Evaluation: Efficient NLG Evaluation with Few Pairwise Comparisons",
+      "authors": [
+        "Akash Kumar Mohankumar",
+        "Mitesh M Khapra"
+      ],
+      "year_work": 2022,
+      "source_url": "https://2022.aclweb.org/best-paper-awards.html",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2022,
+      "award": "honorable_mention",
+      "title": "Compression of Generative Pre-trained Language Models via Quantization",
+      "authors": [
+        "Chaofan Tao",
+        "Lu Hou",
+        "Wei Zhang",
+        "Lifeng Shang",
+        "Xin Jiang",
+        "Qun Liu",
+        "Ping Luo",
+        "Ngai Wong"
+      ],
+      "year_work": 2022,
+      "source_url": "https://2022.aclweb.org/best-paper-awards.html",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2022,
+      "award": "test_of_time",
+      "title": "Machine Transliteration",
+      "authors": [
+        "Kevin Knight",
+        "Jonathan Graehl"
+      ],
+      "year_work": 1997,
+      "source_url": "https://www.aclweb.org/portal/content/announcement-2022-acl-test-time-paper-award",
+      "note": "25-year test of time (ACL 1997)"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2022,
+      "award": "test_of_time",
+      "title": "Three Generative, Lexicalised Models for Statistical Parsing",
+      "authors": [
+        "Michael Collins"
+      ],
+      "year_work": 1997,
+      "source_url": "https://www.aclweb.org/portal/content/announcement-2022-acl-test-time-paper-award",
+      "note": "25-year test of time (ACL 1997)"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2022,
+      "award": "test_of_time",
+      "title": "Open Language Learning for Information Extraction",
+      "authors": [
+        "Mausam",
+        "Michael Schmitz",
+        "Stephen Soderland",
+        "Robert Bart",
+        "Oren Etzioni"
+      ],
+      "year_work": 2012,
+      "source_url": "https://www.aclweb.org/portal/content/announcement-2022-acl-test-time-paper-award",
+      "note": "10-year test of time (EMNLP-CoNLL 2012)"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2022,
+      "award": "test_of_time",
+      "title": "Midge: Generating Image Descriptions From Computer Vision Detections",
+      "authors": [
+        "Margaret Mitchell",
+        "Jesse Dodge",
+        "Amit Goyal",
+        "Kota Yamaguchi",
+        "Karl Stratos",
+        "Xufeng Han",
+        "Alyssa Mensch",
+        "Alex Berg",
+        "Tamara Berg",
+        "Hal Daumé III"
+      ],
+      "year_work": 2012,
+      "source_url": "https://www.aclweb.org/portal/content/announcement-2022-acl-test-time-paper-award",
+      "note": "10-year test of time (EACL 2012)"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "best_paper",
+      "title": "Do Androids Laugh at Electric Sheep? Humor \"Understanding\" Benchmarks from The New Yorker Caption Contest",
+      "authors": [
+        "Jack Hessel",
+        "Ana Marasović",
+        "Jena D. Hwang",
+        "Lillian Lee",
+        "Jeff Da",
+        "Rowan Zellers",
+        "Robert Mankoff",
+        "Yejin Choi"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "best paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "best_paper",
+      "title": "What the DAAM: Interpreting Stable Diffusion Using Cross Attention",
+      "authors": [
+        "Raphael Tang",
+        "Linqing Liu",
+        "Akshat Pandey",
+        "Zhiying Jiang",
+        "Gefei Yang",
+        "Karun Kumar",
+        "Pontus Stenetorp",
+        "Jimmy Lin",
+        "Ferhan Ture"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "best paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "best_paper",
+      "title": "From Pretraining Data to Language Models to Downstream Tasks: Tracking the Trails of Political Biases Leading to Unfair NLP Models",
+      "authors": [
+        "Shangbin Feng",
+        "Chan Young Park",
+        "Yuhan Liu",
+        "Yulia Tsvetkov"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "best paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "best_paper",
+      "title": "Weaker Than You Think: A Critical Look at Weakly Supervised Learning",
+      "authors": [
+        "Dawei Zhu",
+        "Xiaoyu Shen",
+        "Marius Mosbach",
+        "Andreas Stephan",
+        "Dietrich Klakow"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "best theme paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "best_paper",
+      "title": "When Does Translation Require Context? A Data-driven, Multilingual Exploration",
+      "authors": [
+        "Patrick Fernandes",
+        "Kayo Yin",
+        "Emmy Liu",
+        "André Martins",
+        "Graham Neubig"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "best resource paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "best_paper",
+      "title": "Marked Personas: Using Natural Language Prompts to Measure Stereotypes in Language Models",
+      "authors": [
+        "Myra Cheng",
+        "Esin Durmus",
+        "Dan Jurafsky"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "best social impact paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "best_paper",
+      "title": "Do CoNLL-2003 Named Entity Taggers Still Work Well in 2023?",
+      "authors": [
+        "Shuheng Liu",
+        "Alan Ritter"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "best reproduction paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Backpack Language Models",
+      "authors": [
+        "John Hewitt",
+        "John Thickstun",
+        "Christopher Manning",
+        "Percy Liang"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "CAME: Confidence-guided Adaptive Memory Efficient Optimization",
+      "authors": [
+        "Yang Luo",
+        "Xiaozhe Ren",
+        "Zangwei Zheng",
+        "Zhuo Jiang",
+        "Xin Jiang",
+        "Yang You"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Causes and Cures for Interference in Multilingual Translation",
+      "authors": [
+        "Uri Shaham",
+        "Maha Elbayad",
+        "Vedanuj Goswami",
+        "Omer Levy",
+        "Shruti Bhosale"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Cognitive Reframing of Negative Thoughts through Human-Language Model Interaction",
+      "authors": [
+        "Ashish Sharma",
+        "Kevin Rushton",
+        "Inna Lin",
+        "David Wadden",
+        "Khendra Lucas",
+        "Adam Miner",
+        "Theresa Nguyen",
+        "Tim Althoff"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Compositional Generalization without Trees using Multiset Tagging and Latent Permutations",
+      "authors": [
+        "Matthias Lindemann",
+        "Alexander Koller",
+        "Ivan Titov"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Considerations for meaningful sign language machine translation based on glosses",
+      "authors": [
+        "Mathias Müller",
+        "Zifan Jiang",
+        "Amit Moryossef",
+        "Annette Rios",
+        "Sarah Ebling"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Dense-ATOMIC: Towards Densely-connected ATOMIC with High Knowledge Coverage and Massive Multi-hop Paths",
+      "authors": [
+        "Xiangqing Shen",
+        "Siwei Wu",
+        "Rui Xia"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Dissecting Transformer Length Extrapolation via the Lens of Receptive Field Analysis",
+      "authors": [
+        "Ta-Chung Chi",
+        "Ting-Han Fan",
+        "Alexander Rudnicky",
+        "Peter Ramadge"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Distilling Script Knowledge from Large Language Models for Constrained Language Planning",
+      "authors": [
+        "Siyu Yuan",
+        "Jiangjie Chen",
+        "Ziquan Fu",
+        "Xuyang Ge",
+        "Soham Shah",
+        "Charles Jankowski",
+        "Yanghua Xiao",
+        "Deqing Yang"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Do PLMs Know and Understand Ontological Knowledge?",
+      "authors": [
+        "Weiqi Wu",
+        "Chengyue Jiang",
+        "Yong Jiang",
+        "Pengjun Xie",
+        "Kewei Tu"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Don't Generate, Discriminate: A Proposal for Grounding Language Models to Real-World Environments",
+      "authors": [
+        "Yu Gu",
+        "Xiang Deng",
+        "Yu Su"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Extrinsic Evaluation of Machine Translation Metrics",
+      "authors": [
+        "Nikita Moghe",
+        "Tom Sherborne",
+        "Mark Steedman",
+        "Alexandra Birch"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Faithful Low-Resource Data-to-Text Generation through Cycle Training",
+      "authors": [
+        "Zhuoer Wang",
+        "Marcus Collins",
+        "Nikhita Vedula",
+        "Simone Filice",
+        "Shervin Malmasi",
+        "Oleg Rokhlenko"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Generalizing Backpropagation for Gradient-Based Interpretability",
+      "authors": [
+        "Kevin Du",
+        "Lucas Torroba Hennigen",
+        "Niklas Stoehr",
+        "Alex Warstadt",
+        "Ryan Cotterell"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Hexatagging: Projective Dependency Parsing as Tagging",
+      "authors": [
+        "Afra Amini",
+        "Tianyu Liu",
+        "Ryan Cotterell"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Hybrid Transducer and Attention based Encoder-Decoder Modeling for Speech-to-Text Tasks",
+      "authors": [
+        "Yun Tang",
+        "Anna Sun",
+        "Hirofumi Inaguma",
+        "Xinyue Chen",
+        "Ning Dong",
+        "Xutai Ma",
+        "Paden Tomasello",
+        "Juan Pino"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Improving Pretraining Techniques for Code-Switched NLP",
+      "authors": [
+        "Richeek Das",
+        "Sahasra Ranjan",
+        "Shreya Pathak",
+        "Preethi Jyothi"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Knowledge Transfer in Incremental Learning for Multilingual Neural Machine Translation",
+      "authors": [
+        "Kaiyu Huang",
+        "Peng Li",
+        "Jin Ma",
+        "Ting Yao",
+        "Yang Liu"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Language model acceptability judgements are not always robust to context",
+      "authors": [
+        "Koustuv Sinha",
+        "Jon Gauthier",
+        "Aaron Mueller",
+        "Kanishka Misra",
+        "Keren Fuentes",
+        "Roger Levy",
+        "Adina Williams"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Linear Classifier: An Often-Forgotten Baseline for Text Classification",
+      "authors": [
+        "Yu-Chen Lin",
+        "Si-An Chen",
+        "Jie-Jyun Liu",
+        "Chih-Jen Lin"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Minding Language Models' (Lack of) Theory of Mind: A Plug-and-Play Multi-Character Belief Tracker",
+      "authors": [
+        "Melanie Sclar",
+        "Sachin Kumar",
+        "Peter West",
+        "Alane Suhr",
+        "Yejin Choi",
+        "Yulia Tsvetkov"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "MultiInstruct: Improving Multi-Modal Zero-Shot Learning via Instruction Tuning",
+      "authors": [
+        "Zhiyang Xu",
+        "Ying Shen",
+        "Lifu Huang"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Multilingual LLMs are Better Cross-lingual In-context Learners with Alignment",
+      "authors": [
+        "Eshaan Tanwar",
+        "Subhabrata Dutta",
+        "Manish Borthakur",
+        "Tanmoy Chakraborty"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Neural Machine Translation Methods for Translating Text to Sign Language Glosses",
+      "authors": [
+        "Dele Zhu",
+        "Vera Czehmann",
+        "Eleftherios Avramidis"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "NLPositionality: Characterizing Design Biases of Datasets and Models",
+      "authors": [
+        "Sebastin Santy",
+        "Jenny Liang",
+        "Ronan Le Bras",
+        "Katharina Reinecke",
+        "Maarten Sap"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "PeaCoK: Persona Commonsense Knowledge for Consistent and Engaging Narratives",
+      "authors": [
+        "Silin Gao",
+        "Beatriz Borges",
+        "Soyoung Oh",
+        "Deniz Bayazit",
+        "Saya Kanno",
+        "Hiromi Wakaki",
+        "Yuki Mitsufuji",
+        "Antoine Bosselut"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "QUEST: A Retrieval Dataset of Entity-Seeking Queries with Implicit Set Operations",
+      "authors": [
+        "Chaitanya Malaviya",
+        "Peter Shaw",
+        "Ming-Wei Chang",
+        "Kenton Lee",
+        "Kristina Toutanova"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Question-Answering in a Low-resourced Language: Benchmark Dataset and Models for Tigrinya",
+      "authors": [
+        "Fitsum Gaim",
+        "Wonsuk Yang",
+        "Hancheol Park",
+        "Jong Park"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Scaling in Cognitive Modelling: a Multilingual Approach to Human Reading Times",
+      "authors": [
+        "Andrea Gregor de Varda",
+        "Marco Marelli"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "SCOTT: Self-Consistent Chain-of-Thought Distillation",
+      "authors": [
+        "Peifeng Wang",
+        "Zhengyang Wang",
+        "Zheng Li",
+        "Yifan Gao",
+        "Bing Yin",
+        "Xiang Ren"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "The Mechanical Bard: An Interpretable Machine Learning Approach to Shakespearean Sonnet Generation",
+      "authors": [
+        "Edwin Agnew",
+        "Michelle Qiu",
+        "Lily Zhu",
+        "Sam Wiseman",
+        "Cynthia Rudin"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "The Tail Wagging the Dog: Dataset Construction Biases of Social Bias Benchmarks",
+      "authors": [
+        "Nikil Selvam",
+        "Sunipa Dev",
+        "Daniel Khashabi",
+        "Tushar Khot",
+        "Kai-Wei Chang"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Towards Zero-Shot Multilingual Transfer for Code-Switched Responses",
+      "authors": [
+        "Ting-Wei Wu",
+        "Changsheng Zhao",
+        "Ernie Chang",
+        "Yangyang Shi",
+        "Pierce Chuang",
+        "Vikas Chandra",
+        "Biing Juang"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Transfer and Active Learning for Dissonance Detection: Addressing the Rare-Class Challenge",
+      "authors": [
+        "Vasudha Varadarajan",
+        "Swanie Juhng",
+        "Syeda Mahwish",
+        "Xiaoran Liu",
+        "Jonah Luby",
+        "Christian Luhmann",
+        "H. Andrew Schwartz"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "VisText: A Benchmark for Semantically Rich Chart Captioning",
+      "authors": [
+        "Benny Tang",
+        "Angie Boggust",
+        "Arvind Satyanarayan"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "What's the Meaning of Superhuman Performance in Today's NLU?",
+      "authors": [
+        "Simone Tedeschi",
+        "Johan Bos",
+        "Thierry Declerck",
+        "Jan Hajič",
+        "Daniel Hershcovich",
+        "Eduard Hovy",
+        "Alexander Koller",
+        "Simon Krek",
+        "Steven Schockaert",
+        "Rico Sennrich",
+        "Ekaterina Shutova",
+        "Roberto Navigli"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "WikiBio: a Semantic Resource for the Intersectional Analysis of Biographical Events",
+      "authors": [
+        "Marco Antonio Stranisci",
+        "Rossana Damiano",
+        "Enrico Mensa",
+        "Viviana Patti",
+        "Daniele Radicioni",
+        "Tommaso Caselli"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "World-to-Words: Grounded Open Vocabulary Acquisition through Fast Mapping in Vision-Language Models",
+      "authors": [
+        "Ziqiao Ma",
+        "Jiayi Pan",
+        "Joyce Chai"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "ByGPT5: End-to-End Style-conditioned Poetry Generation with Token-free Language Models",
+      "authors": [
+        "Jonas Belouadi",
+        "Steffen Eger"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "DiffusionDB: A Large-scale Prompt Gallery Dataset for Text-to-Image Generative Models",
+      "authors": [
+        "Zijie J. Wang",
+        "Evan Montoya",
+        "David Munechika",
+        "Haoyang Yang",
+        "Benjamin Hoover",
+        "Duen Horng Chau"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "DrBERT: A Robust Pre-trained Model in French for Biomedical and Clinical domains",
+      "authors": [
+        "Yanis Labrak",
+        "Adrien Bazoge",
+        "Richard Dufour",
+        "Mickael Rouvier",
+        "Emmanuel Morin",
+        "Béatrice Daille",
+        "Pierre-Antoine Gourraud"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Forgotten Knowledge: Examining the Citational Amnesia in NLP",
+      "authors": [
+        "Janvijay Singh",
+        "Mukund Rungta",
+        "Diyi Yang",
+        "Saif Mohammad"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "From Characters to Words: Hierarchical Pre-trained Language Model for Open-vocabulary Language Understanding",
+      "authors": [
+        "Li Sun",
+        "Florian Luisier",
+        "Kayhan Batmanghelich",
+        "Dinei Florencio",
+        "Cha Zhang"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "GIFT: Graph-Induced Fine-Tuning for Multi-Party Conversation Understanding",
+      "authors": [
+        "Jia-Chen Gu",
+        "Zhenhua Ling",
+        "Quan Liu",
+        "Cong Liu",
+        "Guoping Hu"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Human Inspired Progressive Alignment and Comparative Learning for Grounded Word Acquisition",
+      "authors": [
+        "Yuwei Bao",
+        "Barrett Lattimer",
+        "Joyce Chai"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Latent Positional Information is in the Self-Attention Variance of Transformer Language Models Without Positional Embeddings",
+      "authors": [
+        "Ta-Chung Chi",
+        "Ting-Han Fan",
+        "Li-Wei Chen",
+        "Alexander Rudnicky",
+        "Peter Ramadge"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Revisiting non-English Text Simplification: A Unified Multilingual Benchmark",
+      "authors": [
+        "Michael Ryan",
+        "Tarek Naous",
+        "Wei Xu"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Synthetic Text Generation with Differential Privacy: A Simple and Practical Recipe",
+      "authors": [
+        "Xiang Yue",
+        "Huseyin Inan",
+        "Xuechen Li",
+        "Girish Kumar",
+        "Julia McAnallen",
+        "Hoda Shajari",
+        "Huan Sun",
+        "David Levitan",
+        "Robert Sim"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Theory-Grounded Computational Text Analysis",
+      "authors": [
+        "Arya D. McCarthy",
+        "Giovanna Maria Dora Dore"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Towards Understanding Chain-of-Thought Prompting: An Empirical Study of What Matters",
+      "authors": [
+        "Boshi Wang",
+        "Sewon Min",
+        "Xiang Deng",
+        "Jiaming Shen",
+        "You Wu",
+        "Luke Zettlemoyer",
+        "Huan Sun"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "UniCoRN: Unified Cognitive Signal ReconstructioN bridging cognitive signals and human language",
+      "authors": [
+        "Nuwa Xi",
+        "Sendong Zhao",
+        "Haochun Wang",
+        "Chi Liu",
+        "Bing Qin",
+        "Ting Liu"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.aclweb.org/program/best_papers/",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "test_of_time",
+      "title": "Generation that Exploits Corpus-Based Statistical Knowledge",
+      "authors": [
+        "Irene Langkilde",
+        "Kevin Knight"
+      ],
+      "year_work": 1998,
+      "source_url": "https://www.aclweb.org/portal/content/announcement-2023-acl-test-time-paper-award",
+      "note": "25-year test-of-time award"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "test_of_time",
+      "title": "Automatic Word Sense Discrimination",
+      "authors": [
+        "Hinrich Schütze"
+      ],
+      "year_work": 1998,
+      "source_url": "https://www.aclweb.org/portal/content/announcement-2023-acl-test-time-paper-award",
+      "note": "25-year test-of-time award"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "test_of_time",
+      "title": "Universal Dependency Annotation for Multilingual Parsing",
+      "authors": [
+        "Ryan McDonald",
+        "Joakim Nivre",
+        "Yvonne Quirmbach-Brundage",
+        "Yoav Goldberg",
+        "Dipanjan Das",
+        "Kuzman Ganchev",
+        "Keith Hall",
+        "Slav Petrov",
+        "Hao Zhang",
+        "Oscar Täckström",
+        "Claudia Bedini",
+        "Núria Bertomeu Castelló",
+        "Jungmee Lee"
+      ],
+      "year_work": 2013,
+      "source_url": "https://www.aclweb.org/portal/content/announcement-2023-acl-test-time-paper-award",
+      "note": "10-year test-of-time award"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2023,
+      "award": "test_of_time",
+      "title": "Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank",
+      "authors": [
+        "Richard Socher",
+        "Alex Perelygin",
+        "Jean Wu",
+        "Jason Chuang",
+        "Christopher D. Manning",
+        "Andrew Ng",
+        "Christopher Potts"
+      ],
+      "year_work": 2013,
+      "source_url": "https://www.aclweb.org/portal/content/announcement-2023-acl-test-time-paper-award",
+      "note": "10-year test-of-time award"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "best_paper",
+      "title": "Mission: Impossible Language Models",
+      "authors": [
+        "Julie Kallini",
+        "Isabel Papadimitriou",
+        "Richard Futrell",
+        "Kyle Mahowald",
+        "Christopher Potts"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "best paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "best_paper",
+      "title": "Semisupervised Neural Proto-Language Reconstruction",
+      "authors": [
+        "Liang Lu",
+        "Peirong Xie",
+        "David R Mortensen"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "best paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "best_paper",
+      "title": "Why are Sensitive Functions Hard for Transformers?",
+      "authors": [
+        "Michael Hahn",
+        "Mark Rofin"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "best paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "best_paper",
+      "title": "Natural Language Satisfiability: Exploring the Problem Distribution and Evaluating Transformer-based Language Models",
+      "authors": [
+        "Tharindu Madusanka",
+        "Ian Pratt-Hartmann",
+        "Riza Batista-Navarro"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "best paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "best_paper",
+      "title": "Deciphering Oracle Bone Language with Diffusion Models",
+      "authors": [
+        "Haisu Guan",
+        "Huanxin Yang",
+        "Xinyu Wang",
+        "Shengwei Han",
+        "Yongge Liu",
+        "Lianwen Jin",
+        "Xiang Bai",
+        "Yuliang Liu"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "best paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "best_paper",
+      "title": "Causal Estimation of Memorisation Profiles",
+      "authors": [
+        "Pietro Lesci",
+        "Clara Meister",
+        "Thomas Hofmann",
+        "Andreas Vlachos",
+        "Tiago Pimentel"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "best paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "best_paper",
+      "title": "Aya Model: An Instruction Finetuned Open-Access Multilingual Language Model",
+      "authors": [
+        "Ahmet Üstün",
+        "Viraat Aryabumi",
+        "Zheng Yong",
+        "Wei-Yin Ko",
+        "Daniel D'souza",
+        "Gbemileke Onilude",
+        "Neel Bhandari",
+        "Shivalika Singh",
+        "Hui-Lee Ooi",
+        "Amr Kayid",
+        "Freddie Vargus",
+        "Phil Blunsom",
+        "Shayne Longpre",
+        "Niklas Muennighoff",
+        "Marzieh Fadaee",
+        "Julia Kreutzer",
+        "Sara Hooker"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "best paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "best_paper",
+      "title": "How Johnny Can Persuade LLMs to Jailbreak Them: Rethinking Persuasion to Challenge AI Safety by Humanizing LLMs",
+      "authors": [
+        "Yi Zeng",
+        "Hongpeng Lin",
+        "Jingwen Zhang",
+        "Diyi Yang",
+        "Ruoxi Jia",
+        "Weiyan Shi"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "best social impact paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "best_paper",
+      "title": "DIALECTBENCH: An NLP Benchmark for Dialects, Varieties, and Closely-Related Languages",
+      "authors": [
+        "Fahim Faisal",
+        "Orevaoghene Ahia",
+        "Aarohi Srivastava",
+        "Kabir Ahuja",
+        "David Chiang",
+        "Yulia Tsvetkov",
+        "Antonios Anastasopoulos"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "best social impact paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "best_paper",
+      "title": "Having Beer after Prayer? Measuring Cultural Bias in Large Language Models",
+      "authors": [
+        "Tarek Naous",
+        "Michael J Ryan",
+        "Alan Ritter",
+        "Wei Xu"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "best social impact paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "best_paper",
+      "title": "Latxa: An Open Language Model and Evaluation Suite for Basque",
+      "authors": [
+        "Julen Etxaniz",
+        "Oscar Sainz",
+        "Naiara Perez Miguel",
+        "Itziar Aldabe",
+        "German Rigau",
+        "Eneko Agirre",
+        "Aitor Ormazabal",
+        "Mikel Artetxe",
+        "Aitor Soroa"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "best resource paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "best_paper",
+      "title": "Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research",
+      "authors": [
+        "Luca Soldaini",
+        "Rodney Kinney",
+        "Akshita Bhagia",
+        "Dustin Schwenk",
+        "David Atkinson",
+        "Russell Authur",
+        "Ben Bogin",
+        "Khyathi Chandu",
+        "Jennifer Dumas",
+        "Yanai Elazar",
+        "Valentin Hofmann",
+        "Ananya Jha",
+        "Sachin Kumar",
+        "Li Lucy",
+        "Xinxi Lyu",
+        "Nathan Lambert",
+        "Ian Magnusson",
+        "Jacob Morrison",
+        "Niklas Muennighoff",
+        "Aakanksha Naik",
+        "Crystal Nam",
+        "Matthew Peters",
+        "Abhilasha Ravichander",
+        "Kyle Richardson",
+        "Zejiang Shen",
+        "Emma Strubell",
+        "Nishant Subramani",
+        "Oyvind Tafjord",
+        "Evan Walsh",
+        "Luke Zettlemoyer",
+        "Noah Smith",
+        "Hannaneh Hajishirzi",
+        "Iz Beltagy",
+        "Dirk Groeneveld",
+        "Jesse Dodge",
+        "Kyle Lo"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "best resource paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "best_paper",
+      "title": "AppWorld: A Controllable World of Apps and People for Benchmarking Interactive Coding Agents",
+      "authors": [
+        "Harsh Trivedi",
+        "Tushar Khot",
+        "Mareike Hartmann",
+        "Ruskin Manku",
+        "Vinty Dong",
+        "Edward Li",
+        "Shashank Gupta",
+        "Ashish Sabharwal",
+        "Niranjan Balasubramanian"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "best resource paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "best_paper",
+      "title": "OLMo: Accelerating the Science of Language Models",
+      "authors": [
+        "Dirk Groeneveld",
+        "Iz Beltagy",
+        "Evan Walsh",
+        "Akshita Bhagia",
+        "Rodney Kinney",
+        "Oyvind Tafjord",
+        "Ananya Jha",
+        "Hamish Ivison",
+        "Ian Magnusson",
+        "Yizhong Wang",
+        "Shane Arora",
+        "David Atkinson",
+        "Russell Authur",
+        "Khyathi Chandu",
+        "Arman Cohan",
+        "Jennifer Dumas",
+        "Yanai Elazar",
+        "Yuling Gu",
+        "Jack Hessel",
+        "Tushar Khot",
+        "William Merrill",
+        "Jacob Morrison",
+        "Niklas Muennighoff",
+        "Aakanksha Naik",
+        "Crystal Nam",
+        "Matthew Peters",
+        "Valentina Pyatkin",
+        "Abhilasha Ravichander",
+        "Dustin Schwenk",
+        "Saurabh Shah",
+        "William Smith",
+        "Emma Strubell",
+        "Nishant Subramani",
+        "Mitchell Wortsman",
+        "Pradeep Dasigi",
+        "Nathan Lambert",
+        "Kyle Richardson",
+        "Luke Zettlemoyer",
+        "Jesse Dodge",
+        "Kyle Lo",
+        "Luca Soldaini",
+        "Noah Smith",
+        "Hannaneh Hajishirzi"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "best theme paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Quantized Side Tuning: Fast and Memory-Efficient Tuning of Quantized Large Language Models",
+      "authors": [
+        "Xupeng Miao",
+        "Gabriele Oliaro",
+        "Zhihao Zhang",
+        "Qing Li",
+        "Yong Jiang",
+        "Zhihao Jia"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "L-Eval: Instituting Standardized Evaluation for Long Context Language Models",
+      "authors": [
+        "Chenxin An",
+        "Shansan Gong",
+        "Ming Zhong",
+        "Xingjian Zhao",
+        "Mukai Li",
+        "Jun Zhang",
+        "Lingpeng Kong",
+        "Xipeng Qiu"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Causal-Guided Active Learning for Debiasing Large Language Models",
+      "authors": [
+        "Zhouhao Sun",
+        "Li Du",
+        "Xiao Ding",
+        "Yixuan Ma",
+        "Yang Zhao",
+        "Kaitao Qiu",
+        "Ting Liu",
+        "Bing Qin"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "CausalGym: Benchmarking causal interpretability methods on linguistic tasks",
+      "authors": [
+        "Aryaman Arora",
+        "Dan Jurafsky",
+        "Christopher Potts"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Don't Hallucinate, Abstain: Identifying LLM Knowledge Gaps via Multi-LLM Collaboration",
+      "authors": [
+        "Shangbin Feng",
+        "Weijia Shi",
+        "Yike Wang",
+        "Wenxuan Ding",
+        "Vidhisha Balachandran",
+        "Yulia Tsvetkov"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Speech Translation with Speech Foundation Models and Large Language Models: What is There and What is Missing?",
+      "authors": [
+        "Marco Gaido",
+        "Sara Papi",
+        "Matteo Negri",
+        "Luisa Bentivogli"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Must NLP be Extractive?",
+      "authors": [
+        "Steven Bird"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "IRCoder: Intermediate Representations Make Language Models Robust Multilingual Code Generators",
+      "authors": [
+        "Indraneil Paul",
+        "Goran Glavaš",
+        "Iryna Gurevych"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "MultiLegalPile: A 689GB Multilingual Legal Corpus",
+      "authors": [
+        "Joel Niklaus",
+        "Veton Matoshi",
+        "Matthias Stürmer",
+        "Ilias Chalkidis",
+        "Daniel E. Ho"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "PsySafe: A Comprehensive Framework for Psychological-based Attack, Defense, and Evaluation of Multi-agent System Safety",
+      "authors": [
+        "Zaibin Zhang",
+        "Yongting Zhang",
+        "Lijun Li",
+        "Jing Shao",
+        "Hongzhi Gao",
+        "Yu Qiao",
+        "Lijun Wang",
+        "Huchuan Lu",
+        "Feng Zhao"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Can Large Language Models be Good Emotional Supporter? Mitigating Preference Bias on Emotional Support Conversation",
+      "authors": [
+        "Dongjin Kang",
+        "Sunghwan Kim",
+        "Taeyoon Kwon",
+        "Seungjun Moon",
+        "Hyeongseop Cho",
+        "Youngjae Yu",
+        "Dongha Lee",
+        "Jinyoung Yeo"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Political Compass or Spinning Arrow? Towards More Meaningful Evaluations for Values and Opinions in Large Language Models",
+      "authors": [
+        "Paul Röttger",
+        "Valentin Hofmann",
+        "Valentina Pyatkin",
+        "Musashi Hinck",
+        "Hannah Rose Kirk",
+        "Hinrich Schuetze",
+        "Dirk Hovy"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Same Task, More Tokens: the Impact of Input Length on the Reasoning Performance of Large Language Models",
+      "authors": [
+        "Mosh Levy",
+        "Alon Jacoby",
+        "Yoav Goldberg"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Do Llamas Work in English? On the Latent Language of Multilingual Transformers",
+      "authors": [
+        "Chris Wendler",
+        "Veniamin Veselovsky",
+        "Giovanni Monea",
+        "Robert West"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Getting Serious about Humor: Crafting Humor Datasets with Unfunny Large Language Models",
+      "authors": [
+        "Zachary Horvitz",
+        "Jingru Chen",
+        "Rahul Aditya",
+        "Harshvardhan Srivastava",
+        "Robert West",
+        "Zhou Yu",
+        "Kathleen McKeown"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Estimating the Level of Dialectness Predicts Inter-annotator Agreement in Multi-dialect Arabic Datasets",
+      "authors": [
+        "Amr Keleg",
+        "Walid Magdy",
+        "Sharon Goldwater"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "G-DIG: Towards Gradient-based DIverse and hiGh-quality Instruction Data Selection for Machine Translation",
+      "authors": [
+        "Xingyuan Pan",
+        "Luyang Huang",
+        "Liyan Kang",
+        "Zhicheng Liu",
+        "Yu Lu",
+        "Shanbo Cheng"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Media Framing: A typology and Survey of Computational Approaches Across Disciplines",
+      "authors": [
+        "Yulia Otmakhova",
+        "Shima Khanehzar",
+        "Lea Frermann"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "SPZ: A Semantic Perturbation-based Data Augmentation Method with Zonal-Mixing for Alzheimer's Disease Detection",
+      "authors": [
+        "FangFang Li",
+        "Cheng Huang",
+        "PuZhen Su",
+        "Jie Yin"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Greed is All You Need: An Evaluation of Tokenizer Inference Methods",
+      "authors": [
+        "Omri Uzan",
+        "Craig W Schmidt",
+        "Chris Tanner",
+        "Yuval Pinter"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Language Complexity and Speech Recognition Accuracy: Orthographic Complexity Hurts, Phonological Complexity Doesn't",
+      "authors": [
+        "Chihiro Taguchi",
+        "David Chiang"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Steering Llama 2 via Contrastive Activation Addition",
+      "authors": [
+        "Nina Rimsky",
+        "Nick Gabrieli",
+        "Julian Schulz",
+        "Meg Tong",
+        "Evan J Hubinger",
+        "Alexander Matt Turner"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "EconAgent: Large Language Model-Empowered Agents for Simulating Macroeconomic Activities",
+      "authors": [
+        "Nian Li",
+        "Chen Gao",
+        "Mingyu Li",
+        "Yong Li",
+        "Qingmin Liao"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "M4LE: A Multi-Ability Multi-Range Multi-Task Multi-Domain Long-Context Evaluation Benchmark for Large Language Models",
+      "authors": [
+        "Wai-Chung Kwan",
+        "Xingshan Zeng",
+        "Yufei Wang",
+        "Yusen Sun",
+        "Liangyou Li",
+        "Yuxin Jiang",
+        "Lifeng Shang",
+        "Qun Liu",
+        "Kam-Fai Wong"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "CHECKWHY: Causal Fact Verification via Argument Structure",
+      "authors": [
+        "Jiasheng Si",
+        "Yibo Zhao",
+        "Yingjie Zhu",
+        "Haiyang Zhu",
+        "Wenpeng Lu",
+        "Deyu Zhou"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "On Efficient and Statistical Quality Estimation for Data Annotation",
+      "authors": [
+        "Jan-Christoph Klie",
+        "Juan Haladjian",
+        "Marc Kirchner",
+        "Rahul Nair"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Emulated Disalignment: Safety Alignment for Large Language Models May Backfire!",
+      "authors": [
+        "Zhanhui Zhou",
+        "Jie Liu",
+        "Zhichen Dong",
+        "Jiaheng Liu",
+        "Chao Yang",
+        "Wanli Ouyang",
+        "Yu Qiao"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "IndicLLMSuite: A Blueprint for Creating Pre-training and Fine-Tuning Datasets for Indian Languages",
+      "authors": [
+        "Mohammed Safi Ur Rahman Khan",
+        "Priyam Mehta",
+        "Ananth Sankar",
+        "Umashankar Kumaravelan",
+        "Sumanth Doddapaneni",
+        "Suriyaprasaad B",
+        "Varun Balan G",
+        "Sparsh Jain",
+        "Anoop Kunchukuttan",
+        "Pratyush Kumar",
+        "Raj Dabre",
+        "Mitesh M Khapra"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "MultiPICo: Multilingual Perspectivist Irony Corpus",
+      "authors": [
+        "Silvia Casola",
+        "Simona Frenda",
+        "Soda Marem Lo",
+        "Erhan Sezerer",
+        "Antonio Uva",
+        "Valerio Basile",
+        "Cristina Bosco",
+        "Alessandro Pedrani",
+        "Chiara Rubagotti",
+        "Viviana Patti",
+        "Davide Bernardi"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "MMToM-QA: Multimodal Theory of Mind Question Answering",
+      "authors": [
+        "Chuanyang Jin",
+        "Yutong Wu",
+        "Jing Cao",
+        "Jiannan Xiang",
+        "Yen-Ling Kuo",
+        "Zhiting Hu",
+        "Tomer Ullman",
+        "Antonio Torralba",
+        "Joshua B. Tenenbaum",
+        "Tianmin Shu"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "MAP's not dead yet: Uncovering true language model modes by conditioning away degeneracy",
+      "authors": [
+        "Davis Yoshida",
+        "Kartik Goyal",
+        "Kevin Gimpel"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "NounAtlas: Filling the Gap in Nominal Semantic Role Labeling",
+      "authors": [
+        "Roberto Navigli",
+        "Marco Lo Pinto",
+        "Pasquale Silvestri",
+        "Dennis Rotondi",
+        "Simone Ciciliano",
+        "Alessandro Scirè"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "The Earth is Flat because…: Investigating LLMs' Belief towards Misinformation via Persuasive Conversation",
+      "authors": [
+        "Rongwu Xu",
+        "Brian S. Lin",
+        "Shujian Yang",
+        "Tianqi Zhang",
+        "Weiyan Shi",
+        "Tianwei Zhang",
+        "Zhixuan Fang",
+        "Wei Xu",
+        "Han Qiu"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Let's Go Real Talk: Spoken Dialogue Model for Face-to-Face Conversation",
+      "authors": [
+        "Se Jin Park",
+        "Chae Won Kim",
+        "Hyeongseop Rha",
+        "Minsu Kim",
+        "Joanna Hong",
+        "Jeonghun Yeo",
+        "Yong Man Ro"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Word Embeddings Are Steers for Language Models",
+      "authors": [
+        "Chi Han",
+        "Jialiang Xu",
+        "Manling Li",
+        "Yi Fung",
+        "Chenkai Sun",
+        "Nan Jiang",
+        "Tarek F. Abdelzaher",
+        "Heng Ji"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.aclweb.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "test_of_time",
+      "title": "Measures of Distributional Similarity",
+      "authors": [
+        "Lillian Lee"
+      ],
+      "year_work": 1999,
+      "source_url": "https://www.aclweb.org/portal/content/announcement-2024-acl-test-time-paper-award",
+      "note": "25-year test of time award (ACL 1999)"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2024,
+      "award": "test_of_time",
+      "title": "GloVe: Global Vectors for Word Representation",
+      "authors": [
+        "Jeffrey Pennington",
+        "Richard Socher",
+        "Christopher Manning"
+      ],
+      "year_work": 2014,
+      "source_url": "https://www.aclweb.org/portal/content/announcement-2024-acl-test-time-paper-award",
+      "note": "10-year test of time award (EMNLP 2014)"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "best_paper",
+      "title": "A Theory of Response Sampling in LLMs: Part Descriptive and Part Prescriptive",
+      "authors": [
+        "Sarath Sivaprasad",
+        "Pramod Kaushik",
+        "Sahar Abdelnabi",
+        "Mario Fritz"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "best paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "best_paper",
+      "title": "Fairness through Difference Awareness: Measuring Desired Group Discrimination in LLMs",
+      "authors": [
+        "Angelina Wang",
+        "Michelle Phan",
+        "Daniel E. Ho",
+        "Sanmi Koyejo"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "best paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "best_paper",
+      "title": "Language Models Resist Alignment: Evidence From Data Compression",
+      "authors": [
+        "Jiaming Ji",
+        "Kaile Wang",
+        "Tianyi Qiu",
+        "Boyuan Chen",
+        "Jiayi Zhou",
+        "Changye Li",
+        "Hantao Lou",
+        "Juntao Dai",
+        "Yunhuai Liu",
+        "Yaodong Yang"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "best paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "best_paper",
+      "title": "Native Sparse Attention: Hardware-Aligned and Natively Trainable Sparse Attention",
+      "authors": [
+        "Jingyang Yuan",
+        "Huazuo Gao",
+        "Damai Dai",
+        "Junyu Luo",
+        "Liang Zhao",
+        "Zhengyan Zhang",
+        "Zhenda Xie",
+        "Y. X. Wei",
+        "Lean Wang",
+        "Zhiping Xiao",
+        "Yuqing Wang",
+        "Chong Ruan",
+        "Ming Zhang",
+        "Wenfeng Liang",
+        "Wangding Zeng"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "best paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "best_paper",
+      "title": "AfriMed-QA: A Pan-African, Multi-Specialty, Medical Question-Answering Benchmark Dataset",
+      "authors": [
+        "Charles Nimo",
+        "Tobi Olatunji",
+        "Abraham Toluwase Owodunni",
+        "Tassallah Abdullahi",
+        "Emmanuel Ayodele",
+        "Mardhiyah Sanni",
+        "Ezinwanne C. Aka",
+        "Folafunmi Omofoye",
+        "Foutse Yuehgoh",
+        "Timothy Faniran",
+        "Bonaventure F. P. Dossou",
+        "Moshood O. Yekini",
+        "Jonas Kemp",
+        "Katherine A Heller",
+        "Jude Chidubem Omeke",
+        "Chidi Asuzu MD",
+        "Naome A Etori",
+        "Aïmérou Ndiaye",
+        "Ifeoma Okoh",
+        "Evans Doe Ocansey",
+        "Wendy Kinara",
+        "Michael Best",
+        "Irfan Essa",
+        "Stephen Edward Moore",
+        "Chris Fourie",
+        "Mercy Nyamewaa Asiedu"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "best social impact paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "best_paper",
+      "title": "The AI Gap: How Socioeconomic Status Affects Language Technology Interactions",
+      "authors": [
+        "Elisa Bassignana",
+        "Amanda Cercas Curry",
+        "Dirk Hovy"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "best social impact paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "best_paper",
+      "title": "Are Rules Meant to be Broken? Understanding Multilingual Moral Reasoning as a Computational Pipeline with UniMoral",
+      "authors": [
+        "Shivani Kumar",
+        "David Jurgens"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "best resource paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "best_paper",
+      "title": "BRIGHTER: BRIdging the Gap in Human-Annotated Textual Emotion Recognition Datasets for 28 Languages",
+      "authors": [
+        "Shamsuddeen Hassan Muhammad",
+        "Nedjma Ousidhoum",
+        "Idris Abdulmumin",
+        "Jan Philip Wahle",
+        "Terry Ruas",
+        "Meriem Beloucif",
+        "Christine de Kock",
+        "Nirmal Surange",
+        "Daniela Teodorescu",
+        "Ibrahim Said Ahmad",
+        "David Ifeoluwa Adelani",
+        "Alham Fikri Aji",
+        "Felermino D. M. A. Ali",
+        "Ilseyar Alimova",
+        "Vladimir Araujo",
+        "Nikolay Babakov",
+        "Naomi Baes",
+        "Ana-Maria Bucur",
+        "Andiswa Bukula",
+        "Guanqun Cao",
+        "Rodrigo Tufiño",
+        "Rendi Chevi",
+        "Chiamaka Ijeoma Chukwuneke",
+        "Alexandra Ciobotaru",
+        "Daryna Dementieva",
+        "Murja Sani Gadanya",
+        "Robert Geislinger",
+        "Bela Gipp",
+        "Oumaima Hourrane",
+        "Oana Ignat",
+        "Falalu Ibrahim Lawan",
+        "Rooweither Mabuya",
+        "Rahmad Mahendra",
+        "Vukosi Marivate",
+        "Alexander Panchenko",
+        "Andrew Piper",
+        "Charles Henrique Porto Ferreira",
+        "Vitaly Protasov",
+        "Samuel Rutunda",
+        "Manish Shrivastava",
+        "Aura Cristina Udrea",
+        "Lilian Diana Awuor Wanzare",
+        "Sophie Wu",
+        "Florian Valentin Wunderlich",
+        "Hanif Muhammad Zhafran",
+        "Tianhui Zhang",
+        "Yi Zhou",
+        "Saif M. Mohammad"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "best resource paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "best_paper",
+      "title": "Palm: A Culturally Inclusive and Linguistically Diverse Dataset for Arabic LLMs",
+      "authors": [
+        "Fakhraddin Alwajih",
+        "Abdellah EL MEKKI",
+        "Samar Mohamed Magdy",
+        "AbdelRahim A. Elmadany",
+        "OMER NACAR",
+        "El Moatez Billah Nagoudi",
+        "Reem Abdel-Salam",
+        "Hanin atwany",
+        "Youssef Nafea",
+        "Abdulfattah Mohammed Yahya",
+        "Rahaf Alhamouri",
+        "Hamzah A. Alsayadi",
+        "Hiba Zayed",
+        "Sara Shatnawi",
+        "Serry Sibaee",
+        "Yasir ECH-CHAMMAKHY",
+        "Walid Al-Dhabyani",
+        "Marwa Mohamed Ali",
+        "Imen JARRAYA",
+        "Ahmed Oumar El-Shangiti",
+        "Aisha Alraeesi",
+        "Mohammed Anwar AL-Ghrawi",
+        "Abdulrahman S. Al-Batati",
+        "Elgizouli Mohamed",
+        "Noha Taha Elgindi",
+        "Muhammed Saeed",
+        "Houdaifa Atou",
+        "Issam AIT YAHIA",
+        "Abdelhak Bouayad",
+        "Mohammed Machrouh",
+        "AMAL MAKOUAR",
+        "Dania Alkawi",
+        "Mukhtar Mohamed",
+        "Safaa Taher Abdelfadil",
+        "Amine Ziad Ounnoughene",
+        "Anfel ROUABHIA",
+        "Rwaa Assi",
+        "Ahmed Sorkatti",
+        "Mohamedou cheikh tourad",
+        "Anis Koubaa",
+        "Ismail Berrada",
+        "Mustafa Jarrar",
+        "Shady Shehata",
+        "Muhammad Abdul-Mageed"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "best resource paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "best_paper",
+      "title": "MaCP: Minimal yet Mighty Adaptation via Hierarchical Cosine Projection",
+      "authors": [
+        "Yixian Shen",
+        "Qi Bi",
+        "Jia-Hong Huang",
+        "Hongyi Zhu",
+        "Andy D. Pimentel",
+        "Anuj Pathania"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "best theme paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "best_paper",
+      "title": "Meta-rater: A Multi-dimensional Data Selection Method for Pre-training Language Models",
+      "authors": [
+        "Xinlin Zhuang",
+        "Jiahui Peng",
+        "Ren Ma",
+        "Yinfan Wang",
+        "Tianyi Bai",
+        "Xingjian Wei",
+        "Qiu Jiantao",
+        "Chi Zhang",
+        "Ying Qian",
+        "Conghui He"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "best theme paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "best_paper",
+      "title": "SubLIME: Subset Selection via Rank Correlation Prediction for Data-Efficient LLM Evaluation",
+      "authors": [
+        "Gayathri Saranathan",
+        "Cong Xu",
+        "Mahammad Parwez Alam",
+        "Tarun Kumar",
+        "Martin Foltin",
+        "Soon Yee Wong",
+        "Suparna Bhattacharya"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "best theme paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "A New Formulation of Zipf's Meaning-Frequency Law through Contextual Diversity",
+      "authors": [
+        "Ryo Nagata",
+        "Kumiko Tanaka-Ishii"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "All That Glitters is Not Novel: Plagiarism in AI Generated Research",
+      "authors": [
+        "Tarun Gupta",
+        "Danish Pruthi"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "Between Circuits and Chomsky: Pre-pretraining on Formal Languages Imparts Linguistic Biases",
+      "authors": [
+        "Michael Y. Hu",
+        "Jackson Petty",
+        "Chuan Shi",
+        "William Merrill",
+        "Tal Linzen"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "Beyond N-Grams: Rethinking Evaluation Metrics and Strategies for Multilingual Abstractive Summarization",
+      "authors": [
+        "Itai Mondshine",
+        "Tzuf Paz-Argaman",
+        "Reut Tsarfaty"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "Bridging the Language Gaps in Large Language Models with Inference-Time Cross-Lingual Intervention",
+      "authors": [
+        "Weixuan Wang",
+        "Minghao Wu",
+        "Barry Haddow",
+        "Alexandra Birch"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "Byte Latent Transformer: Patches Scale Better Than Tokens",
+      "authors": [
+        "Artidoro Pagnoni",
+        "Ramakanth Pasunuru",
+        "Pedro Rodriguez",
+        "John Nguyen",
+        "Benjamin Muller",
+        "Margaret Li",
+        "Chunting Zhou",
+        "Lili Yu",
+        "Jason E Weston",
+        "Luke Zettlemoyer",
+        "Gargi Ghosh",
+        "Mike Lewis",
+        "Ari Holtzman",
+        "Srini Iyer"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "Capability Salience Vector: Fine-grained Alignment of Loss and Capabilities for Downstream Task Scaling Law",
+      "authors": [
+        "Qiming Ge",
+        "Shuhao Xing",
+        "Songyang Gao",
+        "Yunhua Zhou",
+        "Yicheng Zou",
+        "Songyang Zhang",
+        "Zhi Chen",
+        "Hang Yan",
+        "Qi Zhang",
+        "Qipeng Guo",
+        "Kai Chen"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "From Real to Synthetic: Synthesizing Millions of Diversified and Complicated User Instructions with Attributed Grounding",
+      "authors": [
+        "Chiwei Zhu",
+        "Benfeng Xu",
+        "Xiaorui Wang",
+        "Zhendong Mao"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "HALOGEN: Fantastic LLM Hallucinations and Where to Find Them",
+      "authors": [
+        "Abhilasha Ravichander",
+        "Shrusti Ghela",
+        "David Wadden",
+        "Yejin Choi"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "HateDay: Insights from a Global Hate Speech Dataset Representative of a Day on Twitter",
+      "authors": [
+        "Manuel Tonneau",
+        "Diyi Liu",
+        "Niyati Malhotra",
+        "Scott A. Hale",
+        "Samuel Fraiberger",
+        "Victor Orozco-Olvera",
+        "Paul Röttger"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "IOT: Embedding Standardization Method Towards Zero Modality Gap",
+      "authors": [
+        "Na Min An",
+        "Eunki Kim",
+        "James Thorne",
+        "Hyunjung Shim"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "IndicSynth: A Large-Scale Multilingual Synthetic Speech Dataset for Low-Resource Indian Languages",
+      "authors": [
+        "Divya V Sharma",
+        "Vijval Ekbote",
+        "Anubha Gupta"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "LaTIM: Measuring Latent Token-to-Token Interactions in Mamba Models",
+      "authors": [
+        "Hugo Pitorro",
+        "Marcos Vinicius Treviso"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "Llama See, Llama Do: A Mechanistic Perspective on Contextual Entrainment and Distraction in LLMs",
+      "authors": [
+        "Jingcheng Niu",
+        "Xingdi Yuan",
+        "Tong Wang",
+        "Hamidreza Saghir",
+        "Amir H. Abdi"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "LLMs know their vulnerabilities: Uncover Safety Gaps through Natural Distribution Shifts",
+      "authors": [
+        "Qibing Ren",
+        "Hao Li",
+        "Dongrui Liu",
+        "Zhanxu Xie",
+        "Xiaoya Lu",
+        "Yu Qiao",
+        "Lei Sha",
+        "Junchi Yan",
+        "Lizhuang Ma",
+        "Jing Shao"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "Mapping 1,000+ Language Models via the Log-Likelihood Vector",
+      "authors": [
+        "Momose Oyama",
+        "Hiroaki Yamagiwa",
+        "Yusuke Takase",
+        "Hidetoshi Shimodaira"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "MiniLongBench: The Low-cost Long Context Understanding Benchmark for Large Language Models",
+      "authors": [
+        "Zhongzhan Huang",
+        "Guoming Ling",
+        "Shanshan Zhong",
+        "Hefeng Wu",
+        "Liang Lin"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "PARME: Parallel Corpora for Low-Resourced Middle Eastern Languages",
+      "authors": [
+        "Sina Ahmadi",
+        "Rico Sennrich",
+        "Erfan Karami",
+        "Ako Marani",
+        "Parviz Fekrazad",
+        "Gholamreza Akbarzadeh Baghban",
+        "Hanah Hadi",
+        "Semko Heidari",
+        "Mahîr Dogan",
+        "Pedram Asadi",
+        "Dashne Bashir",
+        "Mohammad Amin Ghodrati",
+        "Kourosh Amini",
+        "Zeynab Ashourinezhad",
+        "Mana Baladi",
+        "Farshid Ezzati",
+        "Alireza Ghasemifar",
+        "Daryoush Hosseinpour",
+        "Behrooz Abbaszadeh",
+        "Amin Hassanpour",
+        "Bahaddin jalal hamaamin",
+        "Saya Kamal Hama",
+        "Ardeshir Mousavi",
+        "Sarko Nazir Hussein",
+        "Isar Nejadgholi",
+        "Mehmet Ölmez",
+        "Horam Osmanpour",
+        "Rashid Roshan Ramezani",
+        "Aryan Sediq Aziz",
+        "Ali Salehi",
+        "Mohammadreza Yadegari",
+        "Kewyar Yadegari",
+        "Sedighe Zamani Roodsari"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "Past Meets Present: Creating Historical Analogy with Large Language Models",
+      "authors": [
+        "Nianqi Li",
+        "Siyu Yuan",
+        "Jiangjie Chen",
+        "Jiaqing Liang",
+        "Feng Wei",
+        "Zujie Liang",
+        "Deqing Yang",
+        "Yanghua Xiao"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "Pre³: Enabling Deterministic Pushdown Automata for Faster Structured LLM Generation",
+      "authors": [
+        "Junyi Chen",
+        "Shihao Bai",
+        "Zaijun Wang",
+        "Siyu Wu",
+        "Chuheng Du",
+        "Hailong Yang",
+        "Ruihao Gong",
+        "Shengzhong Liu",
+        "Fan Wu",
+        "Guihai Chen"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "Rethinking the Role of Prompting Strategies in LLM Test-Time Scaling: A Perspective of Probability Theory",
+      "authors": [
+        "Yexiang Liu",
+        "Zekun Li",
+        "Zhi Fang",
+        "Nan Xu",
+        "Ran He",
+        "Tieniu Tan"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "Revisiting Compositional Generalization Capability of Large Language Models Considering Instruction Following Ability",
+      "authors": [
+        "Yusuke Sakai",
+        "Hidetaka Kamigaito",
+        "Taro Watanabe"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "Toward Automatic Discovery of a Canine Phonetic Alphabet",
+      "authors": [
+        "Theron S. Wang",
+        "Xingyuan Li",
+        "Hridayesh Lekhak",
+        "Tuan Minh Dang",
+        "Mengyue Wu",
+        "Kenny Q. Zhu"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "Towards the Law of Capacity Gap in Distilling Language Models",
+      "authors": [
+        "Chen Zhang",
+        "Qiuchi Li",
+        "Dawei Song",
+        "Zheyu Ye",
+        "Yan Gao",
+        "Yao Hu"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "Turning Trash into Treasure: Accelerating Inference of Large Language Models with Token Recycling",
+      "authors": [
+        "Xianzhen Luo",
+        "Yixuan Wang",
+        "Qingfu Zhu",
+        "Zhiming Zhang",
+        "Xuanyu Zhang",
+        "Qing Yang",
+        "Dongliang Xu"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "Typology-Guided Adaptation for African NLP",
+      "authors": [
+        "Ndapa Nakashole"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "test_of_time",
+      "title": "Automatic Labeling of Semantic Roles",
+      "authors": [
+        "Daniel Gildea",
+        "Daniel Jurafsky"
+      ],
+      "year_work": 2000,
+      "source_url": "https://www.aclweb.org/portal/content/announcement-2025-acl-test-time-paper-award",
+      "note": "25-year test of time"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "test_of_time",
+      "title": "Effective Approaches to Attention-based Neural Machine Translation",
+      "authors": [
+        "Minh-Thang Luong",
+        "Hieu Pham",
+        "Christopher D. Manning"
+      ],
+      "year_work": 2015,
+      "source_url": "https://www.aclweb.org/portal/content/announcement-2025-acl-test-time-paper-award",
+      "note": "10-year test of time"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "test_of_time",
+      "title": "Weakly Supervised Learning of Semantic Parsers for Mapping Instructions to Actions",
+      "authors": [
+        "Yoav Artzi",
+        "Luke Zettlemoyer"
+      ],
+      "year_work": 2013,
+      "source_url": "https://transacl.org/index.php/tacl/announcement/view/117",
+      "note": "TACL test of time"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "best_paper",
+      "title": "Reading Subtext: Evaluating Large Language Models on Short Story Summarization with Writers",
+      "authors": [
+        "Melanie Subbiah",
+        "Sean Zhang",
+        "Lydia B. Chilton",
+        "Kathleen McKeown"
+      ],
+      "year_work": 2025,
+      "source_url": "https://transacl.org/index.php/tacl/announcement/view/117",
+      "note": "best TACL paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "best_paper",
+      "title": "Speed Without Sacrifice: Fine-Tuning Language Models with Medusa and Knowledge Distillation in Travel Applications",
+      "authors": [
+        "Daniel Zagyva",
+        "Emmanouil Stergiadis",
+        "Laurens van der Maas",
+        "Aleksandra Dokic",
+        "Eran Fainman",
+        "Ilya Gusev",
+        "Moran Beladev"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "industry track best paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "Boosting Decision-Making Ability of LLMs with Speculative Reward Model Cost-Effectively",
+      "authors": [
+        "Jiawei Gu",
+        "Shangsong Liang"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "industry track honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "NeKo: Cross-Modality Post-Recognition Error Correction with Tasks-Guided Mixture-of-Experts Language Model",
+      "authors": [
+        "Yen-Ting Lin",
+        "Zhehuai Chen",
+        "Piotr Zelasko",
+        "Zhen Wan",
+        "Xuesong Yang",
+        "Zih-Ching Chen",
+        "Krishna C Puvvada",
+        "Ke Hu",
+        "Szu-Wei Fu",
+        "Jun Wei Chiu",
+        "Jagadeesh Balam",
+        "Boris Ginsburg",
+        "Yu-Chiang Frank Wang",
+        "Chao-Han Huck Yang"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.aclweb.org/program/awards/",
+      "note": "industry track honorable mention"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2021,
+      "award": "best_paper",
+      "title": "Visually Grounded Reasoning across Languages and Cultures",
+      "authors": [
+        "Fangyu Liu",
+        "Emanuele Bugliarello",
+        "Edoardo Maria Ponti",
+        "Siva Reddy",
+        "Nigel Collier",
+        "Desmond Elliott"
+      ],
+      "year_work": 2021,
+      "source_url": "http://web.archive.org/web/20211110143038/https://2021.emnlp.org/blog/2021-10-29-best-paper-awards/",
+      "note": "best long paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2021,
+      "award": "best_paper",
+      "title": "CHoRaL: Collecting Humor Reaction Labels from Millions of Social Media Users",
+      "authors": [
+        "Zixiaofan Yang",
+        "Shayan Hooshmand",
+        "Julia Hirschberg"
+      ],
+      "year_work": 2021,
+      "source_url": "http://web.archive.org/web/20211110143038/https://2021.emnlp.org/blog/2021-10-29-best-paper-awards/",
+      "note": "best short paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2021,
+      "award": "honorable_mention",
+      "title": "MindCraft: Theory of Mind Modeling for Situated Dialogue in Collaborative Tasks",
+      "authors": [
+        "Cristian-Paul Bara",
+        "Sky CH-Wang",
+        "Joyce Chai"
+      ],
+      "year_work": 2021,
+      "source_url": "http://web.archive.org/web/20211110143038/https://2021.emnlp.org/blog/2021-10-29-best-paper-awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2021,
+      "award": "honorable_mention",
+      "title": "SituatedQA: Incorporating Extra-Linguistic Contexts into QA",
+      "authors": [
+        "Michael J.Q. Zhang",
+        "Eunsol Choi"
+      ],
+      "year_work": 2021,
+      "source_url": "http://web.archive.org/web/20211110143038/https://2021.emnlp.org/blog/2021-10-29-best-paper-awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2021,
+      "award": "honorable_mention",
+      "title": "When Attention Meets Fast Recurrence: Training Language Models with Reduced Compute",
+      "authors": [
+        "Tao Lei"
+      ],
+      "year_work": 2021,
+      "source_url": "http://web.archive.org/web/20211110143038/https://2021.emnlp.org/blog/2021-10-29-best-paper-awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2021,
+      "award": "honorable_mention",
+      "title": "Shortcutted Commonsense: Data Spuriousness in Deep Learning of Commonsense Reasoning",
+      "authors": [
+        "Ruben Branco",
+        "António Branco",
+        "João António Rodrigues",
+        "João Ricardo Silva"
+      ],
+      "year_work": 2021,
+      "source_url": "http://web.archive.org/web/20211110143038/https://2021.emnlp.org/blog/2021-10-29-best-paper-awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2022,
+      "award": "best_paper",
+      "title": "Abstract Visual Reasoning with Tangram Shapes",
+      "authors": [
+        "Anya Ji",
+        "Noriyuki Kojima",
+        "Noah Rush",
+        "Alane Suhr",
+        "Wai Keen Vong",
+        "Robert D. Hawkins",
+        "Yoav Artzi"
+      ],
+      "year_work": 2022,
+      "source_url": "https://www.jiqizhixin.com/articles/2022-12-13-4",
+      "note": "best long paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2022,
+      "award": "best_paper",
+      "title": "Topic-Regularized Authorship Representation Learning",
+      "authors": [
+        "Jitkapat Sawatphol",
+        "Nonthakit Chaiwong",
+        "Can Udomcharoenchaikit",
+        "Sarana Nutanong"
+      ],
+      "year_work": 2022,
+      "source_url": "https://www.jiqizhixin.com/articles/2022-12-13-4",
+      "note": "best short paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2022,
+      "award": "honorable_mention",
+      "title": "Interpreting Language Models with Contrastive Explanations",
+      "authors": [
+        "Kayo Yin",
+        "Graham Neubig"
+      ],
+      "year_work": 2022,
+      "source_url": "https://www.jiqizhixin.com/articles/2022-12-13-4",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "best_paper",
+      "title": "Label Words are Anchors: An Information Flow Perspective for Understanding In-Context Learning",
+      "authors": [
+        "Lean Wang",
+        "Lei Li",
+        "Damai Dai",
+        "Deli Chen",
+        "Hao Zhou",
+        "Fandong Meng",
+        "Jie Zhou",
+        "Xu Sun"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "best long paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "best_paper",
+      "title": "Faster Minimum Bayes Risk Decoding with Confidence-based Pruning",
+      "authors": [
+        "Julius Cheng",
+        "Andreas Vlachos"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "best short paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "best_paper",
+      "title": "Ignore This Title and HackAPrompt: Exposing Systemic Vulnerabilities of LLMs Through a Global Prompt Hacking Competition",
+      "authors": [
+        "Sander V Schulhoff",
+        "Jeremy Pinto",
+        "Anaum Khan",
+        "Louis-François Bouchard",
+        "Chenglei Si",
+        "Svetlina Anati",
+        "Valen Tagliabue",
+        "Anson Liu Kost",
+        "Christopher R Carnahan",
+        "Jordan Lee Boyd-Graber"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "best theme paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "best_paper",
+      "title": "Personalized Dense Retrieval on Global Index for Voice-enabled Conversational Systems",
+      "authors": [
+        "Masha Belyi",
+        "Charlotte Dzialo",
+        "Chaitanya Dwivedi",
+        "Prajit Reddy Muppidi",
+        "Kanna Shimizu"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "best industry paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "LINC: A Neurosymbolic Approach for Logical Reasoning by Combining Language Models with First-Order Logic Provers",
+      "authors": [
+        "Theo X. Olausson",
+        "Alex Gu",
+        "Ben Lipkin",
+        "Cedegao E. Zhang",
+        "Armando Solar-Lezama",
+        "Joshua B. Tenenbaum",
+        "Roger P. Levy"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Toward a Critical Toponymy Framework for Named Entity Recognition: A Case Study of Airbnb in New York City",
+      "authors": [
+        "Mikael Brunila",
+        "Jack LaViolette",
+        "Sky CH-Wang",
+        "Priyanka Verma",
+        "Clara Féré",
+        "Grant McKenzie"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "SODA: Million-scale Dialogue Distillation with Social Commonsense Contextualization",
+      "authors": [
+        "Hyunwoo Kim",
+        "Jack Hessel",
+        "Liwei Jiang",
+        "Peter West",
+        "Ximing Lu",
+        "Youngjae Yu",
+        "Pei Zhou",
+        "Ronan Le Bras",
+        "Malihe Alikhani",
+        "Gunhee Kim",
+        "Maarten Sap",
+        "Yejin Choi"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Incorporating Worker Perspectives into MTurk Annotation Practices for NLP",
+      "authors": [
+        "Olivia Huang",
+        "Eve Fleisig",
+        "Dan Klein"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Physician Detection of Clinical Harm in Machine Translation: Quality Estimation Aids in Reliance and Backtranslation Identifies Critical Errors",
+      "authors": [
+        "Nikita Mehandru",
+        "Sweta Agrawal",
+        "Yimin Xiao",
+        "Ge Gao",
+        "Elaine C Khoong",
+        "Marine Carpuat",
+        "Niloufar Salehi"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Preserving Knowledge Invariance: Rethinking Robustness Evaluation of Open Information Extraction",
+      "authors": [
+        "Ji Qi",
+        "Chuchun Zhang",
+        "Xiaozhi Wang",
+        "Kaisheng Zeng",
+        "Jifan Yu",
+        "Jinxin Liu",
+        "Lei Hou",
+        "Juanzi Li",
+        "Xu Bin"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agents",
+      "authors": [
+        "Weiwei Sun",
+        "Lingyong Yan",
+        "Xinyu Ma",
+        "Shuaiqiang Wang",
+        "Pengjie Ren",
+        "Zhumin Chen",
+        "Dawei Yin",
+        "Zhaochun Ren"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Unraveling Feature Extraction Mechanisms in Neural Networks",
+      "authors": [
+        "Xiaobing Sun",
+        "Jiaxi Li",
+        "Wei Lu"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "ViPE: Visualise Pretty-much Everything",
+      "authors": [
+        "Hassan Shahmohammadi",
+        "Adhiraj Ghosh",
+        "Hendrik Lensch"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Revisiting the Optimality of Word Lengths",
+      "authors": [
+        "Tiago Pimentel",
+        "Clara Meister",
+        "Ethan Wilcox",
+        "Kyle Mahowald",
+        "Ryan Cotterell"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Language Model Quality Correlates with Psychometric Predictive Power in Multiple Languages",
+      "authors": [
+        "Ethan Wilcox",
+        "Clara Meister",
+        "Ryan Cotterell",
+        "Tiago Pimentel"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "FedID: Federated Interactive Distillation for Large-Scale Pretraining Language Models",
+      "authors": [
+        "Xinge Ma",
+        "Jiangming Liu",
+        "Jin Wang",
+        "Xuejie Zhang"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Ties Matter: Meta-Evaluating Modern Metrics with Pairwise Accuracy and Tie Calibration",
+      "authors": [
+        "Daniel Deutsch",
+        "George Foster",
+        "Markus Freitag"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Cross-Lingual Consistency of Factual Knowledge in Multilingual Language Models",
+      "authors": [
+        "Jirui Qi",
+        "Raquel Fernández",
+        "Arianna Bisazza"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Look-back Decoding for Open-Ended Text Generation",
+      "authors": [
+        "Nan Xu",
+        "Chunting Zhou",
+        "Asli Celikyilmaz",
+        "Xuezhe Ma"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Text Embeddings Reveal (Almost) As Much As Text",
+      "authors": [
+        "John Xavier Morris",
+        "Volodymyr Kuleshov",
+        "Vitaly Shmatikov",
+        "Alexander M Rush"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Understanding Compositional Data Augmentation in Typologically Diverse Morphological Inflection",
+      "authors": [
+        "Farhan Samir",
+        "Miikka Silfverberg"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "IfQA: A Dataset for Open-domain Question Answering under Counterfactual Presuppositions",
+      "authors": [
+        "Wenhao Yu",
+        "Meng Jiang",
+        "Peter Clark",
+        "Ashish Sabharwal"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Counter Turing Test (CT2): AI-Generated Text Detection is Not as Easy as You May Think - Introducing AI Detectability Index (ADI)",
+      "authors": [
+        "Megha Chakraborty",
+        "S.M Towhidul Islam Tonmoy",
+        "S M Mehedi Zaman",
+        "Shreya Gautam",
+        "Tanay Kumar",
+        "Krish Sharma",
+        "Niyar R Barman",
+        "Chandan Gupta",
+        "Vinija Jain",
+        "Aman Chadha",
+        "Amit P. Sheth",
+        "Amitava Das"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Bridging Continuous and Discrete Spaces: Interpretable Sentence Representation Learning via Compositional Operations",
+      "authors": [
+        "James Y. Huang",
+        "Wenlin Yao",
+        "Kaiqiang Song",
+        "Hongming Zhang",
+        "Muhao Chen",
+        "Dong Yu"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "The Sentiment Problem: A Critical Survey towards Deconstructing Sentiment Analysis",
+      "authors": [
+        "Pranav Narayanan Venkit",
+        "Mukund Srinath",
+        "Sanjana Gautam",
+        "Saranya Venkatraman",
+        "Vipul Gupta",
+        "Rebecca J. Passonneau",
+        "Shomir Wilson"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Homophone Disambiguation Reveals Patterns of Context Mixing in Speech Transformers",
+      "authors": [
+        "Hosein Mohebbi",
+        "Grzegorz Chrupała",
+        "Willem Zuidema",
+        "Afra Alishahi"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Background Summarization of Event Timelines",
+      "authors": [
+        "Adithya Pratapa",
+        "Kevin Small",
+        "Markus Dreyer"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Linear-Time Modeling of Linguistic Structure: An Order-Theoretic Perspective",
+      "authors": [
+        "Tianyu Liu",
+        "Afra Amini",
+        "Mrinmaya Sachan",
+        "Ryan Cotterell"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2023,
+      "award": "honorable_mention",
+      "title": "Joint Dialogue Topic Segmentation and Categorization: A Case Study on Clinical Spoken Conversations",
+      "authors": [
+        "Zhengyuan Liu",
+        "Siti Umairah Md Salleh",
+        "Hong Choon Oh",
+        "Pavitra Krishnaswamy",
+        "Nancy Chen"
+      ],
+      "year_work": 2023,
+      "source_url": "https://2023.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "best_paper",
+      "title": "An image speaks a thousand words, but can everyone listen? On image transcreation for cultural relevance",
+      "authors": [
+        "Simran Khanuja",
+        "Sathyanarayanan Ramamoorthy",
+        "Yueqi Song",
+        "Graham Neubig"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "best paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "best_paper",
+      "title": "Towards Robust Speech Representation Learning for Thousands of Languages",
+      "authors": [
+        "William Chen",
+        "Wangyou Zhang",
+        "Yifan Peng",
+        "Xinjian Li",
+        "Jinchuan Tian",
+        "Jiatong Shi",
+        "Xuankai Chang",
+        "Soumi Maiti",
+        "Karen Livescu",
+        "Shinji Watanabe"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "best paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "best_paper",
+      "title": "Backward Lens: Projecting Language Model Gradients into the Vocabulary Space",
+      "authors": [
+        "Shahar Katz",
+        "Yonatan Belinkov",
+        "Mor Geva",
+        "Lior Wolf"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "best paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "best_paper",
+      "title": "Pretraining Data Detection for Large Language Models: A Divergence-based Calibration Method",
+      "authors": [
+        "Weichao Zhang",
+        "Ruqing Zhang",
+        "Jiafeng Guo",
+        "Maarten de Rijke",
+        "Yixing Fan",
+        "Xueqi Cheng"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "best paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "best_paper",
+      "title": "CoGen: Learning from Feedback with Coupled Comprehension and Generation",
+      "authors": [
+        "Mustafa Omer Gul",
+        "Yoav Artzi"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "best paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Fishing for Magikarp: Automatically Detecting Under-trained Tokens in Large Language Models",
+      "authors": [
+        "Sander Land",
+        "Max Bartolo"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Learning to Retrieve Iteratively for In-Context Learning",
+      "authors": [
+        "Yunmo Chen",
+        "Tongfei Chen",
+        "Harsh Jhamtani",
+        "Patrick Xia",
+        "Richard Shin",
+        "Jason Eisner",
+        "Benjamin Van Durme"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Measuring Psychological Depth in Language Models",
+      "authors": [
+        "Fabrice Y Harel-Canada",
+        "Hanyu Zhou",
+        "Sreya Muppalla",
+        "Zeynep Senahan Yildiz",
+        "Miryung Kim",
+        "Amit Sahai",
+        "Nanyun Peng"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Do LLMs Plan Like Human Writers? Comparing Journalist Coverage of Press Releases with LLMs",
+      "authors": [
+        "Alexander Spangher",
+        "Nanyun Peng",
+        "Sebastian Gehrmann",
+        "Mark Dredze"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Words Worth a Thousand Pictures: Measuring and Understanding Perceptual Variability in Text-to-Image Generation",
+      "authors": [
+        "Raphael Tang",
+        "Crystina Zhang",
+        "Lixinyu Xu",
+        "Yao Lu",
+        "Wenyan Li",
+        "Pontus Stenetorp",
+        "Jimmy Lin",
+        "Ferhan Ture"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Finding Blind Spots in Evaluator LLMs with Interpretable Checklists",
+      "authors": [
+        "Sumanth Doddapaneni",
+        "Mohammed Safi Ur Rahman Khan",
+        "Sshubam Verma",
+        "Mitesh M Khapra"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "GoldCoin: Grounding Large Language Models in Privacy Laws via Contextual Integrity Theory",
+      "authors": [
+        "Wei Fan",
+        "Haoran Li",
+        "Zheye Deng",
+        "Weiqi Wang",
+        "Yangqiu Song"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Verification and Refinement of Natural Language Explanations through LLM-Symbolic Theorem Proving",
+      "authors": [
+        "Xin Quan",
+        "Marco Valentino",
+        "Louise A. Dennis",
+        "Andre Freitas"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "The Zeno's Paradox of 'Low-Resource' Languages",
+      "authors": [
+        "Hellina Hailu Nigatu",
+        "Atnafu Lambebo Tonja",
+        "Benjamin Rosman",
+        "Thamar Solorio",
+        "Monojit Choudhury"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "When Is Multilinguality a Curse? Language Modeling for 250 High- and Low-Resource Languages",
+      "authors": [
+        "Tyler A. Chang",
+        "Catherine Arnett",
+        "Zhuowen Tu",
+        "Ben Bergen"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Language Models Learn Rare Phenomena from Less Rare Phenomena: The Case of the Missing AANNs",
+      "authors": [
+        "Kanishka Misra",
+        "Kyle Mahowald"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Fool Me Once? Contrasting Textual and Visual Explanations in a Clinical Decision-Support Setting",
+      "authors": [
+        "Maxime Guillaume Kayser",
+        "Bayar Menzat",
+        "Cornelius Emde",
+        "Bogdan Alexandru Bercean",
+        "Alex Novak",
+        "Abdalá Trinidad Espinosa Morgado",
+        "Bartlomiej Papiez",
+        "Susanne Gaube",
+        "Thomas Lukasiewicz",
+        "Oana-Maria Camburu"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Threshold-driven Pruning with Segmented Maximum Term Weights for Approximate Cluster-based Sparse Retrieval",
+      "authors": [
+        "Yifan Qiao",
+        "Parker Carlson",
+        "Shanxiu He",
+        "Yingrui Yang",
+        "Tao Yang"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Learning Planning-based Reasoning by Trajectories Collection and Process Reward Synthesizing",
+      "authors": [
+        "Fangkai Jiao",
+        "Chengwei Qin",
+        "Zhengyuan Liu",
+        "Nancy F. Chen",
+        "Shafiq Joty"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Are Large Language Models Capable of Generating Human-Level Narratives?",
+      "authors": [
+        "Yufei Tian",
+        "Tenghao Huang",
+        "Miri Liu",
+        "Derek Jiang",
+        "Alexander Spangher",
+        "Muhao Chen",
+        "Jonathan May",
+        "Nanyun Peng"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Formality is Favored: Unraveling the Learning Preferences of Large Language Models on Data with Conflicting Knowledge",
+      "authors": [
+        "Jiahuan Li",
+        "Yiqing Cao",
+        "Shujian Huang",
+        "Jiajun Chen"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "OATH-Frames: Characterizing Online Attitudes Towards Homelessness with LLM Assistants",
+      "authors": [
+        "Jaspreet Ranjit",
+        "Brihi Joshi",
+        "Rebecca Dorn",
+        "Laura Petry",
+        "Olga Koumoundouros",
+        "Jayne Bottarini",
+        "Peichen Liu",
+        "Eric Rice",
+        "Swabha Swayamdipta"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "SUPER: Evaluating Agents on Setting Up and Executing Tasks from Research Repositories",
+      "authors": [
+        "Ben Bogin",
+        "Kejuan Yang",
+        "Shashank Gupta",
+        "Kyle Richardson",
+        "Erin Bransom",
+        "Peter Clark",
+        "Ashish Sabharwal",
+        "Tushar Khot"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Towards Cross-Cultural Machine Translation with Retrieval-Augmented Generation from Multilingual Knowledge Graphs",
+      "authors": [
+        "Simone Conia",
+        "Daniel Lee",
+        "Min Li",
+        "Umar Farooq Minhas",
+        "Saloni Potdar",
+        "Yunyao Li"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "honorable_mention",
+      "title": "Which questions should I answer? Salience Prediction of Inquisitive Questions",
+      "authors": [
+        "Yating Wu",
+        "Ritika Rajesh Mangla",
+        "Alex Dimakis",
+        "Greg Durrett",
+        "Junyi Jessy Li"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "best_paper",
+      "title": "KidLM: Advancing Language Models for Children – Early Insights and Future Directions",
+      "authors": [
+        "Mir Tafseer Nayeem",
+        "Davood Rafiei"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "best resource paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "best_paper",
+      "title": "A User-Centric Multi-Intent Benchmark for Evaluating Large Language Models",
+      "authors": [
+        "Jiayin Wang",
+        "Fengran Mo",
+        "Weizhi Ma",
+        "Peijie Sun",
+        "Min Zhang",
+        "Jian-Yun Nie"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "best resource paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "best_paper",
+      "title": "What the Harm? Quantifying the Tangible Impact of Gender Bias in Machine Translation with a Human-centered Study",
+      "authors": [
+        "Beatrice Savoldi",
+        "Sara Papi",
+        "Matteo Negri",
+        "Ana Guerberof-Arenas",
+        "Luisa Bentivogli"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "social impact paper award"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "best_paper",
+      "title": "STOP! Benchmarking Large Language Models with Sensitivity Testing on Offensive Progressions",
+      "authors": [
+        "Robert Morabito",
+        "Sangmitra Madhusudan",
+        "Tyler McDonald",
+        "Ali Emami"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "social impact paper award"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "best_paper",
+      "title": "Twists, Humps, and Pebbles: Multilingual Speech Recognition Models Exhibit Gender Performance Gaps",
+      "authors": [
+        "Giuseppe Attanasio",
+        "Beatrice Savoldi",
+        "Dennis Fucci",
+        "Dirk Hovy"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "social impact paper award"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2024,
+      "award": "best_paper",
+      "title": "DEM: Distribution Edited Model for Training with Mixed Data Distributions",
+      "authors": [
+        "Dhananjay Ram",
+        "Aditya Rawal",
+        "Momchil Hardalov",
+        "Nikolaos Pappas",
+        "Sheng Zha"
+      ],
+      "year_work": 2024,
+      "source_url": "https://2024.emnlp.org/program/best_papers/",
+      "note": "special theme paper award"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2025,
+      "award": "best_paper",
+      "title": "Infini-gram mini: Exact n-gram Search at the Internet Scale with FM-Index",
+      "authors": [
+        "Hao Xu",
+        "Jiacheng Liu",
+        "Yejin Choi",
+        "Noah A. Smith",
+        "Hannaneh Hajishirzi"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.emnlp.org/program/awards/",
+      "note": "best paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "LingGym: How Far Are LLMs from Thinking Like Field Linguists?",
+      "authors": [
+        "Changbing Yang",
+        "Franklin Ma",
+        "Freda Shi",
+        "Jian Zhu"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.emnlp.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "Mind the Value-Action Gap: Do LLMs Act in Alignment with Their Values?",
+      "authors": [
+        "Hua Shen",
+        "Nicholas Clark",
+        "Tanu Mitra"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.emnlp.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "DiscoSG: Towards Discourse-Level Text Scene Graph Parsing through Iterative Graph Refinement",
+      "authors": [
+        "Shaoqing Lin",
+        "Chong Teng",
+        "Fei Li",
+        "Donghong Ji",
+        "Lizhen Qu",
+        "Zhuang Li"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.emnlp.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "Generative or Discriminative? Revisiting Text Classification in the Era of Transformers",
+      "authors": [
+        "Siva Rajesh Kasa",
+        "Karan Gupta",
+        "Sumegh Roychowdhury",
+        "Ashutosh Kumar",
+        "Yaswanth Biruduraju",
+        "Santhoh Kumar Kasa",
+        "Pattisapu Nikhil Priyatam",
+        "Arindam Bhattacharya",
+        "Shailendra Agarwal",
+        "Vijay Huddar"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.emnlp.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "Measuring Chain of Thought Faithfulness by Unlearning Reasoning Steps",
+      "authors": [
+        "Martin Tutek",
+        "Fateme Hashemi Chaleshtori",
+        "Ana Marasovic",
+        "Yonatan Belinkov"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.emnlp.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "MiCRo: Mixture Modeling and Context-aware Routing for Personalized Preference Learning",
+      "authors": [
+        "Jingyan Shen",
+        "Jiarui Yao",
+        "Rui Yang",
+        "Yifan Sun",
+        "Feng Luo",
+        "Rui Pan",
+        "Tong Zhang",
+        "Han Zhao"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.emnlp.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2025,
+      "award": "honorable_mention",
+      "title": "Causal Interventions Reveal Shared Structure Across English Filler-Gap Constructions",
+      "authors": [
+        "Sasha Boguraev",
+        "Christopher Potts",
+        "Kyle Mahowald"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.emnlp.org/program/awards/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2025,
+      "award": "best_paper",
+      "title": "InterIDEAS: Philosophical Intertextuality via LLMs",
+      "authors": [
+        "Yue Yang",
+        "Yinzhi Xu",
+        "Chenghao Huang",
+        "JohnMichael Jurgensen",
+        "Han Hu",
+        "Hao Wang"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.emnlp.org/program/awards/",
+      "note": "best theme paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2025,
+      "award": "best_paper",
+      "title": "Autoformalization in the Wild: Assessing LLMs on Real-World Mathematical Definitions",
+      "authors": [
+        "Lan Zhang",
+        "Marco Valentino",
+        "Andre Freitas"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.emnlp.org/program/awards/",
+      "note": "best resource paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2025,
+      "award": "best_paper",
+      "title": "AccessEval: Benchmarking Disability Bias in Large Language Models",
+      "authors": [
+        "Srikant Panda",
+        "Amit Agarwal",
+        "Hitesh Laxmichand Patel"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.emnlp.org/program/awards/",
+      "note": "social impact award"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2025,
+      "award": "best_paper",
+      "title": "Randomly Removing 50% of Dimensions in Text Embeddings has Minimal Impact on Retrieval and Classification Tasks",
+      "authors": [
+        "Sotaro Takeshita",
+        "Yurina Takeshita",
+        "Daniel Ruffinelli",
+        "Simone Paolo Ponzetto"
+      ],
+      "year_work": 2025,
+      "source_url": "https://2025.emnlp.org/program/awards/",
+      "note": "people's choice award"
+    }
+  ]
+}

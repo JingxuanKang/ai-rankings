@@ -669,11 +669,13 @@ function initFootnotes() {
   const s = DATA.stats;
   $('coverage-note').textContent =
     `Coverage: ${s.papers.toLocaleString()} honored papers, affiliations resolved for ` +
-    `${s.resolved.toLocaleString()} (${Math.round(s.resolved / s.papers * 100)}%) via OpenAlex; ` +
-    `unresolved papers appear in the Canon but carry no institutional credit yet.`;
+    `${s.resolved.toLocaleString()} (${Math.round(s.resolved / s.papers * 100)}%); ` +
+    `unresolved papers appear in the Canon but carry no institutional credit yet. ` +
+    `All test-of-time and best-paper affiliations are individually verified.`;
   $('generated-note').textContent =
     `Dataset generated ${DATA.generated} · award window ${DATA.window} · ` +
-    `sources: OpenReview, official conference award pages, ACL Anthology, CVF; affiliations via OpenAlex.`;
+    `honors from OpenReview, official award pages, ACL Anthology and CVF; affiliations via ` +
+    `OpenReview author histories, Crossref and manual verification.`;
 }
 
 let resizeT = null;

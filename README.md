@@ -7,7 +7,7 @@
 ## 方法论要点
 
 - **双时间戳建模延迟性**：每条获奖记录带 `year_awarded`（颁奖年）和 `year_work`（工作发表年）。ToT 奖记入工作完成的年代——Attention Is All You Need 的荣誉属于 2017 年的 Google，不是今天的 Google。
-- **发表时刻署名单位**：单位来自 OpenAlex 的论文 authorship 记录（即论文上印的单位），天然是发表时刻快照。
+- **发表时刻署名单位**：三条解析路线按质量优先级层叠——① OpenReview 作者档案（带起止年份的任职历史，按 `year_work` 精确取位，覆盖 ICLR/NeurIPS/ICML）；② Crossref authorship（IEEE 系 CVPR/ICCV 2022+ 有署名单位）；③ 人工逐篇考证（全部 test-of-time 与解析失败的高权重奖项，写 `data/overrides.json`）。OpenAlex 作为补充（积分制配额，每 IP 每日约 100 次搜索）。
 - **归属**：一作单位 50% + 通讯单位 50%（重合则 100%）；无通讯标记时按 AI 惯例以末位作者代位。前端可切换只看一作 / 只看通讯。
 - **默认权重**：ToT 10 · Best 8 · HM 3 · Oral 1，前端滑杆实时可调。
 - **两种镜头**：All-time（按 year_work 满额记分）与 Present-day（按工作年龄做半衰期衰减，回答"现在谁强"）。
@@ -18,12 +18,18 @@
 ```bash
 # 1. 原始数据就位后（data/raw/*.json，schema 见管道脚本 docstring）：
 cd pipeline
-python3 merge_raw.py          # 合并去重 -> data/merged.json
-python3 enrich_openalex.py    # OpenAlex 单位解析（可断点续跑，缓存 data/enriched/cache.jsonl）
-python3 build_dataset.py      # -> site/data.json + site/data.js
+python3 merge_raw.py                 # 合并去重 -> data/merged.json
+python3 enrich_openreview.py ids     # 标题匹配 + 产出 profile id 清单（api2 有反爬挑战，
+                                     #   notes/profiles 批量抓取需浏览器通道写入 data/or_cache/）
+python3 enrich_openreview.py resolve # 档案任职历史 -> 按 year_work 解析单位
+python3 enrich_crossref.py CVPR,ICCV,ECCV,ACL,EMNLP   # Crossref 补充
+python3 enrich_openalex.py           # OpenAlex 残余补充（注意每日配额）
+python3 build_dataset.py             # 合并 cache + overrides -> site/data.json + data.js
 
 # 2. 直接双击打开 site/index.html（file:// 可用，无需服务器）
 ```
+
+所有解析结果共用 `data/enriched/cache.jsonl`（断点续跑）；机构跨源归一（OpenAlex id / OpenReview 域名 / 人工 slug）在 build_dataset 里按规范化名称 + 别名表合并。
 
 高权重条目（ToT / best paper）解析出错时，写 `data/overrides.json`（key 为 `venue|year|标题规范化`，值为 first_author / corresponding 结构，见 build_dataset.py docstring），重跑 build 即可覆盖。
 
