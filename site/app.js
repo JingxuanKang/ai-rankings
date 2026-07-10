@@ -40,6 +40,21 @@ const state = {
 };
 
 const $ = id => document.getElementById(id);
+
+/* ── theming: tier + chrome colors live in CSS custom properties ───────── */
+const cssVar = name => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+const hexToRgba = (hex, a) => {
+  const n = parseInt(hex.slice(1), 16);
+  return `rgba(${(n >> 16) & 255},${(n >> 8) & 255},${n & 255},${a})`;
+};
+function applyTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  try { localStorage.setItem('sr-theme', theme); } catch (e) { /* file:// private mode */ }
+  for (const t of TIERS) t.color = cssVar('--tier-' +
+    ({ test_of_time: 'tot', best_paper: 'best', honorable_mention: 'hm', oral: 'oral' })[t.id]);
+  const btn = $('theme-btn');
+  if (btn) btn.textContent = theme === 'light' ? '☾ Dark' : '☀ Light';
+}
 const fmt = n => n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, '') + 'k'
   : n >= 100 ? String(Math.round(n)) : (Math.round(n * 10) / 10).toString();
 const flagOf = cc => cc && cc.length === 2
@@ -290,19 +305,21 @@ function renderCanon() {
   const rOf = e => ({ test_of_time: 5, best_paper: 4, honorable_mention: 2.6, oral: 1.7 })[e.award];
 
   // lane separators + labels
-  canonCtx.strokeStyle = '#232329'; canonCtx.lineWidth = 1;
+  const gridC = cssVar('--grid'), mutedC = cssVar('--ink-muted');
+  canonCtx.strokeStyle = gridC; canonCtx.lineWidth = 1;
   canonCtx.font = '11px system-ui'; canonCtx.textAlign = 'left'; canonCtx.textBaseline = 'middle';
   VENUES.forEach((v, i) => {
     const yTop = padT + i * laneH;
     if (i) { canonCtx.beginPath(); canonCtx.moveTo(padL - 60, yTop); canonCtx.lineTo(W - padR, yTop); canonCtx.stroke(); }
-    canonCtx.fillStyle = '#807d72';
+    canonCtx.fillStyle = mutedC;
     canonCtx.fillText(v, 12, yTop + laneH / 2);
   });
   // year gridlines
   const step = (x1 - x0) > 14 ? 5 : 1;
   for (let yy = Math.ceil(x0 / step) * step; yy <= x1; yy += step) {
-    canonCtx.strokeStyle = '#1c1c22';
+    canonCtx.strokeStyle = gridC; canonCtx.globalAlpha = 0.55;
     canonCtx.beginPath(); canonCtx.moveTo(x(yy), padT - 6); canonCtx.lineTo(x(yy), H - 6); canonCtx.stroke();
+    canonCtx.globalAlpha = 1;
   }
   // axis labels (html strip below canvas)
   const axisBox = $('canon-axis');
@@ -315,7 +332,7 @@ function renderCanon() {
 
   // latency arcs: year-of-work axis → tie ToT dots to the year they were awarded
   if (state.axis === 'yw') {
-    canonCtx.strokeStyle = 'rgba(255,215,106,0.16)'; canonCtx.lineWidth = 1;
+    canonCtx.strokeStyle = hexToRgba(cssVar('--tier-tot'), 0.18); canonCtx.lineWidth = 1;
     for (const e of evs) {
       if (e.award !== 'test_of_time' || e.yw === e.ya) continue;
       const y = laneY(e.venue), xa = x(e.yw), xb = x(e.ya);
@@ -497,13 +514,13 @@ function openDossier(instId) {
       spark.append('rect')
         .attr('x', xs(yy)).attr('width', Math.min(xs.bandwidth(), 24))
         .attr('y', sh - pb - vs(v)).attr('height', Math.max(1, vs(v)))
-        .attr('rx', 2).attr('fill', '#b98a2e')
+        .attr('rx', 2).attr('fill', cssVar('--tier-hm'))
         .append('title').text(`${yy}: ${fmt(v)} pts`);
     }
     spark.append('text').attr('x', 0).attr('y', sh - 2)
-      .attr('fill', '#807d72').attr('font-size', 10).text(yMin);
+      .attr('fill', cssVar('--ink-muted')).attr('font-size', 10).text(yMin);
     spark.append('text').attr('x', sw).attr('y', sh - 2).attr('text-anchor', 'end')
-      .attr('fill', '#807d72').attr('font-size', 10).text(yMax);
+      .attr('fill', cssVar('--ink-muted')).attr('font-size', 10).text(yMax);
   }
 
   // venue breakdown — nominal categories, one hue, labels carry identity
@@ -617,6 +634,7 @@ function initControls() {
     const row = ttEl('weight-row', '');
     const nm = ttEl('wname', '', 'span');
     const dot = ttEl('tier-dot', '', 'span'); dot.style.background = t.color;
+    t._dotEl = dot;
     nm.append(dot, document.createTextNode(t.label));
     const input = document.createElement('input');
     input.type = 'range'; input.min = 0; input.max = t.max; input.step = t.step; input.value = t.w;
@@ -641,6 +659,13 @@ function initControls() {
 
   $('board-more').addEventListener('click', () => {
     state.boardLimit = state.boardLimit <= 25 ? 50 : 25;
+    rerender();
+  });
+
+  $('theme-btn').addEventListener('click', () => {
+    applyTheme(document.documentElement.dataset.theme === 'light' ? 'dark' : 'light');
+    for (const t of TIERS) if (t._dotEl) t._dotEl.style.background = t.color;
+    initLegend();
     rerender();
   });
 }
@@ -684,6 +709,9 @@ addEventListener('resize', () => {
   resizeT = setTimeout(() => { renderCanon(); renderBump(); }, 180);
 });
 
+let savedTheme = 'light';
+try { savedTheme = localStorage.getItem('sr-theme') || 'light'; } catch (e) { /* file:// */ }
+applyTheme(savedTheme);
 initKPIs();
 initLegend();
 initControls();

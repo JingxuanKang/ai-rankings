@@ -20,6 +20,25 @@
   --sans: system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
+/* light theme — validated ordinal ramp #cfa030→#6f4a02 on #fbfaf6 (prestige = darker) */
+:root[data-theme="light"] {
+  --plane:        #fbfaf6;
+  --surface:      #ffffff;
+  --surface-2:    #f3f1e8;
+  --ink:          #1c1a14;
+  --ink-2:        #57534a;
+  --ink-muted:    #857f6f;
+  --grid:         #e9e6da;
+  --baseline:     #d4cfc0;
+  --ring:         rgba(28,26,20,0.10);
+  --tier-tot:     #6f4a02;
+  --tier-best:    #93650a;
+  --tier-hm:      #b07d18;
+  --tier-oral:    #cfa030;
+  --accent:       #93650a;
+  --de-emph:      #d8d4c6;
+}
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
@@ -45,6 +64,10 @@ a:hover { color: var(--accent); }
   background: linear-gradient(175deg, #fff2c8 20%, var(--tier-best) 60%, #a87d28);
   -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
   text-wrap: nowrap;
+}
+:root[data-theme="light"] .wordmark {
+  background: linear-gradient(175deg, #c99b2e 5%, #93650a 55%, #5d3d02);
+  -webkit-background-clip: text; background-clip: text;
 }
 .manifesto {
   font-family: var(--serif); font-size: clamp(17px, 2.2vw, 21px); color: var(--ink-2);
@@ -148,6 +171,21 @@ a:hover { color: var(--accent); }
   border-color: color-mix(in srgb, var(--tier-best) 45%, transparent);
   box-shadow: 0 0 60px rgba(230,174,61,.10);
 }
+:root[data-theme="light"] .podium-card.p1 {
+  background: linear-gradient(180deg, #faf3df, var(--surface) 65%);
+  box-shadow: 0 10px 40px rgba(147,101,10,.14);
+}
+:root[data-theme="light"] .dossier { box-shadow: -20px 0 60px rgba(28,26,20,.18); }
+:root[data-theme="light"] .scrim { background: rgba(40,36,26,.28); }
+:root[data-theme="light"] .weights-pop { box-shadow: 0 12px 40px rgba(28,26,20,.16); }
+:root[data-theme="light"] .tooltip { box-shadow: 0 10px 30px rgba(28,26,20,.16); }
+:root[data-theme="light"] .switch input:checked + .track .thumb { background: #fff; }
+
+.theme-btn {
+  font-size: 13px; color: var(--ink-2); border: 1px solid var(--baseline);
+  padding: 5px 12px; border-radius: 7px;
+}
+.theme-btn:hover { color: var(--ink); }
 .podium-medal { font-size: 13px; letter-spacing: .3em; text-transform: uppercase; color: var(--tier-best); }
 .podium-card.p2 .podium-medal, .podium-card.p3 .podium-medal { color: var(--ink-muted); }
 .podium-name { font-family: var(--serif); font-size: 21px; margin: 8px 0 2px; line-height: 1.25; }
