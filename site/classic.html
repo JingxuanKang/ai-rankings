@@ -146,7 +146,7 @@ table.people > tbody > tr.odd > td { background: #f9f9f9; }
     <p class="subtitle" id="subtitle">Awards-only rankings of AI institutions: orals, best papers and test-of-time prizes, credited to first and corresponding authors.</p>
   </div>
 
-  <p class="rank-line">Rank <span class="btn-group" id="scope" role="radiogroup" aria-label="sector filter"><button type="button" data-v="academia" class="sbtn on">academic</button><button type="button" data-v="industry" class="sbtn">industry</button><button type="button" data-v="all" class="sbtn">all</button></span> institutions in <select id="country" aria-label="Filter by country/region"></select> by <b>awards</b> from 2012&ndash;2026</p>
+  <p class="rank-line">Rank <span class="btn-group" id="scope" role="radiogroup" aria-label="sector filter"><button type="button" data-v="academia" class="sbtn on">academic</button><button type="button" data-v="industry" class="sbtn">industry</button><button type="button" data-v="all" class="sbtn">all</button></span> institutions in <select id="country" aria-label="Filter by country/region"></select> by <b>awards</b> from <select id="yfrom" aria-label="from year"></select>&ndash;<select id="yto" aria-label="to year"></select></p>
 
   <div class="row">
     <div class="col-left">
@@ -241,6 +241,8 @@ var state = {
   venues: new Set(ALL_VENUES),
   scope: 'academia',     // all | academia | industry (industry = type 'company'); CSRankings 致敬：默认只排学界
   country: 'all',
+  fromYear: null,
+  toYear: null,
   limit: 50
 };
 
@@ -296,6 +298,7 @@ function computeRanking() {
   for (var i = 0; i < EVENTS.length; i++) {
     var ev = EVENTS[i];
     if (!state.tiers.has(ev.award) || !state.venues.has(ev.venue)) continue;
+    if ((state.fromYear && ev.ya < state.fromYear) || (state.toYear && ev.ya > state.toYear)) continue;
     var w = WEIGHTS[ev.award];
     var m = contribs(ev), it = m.entries(), n;
     while (!(n = it.next()).done) {
@@ -434,7 +437,7 @@ function buildCountry() {
   }
   var sorted = Array.from(byC.entries()).sort(function (a, b) { return b[1] - a[1]; });
   var sel = $('country');
-  var all = mk('option'); all.value = 'all'; all.textContent = 'All countries'; sel.append(all);
+  var all = mk('option'); all.value = 'all'; all.textContent = 'All countries/regions'; sel.append(all);
   sorted.forEach(function (pair) {
     var cc = pair[0];
     var opt = mk('option'); opt.value = cc;
@@ -443,6 +446,23 @@ function buildCountry() {
     sel.append(opt);
   });
   sel.addEventListener('change', function () { state.country = sel.value; resetAndRender(); });
+  (function () {
+    var years = EVENTS.map(function (e) { return e.ya; });
+    var yMin = Math.min.apply(null, years), yMax = Math.max.apply(null, years);
+    var yf = $('yfrom'), yt = $('yto');
+    for (var y = yMin; y <= yMax; y++) {
+      yf.appendChild(new Option(y, y)); yt.appendChild(new Option(y, y));
+    }
+    yf.value = yMin; yt.value = yMax;
+    function onY() {
+      var a = +yf.value, b = +yt.value;
+      if (a > b) { var t = a; a = b; b = t; yf.value = a; yt.value = b; }
+      state.fromYear = a === yMin ? null : a;
+      state.toYear = b === yMax ? null : b;
+      resetAndRender();
+    }
+    yf.addEventListener('change', onY); yt.addEventListener('change', onY);
+  })();
   $('scope').addEventListener('click', function (e) {
     var b = e.target.closest('button');
     if (!b) return;

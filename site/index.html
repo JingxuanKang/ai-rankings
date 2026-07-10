@@ -59,6 +59,12 @@
         <input type="range" id="halflife" min="2" max="15" value="5" step="1" aria-label="decay half-life in years">
       </label>
     </div>
+    <div class="dock-group" role="group" aria-label="award year range">
+      <span class="dock-label">Years</span>
+      <select id="year-from" class="country-select" style="width:84px" aria-label="from year"></select>
+      <span style="color:var(--ink-muted);font-size:12px;margin:0 5px">→</span>
+      <select id="year-to" class="country-select" style="width:84px" aria-label="to year"></select>
+    </div>
     <div class="dock-group" role="radiogroup" aria-label="institution scope">
       <span class="dock-label">Scope</span>
       <div class="seg" id="seg-scope">

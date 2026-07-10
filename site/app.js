@@ -33,6 +33,8 @@ const state = {
   halflife: 5,
   scope: 'academia',     // academia | industry | all — 默认只排学界（对齐 Directory 页）
   country: 'all',        // ISO country code or 'all'
+  fromYear: null,        // award-year range (inclusive); null = full window
+  toYear: null,
   venues: new Set(VENUES),
   tiers: new Set(TIERS.map(t => t.id)),
   weights: Object.fromEntries(TIERS.map(t => [t.id, t.w])),
@@ -108,6 +110,7 @@ function computeScores(opts = {}) {
   let papersInView = 0;
   for (const ev of EVENTS) {
     if (!state.venues.has(ev.venue) || !state.tiers.has(ev.award) || ev.ya > maxYa) continue;
+    if ((state.fromYear && ev.ya < state.fromYear) || (state.toYear && ev.ya > state.toYear)) continue;
     papersInView++;
     let w = noDecay ? state.weights[ev.award] : eventWeight(ev);
     if (w <= 0) continue;
@@ -304,7 +307,8 @@ function renderCanon() {
   canonCtx.setTransform(dpr, 0, 0, dpr, 0, 0);
   canonCtx.clearRect(0, 0, W, H);
 
-  const evs = EVENTS.filter(e => state.venues.has(e.venue) && state.tiers.has(e.award));
+  const evs = EVENTS.filter(e => state.venues.has(e.venue) && state.tiers.has(e.award)
+    && !(state.fromYear && e.ya < state.fromYear) && !(state.toYear && e.ya > state.toYear));
   const xs = evs.map(e => state.axis === 'yw' ? e.yw : e.ya);
   const x0 = Math.min(...xs), x1 = Math.max(...xs, REF_YEAR);
   const x = d3.scaleLinear().domain([x0 - 0.5, x1 + 0.5]).range([padL, W - padR]);
@@ -968,6 +972,21 @@ function initControls() {
   }
   sel.addEventListener('change', () => { state.country = sel.value; rerender(); });
 
+  // award-year range
+  const yf = $('year-from'), yt = $('year-to');
+  for (let y = MIN_YEAR; y <= REF_YEAR; y++) {
+    yf.append(new Option(y, y)); yt.append(new Option(y, y));
+  }
+  yf.value = MIN_YEAR; yt.value = REF_YEAR;
+  const onYear = () => {
+    let a2 = +yf.value, b2 = +yt.value;
+    if (a2 > b2) { [a2, b2] = [b2, a2]; yf.value = a2; yt.value = b2; }
+    state.fromYear = a2 === MIN_YEAR ? null : a2;
+    state.toYear = b2 === REF_YEAR ? null : b2;
+    rerender();
+  };
+  yf.addEventListener('change', onYear); yt.addEventListener('change', onYear);
+
   $('halflife').addEventListener('input', e => {
     state.halflife = +e.target.value;
     $('halflife-out').textContent = state.halflife;
@@ -1063,7 +1082,8 @@ function rerender() {
     lastRes = computeScores();
     // live tier counts under the current venue filter (independent of tier toggles)
     const tierCounts = {};
-    for (const ev of EVENTS) if (state.venues.has(ev.venue))
+    for (const ev of EVENTS) if (state.venues.has(ev.venue)
+      && !(state.fromYear && ev.ya < state.fromYear) && !(state.toYear && ev.ya > state.toYear))
       tierCounts[ev.award] = (tierCounts[ev.award] || 0) + 1;
     for (const t of TIERS) if (t._filterCount)
       t._filterCount.textContent = (tierCounts[t.id] || 0).toLocaleString();
@@ -1079,6 +1099,7 @@ function rerender() {
       ({ both: 'first + corresponding (50/50)', first: 'first author', corr: 'corresponding author' })[state.attr] +
       ` · ${state.lens === 'now' ? `present-day lens, ${state.halflife}y half-life on age of work` : 'all-time lens'}` +
       ` · ${({ all: 'academia + industry', academia: 'academia only (incl. gov / nonprofit labs)', industry: 'industry only' })[state.scope]}` +
+      ((state.fromYear || state.toYear) ? ` · awards ${state.fromYear ?? MIN_YEAR}–${state.toYear ?? REF_YEAR}` : '') +
       (state.country !== 'all' ? ` · ${REGION ? (REGION.of(state.country) || state.country) : state.country} only` : '');
     if (state.selected) openDossier(state.selected);
   });
