@@ -824,6 +824,68 @@ $('map').addEventListener('click', e => {
   if (cell && cell.__leaf && cell.__leaf.data.id) openDossier(cell.__leaf.data.id);
 });
 
+/* ── vs CSRankings (slopegraph; CSRankings AI-areas world top-20, 2012-2026,
+      snapshot 2026-07-10 — publication counting vs our awards-only ranks) ── */
+const CSRANKINGS = [
+  'Peking University', 'Tsinghua University', 'Carnegie Mellon University',
+  'Nanyang Technological University', 'Shanghai Jiao Tong University', 'Zhejiang University',
+  'Nanjing University', 'Chinese Academy of Sciences', 'KAIST', 'UIUC',
+  'National University of Singapore', 'Stanford University', 'University of Maryland',
+  'Mohamed bin Zayed University of Artificial Intelligence', 'Harbin Institute of Technology',
+  'University of Science and Technology of China', 'MIT', 'Fudan University', 'HKUST',
+  'Chinese University of Hong Kong',
+];
+const VS_SHORT = {
+  'Mohamed bin Zayed University of Artificial Intelligence': 'MBZUAI',
+  'University of Science and Technology of China': 'USTC',
+  'Chinese University of Hong Kong': 'CUHK',
+  'Nanyang Technological University': 'NTU Singapore',
+  'National University of Singapore': 'NUS',
+  'Shanghai Jiao Tong University': 'Shanghai Jiao Tong',
+};
+
+function renderVs() {
+  // our side: academia-only ranking under the user's current weights/filters
+  const saved = { scope: state.scope, country: state.country };
+  state.scope = 'academia'; state.country = 'all';
+  const res = computeScores();
+  state.scope = saved.scope; state.country = saved.country;
+  const rankByName = new Map();
+  for (const r of res.ranking) rankByName.set((INSTS[r.id] || {}).name, r.rank);
+
+  const rows = CSRANKINGS.map((name, i) => ({
+    name, short: VS_SHORT[name] || name, csr: i + 1, ours: rankByName.get(name) ?? null,
+  }));
+  const byOurs = [...rows].sort((a, b) => (a.ours ?? 1e9) - (b.ours ?? 1e9));
+
+  const svg = d3.select('#vs');
+  const wrapW = svg.node().parentElement.clientWidth;
+  const W = Math.max(wrapW, 680), rowH = 27, padT = 34, H = padT + rows.length * rowH + 10;
+  const xL = 268, xR = W - 300;
+  svg.attr('width', W).attr('height', H).attr('viewBox', `0 0 ${W} ${H}`);
+  svg.selectAll('*').remove();
+  const yAt = i => padT + i * rowH + rowH / 2;
+
+  svg.append('text').attr('class', 'vs-head').attr('x', xL).attr('y', 16)
+    .attr('text-anchor', 'end').text('CSRankings — papers');
+  svg.append('text').attr('class', 'vs-head').attr('x', xR).attr('y', 16)
+    .text('AI Rankings — awards');
+
+  const riseC = cssVar('--tier-best'), dropC = cssVar('--map-cn');
+  for (const r of rows) {
+    const i = rows.indexOf(r), j = byOurs.indexOf(r);
+    const up = r.ours !== null && r.ours <= r.csr;
+    svg.append('text').attr('x', xL).attr('y', yAt(i) + 4).attr('text-anchor', 'end')
+      .text(`${r.csr}. ${r.short}`);
+    svg.append('line').attr('class', 'vs-line')
+      .attr('x1', xL + 10).attr('y1', yAt(i)).attr('x2', xR - 10).attr('y2', yAt(j))
+      .attr('stroke', up ? riseC : dropC);
+    const lbl = svg.append('text').attr('x', xR).attr('y', yAt(j) + 4);
+    lbl.append('tspan').attr('class', 'vs-rank').text(r.ours ? `#${r.ours}  ` : '—  ');
+    lbl.append('tspan').text(r.short);
+  }
+}
+
 /* ── legend / controls ─────────────────────────────────────────────────── */
 function initLegend() {
   $('tier-legend').replaceChildren(...TIERS.map(t => {
@@ -980,6 +1042,7 @@ function rerender() {
     renderPodium(lastRes.ranking);
     renderBoard(lastRes);
     renderNations(lastRes);
+    renderVs();
     renderCanon();
     renderBump();
     renderMap(lastRes);
