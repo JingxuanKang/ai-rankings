@@ -139,7 +139,7 @@ table.people > tbody > tr.odd > td { background: #f9f9f9; }
     <p class="subtitle">&hellip; the CSRankings way: awards-only, first/corresponding-author credit, 2021&ndash;2026</p>
   </div>
 
-  <p class="rank-line">Rank <select id="scope" aria-label="Filter by sector"><option value="all">all</option><option value="academia">academic</option><option value="industry">industry</option></select> institutions in <select id="country" aria-label="Filter by country"></select> by <b>awards</b> from 2021&ndash;2026</p>
+  <p class="rank-line">Rank <a href="#" id="scope" role="button" aria-label="Click to switch sector filter" title="click to switch: academic → industry → all">academic</a> institutions in <select id="country" aria-label="Filter by country"></select> by <b>awards</b> from 2021&ndash;2026</p>
 
   <div class="row">
     <div class="col-left">
@@ -232,7 +232,7 @@ EVENTS.forEach(function (e) {
 var state = {
   tiers: new Set(TIERS.map(function (t) { return t.id; })),
   venues: new Set(ALL_VENUES),
-  scope: 'all',          // all | academia | industry (industry = type 'company')
+  scope: 'academia',     // all | academia | industry (industry = type 'company'); CSRankings 致敬：默认只排学界
   country: 'all',
   limit: 50
 };
@@ -436,7 +436,13 @@ function buildCountry() {
     sel.append(opt);
   });
   sel.addEventListener('change', function () { state.country = sel.value; resetAndRender(); });
-  $('scope').addEventListener('change', function () { state.scope = $('scope').value; resetAndRender(); });
+  $('scope').addEventListener('click', function (e) {
+    e.preventDefault();
+    var next = { academia: 'industry', industry: 'all', all: 'academia' };
+    state.scope = next[state.scope];
+    $('scope').textContent = state.scope === 'academia' ? 'academic' : state.scope === 'industry' ? 'industry' : 'all';
+    resetAndRender();
+  });
 }
 
 /* ── render ───────────────────────────────────────────────────────────── */
