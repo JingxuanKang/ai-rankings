@@ -479,7 +479,9 @@ function renderBump() {
 
 /* ── dossier ───────────────────────────────────────────────────────────── */
 let lastRes = null;
+let dossierTier = null;   // tier-chip filter for the record list
 function openDossier(instId) {
+  if (state.selected !== instId) dossierTier = null;
   state.selected = instId;
   const r = lastRes && lastRes.byInst.get(instId);
   const inst = INSTS[instId] || { name: instId, type: '', country: '' };
@@ -493,10 +495,15 @@ function openDossier(instId) {
   $('dossier-score').textContent = fmt(r.total);
 
   $('dossier-tiers').replaceChildren(...TIERS.filter(t => r.counts[t.id]).map(t => {
-    const chip = ttEl('tier-chip', '', 'span');
+    const chip = ttEl('tier-chip' + (dossierTier === t.id ? ' active' : ''), '', 'button');
+    chip.setAttribute('aria-pressed', String(dossierTier === t.id));
     const dot = ttEl('tier-dot', '', 'span'); dot.style.background = t.color;
     const b = document.createElement('b'); b.textContent = r.counts[t.id];
     chip.append(dot, b, document.createTextNode(' ' + t.label));
+    chip.addEventListener('click', () => {
+      dossierTier = dossierTier === t.id ? null : t.id;
+      openDossier(instId);
+    });
     return chip;
   }));
 
@@ -516,7 +523,7 @@ function openDossier(instId) {
       spark.append('rect')
         .attr('x', xs(yy)).attr('width', Math.min(xs.bandwidth(), 24))
         .attr('y', sh - pb - vs(v)).attr('height', Math.max(1, vs(v)))
-        .attr('rx', 2).attr('fill', cssVar('--tier-hm'))
+        .attr('rx', 2).attr('fill', cssVar('--tier-best'))
         .append('title').text(`${yy}: ${fmt(v)} pts`);
     }
     spark.append('text').attr('x', 0).attr('y', sh - 2)
@@ -539,7 +546,9 @@ function openDossier(instId) {
     return rowEl;
   }));
 
-  const items = [...r.events].sort((a, b) => b.v - a.v || b.ev.ya - a.ev.ya).slice(0, 120);
+  const items = [...r.events]
+    .filter(({ ev }) => !dossierTier || ev.award === dossierTier)
+    .sort((a, b) => b.v - a.v || b.ev.ya - a.ev.ya).slice(0, 200);
   $('dossier-list').replaceChildren(...items.map(({ ev }) => {
     const li = document.createElement('li');
     const dot = ttEl('tier-dot', '', 'span');
@@ -574,14 +583,136 @@ $('dossier-close').addEventListener('click', closeDossier);
 $('scrim').addEventListener('click', closeDossier);
 addEventListener('keydown', e => { if (e.key === 'Escape') closeDossier(); });
 
+/* ── nations (medal-table by country) ──────────────────────────────────── */
+const REGION = (() => { try { return new Intl.DisplayNames(['en'], { type: 'region' }); } catch (e) { return null; } })();
+function renderNations(res) {
+  const byC = new Map();
+  for (const r of res.ranking) {
+    const cc = (INSTS[r.id] || {}).country;
+    if (!cc) continue;
+    let rec = byC.get(cc);
+    if (!rec) byC.set(cc, rec = { cc, total: 0, byTier: {}, counts: {}, insts: 0 });
+    rec.total += r.total;
+    rec.insts++;
+    for (const t of TIERS) {
+      rec.byTier[t.id] = (rec.byTier[t.id] || 0) + (r.byTier[t.id] || 0);
+      rec.counts[t.id] = (rec.counts[t.id] || 0) + (r.counts[t.id] || 0);
+    }
+  }
+  const rows = [...byC.values()].sort((a, b) => b.total - a.total).slice(0, 12);
+  const max = rows.length ? rows[0].total : 1;
+  $('nations').replaceChildren(...rows.map((r, i) => {
+    const row = ttEl('nation-row', '');
+    const name = REGION ? (REGION.of(r.cc) || r.cc) : r.cc;
+    const bar = ttEl('nation-bar', '');
+    const stack = ttEl('nation-stack', '');
+    stack.style.width = `calc((100% - 64px) * ${(r.total / max).toFixed(4)})`;
+    for (const t of TIERS) {
+      if (!(r.byTier[t.id] > 0)) continue;
+      const seg = ttEl('nation-seg', '', 'span');
+      seg.style.width = (r.byTier[t.id] / r.total * 100) + '%';
+      seg.style.background = t.color;
+      stack.append(seg);
+    }
+    bar.append(stack, ttEl('nation-score', fmt(r.total), 'span'));
+    row.append(ttEl('nation-rank', String(i + 1)), ttEl('nation-name', `${flagOf(r.cc)} ${name}`), bar);
+    row.addEventListener('pointermove', e => showTip(e.clientX, e.clientY, box => {
+      box.append(ttEl('tt-value', fmt(r.total) + ' pts'), ttEl('tt-label', `${name} · ${r.insts} institutions`));
+      for (const t of TIERS) {
+        if (!r.counts[t.id]) continue;
+        const rowEl = ttEl('tt-row', '');
+        const key = ttEl('tt-key', '', 'span'); key.style.background = t.color;
+        rowEl.append(key, ttEl('', `${t.label} × ${r.counts[t.id]} → ${fmt(r.byTier[t.id])}`, 'span'));
+        box.append(rowEl);
+      }
+    }));
+    row.addEventListener('pointerleave', hideTip);
+    return row;
+  }));
+}
+
+/* ── the wall (every paper, one brick, grouped by first-author lab) ────── */
+function renderWall(res) {
+  const wallEl = $('wall');
+  const rankOf = new Map(res.ranking.map(r => [r.id, r.rank]));
+  const passes = id => {
+    const isCompany = (INSTS[id] || {}).type === 'company';
+    return state.scope === 'all' || (state.scope === 'academia' ? !isCompany : isCompany);
+  };
+  const groups = new Map();
+  let placed = 0;
+  for (const ev of EVENTS) {
+    if (!state.venues.has(ev.venue)) continue;
+    const home = [...ev.fi, ...ev.ci].find(passes);
+    if (!home) continue;
+    if (!groups.has(home)) groups.set(home, []);
+    groups.get(home).push(ev);
+    placed++;
+  }
+  const order = [...groups.entries()].sort((a, b) => (rankOf.get(a[0]) ?? 1e9) - (rankOf.get(b[0]) ?? 1e9));
+  const TOP = 24;
+  const tierRank = { test_of_time: 0, best_paper: 1, honorable_mention: 2, oral: 3 };
+  const sortEvs = evs => evs.sort((a, b) => tierRank[a.award] - tierRank[b.award] || a.yw - b.yw);
+  wallEl.replaceChildren();
+
+  const addBlock = (rankLabel, name, evs, instId) => {
+    sortEvs(evs);
+    const block = document.createElement('div');
+    block.className = 'wall-block';
+    const head = ttEl('wall-block-head', '');
+    if (rankLabel) head.append(ttEl('wb-rank', rankLabel, 'span'));
+    head.append(ttEl('wb-name', name, 'span'), ttEl('wb-meta', `${evs.length} papers`, 'span'));
+    if (instId) head.addEventListener('click', () => openDossier(instId));
+    const cells = ttEl('wall-cells', '');
+    for (const ev of evs) {
+      const c = ttEl('wall-cell', '', 'span');
+      c.style.background = TIER_BY_ID[ev.award].color;
+      c.__ev = ev;
+      cells.append(c);
+    }
+    block.append(head, cells);
+    wallEl.append(block);
+  };
+  order.slice(0, TOP).forEach(([id, evs]) => {
+    addBlock('Nº ' + (rankOf.get(id) ?? '—'), (INSTS[id] || { name: id }).name, evs, id);
+  });
+  const rest = order.slice(TOP).flatMap(([, evs]) => evs);
+  if (rest.length) addBlock('', 'The field — everyone else', rest, null);
+  $('wall-sub').textContent =
+    `${placed.toLocaleString()} honored papers, one brick each — grouped under the institution of the ` +
+    `first author (the lab that led the work); gold bricks are prizes, ink bricks are orals and mentions. ` +
+    `Hover a brick for the paper; click to open it.`;
+}
+$('wall').addEventListener('pointermove', e => {
+  const ev = e.target.__ev;
+  if (!ev) { hideTip(); return; }
+  const t = TIER_BY_ID[ev.award];
+  showTip(e.clientX, e.clientY, box => {
+    box.append(ttEl('tt-value', ev.title));
+    const rowEl = ttEl('tt-row', '');
+    const key = ttEl('tt-key', '', 'span'); key.style.background = t.color;
+    rowEl.append(key, ttEl('', `${t.label} · ${ev.venue} ${ev.ya}` +
+      (ev.yw !== ev.ya ? ` — for work of ${ev.yw}` : ''), 'span'));
+    box.append(rowEl);
+    if (ev.fa) box.append(ttEl('tt-label', ev.fa + (ev.ca && ev.ca[0] && ev.ca[0] !== ev.fa ? ' · ' + ev.ca[0] : '')));
+  });
+});
+$('wall').addEventListener('pointerleave', hideTip);
+$('wall').addEventListener('click', e => {
+  const ev = e.target.__ev;
+  if (ev && ev.url) open(ev.url, '_blank', 'noopener');
+});
+
 /* ── legend / controls ─────────────────────────────────────────────────── */
 function initLegend() {
-  $('tier-legend').replaceChildren(...TIERS.map(t => {
+  const build = () => TIERS.map(t => {
     const item = ttEl('legend-item', '', 'span');
     const sw = ttEl('legend-swatch', '', 'span'); sw.style.background = t.color;
     item.append(sw, document.createTextNode(`${t.label} × ${state.weights[t.id]}`));
     return item;
-  }));
+  });
+  $('tier-legend').replaceChildren(...build());
+  $('wall-legend').replaceChildren(...build());
 }
 
 function initControls() {
@@ -678,8 +809,10 @@ function rerender() {
     lastRes = computeScores();
     renderPodium(lastRes.ranking);
     renderBoard(lastRes);
+    renderNations(lastRes);
     renderCanon();
     renderBump();
+    renderWall(lastRes);
     $('board-sub').textContent =
       `${lastRes.papersInView.toLocaleString()} honored papers in view · credit: ` +
       ({ both: 'first + corresponding (50/50)', first: 'first author', corr: 'corresponding author' })[state.attr] +
