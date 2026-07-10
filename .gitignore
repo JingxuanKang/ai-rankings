@@ -2,3 +2,4 @@
 __pycache__/
 data/enriched/cache.jsonl
 data/or_cache/
+.claude/

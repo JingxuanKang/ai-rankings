@@ -1,15 +1,22 @@
 # AI Rankings
 
-**Live: [airankings.jingxuan.uk](https://airankings.jingxuan.uk)** · [Classic (CSRankings-style) view](https://airankings.jingxuan.uk/classic.html)
+**English** | [简体中文](README.zh-CN.md)
 
-An awards-only ranking of AI institutions. The premise: paper counts have stopped meaning
-anything — what still carries signal is what the community itself singles out. This site
-counts **only** orals, best papers (incl. outstanding papers), honorable mentions / official
-award candidates, and test-of-time prizes at eight venues:
+> Only the podium counts.
+
+**Live: [airankings.jingxuan.uk](https://airankings.jingxuan.uk)** · [Directory (CSRankings-style) view](https://airankings.jingxuan.uk/classic.html)
+
+An awards-only ranking of AI institutions and people. Acceptance counts can be farmed —
+more faculty, more submissions, more accepted papers, higher rank. What can't be farmed is
+what the community itself singles out. This project counts **only** orals, best papers
+(incl. outstanding papers), honorable mentions / official award candidates, and test-of-time
+prizes at eight venues:
 
 > NeurIPS · ICML · ICLR · CVPR · ICCV · ECCV · ACL · EMNLP
 
 Regular acceptances score **zero, by design**.
+
+![AI Rankings screenshot](docs/screenshot.png)
 
 ## Methodology
 
@@ -37,8 +44,10 @@ with an adjustable half-life, so the ranking can answer "who is strong *now*" se
 | Oral | 1 |
 
 **Everything is a live control**: attribution mode (first / corresponding / both), lens and
-half-life, academia vs industry scope, country, venues, tiers, and weights all recompute the
-ranking client-side in real time.
+half-life, academia vs industry scope (academia is the default), country, venues, tiers and
+weights all recompute the ranking client-side in real time. Institutions open into a dossier
+with their people (linked to homepages), score history and full award record; the Directory
+view mirrors CSRankings' classic expandable-table layout.
 
 ## Data
 
@@ -47,7 +56,9 @@ ranking client-side in real time.
   best-paper–tier entry is resolved; the unresolved tail is ~130 pre-2017 CVPR/ECCV orals
   whose papers sit behind publisher paywalls with no open copy.
 - Honors collected from official sources: OpenReview, conference award announcements,
-  ACL Anthology, CVF Open Access — every entry carries a source URL.
+  ACL Anthology, CVF Open Access — every entry carries a source URL. Venue-years where every
+  accepted paper was presented orally (e.g. several mid-2010s ICML editions) are excluded
+  from the oral tier, because an honor everyone receives is not an honor.
 - Affiliations resolved through three stacked routes, best first:
   1. **OpenReview author profiles** — dated position histories give the institution
      *at the year of the work*;
@@ -55,52 +66,54 @@ ranking client-side in real time.
   3. **PDF first pages** — batch-extracted and spot-checked; all test-of-time and
      best-paper–tier entries were individually verified by hand.
 - Institution names are canonicalized across sources (diacritic folding, alias table,
-  campus disambiguation). People link to their homepages where known (OpenReview profiles
-  plus targeted web search).
+  campus disambiguation).
 
 **Known caveats.** The last-author-as-corresponding convention is an approximation; a small
-tail of institutions with unresolved countries is grouped as "Unknown"; oral lists for a few
-venue-years have no official roster and are documented in the footer coverage note. TPAMI is
-deliberately absent (journals have no oral/best-paper mechanism; the PAMI community's
-test-of-time prize — the Longuet-Higgins — is awarded at CVPR, which is covered). AAAI/IJCAI
-are excluded for low signal density.
+tail of institutions with unresolved countries is grouped as "Unknown". TPAMI is deliberately
+absent (journals have no oral/best-paper mechanism; the PAMI community's test-of-time prize —
+the Longuet-Higgins — is awarded at CVPR, which is covered). AAAI/IJCAI are excluded for low
+signal density.
 
-## Repository layout
+## Running locally
 
-```
-site/       the website — pure static, no backend, no build step
-            index.html (full experience) · classic.html (CSRankings-style)
-            data.js / data.json (dataset) · vendor/d3.v7.min.js
-pipeline/   Python data pipeline
-            merge_raw.py        merge & dedupe raw award lists (highest honor wins)
-            enrich_openreview.py / enrich_crossref.py / enrich_openalex.py
-            build_dataset.py    canonicalize institutions -> site/data.js
-data/       raw/ (collected award lists, with sources) · overrides*.json (hand-verified
-            affiliations — treat as gold data) · enriched/ (resolver cache, gitignored)
+The site is pure static — no backend, no build step:
+
+```bash
+open site/index.html        # file:// works, no server needed
 ```
 
-To run locally: open `site/index.html` in a browser — `file://` works, no server needed.
-
-To rebuild the dataset:
+Rebuilding the dataset:
 
 ```bash
 cd pipeline
 python3 merge_raw.py
 python3 enrich_openreview.py ids && python3 enrich_openreview.py resolve
 python3 enrich_crossref.py CVPR,ICCV,ECCV,ACL,EMNLP
-python3 build_dataset.py
+python3 build_dataset.py    # -> site/data.json + site/data.js
 ```
 
-(The OpenReview bulk endpoints sit behind a browser challenge; see the docstrings in
-`enrich_openreview.py` for how note/profile dumps are staged in `data/or_cache/`.)
+The OpenReview bulk endpoints sit behind a browser challenge; see the docstrings in
+`enrich_openreview.py` for how note/profile dumps are staged in `data/or_cache/`.
+`data/overrides*.json` hold hand-verified affiliations — treat them as gold data.
+
+```
+site/       index.html (full experience) · classic.html (Directory) · data.js/json · vendor/
+pipeline/   merge_raw.py · enrich_openreview.py · enrich_crossref.py · enrich_openalex.py · build_dataset.py
+data/       raw/ (collected award lists with sources) · overrides*.json (hand-verified)
+```
+
+## Deployment
+
+Pushes to `master` auto-deploy `site/` to Cloudflare Pages via GitHub Actions
+(`.github/workflows/deploy.yml`). See [Deploy.md](Deploy.md).
 
 ## Acknowledgements & license
 
-Rankings are compiled from publicly announced conference honors. Underlying award decisions
-belong to the respective conferences and program committees; affiliation records draw on
-OpenReview, Crossref and the papers themselves. This project is not affiliated with any of
-the conferences, with CSRankings (whose classic layout the secondary view pays homage to),
-or with any ranked institution.
+Rankings are compiled from publicly announced conference honors. Award decisions belong to
+the respective conferences and program committees; affiliation records draw on OpenReview,
+Crossref and the papers themselves. This project is not affiliated with any conference, with
+CSRankings (whose classic layout the Directory view pays homage to), or with any ranked
+institution.
 
-Code is released under the MIT License. The compiled dataset (`site/data.json`) is released
-under CC BY 4.0 — cite this repository if you use it.
+Code: [MIT](LICENSE). Compiled dataset (`site/data.json`): CC BY 4.0 — cite this repository
+if you use it.
