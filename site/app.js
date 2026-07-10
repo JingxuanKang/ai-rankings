@@ -958,7 +958,7 @@ function initControls() {
   }
   const sel = $('country-select');
   const optAll = document.createElement('option');
-  optAll.value = 'all'; optAll.textContent = 'All countries';
+  optAll.value = 'all'; optAll.textContent = 'All countries/regions';
   sel.append(optAll);
   for (const [cc] of [...cTotals.entries()].sort((a, b) => b[1] - a[1])) {
     const o = document.createElement('option');
