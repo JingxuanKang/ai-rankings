@@ -2,6 +2,8 @@
 
 **English** | [简体中文](README.zh-CN.md)
 
+[![认可linux.do](https://ld.xh.do/ld-badge.svg)](https://linux.do)
+
 > Only the podium counts.
 
 **Live: [airankings.jingxuan.uk](https://airankings.jingxuan.uk)** · [Directory (CSRankings-style) view](https://airankings.jingxuan.uk/classic.html)

@@ -2,6 +2,8 @@
 
 [English](README.md) | **简体中文**
 
+[![认可linux.do](https://ld.xh.do/ld-badge.svg)](https://linux.do)
+
 > 只有领奖台算数。
 
 **在线访问：[airankings.jingxuan.uk](https://airankings.jingxuan.uk)** · [Directory（CSRankings 风格）视图](https://airankings.jingxuan.uk/classic.html)
