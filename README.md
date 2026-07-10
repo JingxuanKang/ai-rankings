@@ -44,8 +44,8 @@ with an adjustable half-life, so the ranking can answer "who is strong *now*" se
 | Oral | 1 |
 
 **Everything is a live control**: attribution mode (first / corresponding / both), lens and
-half-life, academia vs industry scope (academia is the default), country, venues, tiers and
-weights all recompute the ranking client-side in real time. Institutions open into a dossier
+half-life, award-year range, academia vs industry scope (academia is the default),
+country/region, venues, tiers and weights all recompute the ranking client-side in real time. Institutions open into a dossier
 with their people (linked to homepages), score history and full award record; the Directory
 view mirrors CSRankings' classic expandable-table layout.
 
