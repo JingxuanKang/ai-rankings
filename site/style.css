@@ -154,6 +154,7 @@ a:hover { color: var(--accent); }
 .chips button:hover { color: var(--ink); }
 
 .halflife { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--ink-2); margin-left: 12px; }
+.halflife[hidden] { display: none; }
 .halflife input { accent-color: var(--accent); width: 110px; }
 
 .country-select {
