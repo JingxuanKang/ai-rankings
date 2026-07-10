@@ -31,7 +31,7 @@ const state = {
   attr: 'both',          // both | first | corr
   lens: 'alltime',       // alltime | now
   halflife: 5,
-  scope: 'all',          // all | academia | industry (industry = type 'company')
+  scope: 'academia',     // academia | industry | all — 默认只排学界（对齐 Directory 页）
   country: 'all',        // ISO country code or 'all'
   venues: new Set(VENUES),
   tiers: new Set(TIERS.map(t => t.id)),
