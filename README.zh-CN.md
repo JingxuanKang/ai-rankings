@@ -60,10 +60,6 @@ python3 build_dataset.py    # -> site/data.json + site/data.js
 
 OpenReview 批量端点有浏览器验证挑战，notes/profiles 转储的暂存方式见 `enrich_openreview.py` 的 docstring。`data/overrides*.json` 是逐篇人工核验的金标数据，请勿自动重写。
 
-## 部署
-
-push 到 `master` 即由 GitHub Actions 自动部署 `site/` 到 Cloudflare Pages（`.github/workflows/deploy.yml`），详见 [Deploy.md](Deploy.md)。
-
 ## 致谢与许可
 
 排名基于公开的会议荣誉信息汇编；奖项归各会议及其程序委员会所有；署名数据来自 OpenReview、Crossref 与论文本身。本项目与任何会议、CSRankings（Directory 视图向其经典布局致敬）或任何被排名机构均无关联。

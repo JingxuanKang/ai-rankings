@@ -102,11 +102,6 @@ pipeline/   merge_raw.py · enrich_openreview.py · enrich_crossref.py · enrich
 data/       raw/ (collected award lists with sources) · overrides*.json (hand-verified)
 ```
 
-## Deployment
-
-Pushes to `master` auto-deploy `site/` to Cloudflare Pages via GitHub Actions
-(`.github/workflows/deploy.yml`). See [Deploy.md](Deploy.md).
-
 ## Acknowledgements & license
 
 Rankings are compiled from publicly announced conference honors. Award decisions belong to
