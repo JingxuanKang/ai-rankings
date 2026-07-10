@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIRankings — classic</title>
+<style>
+/* ── CSRankings look: Bootstrap 3.3.6 values ─────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background: #fff;
+  margin: 0;
+}
+a { color: #337ab7; text-decoration: none; }
+a:hover, a:focus { color: #23527c; text-decoration: underline; }
+b, strong { font-weight: 700; }
+
+.container { max-width: 1170px; margin: 0 auto; padding: 0 15px 60px; }
+
+.page-header {
+  position: relative;
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eee;
+}
+h1 { font-size: 36px; font-weight: 500; line-height: 1.1; margin: 0; }
+.subtitle { color: #777; font-size: 14px; margin: 8px 0 0; }
+.full-link { position: absolute; right: 0; top: 6px; font-size: 14px; }
+
+.rank-line { font-size: 16px; margin: 0 0 20px; }
+.rank-line select {
+  font-family: inherit; font-size: 14px; color: #555;
+  padding: 3px 6px; border: 1px solid #ccc; border-radius: 4px; background: #fff;
+  vertical-align: baseline;
+}
+
+.row { display: flex; align-items: flex-start; gap: 20px; }
+.col-left  { flex: 0 0 25%; max-width: 25%; }
+.col-right { flex: 1 1 auto; min-width: 0; }
+
+/* panels */
+.panel {
+  background: #fff;
+  border: 1px solid #bce8f1;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.panel-heading {
+  background: #d9edf7;
+  color: #31708f;
+  padding: 10px 15px;
+  border-bottom: 1px solid #bce8f1;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  font-weight: 700;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.panel-body { padding: 15px; }
+
+.toggle { font-size: 12px; font-weight: 400; }
+.toggle a { color: #337ab7; }
+
+.grp-head {
+  font-weight: 700; margin: 12px 0 4px;
+  display: flex; align-items: baseline; justify-content: space-between;
+}
+.grp-head:first-child { margin-top: 0; }
+
+.flt-row { display: flex; align-items: baseline; padding: 2px 0; }
+.flt-row input { margin: 0 6px 0 0; position: relative; top: 1px; }
+.flt-row label { font-weight: 400; cursor: pointer; margin: 0; }
+.flt-row .count {
+  margin-left: auto; color: #999; font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ranking table */
+.summary { color: #777; font-size: 13px; margin: 0 0 8px; }
+table.rank { width: 100%; border-collapse: collapse; }
+table.rank > thead > tr > th {
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+  padding: 8px;
+  font-weight: 700;
+  vertical-align: bottom;
+}
+table.rank > tbody > tr.inst-row > td {
+  padding: 7px 8px;
+  border-top: 1px solid #ddd;
+  vertical-align: top;
+}
+table.rank > tbody > tr.inst-row.odd > td { background: #f9f9f9; }
+table.rank > tbody > tr.detail-row > td { padding: 0; border: 0; }
+
+.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+th.num { text-align: right; }
+.rank-cell { color: #777; width: 44px; }
+.name-cell .iname { cursor: pointer; }
+.name-cell .flag { white-space: nowrap; }
+.tri {
+  display: inline-block; width: 1.1em; margin-right: 2px;
+  color: #337ab7; cursor: pointer;
+  font-family: "Menlo", "Consolas", monospace; font-size: 11px;
+  vertical-align: baseline; user-select: none;
+}
+
+/* nested people table */
+.people-wrap { padding: 4px 8px 10px 30px; overflow-x: auto; }
+table.people { width: 100%; border-collapse: collapse; }
+table.people > thead > tr > th {
+  text-align: left; padding: 5px 8px;
+  border-bottom: 1px solid #ddd; font-weight: 700; color: #555;
+}
+table.people > thead > tr > th.num { text-align: right; }
+table.people > tbody > tr > td { padding: 4px 8px; border-top: 1px solid #eee; }
+table.people > tbody > tr.odd > td { background: #f9f9f9; }
+
+.show-more { display: inline-block; margin: 16px 0 0; font-size: 14px; }
+
+@media (max-width: 768px) {
+  .row { flex-direction: column; }
+  .col-left, .col-right { flex: 1 1 100%; max-width: 100%; width: 100%; }
+  .full-link { position: static; display: block; margin-bottom: 6px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="page-header">
+    <a class="full-link" href="index.html">&#x27F5; full experience</a>
+    <h1>AIRankings</h1>
+    <p class="subtitle">&hellip; the CSRankings way: awards-only, first/corresponding-author credit, 2021&ndash;2026</p>
+  </div>
+
+  <p class="rank-line">Rank institutions in <select id="country" aria-label="Filter by country"></select> by <b>awards</b> from 2021&ndash;2026</p>
+
+  <div class="row">
+    <div class="col-left">
+      <div class="panel">
+        <div class="panel-heading">
+          <span>Award tiers</span>
+          <span class="toggle"><a href="#" id="tiers-on">on</a> | <a href="#" id="tiers-off">off</a></span>
+        </div>
+        <div class="panel-body" id="tier-list"></div>
+      </div>
+      <div class="panel">
+        <div class="panel-heading"><span>Venues</span></div>
+        <div class="panel-body" id="venue-list"></div>
+      </div>
+    </div>
+
+    <div class="col-right">
+      <div class="summary" id="summary"></div>
+      <table class="rank">
+        <thead>
+          <tr>
+            <th class="rank-cell">#</th>
+            <th>Institution</th>
+            <th class="num">Score</th>
+            <th class="num"># Papers</th>
+          </tr>
+        </thead>
+        <tbody id="rank-body"></tbody>
+      </table>
+      <a href="#" class="show-more" id="show-more">show more &#x25BE;</a>
+    </div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script>
+(function () {
+'use strict';
+
+var DATA = window.SIGNAL_DATA;
+if (!DATA || !DATA.events || !DATA.events.length) {
+  document.body.innerHTML = '';
+  var msg = document.createElement('p');
+  msg.style.cssText = 'padding:80px;text-align:center;color:#999';
+  msg.textContent = 'data.js is missing or empty — run the pipeline (see README).';
+  document.body.appendChild(msg);
+  return;
+}
+
+var INSTS = DATA.institutions;
+var EVENTS = DATA.events;
+
+/* ── constants ────────────────────────────────────────────────────────── */
+var TIERS = [
+  { id: 'test_of_time',      label: 'Test of Time',      short: 'ToT'  },
+  { id: 'best_paper',        label: 'Best Paper',        short: 'Best' },
+  { id: 'honorable_mention', label: 'Honorable Mention', short: 'HM'   },
+  { id: 'oral',              label: 'Oral',              short: 'Oral' }
+];
+var WEIGHTS = { test_of_time: 10, best_paper: 8, honorable_mention: 3, oral: 1 };
+var VENUE_GROUPS = [
+  { label: 'Machine Learning', venues: ['NeurIPS', 'ICML', 'ICLR'] },
+  { label: 'Computer Vision',  venues: ['CVPR', 'ICCV', 'ECCV'] },
+  { label: 'NLP',              venues: ['ACL', 'EMNLP'] }
+];
+var ALL_VENUES = [];
+VENUE_GROUPS.forEach(function (g) { g.venues.forEach(function (v) { ALL_VENUES.push(v); }); });
+
+var COUNTRY_NAMES = {
+  AE: 'United Arab Emirates', AT: 'Austria', AU: 'Australia', BE: 'Belgium',
+  BR: 'Brazil', CA: 'Canada', CH: 'Switzerland', CL: 'Chile', CN: 'China',
+  CO: 'Colombia', CY: 'Cyprus', CZ: 'Czechia', DE: 'Germany', DK: 'Denmark',
+  ES: 'Spain', FI: 'Finland', FR: 'France', GB: 'United Kingdom', GR: 'Greece',
+  HK: 'Hong Kong', HU: 'Hungary', IL: 'Israel', IN: 'India', IR: 'Iran',
+  IT: 'Italy', JP: 'Japan', KR: 'South Korea', MO: 'Macao', NA: 'Namibia',
+  NG: 'Nigeria', NL: 'Netherlands', NO: 'Norway', NZ: 'New Zealand',
+  PL: 'Poland', PT: 'Portugal', RU: 'Russia', SA: 'Saudi Arabia', SE: 'Sweden',
+  SG: 'Singapore', TH: 'Thailand', TW: 'Taiwan', US: 'United States', VN: 'Vietnam'
+};
+
+/* static counts shown next to each checkbox */
+var tierCount = {}, venueCount = {};
+EVENTS.forEach(function (e) {
+  tierCount[e.award] = (tierCount[e.award] || 0) + 1;
+  venueCount[e.venue] = (venueCount[e.venue] || 0) + 1;
+});
+
+/* ── state ────────────────────────────────────────────────────────────── */
+var state = {
+  tiers: new Set(TIERS.map(function (t) { return t.id; })),
+  venues: new Set(ALL_VENUES),
+  country: 'all',
+  limit: 50
+};
+
+/* ── helpers ──────────────────────────────────────────────────────────── */
+var $ = function (id) { return document.getElementById(id); };
+function mk(tag, cls) { var e = document.createElement(tag); if (cls) e.className = cls; return e; }
+function fmt1(n) { return (Math.round(n * 10) / 10).toFixed(1); }
+function flagOf(cc) {
+  if (!cc || cc.length !== 2) return '';
+  return String.fromCodePoint(
+    cc.toUpperCase().charCodeAt(0) + 0x1F1A5,
+    cc.toUpperCase().charCodeAt(1) + 0x1F1A5
+  );
+}
+
+/* ── scoring engine (mirrors the main site: 50/50 first+corresponding,
+      multi-affiliation split, same-inst merges to full) ────────────────── */
+function contribs(ev) {
+  var m = new Map();
+  function add(ids, total) {
+    if (!ids || !ids.length || total <= 0) return;
+    var s = total / ids.length;
+    for (var i = 0; i < ids.length; i++) m.set(ids[i], (m.get(ids[i]) || 0) + s);
+  }
+  var fi = ev.fi || [], ci = ev.ci || [];
+  if (fi.length && ci.length) { add(fi, 0.5); add(ci, 0.5); }
+  else add(fi.length ? fi : ci, 1);
+  if (state.country !== 'all') {
+    var keys = Array.from(m.keys());
+    for (var k = 0; k < keys.length; k++) {
+      var inst = INSTS[keys[k]] || {};
+      if (inst.country !== state.country) m.delete(keys[k]);
+    }
+  }
+  return m;
+}
+
+function computeRanking() {
+  var byInst = new Map();
+  for (var i = 0; i < EVENTS.length; i++) {
+    var ev = EVENTS[i];
+    if (!state.tiers.has(ev.award) || !state.venues.has(ev.venue)) continue;
+    var w = WEIGHTS[ev.award];
+    var m = contribs(ev), it = m.entries(), n;
+    while (!(n = it.next()).done) {
+      var id = n.value[0], share = n.value[1];
+      var rec = byInst.get(id);
+      if (!rec) byInst.set(id, rec = { id: id, total: 0, papers: 0, events: [] });
+      rec.total += w * share;
+      rec.papers += 1;
+      rec.events.push(ev);
+    }
+  }
+  var out = [];
+  byInst.forEach(function (r) { if (r.total > 1e-6) out.push(r); });
+  out.sort(function (a, b) { return b.total - a.total; });
+  return out;
+}
+
+/* faculty-style people: full award weight per credited author, deduped per
+   paper (first author via fa, corresponding via ca), sorted by score */
+function peopleOf(rec) {
+  var people = new Map();
+  for (var i = 0; i < rec.events.length; i++) {
+    var ev = rec.events[i];
+    var names = new Set();
+    if ((ev.fi || []).indexOf(rec.id) !== -1 && ev.fa) names.add(ev.fa);
+    if ((ev.ci || []).indexOf(rec.id) !== -1) {
+      var ca = ev.ca || [];
+      for (var j = 0; j < ca.length; j++) if (ca[j]) names.add(ca[j]);
+    }
+    names.forEach(function (nm) {
+      var p = people.get(nm);
+      if (!p) people.set(nm, p = { name: nm, score: 0, counts: {} });
+      p.score += WEIGHTS[ev.award];
+      p.counts[ev.award] = (p.counts[ev.award] || 0) + 1;
+    });
+  }
+  var arr = [];
+  people.forEach(function (p) { arr.push(p); });
+  arr.sort(function (a, b) { return b.score - a.score; });
+  return arr;
+}
+
+/* ── build filter UI ──────────────────────────────────────────────────── */
+function buildTiers() {
+  var tl = $('tier-list');
+  TIERS.forEach(function (t) {
+    var row = mk('div', 'flt-row');
+    var cb = mk('input'); cb.type = 'checkbox'; cb.checked = true; cb.id = 't-' + t.id;
+    cb.addEventListener('change', function () {
+      if (cb.checked) state.tiers.add(t.id);
+      else if (state.tiers.size <= 1) { cb.checked = true; return; }
+      else state.tiers.delete(t.id);
+      resetAndRender();
+    });
+    var lab = mk('label'); lab.htmlFor = cb.id; lab.textContent = t.label;
+    var cnt = mk('span', 'count'); cnt.textContent = String(tierCount[t.id] || 0);
+    row.append(cb, lab, cnt); tl.append(row);
+  });
+  $('tiers-on').addEventListener('click', function (e) {
+    e.preventDefault();
+    TIERS.forEach(function (t) { state.tiers.add(t.id); $('t-' + t.id).checked = true; });
+    resetAndRender();
+  });
+  $('tiers-off').addEventListener('click', function (e) {
+    e.preventDefault();
+    state.tiers.clear();
+    var keep = TIERS[0].id; state.tiers.add(keep);   /* keep at least one */
+    TIERS.forEach(function (t) { $('t-' + t.id).checked = (t.id === keep); });
+    resetAndRender();
+  });
+}
+
+function guardVenues() {
+  if (state.venues.size === 0) {
+    var v = VENUE_GROUPS[0].venues[0];
+    state.venues.add(v); $('v-' + v).checked = true;
+  }
+}
+
+function buildVenues() {
+  var vl = $('venue-list');
+  VENUE_GROUPS.forEach(function (g) {
+    var gh = mk('div', 'grp-head');
+    gh.append(document.createTextNode(g.label));
+    var tog = mk('span', 'toggle');
+    var on = mk('a'); on.href = '#'; on.textContent = 'on';
+    var off = mk('a'); off.href = '#'; off.textContent = 'off';
+    on.addEventListener('click', function (e) {
+      e.preventDefault();
+      g.venues.forEach(function (v) { state.venues.add(v); $('v-' + v).checked = true; });
+      resetAndRender();
+    });
+    off.addEventListener('click', function (e) {
+      e.preventDefault();
+      g.venues.forEach(function (v) { state.venues.delete(v); $('v-' + v).checked = false; });
+      guardVenues(); resetAndRender();
+    });
+    tog.append(on, document.createTextNode(' | '), off);
+    gh.append(tog); vl.append(gh);
+    g.venues.forEach(function (v) {
+      var row = mk('div', 'flt-row');
+      var cb = mk('input'); cb.type = 'checkbox'; cb.checked = true; cb.id = 'v-' + v;
+      cb.addEventListener('change', function () {
+        if (cb.checked) state.venues.add(v);
+        else if (state.venues.size <= 1) { cb.checked = true; return; }
+        else state.venues.delete(v);
+        resetAndRender();
+      });
+      var lab = mk('label'); lab.htmlFor = cb.id; lab.textContent = v;
+      var cnt = mk('span', 'count'); cnt.textContent = String(venueCount[v] || 0);
+      row.append(cb, lab, cnt); vl.append(row);
+    });
+  });
+}
+
+function buildCountry() {
+  /* options: All countries + every country with credit, sorted by score */
+  var byC = new Map();
+  for (var i = 0; i < EVENTS.length; i++) {
+    var ev = EVENTS[i], m = new Map();
+    (function () {
+      function add(ids, total) {
+        if (!ids || !ids.length) return;
+        var s = total / ids.length;
+        for (var k = 0; k < ids.length; k++) m.set(ids[k], (m.get(ids[k]) || 0) + s);
+      }
+      var fi = ev.fi || [], ci = ev.ci || [];
+      if (fi.length && ci.length) { add(fi, 0.5); add(ci, 0.5); }
+      else add(fi.length ? fi : ci, 1);
+    })();
+    var w = WEIGHTS[ev.award];
+    m.forEach(function (sh, id) {
+      var c = (INSTS[id] || {}).country;
+      if (c) byC.set(c, (byC.get(c) || 0) + w * sh);
+    });
+  }
+  var sorted = Array.from(byC.entries()).sort(function (a, b) { return b[1] - a[1]; });
+  var sel = $('country');
+  var all = mk('option'); all.value = 'all'; all.textContent = 'All countries'; sel.append(all);
+  sorted.forEach(function (pair) {
+    var cc = pair[0];
+    var opt = mk('option'); opt.value = cc;
+    var flag = flagOf(cc);
+    opt.textContent = (flag ? flag + ' ' : '') + (COUNTRY_NAMES[cc] || cc);
+    sel.append(opt);
+  });
+  sel.addEventListener('change', function () { state.country = sel.value; resetAndRender(); });
+}
+
+/* ── render ───────────────────────────────────────────────────────────── */
+function buildPeople(rec) {
+  var wrap = mk('div', 'people-wrap');
+  var t = mk('table', 'people');
+  var thead = mk('thead'), htr = mk('tr');
+  ['Name', 'ToT', 'Best', 'HM', 'Oral', 'Score'].forEach(function (h) {
+    var th = mk('th'); th.textContent = h; if (h !== 'Name') th.className = 'num'; htr.append(th);
+  });
+  thead.append(htr); t.append(thead);
+  var tb = mk('tbody');
+  peopleOf(rec).forEach(function (p, i) {
+    var tr = mk('tr', i % 2 ? 'odd' : '');
+    var nc = mk('td');
+    var a = mk('a');
+    a.textContent = p.name;
+    a.href = 'https://scholar.google.com/scholar?q=' + encodeURIComponent('"' + p.name + '"');
+    a.target = '_blank'; a.rel = 'noopener';
+    nc.append(a); tr.append(nc);
+    TIERS.forEach(function (t2) {
+      var td = mk('td', 'num'); var c = p.counts[t2.id] || 0;
+      td.textContent = c ? String(c) : '';
+      tr.append(td);
+    });
+    var sc = mk('td', 'num'); sc.textContent = fmt1(p.score); tr.append(sc);
+    tb.append(tr);
+  });
+  t.append(tb); wrap.append(t); return wrap;
+}
+
+function render() {
+  var ranking = computeRanking();
+  var body = $('rank-body'); body.textContent = '';
+  var n = Math.min(state.limit, ranking.length);
+
+  for (var i = 0; i < n; i++) {
+    var r = ranking[i], inst = INSTS[r.id] || {};
+
+    var tr = mk('tr', 'inst-row' + (i % 2 ? ' odd' : ''));
+    var c0 = mk('td', 'num rank-cell'); c0.textContent = String(i + 1);
+    var c1 = mk('td', 'name-cell');
+    var tri = mk('span', 'tri'); tri.textContent = '►';           /* ► */
+    var nm = mk('span', 'iname'); nm.textContent = inst.name || r.id;
+    var flag = mk('span', 'flag');
+    var fl = flagOf(inst.country); flag.textContent = fl ? ' ' + fl : '';
+    c1.append(tri, nm, flag);
+    var c2 = mk('td', 'num'); c2.textContent = fmt1(r.total);
+    var c3 = mk('td', 'num'); c3.textContent = String(r.papers);
+    tr.append(c0, c1, c2, c3);
+    body.append(tr);
+
+    var dtr = mk('tr', 'detail-row'); dtr.style.display = 'none';
+    var dtd = mk('td'); dtd.colSpan = 4; dtr.append(dtd);
+    body.append(dtr);
+
+    (function (rec, tri, dtr, dtd) {
+      function toggle() {
+        var opening = dtr.style.display === 'none';
+        if (opening) {
+          if (!dtd.hasChildNodes()) dtd.append(buildPeople(rec));
+          dtr.style.display = ''; tri.textContent = '▼';          /* ▼ */
+        } else {
+          dtr.style.display = 'none'; tri.textContent = '►';
+        }
+      }
+      tri.addEventListener('click', toggle);
+      nm.addEventListener('click', toggle);
+    })(r, tri, dtr, dtd);
+  }
+
+  var sm = $('show-more');
+  sm.style.display = ranking.length > n ? '' : 'none';
+
+  var summary = ranking.length + (ranking.length === 1 ? ' institution' : ' institutions');
+  if (state.country !== 'all') summary += ' in ' + (COUNTRY_NAMES[state.country] || state.country);
+  $('summary').textContent = summary;
+}
+
+function resetAndRender() { state.limit = 50; render(); }
+
+$('show-more').addEventListener('click', function (e) {
+  e.preventDefault(); state.limit += 50; render();
+});
+
+/* ── init ─────────────────────────────────────────────────────────────── */
+buildTiers();
+buildVenues();
+buildCountry();
+render();
+})();
+</script>
+</body>
+</html>
