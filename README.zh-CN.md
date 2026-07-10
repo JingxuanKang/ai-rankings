@@ -42,6 +42,8 @@
 
 ## 致谢与许可
 
+本项目最初的灵感来自 **@Lumos（HKU）**在 X/Twitter 上的一篇帖子——他统计了机器学习顶会 best paper 在地区与机构间的分布，谢谢。
+
 排名基于公开的会议荣誉信息汇编；奖项归各会议及其程序委员会所有；署名数据来自 OpenReview、Crossref 与论文本身。本项目与任何会议、CSRankings（Directory 视图向其经典布局致敬）或任何被排名机构均无关联。
 
 代码：[MIT](LICENSE)。数据集（`site/data.json`）：CC BY 4.0——使用请引用本仓库。

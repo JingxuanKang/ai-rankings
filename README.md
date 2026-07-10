@@ -76,6 +76,10 @@ signal density.
 
 ## Acknowledgements & license
 
+The original spark for this project was a post by **@Lumos (HKU)** on X/Twitter mapping how
+best papers at top machine-learning venues distribute across regions and institutions —
+thank you.
+
 Rankings are compiled from publicly announced conference honors. Award decisions belong to
 the respective conferences and program committees; affiliation records draw on OpenReview,
 Crossref and the papers themselves. This project is not affiliated with any conference, with
