@@ -860,29 +860,57 @@ function renderVs() {
 
   const svg = d3.select('#vs');
   const wrapW = svg.node().parentElement.clientWidth;
-  const W = Math.max(wrapW, 680), rowH = 27, padT = 34, H = padT + rows.length * rowH + 10;
-  const xL = 268, xR = W - 300;
+  const W = Math.max(wrapW, 700), rowH = 30, padT = 40, H = padT + rows.length * rowH + 12;
+  const xL = 300, xR = W - 330;
   svg.attr('width', W).attr('height', H).attr('viewBox', `0 0 ${W} ${H}`);
   svg.selectAll('*').remove();
   const yAt = i => padT + i * rowH + rowH / 2;
 
-  svg.append('text').attr('class', 'vs-head').attr('x', xL).attr('y', 16)
+  // country lookup for flags
+  const ccByName = new Map();
+  for (const k in INSTS) ccByName.set(INSTS[k].name, INSTS[k].country);
+
+  svg.append('text').attr('class', 'vs-head').attr('x', xL).attr('y', 18)
     .attr('text-anchor', 'end').text('CSRankings — papers');
-  svg.append('text').attr('class', 'vs-head').attr('x', xR).attr('y', 16)
+  svg.append('text').attr('class', 'vs-head').attr('x', xR).attr('y', 18)
     .text('AI Rankings — awards');
 
-  const riseC = cssVar('--tier-best'), dropC = cssVar('--map-cn');
+  const riseC = cssVar('--tier-best'), dropC = cssVar('--map-cn'), surfC = cssVar('--plane');
   for (const r of rows) {
     const i = rows.indexOf(r), j = byOurs.indexOf(r);
-    const up = r.ours !== null && r.ours <= r.csr;
+    const delta = r.ours === null ? -999 : r.csr - r.ours;   // 正 = 升
+    const up = delta >= 0;
+    const col = up ? riseC : dropC;
+    const flag = flagOf(ccByName.get(r.name) || '');
+
+    // 左侧：名次. 国旗 名字
     svg.append('text').attr('x', xL).attr('y', yAt(i) + 4).attr('text-anchor', 'end')
-      .text(`${r.csr}. ${r.short}`);
+      .text(`${r.csr}. ${flag} ${r.short}`);
+
+    // 连线：线宽随落差，端点带表面环圆点
+    const wpx = Math.max(1.6, Math.min(4.2, 1.4 + Math.abs(delta) / 28));
     svg.append('line').attr('class', 'vs-line')
-      .attr('x1', xL + 10).attr('y1', yAt(i)).attr('x2', xR - 10).attr('y2', yAt(j))
-      .attr('stroke', up ? riseC : dropC);
-    const lbl = svg.append('text').attr('x', xR).attr('y', yAt(j) + 4);
-    lbl.append('tspan').attr('class', 'vs-rank').text(r.ours ? `#${r.ours}  ` : '—  ');
-    lbl.append('tspan').text(r.short);
+      .attr('x1', xL + 14).attr('y1', yAt(i)).attr('x2', xR - 46).attr('y2', yAt(j))
+      .attr('stroke', col).attr('stroke-width', wpx);
+    for (const [cx, cy] of [[xL + 14, yAt(i)], [xR - 46, yAt(j)]]) {
+      svg.append('circle').attr('cx', cx).attr('cy', cy).attr('r', 4.4)
+        .attr('fill', col).attr('stroke', surfC).attr('stroke-width', 2);
+    }
+
+    // 右侧：涨跌徽章 + #名次 国旗 名字
+    const bx = xR - 36;
+    const btxt = r.ours === null ? '·' : (up ? `▲${delta === 0 ? '=' : delta}` : `▼${-delta}`);
+    const bw = 12 + btxt.length * 7.5;
+    svg.append('rect').attr('x', bx - 2).attr('y', yAt(j) - 10).attr('rx', 9)
+      .attr('width', bw).attr('height', 20)
+      .attr('fill', col).attr('opacity', up ? 0.16 : 0.14);
+    svg.append('text').attr('x', bx + bw / 2 - 2).attr('y', yAt(j) + 4)
+      .attr('text-anchor', 'middle')
+      .attr('style', `fill:${col};font-weight:700;font-size:11.5px`).text(btxt);
+    const lbl = svg.append('text').attr('x', bx + bw + 8).attr('y', yAt(j) + 4);
+    lbl.append('tspan').attr('class', 'vs-rank').attr('style', 'font-weight:700')
+      .text(r.ours ? `#${r.ours} ` : '— ');
+    lbl.append('tspan').text(` ${flag} ${r.short}`);
   }
 }
 
