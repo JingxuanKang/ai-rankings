@@ -40,26 +40,6 @@
 
 **已知局限。** 末位作者代位通讯是近似；少量国别不明的机构归入 "Unknown"。TPAMI 有意不收（期刊没有 oral/best paper 机制，PAMI 社区的 test-of-time 即 Longuet-Higgins 奖颁于 CVPR，已覆盖）；AAAI/IJCAI 因信号密度低排除。
 
-## 本地运行
-
-纯静态站，无后端、无构建：
-
-```bash
-open site/index.html        # file:// 直接打开即可
-```
-
-重建数据集：
-
-```bash
-cd pipeline
-python3 merge_raw.py
-python3 enrich_openreview.py ids && python3 enrich_openreview.py resolve
-python3 enrich_crossref.py CVPR,ICCV,ECCV,ACL,EMNLP
-python3 build_dataset.py    # -> site/data.json + site/data.js
-```
-
-OpenReview 批量端点有浏览器验证挑战，notes/profiles 转储的暂存方式见 `enrich_openreview.py` 的 docstring。`data/overrides*.json` 是逐篇人工核验的金标数据，请勿自动重写。
-
 ## 致谢与许可
 
 排名基于公开的会议荣誉信息汇编；奖项归各会议及其程序委员会所有；署名数据来自 OpenReview、Crossref 与论文本身。本项目与任何会议、CSRankings（Directory 视图向其经典布局致敬）或任何被排名机构均无关联。

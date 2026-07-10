@@ -74,34 +74,6 @@ absent (journals have no oral/best-paper mechanism; the PAMI community's test-of
 the Longuet-Higgins — is awarded at CVPR, which is covered). AAAI/IJCAI are excluded for low
 signal density.
 
-## Running locally
-
-The site is pure static — no backend, no build step:
-
-```bash
-open site/index.html        # file:// works, no server needed
-```
-
-Rebuilding the dataset:
-
-```bash
-cd pipeline
-python3 merge_raw.py
-python3 enrich_openreview.py ids && python3 enrich_openreview.py resolve
-python3 enrich_crossref.py CVPR,ICCV,ECCV,ACL,EMNLP
-python3 build_dataset.py    # -> site/data.json + site/data.js
-```
-
-The OpenReview bulk endpoints sit behind a browser challenge; see the docstrings in
-`enrich_openreview.py` for how note/profile dumps are staged in `data/or_cache/`.
-`data/overrides*.json` hold hand-verified affiliations — treat them as gold data.
-
-```
-site/       index.html (full experience) · classic.html (Directory) · data.js/json · vendor/
-pipeline/   merge_raw.py · enrich_openreview.py · enrich_crossref.py · enrich_openalex.py · build_dataset.py
-data/       raw/ (collected award lists with sources) · overrides*.json (hand-verified)
-```
-
 ## Acknowledgements & license
 
 Rankings are compiled from publicly announced conference honors. Award decisions belong to
