@@ -2,8 +2,6 @@
 
 **English** | [简体中文](README.zh-CN.md)
 
-[![认可linux.do](https://ld.xh.do/ld-badge.svg)](https://linux.do)
-
 > Only the podium counts.
 
 **Live: [airankings.jingxuan.uk](https://airankings.jingxuan.uk)** · [Directory (CSRankings-style) view](https://airankings.jingxuan.uk/classic.html)
@@ -90,3 +88,7 @@ institution.
 
 Code: [MIT](LICENSE). Compiled dataset (`site/data.json`): CC BY 4.0 — cite this repository
 if you use it.
+
+## Links
+
+[![认可linux.do](https://ld.xh.do/ld-badge.svg)](https://linux.do)

@@ -2,8 +2,6 @@
 
 [English](README.md) | **简体中文**
 
-[![认可linux.do](https://ld.xh.do/ld-badge.svg)](https://linux.do)
-
 > 只有领奖台算数。
 
 **在线访问：[airankings.jingxuan.uk](https://airankings.jingxuan.uk)** · [Directory（CSRankings 风格）视图](https://airankings.jingxuan.uk/classic.html)
@@ -49,3 +47,7 @@
 排名基于公开的会议荣誉信息汇编；奖项归各会议及其程序委员会所有；署名数据来自 OpenReview、Crossref 与论文本身。本项目与任何会议、CSRankings（Directory 视图向其经典布局致敬）或任何被排名机构均无关联。
 
 代码：[MIT](LICENSE)。数据集（`site/data.json`）：CC BY 4.0——使用请引用本仓库。
+
+## 友情链接
+
+[![认可linux.do](https://ld.xh.do/ld-badge.svg)](https://linux.do)
