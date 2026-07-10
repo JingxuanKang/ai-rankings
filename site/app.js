@@ -22,6 +22,7 @@ const VENUES = ['NeurIPS', 'ICML', 'ICLR', 'CVPR', 'ICCV', 'ECCV', 'ACL', 'EMNLP
 const INSTS = DATA.institutions;
 const EVENTS = DATA.events;
 const REF_YEAR = Math.max(...EVENTS.map(e => e.ya));
+const MIN_YEAR = Math.min(...EVENTS.map(e => e.ya));
 const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const TYPE_TAG = { company: 'industry', government: 'gov lab', nonprofit: 'nonprofit',
   facility: 'facility', healthcare: 'health', archive: 'archive', other: 'org', unknown: '' };
@@ -159,7 +160,7 @@ function initKPIs() {
   countUp($('kpi-papers'), DATA.stats.papers);
   countUp($('kpi-insts'), DATA.stats.institutions);
   $('kpi-venues').textContent = VENUES.length;
-  $('kpi-window').textContent = '2021 – ' + REF_YEAR;
+  $('kpi-window').textContent = MIN_YEAR + ' – ' + REF_YEAR;
 }
 
 /* ── podium ────────────────────────────────────────────────────────────── */
@@ -403,7 +404,7 @@ canon.addEventListener('click', e => {
 function renderBump() {
   const svg = d3.select('#bump');
   const wrapW = svg.node().parentElement.clientWidth;
-  const years = d3.range(2021, REF_YEAR + 1);
+  const years = d3.range(Math.max(MIN_YEAR, REF_YEAR - 9), REF_YEAR + 1);
   const perYear = years.map(y => computeScores({ maxYa: y, noDecay: true }).ranking);
   const finalRank = new Map(perYear[perYear.length - 1].map(r => [r.id, r.rank]));
   const shown = perYear[perYear.length - 1].slice(0, 12).map(r => r.id);

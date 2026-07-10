@@ -29,9 +29,15 @@ OR_CACHE = DATA_DIR / "or_cache"
 API1 = "https://api.openreview.net"
 
 # venue-years resolvable through OpenReview; True = api1 (fetchable here)
+# "inv:" prefix = old api1 years queried by invitation (no content.venueid there);
+# ICLR 2015/2016 used CMT, not OpenReview — absent on purpose.
 VENUEIDS = {
-    **{("ICLR", y): (f"ICLR.cc/{y}/conference", True) for y in range(2013, 2017)},
-    **{("ICLR", y): (f"ICLR.cc/{y}/Conference", True) for y in range(2017, 2021)},
+    ("ICLR", 2013): ("inv:ICLR.cc/2013/conference/-/submission", True),
+    ("ICLR", 2014): ("inv:ICLR.cc/2014/conference/-/submission", True),
+    ("ICLR", 2017): ("inv:ICLR.cc/2017/conference/-/submission", True),
+    ("ICLR", 2018): ("inv:ICLR.cc/2018/Conference/-/Blind_Submission", True),
+    ("ICLR", 2019): ("inv:ICLR.cc/2019/Conference/-/Blind_Submission", True),
+    ("ICLR", 2020): ("ICLR.cc/2020/Conference", True),
     ("ICLR", 2021): ("ICLR.cc/2021/Conference", True),
     ("ICLR", 2022): ("ICLR.cc/2022/Conference", True),
     ("ICLR", 2023): ("ICLR.cc/2023/Conference", False),
@@ -97,7 +103,11 @@ def fetch_api1_notes(venue, year, venueid):
     """api1 needs no challenge; dump in the same format the agent uses."""
     out, offset = [], 0
     while True:
-        u = f"{API1}/notes?content.venueid={urllib.parse.quote(venueid)}&limit=1000&offset={offset}"
+        if venueid.startswith("inv:"):
+            q = f"invitation={urllib.parse.quote(venueid[4:])}"
+        else:
+            q = f"content.venueid={urllib.parse.quote(venueid)}"
+        u = f"{API1}/notes?{q}&limit=1000&offset={offset}"
         notes = fetch(u).get("notes", [])
         if not notes:
             break

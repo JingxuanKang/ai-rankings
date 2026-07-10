@@ -1,0 +1,1317 @@
+{
+  "coverage_notes": "覆盖三大 ML 会议 2012–2020 年颁发的论文级奖项，共 89 条。NeurIPS（旧称 NIPS 统一写作 NeurIPS）2012–2020 全部 33 条：Best/Outstanding Paper 及 Best/Outstanding Student Paper 归 best_paper，Honorable Mention/Runner-up 归 honorable_mention，Test of Time（NIPS ToT 2017 首设，故 2012–2016 无 ToT）归 test_of_time。注意 NIPS 2012 当年最高论文荣誉为 Outstanding Student Paper Award（无通用 best paper），2016 除 Best Paper 外另设 Best Student Paper，均按 best_paper 收录并在 note 注明。ICML 2012–2020 全部 46 条：Best Paper 归 best_paper，Honorable Mention/Runner-Up 归 honorable_mention，Test of Time / 10-Year Award / Classic Paper Prize（2013 官方称 Classic Paper Prize）归 test_of_time；ICML 2017 的两条 Test of Time Honorable Mention 也归 test_of_time。ICLR 只收 best paper（ToT 2024 才设，超范围）：官方 best paper 奖 2016 才开始，故仅 2016–2019 共 10 条（2016×2、2017×3、2018×3、2019×2），2013–2015 无 best paper 奖、2020 官方决定不设 best paper（疫情转线上），均为真实缺项而非漏采。venue 统一 NeurIPS/ICML/ICLR；非 ToT 条目 year_work=year_awarded，ToT 条目 year_work 为原论文发表年（已逐条核实）。来源：NeurIPS 用各年 nips.cc/blog.neurips.cc/官方 Medium；ICML 用各年 icml.cc Awards 页（2012、2019 部分辅以 jeffhuang best-paper 汇总、CMU 官方新闻、PMLR v97 逐一核对作者）；ICLR 2019 用官方 iclr.cc/Conferences/2019/Awards，2016–2018 因 ICLR 早年无持久官方奖项页，用当年公告（Synced）与交叉核实的社区聚合源，标题作者经 arXiv/OpenReview 复核。仅收 2012–2020，2021+ 已在 awards_ml.json 中，未重复。",
+  "entries": [
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2012,
+      "award": "best_paper",
+      "title": "No voodoo here! Learning discrete graphical models via inverse covariance estimation",
+      "authors": [
+        "Po-Ling Loh",
+        "Martin J. Wainwright"
+      ],
+      "year_work": 2012,
+      "source_url": "https://nips.cc/Conferences/2012/Awards",
+      "note": "Outstanding Student Paper Award (top paper honor at NIPS 2012; no general Best Paper that year); originally NIPS 2012"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2012,
+      "award": "best_paper",
+      "title": "Discriminative Learning of Sum-Product Networks",
+      "authors": [
+        "Robert Gens",
+        "Pedro Domingos"
+      ],
+      "year_work": 2012,
+      "source_url": "https://nips.cc/Conferences/2012/Awards",
+      "note": "Outstanding Student Paper Award; originally NIPS 2012"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2012,
+      "award": "honorable_mention",
+      "title": "On the (Non-)existence of Convex, Calibrated Surrogate Losses for Ranking",
+      "authors": [
+        "Clément Calauzènes",
+        "Nicolas Usunier",
+        "Patrick Gallinari"
+      ],
+      "year_work": 2012,
+      "source_url": "https://nips.cc/Conferences/2012/Awards",
+      "note": "Honorable Mention for Outstanding Student Paper Award; originally NIPS 2012"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2012,
+      "award": "honorable_mention",
+      "title": "Spectral Learning of General Weighted Automata via Constrained Matrix Completion",
+      "authors": [
+        "Borja Balle",
+        "Mehryar Mohri"
+      ],
+      "year_work": 2012,
+      "source_url": "https://nips.cc/Conferences/2012/Awards",
+      "note": "Honorable Mention for Outstanding Student Paper Award; originally NIPS 2012"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2013,
+      "award": "best_paper",
+      "title": "A memory frontier for complex synapses",
+      "authors": [
+        "Subhaneil Lahiri",
+        "Surya Ganguli"
+      ],
+      "year_work": 2013,
+      "source_url": "https://nips.cc/Conferences/2013/Awards",
+      "note": "Outstanding Paper Award (one of 3); originally NIPS 2013"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2013,
+      "award": "best_paper",
+      "title": "Submodular Optimization with Submodular Cover and Submodular Knapsack Constraints",
+      "authors": [
+        "Rishabh Iyer",
+        "Jeff Bilmes"
+      ],
+      "year_work": 2013,
+      "source_url": "https://nips.cc/Conferences/2013/Awards",
+      "note": "Outstanding Paper Award (one of 3); originally NIPS 2013"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2013,
+      "award": "best_paper",
+      "title": "Scalable Influence Estimation in Continuous-Time Diffusion Networks",
+      "authors": [
+        "Nan Du",
+        "Le Song",
+        "Manuel Gomez-Rodriguez",
+        "Hongyuan Zha"
+      ],
+      "year_work": 2013,
+      "source_url": "https://nips.cc/Conferences/2013/Awards",
+      "note": "Outstanding Paper Award (one of 3); originally NIPS 2013"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2014,
+      "award": "best_paper",
+      "title": "Asymmetric LSH (ALSH) for Sublinear Time Maximum Inner Product Search (MIPS)",
+      "authors": [
+        "Anshumali Shrivastava",
+        "Ping Li"
+      ],
+      "year_work": 2014,
+      "source_url": "https://nips.cc/Conferences/2014/Awards",
+      "note": "Outstanding Paper Award (one of 2); originally NIPS 2014"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2014,
+      "award": "best_paper",
+      "title": "A* Sampling",
+      "authors": [
+        "Chris J. Maddison",
+        "Daniel Tarlow",
+        "Tom Minka"
+      ],
+      "year_work": 2014,
+      "source_url": "https://nips.cc/Conferences/2014/Awards",
+      "note": "Outstanding Paper Award (one of 2); originally NIPS 2014"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2015,
+      "award": "best_paper",
+      "title": "Competitive Distribution Estimation: Why is Good-Turing Good",
+      "authors": [
+        "Alon Orlitsky",
+        "Ananda Theertha Suresh"
+      ],
+      "year_work": 2015,
+      "source_url": "https://nips.cc/Conferences/2015/Awards",
+      "note": "Best Paper (one of 2); originally NIPS 2015"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2015,
+      "award": "best_paper",
+      "title": "Fast Convergence of Regularized Learning in Games",
+      "authors": [
+        "Vasilis Syrgkanis",
+        "Alekh Agarwal",
+        "Haipeng Luo",
+        "Robert E. Schapire"
+      ],
+      "year_work": 2015,
+      "source_url": "https://nips.cc/Conferences/2015/Awards",
+      "note": "Best Paper (one of 2); originally NIPS 2015"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2016,
+      "award": "best_paper",
+      "title": "Value Iteration Networks",
+      "authors": [
+        "Aviv Tamar",
+        "Yi Wu",
+        "Garrett Thomas",
+        "Sergey Levine",
+        "Pieter Abbeel"
+      ],
+      "year_work": 2016,
+      "source_url": "https://nips.cc/Conferences/2016/Awards",
+      "note": "Best Paper Award; originally NIPS 2016"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2016,
+      "award": "best_paper",
+      "title": "Matrix Completion has No Spurious Local Minimum",
+      "authors": [
+        "Rong Ge",
+        "Jason D. Lee",
+        "Tengyu Ma"
+      ],
+      "year_work": 2016,
+      "source_url": "https://nips.cc/Conferences/2016/Awards",
+      "note": "Best Student Paper Award; originally NIPS 2016"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2017,
+      "award": "best_paper",
+      "title": "Safe and Nested Subgame Solving for Imperfect-Information Games",
+      "authors": [
+        "Noam Brown",
+        "Tuomas Sandholm"
+      ],
+      "year_work": 2017,
+      "source_url": "https://nips.cc/Conferences/2017/Awards",
+      "note": "Best Paper Award (one of 3); originally NIPS 2017"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2017,
+      "award": "best_paper",
+      "title": "Variance-based Regularization with Convex Objectives",
+      "authors": [
+        "Hongseok Namkoong",
+        "John Duchi"
+      ],
+      "year_work": 2017,
+      "source_url": "https://nips.cc/Conferences/2017/Awards",
+      "note": "Best Paper Award (one of 3); originally NIPS 2017"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2017,
+      "award": "best_paper",
+      "title": "A Linear-Time Kernel Goodness-of-Fit Test",
+      "authors": [
+        "Wittawat Jitkrittum",
+        "Wenkai Xu",
+        "Zoltán Szabó",
+        "Kenji Fukumizu",
+        "Arthur Gretton"
+      ],
+      "year_work": 2017,
+      "source_url": "https://nips.cc/Conferences/2017/Awards",
+      "note": "Best Paper Award (one of 3); originally NIPS 2017"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2017,
+      "award": "test_of_time",
+      "title": "Random Features for Large-Scale Kernel Machines",
+      "authors": [
+        "Ali Rahimi",
+        "Benjamin Recht"
+      ],
+      "year_work": 2007,
+      "source_url": "https://nips.cc/Conferences/2017/Awards",
+      "note": "Test of Time Award; original paper NIPS 2007"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2018,
+      "award": "best_paper",
+      "title": "Non-delusional Q-learning and Value-iteration",
+      "authors": [
+        "Tyler Lu",
+        "Dale Schuurmans",
+        "Craig Boutilier"
+      ],
+      "year_work": 2018,
+      "source_url": "https://nips.cc/Conferences/2018/Awards",
+      "note": "Best Paper (one of 4); originally NeurIPS 2018"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2018,
+      "award": "best_paper",
+      "title": "Optimal Algorithms for Non-Smooth Distributed Optimization in Networks",
+      "authors": [
+        "Kevin Scaman",
+        "Francis Bach",
+        "Sébastien Bubeck",
+        "Laurent Massoulié",
+        "Yin Tat Lee"
+      ],
+      "year_work": 2018,
+      "source_url": "https://nips.cc/Conferences/2018/Awards",
+      "note": "Best Paper (one of 4); originally NeurIPS 2018"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2018,
+      "award": "best_paper",
+      "title": "Nearly Tight Sample Complexity Bounds for Learning Mixtures of Gaussians via Sample Compression Schemes",
+      "authors": [
+        "Hassan Ashtiani",
+        "Shai Ben-David",
+        "Nick Harvey",
+        "Christopher Liaw",
+        "Abbas Mehrabian",
+        "Yaniv Plan"
+      ],
+      "year_work": 2018,
+      "source_url": "https://nips.cc/Conferences/2018/Awards",
+      "note": "Best Paper (one of 4); originally NeurIPS 2018"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2018,
+      "award": "best_paper",
+      "title": "Neural Ordinary Differential Equations",
+      "authors": [
+        "Tian Qi Chen",
+        "Yulia Rubanova",
+        "Jesse Bettencourt",
+        "David Duvenaud"
+      ],
+      "year_work": 2018,
+      "source_url": "https://nips.cc/Conferences/2018/Awards",
+      "note": "Best Paper (one of 4); originally NeurIPS 2018"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2018,
+      "award": "test_of_time",
+      "title": "The Tradeoffs of Large Scale Learning",
+      "authors": [
+        "Léon Bottou",
+        "Olivier Bousquet"
+      ],
+      "year_work": 2007,
+      "source_url": "https://papers.nips.cc/paper/2007/hash/0d3180d672e08b4c5312dcdafdf6ef36-Abstract.html",
+      "note": "Test of Time Award (announced NeurIPS 2018); original paper NIPS 2007"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2019,
+      "award": "best_paper",
+      "title": "Distribution-Independent PAC Learning of Halfspaces with Massart Noise",
+      "authors": [
+        "Ilias Diakonikolas",
+        "Themis Gouleakis",
+        "Christos Tzamos"
+      ],
+      "year_work": 2019,
+      "source_url": "https://neuripsconf.medium.com/neurips-2019-paper-awards-807e41d0c1e",
+      "note": "Outstanding Paper Award; originally NeurIPS 2019"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2019,
+      "award": "best_paper",
+      "title": "Uniform convergence may be unable to explain generalization in deep learning",
+      "authors": [
+        "Vaishnavh Nagarajan",
+        "J. Zico Kolter"
+      ],
+      "year_work": 2019,
+      "source_url": "https://neuripsconf.medium.com/neurips-2019-paper-awards-807e41d0c1e",
+      "note": "Outstanding New Directions Paper Award (separate main award); originally NeurIPS 2019"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2019,
+      "award": "honorable_mention",
+      "title": "Nonparametric Density Estimation & Convergence Rates for GANs under Besov IPM Losses",
+      "authors": [
+        "Ananya Uppal",
+        "Shashank Singh",
+        "Barnabás Póczos"
+      ],
+      "year_work": 2019,
+      "source_url": "https://neuripsconf.medium.com/neurips-2019-paper-awards-807e41d0c1e",
+      "note": "Honorable Mention, Outstanding Paper Award; originally NeurIPS 2019"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2019,
+      "award": "honorable_mention",
+      "title": "Fast and Accurate Least-Mean-Squares Solvers",
+      "authors": [
+        "Alaa Maalouf",
+        "Ibrahim Jubran",
+        "Dan Feldman"
+      ],
+      "year_work": 2019,
+      "source_url": "https://neuripsconf.medium.com/neurips-2019-paper-awards-807e41d0c1e",
+      "note": "Honorable Mention, Outstanding Paper Award; originally NeurIPS 2019"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2019,
+      "award": "honorable_mention",
+      "title": "Putting An End to End-to-End: Gradient-Isolated Learning of Representations",
+      "authors": [
+        "Sindy Löwe",
+        "Peter O'Connor",
+        "Bastiaan Veeling"
+      ],
+      "year_work": 2019,
+      "source_url": "https://neuripsconf.medium.com/neurips-2019-paper-awards-807e41d0c1e",
+      "note": "Honorable Mention, Outstanding New Directions Paper Award; originally NeurIPS 2019"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2019,
+      "award": "honorable_mention",
+      "title": "Scene Representation Networks: Continuous 3D-Structure-Aware Neural Scene Representations",
+      "authors": [
+        "Vincent Sitzmann",
+        "Michael Zollhöfer",
+        "Gordon Wetzstein"
+      ],
+      "year_work": 2019,
+      "source_url": "https://neuripsconf.medium.com/neurips-2019-paper-awards-807e41d0c1e",
+      "note": "Honorable Mention, Outstanding New Directions Paper Award; originally NeurIPS 2019"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2019,
+      "award": "test_of_time",
+      "title": "Dual Averaging Method for Regularized Stochastic Learning and Online Optimization",
+      "authors": [
+        "Lin Xiao"
+      ],
+      "year_work": 2009,
+      "source_url": "https://neuripsconf.medium.com/neurips-2019-paper-awards-807e41d0c1e",
+      "note": "Test of Time Award; original paper NIPS 2009"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2020,
+      "award": "best_paper",
+      "title": "No-Regret Learning Dynamics for Extensive-Form Correlated Equilibrium",
+      "authors": [
+        "Andrea Celli",
+        "Alberto Marchesi",
+        "Gabriele Farina",
+        "Nicola Gatti"
+      ],
+      "year_work": 2020,
+      "source_url": "https://blog.neurips.cc/2020/12/07/announcing-the-neurips-2020-award-recipients/",
+      "note": "Best Paper Award (one of 3); originally NeurIPS 2020"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2020,
+      "award": "best_paper",
+      "title": "Improved Guarantees and a Multiple-Descent Curve for Column Subset Selection and the Nystrom Method",
+      "authors": [
+        "Michał Dereziński",
+        "Rajiv Khanna",
+        "Michael W. Mahoney"
+      ],
+      "year_work": 2020,
+      "source_url": "https://blog.neurips.cc/2020/12/07/announcing-the-neurips-2020-award-recipients/",
+      "note": "Best Paper Award (one of 3); originally NeurIPS 2020"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2020,
+      "award": "best_paper",
+      "title": "Language Models are Few-Shot Learners",
+      "authors": [
+        "Tom B. Brown",
+        "Benjamin Mann",
+        "Nick Ryder",
+        "Melanie Subbiah",
+        "Jared D. Kaplan",
+        "Prafulla Dhariwal",
+        "Arvind Neelakantan",
+        "Pranav Shyam",
+        "Girish Sastry",
+        "Amanda Askell",
+        "Sandhini Agarwal",
+        "Ariel Herbert-Voss",
+        "Gretchen M. Krueger",
+        "Tom Henighan",
+        "Rewon Child",
+        "Aditya Ramesh",
+        "Daniel Ziegler",
+        "Jeffrey Wu",
+        "Clemens Winter",
+        "Chris Hesse",
+        "Mark Chen",
+        "Eric Sigler",
+        "Mateusz Litwin",
+        "Scott Gray",
+        "Benjamin Chess",
+        "Jack Clark",
+        "Christopher Berner",
+        "Sam McCandlish",
+        "Alec Radford",
+        "Ilya Sutskever",
+        "Dario Amodei"
+      ],
+      "year_work": 2020,
+      "source_url": "https://blog.neurips.cc/2020/12/07/announcing-the-neurips-2020-award-recipients/",
+      "note": "Best Paper Award (GPT-3, one of 3); originally NeurIPS 2020"
+    },
+    {
+      "venue": "NeurIPS",
+      "year_awarded": 2020,
+      "award": "test_of_time",
+      "title": "HOGWILD!: A Lock-Free Approach to Parallelizing Stochastic Gradient Descent",
+      "authors": [
+        "Feng Niu",
+        "Benjamin Recht",
+        "Christopher Ré",
+        "Stephen J. Wright"
+      ],
+      "year_work": 2011,
+      "source_url": "https://blog.neurips.cc/2020/12/07/announcing-the-neurips-2020-award-recipients/",
+      "note": "Test of Time Award; original paper NIPS 2011"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2012,
+      "award": "best_paper",
+      "title": "Bayesian Posterior Sampling via Stochastic Gradient Fisher Scoring",
+      "authors": [
+        "Sungjin Ahn",
+        "Anoop Korattikara",
+        "Max Welling"
+      ],
+      "year_work": 2012,
+      "source_url": "https://jeffhuang.com/best_paper_awards/",
+      "note": "Best Paper; cross-checked arXiv:1206.6380"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2012,
+      "award": "test_of_time",
+      "title": "Diffusion Kernels on Graphs and Other Discrete Input Spaces",
+      "authors": [
+        "Risi Imre Kondor",
+        "John Lafferty"
+      ],
+      "year_work": 2002,
+      "source_url": "https://www.ml.cmu.edu/news/news-archive/2011-2015/2012/april/lafferty-kondor-icml-award.html",
+      "note": "Test of Time / 10-Year Award, originally ICML 2002"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2013,
+      "award": "best_paper",
+      "title": "Vanishing Component Analysis",
+      "authors": [
+        "Roi Livni",
+        "David Lehavi",
+        "Sagi Schein",
+        "Hila Nachlieli",
+        "Shai Shalev-Shwartz",
+        "Amir Globerson"
+      ],
+      "year_work": 2013,
+      "source_url": "https://icml.cc/2013/index.html?page_id=21.html",
+      "note": "Best Paper (shared between two papers)"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2013,
+      "award": "best_paper",
+      "title": "Fast Semidifferential-based Submodular Function Optimization",
+      "authors": [
+        "Rishabh Iyer",
+        "Stefanie Jegelka",
+        "Jeff Bilmes"
+      ],
+      "year_work": 2013,
+      "source_url": "https://icml.cc/2013/index.html?page_id=21.html",
+      "note": "Best Paper (shared between two papers)"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2013,
+      "award": "honorable_mention",
+      "title": "Smooth Sparse Coding via Marginal Regression for Learning Sparse Representations",
+      "authors": [
+        "Krishnakumar Balasubramanian",
+        "Kai Yu",
+        "Guy Lebanon"
+      ],
+      "year_work": 2013,
+      "source_url": "https://icml.cc/2013/index.html?page_id=21.html",
+      "note": "Best Paper Runner-Up (shared)"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2013,
+      "award": "honorable_mention",
+      "title": "Sparse coding for multitask and transfer learning",
+      "authors": [
+        "Andreas Maurer",
+        "Massimiliano Pontil",
+        "Bernardino Romera-Paredes"
+      ],
+      "year_work": 2013,
+      "source_url": "https://icml.cc/2013/index.html?page_id=21.html",
+      "note": "Best Paper Runner-Up (shared)"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2013,
+      "award": "test_of_time",
+      "title": "Semi-Supervised Learning Using Gaussian Fields and Harmonic Functions",
+      "authors": [
+        "Xiaojin Zhu",
+        "Zoubin Ghahramani",
+        "John Lafferty"
+      ],
+      "year_work": 2003,
+      "source_url": "https://icml.cc/2013/index.html?page_id=21.html",
+      "note": "Classic Paper Prize, originally ICML 2003"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2013,
+      "award": "test_of_time",
+      "title": "Online Convex Programming and Generalized Infinitesimal Gradient Ascent",
+      "authors": [
+        "Martin Zinkevich"
+      ],
+      "year_work": 2003,
+      "source_url": "https://icml.cc/2013/index.html?page_id=21.html",
+      "note": "Classic Paper Prize, originally ICML 2003"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2014,
+      "award": "best_paper",
+      "title": "Understanding the Limiting Factors of Topic Modeling via Posterior Contraction Analysis",
+      "authors": [
+        "Jian Tang",
+        "Zhaoshi Meng",
+        "Xuanlong Nguyen",
+        "Qiaozhu Mei",
+        "Ming Zhang"
+      ],
+      "year_work": 2014,
+      "source_url": "https://icml.cc/2014/index/article/26.htm",
+      "note": "Best Paper"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2014,
+      "award": "honorable_mention",
+      "title": "Discrete Chebyshev Classifiers",
+      "authors": [
+        "Elad Eban",
+        "Elad Mezuman",
+        "Amir Globerson"
+      ],
+      "year_work": 2014,
+      "source_url": "https://icml.cc/2014/index/article/26.htm",
+      "note": "Best Paper Runner-Up"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2014,
+      "award": "test_of_time",
+      "title": "Multiple kernel learning, conic duality, and the SMO algorithm",
+      "authors": [
+        "Francis Bach",
+        "Gert Lanckriet",
+        "Michael Jordan"
+      ],
+      "year_work": 2004,
+      "source_url": "https://icml.cc/2014/index/article/26.htm",
+      "note": "Test of Time / 10-Year Paper, originally ICML 2004"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2015,
+      "award": "best_paper",
+      "title": "Optimal and Adaptive Algorithms for Online Boosting",
+      "authors": [
+        "Alina Beygelzimer",
+        "Satyen Kale",
+        "Haipeng Luo"
+      ],
+      "year_work": 2015,
+      "source_url": "https://icml.cc/2015/index.html%3Fp=51.html",
+      "note": "Best Paper"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2015,
+      "award": "best_paper",
+      "title": "A Nearly-Linear Time Framework for Graph-Structured Sparsity",
+      "authors": [
+        "Chinmay Hegde",
+        "Piotr Indyk",
+        "Ludwig Schmidt"
+      ],
+      "year_work": 2015,
+      "source_url": "https://icml.cc/2015/index.html%3Fp=51.html",
+      "note": "Best Paper"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2015,
+      "award": "test_of_time",
+      "title": "Learning to Rank Using Gradient Descent",
+      "authors": [
+        "Chris Burges",
+        "Tal Shaked",
+        "Erin Renshaw",
+        "Ari Lazier",
+        "Matt Deeds",
+        "Nicole Hamilton",
+        "Greg Hullender"
+      ],
+      "year_work": 2005,
+      "source_url": "https://icml.cc/2015/index.html%3Fp=51.html",
+      "note": "Test of Time Award, originally ICML 2005"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2016,
+      "award": "best_paper",
+      "title": "Dueling Network Architectures for Deep Reinforcement Learning",
+      "authors": [
+        "Ziyu Wang",
+        "Tom Schaul",
+        "Matteo Hessel",
+        "Hado van Hasselt",
+        "Marc Lanctot",
+        "Nando de Freitas"
+      ],
+      "year_work": 2016,
+      "source_url": "https://icml.cc/2016/index.html%3Fp=2009.html",
+      "note": "Best Paper"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2016,
+      "award": "best_paper",
+      "title": "Pixel Recurrent Neural Networks",
+      "authors": [
+        "Aaron van den Oord",
+        "Nal Kalchbrenner",
+        "Koray Kavukcuoglu"
+      ],
+      "year_work": 2016,
+      "source_url": "https://icml.cc/2016/index.html%3Fp=2009.html",
+      "note": "Best Paper"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2016,
+      "award": "best_paper",
+      "title": "Ensuring Rapid Mixing and Low Bias for Asynchronous Gibbs Sampling",
+      "authors": [
+        "Christopher De Sa",
+        "Christopher Ré",
+        "Kunle Olukotun"
+      ],
+      "year_work": 2016,
+      "source_url": "https://icml.cc/2016/index.html%3Fp=2009.html",
+      "note": "Best Paper"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2016,
+      "award": "test_of_time",
+      "title": "Dynamic Topic Models",
+      "authors": [
+        "David M. Blei",
+        "John D. Lafferty"
+      ],
+      "year_work": 2006,
+      "source_url": "https://icml.cc/2016/index.html%3Fp=2009.html",
+      "note": "Test of Time Award, originally ICML 2006"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2017,
+      "award": "best_paper",
+      "title": "Understanding Black-box Predictions via Influence Functions",
+      "authors": [
+        "Pang Wei Koh",
+        "Percy Liang"
+      ],
+      "year_work": 2017,
+      "source_url": "https://icml.cc/Conferences/2017/Awards",
+      "note": "Best Paper"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2017,
+      "award": "honorable_mention",
+      "title": "Lost Relatives of the Gumbel Trick",
+      "authors": [
+        "Matej Balog",
+        "Nilesh Tripuraneni",
+        "Zoubin Ghahramani",
+        "Adrian Weller"
+      ],
+      "year_work": 2017,
+      "source_url": "https://icml.cc/Conferences/2017/Awards",
+      "note": "Best Paper Honorable Mention"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2017,
+      "award": "honorable_mention",
+      "title": "Modular Multitask Reinforcement Learning with Policy Sketches",
+      "authors": [
+        "Jacob Andreas",
+        "Dan Klein",
+        "Sergey Levine"
+      ],
+      "year_work": 2017,
+      "source_url": "https://icml.cc/Conferences/2017/Awards",
+      "note": "Best Paper Honorable Mention"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2017,
+      "award": "honorable_mention",
+      "title": "A Unified Maximum Likelihood Approach for Estimating Symmetric Properties of Discrete Distributions",
+      "authors": [
+        "Jayadev Acharya",
+        "Hirakendu Das",
+        "Alon Orlitsky",
+        "Ananda Theertha Suresh"
+      ],
+      "year_work": 2017,
+      "source_url": "https://icml.cc/Conferences/2017/Awards",
+      "note": "Best Paper Honorable Mention"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2017,
+      "award": "test_of_time",
+      "title": "Combining Online and Offline Knowledge in UCT",
+      "authors": [
+        "Sylvain Gelly",
+        "David Silver"
+      ],
+      "year_work": 2007,
+      "source_url": "https://icml.cc/Conferences/2017/Awards",
+      "note": "Test of Time Award, originally ICML 2007"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2017,
+      "award": "test_of_time",
+      "title": "Pegasos: Primal Estimated sub-GrAdient SOlver for SVM",
+      "authors": [
+        "Shai Shalev-Shwartz",
+        "Yoram Singer",
+        "Nathan Srebro"
+      ],
+      "year_work": 2007,
+      "source_url": "https://icml.cc/Conferences/2017/Awards",
+      "note": "Test of Time Honorable Mention, originally ICML 2007"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2017,
+      "award": "test_of_time",
+      "title": "A Bound on the Label Complexity of Agnostic Active Learning",
+      "authors": [
+        "Steve Hanneke"
+      ],
+      "year_work": 2007,
+      "source_url": "https://icml.cc/Conferences/2017/Awards",
+      "note": "Test of Time Honorable Mention, originally ICML 2007"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2018,
+      "award": "best_paper",
+      "title": "Obfuscated Gradients Give a False Sense of Security: Circumventing Defenses to Adversarial Examples",
+      "authors": [
+        "Anish Athalye",
+        "Nicholas Carlini",
+        "David Wagner"
+      ],
+      "year_work": 2018,
+      "source_url": "https://icml.cc/Conferences/2018/Awards",
+      "note": "Best Paper"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2018,
+      "award": "best_paper",
+      "title": "Delayed Impact of Fair Machine Learning",
+      "authors": [
+        "Lydia T. Liu",
+        "Sarah Dean",
+        "Esther Rolf",
+        "Max Simchowitz",
+        "Moritz Hardt"
+      ],
+      "year_work": 2018,
+      "source_url": "https://icml.cc/Conferences/2018/Awards",
+      "note": "Best Paper"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2018,
+      "award": "honorable_mention",
+      "title": "The Mechanics of n-Player Differentiable Games",
+      "authors": [
+        "David Balduzzi",
+        "Sébastien Racanière",
+        "James Martens",
+        "Jakob Foerster",
+        "Karl Tuyls",
+        "Thore Graepel"
+      ],
+      "year_work": 2018,
+      "source_url": "https://icml.cc/Conferences/2018/Awards",
+      "note": "Best Paper Runner-Up"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2018,
+      "award": "honorable_mention",
+      "title": "Near Optimal Frequent Directions for Sketching Dense and Sparse Matrices",
+      "authors": [
+        "Zengfeng Huang"
+      ],
+      "year_work": 2018,
+      "source_url": "https://icml.cc/Conferences/2018/Awards",
+      "note": "Best Paper Runner-Up"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2018,
+      "award": "honorable_mention",
+      "title": "Fairness Without Demographics in Repeated Loss Minimization",
+      "authors": [
+        "Tatsunori B. Hashimoto",
+        "Megha Srivastava",
+        "Hongseok Namkoong",
+        "Percy Liang"
+      ],
+      "year_work": 2018,
+      "source_url": "https://icml.cc/Conferences/2018/Awards",
+      "note": "Best Paper Runner-Up"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2018,
+      "award": "test_of_time",
+      "title": "A Unified Architecture for Natural Language Processing: Deep Neural Networks with Multitask Learning",
+      "authors": [
+        "Ronan Collobert",
+        "Jason Weston"
+      ],
+      "year_work": 2008,
+      "source_url": "https://icml.cc/Conferences/2018/Awards",
+      "note": "Test of Time Award, originally ICML 2008"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2019,
+      "award": "best_paper",
+      "title": "Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations",
+      "authors": [
+        "Francesco Locatello",
+        "Stefan Bauer",
+        "Mario Lucic",
+        "Gunnar Rätsch",
+        "Sylvain Gelly",
+        "Bernhard Schölkopf",
+        "Olivier Bachem"
+      ],
+      "year_work": 2019,
+      "source_url": "https://proceedings.mlr.press/v97/locatello19a.html",
+      "note": "Best Paper; authors verified via PMLR v97"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2019,
+      "award": "best_paper",
+      "title": "Rates of Convergence for Sparse Variational Gaussian Process Regression",
+      "authors": [
+        "David R. Burt",
+        "Carl Edward Rasmussen",
+        "Mark van der Wilk"
+      ],
+      "year_work": 2019,
+      "source_url": "https://proceedings.mlr.press/v97/burt19a.html",
+      "note": "Best Paper"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2019,
+      "award": "honorable_mention",
+      "title": "Analogies Explained: Towards Understanding Word Embeddings",
+      "authors": [
+        "Carl Allen",
+        "Timothy Hospedales"
+      ],
+      "year_work": 2019,
+      "source_url": "https://proceedings.mlr.press/v97/allen19a.html",
+      "note": "Best Paper Honorable Mention; authors verified via PMLR v97"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2019,
+      "award": "honorable_mention",
+      "title": "SATNet: Bridging deep learning and logical reasoning using a differentiable satisfiability solver",
+      "authors": [
+        "Po-Wei Wang",
+        "Priya L. Donti",
+        "Bryan Wilder",
+        "Zico Kolter"
+      ],
+      "year_work": 2019,
+      "source_url": "https://proceedings.mlr.press/v97/wang19e.html",
+      "note": "Best Paper Honorable Mention; authors verified via PMLR v97"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2019,
+      "award": "honorable_mention",
+      "title": "A Tail-Index Analysis of Stochastic Gradient Noise in Deep Neural Networks",
+      "authors": [
+        "Umut Şimşekli",
+        "Levent Sagun",
+        "Mert Gürbüzbalaban"
+      ],
+      "year_work": 2019,
+      "source_url": "https://proceedings.mlr.press/v97/simsekli19a.html",
+      "note": "Best Paper Honorable Mention; authors verified via PMLR v97"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2019,
+      "award": "honorable_mention",
+      "title": "Towards a Unified Analysis of Random Fourier Features",
+      "authors": [
+        "Zhu Li",
+        "Jean-François Ton",
+        "Dino Oglic",
+        "Dino Sejdinovic"
+      ],
+      "year_work": 2019,
+      "source_url": "https://proceedings.mlr.press/v97/li19k.html",
+      "note": "Best Paper Honorable Mention; authors verified via PMLR v97"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2019,
+      "award": "honorable_mention",
+      "title": "Amortized Monte Carlo Integration",
+      "authors": [
+        "Adam Goliński",
+        "Frank Wood",
+        "Tom Rainforth"
+      ],
+      "year_work": 2019,
+      "source_url": "https://proceedings.mlr.press/v97/golinski19a.html",
+      "note": "Best Paper Honorable Mention; authors verified via PMLR v97"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2019,
+      "award": "honorable_mention",
+      "title": "Social Influence as Intrinsic Motivation for Multi-Agent Deep Reinforcement Learning",
+      "authors": [
+        "Natasha Jaques",
+        "Angeliki Lazaridou",
+        "Edward Hughes",
+        "Caglar Gulcehre",
+        "Pedro A. Ortega",
+        "DJ Strouse",
+        "Joel Z. Leibo",
+        "Nando de Freitas"
+      ],
+      "year_work": 2019,
+      "source_url": "https://proceedings.mlr.press/v97/jaques19a.html",
+      "note": "Best Paper Honorable Mention; authors verified via PMLR v97"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2019,
+      "award": "honorable_mention",
+      "title": "Stochastic Beams and Where To Find Them: The Gumbel-Top-k Trick for Sampling Sequences Without Replacement",
+      "authors": [
+        "Wouter Kool",
+        "Herke van Hoof",
+        "Max Welling"
+      ],
+      "year_work": 2019,
+      "source_url": "https://proceedings.mlr.press/v97/kool19a.html",
+      "note": "Best Paper Honorable Mention; authors verified via PMLR v97"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2019,
+      "award": "test_of_time",
+      "title": "Online Dictionary Learning for Sparse Coding",
+      "authors": [
+        "Julien Mairal",
+        "Francis Bach",
+        "Jean Ponce",
+        "Guillermo Sapiro"
+      ],
+      "year_work": 2009,
+      "source_url": "https://icml.cc/Conferences/2019/ScheduleMultitrack?event=5269",
+      "note": "Test of Time Award, originally ICML 2009"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2020,
+      "award": "best_paper",
+      "title": "On Learning Sets of Symmetric Elements",
+      "authors": [
+        "Haggai Maron",
+        "Or Litany",
+        "Gal Chechik",
+        "Ethan Fetaya"
+      ],
+      "year_work": 2020,
+      "source_url": "https://icml.cc/virtual/2020/awards_detail",
+      "note": "Outstanding (Best) Paper"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2020,
+      "award": "best_paper",
+      "title": "Tuning-free Plug-and-Play Proximal Algorithm for Inverse Imaging Problems",
+      "authors": [
+        "Kaixuan Wei",
+        "Angelica Aviles-Rivero",
+        "Jingwei Liang",
+        "Ying Fu",
+        "Carola-Bibiane Schönlieb",
+        "Hua Huang"
+      ],
+      "year_work": 2020,
+      "source_url": "https://icml.cc/virtual/2020/awards_detail",
+      "note": "Outstanding (Best) Paper"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2020,
+      "award": "honorable_mention",
+      "title": "Efficiently sampling functions from Gaussian process posteriors",
+      "authors": [
+        "James T. Wilson",
+        "Viacheslav Borovitskiy",
+        "Alexander Terenin",
+        "Peter Mostowsky",
+        "Marc Peter Deisenroth"
+      ],
+      "year_work": 2020,
+      "source_url": "https://icml.cc/virtual/2020/awards_detail",
+      "note": "Outstanding Paper Honorable Mention"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2020,
+      "award": "honorable_mention",
+      "title": "Generative Pretraining From Pixels",
+      "authors": [
+        "Mark Chen",
+        "Alec Radford",
+        "Rewon Child",
+        "Jeffrey Wu",
+        "Heewoo Jun",
+        "David Luan",
+        "Ilya Sutskever"
+      ],
+      "year_work": 2020,
+      "source_url": "https://icml.cc/virtual/2020/awards_detail",
+      "note": "Outstanding Paper Honorable Mention"
+    },
+    {
+      "venue": "ICML",
+      "year_awarded": 2020,
+      "award": "test_of_time",
+      "title": "Gaussian Process Optimization in the Bandit Setting: No Regret and Experimental Design",
+      "authors": [
+        "Niranjan Srinivas",
+        "Andreas Krause",
+        "Sham M. Kakade",
+        "Matthias Seeger"
+      ],
+      "year_work": 2010,
+      "source_url": "https://icml.cc/virtual/2020/awards_detail",
+      "note": "Test of Time Award, originally ICML 2010"
+    },
+    {
+      "venue": "ICLR",
+      "year_awarded": 2016,
+      "award": "best_paper",
+      "title": "Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding",
+      "authors": [
+        "Song Han",
+        "Huizi Mao",
+        "William J. Dally"
+      ],
+      "year_work": 2016,
+      "source_url": "https://github.com/shunk031/awesome-ai-best-papers/blob/master/README.md",
+      "note": "Best Paper (one of 2); ICLR had no persistent official awards page before 2019"
+    },
+    {
+      "venue": "ICLR",
+      "year_awarded": 2016,
+      "award": "best_paper",
+      "title": "Neural Programmer-Interpreters",
+      "authors": [
+        "Scott Reed",
+        "Nando de Freitas"
+      ],
+      "year_work": 2016,
+      "source_url": "https://github.com/shunk031/awesome-ai-best-papers/blob/master/README.md",
+      "note": "Best Paper (one of 2); ICLR had no persistent official awards page before 2019"
+    },
+    {
+      "venue": "ICLR",
+      "year_awarded": 2017,
+      "award": "best_paper",
+      "title": "Understanding deep learning requires rethinking generalization",
+      "authors": [
+        "Chiyuan Zhang",
+        "Samy Bengio",
+        "Moritz Hardt",
+        "Benjamin Recht",
+        "Oriol Vinyals"
+      ],
+      "year_work": 2017,
+      "source_url": "https://desh2608.github.io/2017-10-14-best-papers-at-iclr-17/",
+      "note": "Best Paper (one of 3)"
+    },
+    {
+      "venue": "ICLR",
+      "year_awarded": 2017,
+      "award": "best_paper",
+      "title": "Making Neural Programming Architectures Generalize via Recursion",
+      "authors": [
+        "Jonathon Cai",
+        "Richard Shin",
+        "Dawn Song"
+      ],
+      "year_work": 2017,
+      "source_url": "https://desh2608.github.io/2017-10-14-best-papers-at-iclr-17/",
+      "note": "Best Paper (one of 3)"
+    },
+    {
+      "venue": "ICLR",
+      "year_awarded": 2017,
+      "award": "best_paper",
+      "title": "Semi-supervised Knowledge Transfer for Deep Learning from Private Training Data",
+      "authors": [
+        "Nicolas Papernot",
+        "Martín Abadi",
+        "Úlfar Erlingsson",
+        "Ian Goodfellow",
+        "Kunal Talwar"
+      ],
+      "year_work": 2017,
+      "source_url": "https://desh2608.github.io/2017-10-14-best-papers-at-iclr-17/",
+      "note": "Best Paper (one of 3)"
+    },
+    {
+      "venue": "ICLR",
+      "year_awarded": 2018,
+      "award": "best_paper",
+      "title": "On the Convergence of Adam and Beyond",
+      "authors": [
+        "Sashank J. Reddi",
+        "Satyen Kale",
+        "Sanjiv Kumar"
+      ],
+      "year_work": 2018,
+      "source_url": "https://syncedreview.com/2018/04/16/iclr-2018s-best-papers-variant-adam-spherical-cnns-and-meta-learning/",
+      "note": "Best Paper (one of 3)"
+    },
+    {
+      "venue": "ICLR",
+      "year_awarded": 2018,
+      "award": "best_paper",
+      "title": "Spherical CNNs",
+      "authors": [
+        "Taco S. Cohen",
+        "Mario Geiger",
+        "Jonas Köhler",
+        "Max Welling"
+      ],
+      "year_work": 2018,
+      "source_url": "https://syncedreview.com/2018/04/16/iclr-2018s-best-papers-variant-adam-spherical-cnns-and-meta-learning/",
+      "note": "Best Paper (one of 3)"
+    },
+    {
+      "venue": "ICLR",
+      "year_awarded": 2018,
+      "award": "best_paper",
+      "title": "Continuous Adaptation via Meta-Learning in Nonstationary and Competitive Environments",
+      "authors": [
+        "Maruan Al-Shedivat",
+        "Trapit Bansal",
+        "Yuri Burda",
+        "Ilya Sutskever",
+        "Igor Mordatch",
+        "Pieter Abbeel"
+      ],
+      "year_work": 2018,
+      "source_url": "https://syncedreview.com/2018/04/16/iclr-2018s-best-papers-variant-adam-spherical-cnns-and-meta-learning/",
+      "note": "Best Paper (one of 3)"
+    },
+    {
+      "venue": "ICLR",
+      "year_awarded": 2019,
+      "award": "best_paper",
+      "title": "The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks",
+      "authors": [
+        "Jonathan Frankle",
+        "Michael Carbin"
+      ],
+      "year_work": 2019,
+      "source_url": "https://iclr.cc/Conferences/2019/Awards",
+      "note": "Best Paper (one of 2)"
+    },
+    {
+      "venue": "ICLR",
+      "year_awarded": 2019,
+      "award": "best_paper",
+      "title": "Ordered Neurons: Integrating Tree Structures into Recurrent Neural Networks",
+      "authors": [
+        "Yikang Shen",
+        "Shawn Tan",
+        "Alessandro Sordoni",
+        "Aaron Courville"
+      ],
+      "year_work": 2019,
+      "source_url": "https://iclr.cc/Conferences/2019/Awards",
+      "note": "Best Paper (one of 2)"
+    }
+  ]
+}

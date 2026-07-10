@@ -42,8 +42,10 @@ ranking client-side in real time.
 
 ## Data
 
-- **3,564 honored papers** (award window 2021 – mid-2026; test-of-time prizes reach back to
-  work from the 1990s), 100 % affiliation-resolved.
+- **6,476 honored papers** (award window 2012 – mid-2026; test-of-time prizes reach back to
+  work from 1987), 97.8 % affiliation-resolved — every test-of-time and virtually every
+  best-paper–tier entry is resolved; the unresolved tail is ~130 pre-2017 CVPR/ECCV orals
+  whose papers sit behind publisher paywalls with no open copy.
 - Honors collected from official sources: OpenReview, conference award announcements,
   ACL Anthology, CVF Open Access — every entry carries a source URL.
 - Affiliations resolved through three stacked routes, best first:

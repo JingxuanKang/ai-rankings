@@ -1,0 +1,3056 @@
+{
+  "ACL|2012|bayesian symbol refined tree substitution grammars for syntactic parsing": {
+    "openalex_id": null,
+    "publication_year": 2012,
+    "first_author": {
+      "name": "Hiroyuki Shindo",
+      "institutions": [
+        {
+          "id": "man:ntt",
+          "name": "NTT",
+          "type": "company",
+          "country": "JP"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Masaaki Nagata",
+        "institutions": [
+          {
+            "id": "man:ntt",
+            "name": "NTT",
+            "type": "company",
+            "country": "JP"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "first & last authors both marked † = NTT Communication Science Laboratories (Miyao‡ = NII)"
+  },
+  "ACL|2013|grounded language learning from video described with sentences": {
+    "openalex_id": null,
+    "publication_year": 2013,
+    "first_author": {
+      "name": "Haonan Yu",
+      "institutions": [
+        {
+          "id": "man:purdue-university",
+          "name": "Purdue University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Jeffrey Mark Siskind",
+        "institutions": [
+          {
+            "id": "man:purdue-university",
+            "name": "Purdue University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single shared affiliation, assigned to both"
+  },
+  "ACL|2014|a discriminative graph based parser for the abstract meaning representation": {
+    "openalex_id": null,
+    "publication_year": 2014,
+    "first_author": {
+      "name": "Jeffrey Flanigan",
+      "institutions": [
+        {
+          "id": "man:carnegie-mellon-university",
+          "name": "Carnegie Mellon University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Noah A. Smith",
+        "institutions": [
+          {
+            "id": "man:carnegie-mellon-university",
+            "name": "Carnegie Mellon University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single shared affiliation, assigned to both"
+  },
+  "ACL|2014|fast and robust neural network joint models for statistical machine translation": {
+    "openalex_id": null,
+    "publication_year": 2014,
+    "first_author": {
+      "name": "Jacob Devlin",
+      "institutions": [
+        {
+          "id": "man:raytheon-bbn-technologies",
+          "name": "Raytheon BBN Technologies",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "John Makhoul",
+        "institutions": [
+          {
+            "id": "man:raytheon-bbn-technologies",
+            "name": "Raytheon BBN Technologies",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single shared affiliation, assigned to both"
+  },
+  "ACL|2014|improving sparse word similarity models with asymmetric measures": {
+    "openalex_id": null,
+    "publication_year": 2014,
+    "first_author": {
+      "name": "Jean Mark Gawron",
+      "institutions": [
+        {
+          "id": "man:san-diego-state-university",
+          "name": "San Diego State University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Jean Mark Gawron",
+        "institutions": [
+          {
+            "id": "man:san-diego-state-university",
+            "name": "San Diego State University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single-author paper"
+  },
+  "ACL|2014|predicting power relations between participants in written dialog from a single thread": {
+    "openalex_id": null,
+    "publication_year": 2014,
+    "first_author": {
+      "name": "Vinodkumar Prabhakaran",
+      "institutions": [
+        {
+          "id": "man:columbia-university",
+          "name": "Columbia University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Owen Rambow",
+        "institutions": [
+          {
+            "id": "man:columbia-university",
+            "name": "Columbia University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "both at Columbia University (different departments)"
+  },
+  "ACL|2014|semantic parsing via paraphrasing": {
+    "openalex_id": null,
+    "publication_year": 2014,
+    "first_author": {
+      "name": "Jonathan Berant",
+      "institutions": [
+        {
+          "id": "man:stanford-university",
+          "name": "Stanford University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Percy Liang",
+        "institutions": [
+          {
+            "id": "man:stanford-university",
+            "name": "Stanford University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single shared affiliation, assigned to both"
+  },
+  "ACL|2014|structured learning for taxonomy induction with belief propagation": {
+    "openalex_id": null,
+    "publication_year": 2014,
+    "first_author": {
+      "name": "Mohit Bansal",
+      "institutions": [
+        {
+          "id": "man:toyota-technological-institute-at-chicago",
+          "name": "Toyota Technological Institute at Chicago",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Dan Klein",
+        "institutions": [
+          {
+            "id": "man:university-of-california-berkeley",
+            "name": "University of California, Berkeley",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "per-author affiliations; first = TTI Chicago (Toyota Technological Institute at Chicago), last = UC Berkeley"
+  },
+  "ACL|2015|improving evaluation of machine translation quality estimation": {
+    "openalex_id": null,
+    "publication_year": 2015,
+    "first_author": {
+      "name": "Yvette Graham",
+      "institutions": [
+        {
+          "id": "man:trinity-college-dublin",
+          "name": "Trinity College Dublin",
+          "type": "education",
+          "country": "IE"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Yvette Graham",
+        "institutions": [
+          {
+            "id": "man:trinity-college-dublin",
+            "name": "Trinity College Dublin",
+            "type": "education",
+            "country": "IE"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single-author paper; ADAPT Centre at Trinity College Dublin"
+  },
+  "ACL|2016|a thorough examination of the cnn daily mail reading comprehension task": {
+    "openalex_id": null,
+    "publication_year": 2016,
+    "first_author": {
+      "name": "Danqi Chen",
+      "institutions": [
+        {
+          "id": "man:stanford-university",
+          "name": "Stanford University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Christopher D. Manning",
+        "institutions": [
+          {
+            "id": "man:stanford-university",
+            "name": "Stanford University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single shared affiliation, assigned to both"
+  },
+  "ACL|2016|case and cause in icelandic reconstructing causal networks of cascaded language changes": {
+    "openalex_id": null,
+    "publication_year": 2016,
+    "first_author": {
+      "name": "Fermín Moscoso del Prado Martín",
+      "institutions": [
+        {
+          "id": "man:university-of-california-santa-barbara",
+          "name": "University of California, Santa Barbara",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Christian Brendel",
+        "institutions": [
+          {
+            "id": "man:university-of-california-santa-barbara",
+            "name": "University of California, Santa Barbara",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single shared affiliation, assigned to both"
+  },
+  "ACL|2016|finding non arbitrary form meaning systematicity using string metric learning for kernel regression": {
+    "openalex_id": null,
+    "publication_year": 2016,
+    "first_author": {
+      "name": "E. Darío Gutiérrez",
+      "institutions": [
+        {
+          "id": "man:university-of-california-san-diego",
+          "name": "University of California, San Diego",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Benjamin K. Bergen",
+        "institutions": [
+          {
+            "id": "man:university-of-california-san-diego",
+            "name": "University of California, San Diego",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "first & last both UC San Diego (printed line authoritative over first author's berkeley email); middle author at MIT"
+  },
+  "ACL|2016|globally normalized transition based neural networks": {
+    "openalex_id": null,
+    "publication_year": 2016,
+    "first_author": {
+      "name": "Daniel Andor",
+      "institutions": [
+        {
+          "id": "man:google",
+          "name": "Google",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Michael Collins",
+        "institutions": [
+          {
+            "id": "man:google",
+            "name": "Google",
+            "type": "company",
+            "country": "US"
+          },
+          {
+            "id": "man:columbia-university",
+            "name": "Columbia University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "all authors under Google Inc; last author Collins marked * = 'On leave from Columbia University', both listed"
+  },
+  "ACL|2016|harnessing deep neural networks with logic rules": {
+    "openalex_id": null,
+    "publication_year": 2016,
+    "first_author": {
+      "name": "Zhiting Hu",
+      "institutions": [
+        {
+          "id": "man:carnegie-mellon-university",
+          "name": "Carnegie Mellon University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Eric P. Xing",
+        "institutions": [
+          {
+            "id": "man:carnegie-mellon-university",
+            "name": "Carnegie Mellon University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single shared affiliation (Carnegie Mellon University), assigned to both"
+  },
+  "ACL|2016|improving hypernymy detection with an integrated path based and distributional method": {
+    "openalex_id": null,
+    "publication_year": 2016,
+    "first_author": {
+      "name": "Vered Shwartz",
+      "institutions": [
+        {
+          "id": "man:bar-ilan-university",
+          "name": "Bar-Ilan University",
+          "type": "education",
+          "country": "IL"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Ido Dagan",
+        "institutions": [
+          {
+            "id": "man:bar-ilan-university",
+            "name": "Bar-Ilan University",
+            "type": "education",
+            "country": "IL"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single shared affiliation (Bar-Ilan University), assigned to both"
+  },
+  "ACL|2016|integrating distributional lexical contrast into word embeddings for antonym synonym distinction": {
+    "openalex_id": null,
+    "publication_year": 2016,
+    "first_author": {
+      "name": "Kim Anh Nguyen",
+      "institutions": [
+        {
+          "id": "man:university-of-stuttgart",
+          "name": "University of Stuttgart",
+          "type": "education",
+          "country": "DE"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Ngoc Thang Vu",
+        "institutions": [
+          {
+            "id": "man:university-of-stuttgart",
+            "name": "University of Stuttgart",
+            "type": "education",
+            "country": "DE"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single shared affiliation (University of Stuttgart), assigned to both"
+  },
+  "ACL|2016|learning language games through interaction": {
+    "openalex_id": null,
+    "publication_year": 2016,
+    "first_author": {
+      "name": "Sida I. Wang",
+      "institutions": [
+        {
+          "id": "man:stanford-university",
+          "name": "Stanford University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Christopher D. Manning",
+        "institutions": [
+          {
+            "id": "man:stanford-university",
+            "name": "Stanford University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single shared affiliation (Stanford University), assigned to both"
+  },
+  "ACL|2016|multimodal pivots for image caption translation": {
+    "openalex_id": null,
+    "publication_year": 2016,
+    "first_author": {
+      "name": "Julian Hitschler",
+      "institutions": [
+        {
+          "id": "man:heidelberg-university",
+          "name": "Heidelberg University",
+          "type": "education",
+          "country": "DE"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Stefan Riezler",
+        "institutions": [
+          {
+            "id": "man:heidelberg-university",
+            "name": "Heidelberg University",
+            "type": "education",
+            "country": "DE"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "all authors at Heidelberg University (different departments); assigned to both"
+  },
+  "ACL|2016|on line active reward learning for policy optimisation in spoken dialogue systems": {
+    "openalex_id": null,
+    "publication_year": 2016,
+    "first_author": {
+      "name": "Pei-Hao Su",
+      "institutions": [
+        {
+          "id": "man:university-of-cambridge",
+          "name": "University of Cambridge",
+          "type": "education",
+          "country": "GB"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Steve Young",
+        "institutions": [
+          {
+            "id": "man:university-of-cambridge",
+            "name": "University of Cambridge",
+            "type": "education",
+            "country": "GB"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single shared affiliation (University of Cambridge), assigned to both"
+  },
+  "ACL|2017|a corpus of natural language for visual reasoning": {
+    "openalex_id": null,
+    "publication_year": 2017,
+    "first_author": {
+      "name": "Alane Suhr",
+      "institutions": [
+        {
+          "id": "man:cornell-university",
+          "name": "Cornell University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Yoav Artzi",
+        "institutions": [
+          {
+            "id": "man:cornell-university",
+            "name": "Cornell University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "marker mapping: first (Suhr) and last (Artzi) both dagger = Cornell University; double-dagger = Facebook AI Research applies only to Mike Lewis"
+  },
+  "ACL|2017|a local detection approach for named entity recognition and mention detection": {
+    "openalex_id": null,
+    "publication_year": 2017,
+    "first_author": {
+      "name": "Mingbin Xu",
+      "institutions": [
+        {
+          "id": "man:york-university",
+          "name": "York University",
+          "type": "education",
+          "country": "CA"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Sedtawut Watcharawittayakul",
+        "institutions": [
+          {
+            "id": "man:york-university",
+            "name": "York University",
+            "type": "education",
+            "country": "CA"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single shared affiliation (York University), assigned to both"
+  },
+  "ACL|2017|a neural model for user geolocation and lexical dialectology": {
+    "openalex_id": null,
+    "publication_year": 2017,
+    "first_author": {
+      "name": "Afshin Rahimi",
+      "institutions": [
+        {
+          "id": "man:university-of-melbourne",
+          "name": "University of Melbourne",
+          "type": "education",
+          "country": "AU"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Timothy Baldwin",
+        "institutions": [
+          {
+            "id": "man:university-of-melbourne",
+            "name": "University of Melbourne",
+            "type": "education",
+            "country": "AU"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single shared affiliation (University of Melbourne), assigned to both"
+  },
+  "ACL|2017|a transition based directed acyclic graph parser for ucca": {
+    "openalex_id": null,
+    "publication_year": 2017,
+    "first_author": {
+      "name": "Daniel Hershcovich",
+      "institutions": [
+        {
+          "id": "man:hebrew-university-of-jerusalem",
+          "name": "Hebrew University of Jerusalem",
+          "type": "education",
+          "country": "IL"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Ari Rappoport",
+        "institutions": [
+          {
+            "id": "man:hebrew-university-of-jerusalem",
+            "name": "Hebrew University of Jerusalem",
+            "type": "education",
+            "country": "IL"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "markers 1 (Edmond and Lily Safra Center for Brain Sciences) and 2 (School of Computer Science) both at Hebrew University of Jerusalem; single institution"
+  },
+  "ACL|2017|a two stage parsing method for text level discourse analysis": {
+    "openalex_id": null,
+    "publication_year": 2017,
+    "first_author": {
+      "name": "Yizhong Wang",
+      "institutions": [
+        {
+          "id": "man:peking-university",
+          "name": "Peking University",
+          "type": "education",
+          "country": "CN"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Houfeng Wang",
+        "institutions": [
+          {
+            "id": "man:peking-university",
+            "name": "Peking University",
+            "type": "education",
+            "country": "CN"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single shared affiliation (Peking University), assigned to both"
+  },
+  "ACL|2017|abstract syntax networks for code generation and semantic parsing": {
+    "openalex_id": null,
+    "publication_year": 2017,
+    "first_author": {
+      "name": "Maxim Rabinovich",
+      "institutions": [
+        {
+          "id": "man:university-of-california-berkeley",
+          "name": "University of California, Berkeley",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Dan Klein",
+        "institutions": [
+          {
+            "id": "man:university-of-california-berkeley",
+            "name": "University of California, Berkeley",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "* is equal-contribution role marker (not affiliation); sole institution University of California, Berkeley assigned to both"
+  },
+  "ACL|2017|abstractive document summarization with a graph based attentional neural model": {
+    "openalex_id": null,
+    "publication_year": 2017,
+    "first_author": {
+      "name": "Jiwei Tan",
+      "institutions": [
+        {
+          "id": "man:peking-university",
+          "name": "Peking University",
+          "type": "education",
+          "country": "CN"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Jianguo Xiao",
+        "institutions": [
+          {
+            "id": "man:peking-university",
+            "name": "Peking University",
+            "type": "education",
+            "country": "CN"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single shared affiliation (Peking University), assigned to both"
+  },
+  "ACL|2017|adversarial multi criteria learning for chinese word segmentation": {
+    "openalex_id": null,
+    "publication_year": 2017,
+    "first_author": {
+      "name": "Xinchi Chen",
+      "institutions": [
+        {
+          "id": "man:fudan-university",
+          "name": "Fudan University",
+          "type": "education",
+          "country": "CN"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Xuanjing Huang",
+        "institutions": [
+          {
+            "id": "man:fudan-university",
+            "name": "Fudan University",
+            "type": "education",
+            "country": "CN"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "Single shared affiliation (Fudan University); * on Xipeng Qiu = corresponding-author role marker, not an institution. Assigned Fudan to both."
+  },
+  "ACL|2017|attention strategies for multi source sequence to sequence learning": {
+    "openalex_id": null,
+    "publication_year": 2017,
+    "first_author": {
+      "name": "Jindřich Libovický",
+      "institutions": [
+        {
+          "id": "man:charles-university",
+          "name": "Charles University",
+          "type": "education",
+          "country": "CZ"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Jindřich Helcl",
+        "institutions": [
+          {
+            "id": "man:charles-university",
+            "name": "Charles University",
+            "type": "education",
+            "country": "CZ"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "Single shared affiliation (Charles University, Prague); assigned to both."
+  },
+  "ACL|2017|detecting annotation noise in automatically labelled data": {
+    "openalex_id": null,
+    "publication_year": 2017,
+    "first_author": {
+      "name": "Ines Rehbein",
+      "institutions": [
+        {
+          "id": "man:university-of-heidelberg",
+          "name": "University of Heidelberg",
+          "type": "education",
+          "country": "DE"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Josef Ruppenhofer",
+        "institutions": [
+          {
+            "id": "man:institute-for-the-german-language",
+            "name": "Institute for the German Language",
+            "type": "education",
+            "country": "DE"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "No per-author markers; printed joint block 'IDS Mannheim/University of Heidelberg'. Disambiguated by printed emails: Rehbein@cl.uni-heidelberg.de -> University of Heidelberg; Ruppenhofer@ids-mannheim.de -> IDS Mannheim (Institute for the German Language)."
+  },
+  "ACL|2017|error repair dependency parsing for ungrammatical texts": {
+    "openalex_id": null,
+    "publication_year": 2017,
+    "first_author": {
+      "name": "Keisuke Sakaguchi",
+      "institutions": [
+        {
+          "id": "man:johns-hopkins-university",
+          "name": "Johns Hopkins University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Benjamin Van Durme",
+        "institutions": [
+          {
+            "id": "man:johns-hopkins-university",
+            "name": "Johns Hopkins University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "Markers dagger (CLSP) and double-dagger (HLTCOE) map to two centers both within Johns Hopkins University; institution = JHU for both first (dagger) and last (dagger+double-dagger) author."
+  },
+  "ACL|2017|joint extraction of entities and relations based on a novel tagging scheme": {
+    "openalex_id": null,
+    "publication_year": 2017,
+    "first_author": {
+      "name": "Suncong Zheng",
+      "institutions": [
+        {
+          "id": "man:institute-of-automation-chinese-academy-of-sciences",
+          "name": "Institute of Automation, Chinese Academy of Sciences",
+          "type": "education",
+          "country": "CN"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Bo Xu",
+        "institutions": [
+          {
+            "id": "man:institute-of-automation-chinese-academy-of-sciences",
+            "name": "Institute of Automation, Chinese Academy of Sciences",
+            "type": "education",
+            "country": "CN"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "Single shared affiliation (Institute of Automation, Chinese Academy of Sciences); assigned to both."
+  },
+  "ACL|2017|multi task video captioning with video and entailment generation": {
+    "openalex_id": null,
+    "publication_year": 2017,
+    "first_author": {
+      "name": "Ramakanth Pasunuru",
+      "institutions": [
+        {
+          "id": "man:university-of-north-carolina-at-chapel-hill",
+          "name": "University of North Carolina at Chapel Hill",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Mohit Bansal",
+        "institutions": [
+          {
+            "id": "man:university-of-north-carolina-at-chapel-hill",
+            "name": "University of North Carolina at Chapel Hill",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "Single shared affiliation (UNC Chapel Hill); assigned to both."
+  },
+  "ACL|2017|neural joint model for transition based chinese syntactic analysis": {
+    "openalex_id": null,
+    "publication_year": 2017,
+    "first_author": {
+      "name": "Shuhei Kurita",
+      "institutions": [
+        {
+          "id": "man:kyoto-university",
+          "name": "Kyoto University",
+          "type": "education",
+          "country": "JP"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Sadao Kurohashi",
+        "institutions": [
+          {
+            "id": "man:kyoto-university",
+            "name": "Kyoto University",
+            "type": "education",
+            "country": "JP"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "Single shared affiliation (Kyoto University); assigned to both."
+  },
+  "ACL|2017|probabilistic typology deep generative models of vowel inventories": {
+    "openalex_id": null,
+    "publication_year": 2017,
+    "first_author": {
+      "name": "Ryan Cotterell",
+      "institutions": [
+        {
+          "id": "man:johns-hopkins-university",
+          "name": "Johns Hopkins University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Jason Eisner",
+        "institutions": [
+          {
+            "id": "man:johns-hopkins-university",
+            "name": "Johns Hopkins University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "Single shared affiliation (Johns Hopkins University); assigned to both."
+  },
+  "ACL|2017|robust incremental neural semantic graph parsing": {
+    "openalex_id": null,
+    "publication_year": 2017,
+    "first_author": {
+      "name": "Jan Buys",
+      "institutions": [
+        {
+          "id": "man:university-of-oxford",
+          "name": "University of Oxford",
+          "type": "education",
+          "country": "GB"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Phil Blunsom",
+        "institutions": [
+          {
+            "id": "man:university-of-oxford",
+            "name": "University of Oxford",
+            "type": "education",
+            "country": "GB"
+          },
+          {
+            "id": "man:deepmind",
+            "name": "DeepMind",
+            "type": "company",
+            "country": "GB"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "First author marker 1 = University of Oxford; last author Blunsom carries markers 1,2 = University of Oxford + DeepMind."
+  },
+  "ACL|2017|the role of prosody and speech register in word segmentation a computational modelling perspective": {
+    "openalex_id": null,
+    "publication_year": 2017,
+    "first_author": {
+      "name": "Bogdan Ludusan",
+      "institutions": [
+        {
+          "id": "man:ecole-des-hautes-etudes-en-sciences-sociales",
+          "name": "École des Hautes Études en Sciences Sociales",
+          "type": "education",
+          "country": "FR"
+        },
+        {
+          "id": "man:ecole-normale-superieure",
+          "name": "École Normale Supérieure",
+          "type": "education",
+          "country": "FR"
+        },
+        {
+          "id": "man:psl-university",
+          "name": "PSL University",
+          "type": "education",
+          "country": "FR"
+        },
+        {
+          "id": "man:cnrs",
+          "name": "CNRS",
+          "type": "government",
+          "country": "FR"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Emmanuel Dupoux",
+        "institutions": [
+          {
+            "id": "man:ecole-des-hautes-etudes-en-sciences-sociales",
+            "name": "École des Hautes Études en Sciences Sociales",
+            "type": "education",
+            "country": "FR"
+          },
+          {
+            "id": "man:ecole-normale-superieure",
+            "name": "École Normale Supérieure",
+            "type": "education",
+            "country": "FR"
+          },
+          {
+            "id": "man:psl-university",
+            "name": "PSL University",
+            "type": "education",
+            "country": "FR"
+          },
+          {
+            "id": "man:cnrs",
+            "name": "CNRS",
+            "type": "government",
+            "country": "FR"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "LSCP is a joint research unit; first author (Ludusan) and last author (Dupoux) share the LSCP block, whose printed tutelles EHESS/ENS/PSL/CNRS are listed for both. CNRS classified as government (French national research organization)."
+  },
+  "ACL|2017|towards an automatic turing test learning to evaluate dialogue responses": {
+    "openalex_id": null,
+    "publication_year": 2017,
+    "first_author": {
+      "name": "Ryan Lowe",
+      "institutions": [
+        {
+          "id": "man:mcgill-university",
+          "name": "McGill University",
+          "type": "education",
+          "country": "CA"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Joelle Pineau",
+        "institutions": [
+          {
+            "id": "man:mcgill-university",
+            "name": "McGill University",
+            "type": "education",
+            "country": "CA"
+          },
+          {
+            "id": "man:cifar",
+            "name": "CIFAR",
+            "type": "nonprofit",
+            "country": "CA"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "* = equal-contribution role marker (ignored). First author Lowe (heart) = McGill. Last author Pineau (heart + double-dagger) = McGill + CIFAR (double-dagger maps to 'CIFAR Senior Fellow', a named institution)."
+  },
+  "ACL|2017|understanding and detecting supporting arguments of diverse types": {
+    "openalex_id": null,
+    "publication_year": 2017,
+    "first_author": {
+      "name": "Xinyu Hua",
+      "institutions": [
+        {
+          "id": "man:northeastern-university",
+          "name": "Northeastern University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Lu Wang",
+        "institutions": [
+          {
+            "id": "man:northeastern-university",
+            "name": "Northeastern University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "Single shared affiliation (Northeastern University); assigned to both."
+  },
+  "ACL|2017|unifying text metadata and user network representations with a neural network for geolocation prediction": {
+    "openalex_id": null,
+    "publication_year": 2017,
+    "first_author": {
+      "name": "Yasuhide Miura",
+      "institutions": [
+        {
+          "id": "man:fuji-xerox",
+          "name": "Fuji Xerox",
+          "type": "company",
+          "country": "JP"
+        },
+        {
+          "id": "man:tokyo-institute-of-technology",
+          "name": "Tokyo Institute of Technology",
+          "type": "education",
+          "country": "JP"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Tomoko Ohkuma",
+        "institutions": [
+          {
+            "id": "man:fuji-xerox",
+            "name": "Fuji Xerox",
+            "type": "company",
+            "country": "JP"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "First author Miura (dagger+double-dagger) = Fuji Xerox + Tokyo Institute of Technology; last author Ohkuma (dagger) = Fuji Xerox."
+  },
+  "ACL|2017|vancouver welcomes you minimalist location metonymy resolution": {
+    "openalex_id": null,
+    "publication_year": 2017,
+    "first_author": {
+      "name": "Milan Gritta",
+      "institutions": [
+        {
+          "id": "man:university-of-cambridge",
+          "name": "University of Cambridge",
+          "type": "education",
+          "country": "GB"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Nigel Collier",
+        "institutions": [
+          {
+            "id": "man:university-of-cambridge",
+            "name": "University of Cambridge",
+            "type": "education",
+            "country": "GB"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "Single shared affiliation (University of Cambridge, Language Technology Lab); assigned to both."
+  },
+  "ACL|2017|visualizing and understanding neural machine translation": {
+    "openalex_id": null,
+    "publication_year": 2017,
+    "first_author": {
+      "name": "Yanzhuo Ding",
+      "institutions": [
+        {
+          "id": "man:tsinghua-university",
+          "name": "Tsinghua University",
+          "type": "education",
+          "country": "CN"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Maosong Sun",
+        "institutions": [
+          {
+            "id": "man:tsinghua-university",
+            "name": "Tsinghua University",
+            "type": "education",
+            "country": "CN"
+          },
+          {
+            "id": "man:jiangsu-collaborative-innovation-center-for-language-competence",
+            "name": "Jiangsu Collaborative Innovation Center for Language Competence",
+            "type": "education",
+            "country": "CN"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "First author † = Tsinghua University; last author †‡ = Tsinghua University + Jiangsu Collaborative Innovation Center for Language Competence (∗ is corresponding-author role marker)."
+  },
+  "ACL|2018|lighter can still be dark modeling comparative color descriptions": {
+    "openalex_id": null,
+    "publication_year": 2018,
+    "first_author": {
+      "name": "Olivia Winn",
+      "institutions": [
+        {
+          "id": "man:columbia-university",
+          "name": "Columbia University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Smaranda Muresan",
+        "institutions": [
+          {
+            "id": "man:columbia-university",
+            "name": "Columbia University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "Both at Columbia University (first author Computer Science Dept, last author Data Science Institute)."
+  },
+  "ACL|2018|backpropagating through structured argmax using a spigot": {
+    "openalex_id": null,
+    "publication_year": 2018,
+    "first_author": {
+      "name": "Hao Peng",
+      "institutions": [
+        {
+          "id": "man:university-of-washington",
+          "name": "University of Washington",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Noah A. Smith",
+        "institutions": [
+          {
+            "id": "man:university-of-washington",
+            "name": "University of Washington",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "First and last author both ♦ = University of Washington (middle author Sam Thomson ♣ = CMU)."
+  },
+  "ACL|2018|coarse to fine decoding for neural semantic parsing": {
+    "openalex_id": null,
+    "publication_year": 2018,
+    "first_author": {
+      "name": "Li Dong",
+      "institutions": [
+        {
+          "id": "man:university-of-edinburgh",
+          "name": "University of Edinburgh",
+          "type": "education",
+          "country": "GB"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Mirella Lapata",
+        "institutions": [
+          {
+            "id": "man:university-of-edinburgh",
+            "name": "University of Edinburgh",
+            "type": "education",
+            "country": "GB"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "Single shared affiliation (University of Edinburgh); assigned to both."
+  },
+  "ACL|2018|do neural network cross modal mappings really bridge modalities": {
+    "openalex_id": null,
+    "publication_year": 2018,
+    "first_author": {
+      "name": "Guillem Collell",
+      "institutions": [
+        {
+          "id": "man:ku-leuven",
+          "name": "KU Leuven",
+          "type": "education",
+          "country": "BE"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Marie-Francine Moens",
+        "institutions": [
+          {
+            "id": "man:ku-leuven",
+            "name": "KU Leuven",
+            "type": "education",
+            "country": "BE"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "Both at KU Leuven (Department of Computer Science)."
+  },
+  "ACL|2018|finding syntax in human encephalography with beam search": {
+    "openalex_id": null,
+    "publication_year": 2018,
+    "first_author": {
+      "name": "John Hale",
+      "institutions": [
+        {
+          "id": "man:deepmind",
+          "name": "DeepMind",
+          "type": "company",
+          "country": "GB"
+        },
+        {
+          "id": "man:cornell-university",
+          "name": "Cornell University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Jonathan R. Brennan",
+        "institutions": [
+          {
+            "id": "man:university-of-michigan",
+            "name": "University of Michigan",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "First author ♠,4 = DeepMind + Cornell University (two markers); last author ♦ = University of Michigan."
+  },
+  "ACL|2018|hierarchical neural story generation": {
+    "openalex_id": null,
+    "publication_year": 2018,
+    "first_author": {
+      "name": "Angela Fan",
+      "institutions": [
+        {
+          "id": "man:facebook",
+          "name": "Facebook",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Yann Dauphin",
+        "institutions": [
+          {
+            "id": "man:facebook",
+            "name": "Facebook",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "Single shared affiliation Facebook AI Research (Menlo Park); kept as printed org 'Facebook' per vintage rule; assigned to both."
+  },
+  "ACL|2018|jointly predicting predicates and arguments in neural semantic role labeling": {
+    "openalex_id": null,
+    "publication_year": 2018,
+    "first_author": {
+      "name": "Luheng He",
+      "institutions": [
+        {
+          "id": "man:university-of-washington",
+          "name": "University of Washington",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Luke Zettlemoyer",
+        "institutions": [
+          {
+            "id": "man:university-of-washington",
+            "name": "University of Washington",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "Single shared affiliation (University of Washington); assigned to both."
+  },
+  "ACL|2018|know what you don t know unanswerable questions for squad": {
+    "openalex_id": null,
+    "publication_year": 2018,
+    "first_author": {
+      "name": "Pranav Rajpurkar",
+      "institutions": [
+        {
+          "id": "man:stanford-university",
+          "name": "Stanford University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Percy Liang",
+        "institutions": [
+          {
+            "id": "man:stanford-university",
+            "name": "Stanford University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "Single shared affiliation (Stanford University); ∗ is equal-contribution role marker."
+  },
+  "ACL|2018|large scale qa srl parsing": {
+    "openalex_id": null,
+    "publication_year": 2018,
+    "first_author": {
+      "name": "Nicholas FitzGerald",
+      "institutions": [
+        {
+          "id": "man:university-of-washington",
+          "name": "University of Washington",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Luke Zettlemoyer",
+        "institutions": [
+          {
+            "id": "man:university-of-washington",
+            "name": "University of Washington",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "Printed affiliation for all authors is University of Washington; ∗ footnote ('much of this work done while at the Allen Institute for AI') is a work-done-while-at role note, not the publication-time affiliation."
+  },
+  "ACL|2018|learning to ask good questions ranking clarification questions using neural expected value of perfect information": {
+    "openalex_id": null,
+    "publication_year": 2018,
+    "first_author": {
+      "name": "Sudha Rao",
+      "institutions": [
+        {
+          "id": "man:university-of-maryland-college-park",
+          "name": "University of Maryland, College Park",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Hal Daumé III",
+        "institutions": [
+          {
+            "id": "man:university-of-maryland-college-park",
+            "name": "University of Maryland, College Park",
+            "type": "education",
+            "country": "US"
+          },
+          {
+            "id": "man:microsoft",
+            "name": "Microsoft",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "Last author lists two affiliations: University of Maryland, College Park + Microsoft Research, New York City."
+  },
+  "ACL|2018|let s do it again a first computational approach to detecting adverbial presupposition triggers": {
+    "openalex_id": null,
+    "publication_year": 2018,
+    "first_author": {
+      "name": "Andre Cianflone",
+      "institutions": [
+        {
+          "id": "man:mcgill-university",
+          "name": "McGill University",
+          "type": "education",
+          "country": "CA"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Jackie Chi Kit Cheung",
+        "institutions": [
+          {
+            "id": "man:mila",
+            "name": "Mila",
+            "type": "nonprofit",
+            "country": "CA"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "No superscript affiliation markers; authors mapped to affiliation columns by position (first three → School of Computer Science, McGill University; last author Cheung → MILA); ∗ = equal-contribution role marker."
+  },
+  "ACL|2018|nash toward end to end neural architecture for generative semantic hashing": {
+    "openalex_id": null,
+    "publication_year": 2018,
+    "first_author": {
+      "name": "Dinghan Shen",
+      "institutions": [
+        {
+          "id": "man:duke-university",
+          "name": "Duke University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Lawrence Carin",
+        "institutions": [
+          {
+            "id": "man:duke-university",
+            "name": "Duke University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "* is equal-contribution role marker; first author (Shen, marker 1) and last author (Carin, marker 1) both Duke University"
+  },
+  "ACL|2018|semantically equivalent adversarial rules for debugging nlp models": {
+    "openalex_id": null,
+    "publication_year": 2018,
+    "first_author": {
+      "name": "Marco Tulio Ribeiro",
+      "institutions": [
+        {
+          "id": "man:university-of-washington",
+          "name": "University of Washington",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Carlos Guestrin",
+        "institutions": [
+          {
+            "id": "man:university-of-washington",
+            "name": "University of Washington",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "positional column mapping (no markers); first and last author columns both University of Washington"
+  },
+  "ACL|2019|a simple theoretical model of importance for summarization": {
+    "openalex_id": null,
+    "publication_year": 2019,
+    "first_author": {
+      "name": "Maxime Peyrard",
+      "institutions": [
+        {
+          "id": "man:epfl",
+          "name": "EPFL",
+          "type": "education",
+          "country": "CH"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Maxime Peyrard",
+        "institutions": [
+          {
+            "id": "man:epfl",
+            "name": "EPFL",
+            "type": "education",
+            "country": "CH"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single author; * = 'research partly done at UKP Lab/TU Darmstadt' work-done role marker, printed affiliation is EPFL"
+  },
+  "ACL|2019|bridging the gap between training and inference for neural machine translation": {
+    "openalex_id": null,
+    "publication_year": 2019,
+    "first_author": {
+      "name": "Wen Zhang",
+      "institutions": [
+        {
+          "id": "man:institute-of-computing-technology-chinese-academy-of-sciences",
+          "name": "Institute of Computing Technology, Chinese Academy of Sciences",
+          "type": "education",
+          "country": "CN"
+        },
+        {
+          "id": "man:university-of-chinese-academy-of-sciences",
+          "name": "University of Chinese Academy of Sciences",
+          "type": "education",
+          "country": "CN"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Qun Liu",
+        "institutions": [
+          {
+            "id": "man:huawei",
+            "name": "Huawei",
+            "type": "company",
+            "country": "CN"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "first author markers 1,2 = ICT/CAS + University of Chinese Academy of Sciences; last author marker 5 = Huawei Noah's Ark Lab (printed 'Hong Kong, China'), tagged company CN"
+  },
+  "ACL|2019|do you know that florence is packed with visitors evaluating state of the art models of speaker commitment": {
+    "openalex_id": null,
+    "publication_year": 2019,
+    "first_author": {
+      "name": "Nanjiang Jiang",
+      "institutions": [
+        {
+          "id": "man:ohio-state-university",
+          "name": "Ohio State University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Marie-Catherine de Marneffe",
+        "institutions": [
+          {
+            "id": "man:ohio-state-university",
+            "name": "Ohio State University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single shared affiliation (The Ohio State University) assigned to both authors"
+  },
+  "ACL|2019|emotion cause pair extraction a new task to emotion analysis in texts": {
+    "openalex_id": null,
+    "publication_year": 2019,
+    "first_author": {
+      "name": "Rui Xia",
+      "institutions": [
+        {
+          "id": "man:nanjing-university-of-science-and-technology",
+          "name": "Nanjing University of Science and Technology",
+          "type": "education",
+          "country": "CN"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Zixiang Ding",
+        "institutions": [
+          {
+            "id": "man:nanjing-university-of-science-and-technology",
+            "name": "Nanjing University of Science and Technology",
+            "type": "education",
+            "country": "CN"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single shared affiliation (Nanjing University of Science and Technology) assigned to both authors"
+  },
+  "ACL|2019|transferable multi domain state generator for task oriented dialogue systems": {
+    "openalex_id": null,
+    "publication_year": 2019,
+    "first_author": {
+      "name": "Chien-Sheng Wu",
+      "institutions": [
+        {
+          "id": "man:hong-kong-university-of-science-and-technology",
+          "name": "Hong Kong University of Science and Technology",
+          "type": "education",
+          "country": "HK"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Pascale Fung",
+        "institutions": [
+          {
+            "id": "man:hong-kong-university-of-science-and-technology",
+            "name": "Hong Kong University of Science and Technology",
+            "type": "education",
+            "country": "HK"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "* = 'work partially done as intern at Salesforce' role marker (not counted as affiliation); first author dagger = HKUST, last author dagger = HKUST"
+  },
+  "ACL|2019|we need to talk about standard splits": {
+    "openalex_id": null,
+    "publication_year": 2019,
+    "first_author": {
+      "name": "Kyle Gorman",
+      "institutions": [
+        {
+          "id": "man:city-university-of-new-york",
+          "name": "City University of New York",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Steven Bedrick",
+        "institutions": [
+          {
+            "id": "man:oregon-health-science-university",
+            "name": "Oregon Health & Science University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": ""
+  },
+  "ACL|2019|zero shot word sense disambiguation using sense definition embeddings": {
+    "openalex_id": null,
+    "publication_year": 2019,
+    "first_author": {
+      "name": "Sawan Kumar",
+      "institutions": [
+        {
+          "id": "man:indian-institute-of-science",
+          "name": "Indian Institute of Science",
+          "type": "education",
+          "country": "IN"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Partha Talukdar",
+        "institutions": [
+          {
+            "id": "man:indian-institute-of-science",
+            "name": "Indian Institute of Science",
+            "type": "education",
+            "country": "IN"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "first author (marker 1) and last author (marker 1) = Indian Institute of Science; * on a middle author is a work-done role marker (marker 2 = CMU, not first/last)"
+  },
+  "ACL|2020|beyond accuracy behavioral testing of nlp models with checklist": {
+    "openalex_id": null,
+    "publication_year": 2020,
+    "first_author": {
+      "name": "Marco Tulio Ribeiro",
+      "institutions": [
+        {
+          "id": "man:microsoft",
+          "name": "Microsoft",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Sameer Singh",
+        "institutions": [
+          {
+            "id": "man:university-of-california-irvine",
+            "name": "University of California, Irvine",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "numeric markers; first author 1 = Microsoft Research, last author 3 = University of California, Irvine"
+  },
+  "ACL|2020|climbing towards nlu on meaning form and understanding in the age of data": {
+    "openalex_id": null,
+    "publication_year": 2020,
+    "first_author": {
+      "name": "Emily M. Bender",
+      "institutions": [
+        {
+          "id": "man:university-of-washington",
+          "name": "University of Washington",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Alexander Koller",
+        "institutions": [
+          {
+            "id": "man:saarland-university",
+            "name": "Saarland University",
+            "type": "education",
+            "country": "DE"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": ""
+  },
+  "ACL|2020|don t stop pretraining adapt language models to domains and tasks": {
+    "openalex_id": null,
+    "publication_year": 2020,
+    "first_author": {
+      "name": "Suchin Gururangan",
+      "institutions": [
+        {
+          "id": "man:allen-institute-for-ai",
+          "name": "Allen Institute for AI",
+          "type": "nonprofit",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Noah A. Smith",
+        "institutions": [
+          {
+            "id": "man:allen-institute-for-ai",
+            "name": "Allen Institute for AI",
+            "type": "nonprofit",
+            "country": "US"
+          },
+          {
+            "id": "man:university-of-washington",
+            "name": "University of Washington",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "first author dagger = Allen Institute for AI only; last author dagger+diamond = Allen Institute for AI + University of Washington (Paul G. Allen School)"
+  },
+  "ACL|2020|how can we accelerate progress towards human like linguistic generalization": {
+    "openalex_id": null,
+    "publication_year": 2020,
+    "first_author": {
+      "name": "Tal Linzen",
+      "institutions": [
+        {
+          "id": "man:johns-hopkins-university",
+          "name": "Johns Hopkins University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Tal Linzen",
+        "institutions": [
+          {
+            "id": "man:johns-hopkins-university",
+            "name": "Johns Hopkins University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single author"
+  },
+  "ACL|2020|tangled up in bleu reevaluating the evaluation of automatic machine translation evaluation metrics": {
+    "openalex_id": null,
+    "publication_year": 2020,
+    "first_author": {
+      "name": "Nitika Mathur",
+      "institutions": [
+        {
+          "id": "man:university-of-melbourne",
+          "name": "University of Melbourne",
+          "type": "education",
+          "country": "AU"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Trevor Cohn",
+        "institutions": [
+          {
+            "id": "man:university-of-melbourne",
+            "name": "University of Melbourne",
+            "type": "education",
+            "country": "AU"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single shared affiliation (The University of Melbourne), assigned to both"
+  },
+  "EMNLP|2012|a coherence model based on syntactic patterns": {
+    "openalex_id": null,
+    "publication_year": 2012,
+    "first_author": {
+      "name": "Annie Louis",
+      "institutions": [
+        {
+          "id": "man:university-of-pennsylvania",
+          "name": "University of Pennsylvania",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Ani Nenkova",
+        "institutions": [
+          {
+            "id": "man:university-of-pennsylvania",
+            "name": "University of Pennsylvania",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": ""
+  },
+  "EMNLP|2013|breaking out of local optima with count transforms and model recombination a study in grammar induction": {
+    "openalex_id": null,
+    "publication_year": 2013,
+    "first_author": {
+      "name": "Valentin I. Spitkovsky",
+      "institutions": [
+        {
+          "id": "man:stanford-university",
+          "name": "Stanford University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Daniel Jurafsky",
+        "institutions": [
+          {
+            "id": "man:stanford-university",
+            "name": "Stanford University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "no institution line printed; affiliations from printed email domains (valentin@cs.stanford.edu, jurafsky@stanford.edu)"
+  },
+  "EMNLP|2014|modeling biological processes for reading comprehension": {
+    "openalex_id": null,
+    "publication_year": 2014,
+    "first_author": {
+      "name": "Jonathan Berant",
+      "institutions": [
+        {
+          "id": "man:stanford-university",
+          "name": "Stanford University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Christopher D. Manning",
+        "institutions": [
+          {
+            "id": "man:stanford-university",
+            "name": "Stanford University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "* marks equal contribution (Berant, Srikumar), not an affiliation; first and last author both printed under Stanford University"
+  },
+  "EMNLP|2015|broad coverage ccg semantic parsing with amr": {
+    "openalex_id": null,
+    "publication_year": 2015,
+    "first_author": {
+      "name": "Yoav Artzi",
+      "institutions": [
+        {
+          "id": "man:cornell-university",
+          "name": "Cornell University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Luke Zettlemoyer",
+        "institutions": [
+          {
+            "id": "man:university-of-washington",
+            "name": "University of Washington",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "* on first author is a footnote marker (not an institution); first author printed under Cornell University, last author under University of Washington"
+  },
+  "EMNLP|2015|building a shared world mapping distributional to model theoretic semantic spaces": {
+    "openalex_id": null,
+    "publication_year": 2015,
+    "first_author": {
+      "name": "Aurélie Herbelot",
+      "institutions": [
+        {
+          "id": "man:university-of-stuttgart",
+          "name": "University of Stuttgart",
+          "type": "education",
+          "country": "DE"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Eva Maria Vecchi",
+        "institutions": [
+          {
+            "id": "man:university-of-cambridge",
+            "name": "University of Cambridge",
+            "type": "education",
+            "country": "GB"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": ""
+  },
+  "EMNLP|2015|joint lemmatization and morphological tagging with lemming": {
+    "openalex_id": null,
+    "publication_year": 2015,
+    "first_author": {
+      "name": "Thomas Müller",
+      "institutions": [
+        {
+          "id": "man:university-of-munich",
+          "name": "University of Munich",
+          "type": "education",
+          "country": "DE"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Hinrich Schütze",
+        "institutions": [
+          {
+            "id": "man:university-of-munich",
+            "name": "University of Munich",
+            "type": "education",
+            "country": "DE"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "numeric markers: first and last author both carry marker 1 = University of Munich (Johns Hopkins, marker 2, applies only to Cotterell)"
+  },
+  "EMNLP|2015|language understanding for text based games using deep reinforcement learning": {
+    "openalex_id": null,
+    "publication_year": 2015,
+    "first_author": {
+      "name": "Karthik Narasimhan",
+      "institutions": [
+        {
+          "id": "man:massachusetts-institute-of-technology",
+          "name": "Massachusetts Institute of Technology",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Regina Barzilay",
+        "institutions": [
+          {
+            "id": "man:massachusetts-institute-of-technology",
+            "name": "Massachusetts Institute of Technology",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "* marks equal contribution, not an affiliation; all authors CSAIL, MIT"
+  },
+  "EMNLP|2015|semantically conditioned lstm based natural language generation for spoken dialogue systems": {
+    "openalex_id": null,
+    "publication_year": 2015,
+    "first_author": {
+      "name": "Tsung-Hsien Wen",
+      "institutions": [
+        {
+          "id": "man:university-of-cambridge",
+          "name": "University of Cambridge",
+          "type": "education",
+          "country": "GB"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Steve Young",
+        "institutions": [
+          {
+            "id": "man:university-of-cambridge",
+            "name": "University of Cambridge",
+            "type": "education",
+            "country": "GB"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single shared affiliation (Cambridge University Engineering Department), assigned to both"
+  },
+  "EMNLP|2015|semi supervised bootstrapping of relationship extractors with distributional semantics": {
+    "openalex_id": null,
+    "publication_year": 2015,
+    "first_author": {
+      "name": "David S. Batista",
+      "institutions": [
+        {
+          "id": "man:university-of-lisbon",
+          "name": "University of Lisbon",
+          "type": "education",
+          "country": "PT"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Mário J. Silva",
+        "institutions": [
+          {
+            "id": "man:university-of-lisbon",
+            "name": "University of Lisbon",
+            "type": "education",
+            "country": "PT"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single shared affiliation 'INESC-ID, Instituto Superior Técnico, Universidade de Lisboa' → University of Lisbon, assigned to both"
+  },
+  "EMNLP|2015|traversing knowledge graphs in vector space": {
+    "openalex_id": null,
+    "publication_year": 2015,
+    "first_author": {
+      "name": "Kelvin Guu",
+      "institutions": [
+        {
+          "id": "man:stanford-university",
+          "name": "Stanford University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Percy Liang",
+        "institutions": [
+          {
+            "id": "man:stanford-university",
+            "name": "Stanford University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single shared affiliation (Stanford University), assigned to both"
+  },
+  "EMNLP|2016|global neural ccg parsing with optimality guarantees": {
+    "openalex_id": null,
+    "publication_year": 2016,
+    "first_author": {
+      "name": "Kenton Lee",
+      "institutions": [
+        {
+          "id": "man:university-of-washington",
+          "name": "University of Washington",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Luke Zettlemoyer",
+        "institutions": [
+          {
+            "id": "man:university-of-washington",
+            "name": "University of Washington",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single shared affiliation (University of Washington), assigned to both"
+  },
+  "EMNLP|2016|improving information extraction by acquiring external evidence with reinforcement learning": {
+    "openalex_id": null,
+    "publication_year": 2016,
+    "first_author": {
+      "name": "Karthik Narasimhan",
+      "institutions": [
+        {
+          "id": "man:massachusetts-institute-of-technology",
+          "name": "Massachusetts Institute of Technology",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Regina Barzilay",
+        "institutions": [
+          {
+            "id": "man:massachusetts-institute-of-technology",
+            "name": "Massachusetts Institute of Technology",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single shared affiliation (CSAIL, MIT), assigned to both"
+  },
+  "EMNLP|2016|learning a lexicon and translation model from phoneme lattices": {
+    "openalex_id": null,
+    "publication_year": 2016,
+    "first_author": {
+      "name": "Oliver Adams",
+      "institutions": [
+        {
+          "id": "man:university-of-melbourne",
+          "name": "University of Melbourne",
+          "type": "education",
+          "country": "AU"
+        },
+        {
+          "id": "man:nara-institute-of-science-and-technology",
+          "name": "Nara Institute of Science and Technology",
+          "type": "education",
+          "country": "JP"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Satoshi Nakamura",
+        "institutions": [
+          {
+            "id": "man:nara-institute-of-science-and-technology",
+            "name": "Nara Institute of Science and Technology",
+            "type": "education",
+            "country": "JP"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "first author ♠♥ = University of Melbourne + Nara Institute of Science and Technology; last author ♥ = Nara Institute of Science and Technology"
+  },
+  "EMNLP|2016|squad 100 000 questions for machine comprehension of text": {
+    "openalex_id": null,
+    "publication_year": 2016,
+    "first_author": {
+      "name": "Pranav Rajpurkar",
+      "institutions": [
+        {
+          "id": "man:stanford-university",
+          "name": "Stanford University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Percy Liang",
+        "institutions": [
+          {
+            "id": "man:stanford-university",
+            "name": "Stanford University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single shared affiliation (Stanford University), assigned to both"
+  },
+  "EMNLP|2016|sequence to sequence learning as beam search optimization": {
+    "openalex_id": null,
+    "publication_year": 2016,
+    "first_author": {
+      "name": "Sam Wiseman",
+      "institutions": [
+        {
+          "id": "man:harvard-university",
+          "name": "Harvard University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Alexander M. Rush",
+        "institutions": [
+          {
+            "id": "man:harvard-university",
+            "name": "Harvard University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single shared affiliation (Harvard University), assigned to both"
+  },
+  "EMNLP|2016|span based constituency parsing with a structure label system and provably optimal dynamic oracles": {
+    "openalex_id": null,
+    "publication_year": 2016,
+    "first_author": {
+      "name": "James Cross",
+      "institutions": [
+        {
+          "id": "man:oregon-state-university",
+          "name": "Oregon State University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Liang Huang",
+        "institutions": [
+          {
+            "id": "man:oregon-state-university",
+            "name": "Oregon State University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single shared affiliation (Oregon State University), assigned to both"
+  },
+  "EMNLP|2017|bringing structure into summaries crowdsourcing a benchmark corpus of concept maps": {
+    "openalex_id": null,
+    "publication_year": 2017,
+    "first_author": {
+      "name": "Tobias Falke",
+      "institutions": [
+        {
+          "id": "man:technical-university-of-darmstadt",
+          "name": "Technical University of Darmstadt",
+          "type": "education",
+          "country": "DE"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Iryna Gurevych",
+        "institutions": [
+          {
+            "id": "man:technical-university-of-darmstadt",
+            "name": "Technical University of Darmstadt",
+            "type": "education",
+            "country": "DE"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single shared affiliation (printed Technische Universitat Darmstadt), assigned to both"
+  },
+  "EMNLP|2017|depression and self harm risk assessment in online forums": {
+    "openalex_id": null,
+    "publication_year": 2017,
+    "first_author": {
+      "name": "Andrew Yates",
+      "institutions": [
+        {
+          "id": "man:max-planck-institute-for-informatics",
+          "name": "Max Planck Institute for Informatics",
+          "type": "education",
+          "country": "DE"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Nazli Goharian",
+        "institutions": [
+          {
+            "id": "man:georgetown-university",
+            "name": "Georgetown University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "* is equal-contribution role marker; first author † = Max Planck Institute for Informatics, last author ‡ = Georgetown University"
+  },
+  "EMNLP|2017|men also like shopping reducing gender bias amplification using corpus level constraints": {
+    "openalex_id": null,
+    "publication_year": 2017,
+    "first_author": {
+      "name": "Jieyu Zhao",
+      "institutions": [
+        {
+          "id": "man:university-of-virginia",
+          "name": "University of Virginia",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Kai-Wei Chang",
+        "institutions": [
+          {
+            "id": "man:university-of-virginia",
+            "name": "University of Virginia",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "first author § and last author § both = University of Virginia (‡ = University of Washington for a middle author)"
+  },
+  "EMNLP|2017|natural language does not emerge naturally in multi agent dialog": {
+    "openalex_id": null,
+    "publication_year": 2017,
+    "first_author": {
+      "name": "Satwik Kottur",
+      "institutions": [
+        {
+          "id": "man:carnegie-mellon-university",
+          "name": "Carnegie Mellon University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Dhruv Batra",
+        "institutions": [
+          {
+            "id": "man:georgia-institute-of-technology",
+            "name": "Georgia Institute of Technology",
+            "type": "education",
+            "country": "US"
+          },
+          {
+            "id": "man:facebook",
+            "name": "Facebook",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "first author 1 = Carnegie Mellon University; last author 3,4 = Georgia Tech + Facebook AI Research"
+  },
+  "EMNLP|2018|how much reading does reading comprehension require a critical investigation of popular benchmarks": {
+    "openalex_id": null,
+    "publication_year": 2018,
+    "first_author": {
+      "name": "Divyansh Kaushik",
+      "institutions": [
+        {
+          "id": "man:carnegie-mellon-university",
+          "name": "Carnegie Mellon University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Zachary C. Lipton",
+        "institutions": [
+          {
+            "id": "man:carnegie-mellon-university",
+            "name": "Carnegie Mellon University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "both at Carnegie Mellon University (LTI vs Tepper School, same institution)"
+  },
+  "EMNLP|2018|linguistically informed self attention for semantic role labeling": {
+    "openalex_id": null,
+    "publication_year": 2018,
+    "first_author": {
+      "name": "Emma Strubell",
+      "institutions": [
+        {
+          "id": "man:university-of-massachusetts-amherst",
+          "name": "University of Massachusetts Amherst",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Andrew McCallum",
+        "institutions": [
+          {
+            "id": "man:university-of-massachusetts-amherst",
+            "name": "University of Massachusetts Amherst",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "first author 1 and last author 1 = University of Massachusetts Amherst (2 = Google AI Language for middle authors)"
+  },
+  "EMNLP|2018|multiwoz a large scale multi domain wizard of oz dataset for task oriented dialogue modelling": {
+    "openalex_id": null,
+    "publication_year": 2018,
+    "first_author": {
+      "name": "Paweł Budzianowski",
+      "institutions": [
+        {
+          "id": "man:university-of-cambridge",
+          "name": "University of Cambridge",
+          "type": "education",
+          "country": "GB"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Milica Gašić",
+        "institutions": [
+          {
+            "id": "man:university-of-cambridge",
+            "name": "University of Cambridge",
+            "type": "education",
+            "country": "GB"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "first author 1 and last author 1 = University of Cambridge (2 = PolyAI for a middle author)"
+  },
+  "EMNLP|2018|phrase based neural unsupervised machine translation": {
+    "openalex_id": null,
+    "publication_year": 2018,
+    "first_author": {
+      "name": "Guillaume Lample",
+      "institutions": [
+        {
+          "id": "man:facebook",
+          "name": "Facebook",
+          "type": "company",
+          "country": "US"
+        },
+        {
+          "id": "man:sorbonne-university",
+          "name": "Sorbonne University",
+          "type": "education",
+          "country": "FR"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Marc'Aurelio Ranzato",
+        "institutions": [
+          {
+            "id": "man:facebook",
+            "name": "Facebook",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "first author = Facebook AI Research + Sorbonne Universites († gives the Sorbonne detail, not a role marker); last author = Facebook AI Research"
+  },
+  "EMNLP|2019|designing and interpreting probes with control tasks": {
+    "openalex_id": null,
+    "publication_year": 2019,
+    "first_author": {
+      "name": "John Hewitt",
+      "institutions": [
+        {
+          "id": "man:stanford-university",
+          "name": "Stanford University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Percy Liang",
+        "institutions": [
+          {
+            "id": "man:stanford-university",
+            "name": "Stanford University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "single shared affiliation (Stanford University), assigned to both"
+  },
+  "EMNLP|2019|specializing word embeddings for parsing by information bottleneck": {
+    "openalex_id": null,
+    "publication_year": 2019,
+    "first_author": {
+      "name": "Xiang Lisa Li",
+      "institutions": [
+        {
+          "id": "man:johns-hopkins-university",
+          "name": "Johns Hopkins University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Jason Eisner",
+        "institutions": [
+          {
+            "id": "man:johns-hopkins-university",
+            "name": "Johns Hopkins University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "Single shared affiliation (Johns Hopkins University), assigned to both authors."
+  },
+  "EMNLP|2019|the flores evaluation datasets for low resource machine translation nepalienglish and sinhalaenglish": {
+    "openalex_id": null,
+    "publication_year": 2019,
+    "first_author": {
+      "name": "Francisco Guzmán",
+      "institutions": [
+        {
+          "id": "man:facebook",
+          "name": "Facebook",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Marc'Aurelio Ranzato",
+        "institutions": [
+          {
+            "id": "man:facebook",
+            "name": "Facebook",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "First author ♥ is equal-contribution role marker; with no institution marker he defaults to first org Facebook Applied Machine Learning. Last author 'F' marker = Facebook AI Research. Both normalized to Facebook (page prints Facebook)."
+  },
+  "EMNLP|2020|digital voicing of silent speech": {
+    "openalex_id": null,
+    "publication_year": 2020,
+    "first_author": {
+      "name": "David Gaddy",
+      "institutions": [
+        {
+          "id": "man:university-of-california-berkeley",
+          "name": "University of California, Berkeley",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Dan Klein",
+        "institutions": [
+          {
+            "id": "man:university-of-california-berkeley",
+            "name": "University of California, Berkeley",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "Single shared affiliation (UC Berkeley), assigned to both authors."
+  },
+  "EMNLP|2020|glucose generalized and contextualized story explanations": {
+    "openalex_id": null,
+    "publication_year": 2020,
+    "first_author": {
+      "name": "Nasrin Mostafazadeh",
+      "institutions": [
+        {
+          "id": "man:elemental-cognition",
+          "name": "Elemental Cognition",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Jennifer Chu-Carroll",
+        "institutions": [
+          {
+            "id": "man:elemental-cognition",
+            "name": "Elemental Cognition",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "* / † are 'current affiliation' footnotes (Verneek/QuillBot), not publication-time; sole printed org Elemental Cognition assigned to both."
+  },
+  "EMNLP|2020|if beam search is the answer what was the question": {
+    "openalex_id": null,
+    "publication_year": 2020,
+    "first_author": {
+      "name": "Clara Meister",
+      "institutions": [
+        {
+          "id": "man:eth-zurich",
+          "name": "ETH Zurich",
+          "type": "education",
+          "country": "CH"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Tim Vieira",
+        "institutions": [
+          {
+            "id": "man:johns-hopkins-university",
+            "name": "Johns Hopkins University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "Column-aligned affiliations (no explicit superscripts): Clara Meister = ETH Zürich (leftmost, email @inf.ethz.ch), Tim Vieira = Johns Hopkins (rightmost)."
+  },
+  "EMNLP|2020|spot the bot a robust and efficient framework for the evaluation of conversational dialogue systems": {
+    "openalex_id": null,
+    "publication_year": 2020,
+    "first_author": {
+      "name": "Jan Deriu",
+      "institutions": [
+        {
+          "id": "man:zurich-university-of-applied-sciences",
+          "name": "Zurich University of Applied Sciences",
+          "type": "education",
+          "country": "CH"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Mark Cieliebak",
+        "institutions": [
+          {
+            "id": "man:zurich-university-of-applied-sciences",
+            "name": "Zurich University of Applied Sciences",
+            "type": "education",
+            "country": "CH"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "Both first author (marker 1) and last author (marker 1) map to Zurich University of Applied Sciences (ZHAW)."
+  },
+  "EMNLP|2020|visually grounded compound pcfgs": {
+    "openalex_id": null,
+    "publication_year": 2020,
+    "first_author": {
+      "name": "Yanpeng Zhao",
+      "institutions": [
+        {
+          "id": "man:university-of-edinburgh",
+          "name": "University of Edinburgh",
+          "type": "education",
+          "country": "GB"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Ivan Titov",
+        "institutions": [
+          {
+            "id": "man:university-of-edinburgh",
+            "name": "University of Edinburgh",
+            "type": "education",
+            "country": "GB"
+          },
+          {
+            "id": "man:university-of-amsterdam",
+            "name": "University of Amsterdam",
+            "type": "education",
+            "country": "NL"
+          }
+        ]
+      }
+    ],
+    "source": "pdf-firstpage",
+    "note": "Markers: E = University of Edinburgh, æ = University of Amsterdam. Last author Ivan Titov (Eæ) has both affiliations."
+  }
+}

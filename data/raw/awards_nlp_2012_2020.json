@@ -1,0 +1,1431 @@
+{
+  "coverage_notes": "覆盖 ACL 与 EMNLP 各 2012-2020 共 18 个会议届次的论文级奖项，作为既有 awards_nlp.json（2021-2025）的历史补全。奖项类型映射（与既有文件一致）：Best Paper 及 Best Long/Short/Resource/Theme 等特别最佳奖=best_paper（note 记具体奖名）；Outstanding Paper、Honorable Mention、Best Paper Runner-Up=honorable_mention（note 记 'outstanding paper'/'honorable mention'/'best paper runner-up'）。year_work 均等于 year_awarded（皆为当届会议论文）。【Test of Time】ACL 的 ToT 项目 2021 年才设立、EMNLP 的 ToT 2023 年才设立，故本窗口(2012-2020)全部届次均无 ToT，未编造任何条目。【排除】按任务范围排除 Best Demo；同时排除 Best Student Paper（既有文件亦不含学生论文）——例如 ACL 2012 'String Re-writing Kernel'、ACL 2014 'Low-Rank Tensors for Scoring Dependency Structures'、ACL-IJCNLP 2015 'AutoExtend'(IBM Best Student，经 LMU 官方证实)、ACL 2016 'On-line Active Reward Learning'(该文兼获 outstanding，作 outstanding 收入)、EMNLP 各届 Best Demo 均排除。逐届说明——ACL 2012：仅 Best Paper(Shindo 等)，无 outstanding。ACL 2013：仅 Best Paper(Yu & Siskind，Anthology P13-1006 权威两作者，网传四作者为误)。ACL 2014：Best Long Paper(Devlin 等)+3 篇 Long HM+2 篇 Short HM，源自官网 BestPaper.htm 的 Wayback 存档。ACL-IJCNLP 2015(北京)：经官方 complete_program.html 的 Best Paper Session 核实，该届仅 1 篇 Best Paper=Yvette Graham，另一篇同场为 Best Student(AutoExtend)；ACL Wiki 误列 Strubell 'Learning Dynamic Feature Selection' 为 best paper，已据官方程序排除。该届无 outstanding 批次。ACL 2016(柏林)：1 Best Paper(Gutiérrez 等)+9 篇 Outstanding(官方 program 7A/7B 两场共 10 篇，Best Paper 为其一)。ACL 2017(温哥华)：Best Long(Cotterell & Eisner)+Best Short(Ludusan 等)+20 篇 Outstanding，共 22；作者名以 Anthology 校准，部分标题据 Anthology 修正官方博客的截断/异写。ACL 2018(墨尔本)：3 Best Long+2 Best Short+8 Honorable Mention(官网 best-papers 与 hon-mention-papers 两页)。ACL 2019(佛罗伦萨)：Best Long(Zhang 等)+Best Short(Jiang & de Marneffe)+5 篇 Outstanding。ACL 2020(线上)：Best Paper(CheckList)+2 Honorable Mention+主题赛道 Best Theme Paper(Bender & Koller)+1 篇主题赛道 Honorable Mention(Linzen)。EMNLP 2012/2013：各仅 1 篇 Best Paper，无 HM 批次(源 ACL Wiki)。EMNLP 2014：仅 1 篇 Best Paper(Berant 等 8 作者，据 Anthology D14-1159 补回被 ACL Wiki 漏掉的首作者)。EMNLP 2015(里斯本)：2 篇并列 Best Paper+5 篇 Honorable Mention(官方 best-papers 页)。EMNLP 2016(奥斯汀)：2 篇并列 Best Paper+2 篇 HM+1 Best Short(Adams 等)+1 Best Resource(SQuAD)(官方 best-papers 页)。EMNLP 2017(哥本哈根)：2 篇并列 Best Long(Zhao 等、Yates 等)+1 Best Short(Kottur 等，CMU 官方新闻证实)+1 Best Resource(Falke & Gurevych 概念图语料，多源证实为 resource 而非 short)。EMNLP 2018(布鲁塞尔)：据 Anthology D18-1000 卷首明确'两篇 Best Long Paper'——Strubell 等 与 Lample 等；另 1 Best Short(Kaushik & Lipton)+1 Best Resource(MultiWOZ)。EMNLP-IJCNLP 2019(香港)：Best Paper(Li & Eisner)+Best Paper Runner-Up(Hewitt & Liang)+Best Resource(FLORES)，无独立 HM 批次(官方 award 页 Wayback 存档)。EMNLP 2020(线上)：Best Paper(Digital Voicing)+4 篇 Honorable Mention；Best Short 该届 'Not awarded'(官方 blog Wayback 存档)。每条均带官方/权威 source_url(各届官网、Wayback 存档、ACL Anthology 卷首或论文页、ACL Wiki、机构官方新闻)；作者姓名照原始署名(含变音符号)抄录。",
+  "entries": [
+    {
+      "venue": "ACL",
+      "year_awarded": 2012,
+      "award": "best_paper",
+      "title": "Bayesian Symbol-Refined Tree Substitution Grammars for Syntactic Parsing",
+      "authors": [
+        "Hiroyuki Shindo",
+        "Yusuke Miyao",
+        "Akinori Fujino",
+        "Masaaki Nagata"
+      ],
+      "year_work": 2012,
+      "source_url": "https://aclweb.org/aclwiki/Best_paper_awards",
+      "note": "best paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2013,
+      "award": "best_paper",
+      "title": "Grounded Language Learning from Video Described with Sentences",
+      "authors": [
+        "Haonan Yu",
+        "Jeffrey Mark Siskind"
+      ],
+      "year_work": 2013,
+      "source_url": "https://aclanthology.org/P13-1006/",
+      "note": "best paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2014,
+      "award": "best_paper",
+      "title": "Fast and Robust Neural Network Joint Models for Statistical Machine Translation",
+      "authors": [
+        "Jacob Devlin",
+        "Rabih Zbib",
+        "Zhongqiang Huang",
+        "Thomas Lamar",
+        "Richard Schwartz",
+        "John Makhoul"
+      ],
+      "year_work": 2014,
+      "source_url": "https://web.archive.org/web/20140901045736/http://acl2014.org/BestPaper.htm",
+      "note": "best long paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2014,
+      "award": "honorable_mention",
+      "title": "Structured Learning for Taxonomy Induction with Belief Propagation",
+      "authors": [
+        "Mohit Bansal",
+        "David Burkett",
+        "Gerard de Melo",
+        "Dan Klein"
+      ],
+      "year_work": 2014,
+      "source_url": "https://web.archive.org/web/20140901045736/http://acl2014.org/BestPaper.htm",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2014,
+      "award": "honorable_mention",
+      "title": "Semantic Parsing via Paraphrasing",
+      "authors": [
+        "Jonathan Berant",
+        "Percy Liang"
+      ],
+      "year_work": 2014,
+      "source_url": "https://web.archive.org/web/20140901045736/http://acl2014.org/BestPaper.htm",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2014,
+      "award": "honorable_mention",
+      "title": "A Discriminative Graph-Based Parser for the Abstract Meaning Representation",
+      "authors": [
+        "Jeffrey Flanigan",
+        "Sam Thomson",
+        "Jaime Carbonell",
+        "Chris Dyer",
+        "Noah A. Smith"
+      ],
+      "year_work": 2014,
+      "source_url": "https://web.archive.org/web/20140901045736/http://acl2014.org/BestPaper.htm",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2014,
+      "award": "honorable_mention",
+      "title": "Predicting Power Relations between Participants in Written Dialog from a Single Thread",
+      "authors": [
+        "Vinodkumar Prabhakaran",
+        "Owen Rambow"
+      ],
+      "year_work": 2014,
+      "source_url": "https://web.archive.org/web/20140901045736/http://acl2014.org/BestPaper.htm",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2014,
+      "award": "honorable_mention",
+      "title": "Improving sparse word similarity models with asymmetric measures",
+      "authors": [
+        "Jean Mark Gawron"
+      ],
+      "year_work": 2014,
+      "source_url": "https://web.archive.org/web/20140901045736/http://acl2014.org/BestPaper.htm",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2015,
+      "award": "best_paper",
+      "title": "Improving Evaluation of Machine Translation Quality Estimation",
+      "authors": [
+        "Yvette Graham"
+      ],
+      "year_work": 2015,
+      "source_url": "https://aclweb.org/aclwiki/Best_paper_awards",
+      "note": "best paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2016,
+      "award": "best_paper",
+      "title": "Finding Non-Arbitrary Form-Meaning Systematicity Using String-Metric Learning for Kernel Regression",
+      "authors": [
+        "E. Dario Gutiérrez",
+        "Roger Levy",
+        "Benjamin Bergen"
+      ],
+      "year_work": 2016,
+      "source_url": "https://aclweb.org/aclwiki/Best_paper_awards",
+      "note": "best paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2016,
+      "award": "honorable_mention",
+      "title": "A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task",
+      "authors": [
+        "Danqi Chen",
+        "Jason Bolton",
+        "Christopher D. Manning"
+      ],
+      "year_work": 2016,
+      "source_url": "https://mirror.aclweb.org/acl2016/index9b8a.html?article_id=66",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2016,
+      "award": "honorable_mention",
+      "title": "Learning Language Games through Interaction",
+      "authors": [
+        "Sida I. Wang",
+        "Percy Liang",
+        "Christopher D. Manning"
+      ],
+      "year_work": 2016,
+      "source_url": "https://mirror.aclweb.org/acl2016/index9b8a.html?article_id=66",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2016,
+      "award": "honorable_mention",
+      "title": "Improving Hypernymy Detection with an Integrated Path-based and Distributional Method",
+      "authors": [
+        "Vered Shwartz",
+        "Yoav Goldberg",
+        "Ido Dagan"
+      ],
+      "year_work": 2016,
+      "source_url": "https://mirror.aclweb.org/acl2016/index9b8a.html?article_id=66",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2016,
+      "award": "honorable_mention",
+      "title": "Integrating Distributional Lexical Contrast into Word Embeddings for Antonym-Synonym Distinction",
+      "authors": [
+        "Kim Anh Nguyen",
+        "Sabine Schulte im Walde",
+        "Ngoc Thang Vu"
+      ],
+      "year_work": 2016,
+      "source_url": "https://mirror.aclweb.org/acl2016/index9b8a.html?article_id=66",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2016,
+      "award": "honorable_mention",
+      "title": "Multimodal Pivots for Image Caption Translation",
+      "authors": [
+        "Julian Hitschler",
+        "Shigehiko Schamoni",
+        "Stefan Riezler"
+      ],
+      "year_work": 2016,
+      "source_url": "https://mirror.aclweb.org/acl2016/index9b8a.html?article_id=66",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2016,
+      "award": "honorable_mention",
+      "title": "Harnessing Deep Neural Networks with Logic Rules",
+      "authors": [
+        "Zhiting Hu",
+        "Xuezhe Ma",
+        "Zhengzhong Liu",
+        "Eduard Hovy",
+        "Eric Xing"
+      ],
+      "year_work": 2016,
+      "source_url": "https://mirror.aclweb.org/acl2016/index9b8a.html?article_id=66",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2016,
+      "award": "honorable_mention",
+      "title": "Case and Cause in Icelandic: Reconstructing Causal Networks of Cascaded Language Changes",
+      "authors": [
+        "Fermín Moscoso del Prado Martín",
+        "Christian Brendel"
+      ],
+      "year_work": 2016,
+      "source_url": "https://mirror.aclweb.org/acl2016/index9b8a.html?article_id=66",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2016,
+      "award": "honorable_mention",
+      "title": "On-line Active Reward Learning for Policy Optimisation in Spoken Dialogue Systems",
+      "authors": [
+        "Pei-Hao Su",
+        "Milica Gašić",
+        "Nikola Mrkšić",
+        "Lina M. Rojas-Barahona",
+        "Stefan Ultes",
+        "David Vandyke",
+        "Tsung-Hsien Wen",
+        "Steve Young"
+      ],
+      "year_work": 2016,
+      "source_url": "https://mirror.aclweb.org/acl2016/index9b8a.html?article_id=66",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2016,
+      "award": "honorable_mention",
+      "title": "Globally Normalized Transition-Based Neural Networks",
+      "authors": [
+        "Daniel Andor",
+        "Chris Alberti",
+        "David Weiss",
+        "Aliaksei Severyn",
+        "Alessandro Presta",
+        "Kuzman Ganchev",
+        "Slav Petrov",
+        "Michael Collins"
+      ],
+      "year_work": 2016,
+      "source_url": "https://mirror.aclweb.org/acl2016/index9b8a.html?article_id=66",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2017,
+      "award": "best_paper",
+      "title": "Probabilistic Typology: Deep Generative Models of Vowel Inventories",
+      "authors": [
+        "Ryan Cotterell",
+        "Jason Eisner"
+      ],
+      "year_work": 2017,
+      "source_url": "https://acl2017.wordpress.com/2017/08/03/outstanding-and-best-papers-and-the-decision-process/",
+      "note": "best long paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2017,
+      "award": "best_paper",
+      "title": "The Role of Prosody and Speech Register in Word Segmentation: A Computational Modelling Perspective",
+      "authors": [
+        "Bogdan Ludusan",
+        "Reiko Mazuka",
+        "Mathieu Bernard",
+        "Alejandrina Cristia",
+        "Emmanuel Dupoux"
+      ],
+      "year_work": 2017,
+      "source_url": "https://acl2017.wordpress.com/2017/08/03/outstanding-and-best-papers-and-the-decision-process/",
+      "note": "best short paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2017,
+      "award": "honorable_mention",
+      "title": "Towards an Automatic Turing Test: Learning to Evaluate Dialogue Responses",
+      "authors": [
+        "Ryan Lowe",
+        "Michael Noseworthy",
+        "Iulian Vlad Serban",
+        "Nicolas Angelard-Gontier",
+        "Yoshua Bengio",
+        "Joelle Pineau"
+      ],
+      "year_work": 2017,
+      "source_url": "https://acl2017.wordpress.com/2017/08/03/outstanding-and-best-papers-and-the-decision-process/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2017,
+      "award": "honorable_mention",
+      "title": "A Transition-Based Directed Acyclic Graph Parser for UCCA",
+      "authors": [
+        "Daniel Hershcovich",
+        "Omri Abend",
+        "Ari Rappoport"
+      ],
+      "year_work": 2017,
+      "source_url": "https://acl2017.wordpress.com/2017/08/03/outstanding-and-best-papers-and-the-decision-process/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2017,
+      "award": "honorable_mention",
+      "title": "Abstract Syntax Networks for Code Generation and Semantic Parsing",
+      "authors": [
+        "Maxim Rabinovich",
+        "Mitchell Stern",
+        "Dan Klein"
+      ],
+      "year_work": 2017,
+      "source_url": "https://acl2017.wordpress.com/2017/08/03/outstanding-and-best-papers-and-the-decision-process/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2017,
+      "award": "honorable_mention",
+      "title": "Visualizing and Understanding Neural Machine Translation",
+      "authors": [
+        "Yanzhuo Ding",
+        "Yang Liu",
+        "Huanbo Luan",
+        "Maosong Sun"
+      ],
+      "year_work": 2017,
+      "source_url": "https://acl2017.wordpress.com/2017/08/03/outstanding-and-best-papers-and-the-decision-process/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2017,
+      "award": "honorable_mention",
+      "title": "Detecting annotation noise in automatically labelled data",
+      "authors": [
+        "Ines Rehbein",
+        "Josef Ruppenhofer"
+      ],
+      "year_work": 2017,
+      "source_url": "https://acl2017.wordpress.com/2017/08/03/outstanding-and-best-papers-and-the-decision-process/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2017,
+      "award": "honorable_mention",
+      "title": "Joint Extraction of Entities and Relations Based on a Novel Tagging Scheme",
+      "authors": [
+        "Suncong Zheng",
+        "Feng Wang",
+        "Hongyun Bao",
+        "Yuexing Hao",
+        "Peng Zhou",
+        "Bo Xu"
+      ],
+      "year_work": 2017,
+      "source_url": "https://acl2017.wordpress.com/2017/08/03/outstanding-and-best-papers-and-the-decision-process/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2017,
+      "award": "honorable_mention",
+      "title": "A Local Detection Approach for Named Entity Recognition and Mention Detection",
+      "authors": [
+        "Mingbin Xu",
+        "Hui Jiang",
+        "Sedtawut Watcharawittayakul"
+      ],
+      "year_work": 2017,
+      "source_url": "https://acl2017.wordpress.com/2017/08/03/outstanding-and-best-papers-and-the-decision-process/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2017,
+      "award": "honorable_mention",
+      "title": "Vancouver Welcomes You! Minimalist Location Metonymy Resolution",
+      "authors": [
+        "Milan Gritta",
+        "Mohammad Taher Pilehvar",
+        "Nut Limsopatham",
+        "Nigel Collier"
+      ],
+      "year_work": 2017,
+      "source_url": "https://acl2017.wordpress.com/2017/08/03/outstanding-and-best-papers-and-the-decision-process/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2017,
+      "award": "honorable_mention",
+      "title": "Unifying Text, Metadata, and User Network Representations with a Neural Network for Geolocation Prediction",
+      "authors": [
+        "Yasuhide Miura",
+        "Motoki Taniguchi",
+        "Tomoki Taniguchi",
+        "Tomoko Ohkuma"
+      ],
+      "year_work": 2017,
+      "source_url": "https://acl2017.wordpress.com/2017/08/03/outstanding-and-best-papers-and-the-decision-process/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2017,
+      "award": "honorable_mention",
+      "title": "Multi-Task Video Captioning with Video and Entailment Generation",
+      "authors": [
+        "Ramakanth Pasunuru",
+        "Mohit Bansal"
+      ],
+      "year_work": 2017,
+      "source_url": "https://aclanthology.org/P17-1117/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2017,
+      "award": "honorable_mention",
+      "title": "Abstractive Document Summarization with a Graph-Based Attentional Neural Model",
+      "authors": [
+        "Jiwei Tan",
+        "Xiaojun Wan",
+        "Jianguo Xiao"
+      ],
+      "year_work": 2017,
+      "source_url": "https://aclanthology.org/P17-1108/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2017,
+      "award": "honorable_mention",
+      "title": "Adversarial Multi-Criteria Learning for Chinese Word Segmentation",
+      "authors": [
+        "Xinchi Chen",
+        "Zhan Shi",
+        "Xipeng Qiu",
+        "Xuanjing Huang"
+      ],
+      "year_work": 2017,
+      "source_url": "https://acl2017.wordpress.com/2017/08/03/outstanding-and-best-papers-and-the-decision-process/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2017,
+      "award": "honorable_mention",
+      "title": "Neural Joint Model for Transition-based Chinese Syntactic Analysis",
+      "authors": [
+        "Shuhei Kurita",
+        "Daisuke Kawahara",
+        "Sadao Kurohashi"
+      ],
+      "year_work": 2017,
+      "source_url": "https://acl2017.wordpress.com/2017/08/03/outstanding-and-best-papers-and-the-decision-process/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2017,
+      "award": "honorable_mention",
+      "title": "Robust Incremental Neural Semantic Graph Parsing",
+      "authors": [
+        "Jan Buys",
+        "Phil Blunsom"
+      ],
+      "year_work": 2017,
+      "source_url": "https://acl2017.wordpress.com/2017/08/03/outstanding-and-best-papers-and-the-decision-process/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2017,
+      "award": "honorable_mention",
+      "title": "A Two-Stage Parsing Method for Text-Level Discourse Analysis",
+      "authors": [
+        "Yizhong Wang",
+        "Sujian Li",
+        "Houfeng Wang"
+      ],
+      "year_work": 2017,
+      "source_url": "https://aclanthology.org/P17-2029/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2017,
+      "award": "honorable_mention",
+      "title": "Error-repair Dependency Parsing for Ungrammatical Texts",
+      "authors": [
+        "Keisuke Sakaguchi",
+        "Matt Post",
+        "Benjamin Van Durme"
+      ],
+      "year_work": 2017,
+      "source_url": "https://acl2017.wordpress.com/2017/08/03/outstanding-and-best-papers-and-the-decision-process/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2017,
+      "award": "honorable_mention",
+      "title": "Attention Strategies for Multi-Source Sequence-to-Sequence Learning",
+      "authors": [
+        "Jindřich Libovický",
+        "Jindřich Helcl"
+      ],
+      "year_work": 2017,
+      "source_url": "https://acl2017.wordpress.com/2017/08/03/outstanding-and-best-papers-and-the-decision-process/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2017,
+      "award": "honorable_mention",
+      "title": "Understanding and Detecting Supporting Arguments of Diverse Types",
+      "authors": [
+        "Xinyu Hua",
+        "Lu Wang"
+      ],
+      "year_work": 2017,
+      "source_url": "https://aclanthology.org/P17-2032/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2017,
+      "award": "honorable_mention",
+      "title": "A Neural Model for User Geolocation and Lexical Dialectology",
+      "authors": [
+        "Afshin Rahimi",
+        "Trevor Cohn",
+        "Timothy Baldwin"
+      ],
+      "year_work": 2017,
+      "source_url": "https://acl2017.wordpress.com/2017/08/03/outstanding-and-best-papers-and-the-decision-process/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2017,
+      "award": "honorable_mention",
+      "title": "A Corpus of Natural Language for Visual Reasoning",
+      "authors": [
+        "Alane Suhr",
+        "Mike Lewis",
+        "James Yeh",
+        "Yoav Artzi"
+      ],
+      "year_work": 2017,
+      "source_url": "https://acl2017.wordpress.com/2017/08/03/outstanding-and-best-papers-and-the-decision-process/",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2018,
+      "award": "best_paper",
+      "title": "Finding syntax in human encephalography with beam search",
+      "authors": [
+        "John Hale",
+        "Chris Dyer",
+        "Adhiguna Kuncoro",
+        "Jonathan Brennan"
+      ],
+      "year_work": 2018,
+      "source_url": "https://acl2018.org/2018/06/10/best-papers/",
+      "note": "best long paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2018,
+      "award": "best_paper",
+      "title": "Learning to Ask Good Questions: Ranking Clarification Questions using Neural Expected Value of Perfect Information",
+      "authors": [
+        "Sudha Rao",
+        "Hal Daumé III"
+      ],
+      "year_work": 2018,
+      "source_url": "https://acl2018.org/2018/06/10/best-papers/",
+      "note": "best long paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2018,
+      "award": "best_paper",
+      "title": "Let's do it \"again\": A First Computational Approach to Detecting Adverbial Presupposition Triggers",
+      "authors": [
+        "Andre Cianflone",
+        "Yulan Feng",
+        "Jad Kabbara",
+        "Jackie Chi Kit Cheung"
+      ],
+      "year_work": 2018,
+      "source_url": "https://acl2018.org/2018/06/10/best-papers/",
+      "note": "best long paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2018,
+      "award": "best_paper",
+      "title": "Know What You Don't Know: Unanswerable Questions for SQuAD",
+      "authors": [
+        "Pranav Rajpurkar",
+        "Robin Jia",
+        "Percy Liang"
+      ],
+      "year_work": 2018,
+      "source_url": "https://acl2018.org/2018/06/10/best-papers/",
+      "note": "best short paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2018,
+      "award": "best_paper",
+      "title": "'Lighter' Can Still Be Dark: Modeling Comparative Color Descriptions",
+      "authors": [
+        "Olivia Winn",
+        "Smaranda Muresan"
+      ],
+      "year_work": 2018,
+      "source_url": "https://acl2018.org/2018/06/10/best-papers/",
+      "note": "best short paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2018,
+      "award": "honorable_mention",
+      "title": "Coarse-to-Fine Decoding for Neural Semantic Parsing",
+      "authors": [
+        "Li Dong",
+        "Mirella Lapata"
+      ],
+      "year_work": 2018,
+      "source_url": "https://acl2018.org/2018/07/26/hon-mention-papers/",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2018,
+      "award": "honorable_mention",
+      "title": "NASH: Toward End-to-End Neural Architecture for Generative Semantic Hashing",
+      "authors": [
+        "Dinghan Shen",
+        "Qinliang Su",
+        "Paidamoyo Chapfuwa",
+        "Wenlin Wang",
+        "Guoyin Wang",
+        "Ricardo Henao",
+        "Lawrence Carin"
+      ],
+      "year_work": 2018,
+      "source_url": "https://acl2018.org/2018/07/26/hon-mention-papers/",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2018,
+      "award": "honorable_mention",
+      "title": "Backpropagating through Structured Argmax using a SPIGOT",
+      "authors": [
+        "Hao Peng",
+        "Sam Thomson",
+        "Noah A. Smith"
+      ],
+      "year_work": 2018,
+      "source_url": "https://acl2018.org/2018/07/26/hon-mention-papers/",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2018,
+      "award": "honorable_mention",
+      "title": "Hierarchical Neural Story Generation",
+      "authors": [
+        "Angela Fan",
+        "Mike Lewis",
+        "Yann Dauphin"
+      ],
+      "year_work": 2018,
+      "source_url": "https://acl2018.org/2018/07/26/hon-mention-papers/",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2018,
+      "award": "honorable_mention",
+      "title": "Semantically Equivalent Adversarial Rules for Debugging NLP models",
+      "authors": [
+        "Marco Tulio Ribeiro",
+        "Sameer Singh",
+        "Carlos Guestrin"
+      ],
+      "year_work": 2018,
+      "source_url": "https://acl2018.org/2018/07/26/hon-mention-papers/",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2018,
+      "award": "honorable_mention",
+      "title": "Large-Scale QA-SRL Parsing",
+      "authors": [
+        "Nicholas FitzGerald",
+        "Julian Michael",
+        "Luheng He",
+        "Luke Zettlemoyer"
+      ],
+      "year_work": 2018,
+      "source_url": "https://acl2018.org/2018/07/26/hon-mention-papers/",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2018,
+      "award": "honorable_mention",
+      "title": "Jointly Predicting Predicates and Arguments in Neural Semantic Role Labeling",
+      "authors": [
+        "Luheng He",
+        "Kenton Lee",
+        "Omer Levy",
+        "Luke Zettlemoyer"
+      ],
+      "year_work": 2018,
+      "source_url": "https://acl2018.org/2018/07/26/hon-mention-papers/",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2018,
+      "award": "honorable_mention",
+      "title": "Do Neural Network Cross-Modal Mappings Really Bridge Modalities?",
+      "authors": [
+        "Guillem Collell",
+        "Marie-Francine Moens"
+      ],
+      "year_work": 2018,
+      "source_url": "https://acl2018.org/2018/07/26/hon-mention-papers/",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2019,
+      "award": "best_paper",
+      "title": "Bridging the Gap between Training and Inference for Neural Machine Translation",
+      "authors": [
+        "Wen Zhang",
+        "Yang Feng",
+        "Fandong Meng",
+        "Di You",
+        "Qun Liu"
+      ],
+      "year_work": 2019,
+      "source_url": "https://acl2019.org/EN/winners-of-acl-2019-best-paper-awards.xhtml",
+      "note": "best long paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2019,
+      "award": "best_paper",
+      "title": "Do you know that Florence is packed with visitors? Evaluating state-of-the-art models of speaker commitment",
+      "authors": [
+        "Nanjiang Jiang",
+        "Marie-Catherine de Marneffe"
+      ],
+      "year_work": 2019,
+      "source_url": "https://acl2019.org/EN/winners-of-acl-2019-best-paper-awards.xhtml",
+      "note": "best short paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2019,
+      "award": "honorable_mention",
+      "title": "Emotion-Cause Pair Extraction: A New Task to Emotion Analysis in Texts",
+      "authors": [
+        "Rui Xia",
+        "Zixiang Ding"
+      ],
+      "year_work": 2019,
+      "source_url": "https://acl2019.org/EN/winners-of-acl-2019-best-paper-awards.xhtml",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2019,
+      "award": "honorable_mention",
+      "title": "A Simple Theoretical Model of Importance for Summarization",
+      "authors": [
+        "Maxime Peyrard"
+      ],
+      "year_work": 2019,
+      "source_url": "https://acl2019.org/EN/winners-of-acl-2019-best-paper-awards.xhtml",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2019,
+      "award": "honorable_mention",
+      "title": "Transferable Multi-Domain State Generator for Task-Oriented Dialogue Systems",
+      "authors": [
+        "Chien-Sheng Wu",
+        "Andrea Madotto",
+        "Ehsan Hosseini-Asl",
+        "Caiming Xiong",
+        "Richard Socher",
+        "Pascale Fung"
+      ],
+      "year_work": 2019,
+      "source_url": "https://acl2019.org/EN/winners-of-acl-2019-best-paper-awards.xhtml",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2019,
+      "award": "honorable_mention",
+      "title": "We need to talk about standard splits",
+      "authors": [
+        "Kyle Gorman",
+        "Steven Bedrick"
+      ],
+      "year_work": 2019,
+      "source_url": "https://acl2019.org/EN/winners-of-acl-2019-best-paper-awards.xhtml",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2019,
+      "award": "honorable_mention",
+      "title": "Zero-shot Word Sense Disambiguation using Sense Definition Embeddings",
+      "authors": [
+        "Sawan Kumar",
+        "Sharmistha Jat",
+        "Karan Saxena",
+        "Partha Talukdar"
+      ],
+      "year_work": 2019,
+      "source_url": "https://acl2019.org/EN/winners-of-acl-2019-best-paper-awards.xhtml",
+      "note": "outstanding paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2020,
+      "award": "best_paper",
+      "title": "Beyond Accuracy: Behavioral Testing of NLP Models with CheckList",
+      "authors": [
+        "Marco Tulio Ribeiro",
+        "Tongshuang Wu",
+        "Carlos Guestrin",
+        "Sameer Singh"
+      ],
+      "year_work": 2020,
+      "source_url": "https://acl2020.org/blog/ACL-2020-best-papers/",
+      "note": "best paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2020,
+      "award": "best_paper",
+      "title": "Climbing towards NLU: On Meaning, Form, and Understanding in the Age of Data",
+      "authors": [
+        "Emily M. Bender",
+        "Alexander Koller"
+      ],
+      "year_work": 2020,
+      "source_url": "https://acl2020.org/blog/ACL-2020-best-papers/",
+      "note": "best theme paper"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2020,
+      "award": "honorable_mention",
+      "title": "Don't Stop Pretraining: Adapt Language Models to Domains and Tasks",
+      "authors": [
+        "Suchin Gururangan",
+        "Ana Marasović",
+        "Swabha Swayamdipta",
+        "Kyle Lo",
+        "Iz Beltagy",
+        "Doug Downey",
+        "Noah A. Smith"
+      ],
+      "year_work": 2020,
+      "source_url": "https://acl2020.org/blog/ACL-2020-best-papers/",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2020,
+      "award": "honorable_mention",
+      "title": "Tangled up in BLEU: Reevaluating the Evaluation of Automatic Machine Translation Evaluation Metrics",
+      "authors": [
+        "Nitika Mathur",
+        "Timothy Baldwin",
+        "Trevor Cohn"
+      ],
+      "year_work": 2020,
+      "source_url": "https://acl2020.org/blog/ACL-2020-best-papers/",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "ACL",
+      "year_awarded": 2020,
+      "award": "honorable_mention",
+      "title": "How Can We Accelerate Progress Towards Human-like Linguistic Generalization?",
+      "authors": [
+        "Tal Linzen"
+      ],
+      "year_work": 2020,
+      "source_url": "https://acl2020.org/blog/ACL-2020-best-papers/",
+      "note": "honorable mention (theme track)"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2012,
+      "award": "best_paper",
+      "title": "A Coherence Model Based on Syntactic Patterns",
+      "authors": [
+        "Annie Louis",
+        "Ani Nenkova"
+      ],
+      "year_work": 2012,
+      "source_url": "https://aclweb.org/aclwiki/Best_paper_awards",
+      "note": "best paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2013,
+      "award": "best_paper",
+      "title": "Breaking Out of Local Optima with Count Transforms and Model Recombination: A Study in Grammar Induction",
+      "authors": [
+        "Valentin I. Spitkovsky",
+        "Hiyan Alshawi",
+        "Daniel Jurafsky"
+      ],
+      "year_work": 2013,
+      "source_url": "https://aclweb.org/aclwiki/Best_paper_awards",
+      "note": "best paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2014,
+      "award": "best_paper",
+      "title": "Modeling Biological Processes for Reading Comprehension",
+      "authors": [
+        "Jonathan Berant",
+        "Vivek Srikumar",
+        "Pei-Chun Chen",
+        "Abby Vander Linden",
+        "Brittany Harding",
+        "Brad Huang",
+        "Peter Clark",
+        "Christopher D. Manning"
+      ],
+      "year_work": 2014,
+      "source_url": "https://aclanthology.org/D14-1159/",
+      "note": "best paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2015,
+      "award": "best_paper",
+      "title": "Broad-coverage CCG Semantic Parsing with AMR",
+      "authors": [
+        "Yoav Artzi",
+        "Kenton Lee",
+        "Luke Zettlemoyer"
+      ],
+      "year_work": 2015,
+      "source_url": "https://www.cs.cmu.edu/~ark/EMNLP-2015/best-papers.html",
+      "note": "best paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2015,
+      "award": "best_paper",
+      "title": "Semantically Conditioned LSTM-based Natural Language Generation for Spoken Dialogue Systems",
+      "authors": [
+        "Tsung-Hsien Wen",
+        "Milica Gašić",
+        "Nikola Mrkšić",
+        "Pei-Hao Su",
+        "David Vandyke",
+        "Steve Young"
+      ],
+      "year_work": 2015,
+      "source_url": "https://www.cs.cmu.edu/~ark/EMNLP-2015/best-papers.html",
+      "note": "best paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2015,
+      "award": "honorable_mention",
+      "title": "Traversing Knowledge Graphs in Vector Space",
+      "authors": [
+        "Kelvin Guu",
+        "John Miller",
+        "Percy Liang"
+      ],
+      "year_work": 2015,
+      "source_url": "https://www.cs.cmu.edu/~ark/EMNLP-2015/best-papers.html",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2015,
+      "award": "honorable_mention",
+      "title": "Building a shared world: mapping distributional to model-theoretic semantic spaces",
+      "authors": [
+        "Aurélie Herbelot",
+        "Eva Maria Vecchi"
+      ],
+      "year_work": 2015,
+      "source_url": "https://www.cs.cmu.edu/~ark/EMNLP-2015/best-papers.html",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2015,
+      "award": "honorable_mention",
+      "title": "Language Understanding for Text-based Games using Deep Reinforcement Learning",
+      "authors": [
+        "Karthik Narasimhan",
+        "Tejas Kulkarni",
+        "Regina Barzilay"
+      ],
+      "year_work": 2015,
+      "source_url": "https://www.cs.cmu.edu/~ark/EMNLP-2015/best-papers.html",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2015,
+      "award": "honorable_mention",
+      "title": "Joint Lemmatization and Morphological Tagging with Lemming",
+      "authors": [
+        "Thomas Müller",
+        "Ryan Cotterell",
+        "Alexander Fraser",
+        "Hinrich Schütze"
+      ],
+      "year_work": 2015,
+      "source_url": "https://www.cs.cmu.edu/~ark/EMNLP-2015/best-papers.html",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2015,
+      "award": "honorable_mention",
+      "title": "Semi-Supervised Bootstrapping of Relationship Extractors with Distributional Semantics",
+      "authors": [
+        "David S. Batista",
+        "Bruno Martins",
+        "Mário J. Silva"
+      ],
+      "year_work": 2015,
+      "source_url": "https://www.cs.cmu.edu/~ark/EMNLP-2015/best-papers.html",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2016,
+      "award": "best_paper",
+      "title": "Improving Information Extraction by Acquiring External Evidence with Reinforcement Learning",
+      "authors": [
+        "Karthik Narasimhan",
+        "Adam Yala",
+        "Regina Barzilay"
+      ],
+      "year_work": 2016,
+      "source_url": "https://mirror.aclweb.org/emnlp2016/best-papers.html",
+      "note": "best paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2016,
+      "award": "best_paper",
+      "title": "Global Neural CCG Parsing with Optimality Guarantees",
+      "authors": [
+        "Kenton Lee",
+        "Mike Lewis",
+        "Luke Zettlemoyer"
+      ],
+      "year_work": 2016,
+      "source_url": "https://mirror.aclweb.org/emnlp2016/best-papers.html",
+      "note": "best paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2016,
+      "award": "honorable_mention",
+      "title": "Span-Based Constituency Parsing with a Structure-Label System and Provably Optimal Dynamic Oracles",
+      "authors": [
+        "James Cross",
+        "Liang Huang"
+      ],
+      "year_work": 2016,
+      "source_url": "https://mirror.aclweb.org/emnlp2016/best-papers.html",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2016,
+      "award": "honorable_mention",
+      "title": "Sequence-to-Sequence Learning as Beam-Search Optimization",
+      "authors": [
+        "Sam Wiseman",
+        "Alexander M. Rush"
+      ],
+      "year_work": 2016,
+      "source_url": "https://mirror.aclweb.org/emnlp2016/best-papers.html",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2016,
+      "award": "best_paper",
+      "title": "Learning a Lexicon and Translation Model from Phoneme Lattices",
+      "authors": [
+        "Oliver Adams",
+        "Graham Neubig",
+        "Trevor Cohn",
+        "Steven Bird",
+        "Quoc Truong Do",
+        "Satoshi Nakamura"
+      ],
+      "year_work": 2016,
+      "source_url": "https://mirror.aclweb.org/emnlp2016/best-papers.html",
+      "note": "best short paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2016,
+      "award": "best_paper",
+      "title": "SQuAD: 100,000+ Questions for Machine Comprehension of Text",
+      "authors": [
+        "Pranav Rajpurkar",
+        "Jian Zhang",
+        "Konstantin Lopyrev",
+        "Percy Liang"
+      ],
+      "year_work": 2016,
+      "source_url": "https://mirror.aclweb.org/emnlp2016/best-papers.html",
+      "note": "best resource paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2017,
+      "award": "best_paper",
+      "title": "Men Also Like Shopping: Reducing Gender Bias Amplification using Corpus-level Constraints",
+      "authors": [
+        "Jieyu Zhao",
+        "Tianlu Wang",
+        "Mark Yatskar",
+        "Vicente Ordonez",
+        "Kai-Wei Chang"
+      ],
+      "year_work": 2017,
+      "source_url": "https://aclweb.org/aclwiki/Best_paper_awards",
+      "note": "best long paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2017,
+      "award": "best_paper",
+      "title": "Depression and Self-Harm Risk Assessment in Online Forums",
+      "authors": [
+        "Andrew Yates",
+        "Arman Cohan",
+        "Nazli Goharian"
+      ],
+      "year_work": 2017,
+      "source_url": "https://aclweb.org/aclwiki/Best_paper_awards",
+      "note": "best long paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2017,
+      "award": "best_paper",
+      "title": "Natural Language Does Not Emerge 'Naturally' in Multi-Agent Dialog",
+      "authors": [
+        "Satwik Kottur",
+        "José Moura",
+        "Stefan Lee",
+        "Dhruv Batra"
+      ],
+      "year_work": 2017,
+      "source_url": "https://www.ece.cmu.edu/news-and-events/story/2017/09/moura-and-kottur-win-best-short-paper-award-at-the-2017-emnlp-conference.html",
+      "note": "best short paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2017,
+      "award": "best_paper",
+      "title": "Bringing Structure into Summaries: Crowdsourcing a Benchmark Corpus of Concept Maps",
+      "authors": [
+        "Tobias Falke",
+        "Iryna Gurevych"
+      ],
+      "year_work": 2017,
+      "source_url": "https://aclanthology.org/D17-1320/",
+      "note": "best resource paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2018,
+      "award": "best_paper",
+      "title": "Linguistically-Informed Self-Attention for Semantic Role Labeling",
+      "authors": [
+        "Emma Strubell",
+        "Patrick Verga",
+        "Daniel Andor",
+        "David Weiss",
+        "Andrew McCallum"
+      ],
+      "year_work": 2018,
+      "source_url": "https://aclanthology.org/D18-1000.pdf",
+      "note": "best long paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2018,
+      "award": "best_paper",
+      "title": "Phrase-Based & Neural Unsupervised Machine Translation",
+      "authors": [
+        "Guillaume Lample",
+        "Myle Ott",
+        "Alexis Conneau",
+        "Ludovic Denoyer",
+        "Marc'Aurelio Ranzato"
+      ],
+      "year_work": 2018,
+      "source_url": "https://aclanthology.org/D18-1000.pdf",
+      "note": "best long paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2018,
+      "award": "best_paper",
+      "title": "How Much Reading Does Reading Comprehension Require? A Critical Investigation of Popular Benchmarks",
+      "authors": [
+        "Divyansh Kaushik",
+        "Zachary C. Lipton"
+      ],
+      "year_work": 2018,
+      "source_url": "https://aclanthology.org/D18-1000.pdf",
+      "note": "best short paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2018,
+      "award": "best_paper",
+      "title": "MultiWOZ - A Large-Scale Multi-Domain Wizard-of-Oz Dataset for Task-Oriented Dialogue Modelling",
+      "authors": [
+        "Paweł Budzianowski",
+        "Tsung-Hsien Wen",
+        "Bo-Hsiang Tseng",
+        "Iñigo Casanueva",
+        "Stefan Ultes",
+        "Osman Ramadan",
+        "Milica Gašić"
+      ],
+      "year_work": 2018,
+      "source_url": "https://aclanthology.org/D18-1547/",
+      "note": "best resource paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2019,
+      "award": "best_paper",
+      "title": "Specializing Word Embeddings (for Parsing) by Information Bottleneck",
+      "authors": [
+        "Xiang Lisa Li",
+        "Jason Eisner"
+      ],
+      "year_work": 2019,
+      "source_url": "https://web.archive.org/web/2020id_/https://www.emnlp-ijcnlp2019.org/program/award/",
+      "note": "best paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2019,
+      "award": "honorable_mention",
+      "title": "Designing and Interpreting Probes with Control Tasks",
+      "authors": [
+        "John Hewitt",
+        "Percy Liang"
+      ],
+      "year_work": 2019,
+      "source_url": "https://web.archive.org/web/2020id_/https://www.emnlp-ijcnlp2019.org/program/award/",
+      "note": "best paper runner-up"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2019,
+      "award": "best_paper",
+      "title": "The FLORES Evaluation Datasets for Low-Resource Machine Translation: Nepali–English and Sinhala–English",
+      "authors": [
+        "Francisco Guzmán",
+        "Peng-Jen Chen",
+        "Myle Ott",
+        "Juan Pino",
+        "Guillaume Lample",
+        "Philipp Koehn",
+        "Vishrav Chaudhary",
+        "Marc'Aurelio Ranzato"
+      ],
+      "year_work": 2019,
+      "source_url": "https://aclanthology.org/D19-1632/",
+      "note": "best resource paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2020,
+      "award": "best_paper",
+      "title": "Digital Voicing of Silent Speech",
+      "authors": [
+        "David Gaddy",
+        "Dan Klein"
+      ],
+      "year_work": 2020,
+      "source_url": "https://web.archive.org/web/2021id_/https://2020.emnlp.org/blog/2020-11-19-best-papers/",
+      "note": "best paper"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2020,
+      "award": "honorable_mention",
+      "title": "If beam search is the answer, what was the question?",
+      "authors": [
+        "Clara Meister",
+        "Ryan Cotterell",
+        "Tim Vieira"
+      ],
+      "year_work": 2020,
+      "source_url": "https://web.archive.org/web/2021id_/https://2020.emnlp.org/blog/2020-11-19-best-papers/",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2020,
+      "award": "honorable_mention",
+      "title": "GLUCOSE: GeneraLized and COntextualized Story Explanations",
+      "authors": [
+        "Nasrin Mostafazadeh",
+        "Aditya Kalyanpur",
+        "Lori Moon",
+        "David Buchanan",
+        "Lauren Berkowitz",
+        "Or Biran",
+        "Jennifer Chu-Carroll"
+      ],
+      "year_work": 2020,
+      "source_url": "https://web.archive.org/web/2021id_/https://2020.emnlp.org/blog/2020-11-19-best-papers/",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2020,
+      "award": "honorable_mention",
+      "title": "Spot The Bot: A Robust and Efficient Framework for the Evaluation of Conversational Dialogue Systems",
+      "authors": [
+        "Jan Deriu",
+        "Don Tuggener",
+        "Pius von Däniken",
+        "Jon Ander Campos",
+        "Alvaro Rodrigo",
+        "Thiziri Belkacem",
+        "Aitor Soroa",
+        "Eneko Agirre",
+        "Mark Cieliebak"
+      ],
+      "year_work": 2020,
+      "source_url": "https://web.archive.org/web/2021id_/https://2020.emnlp.org/blog/2020-11-19-best-papers/",
+      "note": "honorable mention"
+    },
+    {
+      "venue": "EMNLP",
+      "year_awarded": 2020,
+      "award": "honorable_mention",
+      "title": "Visually Grounded Compound PCFGs",
+      "authors": [
+        "Yanpeng Zhao",
+        "Ivan Titov"
+      ],
+      "year_work": 2020,
+      "source_url": "https://web.archive.org/web/2021id_/https://2020.emnlp.org/blog/2020-11-19-best-papers/",
+      "note": "honorable mention"
+    }
+  ]
+}

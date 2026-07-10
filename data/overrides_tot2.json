@@ -1,0 +1,1748 @@
+{
+  "CVPR|2013|object class recognition by unsupervised scale invariant learning": {
+    "openalex_id": null,
+    "publication_year": 2003,
+    "first_author": {
+      "name": "Rob Fergus",
+      "institutions": [
+        {
+          "id": "man:university-of-oxford",
+          "name": "University of Oxford",
+          "type": "education",
+          "country": "GB"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Andrew Zisserman",
+        "institutions": [
+          {
+            "id": "man:university-of-oxford",
+            "name": "University of Oxford",
+            "type": "education",
+            "country": "GB"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Printed CVPR 2003 first page: Fergus & Zisserman superscript 1 = 'Dept. of Engineering Science, University of Oxford'; middle author Perona at Caltech. First=Oxford, last=Oxford."
+  },
+  "CVPR|2014|a performance evaluation of local descriptors": {
+    "openalex_id": null,
+    "publication_year": 2003,
+    "first_author": {
+      "name": "Krystian Mikolajczyk",
+      "institutions": [
+        {
+          "id": "man:inria",
+          "name": "Inria",
+          "type": "government",
+          "country": "FR"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Cordelia Schmid",
+        "institutions": [
+          {
+            "id": "man:inria",
+            "name": "Inria",
+            "type": "government",
+            "country": "FR"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "CVPR 2003 printed first page (MIT 6.891 handout PDF, directly verified): both authors under 'INRIA Rhone-Alpes, GRAVIR-CNRS, 655 av. de l'Europe, 38330 Montbonnot, France' (@inrialpes.fr). Mikolajczyk still in Schmid's INRIA group in 2003 (INRIA PhD 2002, moved to Oxford 2004). First=INRIA, last=INRIA."
+  },
+  "CVPR|2015|a non local algorithm for image denoising": {
+    "openalex_id": null,
+    "publication_year": 2005,
+    "first_author": {
+      "name": "Antoni Buades",
+      "institutions": [
+        {
+          "id": "man:universitat-de-les-illes-balears",
+          "name": "Universitat de les Illes Balears",
+          "type": "education",
+          "country": "ES"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Jean-Michel Morel",
+        "institutions": [
+          {
+            "id": "man:ecole-normale-superieure-de-cachan",
+            "name": "Ecole Normale Superieure de Cachan",
+            "type": "education",
+            "country": "FR"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Printed CVPR 2005 first page: Buades & Coll = 'Dpt. Matematiques i Informatica, UIB, Palma de Mallorca, Spain'; Morel = 'CMLA, ENS Cachan, France'. ENS Cachan (later ENS Paris-Saclay) is distinct from ENS Paris."
+  },
+  "CVPR|2015|histograms of oriented gradients for human detection": {
+    "openalex_id": null,
+    "publication_year": 2005,
+    "first_author": {
+      "name": "Navneet Dalal",
+      "institutions": [
+        {
+          "id": "man:inria",
+          "name": "Inria",
+          "type": "government",
+          "country": "FR"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Bill Triggs",
+        "institutions": [
+          {
+            "id": "man:inria",
+            "name": "Inria",
+            "type": "government",
+            "country": "FR"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Printed CVPR 2005 first page: 'Navneet Dalal and Bill Triggs, INRIA Rhone-Alps, Montbonnot, France' for both authors."
+  },
+  "CVPR|2016|beyond bags of features spatial pyramid matching for recognizing natural scene categories": {
+    "openalex_id": null,
+    "publication_year": 2006,
+    "first_author": {
+      "name": "Svetlana Lazebnik",
+      "institutions": [
+        {
+          "id": "man:university-of-illinois-urbana-champaign",
+          "name": "University of Illinois Urbana-Champaign",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Jean Ponce",
+        "institutions": [
+          {
+            "id": "man:university-of-illinois-urbana-champaign",
+            "name": "University of Illinois Urbana-Champaign",
+            "type": "education",
+            "country": "US"
+          },
+          {
+            "id": "man:ecole-normale-superieure",
+            "name": "Ecole Normale Superieure",
+            "type": "education",
+            "country": "FR"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Printed CVPR 2006 first page: Lazebnik superscript 1 = 'Beckman Institute, University of Illinois'; Ponce superscript '1,3' = Beckman Institute UIUC (primary) + Ecole Normale Superieure, Paris. Middle author Schmid at INRIA. Ponce primary UIUC where the work was done."
+  },
+  "CVPR|2016|scalable recognition with a vocabulary tree": {
+    "openalex_id": null,
+    "publication_year": 2006,
+    "first_author": {
+      "name": "David Nistér",
+      "institutions": [
+        {
+          "id": "man:university-of-kentucky",
+          "name": "University of Kentucky",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Henrik Stewénius",
+        "institutions": [
+          {
+            "id": "man:university-of-kentucky",
+            "name": "University of Kentucky",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Printed CVPR 2006 first page: both authors = 'Center for Visualization and Virtual Environments, Department of Computer Science, University of Kentucky'."
+  },
+  "CVPR|2017|accurate dense and robust multi view stereopsis": {
+    "openalex_id": null,
+    "publication_year": 2007,
+    "first_author": {
+      "name": "Yasutaka Furukawa",
+      "institutions": [
+        {
+          "id": "man:university-of-illinois-urbana-champaign",
+          "name": "University of Illinois Urbana-Champaign",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Jean Ponce",
+        "institutions": [
+          {
+            "id": "man:university-of-illinois-urbana-champaign",
+            "name": "University of Illinois Urbana-Champaign",
+            "type": "education",
+            "country": "US"
+          },
+          {
+            "id": "man:ecole-normale-superieure",
+            "name": "Ecole Normale Superieure",
+            "type": "education",
+            "country": "FR"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Printed CVPR 2007 first page (Wayback of ENS willow PDF): Furukawa superscript 1 = 'Dept. of Computer Science and Beckman Institute, University of Illinois at Urbana-Champaign'; Ponce '1,2' = UIUC (primary) + Willow-ENS/INRIA/ENPC, ENS Paris. Furukawa a UIUC PhD student; work done at UIUC."
+  },
+  "CVPR|2017|object retrieval with large vocabularies and fast spatial matching": {
+    "openalex_id": null,
+    "publication_year": 2007,
+    "first_author": {
+      "name": "James Philbin",
+      "institutions": [
+        {
+          "id": "man:university-of-oxford",
+          "name": "University of Oxford",
+          "type": "education",
+          "country": "GB"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Andrew Zisserman",
+        "institutions": [
+          {
+            "id": "man:university-of-oxford",
+            "name": "University of Oxford",
+            "type": "education",
+            "country": "GB"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Printed CVPR 2007 first page: Philbin, Chum, Sivic, Zisserman superscript 1 = 'Department of Engineering Science, University of Oxford'; Isard superscript 2 = 'Microsoft Research, Silicon Valley'. First=Oxford, last=Oxford."
+  },
+  "CVPR|2018|a discriminatively trained multiscale deformable part model": {
+    "openalex_id": null,
+    "publication_year": 2008,
+    "first_author": {
+      "name": "Pedro Felzenszwalb",
+      "institutions": [
+        {
+          "id": "man:university-of-chicago",
+          "name": "University of Chicago",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Deva Ramanan",
+        "institutions": [
+          {
+            "id": "man:toyota-technological-institute-at-chicago",
+            "name": "Toyota Technological Institute at Chicago",
+            "type": "education",
+            "country": "US"
+          },
+          {
+            "id": "man:university-of-california-irvine",
+            "name": "University of California, Irvine",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Printed CVPR 2008 first page: Felzenszwalb = 'University of Chicago'; McAllester = 'Toyota Technological Institute at Chicago'; Ramanan = 'TTI-C and UC Irvine' (TTIC listed first)."
+  },
+  "CVPR|2019|imagenet a large scale hierarchical image database": {
+    "openalex_id": null,
+    "publication_year": 2009,
+    "first_author": {
+      "name": "Jia Deng",
+      "institutions": [
+        {
+          "id": "man:princeton-university",
+          "name": "Princeton University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Li Fei-Fei",
+        "institutions": [
+          {
+            "id": "man:princeton-university",
+            "name": "Princeton University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Printed CVPR 2009 first page: all six authors = 'Dept. of Computer Science, Princeton University' (@cs.princeton.edu). Fei-Fei Li moved to Stanford later in 2009, but the paper's printed affiliation is Princeton."
+  },
+  "CVPR|2020|secrets of optical flow estimation and their principles": {
+    "openalex_id": null,
+    "publication_year": 2010,
+    "first_author": {
+      "name": "Deqing Sun",
+      "institutions": [
+        {
+          "id": "man:brown-university",
+          "name": "Brown University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Michael J. Black",
+        "institutions": [
+          {
+            "id": "man:brown-university",
+            "name": "Brown University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Printed CVPR 2010 first page: Sun = 'Brown University', Black = 'Brown University'; middle author Roth = 'TU Darmstadt'. First=Brown, last=Brown."
+  },
+  "ECCV|2014|face recognition with local binary patterns": {
+    "openalex_id": null,
+    "publication_year": 2004,
+    "first_author": {
+      "name": "Timo Ahonen",
+      "institutions": [
+        {
+          "id": "man:university-of-oulu",
+          "name": "University of Oulu",
+          "type": "education",
+          "country": "FI"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Matti Pietikäinen",
+        "institutions": [
+          {
+            "id": "man:university-of-oulu",
+            "name": "University of Oulu",
+            "type": "education",
+            "country": "FI"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Printed header, ECCV 2004 (LNCS 3021), Springer PDF: all three authors 'Machine Vision Group, Infotech Oulu, University of Oulu, Finland'. First=Ahonen, last=Pietikainen, both University of Oulu."
+  },
+  "ECCV|2014|high accuracy optical flow estimation based on a theory for warping": {
+    "openalex_id": null,
+    "publication_year": 2004,
+    "first_author": {
+      "name": "Thomas Brox",
+      "institutions": [
+        {
+          "id": "man:saarland-university",
+          "name": "Saarland University",
+          "type": "education",
+          "country": "DE"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Joachim Weickert",
+        "institutions": [
+          {
+            "id": "man:saarland-university",
+            "name": "Saarland University",
+            "type": "education",
+            "country": "DE"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Printed header, ECCV 2004 (LNCS 3024), PDF: all four authors 'Mathematical Image Analysis Group, Faculty of Mathematics and Computer Science, Saarland University, Saarbruecken, Germany'. First=Brox, last=Weickert, both Saarland University."
+  },
+  "ECCV|2016|machine learning for high speed corner detection": {
+    "openalex_id": null,
+    "publication_year": 2006,
+    "first_author": {
+      "name": "Edward Rosten",
+      "institutions": [
+        {
+          "id": "man:university-of-cambridge",
+          "name": "University of Cambridge",
+          "type": "education",
+          "country": "GB"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Tom Drummond",
+        "institutions": [
+          {
+            "id": "man:university-of-cambridge",
+            "name": "University of Cambridge",
+            "type": "education",
+            "country": "GB"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Printed header, ECCV 2006, PDF (edwardrosten.com): both authors 'Department of Engineering, Cambridge University, UK' (@cam.ac.uk). Normalized to University of Cambridge."
+  },
+  "ECCV|2016|surf speeded up robust features": {
+    "openalex_id": null,
+    "publication_year": 2006,
+    "first_author": {
+      "name": "Herbert Bay",
+      "institutions": [
+        {
+          "id": "man:eth-zurich",
+          "name": "ETH Zurich",
+          "type": "education",
+          "country": "CH"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Luc Van Gool",
+        "institutions": [
+          {
+            "id": "man:eth-zurich",
+            "name": "ETH Zurich",
+            "type": "education",
+            "country": "CH"
+          },
+          {
+            "id": "man:ku-leuven",
+            "name": "KU Leuven",
+            "type": "education",
+            "country": "BE"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Printed header, ECCV 2006, PDF: Bay(1)=ETH Zurich; Tuytelaars(2)=Katholieke Universiteit Leuven; Van Gool(1,2)=ETH Zurich + KU Leuven. Last author Van Gool dual, primary ETH Zurich; first author Bay ETH Zurich only."
+  },
+  "ECCV|2018|hamming embedding and weak geometric consistency for large scale image search": {
+    "openalex_id": null,
+    "publication_year": 2008,
+    "first_author": {
+      "name": "Hervé Jégou",
+      "institutions": [
+        {
+          "id": "man:inria",
+          "name": "Inria",
+          "type": "government",
+          "country": "FR"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Cordelia Schmid",
+        "institutions": [
+          {
+            "id": "man:inria",
+            "name": "Inria",
+            "type": "government",
+            "country": "FR"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Printed header, ECCV 2008 (LNCS 5303), Springer PDF: all three authors 'INRIA Grenoble, LEAR, LJK' (@inria.fr). First=Jegou, last=Schmid, both Inria (LEAR team)."
+  },
+  "ECCV|2018|semi supervised on line boosting for robust tracking": {
+    "openalex_id": null,
+    "publication_year": 2008,
+    "first_author": {
+      "name": "Helmut Grabner",
+      "institutions": [
+        {
+          "id": "man:graz-university-of-technology",
+          "name": "Graz University of Technology",
+          "type": "education",
+          "country": "AT"
+        },
+        {
+          "id": "man:eth-zurich",
+          "name": "ETH Zurich",
+          "type": "education",
+          "country": "CH"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Horst Bischof",
+        "institutions": [
+          {
+            "id": "man:graz-university-of-technology",
+            "name": "Graz University of Technology",
+            "type": "education",
+            "country": "AT"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Printed header, ECCV 2008 (LNCS 5303), Springer PDF: Grabner(1,2)=Institute for Computer Graphics and Vision, Graz University of Technology + Computer Vision Laboratory, ETH Zurich; Leistner(1) & Bischof(1)=Graz University of Technology. First author Grabner dual, primary Graz; last author Bischof Graz only."
+  },
+  "ECCV|2020|brief binary robust independent elementary features": {
+    "openalex_id": null,
+    "publication_year": 2010,
+    "first_author": {
+      "name": "Michael Calonder",
+      "institutions": [
+        {
+          "id": "man:ecole-polytechnique-federale-de-lausanne",
+          "name": "Ecole Polytechnique Federale de Lausanne",
+          "type": "education",
+          "country": "CH"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Pascal Fua",
+        "institutions": [
+          {
+            "id": "man:ecole-polytechnique-federale-de-lausanne",
+            "name": "Ecole Polytechnique Federale de Lausanne",
+            "type": "education",
+            "country": "CH"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Printed header, ECCV 2010 (LNCS 6314), PDF: all four authors 'CVLab, EPFL, Lausanne, Switzerland' (@epfl.ch). First=Calonder, last=Fua, both EPFL."
+  },
+  "ECCV|2020|improving the fisher kernel for large scale image classification": {
+    "openalex_id": null,
+    "publication_year": 2010,
+    "first_author": {
+      "name": "Florent Perronnin",
+      "institutions": [
+        {
+          "id": "man:xerox-research-centre-europe",
+          "name": "Xerox Research Centre Europe",
+          "type": "company",
+          "country": "FR"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Thomas Mensink",
+        "institutions": [
+          {
+            "id": "man:xerox-research-centre-europe",
+            "name": "Xerox Research Centre Europe",
+            "type": "company",
+            "country": "FR"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Printed header, ECCV 2010 (LNCS 6314), PDF (Naver Labs Europe mirror): all three authors 'Xerox Research Centre Europe (XRCE)', Meylan/Grenoble, France. Mensink was a PhD student jointly hosted INRIA/XRCE but the paper prints XRCE only. XRCE distinct from Xerox PARC (US)."
+  },
+  "ICCV|2013|a metric for distributions with applications to image databases": {
+    "openalex_id": null,
+    "publication_year": 1998,
+    "first_author": {
+      "name": "Yossi Rubner",
+      "institutions": [
+        {
+          "id": "man:stanford-university",
+          "name": "Stanford University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Leonidas J. Guibas",
+        "institutions": [
+          {
+            "id": "man:stanford-university",
+            "name": "Stanford University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICCV 1998 (Bombay). Printed first page: all authors (Rubner, Tomasi, Guibas) at Computer Science Department, Stanford University. Rubner was a Stanford PhD student. Confirmed via ICCV98 proceedings and IJCV 2000 journal version."
+  },
+  "ICCV|2013|a framework for the robust estimation of optical flow": {
+    "openalex_id": null,
+    "publication_year": 1993,
+    "first_author": {
+      "name": "Michael J. Black",
+      "institutions": [
+        {
+          "id": "man:university-of-toronto",
+          "name": "University of Toronto",
+          "type": "education",
+          "country": "CA"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "P. Anandan",
+        "institutions": [
+          {
+            "id": "man:david-sarnoff-research-center",
+            "name": "David Sarnoff Research Center",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICCV-93 (Berlin). Printed first page: Black = Department of Computer Science, University of Toronto; Anandan = David Sarnoff Research Center, Princeton NJ. The robust-flow work was Black's Yale PhD (1992), but by the paper Black held a U Toronto appointment and Anandan had left Yale for Sarnoff. Recorded per printed affiliations."
+  },
+  "ICCV|2013|alignment by maximization of mutual information": {
+    "openalex_id": null,
+    "publication_year": 1995,
+    "first_author": {
+      "name": "Paul Viola",
+      "institutions": [
+        {
+          "id": "man:massachusetts-institute-of-technology",
+          "name": "Massachusetts Institute of Technology",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "William M. Wells III",
+        "institutions": [
+          {
+            "id": "man:massachusetts-institute-of-technology",
+            "name": "Massachusetts Institute of Technology",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICCV 1995. Printed affiliation (verified on IJCV 1997 version, identical to conference): both Viola and Wells at the Artificial Intelligence Laboratory, MIT (viola@ai.mit.edu, sw@ai.mit.edu). Wells was concurrently associated with Harvard Medical School / Brigham & Women's, but this paper prints only MIT AI Lab."
+  },
+  "ICCV|2013|bilateral filtering for gray and color images": {
+    "openalex_id": null,
+    "publication_year": 1998,
+    "first_author": {
+      "name": "Carlo Tomasi",
+      "institutions": [
+        {
+          "id": "man:stanford-university",
+          "name": "Stanford University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Roberto Manduchi",
+        "institutions": [
+          {
+            "id": "man:apple",
+            "name": "Apple Computer",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICCV 1998 (Bombay). Printed first page: C. Tomasi = Computer Science Department, Stanford University; R. Manduchi = Apple Computer, Inc., Cupertino CA (manduchi@apple.com)."
+  },
+  "ICCV|2013|flexible camera calibration by viewing a plane from unknown orientations": {
+    "openalex_id": null,
+    "publication_year": 1999,
+    "first_author": {
+      "name": "Zhengyou Zhang",
+      "institutions": [
+        {
+          "id": "man:microsoft",
+          "name": "Microsoft",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Zhengyou Zhang",
+        "institutions": [
+          {
+            "id": "man:microsoft",
+            "name": "Microsoft",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICCV 1999 (Corfu). Single author. Zhengyou Zhang at Microsoft Research, Redmond WA (joined MSR March 1998); paper is MSR-TR-98-71. First author and corresponding identical per single-author rule."
+  },
+  "ICCV|2013|in defence of the 8 point algorithm": {
+    "openalex_id": null,
+    "publication_year": 1995,
+    "first_author": {
+      "name": "Richard I. Hartley",
+      "institutions": [
+        {
+          "id": "man:ge-corporate-research-and-development",
+          "name": "GE Corporate Research and Development",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Richard I. Hartley",
+        "institutions": [
+          {
+            "id": "man:ge-corporate-research-and-development",
+            "name": "GE Corporate Research and Development",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICCV 1995. Single author. Printed first page: Richard I. Hartley, G.E. CRD (General Electric Corporate Research and Development), Schenectady NY. First author and corresponding identical per single-author rule."
+  },
+  "ICCV|2013|indexing via color histograms": {
+    "openalex_id": null,
+    "publication_year": 1990,
+    "first_author": {
+      "name": "Michael J. Swain",
+      "institutions": [
+        {
+          "id": "man:university-of-rochester",
+          "name": "University of Rochester",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Dana H. Ballard",
+        "institutions": [
+          {
+            "id": "man:university-of-rochester",
+            "name": "University of Rochester",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Indexing via color histograms, 3rd ICCV (Osaka, Dec 1990). Swain's University of Rochester PhD thesis work (Rochester CS TR-360, PhD Rochester 1990); Ballard was his Rochester advisor. Attributed to University of Rochester per work-completion rule. JUDGMENT CALL: the IJCV 1991 journal version 'Color Indexing' (submitted Jan 22 1991, directly verified) already prints Swain at 'Dept. of Computer Science, University of Chicago' and Ballard at 'University of Rochester' - Swain moved to U Chicago right at this transition. The Dec-1990 ICCV conference first page (IEEE Xplore, paywalled) could not be directly retrieved, so whether it printed Rochester or Chicago for Swain is unconfirmed. Ballard = Rochester on both."
+  },
+  "ICCV|2013|region competition unifying snakes region growing energy bayes mdl for multi band image segmentation": {
+    "openalex_id": null,
+    "publication_year": 1995,
+    "first_author": {
+      "name": "Song Chun Zhu",
+      "institutions": [
+        {
+          "id": "man:harvard-university",
+          "name": "Harvard University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Alan L. Yuille",
+        "institutions": [
+          {
+            "id": "man:harvard-university",
+            "name": "Harvard University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICCV 1995 version. Printed first page: S.C. Zhu, T.S. Lee and A.L. Yuille = Division of Applied Sciences, Harvard University (zhu@metatron.harvard.edu). Zhu was Yuille's Harvard PhD student. Yuille moved to Smith-Kettlewell in 1995, but this paper prints Harvard for all three."
+  },
+  "ICCV|2013|snakes active contour models": {
+    "openalex_id": null,
+    "publication_year": 1987,
+    "first_author": {
+      "name": "Michael Kass",
+      "institutions": [
+        {
+          "id": "man:schlumberger-palo-alto-research",
+          "name": "Schlumberger Palo Alto Research",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Demetri Terzopoulos",
+        "institutions": [
+          {
+            "id": "man:schlumberger-palo-alto-research",
+            "name": "Schlumberger Palo Alto Research",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Snakes, 1st ICCV 1987 (also IJCV 1(4):321-331, 1988). Printed first page: Michael Kass, Andrew Witkin and Demetri Terzopoulos = Schlumberger Palo Alto Research, Palo Alto CA. All three at Schlumberger's Palo Alto lab at the time."
+  },
+  "ICCV|2013|steerable filters for early vision image analysis and wavelet decomposition": {
+    "openalex_id": null,
+    "publication_year": 1990,
+    "first_author": {
+      "name": "William T. Freeman",
+      "institutions": [
+        {
+          "id": "man:massachusetts-institute-of-technology",
+          "name": "Massachusetts Institute of Technology",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Edward H. Adelson",
+        "institutions": [
+          {
+            "id": "man:massachusetts-institute-of-technology",
+            "name": "Massachusetts Institute of Technology",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Steerable Filters for Early Vision (MIT Media Lab, 1990); journal 'The Design and Use of Steerable Filters', IEEE TPAMI 13(9) 1991. Printed affiliation: both authors with the Media Laboratory, MIT; Adelson also with MIT Department of Brain and Cognitive Sciences. Freeman was an MIT Media Lab PhD student at the time."
+  },
+  "ICCV|2013|texture synthesis by non parametric sampling": {
+    "openalex_id": null,
+    "publication_year": 1999,
+    "first_author": {
+      "name": "Alexei A. Efros",
+      "institutions": [
+        {
+          "id": "man:university-of-california-berkeley",
+          "name": "University of California, Berkeley",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Thomas K. Leung",
+        "institutions": [
+          {
+            "id": "man:university-of-california-berkeley",
+            "name": "University of California, Berkeley",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICCV 1999 (Corfu). Printed first page: Alexei A. Efros and Thomas K. Leung = Computer Science Division, University of California, Berkeley (efros,leungt@cs.berkeley.edu). Efros was a Berkeley PhD student; both printed at Berkeley."
+  },
+  "ICCV|2015|a database of human segmented natural images and its application to evaluating segmentation algorithms and measuring ecological statistics": {
+    "openalex_id": null,
+    "publication_year": 2001,
+    "first_author": {
+      "name": "David Martin",
+      "institutions": [
+        {
+          "id": "man:university-of-california-berkeley",
+          "name": "University of California, Berkeley",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Jitendra Malik",
+        "institutions": [
+          {
+            "id": "man:university-of-california-berkeley",
+            "name": "University of California, Berkeley",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICCV 2001 printed first page (UCI-hosted PDF): all four authors Dept. of Electrical Engineering and Computer Sciences, University of California, Berkeley."
+  },
+  "ICCV|2015|matching shapes": {
+    "openalex_id": null,
+    "publication_year": 2001,
+    "first_author": {
+      "name": "Serge Belongie",
+      "institutions": [
+        {
+          "id": "man:university-of-california-berkeley",
+          "name": "University of California, Berkeley",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Jan Puzicha",
+        "institutions": [
+          {
+            "id": "man:university-of-california-berkeley",
+            "name": "University of California, Berkeley",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICCV 2001 printed first page (Stanford-hosted PDF): Belongie, Malik and Puzicha all Dept. of EECS, University of California, Berkeley (sjb,malik,puzicha@cs.berkeley.edu)."
+  },
+  "ICCV|2017|actions as space time shapes": {
+    "openalex_id": null,
+    "publication_year": 2005,
+    "first_author": {
+      "name": "Moshe Blank",
+      "institutions": [
+        {
+          "id": "man:weizmann-institute-of-science",
+          "name": "Weizmann Institute of Science",
+          "type": "education",
+          "country": "IL"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Ronen Basri",
+        "institutions": [
+          {
+            "id": "man:weizmann-institute-of-science",
+            "name": "Weizmann Institute of Science",
+            "type": "education",
+            "country": "IL"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICCV 2005 printed first page (Weizmann-hosted PDF): all five authors Dept. of Computer Science and Applied Math, Weizmann Institute of Science, Rehovot, Israel."
+  },
+  "ICCV|2017|discovering objects and their location in images": {
+    "openalex_id": null,
+    "publication_year": 2005,
+    "first_author": {
+      "name": "Josef Sivic",
+      "institutions": [
+        {
+          "id": "man:university-of-oxford",
+          "name": "University of Oxford",
+          "type": "education",
+          "country": "GB"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "William T. Freeman",
+        "institutions": [
+          {
+            "id": "man:massachusetts-institute-of-technology",
+            "name": "Massachusetts Institute of Technology",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICCV 2005 printed first page (CMU-RI-hosted PDF): Sivic(1) and Zisserman(1) = Dept. of Engineering Science, University of Oxford; Russell(2) and Freeman(2) = CSAIL, MIT; Efros(3) = CMU. First author Sivic Oxford, last author Freeman MIT."
+  },
+  "ICCV|2017|recognising panoramas": {
+    "openalex_id": null,
+    "publication_year": 2003,
+    "first_author": {
+      "name": "Matthew Brown",
+      "institutions": [
+        {
+          "id": "man:university-of-british-columbia",
+          "name": "University of British Columbia",
+          "type": "education",
+          "country": "CA"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "David G. Lowe",
+        "institutions": [
+          {
+            "id": "man:university-of-british-columbia",
+            "name": "University of British Columbia",
+            "type": "education",
+            "country": "CA"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICCV 2003 printed first page (author-hosted PDF): Brown and Lowe both Dept. of Computer Science, University of British Columbia, Vancouver (mbrown,lowe@cs.ubc.ca)."
+  },
+  "ICCV|2017|recognizing action at a distance": {
+    "openalex_id": null,
+    "publication_year": 2003,
+    "first_author": {
+      "name": "Alexei A. Efros",
+      "institutions": [
+        {
+          "id": "man:university-of-california-berkeley",
+          "name": "University of California, Berkeley",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Jitendra Malik",
+        "institutions": [
+          {
+            "id": "man:university-of-california-berkeley",
+            "name": "University of California, Berkeley",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICCV 2003 printed first page (INRIA iccv03 CD-ROM PDF): Efros, Berg, Mori, Malik all Computer Science Division, UC Berkeley."
+  },
+  "ICCV|2017|space time interest points": {
+    "openalex_id": null,
+    "publication_year": 2003,
+    "first_author": {
+      "name": "Ivan Laptev",
+      "institutions": [
+        {
+          "id": "man:kth-royal-institute-of-technology",
+          "name": "KTH Royal Institute of Technology",
+          "type": "education",
+          "country": "SE"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Tony Lindeberg",
+        "institutions": [
+          {
+            "id": "man:kth-royal-institute-of-technology",
+            "name": "KTH Royal Institute of Technology",
+            "type": "education",
+            "country": "SE"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICCV 2003 printed first page (irisa-hosted PDF): Laptev and Lindeberg both CVAP, Dept. of Numerical Analysis and Computer Science, KTH, Stockholm, Sweden."
+  },
+  "ICCV|2017|the pyramid match kernel discriminative classification with sets of image features": {
+    "openalex_id": null,
+    "publication_year": 2005,
+    "first_author": {
+      "name": "Kristen Grauman",
+      "institutions": [
+        {
+          "id": "man:massachusetts-institute-of-technology",
+          "name": "Massachusetts Institute of Technology",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Trevor Darrell",
+        "institutions": [
+          {
+            "id": "man:massachusetts-institute-of-technology",
+            "name": "Massachusetts Institute of Technology",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICCV 2005 printed first page (author-hosted PDF): Grauman and Darrell both MIT Computer Science and Artificial Intelligence Laboratory, Cambridge, MA."
+  },
+  "ICCV|2017|video google a text retrieval approach to object matching in videos": {
+    "openalex_id": null,
+    "publication_year": 2003,
+    "first_author": {
+      "name": "Josef Sivic",
+      "institutions": [
+        {
+          "id": "man:university-of-oxford",
+          "name": "University of Oxford",
+          "type": "education",
+          "country": "GB"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Andrew Zisserman",
+        "institutions": [
+          {
+            "id": "man:university-of-oxford",
+            "name": "University of Oxford",
+            "type": "education",
+            "country": "GB"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICCV 2003 printed first page (VGG-hosted PDF): Sivic and Zisserman both Robotics Research Group, Dept. of Engineering Science, University of Oxford."
+  },
+  "ICCV|2019|attribute and simile classifiers for face verification": {
+    "openalex_id": null,
+    "publication_year": 2009,
+    "first_author": {
+      "name": "Neeraj Kumar",
+      "institutions": [
+        {
+          "id": "man:columbia-university",
+          "name": "Columbia University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Shree K. Nayar",
+        "institutions": [
+          {
+            "id": "man:columbia-university",
+            "name": "Columbia University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICCV 2009 printed first page (Columbia CAVE-hosted PDF): Kumar, Berg, Belhumeur, Nayar all Columbia University (@cs.columbia.edu)."
+  },
+  "ICCV|2019|building rome in a day": {
+    "openalex_id": null,
+    "publication_year": 2009,
+    "first_author": {
+      "name": "Sameer Agarwal",
+      "institutions": [
+        {
+          "id": "man:university-of-washington",
+          "name": "University of Washington",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Richard Szeliski",
+        "institutions": [
+          {
+            "id": "man:microsoft",
+            "name": "Microsoft",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICCV 2009 printed first page (GRAIL-hosted PDF): Agarwal(1), Simon(1), Seitz(1) = University of Washington; Snavely(2) = Cornell University; Szeliski(3) = Microsoft Research. First author Agarwal UW, last author Szeliski Microsoft."
+  },
+  "ICML|2012|diffusion kernels on graphs and other discrete input spaces": {
+    "openalex_id": null,
+    "publication_year": 2002,
+    "first_author": {
+      "name": "Risi Imre Kondor",
+      "institutions": [
+        {
+          "id": "man:carnegie-mellon-university",
+          "name": "Carnegie Mellon University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "John Lafferty",
+        "institutions": [
+          {
+            "id": "man:carnegie-mellon-university",
+            "name": "Carnegie Mellon University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICML 2002 printed first page (author copy at people.cs.uchicago.edu/~risi): both Kondor and Lafferty under 'School of Computer Science, Carnegie Mellon University, Pittsburgh, PA'; emails KONDOR@CMU.EDU, LAFFERTY@CS.CMU.EDU."
+  },
+  "ICML|2013|online convex programming and generalized infinitesimal gradient ascent": {
+    "openalex_id": null,
+    "publication_year": 2003,
+    "first_author": {
+      "name": "Martin Zinkevich",
+      "institutions": [
+        {
+          "id": "man:carnegie-mellon-university",
+          "name": "Carnegie Mellon University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Martin Zinkevich",
+        "institutions": [
+          {
+            "id": "man:carnegie-mellon-university",
+            "name": "Carnegie Mellon University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Single-author paper; first_author = corresponding. ICML 2003 printed first page: 'Martin Zinkevich, Carnegie Mellon University, 5000 Forbes Avenue, Pittsburgh, PA', email MAZ@CS.CMU.EDU."
+  },
+  "ICML|2013|semi supervised learning using gaussian fields and harmonic functions": {
+    "openalex_id": null,
+    "publication_year": 2003,
+    "first_author": {
+      "name": "Xiaojin Zhu",
+      "institutions": [
+        {
+          "id": "man:carnegie-mellon-university",
+          "name": "Carnegie Mellon University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "John Lafferty",
+        "institutions": [
+          {
+            "id": "man:carnegie-mellon-university",
+            "name": "Carnegie Mellon University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICML 2003 printed first page (zgl.pdf at mlg.eng.cam.ac.uk): Xiaojin Zhu and John Lafferty both '* School of Computer Science, Carnegie Mellon University'; emails ZHUXJ@CS.CMU.EDU, LAFFERTY@CS.CMU.EDU. Middle author Ghahramani dual-affiliated Gatsby/UCL + CMU, not scored."
+  },
+  "ICML|2014|multiple kernel learning conic duality and the smo algorithm": {
+    "openalex_id": null,
+    "publication_year": 2004,
+    "first_author": {
+      "name": "Francis Bach",
+      "institutions": [
+        {
+          "id": "man:university-of-california-berkeley",
+          "name": "University of California, Berkeley",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Michael Jordan",
+        "institutions": [
+          {
+            "id": "man:university-of-california-berkeley",
+            "name": "University of California, Berkeley",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICML 2004 printed first page (skm_icml.pdf at di.ens.fr/~fbach): Francis R. Bach at 'Dept. of EECS, University of California, Berkeley'; Michael I. Jordan at 'Computer Science Division and Department of Statistics, University of California, Berkeley'."
+  },
+  "ICML|2015|learning to rank using gradient descent": {
+    "openalex_id": null,
+    "publication_year": 2005,
+    "first_author": {
+      "name": "Chris Burges",
+      "institutions": [
+        {
+          "id": "man:microsoft",
+          "name": "Microsoft",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Greg Hullender",
+        "institutions": [
+          {
+            "id": "man:microsoft",
+            "name": "Microsoft",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICML 2005 proceedings printed first page: Chris Burges under 'Microsoft Research, One Microsoft Way, Redmond, WA' (CBURGES@MICROSOFT.COM); last author Greg Hullender under 'Microsoft, One Microsoft Way, Redmond' (GREGHULL@MICROSOFT.COM). Both normalized to Microsoft."
+  },
+  "ICML|2016|dynamic topic models": {
+    "openalex_id": null,
+    "publication_year": 2006,
+    "first_author": {
+      "name": "David M. Blei",
+      "institutions": [
+        {
+          "id": "man:princeton-university",
+          "name": "Princeton University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "John D. Lafferty",
+        "institutions": [
+          {
+            "id": "man:carnegie-mellon-university",
+            "name": "Carnegie Mellon University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICML 2006 printed first page: 'David M. Blei, Computer Science Department, Princeton University' (BLEI@CS.PRINCETON.EDU); 'John D. Lafferty, School of Computer Science, Carnegie Mellon University' (LAFFERTY@CS.CMU.EDU). Blei already at Princeton by 2006, not CMU."
+  },
+  "ICML|2017|a bound on the label complexity of agnostic active learning": {
+    "openalex_id": null,
+    "publication_year": 2007,
+    "first_author": {
+      "name": "Steve Hanneke",
+      "institutions": [
+        {
+          "id": "man:carnegie-mellon-university",
+          "name": "Carnegie Mellon University",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Steve Hanneke",
+        "institutions": [
+          {
+            "id": "man:carnegie-mellon-university",
+            "name": "Carnegie Mellon University",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Printed ICML 2007 first page: 'Machine Learning Department, Carnegie Mellon University, Pittsburgh, PA' (shanneke@cs.cmu.edu). Single author -> first_author = corresponding."
+  },
+  "ICML|2017|combining online and offline knowledge in uct": {
+    "openalex_id": null,
+    "publication_year": 2007,
+    "first_author": {
+      "name": "Sylvain Gelly",
+      "institutions": [
+        {
+          "id": "man:universite-paris-sud",
+          "name": "Universite Paris-Sud",
+          "type": "education",
+          "country": "FR"
+        },
+        {
+          "id": "man:inria",
+          "name": "Inria",
+          "type": "government",
+          "country": "FR"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "David Silver",
+        "institutions": [
+          {
+            "id": "man:university-of-alberta",
+            "name": "University of Alberta",
+            "type": "education",
+            "country": "CA"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "ICML 2007 first page shows Gelly email sylvain.gelly@lri.fr (LRI, Univ. Paris-Sud). HAL PDF institution line behind anti-bot wall; corroborated by companion AAAI 2008 paper by same two authors: Gelly 'Univ. Paris Sud, LRI, CNRS, INRIA' (TAO joint INRIA/CNRS/Univ Paris-Sud team), Silver 'University of Alberta'. Silver was a PhD student at U. Alberta 2004-2009. Primary Univ Paris-Sud per email domain; Inria co-listed. JUDGMENT CALL."
+  },
+  "ICML|2017|pegasos primal estimated sub gradient solver for svm": {
+    "openalex_id": null,
+    "publication_year": 2007,
+    "first_author": {
+      "name": "Shai Shalev-Shwartz",
+      "institutions": [
+        {
+          "id": "man:hebrew-university-of-jerusalem",
+          "name": "The Hebrew University of Jerusalem",
+          "type": "education",
+          "country": "IL"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Nathan Srebro",
+        "institutions": [
+          {
+            "id": "man:toyota-technological-institute-at-chicago",
+            "name": "Toyota Technological Institute at Chicago",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Printed ICML 2007 first page ('Appearing in Proceedings of the 24th ICML, Corvallis, OR, 2007'): Shalev-Shwartz 'School of Computer Science and Engineering, The Hebrew University, Jerusalem'; Srebro 'Toyota Technological Institute, Chicago'. Middle author Singer: 'Google inc., Mountain View and The Hebrew University'."
+  },
+  "ICML|2018|a unified architecture for natural language processing deep neural networks with multitask learning": {
+    "openalex_id": null,
+    "publication_year": 2008,
+    "first_author": {
+      "name": "Ronan Collobert",
+      "institutions": [
+        {
+          "id": "man:nec-laboratories-america",
+          "name": "NEC Laboratories America",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Jason Weston",
+        "institutions": [
+          {
+            "id": "man:nec-laboratories-america",
+            "name": "NEC Laboratories America",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Printed ICML 2008 first page: both authors 'NEC Labs America, 4 Independence Way, Princeton, NJ' (collober@nec-labs.com, jasonw@nec-labs.com)."
+  },
+  "ICML|2019|online dictionary learning for sparse coding": {
+    "openalex_id": null,
+    "publication_year": 2009,
+    "first_author": {
+      "name": "Julien Mairal",
+      "institutions": [
+        {
+          "id": "man:inria",
+          "name": "Inria",
+          "type": "government",
+          "country": "FR"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Guillermo Sapiro",
+        "institutions": [
+          {
+            "id": "man:university-of-minnesota",
+            "name": "University of Minnesota",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Printed ICML 2009 first page: Mairal 'INRIA, 45 rue d'Ulm, Paris' (julien.mairal@inria.fr); Sapiro 'University of Minnesota - Dept. of Electrical and Computer Engineering, Minneapolis' (guille@umn.edu). Mairal & Bach in INRIA-Willow; Ponce at Ecole Normale Superieure."
+  },
+  "ICML|2020|gaussian process optimization in the bandit setting no regret and experimental design": {
+    "openalex_id": null,
+    "publication_year": 2010,
+    "first_author": {
+      "name": "Niranjan Srinivas",
+      "institutions": [
+        {
+          "id": "man:california-institute-of-technology",
+          "name": "California Institute of Technology",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Matthias Seeger",
+        "institutions": [
+          {
+            "id": "man:saarland-university",
+            "name": "Saarland University",
+            "type": "education",
+            "country": "DE"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Printed ICML 2010 first page (icml.cc/2010/papers/422.pdf): Srinivas & Krause 'California Institute of Technology, Pasadena, CA'; Kakade 'University of Pennsylvania'; Seeger 'Saarland University, Saarbruecken, Germany'. A later journal version lists Krause=ETH/Seeger=EPFL; the printed ICML 2010 affiliations are used."
+  },
+  "NeurIPS|2017|random features for large scale kernel machines": {
+    "openalex_id": null,
+    "publication_year": 2007,
+    "first_author": {
+      "name": "Ali Rahimi",
+      "institutions": [
+        {
+          "id": "man:intel-research",
+          "name": "Intel Research",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Benjamin Recht",
+        "institutions": [
+          {
+            "id": "man:california-institute-of-technology",
+            "name": "California Institute of Technology",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Printed NeurIPS 2007 proceedings first page: Rahimi 'Intel Research Seattle, WA' (ali.rahimi@intel.com); Recht 'Caltech IST, Pasadena, CA' (brecht@ist.caltech.edu). Recht CV confirms Caltech CMI postdoc 2006-2009."
+  },
+  "NeurIPS|2018|the tradeoffs of large scale learning": {
+    "openalex_id": null,
+    "publication_year": 2007,
+    "first_author": {
+      "name": "Léon Bottou",
+      "institutions": [
+        {
+          "id": "man:nec-laboratories-america",
+          "name": "NEC Laboratories America",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Olivier Bousquet",
+        "institutions": [
+          {
+            "id": "man:google",
+            "name": "Google",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Printed NIPS 2007 first page: Bottou 'NEC laboratories of America, Princeton, NJ' (leon@bottou.org); Bousquet 'Google Zurich, Switzerland' (olivier.bousquet@m4x.org). Google slug canonical country US; Bousquet worked from Google's Zurich office."
+  },
+  "NeurIPS|2019|dual averaging method for regularized stochastic learning and online optimization": {
+    "openalex_id": null,
+    "publication_year": 2009,
+    "first_author": {
+      "name": "Lin Xiao",
+      "institutions": [
+        {
+          "id": "man:microsoft",
+          "name": "Microsoft",
+          "type": "company",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Lin Xiao",
+        "institutions": [
+          {
+            "id": "man:microsoft",
+            "name": "Microsoft",
+            "type": "company",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Printed NIPS 2009 first page: 'Microsoft Research, Redmond, WA' (lin.xiao@microsoft.com). Single author -> first_author = corresponding."
+  },
+  "NeurIPS|2020|hogwild a lock free approach to parallelizing stochastic gradient descent": {
+    "openalex_id": null,
+    "publication_year": 2011,
+    "first_author": {
+      "name": "Feng Niu",
+      "institutions": [
+        {
+          "id": "man:university-of-wisconsin-madison",
+          "name": "University of Wisconsin-Madison",
+          "type": "education",
+          "country": "US"
+        }
+      ]
+    },
+    "corresponding": [
+      {
+        "name": "Stephen J. Wright",
+        "institutions": [
+          {
+            "id": "man:university-of-wisconsin-madison",
+            "name": "University of Wisconsin-Madison",
+            "type": "education",
+            "country": "US"
+          }
+        ]
+      }
+    ],
+    "source": "manual-verified",
+    "note": "Printed first page (arXiv 1106.5730v2, matching NIPS 2011 camera-ready): all four authors 'Computer Sciences Department, University of Wisconsin-Madison, Madison, WI'."
+  }
+}
