@@ -521,9 +521,10 @@ function openDossier(instId) {
     if (ev.ci.includes(instId)) for (const n of ev.ca || []) if (n) names.add(n);
     for (const n of names) {
       let p = people.get(n);
-      if (!p) people.set(n, p = { name: n, score: 0, counts: {} });
+      if (!p) people.set(n, p = { name: n, score: 0, counts: {}, evs: [] });
       p.score += state.weights[ev.award];
       p.counts[ev.award] = (p.counts[ev.award] || 0) + 1;
+      p.evs.push(ev);
     }
   }
   const plist = [...people.values()].sort((a, b) => b.score - a.score);
@@ -542,12 +543,41 @@ function openDossier(instId) {
       }
       const nameEl = ttEl('p-name', '', 'span');
       const hp = (DATA.homepages || {})[p.name];
+      const tri = ttEl('p-tri', '►', 'span');
+      nameEl.append(tri, document.createTextNode(' '));
       if (hp) {
         const a = document.createElement('a');
         a.href = hp; a.target = '_blank'; a.rel = 'noopener'; a.textContent = p.name;
+        a.addEventListener('click', e => e.stopPropagation());
         nameEl.append(a);
-      } else nameEl.textContent = p.name;
+      } else nameEl.append(document.createTextNode(p.name));
       row.append(nameEl, counts, ttEl('p-score', fmt(p.score), 'span'));
+      // 点行（除人名链接外）展开该人的获奖论文
+      row.addEventListener('click', () => {
+        const next = row.nextElementSibling;
+        if (next && next.classList.contains('person-papers')) {
+          next.remove(); tri.textContent = '►'; return;
+        }
+        const box = ttEl('person-papers', '');
+        const evs = [...p.evs].sort((a, b) =>
+          (TIER_BY_ID[a.award] === TIER_BY_ID[b.award] ? b.ya - a.ya
+           : state.weights[b.award] - state.weights[a.award]));
+        for (const ev of evs) {
+          const it = ttEl('pp-item', '');
+          const dot = ttEl('tier-dot', '', 'span');
+          dot.style.background = TIER_BY_ID[ev.award].color;
+          const t = ttEl('pp-title', '', 'span');
+          if (ev.url) {
+            const a2 = document.createElement('a');
+            a2.href = ev.url; a2.target = '_blank'; a2.rel = 'noopener'; a2.textContent = ev.title;
+            t.append(a2);
+          } else t.textContent = ev.title;
+          it.append(dot, t, ttEl('pp-meta', `${ev.venue} ${ev.ya}`, 'span'));
+          box.append(it);
+        }
+        row.after(box);
+        tri.textContent = '▼';
+      });
       return row;
     }));
     if (plist.length > limit) {
