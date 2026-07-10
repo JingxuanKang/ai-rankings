@@ -1,0 +1,1480 @@
+{
+  "coverage_notes": "覆盖范围：CVPR 2012-2020（每年）、ICCV 2013/2015/2017/2019（奇数年）、ECCV 2012/2014/2016/2018/2020（偶数年）。只收论文级奖项：Best Paper / Best Student Paper（→best_paper，student track 在 note 标 'best student paper'；ICCV best paper 即 Marr Prize，note 标 'Marr Prize'）、Honorable Mention / Best Paper Runner-Up（→honorable_mention，note 空）、Test of Time（CVPR Longuet-Higgins Prize note 空 / ICCV Helmholtz Prize / ECCV Koenderink Prize，均→test_of_time，year_work=原论文发表年）。不收 orals、不收 best paper award candidates（该类别 2023 年才有）。共 102 条，全部对官方一手来源核实：thecvf.com 各届会议奖项页、IEEE PAMI-TC 奖项页（tc.computer.org）、ECCV 官方奖项页/PDF，交叉核实。边界情况：(1) CVPR 2012 未颁 Longuet-Higgins Prize——该奖表彰约十年前的 CVPR 论文，而 CVPR 无 2002 届（2001 Kauai 后直接跳到 2003 Madison），故本数据集无 CVPR 2012 test_of_time 条目。(2) 受此 cadence 影响，2014 年 Longuet-Higgins Prize 表彰的是 CVPR 2003 论文（'A Performance Evaluation of Local Descriptors'），year_work=2003。(3) ICCV 2013 Helmholtz Prize 为首届，一次性追授 11 篇 ICCV 1987-1999 经典论文。(4) ICCV 2013/2015 未设 Best Student Paper；ECCV 2014/2016/2018/2020 未设 Best Student Paper（仅 2012 有）。",
+  "entries": [
+    {
+      "venue": "CVPR",
+      "year_awarded": 2012,
+      "award": "best_paper",
+      "title": "A Simple Prior-Free Method for Non-Rigid Structure-from-Motion Factorization",
+      "authors": [
+        "Yuchao Dai",
+        "Hongdong Li",
+        "Mingyi He"
+      ],
+      "year_work": 2012,
+      "source_url": "https://tc.computer.org/tcpami/awards/cvpr-paper-awards/",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2012,
+      "award": "best_paper",
+      "title": "Max-Margin Early Event Detectors",
+      "authors": [
+        "Minh Hoai",
+        "Fernando De la Torre"
+      ],
+      "year_work": 2012,
+      "source_url": "https://tc.computer.org/tcpami/awards/cvpr-paper-awards/",
+      "note": "best student paper"
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2013,
+      "award": "best_paper",
+      "title": "Fast, Accurate Detection of 100,000 Object Classes on a Single Machine",
+      "authors": [
+        "Thomas Dean",
+        "Mark A. Ruzon",
+        "Mark Segal",
+        "Jonathon Shlens",
+        "Sudheendra Vijayanarasimhan",
+        "Jay Yagnik"
+      ],
+      "year_work": 2013,
+      "source_url": "https://cvpr2013.thecvf.com/awards.php",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2013,
+      "award": "best_paper",
+      "title": "Discriminative Non-blind Deblurring",
+      "authors": [
+        "Uwe Schmidt",
+        "Carsten Rother",
+        "Sebastian Nowozin",
+        "Jeremy Jancsary",
+        "Stefan Roth"
+      ],
+      "year_work": 2013,
+      "source_url": "https://cvpr2013.thecvf.com/awards.php",
+      "note": "best student paper"
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2013,
+      "award": "honorable_mention",
+      "title": "Lost! Leveraging the Crowd for Probabilistic Visual Self-Localization",
+      "authors": [
+        "Marcus A. Brubaker",
+        "Andreas Geiger",
+        "Raquel Urtasun"
+      ],
+      "year_work": 2013,
+      "source_url": "https://cvpr2013.thecvf.com/awards.php",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2014,
+      "award": "best_paper",
+      "title": "What Camera Motion Reveals About Shape with Unknown BRDF",
+      "authors": [
+        "Manmohan Chandraker"
+      ],
+      "year_work": 2014,
+      "source_url": "https://tc.computer.org/tcpami/awards/cvpr-paper-awards/",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2014,
+      "award": "best_paper",
+      "title": "Partial Optimality by Pruning for MAP-inference with General Graphical Models",
+      "authors": [
+        "Paul Swoboda",
+        "Bogdan Savchynskyy",
+        "Jörg H. Kappes",
+        "Christoph Schnörr"
+      ],
+      "year_work": 2014,
+      "source_url": "https://tc.computer.org/tcpami/awards/cvpr-paper-awards/",
+      "note": "best student paper"
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2014,
+      "award": "honorable_mention",
+      "title": "3D Shape and Indirect Appearance by Structured Light Transport",
+      "authors": [
+        "Matthew O'Toole",
+        "John Mather",
+        "Kiriakos N. Kutulakos"
+      ],
+      "year_work": 2014,
+      "source_url": "https://tc.computer.org/tcpami/awards/cvpr-paper-awards/",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2015,
+      "award": "best_paper",
+      "title": "DynamicFusion: Reconstruction and Tracking of Non-Rigid Scenes in Real-Time",
+      "authors": [
+        "Richard A. Newcombe",
+        "Dieter Fox",
+        "Steven M. Seitz"
+      ],
+      "year_work": 2015,
+      "source_url": "https://cvpr2015.thecvf.com/awards.php",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2015,
+      "award": "best_paper",
+      "title": "Category-Specific Object Reconstruction from a Single Image",
+      "authors": [
+        "Abhishek Kar",
+        "Shubham Tulsiani",
+        "João Carreira",
+        "Jitendra Malik"
+      ],
+      "year_work": 2015,
+      "source_url": "https://cvpr2015.thecvf.com/awards.php",
+      "note": "best student paper"
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2015,
+      "award": "honorable_mention",
+      "title": "Efficient Globally Optimal Consensus Maximisation with Tree Search",
+      "authors": [
+        "Tat-Jun Chin",
+        "Pulak Purkait",
+        "Anders Eriksson",
+        "David Suter"
+      ],
+      "year_work": 2015,
+      "source_url": "https://cvpr2015.thecvf.com/awards.php",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2015,
+      "award": "honorable_mention",
+      "title": "Fully Convolutional Networks for Semantic Segmentation",
+      "authors": [
+        "Jonathan Long",
+        "Evan Shelhamer",
+        "Trevor Darrell"
+      ],
+      "year_work": 2015,
+      "source_url": "https://cvpr2015.thecvf.com/awards.php",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2015,
+      "award": "honorable_mention",
+      "title": "Picture: A Probabilistic Programming Language for Scene Perception",
+      "authors": [
+        "Tejas D. Kulkarni",
+        "Pushmeet Kohli",
+        "Joshua B. Tenenbaum",
+        "Vikash K. Mansinghka"
+      ],
+      "year_work": 2015,
+      "source_url": "https://cvpr2015.thecvf.com/awards.php",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2016,
+      "award": "best_paper",
+      "title": "Deep Residual Learning for Image Recognition",
+      "authors": [
+        "Kaiming He",
+        "Xiangyu Zhang",
+        "Shaoqing Ren",
+        "Jian Sun"
+      ],
+      "year_work": 2016,
+      "source_url": "https://tc.computer.org/tcpami/awards/cvpr-paper-awards/",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2016,
+      "award": "best_paper",
+      "title": "Structural-RNN: Deep Learning on Spatio-Temporal Graphs",
+      "authors": [
+        "Ashesh Jain",
+        "Amir R. Zamir",
+        "Silvio Savarese",
+        "Ashutosh Saxena"
+      ],
+      "year_work": 2016,
+      "source_url": "https://tc.computer.org/tcpami/awards/cvpr-paper-awards/",
+      "note": "best student paper"
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2016,
+      "award": "honorable_mention",
+      "title": "Sublabel-Accurate Relaxation of Nonconvex Energies",
+      "authors": [
+        "Thomas Möllenhoff",
+        "Emanuel Laude",
+        "Michael Moeller",
+        "Jan Lellmann",
+        "Daniel Cremers"
+      ],
+      "year_work": 2016,
+      "source_url": "https://tc.computer.org/tcpami/awards/cvpr-paper-awards/",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2017,
+      "award": "best_paper",
+      "title": "Densely Connected Convolutional Networks",
+      "authors": [
+        "Gao Huang",
+        "Zhuang Liu",
+        "Laurens van der Maaten",
+        "Kilian Q. Weinberger"
+      ],
+      "year_work": 2017,
+      "source_url": "https://tc.computer.org/tcpami/awards/cvpr-paper-awards/",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2017,
+      "award": "best_paper",
+      "title": "Learning from Simulated and Unsupervised Images through Adversarial Training",
+      "authors": [
+        "Ashish Shrivastava",
+        "Tomas Pfister",
+        "Oncel Tuzel",
+        "Josh Susskind",
+        "Wenda Wang",
+        "Russ Webb"
+      ],
+      "year_work": 2017,
+      "source_url": "https://tc.computer.org/tcpami/awards/cvpr-paper-awards/",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2017,
+      "award": "best_paper",
+      "title": "Computational Imaging on the Electric Grid",
+      "authors": [
+        "Mark Sheinin",
+        "Yoav Y. Schechner",
+        "Kiriakos N. Kutulakos"
+      ],
+      "year_work": 2017,
+      "source_url": "https://tc.computer.org/tcpami/awards/cvpr-paper-awards/",
+      "note": "best student paper"
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2017,
+      "award": "honorable_mention",
+      "title": "Annotating Object Instances with a Polygon-RNN",
+      "authors": [
+        "Lluís Castrejón",
+        "Kaustav Kundu",
+        "Raquel Urtasun",
+        "Sanja Fidler"
+      ],
+      "year_work": 2017,
+      "source_url": "https://tc.computer.org/tcpami/awards/cvpr-paper-awards/",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2017,
+      "award": "honorable_mention",
+      "title": "YOLO9000: Better, Faster, Stronger",
+      "authors": [
+        "Joseph Redmon",
+        "Ali Farhadi"
+      ],
+      "year_work": 2017,
+      "source_url": "https://tc.computer.org/tcpami/awards/cvpr-paper-awards/",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2018,
+      "award": "best_paper",
+      "title": "Taskonomy: Disentangling Task Transfer Learning",
+      "authors": [
+        "Amir R. Zamir",
+        "Alexander Sax",
+        "William Shen",
+        "Leonidas Guibas",
+        "Jitendra Malik",
+        "Silvio Savarese"
+      ],
+      "year_work": 2018,
+      "source_url": "https://tc.computer.org/tcpami/awards/cvpr-paper-awards/",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2018,
+      "award": "best_paper",
+      "title": "Total Capture: A 3D Deformation Model for Tracking Faces, Hands, and Bodies",
+      "authors": [
+        "Hanbyul Joo",
+        "Tomas Simon",
+        "Yaser Sheikh"
+      ],
+      "year_work": 2018,
+      "source_url": "https://tc.computer.org/tcpami/awards/cvpr-paper-awards/",
+      "note": "best student paper"
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2018,
+      "award": "honorable_mention",
+      "title": "Deep Learning of Graph Matching",
+      "authors": [
+        "Andrei Zanfir",
+        "Cristian Sminchisescu"
+      ],
+      "year_work": 2018,
+      "source_url": "https://tc.computer.org/tcpami/awards/cvpr-paper-awards/",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2018,
+      "award": "honorable_mention",
+      "title": "SPLATNet: Sparse Lattice Networks for Point Cloud Processing",
+      "authors": [
+        "Hang Su",
+        "Varun Jampani",
+        "Deqing Sun",
+        "Subhransu Maji",
+        "Evangelos Kalogerakis",
+        "Ming-Hsuan Yang",
+        "Jan Kautz"
+      ],
+      "year_work": 2018,
+      "source_url": "https://tc.computer.org/tcpami/awards/cvpr-paper-awards/",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2018,
+      "award": "honorable_mention",
+      "title": "CodeSLAM — Learning a Compact, Optimisable Representation for Dense Visual SLAM",
+      "authors": [
+        "Michael Bloesch",
+        "Jan Czarnowski",
+        "Ronald Clark",
+        "Stefan Leutenegger",
+        "Andrew J. Davison"
+      ],
+      "year_work": 2018,
+      "source_url": "https://tc.computer.org/tcpami/awards/cvpr-paper-awards/",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2018,
+      "award": "honorable_mention",
+      "title": "Efficient Optimization for Rank-Based Loss Functions",
+      "authors": [
+        "Pritish Mohapatra",
+        "Michal Rolínek",
+        "C.V. Jawahar",
+        "Vladimir Kolmogorov",
+        "M. Pawan Kumar"
+      ],
+      "year_work": 2018,
+      "source_url": "https://tc.computer.org/tcpami/awards/cvpr-paper-awards/",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2019,
+      "award": "best_paper",
+      "title": "A Theory of Fermat Paths for Non-Line-of-Sight Shape Reconstruction",
+      "authors": [
+        "Shumian Xin",
+        "Sotiris Nousias",
+        "Kiriakos N. Kutulakos",
+        "Aswin C. Sankaranarayanan",
+        "Srinivasa G. Narasimhan",
+        "Ioannis Gkioulekas"
+      ],
+      "year_work": 2019,
+      "source_url": "https://cvpr2019.thecvf.com/program/main_conference",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2019,
+      "award": "best_paper",
+      "title": "Reinforced Cross-Modal Matching and Self-Supervised Imitation Learning for Vision-Language Navigation",
+      "authors": [
+        "Xin Wang",
+        "Qiuyuan Huang",
+        "Asli Celikyilmaz",
+        "Jianfeng Gao",
+        "Dinghan Shen",
+        "Yuan-Fang Wang",
+        "William Yang Wang",
+        "Lei Zhang"
+      ],
+      "year_work": 2019,
+      "source_url": "https://cvpr2019.thecvf.com/program/main_conference",
+      "note": "best student paper"
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2019,
+      "award": "honorable_mention",
+      "title": "A Style-Based Generator Architecture for Generative Adversarial Networks",
+      "authors": [
+        "Tero Karras",
+        "Samuli Laine",
+        "Timo Aila"
+      ],
+      "year_work": 2019,
+      "source_url": "https://cvpr2019.thecvf.com/program/main_conference",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2019,
+      "award": "honorable_mention",
+      "title": "Learning the Depths of Moving People by Watching Frozen People",
+      "authors": [
+        "Zhengqi Li",
+        "Tali Dekel",
+        "Forrester Cole",
+        "Richard Tucker",
+        "Ce Liu",
+        "William T. Freeman",
+        "Noah Snavely"
+      ],
+      "year_work": 2019,
+      "source_url": "https://cvpr2019.thecvf.com/program/main_conference",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2020,
+      "award": "best_paper",
+      "title": "Unsupervised Learning of Probably Symmetric Deformable 3D Objects from Images in the Wild",
+      "authors": [
+        "Shangzhe Wu",
+        "Christian Rupprecht",
+        "Andrea Vedaldi"
+      ],
+      "year_work": 2020,
+      "source_url": "https://cvpr2020.thecvf.com/node/817",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2020,
+      "award": "best_paper",
+      "title": "BSP-Net: Generating Compact Meshes via Binary Space Partitioning",
+      "authors": [
+        "Zhiqin Chen",
+        "Andrea Tagliasacchi",
+        "Hao Zhang"
+      ],
+      "year_work": 2020,
+      "source_url": "https://cvpr2020.thecvf.com/node/817",
+      "note": "best student paper"
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2020,
+      "award": "honorable_mention",
+      "title": "DeepCap: Monocular Human Performance Capture Using Weak Supervision",
+      "authors": [
+        "Marc Habermann",
+        "Weipeng Xu",
+        "Michael Zollhöfer",
+        "Gerard Pons-Moll",
+        "Christian Theobalt"
+      ],
+      "year_work": 2020,
+      "source_url": "https://cvpr2020.thecvf.com/node/817",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2013,
+      "award": "test_of_time",
+      "title": "Object Class Recognition by Unsupervised Scale-Invariant Learning",
+      "authors": [
+        "Rob Fergus",
+        "Pietro Perona",
+        "Andrew Zisserman"
+      ],
+      "year_work": 2003,
+      "source_url": "https://tc.computer.org/tcpami/awards/longuet-higgins-prize/",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2014,
+      "award": "test_of_time",
+      "title": "A Performance Evaluation of Local Descriptors",
+      "authors": [
+        "Krystian Mikolajczyk",
+        "Cordelia Schmid"
+      ],
+      "year_work": 2003,
+      "source_url": "https://tc.computer.org/tcpami/awards/longuet-higgins-prize/",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2015,
+      "award": "test_of_time",
+      "title": "Histograms of Oriented Gradients for Human Detection",
+      "authors": [
+        "Navneet Dalal",
+        "Bill Triggs"
+      ],
+      "year_work": 2005,
+      "source_url": "https://tc.computer.org/tcpami/awards/longuet-higgins-prize/",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2015,
+      "award": "test_of_time",
+      "title": "A Non-Local Algorithm for Image Denoising",
+      "authors": [
+        "Antoni Buades",
+        "Bartomeu Coll",
+        "Jean-Michel Morel"
+      ],
+      "year_work": 2005,
+      "source_url": "https://tc.computer.org/tcpami/awards/longuet-higgins-prize/",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2016,
+      "award": "test_of_time",
+      "title": "Beyond Bags of Features: Spatial Pyramid Matching for Recognizing Natural Scene Categories",
+      "authors": [
+        "Svetlana Lazebnik",
+        "Cordelia Schmid",
+        "Jean Ponce"
+      ],
+      "year_work": 2006,
+      "source_url": "https://tc.computer.org/tcpami/awards/longuet-higgins-prize/",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2016,
+      "award": "test_of_time",
+      "title": "Scalable Recognition with a Vocabulary Tree",
+      "authors": [
+        "David Nistér",
+        "Henrik Stewénius"
+      ],
+      "year_work": 2006,
+      "source_url": "https://tc.computer.org/tcpami/awards/longuet-higgins-prize/",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2017,
+      "award": "test_of_time",
+      "title": "Accurate, Dense, and Robust Multi-View Stereopsis",
+      "authors": [
+        "Yasutaka Furukawa",
+        "Jean Ponce"
+      ],
+      "year_work": 2007,
+      "source_url": "https://tc.computer.org/tcpami/awards/longuet-higgins-prize/",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2017,
+      "award": "test_of_time",
+      "title": "Object Retrieval with Large Vocabularies and Fast Spatial Matching",
+      "authors": [
+        "James Philbin",
+        "Ondřej Chum",
+        "Michael Isard",
+        "Josef Sivic",
+        "Andrew Zisserman"
+      ],
+      "year_work": 2007,
+      "source_url": "https://tc.computer.org/tcpami/awards/longuet-higgins-prize/",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2018,
+      "award": "test_of_time",
+      "title": "A Discriminatively Trained, Multiscale, Deformable Part Model",
+      "authors": [
+        "Pedro Felzenszwalb",
+        "David McAllester",
+        "Deva Ramanan"
+      ],
+      "year_work": 2008,
+      "source_url": "https://tc.computer.org/tcpami/awards/longuet-higgins-prize/",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2019,
+      "award": "test_of_time",
+      "title": "ImageNet: A Large-Scale Hierarchical Image Database",
+      "authors": [
+        "Jia Deng",
+        "Wei Dong",
+        "Richard Socher",
+        "Li-Jia Li",
+        "Kai Li",
+        "Li Fei-Fei"
+      ],
+      "year_work": 2009,
+      "source_url": "https://tc.computer.org/tcpami/awards/longuet-higgins-prize/",
+      "note": ""
+    },
+    {
+      "venue": "CVPR",
+      "year_awarded": 2020,
+      "award": "test_of_time",
+      "title": "Secrets of Optical Flow Estimation and Their Principles",
+      "authors": [
+        "Deqing Sun",
+        "Stefan Roth",
+        "Michael J. Black"
+      ],
+      "year_work": 2010,
+      "source_url": "https://tc.computer.org/tcpami/awards/longuet-higgins-prize/",
+      "note": ""
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2013,
+      "award": "best_paper",
+      "title": "From Large Scale Image Categorization to Entry-Level Categories",
+      "authors": [
+        "Vicente Ordonez",
+        "Jia Deng",
+        "Yejin Choi",
+        "Alexander C. Berg",
+        "Tamara L. Berg"
+      ],
+      "year_work": 2013,
+      "source_url": "https://tc.computer.org/tcpami/awards/iccv-paper-awards/",
+      "note": "Marr Prize"
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2013,
+      "award": "honorable_mention",
+      "title": "Hierarchical Data-driven Descent for Efficient Optimal Deformation Estimation",
+      "authors": [
+        "Yuandong Tian",
+        "Srinivasa G. Narasimhan"
+      ],
+      "year_work": 2013,
+      "source_url": "https://tc.computer.org/tcpami/awards/iccv-paper-awards/",
+      "note": ""
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2013,
+      "award": "honorable_mention",
+      "title": "Piecewise Rigid Scene Flow",
+      "authors": [
+        "Christoph Vogel",
+        "Konrad Schindler",
+        "Stefan Roth"
+      ],
+      "year_work": 2013,
+      "source_url": "https://tc.computer.org/tcpami/awards/iccv-paper-awards/",
+      "note": ""
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2013,
+      "award": "test_of_time",
+      "title": "Snakes: Active Contour Models",
+      "authors": [
+        "Michael Kass",
+        "Andrew Witkin",
+        "Demetri Terzopoulos"
+      ],
+      "year_work": 1987,
+      "source_url": "https://tc.computer.org/tcpami/2022/08/22/iccv-helmholtz-prize/",
+      "note": "Helmholtz Prize"
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2013,
+      "award": "test_of_time",
+      "title": "Indexing via color histograms",
+      "authors": [
+        "Michael J. Swain",
+        "Dana H. Ballard"
+      ],
+      "year_work": 1990,
+      "source_url": "https://tc.computer.org/tcpami/2022/08/22/iccv-helmholtz-prize/",
+      "note": "Helmholtz Prize"
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2013,
+      "award": "test_of_time",
+      "title": "Steerable filters for early vision, image analysis, and wavelet decomposition",
+      "authors": [
+        "William T. Freeman",
+        "Edward H. Adelson"
+      ],
+      "year_work": 1990,
+      "source_url": "https://tc.computer.org/tcpami/2022/08/22/iccv-helmholtz-prize/",
+      "note": "Helmholtz Prize"
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2013,
+      "award": "test_of_time",
+      "title": "A framework for the robust estimation of optical flow",
+      "authors": [
+        "Michael J. Black",
+        "P. Anandan"
+      ],
+      "year_work": 1993,
+      "source_url": "https://tc.computer.org/tcpami/2022/08/22/iccv-helmholtz-prize/",
+      "note": "Helmholtz Prize"
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2013,
+      "award": "test_of_time",
+      "title": "Alignment by Maximization of Mutual Information",
+      "authors": [
+        "Paul Viola",
+        "William M. Wells III"
+      ],
+      "year_work": 1995,
+      "source_url": "https://tc.computer.org/tcpami/2022/08/22/iccv-helmholtz-prize/",
+      "note": "Helmholtz Prize"
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2013,
+      "award": "test_of_time",
+      "title": "In Defence of the 8-Point Algorithm",
+      "authors": [
+        "Richard I. Hartley"
+      ],
+      "year_work": 1995,
+      "source_url": "https://tc.computer.org/tcpami/2022/08/22/iccv-helmholtz-prize/",
+      "note": "Helmholtz Prize"
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2013,
+      "award": "test_of_time",
+      "title": "Region Competition: Unifying Snakes, Region Growing, Energy/Bayes/MDL for Multi-band Image Segmentation",
+      "authors": [
+        "Song Chun Zhu",
+        "Tai Sing Lee",
+        "Alan L. Yuille"
+      ],
+      "year_work": 1995,
+      "source_url": "https://tc.computer.org/tcpami/2022/08/22/iccv-helmholtz-prize/",
+      "note": "Helmholtz Prize"
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2013,
+      "award": "test_of_time",
+      "title": "Bilateral Filtering for Gray and Color Images",
+      "authors": [
+        "Carlo Tomasi",
+        "Roberto Manduchi"
+      ],
+      "year_work": 1998,
+      "source_url": "https://tc.computer.org/tcpami/2022/08/22/iccv-helmholtz-prize/",
+      "note": "Helmholtz Prize"
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2013,
+      "award": "test_of_time",
+      "title": "A Metric for Distributions with Applications to Image Databases",
+      "authors": [
+        "Yossi Rubner",
+        "Carlo Tomasi",
+        "Leonidas J. Guibas"
+      ],
+      "year_work": 1998,
+      "source_url": "https://tc.computer.org/tcpami/2022/08/22/iccv-helmholtz-prize/",
+      "note": "Helmholtz Prize"
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2013,
+      "award": "test_of_time",
+      "title": "Flexible Camera Calibration by Viewing a Plane from Unknown Orientations",
+      "authors": [
+        "Zhengyou Zhang"
+      ],
+      "year_work": 1999,
+      "source_url": "https://tc.computer.org/tcpami/2022/08/22/iccv-helmholtz-prize/",
+      "note": "Helmholtz Prize"
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2013,
+      "award": "test_of_time",
+      "title": "Texture Synthesis by Non-parametric Sampling",
+      "authors": [
+        "Alexei A. Efros",
+        "Thomas K. Leung"
+      ],
+      "year_work": 1999,
+      "source_url": "https://tc.computer.org/tcpami/2022/08/22/iccv-helmholtz-prize/",
+      "note": "Helmholtz Prize"
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2015,
+      "award": "best_paper",
+      "title": "Deep Neural Decision Forests",
+      "authors": [
+        "Peter Kontschieder",
+        "Madalina Fiterau",
+        "Antonio Criminisi",
+        "Samuel Rota Bulò"
+      ],
+      "year_work": 2015,
+      "source_url": "https://tc.computer.org/tcpami/awards/iccv-paper-awards/",
+      "note": "Marr Prize"
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2015,
+      "award": "honorable_mention",
+      "title": "Holistically-Nested Edge Detection",
+      "authors": [
+        "Saining Xie",
+        "Zhuowen Tu"
+      ],
+      "year_work": 2015,
+      "source_url": "https://tc.computer.org/tcpami/awards/iccv-paper-awards/",
+      "note": ""
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2015,
+      "award": "test_of_time",
+      "title": "A Database of Human Segmented Natural Images and Its Application to Evaluating Segmentation Algorithms and Measuring Ecological Statistics",
+      "authors": [
+        "David Martin",
+        "Charless Fowlkes",
+        "Doron Tal",
+        "Jitendra Malik"
+      ],
+      "year_work": 2001,
+      "source_url": "https://tc.computer.org/tcpami/2022/08/22/iccv-helmholtz-prize/",
+      "note": "Helmholtz Prize"
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2015,
+      "award": "test_of_time",
+      "title": "Matching Shapes",
+      "authors": [
+        "Serge Belongie",
+        "Jitendra Malik",
+        "Jan Puzicha"
+      ],
+      "year_work": 2001,
+      "source_url": "https://tc.computer.org/tcpami/2022/08/22/iccv-helmholtz-prize/",
+      "note": "Helmholtz Prize"
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2017,
+      "award": "best_paper",
+      "title": "Mask R-CNN",
+      "authors": [
+        "Kaiming He",
+        "Georgia Gkioxari",
+        "Piotr Dollár",
+        "Ross Girshick"
+      ],
+      "year_work": 2017,
+      "source_url": "https://tc.computer.org/tcpami/awards/iccv-paper-awards/",
+      "note": "Marr Prize"
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2017,
+      "award": "best_paper",
+      "title": "Focal Loss for Dense Object Detection",
+      "authors": [
+        "Tsung-Yi Lin",
+        "Priya Goyal",
+        "Ross Girshick",
+        "Kaiming He",
+        "Piotr Dollár"
+      ],
+      "year_work": 2017,
+      "source_url": "https://tc.computer.org/tcpami/awards/iccv-paper-awards/",
+      "note": "best student paper"
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2017,
+      "award": "honorable_mention",
+      "title": "First Person Activity Forecasting with Online Inverse Reinforcement Learning",
+      "authors": [
+        "Nicholas Rhinehart",
+        "Kris M. Kitani"
+      ],
+      "year_work": 2017,
+      "source_url": "https://tc.computer.org/tcpami/awards/iccv-paper-awards/",
+      "note": ""
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2017,
+      "award": "honorable_mention",
+      "title": "Open Set Domain Adaptation",
+      "authors": [
+        "Pau Panareda Busto",
+        "Juergen Gall"
+      ],
+      "year_work": 2017,
+      "source_url": "https://tc.computer.org/tcpami/awards/iccv-paper-awards/",
+      "note": ""
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2017,
+      "award": "honorable_mention",
+      "title": "Globally-Optimal Inlier Set Maximisation for Simultaneous Camera Pose and Feature Correspondence",
+      "authors": [
+        "Dylan Campbell",
+        "Lars Petersson",
+        "Laurent Kneip",
+        "Hongdong Li"
+      ],
+      "year_work": 2017,
+      "source_url": "https://tc.computer.org/tcpami/awards/iccv-paper-awards/",
+      "note": ""
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2017,
+      "award": "test_of_time",
+      "title": "Space-time interest points",
+      "authors": [
+        "Ivan Laptev",
+        "Tony Lindeberg"
+      ],
+      "year_work": 2003,
+      "source_url": "https://tc.computer.org/tcpami/2022/08/22/iccv-helmholtz-prize/",
+      "note": "Helmholtz Prize"
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2017,
+      "award": "test_of_time",
+      "title": "Recognizing action at a distance",
+      "authors": [
+        "Alexei A. Efros",
+        "Alexander C. Berg",
+        "Greg Mori",
+        "Jitendra Malik"
+      ],
+      "year_work": 2003,
+      "source_url": "https://tc.computer.org/tcpami/2022/08/22/iccv-helmholtz-prize/",
+      "note": "Helmholtz Prize"
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2017,
+      "award": "test_of_time",
+      "title": "Video Google: A text retrieval approach to object matching in videos",
+      "authors": [
+        "Josef Sivic",
+        "Andrew Zisserman"
+      ],
+      "year_work": 2003,
+      "source_url": "https://tc.computer.org/tcpami/2022/08/22/iccv-helmholtz-prize/",
+      "note": "Helmholtz Prize"
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2017,
+      "award": "test_of_time",
+      "title": "Recognising panoramas",
+      "authors": [
+        "Matthew Brown",
+        "David G. Lowe"
+      ],
+      "year_work": 2003,
+      "source_url": "https://tc.computer.org/tcpami/2022/08/22/iccv-helmholtz-prize/",
+      "note": "Helmholtz Prize"
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2017,
+      "award": "test_of_time",
+      "title": "Discovering objects and their location in images",
+      "authors": [
+        "Josef Sivic",
+        "Bryan C. Russell",
+        "Alexei A. Efros",
+        "Andrew Zisserman",
+        "William T. Freeman"
+      ],
+      "year_work": 2005,
+      "source_url": "https://tc.computer.org/tcpami/2022/08/22/iccv-helmholtz-prize/",
+      "note": "Helmholtz Prize"
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2017,
+      "award": "test_of_time",
+      "title": "The pyramid match kernel: Discriminative classification with sets of image features",
+      "authors": [
+        "Kristen Grauman",
+        "Trevor Darrell"
+      ],
+      "year_work": 2005,
+      "source_url": "https://tc.computer.org/tcpami/2022/08/22/iccv-helmholtz-prize/",
+      "note": "Helmholtz Prize"
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2017,
+      "award": "test_of_time",
+      "title": "Actions as space-time shapes",
+      "authors": [
+        "Moshe Blank",
+        "Lena Gorelick",
+        "Eli Shechtman",
+        "Michal Irani",
+        "Ronen Basri"
+      ],
+      "year_work": 2005,
+      "source_url": "https://tc.computer.org/tcpami/2022/08/22/iccv-helmholtz-prize/",
+      "note": "Helmholtz Prize"
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2019,
+      "award": "best_paper",
+      "title": "SinGAN: Learning a Generative Model from a Single Natural Image",
+      "authors": [
+        "Tamar Rott Shaham",
+        "Tali Dekel",
+        "Tomer Michaeli"
+      ],
+      "year_work": 2019,
+      "source_url": "https://tc.computer.org/tcpami/awards/iccv-paper-awards/",
+      "note": "Marr Prize"
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2019,
+      "award": "best_paper",
+      "title": "PLMP - Point-Line Minimal Problems in Complete Multi-View Visibility",
+      "authors": [
+        "Timothy Duff",
+        "Kathlén Kohn",
+        "Anton Leykin",
+        "Tomas Pajdla"
+      ],
+      "year_work": 2019,
+      "source_url": "https://tc.computer.org/tcpami/awards/iccv-paper-awards/",
+      "note": "best student paper"
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2019,
+      "award": "honorable_mention",
+      "title": "Asynchronous Single-Photon 3D Imaging",
+      "authors": [
+        "Anant Gupta",
+        "Atul Ingle",
+        "Mohit Gupta"
+      ],
+      "year_work": 2019,
+      "source_url": "https://tc.computer.org/tcpami/awards/iccv-paper-awards/",
+      "note": ""
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2019,
+      "award": "honorable_mention",
+      "title": "Specifying Object Attributes and Relations in Interactive Scene Generation",
+      "authors": [
+        "Oron Ashual",
+        "Lior Wolf"
+      ],
+      "year_work": 2019,
+      "source_url": "https://tc.computer.org/tcpami/awards/iccv-paper-awards/",
+      "note": ""
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2019,
+      "award": "test_of_time",
+      "title": "Building Rome in a Day",
+      "authors": [
+        "Sameer Agarwal",
+        "Noah Snavely",
+        "Ian Simon",
+        "Steven M. Seitz",
+        "Richard Szeliski"
+      ],
+      "year_work": 2009,
+      "source_url": "https://tc.computer.org/tcpami/2022/08/22/iccv-helmholtz-prize/",
+      "note": "Helmholtz Prize"
+    },
+    {
+      "venue": "ICCV",
+      "year_awarded": 2019,
+      "award": "test_of_time",
+      "title": "Attribute and Simile Classifiers for Face Verification",
+      "authors": [
+        "Neeraj Kumar",
+        "Alexander C. Berg",
+        "Peter N. Belhumeur",
+        "Shree K. Nayar"
+      ],
+      "year_work": 2009,
+      "source_url": "https://tc.computer.org/tcpami/2022/08/22/iccv-helmholtz-prize/",
+      "note": "Helmholtz Prize"
+    },
+    {
+      "venue": "ECCV",
+      "year_awarded": 2012,
+      "award": "best_paper",
+      "title": "Segmentation Propagation in ImageNet",
+      "authors": [
+        "Daniel Kuettel",
+        "Matthieu Guillaumin",
+        "Vittorio Ferrari"
+      ],
+      "year_work": 2012,
+      "source_url": "http://eccv2012.unifi.it/conference/awards/",
+      "note": ""
+    },
+    {
+      "venue": "ECCV",
+      "year_awarded": 2012,
+      "award": "honorable_mention",
+      "title": "Activity Forecasting",
+      "authors": [
+        "Kris M. Kitani",
+        "Brian D. Ziebart",
+        "James Andrew Bagnell",
+        "Martial Hebert"
+      ],
+      "year_work": 2012,
+      "source_url": "http://eccv2012.unifi.it/conference/awards/",
+      "note": ""
+    },
+    {
+      "venue": "ECCV",
+      "year_awarded": 2012,
+      "award": "best_paper",
+      "title": "Reconstructing the World's Museums",
+      "authors": [
+        "Jianxiong Xiao",
+        "Yasutaka Furukawa"
+      ],
+      "year_work": 2012,
+      "source_url": "http://eccv2012.unifi.it/conference/awards/",
+      "note": "best student paper"
+    },
+    {
+      "venue": "ECCV",
+      "year_awarded": 2014,
+      "award": "best_paper",
+      "title": "Large-Scale Object Classification Using Label Relation Graphs",
+      "authors": [
+        "Jia Deng",
+        "Nan Ding",
+        "Yangqing Jia",
+        "Andrea Frome",
+        "Kevin Murphy",
+        "Samy Bengio",
+        "Yuan Li",
+        "Hartmut Neven",
+        "Hartwig Adam"
+      ],
+      "year_work": 2014,
+      "source_url": "https://cse.engin.umich.edu/stories/jia-deng-wins-best-paper-award-at-eccv",
+      "note": ""
+    },
+    {
+      "venue": "ECCV",
+      "year_awarded": 2014,
+      "award": "honorable_mention",
+      "title": "Scene Chronology",
+      "authors": [
+        "Kevin Matzen",
+        "Noah Snavely"
+      ],
+      "year_work": 2014,
+      "source_url": "https://www.thecvf.com/?page_id=413",
+      "note": ""
+    },
+    {
+      "venue": "ECCV",
+      "year_awarded": 2014,
+      "award": "test_of_time",
+      "title": "High Accuracy Optical Flow Estimation Based on a Theory for Warping",
+      "authors": [
+        "Thomas Brox",
+        "Andrés Bruhn",
+        "Nils Papenberg",
+        "Joachim Weickert"
+      ],
+      "year_work": 2004,
+      "source_url": "https://www.thecvf.com/?page_id=413",
+      "note": "Koenderink Prize"
+    },
+    {
+      "venue": "ECCV",
+      "year_awarded": 2014,
+      "award": "test_of_time",
+      "title": "Face Recognition with Local Binary Patterns",
+      "authors": [
+        "Timo Ahonen",
+        "Abdenour Hadid",
+        "Matti Pietikäinen"
+      ],
+      "year_work": 2004,
+      "source_url": "https://www.thecvf.com/?page_id=413",
+      "note": "Koenderink Prize"
+    },
+    {
+      "venue": "ECCV",
+      "year_awarded": 2016,
+      "award": "best_paper",
+      "title": "Real-Time 3D Reconstruction and 6-DoF Tracking with an Event Camera",
+      "authors": [
+        "Hanme Kim",
+        "Stefan Leutenegger",
+        "Andrew J. Davison"
+      ],
+      "year_work": 2016,
+      "source_url": "https://wp.doc.ic.ac.uk/sleutene/2016/10/18/eccv-best-paper-award/",
+      "note": ""
+    },
+    {
+      "venue": "ECCV",
+      "year_awarded": 2016,
+      "award": "honorable_mention",
+      "title": "The Fast Bilateral Solver",
+      "authors": [
+        "Jonathan T. Barron",
+        "Ben Poole"
+      ],
+      "year_work": 2016,
+      "source_url": "https://link.springer.com/chapter/10.1007/978-3-319-46487-9_38",
+      "note": ""
+    },
+    {
+      "venue": "ECCV",
+      "year_awarded": 2016,
+      "award": "test_of_time",
+      "title": "SURF: Speeded Up Robust Features",
+      "authors": [
+        "Herbert Bay",
+        "Tinne Tuytelaars",
+        "Luc Van Gool"
+      ],
+      "year_work": 2006,
+      "source_url": "https://www.thecvf.com/?page_id=413",
+      "note": "Koenderink Prize"
+    },
+    {
+      "venue": "ECCV",
+      "year_awarded": 2016,
+      "award": "test_of_time",
+      "title": "Machine Learning for High-Speed Corner Detection",
+      "authors": [
+        "Edward Rosten",
+        "Tom Drummond"
+      ],
+      "year_work": 2006,
+      "source_url": "https://www.thecvf.com/?page_id=413",
+      "note": "Koenderink Prize"
+    },
+    {
+      "venue": "ECCV",
+      "year_awarded": 2018,
+      "award": "best_paper",
+      "title": "Implicit 3D Orientation Learning for 6D Object Detection from RGB Images",
+      "authors": [
+        "Martin Sundermeyer",
+        "Zoltan-Csaba Marton",
+        "Maximilian Durner",
+        "Manuel Brucker",
+        "Rudolph Triebel"
+      ],
+      "year_work": 2018,
+      "source_url": "https://eccv2018.org/wp-content/uploads/2018/09/ECCV2018Awards.pdf",
+      "note": ""
+    },
+    {
+      "venue": "ECCV",
+      "year_awarded": 2018,
+      "award": "honorable_mention",
+      "title": "Group Normalization",
+      "authors": [
+        "Yuxin Wu",
+        "Kaiming He"
+      ],
+      "year_work": 2018,
+      "source_url": "https://eccv2018.org/wp-content/uploads/2018/09/ECCV2018Awards.pdf",
+      "note": ""
+    },
+    {
+      "venue": "ECCV",
+      "year_awarded": 2018,
+      "award": "honorable_mention",
+      "title": "GANimation: Anatomically-aware Facial Animation from a Single Image",
+      "authors": [
+        "Albert Pumarola",
+        "Antonio Agudo",
+        "Aleix M. Martinez",
+        "Alberto Sanfeliu",
+        "Francesc Moreno-Noguer"
+      ],
+      "year_work": 2018,
+      "source_url": "https://eccv2018.org/wp-content/uploads/2018/09/ECCV2018Awards.pdf",
+      "note": ""
+    },
+    {
+      "venue": "ECCV",
+      "year_awarded": 2018,
+      "award": "test_of_time",
+      "title": "Hamming Embedding and Weak Geometric Consistency for Large Scale Image Search",
+      "authors": [
+        "Hervé Jégou",
+        "Matthijs Douze",
+        "Cordelia Schmid"
+      ],
+      "year_work": 2008,
+      "source_url": "https://www.thecvf.com/?page_id=413",
+      "note": "Koenderink Prize"
+    },
+    {
+      "venue": "ECCV",
+      "year_awarded": 2018,
+      "award": "test_of_time",
+      "title": "Semi-supervised On-Line Boosting for Robust Tracking",
+      "authors": [
+        "Helmut Grabner",
+        "Christian Leistner",
+        "Horst Bischof"
+      ],
+      "year_work": 2008,
+      "source_url": "https://www.thecvf.com/?page_id=413",
+      "note": "Koenderink Prize"
+    },
+    {
+      "venue": "ECCV",
+      "year_awarded": 2020,
+      "award": "best_paper",
+      "title": "RAFT: Recurrent All-Pairs Field Transforms for Optical Flow",
+      "authors": [
+        "Zachary Teed",
+        "Jia Deng"
+      ],
+      "year_work": 2020,
+      "source_url": "https://pwb.princeton.edu/2020/08/28/eccv-2020-best-paper-award-goes-to-princeton-team/",
+      "note": ""
+    },
+    {
+      "venue": "ECCV",
+      "year_awarded": 2020,
+      "award": "honorable_mention",
+      "title": "Towards Streaming Perception",
+      "authors": [
+        "Mengtian Li",
+        "Yu-Xiong Wang",
+        "Deva Ramanan"
+      ],
+      "year_work": 2020,
+      "source_url": "https://www.ri.cmu.edu/mengtian-li-yu-xiong-wang-and-deva-ramanan-receive-best-paper-honorable-mention-award-eccv-2020/",
+      "note": ""
+    },
+    {
+      "venue": "ECCV",
+      "year_awarded": 2020,
+      "award": "honorable_mention",
+      "title": "NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis",
+      "authors": [
+        "Ben Mildenhall",
+        "Pratul P. Srinivasan",
+        "Matthew Tancik",
+        "Jonathan T. Barron",
+        "Ravi Ramamoorthi",
+        "Ren Ng"
+      ],
+      "year_work": 2020,
+      "source_url": "https://www.thecvf.com/?page_id=413",
+      "note": ""
+    },
+    {
+      "venue": "ECCV",
+      "year_awarded": 2020,
+      "award": "test_of_time",
+      "title": "Improving the Fisher Kernel for Large-Scale Image Classification",
+      "authors": [
+        "Florent Perronnin",
+        "Jorge Sánchez",
+        "Thomas Mensink"
+      ],
+      "year_work": 2010,
+      "source_url": "https://www.thecvf.com/?page_id=413",
+      "note": "Koenderink Prize"
+    },
+    {
+      "venue": "ECCV",
+      "year_awarded": 2020,
+      "award": "test_of_time",
+      "title": "BRIEF: Binary Robust Independent Elementary Features",
+      "authors": [
+        "Michael Calonder",
+        "Vincent Lepetit",
+        "Christoph Strecha",
+        "Pascal Fua"
+      ],
+      "year_work": 2010,
+      "source_url": "https://www.thecvf.com/?page_id=413",
+      "note": "Koenderink Prize"
+    }
+  ]
+}
