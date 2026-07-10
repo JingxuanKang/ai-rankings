@@ -12,7 +12,16 @@
 | 部署内容 | 仓库 `site/` 目录原样上传（7 个文件，data.js ≈2MB，CDN gzip） |
 | 凭据 | keychain `cloudflare-pages-token`（Pages Write）；DNS 用 `cloudflare-ddns-token` |
 
-## 部署 / 更新
+## 部署 / 更新（自动）
+
+**push 到 GitHub master 即自动部署**：`.github/workflows/deploy.yml`（GitHub Actions +
+cloudflare/wrangler-action）把 `site/` 发到 Pages。repo secrets：`CLOUDFLARE_API_TOKEN`
+（= keychain `cloudflare-pages-token`，Pages Write 最小权限）+ `CLOUDFLARE_ACCOUNT_ID`。
+fork PR 拿不到 secrets，不会触发部署。
+
+数据更新流程：本地跑管道（见 README）重建 `site/data.js` → commit + `git push` → Actions 自动上线。
+
+手动兜底（Actions 挂了时）：
 
 ```bash
 cd ~/Build/ai-rankings
@@ -20,8 +29,6 @@ CLOUDFLARE_API_TOKEN=$(security find-generic-password -s cloudflare-pages-token 
 CLOUDFLARE_ACCOUNT_ID=5ad70f023c440fa4858a4bd4eaf5ed41 \
 npx wrangler pages deploy site --project-name=airankings --branch main --commit-dirty=true
 ```
-
-数据更新流程：跑管道（见 README）重建 `site/data.js` → 上面命令重新 deploy → done。
 
 ## 健康检查
 
