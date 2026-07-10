@@ -697,46 +697,28 @@ function renderMap(res) {
   const total = d3.sum(res.ranking, r => r.total);
   if (!total) { mapEl.replaceChildren(); return; }
 
-  // country -> institutions; sub-0.15% institutions fold into an "others" cell
-  const byC = new Map();
+  // one flat pool — every institution above 0.12% share tiles directly
+  const MIN_SHARE = 0.0012;
+  const kids = [];
+  let hiddenV = 0, hiddenN = 0;
   for (const r of res.ranking) {
-    const cc = (INSTS[r.id] || {}).country || 'ZZ';
-    if (!byC.has(cc)) byC.set(cc, []);
-    byC.get(cc).push(r);
+    if (r.total / total >= MIN_SHARE) {
+      kids.push({ name: (INSTS[r.id] || { name: r.id }).name, id: r.id, value: r.total, r,
+                  cc: (INSTS[r.id] || {}).country || '' });
+    } else { hiddenV += r.total; hiddenN++; }
   }
-  const children = [...byC.entries()].map(([cc, rs]) => {
-    const kids = [];
-    let othersV = 0, othersN = 0;
-    for (const r of rs) {
-      if (r.total / total >= 0.0015) {
-        kids.push({ name: (INSTS[r.id] || { name: r.id }).name, id: r.id, value: r.total, r });
-      } else { othersV += r.total; othersN++; }
-    }
-    if (othersV > 0) kids.push({ name: `+${othersN} more`, id: null, value: othersV, others: othersN });
-    const label = cc === 'ZZ' ? 'Unknown' : (REGION ? (REGION.of(cc) || cc) : cc);
-    return { name: label, cc, children: kids };
-  });
 
-  const root = d3.hierarchy({ children })
+  const root = d3.hierarchy({ children: kids })
     .sum(d => d.value || 0)
     .sort((a, b) => b.value - a.value);
-  d3.treemap().size([W, H]).paddingInner(2).paddingTop(d => (d.depth === 1 && d.x1 - d.x0 > 46 ? 16 : 2))(root);
+  d3.treemap().size([W, H]).paddingInner(2)(root);
 
   const frag = document.createDocumentFragment();
-  for (const c of root.children || []) {
-    if (c.x1 - c.x0 > 46) {
-      const cl = ttEl('map-country', `${c.data.cc === 'US' ? '' : ''}${c.data.name} ${(c.value / total * 100).toFixed(c.value / total >= 0.01 ? 0 : 1)}%`);
-      cl.style.left = (c.x0 + 3) + 'px'; cl.style.top = (c.y0 + 1) + 'px';
-      cl.style.maxWidth = (c.x1 - c.x0 - 6) + 'px';
-      cl.style.color = cssVar('--map-' + regionOf(c.data.cc));
-      frag.append(cl);
-    }
-  }
   for (const leaf of root.leaves()) {
-    if (!leaf.parent || leaf.value <= 0) continue;
+    if (!leaf.data.id || leaf.value <= 0) continue;
     const w = leaf.x1 - leaf.x0, h = leaf.y1 - leaf.y0;
     if (w < 3 || h < 3) continue;
-    const cc = leaf.parent.data.cc;
+    const cc = leaf.data.cc;
     const base = cssVar('--map-' + regionOf(cc));
     const col = d3.color(base).brighter((hash01(leaf.data.name) - 0.35) * 0.8);
     const cell = ttEl('map-cell', '');
@@ -761,24 +743,30 @@ function renderMap(res) {
   }
   mapEl.replaceChildren(frag);
 
-  // region legend with live shares
+  // region legend with live shares (over the whole ranking, not just shown cells)
   const regTotals = {};
-  for (const c of root.children || [])
-    regTotals[regionOf(c.data.cc)] = (regTotals[regionOf(c.data.cc)] || 0) + c.value;
+  for (const r of res.ranking)
+    regTotals[regionOf((INSTS[r.id] || {}).country || '')] =
+      (regTotals[regionOf((INSTS[r.id] || {}).country || '')] || 0) + r.total;
   $('map-legend').replaceChildren(...REGIONS.filter(r => regTotals[r.id]).map(r => {
     const item = ttEl('legend-item', '', 'span');
     const sw = ttEl('legend-swatch', '', 'span'); sw.style.background = cssVar('--map-' + r.id);
     item.append(sw, document.createTextNode(`${r.label} ${(regTotals[r.id] / total * 100).toFixed(0)}%`));
     return item;
   }));
+  $('map-sub').textContent =
+    `One map, everyone competes: area = share of all weighted credit in the current view, color = region. ` +
+    `Hover for the breakdown; click to open the dossier.` +
+    (hiddenN ? ` ${hiddenN} institutions below 0.12% share (together ${(hiddenV / total * 100).toFixed(1)}%) are not drawn.` : '');
 }
 $('map').addEventListener('pointermove', e => {
   const leaf = e.target.closest('.map-cell') && e.target.closest('.map-cell').__leaf;
   if (!leaf) { hideTip(); return; }
   const total = d3.sum(lastRes.ranking, r => r.total);
   showTip(e.clientX, e.clientY, box => {
+    const cname = leaf.data.cc ? (REGION ? (REGION.of(leaf.data.cc) || leaf.data.cc) : leaf.data.cc) : '—';
     box.append(ttEl('tt-value', leaf.data.name),
-      ttEl('tt-label', `${leaf.parent.data.name} · ${fmt(leaf.value)} pts · ${(leaf.value / total * 100).toFixed(2)}% of the field`));
+      ttEl('tt-label', `${flagOf(leaf.data.cc)} ${cname} · ${fmt(leaf.value)} pts · ${(leaf.value / total * 100).toFixed(2)}% of the field`));
     const r = leaf.data.r;
     if (r) for (const t of TIERS) {
       if (!r.counts[t.id]) continue;
@@ -787,7 +775,6 @@ $('map').addEventListener('pointermove', e => {
       rowEl.append(key, ttEl('', `${t.label} × ${r.counts[t.id]}`, 'span'));
       box.append(rowEl);
     }
-    if (leaf.data.others) box.append(ttEl('tt-label', `${leaf.data.others} smaller institutions`));
   });
 });
 $('map').addEventListener('pointerleave', hideTip);

@@ -99,6 +99,16 @@
   <button class="more-btn" id="board-more">show top 50</button>
 </section>
 
+<section class="section" id="map-section">
+  <div class="section-head">
+    <h2>The Map</h2>
+    <div class="legend" id="map-legend" aria-label="regions"></div>
+  </div>
+  <p class="section-sub" id="map-sub">One map, everyone competes: area = share of all weighted credit
+  in the current view, color = region. Hover for the breakdown; click to open the dossier.</p>
+  <div id="map" class="map"></div>
+</section>
+
 <section class="section" id="nations-section">
   <div class="section-head"><h2>Nations</h2></div>
   <p class="section-sub">Institutional credit rolled up by country. Institutions whose country
@@ -127,16 +137,6 @@
   <div class="section-head"><h2>Trajectories</h2></div>
   <p class="section-sub">Cumulative rank as awards accrued, 2021 → 2026 (by award year). Hover or tap a line.</p>
   <div class="bump-wrap"><svg id="bump" role="img" aria-label="rank trajectories of leading institutions"></svg></div>
-</section>
-
-<section class="section" id="map-section">
-  <div class="section-head">
-    <h2>The Map</h2>
-    <div class="legend" id="map-legend" aria-label="regions"></div>
-  </div>
-  <p class="section-sub" id="map-sub">Area = share of all weighted credit in the current view,
-  nested country → institution. Hover for the breakdown; click to open the dossier.</p>
-  <div id="map" class="map"></div>
 </section>
 
 </main>
