@@ -677,13 +677,16 @@ function renderNations(res) {
 
 /* ── the map (treemap: country → institution, area = share of credit) ──── */
 const REGIONS = [
-  { id: 'na', label: 'North America', cc: new Set(['US', 'CA']) },
-  { id: 'eu', label: 'Europe', cc: new Set(['GB', 'DE', 'FR', 'CH', 'NL', 'SE', 'DK', 'FI', 'NO',
+  { id: 'us', label: 'United States', cc: new Set(['US']) },
+  { id: 'cn', label: 'China', cc: new Set(['CN']) },
+  { id: 'uk', label: 'United Kingdom', cc: new Set(['GB']) },
+  { id: 'eu', label: 'Europe', cc: new Set(['DE', 'FR', 'CH', 'NL', 'SE', 'DK', 'FI', 'NO',
     'AT', 'BE', 'ES', 'PT', 'IT', 'IE', 'GR', 'CZ', 'PL', 'RU', 'HU', 'RO']) },
-  { id: 'as', label: 'Asia', cc: new Set(['CN', 'JP', 'KR', 'SG', 'HK', 'TW', 'IN', 'SA', 'AE', 'IL']) },
+  { id: 'ca', label: 'Canada', cc: new Set(['CA']) },
+  { id: 'as', label: 'Asia', cc: new Set(['JP', 'KR', 'SG', 'HK', 'TW', 'IN', 'SA', 'AE', 'IL']) },
   { id: 'row', label: 'Rest of world', cc: null }, // catch-all
 ];
-const regionOf = cc => (REGIONS.find(r => r.cc && r.cc.has(cc)) || REGIONS[3]).id;
+const regionOf = cc => (REGIONS.find(r => r.cc && r.cc.has(cc)) || REGIONS[REGIONS.length - 1]).id;
 const lumOf = hex => {
   const n = parseInt(hex.slice(1), 16);
   return (0.2126 * (n >> 16 & 255) + 0.7152 * (n >> 8 & 255) + 0.0722 * (n & 255)) / 255;
@@ -726,15 +729,15 @@ function renderMap(res) {
     cell.style.width = w + 'px'; cell.style.height = h + 'px';
     cell.style.background = col.formatHex();
     const share = leaf.value / total * 100;
-    if (w >= 62 && h >= 30) {
+    if (w >= 24 && h >= 12) {   // every readable cell carries its name
       const ink = lumOf(col.formatHex()) > 0.55 ? 'rgba(10,10,12,.88)' : '#fff';
-      const fs = Math.max(10, Math.min(20, Math.sqrt(w * h) / 8));
+      const fs = Math.max(7, Math.min(20, Math.sqrt(w * h) / 8));
       const nm = ttEl('mc-name', leaf.data.name);
       nm.style.fontSize = fs + 'px'; nm.style.color = ink;
       cell.append(nm);
-      if (h >= 52) {
+      if (h >= 46 && w >= 46) {
         const sh = ttEl('mc-share', share.toFixed(share >= 1 ? 1 : 2) + '%');
-        sh.style.fontSize = Math.max(9, fs - 3) + 'px'; sh.style.color = ink;
+        sh.style.fontSize = Math.max(8, fs - 3) + 'px'; sh.style.color = ink;
         cell.append(sh);
       }
     }

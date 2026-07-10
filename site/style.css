@@ -119,9 +119,17 @@ a:hover { color: var(--accent); }
 .nation-seg:last-child { border-radius: 0 4px 4px 0; }
 .nation-score { font-variant-numeric: tabular-nums; font-size: 13px; color: var(--ink-2); flex: none; }
 
-/* ── the map (treemap, validated 4-region palette) ─────────────────────── */
-:root { --map-na: #6b93d6; --map-eu: #c48119; --map-as: #d4635a; --map-row: #2ba989; }
-:root[data-theme="light"] { --map-na: #3a5a94; --map-eu: #b5761f; --map-as: #ad3a30; --map-row: #068569; }
+/* ── the map (treemap; 7 groups, both palettes validator-checked:
+      light all-pass ≥12.9; dark in the 8–12 floor band, legal with the
+      all-cells-labeled + tooltip relief) ──────────────────────────────── */
+:root {
+  --map-us: #7fb0ef; --map-cn: #e66767; --map-uk: #2fbf94; --map-eu: #c98500;
+  --map-ca: #2e5fb0; --map-as: #d95926; --map-row: #17803c;
+}
+:root[data-theme="light"] {
+  --map-us: #2a78d6; --map-cn: #e34948; --map-uk: #1baf7a; --map-eu: #eda100;
+  --map-ca: #4a3aa7; --map-as: #e87ba4; --map-row: #008300;
+}
 
 .map { position: relative; margin-top: 20px; }
 .map-cell {
