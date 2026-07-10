@@ -9,6 +9,7 @@ pick the institution-looking segment and classify with the same heuristics as
 the OpenReview path. Appends to the shared data/enriched/cache.jsonl.
 """
 import difflib
+import html
 import json
 import re
 import sys
@@ -48,6 +49,7 @@ UC_CAMPUSES = ("berkeley", "los angeles", "san diego", "santa barbara", "irvine"
 
 def pick_org(raw: str) -> str:
     """From 'Dept. of CS, Stanford University, CA' pick the org segment."""
+    raw = html.unescape(raw)  # Crossref strings are HTML-encoded; unescape BEFORE splitting on ;
     segs = [s.strip() for s in re.split(r"[;,]", raw) if s.strip()]
     # rejoin campus systems split by the comma: "University of California, Berkeley"
     joined = []

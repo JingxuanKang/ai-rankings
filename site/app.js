@@ -31,6 +31,7 @@ const state = {
   lens: 'alltime',       // alltime | now
   halflife: 5,
   scope: 'all',          // all | academia | industry (industry = type 'company')
+  country: 'all',        // ISO country code or 'all'
   venues: new Set(VENUES),
   tiers: new Set(TIERS.map(t => t.id)),
   weights: Object.fromEntries(TIERS.map(t => [t.id, t.w])),
@@ -88,6 +89,8 @@ function contribs(ev) {
     const isCompany = (INSTS[id] || {}).type === 'company';
     if (state.scope === 'academia' ? isCompany : !isCompany) m.delete(id);
   }
+  if (state.country !== 'all') for (const id of m.keys())
+    if ((INSTS[id] || {}).country !== state.country) m.delete(id);
   return m;
 }
 
@@ -672,88 +675,135 @@ function renderNations(res) {
   }));
 }
 
-/* ── the wall (every paper, one brick, grouped by first-author lab) ────── */
-function renderWall(res) {
-  const wallEl = $('wall');
-  const rankOf = new Map(res.ranking.map(r => [r.id, r.rank]));
-  const passes = id => {
-    const isCompany = (INSTS[id] || {}).type === 'company';
-    return state.scope === 'all' || (state.scope === 'academia' ? !isCompany : isCompany);
-  };
-  const groups = new Map();
-  let placed = 0;
-  for (const ev of EVENTS) {
-    if (!state.venues.has(ev.venue) || !state.tiers.has(ev.award)) continue;
-    const home = [...ev.fi, ...ev.ci].find(passes);
-    if (!home) continue;
-    if (!groups.has(home)) groups.set(home, []);
-    groups.get(home).push(ev);
-    placed++;
-  }
-  const order = [...groups.entries()].sort((a, b) => (rankOf.get(a[0]) ?? 1e9) - (rankOf.get(b[0]) ?? 1e9));
-  const TOP = 24;
-  const tierRank = { test_of_time: 0, best_paper: 1, honorable_mention: 2, oral: 3 };
-  const sortEvs = evs => evs.sort((a, b) => tierRank[a.award] - tierRank[b.award] || a.yw - b.yw);
-  wallEl.replaceChildren();
+/* ── the map (treemap: country → institution, area = share of credit) ──── */
+const REGIONS = [
+  { id: 'na', label: 'North America', cc: new Set(['US', 'CA']) },
+  { id: 'eu', label: 'Europe', cc: new Set(['GB', 'DE', 'FR', 'CH', 'NL', 'SE', 'DK', 'FI', 'NO',
+    'AT', 'BE', 'ES', 'PT', 'IT', 'IE', 'GR', 'CZ', 'PL', 'RU', 'HU', 'RO']) },
+  { id: 'as', label: 'Asia', cc: new Set(['CN', 'JP', 'KR', 'SG', 'HK', 'TW', 'IN', 'SA', 'AE', 'IL']) },
+  { id: 'row', label: 'Rest of world', cc: null }, // catch-all
+];
+const regionOf = cc => (REGIONS.find(r => r.cc && r.cc.has(cc)) || REGIONS[3]).id;
+const lumOf = hex => {
+  const n = parseInt(hex.slice(1), 16);
+  return (0.2126 * (n >> 16 & 255) + 0.7152 * (n >> 8 & 255) + 0.0722 * (n & 255)) / 255;
+};
 
-  const addBlock = (rankLabel, name, evs, instId) => {
-    sortEvs(evs);
-    const block = document.createElement('div');
-    block.className = 'wall-block';
-    const head = ttEl('wall-block-head', '');
-    if (rankLabel) head.append(ttEl('wb-rank', rankLabel, 'span'));
-    head.append(ttEl('wb-name', name, 'span'), ttEl('wb-meta', `${evs.length} papers`, 'span'));
-    if (instId) head.addEventListener('click', () => openDossier(instId));
-    const cells = ttEl('wall-cells', '');
-    for (const ev of evs) {
-      const c = ttEl('wall-cell', '', 'span');
-      c.style.background = TIER_BY_ID[ev.award].color;
-      c.__ev = ev;
-      cells.append(c);
+function renderMap(res) {
+  const mapEl = $('map');
+  const W = mapEl.clientWidth || 1012;
+  const H = Math.round(Math.min(760, Math.max(520, W * 0.66)));
+  mapEl.style.height = H + 'px';
+  const total = d3.sum(res.ranking, r => r.total);
+  if (!total) { mapEl.replaceChildren(); return; }
+
+  // country -> institutions; sub-0.15% institutions fold into an "others" cell
+  const byC = new Map();
+  for (const r of res.ranking) {
+    const cc = (INSTS[r.id] || {}).country || 'ZZ';
+    if (!byC.has(cc)) byC.set(cc, []);
+    byC.get(cc).push(r);
+  }
+  const children = [...byC.entries()].map(([cc, rs]) => {
+    const kids = [];
+    let othersV = 0, othersN = 0;
+    for (const r of rs) {
+      if (r.total / total >= 0.0015) {
+        kids.push({ name: (INSTS[r.id] || { name: r.id }).name, id: r.id, value: r.total, r });
+      } else { othersV += r.total; othersN++; }
     }
-    block.append(head, cells);
-    wallEl.append(block);
-  };
-  order.slice(0, TOP).forEach(([id, evs]) => {
-    addBlock('Nº ' + (rankOf.get(id) ?? '—'), (INSTS[id] || { name: id }).name, evs, id);
+    if (othersV > 0) kids.push({ name: `+${othersN} more`, id: null, value: othersV, others: othersN });
+    const label = cc === 'ZZ' ? 'Unknown' : (REGION ? (REGION.of(cc) || cc) : cc);
+    return { name: label, cc, children: kids };
   });
-  const rest = order.slice(TOP).flatMap(([, evs]) => evs);
-  if (rest.length) addBlock('', 'The field — everyone else', rest, null);
-  $('wall-sub').textContent =
-    `${placed.toLocaleString()} honored papers, one brick each — grouped under the institution of the ` +
-    `first author (the lab that led the work); gold bricks are prizes, ink bricks are orals and mentions. ` +
-    `Hover a brick for the paper; click to open it.`;
+
+  const root = d3.hierarchy({ children })
+    .sum(d => d.value || 0)
+    .sort((a, b) => b.value - a.value);
+  d3.treemap().size([W, H]).paddingInner(2).paddingTop(d => (d.depth === 1 && d.x1 - d.x0 > 46 ? 16 : 2))(root);
+
+  const frag = document.createDocumentFragment();
+  for (const c of root.children || []) {
+    if (c.x1 - c.x0 > 46) {
+      const cl = ttEl('map-country', `${c.data.cc === 'US' ? '' : ''}${c.data.name} ${(c.value / total * 100).toFixed(c.value / total >= 0.01 ? 0 : 1)}%`);
+      cl.style.left = (c.x0 + 3) + 'px'; cl.style.top = (c.y0 + 1) + 'px';
+      cl.style.maxWidth = (c.x1 - c.x0 - 6) + 'px';
+      cl.style.color = cssVar('--map-' + regionOf(c.data.cc));
+      frag.append(cl);
+    }
+  }
+  for (const leaf of root.leaves()) {
+    if (!leaf.parent || leaf.value <= 0) continue;
+    const w = leaf.x1 - leaf.x0, h = leaf.y1 - leaf.y0;
+    if (w < 3 || h < 3) continue;
+    const cc = leaf.parent.data.cc;
+    const base = cssVar('--map-' + regionOf(cc));
+    const col = d3.color(base).brighter((hash01(leaf.data.name) - 0.35) * 0.8);
+    const cell = ttEl('map-cell', '');
+    cell.style.left = leaf.x0 + 'px'; cell.style.top = leaf.y0 + 'px';
+    cell.style.width = w + 'px'; cell.style.height = h + 'px';
+    cell.style.background = col.formatHex();
+    const share = leaf.value / total * 100;
+    if (w >= 62 && h >= 30) {
+      const ink = lumOf(col.formatHex()) > 0.55 ? 'rgba(10,10,12,.88)' : '#fff';
+      const fs = Math.max(10, Math.min(20, Math.sqrt(w * h) / 8));
+      const nm = ttEl('mc-name', leaf.data.name);
+      nm.style.fontSize = fs + 'px'; nm.style.color = ink;
+      cell.append(nm);
+      if (h >= 52) {
+        const sh = ttEl('mc-share', share.toFixed(share >= 1 ? 1 : 2) + '%');
+        sh.style.fontSize = Math.max(9, fs - 3) + 'px'; sh.style.color = ink;
+        cell.append(sh);
+      }
+    }
+    cell.__leaf = leaf;
+    frag.append(cell);
+  }
+  mapEl.replaceChildren(frag);
+
+  // region legend with live shares
+  const regTotals = {};
+  for (const c of root.children || [])
+    regTotals[regionOf(c.data.cc)] = (regTotals[regionOf(c.data.cc)] || 0) + c.value;
+  $('map-legend').replaceChildren(...REGIONS.filter(r => regTotals[r.id]).map(r => {
+    const item = ttEl('legend-item', '', 'span');
+    const sw = ttEl('legend-swatch', '', 'span'); sw.style.background = cssVar('--map-' + r.id);
+    item.append(sw, document.createTextNode(`${r.label} ${(regTotals[r.id] / total * 100).toFixed(0)}%`));
+    return item;
+  }));
 }
-$('wall').addEventListener('pointermove', e => {
-  const ev = e.target.__ev;
-  if (!ev) { hideTip(); return; }
-  const t = TIER_BY_ID[ev.award];
+$('map').addEventListener('pointermove', e => {
+  const leaf = e.target.closest('.map-cell') && e.target.closest('.map-cell').__leaf;
+  if (!leaf) { hideTip(); return; }
+  const total = d3.sum(lastRes.ranking, r => r.total);
   showTip(e.clientX, e.clientY, box => {
-    box.append(ttEl('tt-value', ev.title));
-    const rowEl = ttEl('tt-row', '');
-    const key = ttEl('tt-key', '', 'span'); key.style.background = t.color;
-    rowEl.append(key, ttEl('', `${t.label} · ${ev.venue} ${ev.ya}` +
-      (ev.yw !== ev.ya ? ` — for work of ${ev.yw}` : ''), 'span'));
-    box.append(rowEl);
-    if (ev.fa) box.append(ttEl('tt-label', ev.fa + (ev.ca && ev.ca[0] && ev.ca[0] !== ev.fa ? ' · ' + ev.ca[0] : '')));
+    box.append(ttEl('tt-value', leaf.data.name),
+      ttEl('tt-label', `${leaf.parent.data.name} · ${fmt(leaf.value)} pts · ${(leaf.value / total * 100).toFixed(2)}% of the field`));
+    const r = leaf.data.r;
+    if (r) for (const t of TIERS) {
+      if (!r.counts[t.id]) continue;
+      const rowEl = ttEl('tt-row', '');
+      const key = ttEl('tt-key', '', 'span'); key.style.background = t.color;
+      rowEl.append(key, ttEl('', `${t.label} × ${r.counts[t.id]}`, 'span'));
+      box.append(rowEl);
+    }
+    if (leaf.data.others) box.append(ttEl('tt-label', `${leaf.data.others} smaller institutions`));
   });
 });
-$('wall').addEventListener('pointerleave', hideTip);
-$('wall').addEventListener('click', e => {
-  const ev = e.target.__ev;
-  if (ev && ev.url) open(ev.url, '_blank', 'noopener');
+$('map').addEventListener('pointerleave', hideTip);
+$('map').addEventListener('click', e => {
+  const cell = e.target.closest('.map-cell');
+  if (cell && cell.__leaf && cell.__leaf.data.id) openDossier(cell.__leaf.data.id);
 });
 
 /* ── legend / controls ─────────────────────────────────────────────────── */
 function initLegend() {
-  const build = () => TIERS.map(t => {
+  $('tier-legend').replaceChildren(...TIERS.map(t => {
     const item = ttEl('legend-item', '', 'span');
     const sw = ttEl('legend-swatch', '', 'span'); sw.style.background = t.color;
     item.append(sw, document.createTextNode(`${t.label} × ${state.weights[t.id]}`));
     return item;
-  });
-  $('tier-legend').replaceChildren(...build());
-  $('wall-legend').replaceChildren(...build());
+  }));
 }
 
 function initControls() {
@@ -778,6 +828,27 @@ function initControls() {
   });
 
   bindSeg('seg-scope', 'scope');
+
+  // country filter — options sorted by total weighted credit at default weights
+  const cTotals = new Map();
+  for (const ev of EVENTS) {
+    const w = TIER_BY_ID[ev.award].w;
+    for (const id of new Set([...ev.fi, ...ev.ci])) {
+      const cc = (INSTS[id] || {}).country;
+      if (cc) cTotals.set(cc, (cTotals.get(cc) || 0) + w);
+    }
+  }
+  const sel = $('country-select');
+  const optAll = document.createElement('option');
+  optAll.value = 'all'; optAll.textContent = 'All countries';
+  sel.append(optAll);
+  for (const [cc] of [...cTotals.entries()].sort((a, b) => b[1] - a[1])) {
+    const o = document.createElement('option');
+    o.value = cc;
+    o.textContent = `${flagOf(cc)} ${REGION ? (REGION.of(cc) || cc) : cc}`;
+    sel.append(o);
+  }
+  sel.addEventListener('change', () => { state.country = sel.value; rerender(); });
 
   $('halflife').addEventListener('input', e => {
     state.halflife = +e.target.value;
@@ -883,12 +954,13 @@ function rerender() {
     renderNations(lastRes);
     renderCanon();
     renderBump();
-    renderWall(lastRes);
+    renderMap(lastRes);
     $('board-sub').textContent =
       `${lastRes.papersInView.toLocaleString()} honored papers in view · credit: ` +
       ({ both: 'first + corresponding (50/50)', first: 'first author', corr: 'corresponding author' })[state.attr] +
       ` · ${state.lens === 'now' ? `present-day lens, ${state.halflife}y half-life on age of work` : 'all-time lens'}` +
-      ` · ${({ all: 'academia + industry', academia: 'academia only (incl. gov / nonprofit labs)', industry: 'industry only' })[state.scope]}`;
+      ` · ${({ all: 'academia + industry', academia: 'academia only (incl. gov / nonprofit labs)', industry: 'industry only' })[state.scope]}` +
+      (state.country !== 'all' ? ` · ${REGION ? (REGION.of(state.country) || state.country) : state.country} only` : '');
     if (state.selected) openDossier(state.selected);
   });
 }
@@ -909,7 +981,7 @@ function initFootnotes() {
 let resizeT = null;
 addEventListener('resize', () => {
   clearTimeout(resizeT);
-  resizeT = setTimeout(() => { renderCanon(); renderBump(); }, 180);
+  resizeT = setTimeout(() => { renderCanon(); renderBump(); if (lastRes) renderMap(lastRes); }, 180);
 });
 
 let savedTheme = 'light';

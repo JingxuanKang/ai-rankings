@@ -58,6 +58,10 @@
         <button data-v="industry">Industry</button>
       </div>
     </div>
+    <div class="dock-group">
+      <span class="dock-label">Country</span>
+      <select id="country-select" class="country-select" aria-label="country filter"></select>
+    </div>
     <div class="dock-group dock-venues" role="group" aria-label="venue filter">
       <span class="dock-label">Venues</span>
       <div class="chips" id="venue-chips"></div>
@@ -125,15 +129,14 @@
   <div class="bump-wrap"><svg id="bump" role="img" aria-label="rank trajectories of leading institutions"></svg></div>
 </section>
 
-<section class="section" id="wall-section">
+<section class="section" id="map-section">
   <div class="section-head">
-    <h2>The Wall</h2>
-    <div class="legend" id="wall-legend" aria-label="award tiers"></div>
+    <h2>The Map</h2>
+    <div class="legend" id="map-legend" aria-label="regions"></div>
   </div>
-  <p class="section-sub" id="wall-sub">Every honored paper, one brick — grouped under the institution of its
-  <em>first author</em> (the lab that led the work), deepest gold first. Hover a brick for the paper;
-  click to open it.</p>
-  <div id="wall" class="wall"></div>
+  <p class="section-sub" id="map-sub">Area = share of all weighted credit in the current view,
+  nested country → institution. Hover for the breakdown; click to open the dossier.</p>
+  <div id="map" class="map"></div>
 </section>
 
 </main>

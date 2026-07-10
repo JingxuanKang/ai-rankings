@@ -118,6 +118,7 @@ ALIASES.update({norm_inst(k): v for k, v in {
     "technische universitat munchen": "Technical University of Munich",
     "technical university of darmstadt": "TU Darmstadt",
     "university of t": "University of Tübingen",
+    "university of tu": "University of Tübingen",
     "ludwig maximilian university of munich": "LMU Munich",
     "ludwig maximilians universitat munchen": "LMU Munich",
     "weizmann institute": "Weizmann Institute of Science",
