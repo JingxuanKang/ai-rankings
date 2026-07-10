@@ -1,4 +1,4 @@
-# Signal Rank
+# AI Rankings
 
 只数奖项不数论文的 AI 机构排名：oral / best paper / honorable mention / test-of-time 四级荣誉，记到一作+通讯**发表时刻**的单位（OpenAlex authorship），8 会（NeurIPS/ICML/ICLR/CVPR/ICCV/ECCV/ACL/EMNLP），奖项事件 2021–2026。
 

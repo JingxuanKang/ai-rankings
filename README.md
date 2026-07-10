@@ -1,4 +1,4 @@
-# Signal Rank
+# AI Rankings
 
 一个"只数奖项、不数论文"的 AI 机构排名。立场：论文数量已经失真，真正的信号是社区亲手挑出来的那一小撮——**oral、best paper（含 outstanding paper）、honorable mention / award candidate、test-of-time award**——并且只记到**一作和通讯作者发表当时的单位**头上。
 

@@ -32,6 +32,7 @@ const state = {
   halflife: 5,
   scope: 'all',          // all | academia | industry (industry = type 'company')
   venues: new Set(VENUES),
+  tiers: new Set(TIERS.map(t => t.id)),
   weights: Object.fromEntries(TIERS.map(t => [t.id, t.w])),
   view: 'chart',
   axis: 'yw',            // canon x axis: yw | ya
@@ -102,7 +103,7 @@ function computeScores(opts = {}) {
   const byInst = new Map();
   let papersInView = 0;
   for (const ev of EVENTS) {
-    if (!state.venues.has(ev.venue) || ev.ya > maxYa) continue;
+    if (!state.venues.has(ev.venue) || !state.tiers.has(ev.award) || ev.ya > maxYa) continue;
     papersInView++;
     let w = noDecay ? state.weights[ev.award] : eventWeight(ev);
     if (w <= 0) continue;
@@ -299,7 +300,7 @@ function renderCanon() {
   canonCtx.setTransform(dpr, 0, 0, dpr, 0, 0);
   canonCtx.clearRect(0, 0, W, H);
 
-  const evs = EVENTS.filter(e => state.venues.has(e.venue));
+  const evs = EVENTS.filter(e => state.venues.has(e.venue) && state.tiers.has(e.award));
   const xs = evs.map(e => state.axis === 'yw' ? e.yw : e.ya);
   const x0 = Math.min(...xs), x1 = Math.max(...xs, REF_YEAR);
   const x = d3.scaleLinear().domain([x0 - 0.5, x1 + 0.5]).range([padL, W - padR]);
@@ -642,7 +643,7 @@ function renderWall(res) {
   const groups = new Map();
   let placed = 0;
   for (const ev of EVENTS) {
-    if (!state.venues.has(ev.venue)) continue;
+    if (!state.venues.has(ev.venue) || !state.tiers.has(ev.award)) continue;
     const home = [...ev.fi, ...ev.ci].find(passes);
     if (!home) continue;
     if (!groups.has(home)) groups.set(home, []);
@@ -744,6 +745,26 @@ function initControls() {
     rerender();
   });
 
+  // tier filter chips — dossier-chip style: dot + live count + label
+  const tf = $('tier-filters');
+  for (const t of TIERS) {
+    const chip = ttEl('tier-chip on', '', 'button');
+    chip.setAttribute('aria-pressed', 'true');
+    const dot = ttEl('tier-dot', '', 'span'); dot.style.background = t.color;
+    const b = document.createElement('b');
+    chip.append(dot, b, document.createTextNode(' ' + t.label));
+    chip.addEventListener('click', () => {
+      if (state.tiers.has(t.id) && state.tiers.size === 1) return;
+      state.tiers.has(t.id) ? state.tiers.delete(t.id) : state.tiers.add(t.id);
+      chip.classList.toggle('on', state.tiers.has(t.id));
+      chip.setAttribute('aria-pressed', String(state.tiers.has(t.id)));
+      rerender();
+    });
+    t._filterChip = chip;
+    t._filterCount = b;
+    tf.append(chip);
+  }
+
   const chips = $('venue-chips');
   for (const v of VENUES) {
     const b = document.createElement('button');
@@ -794,7 +815,11 @@ function initControls() {
 
   $('theme-btn').addEventListener('click', () => {
     applyTheme(document.documentElement.dataset.theme === 'light' ? 'dark' : 'light');
-    for (const t of TIERS) if (t._dotEl) t._dotEl.style.background = t.color;
+    for (const t of TIERS) {
+      if (t._dotEl) t._dotEl.style.background = t.color;
+      const d = t._filterChip && t._filterChip.querySelector('.tier-dot');
+      if (d) d.style.background = t.color;
+    }
     initLegend();
     rerender();
   });
@@ -807,6 +832,12 @@ function rerender() {
   raf = requestAnimationFrame(() => {
     raf = null;
     lastRes = computeScores();
+    // live tier counts under the current venue filter (independent of tier toggles)
+    const tierCounts = {};
+    for (const ev of EVENTS) if (state.venues.has(ev.venue))
+      tierCounts[ev.award] = (tierCounts[ev.award] || 0) + 1;
+    for (const t of TIERS) if (t._filterCount)
+      t._filterCount.textContent = (tierCounts[t.id] || 0).toLocaleString();
     renderPodium(lastRes.ranking);
     renderBoard(lastRes);
     renderNations(lastRes);

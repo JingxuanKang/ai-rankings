@@ -147,6 +147,11 @@ a:hover { color: var(--accent); }
 .halflife { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--ink-2); margin-left: 12px; }
 .halflife input { accent-color: var(--accent); width: 110px; }
 
+.tier-filters { display: flex; gap: 6px; flex-wrap: wrap; }
+.tier-filters .tier-chip { font-size: 12px; padding: 3px 9px; opacity: .45; }
+.tier-filters .tier-chip.on { opacity: 1; border-color: var(--tier-best); }
+.tier-filters .tier-chip b { font-variant-numeric: tabular-nums; }
+
 .weights { position: relative; margin-left: auto; }
 .weights summary {
   list-style: none; cursor: pointer; font-size: 13px; color: var(--ink-2);
