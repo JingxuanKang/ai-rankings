@@ -4,7 +4,7 @@
  "stats": {
   "papers": 3564,
   "resolved": 3564,
-  "institutions": 1171,
+  "institutions": 1120,
   "unresolved_by_award": {}
  },
  "institutions": {
@@ -153,8 +153,8 @@
    "type": "company",
    "country": "CN"
   },
-  "c:usc-information-sciences-institute": {
-   "name": "USC Information Sciences Institute",
+  "c:university-of-southern-california": {
+   "name": "University of Southern California",
    "type": "education",
    "country": "US"
   },
@@ -238,7 +238,7 @@
    "type": "education",
    "country": ""
   },
-  "c:the-ohio-state-university": {
+  "c:ohio-state-university": {
    "name": "The Ohio State University",
    "type": "education",
    "country": "US"
@@ -288,7 +288,7 @@
    "type": "company",
    "country": "CN"
   },
-  "c:eth-z-rich": {
+  "c:eth-zurich": {
    "name": "ETH Zürich",
    "type": "education",
    "country": "CH"
@@ -373,11 +373,6 @@
    "type": "education",
    "country": "KR"
   },
-  "c:university-of-southern-california": {
-   "name": "University of Southern California",
-   "type": "education",
-   "country": "US"
-  },
   "c:university-of-milano-bicocca": {
    "name": "University of Milano-Bicocca",
    "type": "education",
@@ -438,12 +433,12 @@
    "type": "company",
    "country": "IT"
   },
-  "c:instituto-superior-t-cnico": {
+  "c:instituto-superior-tecnico": {
    "name": "Instituto Superior Técnico",
    "type": "education",
    "country": "PT"
   },
-  "c:instituto-de-telecomunica-es": {
+  "c:instituto-de-telecomunicacoes": {
    "name": "Instituto de Telecomunicações",
    "type": "nonprofit",
    "country": "PT"
@@ -463,8 +458,8 @@
    "type": "education",
    "country": "NL"
   },
-  "c:cohere-for-ai": {
-   "name": "Cohere For AI",
+  "c:cohere": {
+   "name": "Cohere",
    "type": "company",
    "country": "CA"
   },
@@ -518,8 +513,8 @@
    "type": "education",
    "country": "US"
   },
-  "c:technical-university-of-darmstadt": {
-   "name": "Technical University of Darmstadt",
+  "c:tu-darmstadt": {
+   "name": "TU Darmstadt",
    "type": "education",
    "country": "DE"
   },
@@ -858,7 +853,7 @@
    "type": "education",
    "country": "US"
   },
-  "c:the-university-of-adelaide": {
+  "c:university-of-adelaide": {
    "name": "The University of Adelaide",
    "type": "education",
    "country": "AU"
@@ -933,8 +928,8 @@
    "type": "education",
    "country": "AU"
   },
-  "c:naver-labs-europe": {
-   "name": "NAVER LABS Europe",
+  "c:naver": {
+   "name": "NAVER",
    "type": "company",
    "country": "FR"
   },
@@ -972,11 +967,6 @@
    "name": "Rutgers University",
    "type": "education",
    "country": "US"
-  },
-  "c:university-of-adelaide": {
-   "name": "University of Adelaide",
-   "type": "education",
-   "country": "AU"
   },
   "c:university-of-north-carolina-at-chapel-hill": {
    "name": "University of North Carolina at Chapel Hill",
@@ -1058,7 +1048,7 @@
    "type": "education",
    "country": "DE"
   },
-  "c:university-of-t-bingen": {
+  "c:university-of-tubingen": {
    "name": "University of Tübingen",
    "type": "education",
    "country": "DE"
@@ -1097,11 +1087,6 @@
    "name": "Xiamen University",
    "type": "education",
    "country": "CN"
-  },
-  "c:university-of-maryland-college-park": {
-   "name": "University of Maryland, College Park",
-   "type": "education",
-   "country": "US"
   },
   "c:university-of-macau": {
    "name": "University of Macau",
@@ -1178,7 +1163,7 @@
    "type": "education",
    "country": "CN"
   },
-  "c:eth-z": {
+  "c:eth-zu": {
    "name": "ETH Z&#x00FC",
    "type": "unknown",
    "country": ""
@@ -1228,7 +1213,7 @@
    "type": "company",
    "country": "US"
   },
-  "c:cole-normale-sup-rieure": {
+  "c:ecole-normale-superieure": {
    "name": "École Normale Supérieure",
    "type": "education",
    "country": "FR"
@@ -1255,8 +1240,8 @@
   },
   "c:caltech": {
    "name": "Caltech",
-   "type": "unknown",
-   "country": ""
+   "type": "education",
+   "country": "US"
   },
   "c:indian-institute-of-technology-hyderabad": {
    "name": "Indian Institute of Technology Hyderabad",
@@ -1277,11 +1262,6 @@
    "name": "Pazhou Lab",
    "type": "government",
    "country": "CN"
-  },
-  "c:an-jiaotong-university": {
-   "name": "an Jiaotong University",
-   "type": "education",
-   "country": ""
   },
   "c:hefei-comprehensive-national-science-center": {
    "name": "Hefei Comprehensive National Science Center",
@@ -1343,11 +1323,6 @@
    "type": "education",
    "country": ""
   },
-  "c:the-university-of-sydney": {
-   "name": "The University of Sydney",
-   "type": "education",
-   "country": ""
-  },
   "c:michigan-state-university": {
    "name": "Michigan State University",
    "type": "education",
@@ -1365,11 +1340,6 @@
   },
   "c:state-key-laboratory-of-intelligent-technology-a": {
    "name": "State Key Laboratory of Intelligent Technology and Systems",
-   "type": "unknown",
-   "country": ""
-  },
-  "c:huawei-noah": {
-   "name": "Huawei Noah&#x0027",
    "type": "unknown",
    "country": ""
   },
@@ -1428,7 +1398,7 @@
    "type": "education",
    "country": "US"
   },
-  "c:the-chinese-university-of-hong-kong-shenzhen": {
+  "c:chinese-university-of-hong-kong-shenzhen": {
    "name": "The Chinese University of Hong Kong (Shenzhen)",
    "type": "education",
    "country": "CN"
@@ -1548,7 +1518,7 @@
    "type": "education",
    "country": "IT"
   },
-  "c:the-hongkong-polytechnic-university": {
+  "c:hongkong-polytechnic-university": {
    "name": "The HongKong Polytechnic University",
    "type": "education",
    "country": ""
@@ -1563,10 +1533,10 @@
    "type": "unknown",
    "country": ""
   },
-  "c:the-weizmann-institute-of-science": {
+  "c:weizmann-institute-of-science": {
    "name": "The Weizmann Institute of Science",
-   "type": "unknown",
-   "country": ""
+   "type": "education",
+   "country": "IL"
   },
   "c:keti": {
    "name": "KETI",
@@ -1688,8 +1658,8 @@
    "type": "education",
    "country": ""
   },
-  "c:ludwig-maximilian-university-of-munich": {
-   "name": "Ludwig Maximilian University of Munich &#x0026",
+  "c:lmu-munich": {
+   "name": "LMU Munich",
    "type": "education",
    "country": "DE"
   },
@@ -1705,11 +1675,6 @@
   },
   "c:graz-university-of-technology": {
    "name": "Graz University of Technology",
-   "type": "education",
-   "country": ""
-  },
-  "c:university-of-tubingen": {
-   "name": "University of Tubingen",
    "type": "education",
    "country": ""
   },
@@ -1741,11 +1706,6 @@
   "c:computer-vision-center": {
    "name": "Computer Vision Center",
    "type": "unknown",
-   "country": ""
-  },
-  "c:aws-ai-labs": {
-   "name": "AWS AI Labs",
-   "type": "company",
    "country": ""
   },
   "c:univ-of-pennsylvania": {
@@ -1786,11 +1746,6 @@
   "c:paul-g-allen-school-of-computer-science": {
    "name": "Paul G. Allen School of Computer Science &#x0026",
    "type": "education",
-   "country": ""
-  },
-  "c:facebook-ai-research-fair": {
-   "name": "Facebook AI Research (FAIR)",
-   "type": "unknown",
    "country": ""
   },
   "c:sea-ai-lab": {
@@ -1878,17 +1833,12 @@
    "type": "unknown",
    "country": ""
   },
-  "c:the-hong-kong-polytechnic-university": {
-   "name": "The Hong Kong Polytechnic University",
-   "type": "education",
-   "country": "HK"
-  },
   "c:samsung-ai-centre-toronto": {
    "name": "Samsung AI Centre Toronto",
    "type": "unknown",
    "country": ""
   },
-  "c:": {
+  "c:e": {
    "name": "&#x00C9",
    "type": "unknown",
    "country": ""
@@ -1898,7 +1848,7 @@
    "type": "unknown",
    "country": ""
   },
-  "c:universit-de-montr-al": {
+  "c:universite-de-montreal": {
    "name": "Université de Montréal",
    "type": "education",
    "country": "CA"
@@ -1938,17 +1888,12 @@
    "type": "company",
    "country": "US"
   },
-  "c:damo-academy": {
-   "name": "DAMO Academy",
-   "type": "unknown",
-   "country": ""
-  },
   "c:inception-institute-of-ai": {
    "name": "Inception Institute of AI",
    "type": "unknown",
    "country": ""
   },
-  "c:the-chinese-university-of-hongkong": {
+  "c:chinese-university-of-hongkong": {
    "name": "The Chinese University of HongKong",
    "type": "education",
    "country": ""
@@ -1992,11 +1937,6 @@
    "name": "Sichuan University",
    "type": "education",
    "country": "CN"
-  },
-  "c:weizmann-institute-of-science": {
-   "name": "Weizmann Institute of Science",
-   "type": "education",
-   "country": "IL"
   },
   "c:unc-chapel-hill": {
    "name": "UNC Chapel Hill",
@@ -2053,11 +1993,6 @@
    "type": "unknown",
    "country": ""
   },
-  "c:inria-paris": {
-   "name": "Inria Paris",
-   "type": "unknown",
-   "country": "FR"
-  },
   "c:harbin-institute-of-technology-shenzhen": {
    "name": "Harbin Institute of Technology (Shenzhen)",
    "type": "education",
@@ -2073,23 +2008,18 @@
    "type": "unknown",
    "country": ""
   },
-  "c:california-institute-of-technology": {
-   "name": "California Institute of Technology",
-   "type": "education",
-   "country": "US"
-  },
   "c:chalmers-university-of-technology": {
    "name": "Chalmers University of Technology",
    "type": "education",
    "country": "SE"
   },
-  "c:pontificia-universidad-cat": {
+  "c:pontificia-universidad-cato": {
    "name": "Pontificia Universidad Cat&#x00F3",
    "type": "unknown",
    "country": ""
   },
   "c:king-abdullah-university-of-science-and-technolo": {
-   "name": "King Abdullah University of Science and Technology",
+   "name": "King Abdullah University of Science and Technology (KAUST)",
    "type": "education",
    "country": "SA"
   },
@@ -2097,11 +2027,6 @@
    "name": "Wuhan University",
    "type": "education",
    "country": "CN"
-  },
-  "c:prior-allen-institute-for-ai": {
-   "name": "PRIOR @ Allen Institute for AI",
-   "type": "unknown",
-   "country": ""
   },
   "c:university-of-surrey": {
    "name": "University of Surrey",
@@ -2131,11 +2056,6 @@
   "c:cardiff-university": {
    "name": "Cardiff University",
    "type": "education",
-   "country": ""
-  },
-  "c:naver-cloud-ai": {
-   "name": "NAVER Cloud AI",
-   "type": "unknown",
    "country": ""
   },
   "c:university-of-bristol": {
@@ -2193,7 +2113,7 @@
    "type": "education",
    "country": ""
   },
-  "c:university-of-t": {
+  "c:university-of-tu": {
    "name": "University of T&#x00FC",
    "type": "education",
    "country": ""
@@ -2238,10 +2158,10 @@
    "type": "unknown",
    "country": ""
   },
-  "c:hkust-gz": {
-   "name": "HKUST(GZ)",
-   "type": "unknown",
-   "country": ""
+  "c:hkust-guangzhou": {
+   "name": "HKUST (Guangzhou)",
+   "type": "education",
+   "country": "CN"
   },
   "c:mass-general-brigham": {
    "name": "Mass General Brigham",
@@ -2250,11 +2170,6 @@
   },
   "c:nanjing-university-of-sci": {
    "name": "Nanjing University of Sci. &#x0026",
-   "type": "education",
-   "country": ""
-  },
-  "c:university-college": {
-   "name": "University College",
    "type": "education",
    "country": ""
   },
@@ -2272,11 +2187,6 @@
    "name": "Westlake University",
    "type": "education",
    "country": "CN"
-  },
-  "c:the-university-of-manchester": {
-   "name": "The University of Manchester",
-   "type": "education",
-   "country": ""
   },
   "c:washington-university-in-st-louis": {
    "name": "Washington University in St. Louis",
@@ -2368,8 +2278,8 @@
    "type": "unknown",
    "country": ""
   },
-  "c:university-of-illinois-at-chicago": {
-   "name": "University of Illinois at Chicago",
+  "c:university-of-illinois-chicago": {
+   "name": "University of Illinois Chicago",
    "type": "education",
    "country": "US"
   },
@@ -2423,7 +2333,7 @@
    "type": "education",
    "country": "AU"
   },
-  "c:the-university-of-osaka": {
+  "c:university-of-osaka": {
    "name": "The University of Osaka",
    "type": "education",
    "country": "JP"
@@ -2442,6 +2352,11 @@
    "name": "iHEALTH",
    "type": "nonprofit",
    "country": "CL"
+  },
+  "c:kaust": {
+   "name": "KAUST",
+   "type": "education",
+   "country": "SA"
   },
   "c:guangdong-university-of-technology": {
    "name": "Guangdong University of Technology",
@@ -2508,7 +2423,7 @@
    "type": "government",
    "country": "SG"
   },
-  "c:cole-normale-sup-rieure-de-lyon": {
+  "c:ecole-normale-superieure-de-lyon": {
    "name": "École Normale Supérieure de Lyon",
    "type": "education",
    "country": "FR"
@@ -2518,7 +2433,7 @@
    "type": "education",
    "country": "US"
   },
-  "c:cole-polytechnique": {
+  "c:ecole-polytechnique": {
    "name": "École Polytechnique",
    "type": "education",
    "country": "FR"
@@ -2528,7 +2443,7 @@
    "type": "education",
    "country": "DE"
   },
-  "c:t-l-com-paris": {
+  "c:telecom-paris": {
    "name": "Télécom Paris",
    "type": "education",
    "country": "FR"
@@ -2537,11 +2452,6 @@
    "name": "Xiaomi",
    "type": "company",
    "country": "CN"
-  },
-  "c:naver": {
-   "name": "Naver",
-   "type": "company",
-   "country": "KR"
   },
   "c:beijing-institute-for-general-artificial-intelli": {
    "name": "Beijing Institute for General Artificial Intelligence (BIGAI)",
@@ -2583,15 +2493,10 @@
    "type": "education",
    "country": "CA"
   },
-  "c:cole-nationale-des-ponts-et-chauss-es": {
+  "c:ecole-nationale-des-ponts-et-chaussees": {
    "name": "École Nationale des Ponts et Chaussées",
    "type": "education",
    "country": "FR"
-  },
-  "c:tu-darmstadt": {
-   "name": "TU Darmstadt",
-   "type": "education",
-   "country": "DE"
   },
   "c:macao-polytechnic-university": {
    "name": "Macao Polytechnic University",
@@ -2608,7 +2513,7 @@
    "type": "education",
    "country": "CN"
   },
-  "c:university-of-li-ge": {
+  "c:university-of-liege": {
    "name": "University of Liège",
    "type": "education",
    "country": "BE"
@@ -2617,11 +2522,6 @@
    "name": "Wayve",
    "type": "company",
    "country": "GB"
-  },
-  "c:the-hong-kong-university-of-science-and-technolo": {
-   "name": "The Hong Kong University of Science and Technology (Guangzhou)",
-   "type": "education",
-   "country": "CN"
   },
   "c:ant-group": {
    "name": "Ant Group",
@@ -2652,11 +2552,6 @@
    "name": "University of Rochester",
    "type": "education",
    "country": "US"
-  },
-  "c:kaust": {
-   "name": "KAUST",
-   "type": "education",
-   "country": "SA"
   },
   "c:mbzuai": {
    "name": "MBZUAI",
@@ -2692,11 +2587,6 @@
    "name": "Power China Zhongnan Engineering Corporation",
    "type": "company",
    "country": "CN"
-  },
-  "c:cole-polytechnique-f-d-rale-de-lausanne": {
-   "name": "École Polytechnique Fédérale de Lausanne",
-   "type": "education",
-   "country": "CH"
   },
   "c:tianjin-university-of-technology": {
    "name": "Tianjin University of Technology",
@@ -2893,7 +2783,7 @@
    "type": "education",
    "country": "JP"
   },
-  "c:technische-universit-t-berlin": {
+  "c:technische-universitat-berlin": {
    "name": "Technische Universität Berlin",
    "type": "education",
    "country": "DE"
@@ -2943,12 +2833,12 @@
    "type": "company",
    "country": "JP"
   },
-  "c:cole-des-ponts": {
+  "c:ecole-des-ponts": {
    "name": "École des Ponts",
    "type": "education",
    "country": "FR"
   },
-  "c:the-future-network-of-intelligence-institute-cuh": {
+  "c:future-network-of-intelligence-institute-cuhk-sh": {
    "name": "The Future Network of Intelligence Institute, CUHK-Shenzhen",
    "type": "education",
    "country": "CN"
@@ -2963,7 +2853,7 @@
    "type": "education",
    "country": "CN"
   },
-  "c:the-hebrew-university-of-jerusalem": {
+  "c:hebrew-university-of-jerusalem": {
    "name": "The Hebrew University of Jerusalem",
    "type": "education",
    "country": "IL"
@@ -3023,11 +2913,6 @@
    "type": "education",
    "country": "CN"
   },
-  "c:hkust-shenzhen-hong-kong-collaborative-innovatio": {
-   "name": "HKUST Shenzhen-Hong Kong Collaborative Innovation Research Institute",
-   "type": "education",
-   "country": "CN"
-  },
   "c:pohang-university-of-science-and-technology": {
    "name": "Pohang University of Science and Technology",
    "type": "education",
@@ -3043,7 +2928,7 @@
    "type": "education",
    "country": "KR"
   },
-  "c:pi-atafarms-ai": {
+  "c:pinatafarms-ai": {
    "name": "PiñataFarms AI",
    "type": "company",
    "country": "US"
@@ -3068,11 +2953,6 @@
    "type": "company",
    "country": "JP"
   },
-  "c:the-university-of-melbourne": {
-   "name": "The University of Melbourne",
-   "type": "education",
-   "country": "AU"
-  },
   "c:victoria-university-of-wellington": {
    "name": "Victoria University of Wellington",
    "type": "education",
@@ -3093,11 +2973,6 @@
    "type": "education",
    "country": "CN"
   },
-  "c:lmu-munich": {
-   "name": "LMU Munich",
-   "type": "education",
-   "country": "DE"
-  },
   "c:technical-university-of-denmark": {
    "name": "Technical University of Denmark",
    "type": "education",
@@ -3113,7 +2988,7 @@
    "type": "education",
    "country": "VN"
   },
-  "c:cole-des-ponts-paristech": {
+  "c:ecole-des-ponts-paristech": {
    "name": "École des Ponts ParisTech",
    "type": "education",
    "country": "FR"
@@ -3137,11 +3012,6 @@
    "name": "FPT Software AI Center",
    "type": "company",
    "country": "VN"
-  },
-  "c:hong-kong-university-of-science-and-technology-g": {
-   "name": "Hong Kong University of Science and Technology (Guangzhou)",
-   "type": "education",
-   "country": "CN"
   },
   "c:durham-university": {
    "name": "Durham University",
@@ -3238,7 +3108,7 @@
    "type": "education",
    "country": "CN"
   },
-  "c:the-university-of-texas-at-dallas": {
+  "c:university-of-texas-at-dallas": {
    "name": "The University of Texas at Dallas",
    "type": "education",
    "country": "US"
@@ -3293,11 +3163,6 @@
    "type": "company",
    "country": "US"
   },
-  "c:cohere": {
-   "name": "Cohere",
-   "type": "company",
-   "country": "CA"
-  },
   "c:salesforce": {
    "name": "Salesforce",
    "type": "company",
@@ -3328,7 +3193,7 @@
    "type": "education",
    "country": "DE"
   },
-  "c:instituto-superior-t": {
+  "c:instituto-superior-te": {
    "name": "Instituto Superior T&#x00E9",
    "type": "unknown",
    "country": ""
@@ -3358,7 +3223,7 @@
    "type": "unknown",
    "country": ""
   },
-  "c:the-school-of-computer-science": {
+  "c:school-of-computer-science": {
    "name": "The School of Computer Science",
    "type": "education",
    "country": ""
@@ -3383,7 +3248,7 @@
    "type": "unknown",
    "country": ""
   },
-  "c:universit": {
+  "c:universite": {
    "name": "Universit&#x00E9",
    "type": "education",
    "country": ""
@@ -3438,11 +3303,6 @@
    "type": "unknown",
    "country": ""
   },
-  "c:hebrew-university-of-jerusalem": {
-   "name": "Hebrew University of Jerusalem",
-   "type": "education",
-   "country": "IL"
-  },
   "c:intellifusion-inc": {
    "name": "Intellifusion Inc",
    "type": "company",
@@ -3483,7 +3343,7 @@
    "type": "education",
    "country": ""
   },
-  "c:university-of-l": {
+  "c:university-of-lu": {
    "name": "University of L&#x00FC",
    "type": "education",
    "country": ""
@@ -3531,11 +3391,6 @@
   "c:chinese-academy-of-military-science": {
    "name": "Chinese Academy of Military Science",
    "type": "unknown",
-   "country": ""
-  },
-  "c:the-university-of-california": {
-   "name": "The University of California",
-   "type": "education",
    "country": ""
   },
   "c:national-key-laboratory-of-human-machine-hybrid-": {
@@ -3603,11 +3458,6 @@
    "type": "unknown",
    "country": ""
   },
-  "c:the-australian-national-university": {
-   "name": "The Australian National University",
-   "type": "education",
-   "country": ""
-  },
   "c:southern-university-of-science-and-technology": {
    "name": "Southern University of Science and Technology",
    "type": "education",
@@ -3673,7 +3523,7 @@
    "type": "unknown",
    "country": ""
   },
-  "c:meta-reality-labs-z": {
+  "c:meta-reality-labs-zu": {
    "name": "Meta Reality Labs Z&#x00FC",
    "type": "unknown",
    "country": ""
@@ -3708,7 +3558,7 @@
    "type": "unknown",
    "country": ""
   },
-  "c:university-of-w": {
+  "c:university-of-wu": {
    "name": "University of W&#x00FC",
    "type": "education",
    "country": ""
@@ -3733,7 +3583,7 @@
    "type": "education",
    "country": ""
   },
-  "c:the-open-university": {
+  "c:open-university": {
    "name": "The Open University",
    "type": "education",
    "country": ""
@@ -3753,7 +3603,7 @@
    "type": "company",
    "country": "KR"
   },
-  "c:sorbonne-universit": {
+  "c:sorbonne-universite": {
    "name": "Sorbonne Université",
    "type": "education",
    "country": "FR"
@@ -3762,11 +3612,6 @@
    "name": "Criteo (France)",
    "type": "company",
    "country": "FR"
-  },
-  "c:university-of-montreal": {
-   "name": "University of Montreal",
-   "type": "education",
-   "country": "CA"
   },
   "c:vrije-universiteit-amsterdam": {
    "name": "Vrije Universiteit Amsterdam",
@@ -3798,10 +3643,10 @@
    "type": "education",
    "country": "US"
   },
-  "c:amazon-germany": {
-   "name": "Amazon (Germany)",
-   "type": "company",
-   "country": "DE"
+  "c:university-of-wisconsinmadison": {
+   "name": "University of Wisconsin–Madison",
+   "type": "education",
+   "country": "US"
   },
   "c:university-of-geneva": {
    "name": "University of Geneva",
@@ -3823,11 +3668,6 @@
    "type": "education",
    "country": ""
   },
-  "c:shanghai-jiaotong-university": {
-   "name": "Shanghai jiaotong University",
-   "type": "education",
-   "country": "CN"
-  },
   "c:higher-school-of-economics": {
    "name": "Higher School of Economics",
    "type": "education",
@@ -3843,25 +3683,15 @@
    "type": "education",
    "country": "BE"
   },
-  "c:pontificia-universidad-cat-lica": {
+  "c:pontificia-universidad-catolica": {
    "name": "Pontificia Universidad Católica",
    "type": "unknown",
    "country": ""
   },
   "c:hec-montreal": {
    "name": "HEC Montreal",
-   "type": "unknown",
+   "type": "education",
    "country": "CA"
-  },
-  "c:ecole-normale-superieure": {
-   "name": "Ecole Normale Superieure",
-   "type": "education",
-   "country": "FR"
-  },
-  "c:korea-advanced-institute-of-science-technology": {
-   "name": "Korea Advanced Institute of Science & Technology",
-   "type": "education",
-   "country": "KR"
   },
   "c:unity-labs": {
    "name": "Unity Labs",
@@ -3918,25 +3748,10 @@
    "type": "education",
    "country": "AE"
   },
-  "c:ethz-eth-zurich": {
-   "name": "ETHZ - ETH Zurich",
-   "type": "education",
-   "country": "CH"
-  },
-  "c:swiss-federal-institute-of-technology": {
-   "name": "Swiss Federal Institute of Technology",
-   "type": "education",
-   "country": "CH"
-  },
   "c:brave-software": {
    "name": "Brave Software",
    "type": "unknown",
    "country": ""
-  },
-  "c:ohio-state-university": {
-   "name": "Ohio State University",
-   "type": "education",
-   "country": "US"
   },
   "c:goldman-sachs": {
    "name": "Goldman Sachs",
@@ -4018,12 +3833,7 @@
    "type": "education",
    "country": "US"
   },
-  "c:university-of-illinois": {
-   "name": "University of Illinois",
-   "type": "education",
-   "country": "US"
-  },
-  "c:albert-ludwigs-universit-t-freiburg": {
+  "c:albert-ludwigs-universitat-freiburg": {
    "name": "Albert-Ludwigs-Universität Freiburg",
    "type": "education",
    "country": "DE"
@@ -4033,7 +3843,7 @@
    "type": "education",
    "country": "DE"
   },
-  "c:universit-t-freiburg": {
+  "c:universitat-freiburg": {
    "name": "Universität Freiburg",
    "type": "education",
    "country": "DE"
@@ -4057,21 +3867,6 @@
    "name": "Brandeis University",
    "type": "education",
    "country": "US"
-  },
-  "c:montreal-institute-for-learning-algorithms": {
-   "name": "Montreal Institute for Learning Algorithms",
-   "type": "unknown",
-   "country": "CA"
-  },
-  "c:technische-universit-t-m-nchen": {
-   "name": "Technische Universität München",
-   "type": "education",
-   "country": "DE"
-  },
-  "c:technical-university-munich": {
-   "name": "Technical University Munich",
-   "type": "education",
-   "country": "DE"
   },
   "c:university-of-massachusetts-at-amherst": {
    "name": "University of Massachusetts at Amherst",
@@ -4158,7 +3953,7 @@
    "type": "education",
    "country": "CN"
   },
-  "c:cole-polytechnique-de-montr-al": {
+  "c:ecole-polytechnique-de-montreal": {
    "name": "École Polytechnique de Montréal",
    "type": "education",
    "country": "CA"
@@ -4188,11 +3983,6 @@
    "type": "unknown",
    "country": "FR"
   },
-  "c:ecole-polytechnique": {
-   "name": "Ecole polytechnique",
-   "type": "education",
-   "country": "US"
-  },
   "c:university-of-milan-bicocca": {
    "name": "University of Milan - Bicocca",
    "type": "education",
@@ -4218,12 +4008,12 @@
    "type": "unknown",
    "country": ""
   },
-  "c:eberhard-karls-universit-t-t-bingen": {
+  "c:eberhard-karls-universitat-tubingen": {
    "name": "Eberhard-Karls-Universität Tübingen",
    "type": "education",
    "country": "DE"
   },
-  "c:ellis-institute-t-bingen": {
+  "c:ellis-institute-tubingen": {
    "name": "ELLIS Institute Tübingen",
    "type": "unknown",
    "country": ""
@@ -4248,7 +4038,7 @@
    "type": "company",
    "country": ""
   },
-  "c:ruprecht-karls-universit-t-heidelberg": {
+  "c:ruprecht-karls-universitat-heidelberg": {
    "name": "Ruprecht-Karls-Universität Heidelberg",
    "type": "education",
    "country": "DE"
@@ -4273,17 +4063,17 @@
    "type": "education",
    "country": "US"
   },
-  "c:universit-paris-dauphine-psl": {
+  "c:universite-paris-dauphine-psl": {
    "name": "Université Paris-Dauphine - PSL",
    "type": "education",
    "country": ""
   },
-  "c:ecole-sup-rieure-de-physique-et-de-chimie-indust": {
+  "c:ecole-superieure-de-physique-et-de-chimie-indust": {
    "name": "Ecole Supérieure de Physique et de Chimie Industrielles",
    "type": "education",
    "country": "FR"
   },
-  "c:universit-paris-dauphine": {
+  "c:universite-paris-dauphine": {
    "name": "Université Paris-Dauphine",
    "type": "education",
    "country": "FR"
@@ -4353,7 +4143,7 @@
    "type": "unknown",
    "country": "ES"
   },
-  "c:universit-t-bern": {
+  "c:universitat-bern": {
    "name": "Universität Bern",
    "type": "education",
    "country": "CH"
@@ -4423,7 +4213,7 @@
    "type": "unknown",
    "country": ""
   },
-  "c:university-g-ttingen": {
+  "c:university-gottingen": {
    "name": "University Göttingen",
    "type": "education",
    "country": "DE"
@@ -4433,7 +4223,7 @@
    "type": "education",
    "country": "DE"
   },
-  "c:universit-t-stuttgart": {
+  "c:universitat-stuttgart": {
    "name": "Universität Stuttgart",
    "type": "education",
    "country": "DE"
@@ -4448,7 +4238,7 @@
    "type": "education",
    "country": "US"
   },
-  "c:the-university-of-queensland": {
+  "c:university-of-queensland": {
    "name": "The University of Queensland",
    "type": "education",
    "country": "AU"
@@ -4468,7 +4258,7 @@
    "type": "education",
    "country": "CN"
   },
-  "c:link-ping-university": {
+  "c:linkoping-university": {
    "name": "Linköping University",
    "type": "education",
    "country": "SE"
@@ -4508,11 +4298,6 @@
    "type": "education",
    "country": "US"
   },
-  "c:the-university-of-british-columbia": {
-   "name": "The University of British Columbia",
-   "type": "education",
-   "country": "CA"
-  },
   "c:cyberagent": {
    "name": "CyberAgent",
    "type": "unknown",
@@ -4537,11 +4322,6 @@
    "name": "Griffith University",
    "type": "education",
    "country": "AU"
-  },
-  "c:epfl-epf-lausanne": {
-   "name": "EPFL - EPF Lausanne",
-   "type": "education",
-   "country": "CH"
   },
   "c:istituto-italiano-di-tecnologia": {
    "name": "Istituto Italiano di Tecnologia",
@@ -4618,7 +4398,7 @@
    "type": "unknown",
    "country": "FR"
   },
-  "c:technical-university-of-applied-sciences-w-rzbur": {
+  "c:technical-university-of-applied-sciences-wurzbur": {
    "name": "Technical University of Applied Sciences Würzburg-Schweinfurt",
    "type": "education",
    "country": "DE"
@@ -4628,7 +4408,7 @@
    "type": "education",
    "country": "US"
   },
-  "c:max-planck-institute-t-bingen-ai-center": {
+  "c:max-planck-institute-tubingen-ai-center": {
    "name": "Max-Planck Institute & Tübingen AI Center",
    "type": "unknown",
    "country": "DE"
@@ -4693,7 +4473,7 @@
    "type": "company",
    "country": ""
   },
-  "c:sorbonne-universit-facult-des-sciences-paris-vi": {
+  "c:sorbonne-universite-faculte-des-sciences-paris-v": {
    "name": "Sorbonne Université - Faculté des Sciences (Paris VI)",
    "type": "education",
    "country": "FR"
@@ -4712,11 +4492,6 @@
    "name": "Shanghai University of Finance and Economics",
    "type": "education",
    "country": "CN"
-  },
-  "c:ludwig-maximilians-universit-t-m-nchen": {
-   "name": "Ludwig-Maximilians-Universität München",
-   "type": "education",
-   "country": "DE"
   },
   "c:fraunhofer-iosb": {
    "name": "Fraunhofer IOSB",
@@ -4743,11 +4518,6 @@
    "type": "education",
    "country": "CN"
   },
-  "c:university-of-illinois-chicago": {
-   "name": "University of Illinois Chicago",
-   "type": "education",
-   "country": "US"
-  },
   "c:institute-of-science-and-technology-austria-ista": {
    "name": "Institute of Science and Technology Austria(ISTA)",
    "type": "education",
@@ -4768,7 +4538,7 @@
    "type": "education",
    "country": "FR"
   },
-  "c:universit-de-toulouse": {
+  "c:universite-de-toulouse": {
    "name": "Université de Toulouse",
    "type": "education",
    "country": "FR"
@@ -4808,7 +4578,7 @@
    "type": "education",
    "country": "CN"
   },
-  "c:technische-universit-t-darmstadt": {
+  "c:technische-universitat-darmstadt": {
    "name": "Technische Universität Darmstadt",
    "type": "education",
    "country": "DE"
@@ -4823,7 +4593,7 @@
    "type": "company",
    "country": ""
   },
-  "c:ecole-normale-sup-rieure-ecole-normale-sup-rieur": {
+  "c:ecole-normale-superieure-ecole-normale-superieur": {
    "name": "Ecole Normale Supérieure, Ecole Normale Supérieure de Paris",
    "type": "education",
    "country": "FR"
@@ -4833,7 +4603,7 @@
    "type": "education",
    "country": "US"
   },
-  "c:rheinland-pf-lzische-technische-universit-t": {
+  "c:rheinland-pfalzische-technische-universitat": {
    "name": "Rheinland-Pfälzische Technische Universität",
    "type": "education",
    "country": "DE"
@@ -4843,7 +4613,7 @@
    "type": "unknown",
    "country": ""
   },
-  "c:universit-t-kaiserslautern": {
+  "c:universitat-kaiserslautern": {
    "name": "Universität Kaiserslautern",
    "type": "education",
    "country": "DE"
@@ -4953,11 +4723,6 @@
    "type": "nonprofit",
    "country": "CA"
   },
-  "c:hec-montr-al": {
-   "name": "HEC Montréal",
-   "type": "education",
-   "country": "CA"
-  },
   "c:flanders-make": {
    "name": "Flanders Make",
    "type": "nonprofit",
@@ -4983,7 +4748,7 @@
    "type": "education",
    "country": "BR"
   },
-  "c:universit-c-te-d-azur": {
+  "c:universite-cote-d-azur": {
    "name": "Université Côte d'Azur",
    "type": "education",
    "country": "FR"
@@ -5033,7 +4798,7 @@
    "type": "company",
    "country": "GB"
   },
-  "c:universidad-polit-cnica-de-madrid": {
+  "c:universidad-politecnica-de-madrid": {
    "name": "Universidad Politécnica de Madrid",
    "type": "education",
    "country": "ES"
@@ -5153,7 +4918,7 @@
    "type": "education",
    "country": "IT"
   },
-  "c:universit-grenoble-alpes": {
+  "c:universite-grenoble-alpes": {
    "name": "Université Grenoble Alpes",
    "type": "education",
    "country": "FR"
@@ -5193,7 +4958,7 @@
    "type": "unknown",
    "country": "DE"
   },
-  "c:georg-august-universit-t-g-ttingen": {
+  "c:georg-august-universitat-gottingen": {
    "name": "Georg-August Universität Göttingen",
    "type": "education",
    "country": "DE"
@@ -5328,11 +5093,6 @@
    "type": "unknown",
    "country": "DE"
   },
-  "c:the-university-of-warwick": {
-   "name": "The university of Warwick",
-   "type": "education",
-   "country": "GB"
-  },
   "c:secondmind-ltd": {
    "name": "Secondmind Ltd",
    "type": "company",
@@ -5373,7 +5133,7 @@
    "type": "company",
    "country": ""
   },
-  "c:mizuho-dl-financial-technology": {
+  "c:mizuhodl-financial-technology": {
    "name": "Mizuho–DL Financial Technology",
    "type": "unknown",
    "country": "JP"
@@ -5383,17 +5143,12 @@
    "type": "unknown",
    "country": ""
   },
-  "c:university-college-london-university-of-london": {
-   "name": "University College London, University of London",
-   "type": "education",
-   "country": "GB"
-  },
   "c:ecole-centrale-de-nantes": {
    "name": "Ecole Centrale de Nantes",
    "type": "education",
    "country": "FR"
   },
-  "c:the-education-university-of-hong-kong": {
+  "c:education-university-of-hong-kong": {
    "name": "The Education University of Hong Kong",
    "type": "education",
    "country": "HK"
@@ -5408,17 +5163,12 @@
    "type": "unknown",
    "country": ""
   },
-  "c:the-alan-turing-institute": {
-   "name": "The Alan Turing Institute",
-   "type": "education",
-   "country": "GB"
-  },
   "c:university-of-oslo": {
    "name": "University of Oslo",
    "type": "education",
    "country": "NO"
   },
-  "c:universit-de-neuch-tel": {
+  "c:universite-de-neuchatel": {
    "name": "Université de Neuchâtel",
    "type": "education",
    "country": "CH"
@@ -5453,7 +5203,7 @@
    "type": "education",
    "country": "CN"
   },
-  "c:the-swiss-ai-lab-idsia": {
+  "c:swiss-ai-lab-idsia": {
    "name": "The Swiss AI Lab IDSIA",
    "type": "unknown",
    "country": "CH"
@@ -5463,7 +5213,7 @@
    "type": "education",
    "country": "CA"
   },
-  "c:universite-laval-universit-laval": {
+  "c:universite-laval-universite-laval": {
    "name": "Universite Laval, Université Laval",
    "type": "education",
    "country": "CA"
@@ -5503,7 +5253,7 @@
    "type": "unknown",
    "country": ""
   },
-  "c:universit-t-des-saarlandes": {
+  "c:universitat-des-saarlandes": {
    "name": "Universität des Saarlandes",
    "type": "education",
    "country": "DE"
@@ -5538,7 +5288,7 @@
    "type": "company",
    "country": ""
   },
-  "c:universidad-del-pa-s-vasco": {
+  "c:universidad-del-pais-vasco": {
    "name": "Universidad del País Vasco",
    "type": "unknown",
    "country": ""
@@ -5613,7 +5363,7 @@
    "type": "company",
    "country": ""
   },
-  "c:universit-t-vienna": {
+  "c:universitat-vienna": {
    "name": "Universität Vienna",
    "type": "education",
    "country": "AT"
@@ -5668,17 +5418,17 @@
    "type": "education",
    "country": "US"
   },
-  "c:universit-t-potsdam": {
+  "c:universitat-potsdam": {
    "name": "Universität Potsdam",
    "type": "education",
    "country": "DE"
   },
-  "c:technische-universit-t-dresden": {
+  "c:technische-universitat-dresden": {
    "name": "Technische Universität Dresden",
    "type": "education",
    "country": "DE"
   },
-  "c:ecole-normale-sup-rieure-de-paris": {
+  "c:ecole-normale-superieure-de-paris": {
    "name": "Ecole Normale Supérieure de Paris",
    "type": "education",
    "country": "FR"
@@ -5713,11 +5463,6 @@
    "type": "education",
    "country": "GB"
   },
-  "c:weizmann-institute": {
-   "name": "Weizmann Institute",
-   "type": "education",
-   "country": "IL"
-  },
   "c:tu-wien-vienna-university-of-technology": {
    "name": "TU Wien Vienna University of Technology",
    "type": "education",
@@ -5728,7 +5473,7 @@
    "type": "nonprofit",
    "country": "DE"
   },
-  "c:j-lich-supercomputing-centre": {
+  "c:julich-supercomputing-centre": {
    "name": "Jülich Supercomputing Centre",
    "type": "government",
    "country": "DE"
@@ -5738,7 +5483,7 @@
    "type": "unknown",
    "country": "DE"
   },
-  "c:the-hessian-center-for-ai": {
+  "c:hessian-center-for-ai": {
    "name": "The Hessian Center for AI",
    "type": "company",
    "country": ""
@@ -5823,12 +5568,12 @@
    "type": "unknown",
    "country": "GB"
   },
-  "c:freie-universit-t-berlin": {
+  "c:freie-universitat-berlin": {
    "name": "Freie Universität Berlin",
    "type": "education",
    "country": "DE"
   },
-  "c:technische-universit-t-wien": {
+  "c:technische-universitat-wien": {
    "name": "Technische Universität Wien",
    "type": "education",
    "country": "AT"
@@ -5843,22 +5588,22 @@
    "type": "education",
    "country": "FR"
   },
-  "c:universit-t-mannheim": {
+  "c:universitat-mannheim": {
    "name": "Universität Mannheim",
    "type": "education",
    "country": "DE"
   },
-  "c:universit-jean-monnet": {
+  "c:universite-jean-monnet": {
    "name": "Université Jean Monnet",
    "type": "education",
    "country": "FR"
   },
-  "c:universit-gustave-eiffel": {
+  "c:universite-gustave-eiffel": {
    "name": "Université Gustave Eiffel",
    "type": "education",
    "country": "FR"
   },
-  "c:universit-paris-saclay": {
+  "c:universite-paris-saclay": {
    "name": "Université Paris-Saclay",
    "type": "education",
    "country": "FR"
@@ -6300,10 +6045,10 @@
     "Jonathan Graehl"
    ],
    "fi": [
-    "c:usc-information-sciences-institute"
+    "c:university-of-southern-california"
    ],
    "ci": [
-    "c:usc-information-sciences-institute"
+    "c:university-of-southern-california"
    ]
   },
   {
@@ -6703,10 +6448,10 @@
     "Yu Su"
    ],
    "fi": [
-    "c:the-ohio-state-university"
+    "c:ohio-state-university"
    ],
    "ci": [
-    "c:the-ohio-state-university"
+    "c:ohio-state-university"
    ]
   },
   {
@@ -6857,10 +6602,10 @@
     "Ryan Cotterell"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -6876,10 +6621,10 @@
     "Kevin Knight"
    ],
    "fi": [
-    "c:usc-information-sciences-institute"
+    "c:university-of-southern-california"
    ],
    "ci": [
-    "c:usc-information-sciences-institute"
+    "c:university-of-southern-california"
    ]
   },
   {
@@ -6895,10 +6640,10 @@
     "Ryan Cotterell"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -7300,7 +7045,7 @@
     "Robert Sim"
    ],
    "fi": [
-    "c:the-ohio-state-university"
+    "c:ohio-state-university"
    ],
    "ci": [
     "c:microsoft"
@@ -7376,10 +7121,10 @@
     "Huan Sun"
    ],
    "fi": [
-    "c:the-ohio-state-university"
+    "c:ohio-state-university"
    ],
    "ci": [
-    "c:the-ohio-state-university"
+    "c:ohio-state-university"
    ]
   },
   {
@@ -7549,8 +7294,8 @@
    ],
    "fi": [
     "c:carnegie-mellon-university",
-    "c:instituto-superior-t-cnico",
-    "c:instituto-de-telecomunica-es"
+    "c:instituto-superior-tecnico",
+    "c:instituto-de-telecomunicacoes"
    ],
    "ci": [
     "c:carnegie-mellon-university"
@@ -7627,10 +7372,10 @@
     "Sara Hooker"
    ],
    "fi": [
-    "c:cohere-for-ai"
+    "c:cohere"
    ],
    "ci": [
-    "c:cohere-for-ai"
+    "c:cohere"
    ]
   },
   {
@@ -7687,7 +7432,7 @@
     "c:university-of-cambridge"
    ],
    "ci": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -8008,10 +7753,10 @@
     "Iryna Gurevych"
    ],
    "fi": [
-    "c:technical-university-of-darmstadt"
+    "c:tu-darmstadt"
    ],
    "ci": [
-    "c:technical-university-of-darmstadt"
+    "c:tu-darmstadt"
    ]
   },
   {
@@ -8358,7 +8103,7 @@
     "Rahul Nair"
    ],
    "fi": [
-    "c:technical-university-of-darmstadt"
+    "c:tu-darmstadt"
    ],
    "ci": [
     "c:apple"
@@ -8998,10 +8743,10 @@
     "Marcos Treviso"
    ],
    "fi": [
-    "c:instituto-de-telecomunica-es"
+    "c:instituto-de-telecomunicacoes"
    ],
    "ci": [
-    "c:instituto-de-telecomunica-es"
+    "c:instituto-de-telecomunicacoes"
    ]
   },
   {
@@ -9037,7 +8782,7 @@
    ],
    "fi": [
     "c:university-of-toronto",
-    "c:technical-university-of-darmstadt"
+    "c:tu-darmstadt"
    ],
    "ci": [
     "c:microsoft"
@@ -9599,11 +9344,11 @@
     "Chunhua Shen"
    ],
    "fi": [
-    "c:the-university-of-adelaide"
+    "c:university-of-adelaide"
    ],
    "ci": [
     "c:monash-university",
-    "c:the-university-of-adelaide"
+    "c:university-of-adelaide"
    ]
   },
   {
@@ -9929,10 +9674,10 @@
     "Grégory Rogez"
    ],
    "fi": [
-    "c:naver-labs-europe"
+    "c:naver"
    ],
    "ci": [
-    "c:naver-labs-europe"
+    "c:naver"
    ]
   },
   {
@@ -10104,10 +9849,10 @@
     "Radu Timofte"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -10256,10 +10001,10 @@
     "Luc Van Gool"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -10527,7 +10272,7 @@
     "Jianbing Shen"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
     "c:beijing-institute-of-technology",
@@ -10723,11 +10468,11 @@
    ],
    "fi": [
     "c:max-planck-institute-for-intelligent-systems",
-    "c:university-of-t-bingen"
+    "c:university-of-tubingen"
    ],
    "ci": [
     "c:max-planck-institute-for-intelligent-systems",
-    "c:university-of-t-bingen"
+    "c:university-of-tubingen"
    ]
   },
   {
@@ -10934,12 +10679,12 @@
     "Gerard Pons-Moll"
    ],
    "fi": [
-    "c:university-of-t-bingen",
+    "c:university-of-tubingen",
     "c:max-planck-institute-for-informatics"
    ],
    "ci": [
     "c:max-planck-institute-for-informatics",
-    "c:university-of-t-bingen"
+    "c:university-of-tubingen"
    ]
   },
   {
@@ -11134,10 +10879,10 @@
     "Larry Davis"
    ],
    "fi": [
-    "c:university-of-maryland-college-park"
+    "c:university-of-maryland"
    ],
    "ci": [
-    "c:university-of-maryland-college-park"
+    "c:university-of-maryland"
    ]
   },
   {
@@ -11210,10 +10955,10 @@
     "Radu Timofte"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -11769,10 +11514,10 @@
     "Konrad Schindler"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -11807,10 +11552,10 @@
     "Marc Pollefeys"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:eth-z-rich",
+    "c:eth-zurich",
     "c:microsoft"
    ]
   },
@@ -11909,7 +11654,7 @@
    ],
    "ci": [
     "c:carnegie-mellon-university",
-    "c:the-university-of-adelaide"
+    "c:university-of-adelaide"
    ]
   },
   {
@@ -11986,7 +11731,7 @@
     "c:zhejiang-university"
    ],
    "ci": [
-    "c:eth-z"
+    "c:eth-zu"
    ]
   },
   {
@@ -12175,10 +11920,10 @@
     "Ian Reid"
    ],
    "fi": [
-    "c:the-university-of-adelaide"
+    "c:university-of-adelaide"
    ],
    "ci": [
-    "c:the-university-of-adelaide"
+    "c:university-of-adelaide"
    ]
   },
   {
@@ -12270,10 +12015,10 @@
     "Marc Pollefeys"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:eth-z-rich",
+    "c:eth-zurich",
     "c:microsoft"
    ]
   },
@@ -12466,11 +12211,11 @@
    ],
    "fi": [
     "c:inria",
-    "c:cole-normale-sup-rieure"
+    "c:ecole-normale-superieure"
    ],
    "ci": [
-    "c:cole-normale-sup-rieure",
     "c:czech-technical-university-in-prague",
+    "c:ecole-normale-superieure",
     "c:inria"
    ]
   },
@@ -12563,7 +12308,7 @@
     "Prem Natarajan"
    ],
    "fi": [
-    "c:usc-information-sciences-institute"
+    "c:university-of-southern-california"
    ],
    "ci": [
     "c:amazon-alexa-natural-understanding"
@@ -12724,10 +12469,10 @@
     "Zongben Xu"
    ],
    "fi": [
-    "c:an-jiaotong-university"
+    "c:xi-an-jiaotong-university"
    ],
    "ci": [
-    "c:an-jiaotong-university"
+    "c:xi-an-jiaotong-university"
    ]
   },
   {
@@ -12973,7 +12718,7 @@
     "Tolga Birdal"
    ],
    "fi": [
-    "c:eth-z-rich",
+    "c:eth-zurich",
     "c:stanford-university"
    ],
    "ci": [
@@ -13188,7 +12933,7 @@
     "c:college-of-software"
    ],
    "ci": [
-    "c:the-university-of-sydney"
+    "c:university-of-sydney"
    ]
   },
   {
@@ -13435,7 +13180,7 @@
     "c:peking-university"
    ],
    "ci": [
-    "c:huawei-noah"
+    "c:huawei"
    ]
   },
   {
@@ -13774,10 +13519,10 @@
     "Zhen Li"
    ],
    "fi": [
-    "c:the-chinese-university-of-hong-kong-shenzhen"
+    "c:chinese-university-of-hong-kong-shenzhen"
    ],
    "ci": [
-    "c:the-chinese-university-of-hong-kong-shenzhen"
+    "c:chinese-university-of-hong-kong-shenzhen"
    ]
   },
   {
@@ -14154,10 +13899,10 @@
     "Marc Pollefeys"
    ],
    "fi": [
-    "c:eth-z"
+    "c:eth-zu"
    ],
    "ci": [
-    "c:eth-z"
+    "c:eth-zu"
    ]
   },
   {
@@ -14629,10 +14374,10 @@
     "Lei Zhang"
    ],
    "fi": [
-    "c:the-hongkong-polytechnic-university"
+    "c:hongkong-polytechnic-university"
    ],
    "ci": [
-    "c:the-hongkong-polytechnic-university"
+    "c:hongkong-polytechnic-university"
    ]
   },
   {
@@ -14705,7 +14450,7 @@
     "Hanspeter Pfister"
    ],
    "fi": [
-    "c:an-jiaotong-university"
+    "c:xi-an-jiaotong-university"
    ],
    "ci": [
     "c:harvard-university"
@@ -14724,10 +14469,10 @@
     "Abhinav Shrivastava"
    ],
    "fi": [
-    "c:university-of-maryland-college-park"
+    "c:university-of-maryland"
    ],
    "ci": [
-    "c:university-of-maryland-college-park"
+    "c:university-of-maryland"
    ]
   },
   {
@@ -14803,7 +14548,7 @@
     "c:tsinghua-university"
    ],
    "ci": [
-    "c:huawei-noah"
+    "c:huawei"
    ]
   },
   {
@@ -14819,10 +14564,10 @@
     "Michal Irani"
    ],
    "fi": [
-    "c:the-weizmann-institute-of-science"
+    "c:weizmann-institute-of-science"
    ],
    "ci": [
-    "c:the-weizmann-institute-of-science"
+    "c:weizmann-institute-of-science"
    ]
   },
   {
@@ -15337,7 +15082,7 @@
     "c:yerevann"
    ],
    "ci": [
-    "c:usc-information-sciences-institute"
+    "c:university-of-southern-california"
    ]
   },
   {
@@ -15375,7 +15120,7 @@
     "c:chinese-academy-of-sciences"
    ],
    "ci": [
-    "c:the-university-of-sydney"
+    "c:university-of-sydney"
    ]
   },
   {
@@ -15828,10 +15573,10 @@
     "Bjorn Ommer"
    ],
    "fi": [
-    "c:ludwig-maximilian-university-of-munich"
+    "c:lmu-munich"
    ],
    "ci": [
-    "c:ludwig-maximilian-university-of-munich"
+    "c:lmu-munich"
    ]
   },
   {
@@ -15923,10 +15668,10 @@
     "Otmar Hilliges"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -16344,7 +16089,7 @@
     "c:computer-vision-center"
    ],
    "ci": [
-    "c:aws-ai-labs"
+    "c:amazon"
    ]
   },
   {
@@ -16550,10 +16295,10 @@
     "Xueming Qian"
    ],
    "fi": [
-    "c:an-jiaotong-university"
+    "c:xi-an-jiaotong-university"
    ],
    "ci": [
-    "c:an-jiaotong-university"
+    "c:xi-an-jiaotong-university"
    ]
   },
   {
@@ -16626,7 +16371,7 @@
     "Tomas Pajdla"
    ],
    "fi": [
-    "c:eth-z"
+    "c:eth-zu"
    ],
    "ci": [
     "c:czech-technical-university-in-prague"
@@ -16683,10 +16428,10 @@
     "Luc Van Gool"
    ],
    "fi": [
-    "c:eth-z"
+    "c:eth-zu"
    ],
    "ci": [
-    "c:eth-z"
+    "c:eth-zu"
    ]
   },
   {
@@ -16873,10 +16618,10 @@
     "Ross Girshick"
    ],
    "fi": [
-    "c:facebook-ai-research-fair"
+    "c:meta"
    ],
    "ci": [
-    "c:facebook-ai-research-fair"
+    "c:meta"
    ]
   },
   {
@@ -16895,7 +16640,7 @@
     "c:university-of-washington"
    ],
    "ci": [
-    "c:aws-ai-labs"
+    "c:amazon"
    ]
   },
   {
@@ -17047,7 +16792,7 @@
     "c:ucla"
    ],
    "ci": [
-    "c:aws-ai-labs"
+    "c:amazon"
    ]
   },
   {
@@ -17500,10 +17245,10 @@
     "Baochun Li"
    ],
    "fi": [
-    "c:the-hong-kong-polytechnic-university"
+    "c:hong-kong-polytechnic-university"
    ],
    "ci": [
-    "c:the-hong-kong-polytechnic-university"
+    "c:hong-kong-polytechnic-university"
    ]
   },
   {
@@ -17576,7 +17321,7 @@
     "Luca Bertinetto"
    ],
    "fi": [
-    "c:"
+    "c:e"
    ],
    "ci": [
     "c:fiveai"
@@ -17595,10 +17340,10 @@
     "Guy Wolf"
    ],
    "fi": [
-    "c:universit-de-montr-al"
+    "c:universite-de-montreal"
    ],
    "ci": [
-    "c:universit-de-montr-al"
+    "c:universite-de-montreal"
    ]
   },
   {
@@ -17690,10 +17435,10 @@
     "Alexander C. Berg"
    ],
    "fi": [
-    "c:facebook-ai-research-fair"
+    "c:meta"
    ],
    "ci": [
-    "c:facebook-ai-research-fair"
+    "c:meta"
    ]
   },
   {
@@ -17918,10 +17663,10 @@
     "Pan Pan"
    ],
    "fi": [
-    "c:damo-academy"
+    "c:alibaba"
    ],
    "ci": [
-    "c:damo-academy"
+    "c:alibaba"
    ]
   },
   {
@@ -17975,7 +17720,7 @@
     "Dacheng Tao"
    ],
    "fi": [
-    "c:the-university-of-sydney"
+    "c:university-of-sydney"
    ],
    "ci": [
     "c:jd-explore-academy"
@@ -18089,10 +17834,10 @@
     "Luc Van Goo"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -18146,7 +17891,7 @@
     "Bo Dai"
    ],
    "fi": [
-    "c:the-chinese-university-of-hongkong"
+    "c:chinese-university-of-hongkong"
    ],
    "ci": [
     "c:shanghai-ai-laboratory"
@@ -18393,10 +18138,10 @@
     "Luc Van Gool"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -18412,7 +18157,7 @@
     "Jue Wang"
    ],
    "fi": [
-    "c:the-university-of-adelaide"
+    "c:university-of-adelaide"
    ],
    "ci": [
     "c:tencent"
@@ -18662,7 +18407,7 @@
     "c:unc-chapel-hill"
    ],
    "ci": [
-    "c:aws-ai-labs"
+    "c:amazon"
    ]
   },
   {
@@ -19153,10 +18898,10 @@
     "Dahua Lin"
    ],
    "fi": [
-    "c:the-chinese-university-of-hongkong"
+    "c:chinese-university-of-hongkong"
    ],
    "ci": [
-    "c:the-chinese-university-of-hongkong"
+    "c:chinese-university-of-hongkong"
    ]
   },
   {
@@ -19172,10 +18917,10 @@
     "Nanning Zheng"
    ],
    "fi": [
-    "c:an-jiaotong-university"
+    "c:xi-an-jiaotong-university"
    ],
    "ci": [
-    "c:an-jiaotong-university"
+    "c:xi-an-jiaotong-university"
    ]
   },
   {
@@ -19210,10 +18955,10 @@
     "Cordelia Schmid"
    ],
    "fi": [
-    "c:inria-paris"
+    "c:inria"
    ],
    "ci": [
-    "c:inria-paris"
+    "c:inria"
    ]
   },
   {
@@ -19232,7 +18977,7 @@
     "c:university-of-amsterdam"
    ],
    "ci": [
-    "c:aws-ai-labs"
+    "c:amazon"
    ]
   },
   {
@@ -19327,7 +19072,7 @@
     "c:harbin-institute-of-technology-shenzhen"
    ],
    "ci": [
-    "c:the-university-of-sydney"
+    "c:university-of-sydney"
    ]
   },
   {
@@ -19476,10 +19221,10 @@
     "Katherine L. Bouman"
    ],
    "fi": [
-    "c:california-institute-of-technology"
+    "c:caltech"
    ],
    "ci": [
-    "c:california-institute-of-technology"
+    "c:caltech"
    ]
   },
   {
@@ -19536,7 +19281,7 @@
     "c:university-of-california-santa-barbara"
    ],
    "ci": [
-    "c:aws-ai-labs"
+    "c:amazon"
    ]
   },
   {
@@ -19574,7 +19319,7 @@
     "c:fudan-university"
    ],
    "ci": [
-    "c:the-university-of-sydney"
+    "c:university-of-sydney"
    ]
   },
   {
@@ -19590,7 +19335,7 @@
     "Bernard Ghanem"
    ],
    "fi": [
-    "c:pontificia-universidad-cat"
+    "c:pontificia-universidad-cato"
    ],
    "ci": [
     "c:king-abdullah-university-of-science-and-technolo"
@@ -19819,10 +19564,10 @@
     "Aniruddha Kembhavi"
    ],
    "fi": [
-    "c:prior-allen-institute-for-ai"
+    "c:allen-institute-for-ai"
    ],
    "ci": [
-    "c:prior-allen-institute-for-ai"
+    "c:allen-institute-for-ai"
    ]
   },
   {
@@ -19990,10 +19735,10 @@
     "Yu Su"
    ],
    "fi": [
-    "c:the-ohio-state-university"
+    "c:ohio-state-university"
    ],
    "ci": [
-    "c:the-ohio-state-university"
+    "c:ohio-state-university"
    ]
   },
   {
@@ -20028,10 +19773,10 @@
     "Jinman Kim"
    ],
    "fi": [
-    "c:the-university-of-sydney"
+    "c:university-of-sydney"
    ],
    "ci": [
-    "c:the-university-of-sydney"
+    "c:university-of-sydney"
    ]
   },
   {
@@ -20161,10 +19906,10 @@
     "Seunghyun Park"
    ],
    "fi": [
-    "c:naver-cloud-ai"
+    "c:naver"
    ],
    "ci": [
-    "c:naver-cloud-ai"
+    "c:naver"
    ]
   },
   {
@@ -20219,10 +19964,10 @@
     "Siyu Tang"
    ],
    "fi": [
-    "c:eth-z"
+    "c:eth-zu"
    ],
    "ci": [
-    "c:eth-z"
+    "c:eth-zu"
    ]
   },
   {
@@ -20488,7 +20233,7 @@
     "c:peking-university"
    ],
    "ci": [
-    "c:huawei-noah"
+    "c:huawei"
    ]
   },
   {
@@ -20754,7 +20499,7 @@
     "c:college-of-computer-science-and-software-enginee"
    ],
    "ci": [
-    "c:the-hong-kong-polytechnic-university"
+    "c:hong-kong-polytechnic-university"
    ]
   },
   {
@@ -20789,10 +20534,10 @@
     "Andreas Geiger"
    ],
    "fi": [
-    "c:university-of-t"
+    "c:university-of-tu"
    ],
    "ci": [
-    "c:university-of-t"
+    "c:university-of-tu"
    ]
   },
   {
@@ -20846,10 +20591,10 @@
     "Jie Song"
    ],
    "fi": [
-    "c:eth-z"
+    "c:eth-zu"
    ],
    "ci": [
-    "c:eth-z"
+    "c:eth-zu"
    ]
   },
   {
@@ -21074,10 +20819,10 @@
     "Konrad Schindler"
    ],
    "fi": [
-    "c:eth-z"
+    "c:eth-zu"
    ],
    "ci": [
-    "c:eth-z"
+    "c:eth-zu"
    ]
   },
   {
@@ -21169,7 +20914,7 @@
     "Federica Bogo"
    ],
    "fi": [
-    "c:eth-z"
+    "c:eth-zu"
    ],
    "ci": [
     "c:meta"
@@ -21226,10 +20971,10 @@
     "Francis Engelmann"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -21245,10 +20990,10 @@
     "Jia-Bin Huang"
    ],
    "fi": [
-    "c:university-of-maryland-college-park"
+    "c:university-of-maryland"
    ],
    "ci": [
-    "c:university-of-maryland-college-park"
+    "c:university-of-maryland"
    ]
   },
   {
@@ -21416,10 +21161,10 @@
     "Lin Wang"
    ],
    "fi": [
-    "c:hkust-gz"
+    "c:hkust-guangzhou"
    ],
    "ci": [
-    "c:hkust-gz"
+    "c:hkust-guangzhou"
    ]
   },
   {
@@ -21587,10 +21332,10 @@
     "He Wang"
    ],
    "fi": [
-    "c:university-college"
+    "c:university-college-london"
    ],
    "ci": [
-    "c:university-college"
+    "c:university-college-london"
    ]
   },
   {
@@ -21967,10 +21712,10 @@
     "Piotr Dudek"
    ],
    "fi": [
-    "c:the-university-of-manchester"
+    "c:university-of-manchester"
    ],
    "ci": [
-    "c:the-university-of-manchester"
+    "c:university-of-manchester"
    ]
   },
   {
@@ -22404,7 +22149,7 @@
     "Yang Song"
    ],
    "fi": [
-    "c:california-institute-of-technology"
+    "c:caltech"
    ],
    "ci": [
     "c:openai"
@@ -22844,7 +22589,7 @@
     "c:national-engineering-research-center-for-visual-"
    ],
    "ci": [
-    "c:university-of-illinois-at-chicago"
+    "c:university-of-illinois-chicago"
    ]
   },
   {
@@ -23012,7 +22757,7 @@
     "Stan Birchfield"
    ],
    "fi": [
-    "c:the-ohio-state-university"
+    "c:ohio-state-university"
    ],
    "ci": [
     "c:nvidia"
@@ -23069,10 +22814,10 @@
     "Zhi Wang"
    ],
    "fi": [
-    "c:an-jiaotong-university"
+    "c:xi-an-jiaotong-university"
    ],
    "ci": [
-    "c:an-jiaotong-university"
+    "c:xi-an-jiaotong-university"
    ]
   },
   {
@@ -23164,7 +22909,7 @@
     "Andrii Zadaianchuk"
    ],
    "fi": [
-    "c:university-of-t"
+    "c:university-of-tu"
    ],
    "ci": [
     "c:university-of-amsterdam"
@@ -23430,10 +23175,10 @@
     "Andreas Geiger"
    ],
    "fi": [
-    "c:university-of-t-bingen"
+    "c:university-of-tubingen"
    ],
    "ci": [
-    "c:university-of-t-bingen"
+    "c:university-of-tubingen"
    ]
   },
   {
@@ -23449,10 +23194,10 @@
     "Fangxin Wang"
    ],
    "fi": [
-    "c:the-chinese-university-of-hong-kong-shenzhen"
+    "c:chinese-university-of-hong-kong-shenzhen"
    ],
    "ci": [
-    "c:the-chinese-university-of-hong-kong-shenzhen"
+    "c:chinese-university-of-hong-kong-shenzhen"
    ]
   },
   {
@@ -23507,11 +23252,11 @@
     "Lei Zhang"
    ],
    "fi": [
-    "c:the-hong-kong-polytechnic-university",
+    "c:hong-kong-polytechnic-university",
     "c:eastern-institute-of-technology-ningbo"
    ],
    "ci": [
-    "c:the-hong-kong-polytechnic-university"
+    "c:hong-kong-polytechnic-university"
    ]
   },
   {
@@ -23700,10 +23445,10 @@
     "Daisuke Iwai"
    ],
    "fi": [
-    "c:the-university-of-osaka"
+    "c:university-of-osaka"
    ],
    "ci": [
-    "c:the-university-of-osaka"
+    "c:university-of-osaka"
    ]
   },
   {
@@ -23724,7 +23469,7 @@
     "c:ihealth"
    ],
    "ci": [
-    "c:king-abdullah-university-of-science-and-technolo"
+    "c:kaust"
    ]
   },
   {
@@ -24050,11 +23795,11 @@
    ],
    "fi": [
     "c:cnrs",
-    "c:cole-normale-sup-rieure-de-lyon"
+    "c:ecole-normale-superieure-de-lyon"
    ],
    "ci": [
     "c:cnrs",
-    "c:cole-normale-sup-rieure-de-lyon"
+    "c:ecole-normale-superieure-de-lyon"
    ]
   },
   {
@@ -24127,10 +23872,10 @@
     "Maks Ovsjanikov"
    ],
    "fi": [
-    "c:cole-polytechnique"
+    "c:ecole-polytechnique"
    ],
    "ci": [
-    "c:cole-polytechnique"
+    "c:ecole-polytechnique"
    ]
   },
   {
@@ -24150,7 +23895,7 @@
     "c:munich-center-for-machine-learning"
    ],
    "ci": [
-    "c:t-l-com-paris"
+    "c:telecom-paris"
    ]
   },
   {
@@ -24349,7 +24094,7 @@
     "c:czech-technical-university-in-prague"
    ],
    "ci": [
-    "c:eth-z-rich",
+    "c:eth-zurich",
     "c:hun-ren-sztaki"
    ]
   },
@@ -24405,12 +24150,12 @@
    ],
    "fi": [
     "c:politecnico-di-torino",
-    "c:technical-university-of-darmstadt"
+    "c:tu-darmstadt"
    ],
    "ci": [
     "c:eliza",
     "c:hessian-ai",
-    "c:technical-university-of-darmstadt"
+    "c:tu-darmstadt"
    ]
   },
   {
@@ -24617,10 +24362,10 @@
     "Vincent Lepetit"
    ],
    "fi": [
-    "c:cole-nationale-des-ponts-et-chauss-es"
+    "c:ecole-nationale-des-ponts-et-chaussees"
    ],
    "ci": [
-    "c:cole-nationale-des-ponts-et-chauss-es"
+    "c:ecole-nationale-des-ponts-et-chaussees"
    ]
   },
   {
@@ -24754,7 +24499,7 @@
     "Andrea Tagliasacchi"
    ],
    "fi": [
-    "c:university-of-li-ge",
+    "c:university-of-liege",
     "c:simon-fraser-university"
    ],
    "ci": [
@@ -24815,10 +24560,10 @@
     "Changhao Chen"
    ],
    "fi": [
-    "c:the-hong-kong-university-of-science-and-technolo"
+    "c:hkust-guangzhou"
    ],
    "ci": [
-    "c:the-hong-kong-university-of-science-and-technolo"
+    "c:hkust-guangzhou"
    ]
   },
   {
@@ -25674,10 +25419,10 @@
     "Alexandre Alahi"
    ],
    "fi": [
-    "c:cole-polytechnique-f-d-rale-de-lausanne"
+    "c:epfl"
    ],
    "ci": [
-    "c:cole-polytechnique-f-d-rale-de-lausanne"
+    "c:epfl"
    ]
   },
   {
@@ -26601,12 +26346,12 @@
     "Gerard Pons-Moll"
    ],
    "fi": [
-    "c:university-of-t-bingen",
+    "c:university-of-tubingen",
     "c:max-planck-institute-for-informatics"
    ],
    "ci": [
     "c:max-planck-institute-for-informatics",
-    "c:university-of-t-bingen"
+    "c:university-of-tubingen"
    ]
   },
   {
@@ -26720,10 +26465,10 @@
     "Gitta Kutyniok"
    ],
    "fi": [
-    "c:ludwig-maximilian-university-of-munich"
+    "c:lmu-munich"
    ],
    "ci": [
-    "c:ludwig-maximilian-university-of-munich",
+    "c:lmu-munich",
     "c:university-of-troms"
    ]
   },
@@ -27128,10 +26873,10 @@
    ],
    "fi": [
     "c:zhejiang-university",
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:eth-z-rich",
+    "c:eth-zurich",
     "c:ku-leuven"
    ]
   },
@@ -27499,10 +27244,10 @@
     "Maks Ovsjanikov"
    ],
    "fi": [
-    "c:cole-polytechnique"
+    "c:ecole-polytechnique"
    ],
    "ci": [
-    "c:cole-polytechnique"
+    "c:ecole-polytechnique"
    ]
   },
   {
@@ -27615,12 +27360,12 @@
    ],
    "fi": [
     "c:mercedes-benz",
-    "c:university-of-t-bingen",
+    "c:university-of-tubingen",
     "c:max-planck-institute-for-intelligent-systems"
    ],
    "ci": [
     "c:max-planck-institute-for-intelligent-systems",
-    "c:university-of-t-bingen"
+    "c:university-of-tubingen"
    ]
   },
   {
@@ -27889,7 +27634,7 @@
     "Shu Kong"
    ],
    "fi": [
-    "c:university-of-maryland-college-park"
+    "c:university-of-maryland"
    ],
    "ci": [
     "c:carnegie-mellon-university",
@@ -28101,10 +27846,10 @@
     "Luc Van Gool"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:eth-z-rich",
+    "c:eth-zurich",
     "c:ku-leuven"
    ]
   },
@@ -28353,12 +28098,12 @@
     "Gerard Pons-Moll"
    ],
    "fi": [
-    "c:university-of-t-bingen",
+    "c:university-of-tubingen",
     "c:max-planck-institute-for-informatics"
    ],
    "ci": [
     "c:max-planck-institute-for-informatics",
-    "c:university-of-t-bingen"
+    "c:university-of-tubingen"
    ]
   },
   {
@@ -28597,11 +28342,11 @@
    ],
    "fi": [
     "c:keio-university",
-    "c:technische-universit-t-berlin"
+    "c:technische-universitat-berlin"
    ],
    "ci": [
     "c:einstein-center-digital-future-and-scioi-excelle",
-    "c:technische-universit-t-berlin"
+    "c:technische-universitat-berlin"
    ]
   },
   {
@@ -28925,11 +28670,11 @@
     "Gül Varol"
    ],
    "fi": [
-    "c:cole-des-ponts",
+    "c:ecole-des-ponts",
     "c:max-planck-institute-for-intelligent-systems"
    ],
    "ci": [
-    "c:cole-des-ponts"
+    "c:ecole-des-ponts"
    ]
   },
   {
@@ -28945,11 +28690,11 @@
     "Xiaoguang Han"
    ],
    "fi": [
-    "c:the-chinese-university-of-hong-kong-shenzhen"
+    "c:chinese-university-of-hong-kong-shenzhen"
    ],
    "ci": [
-    "c:the-chinese-university-of-hong-kong-shenzhen",
-    "c:the-future-network-of-intelligence-institute-cuh"
+    "c:chinese-university-of-hong-kong-shenzhen",
+    "c:future-network-of-intelligence-institute-cuhk-sh"
    ]
   },
   {
@@ -29337,7 +29082,7 @@
    ],
    "fi": [
     "c:nvidia",
-    "c:the-hebrew-university-of-jerusalem"
+    "c:hebrew-university-of-jerusalem"
    ],
    "ci": [
     "c:nvidia"
@@ -29822,7 +29567,7 @@
     "c:south-china-university-of-technology"
    ],
    "ci": [
-    "c:the-chinese-university-of-hong-kong-shenzhen"
+    "c:chinese-university-of-hong-kong-shenzhen"
    ]
   },
   {
@@ -30172,8 +29917,7 @@
     "c:hkust"
    ],
    "ci": [
-    "c:hkust",
-    "c:hkust-shenzhen-hong-kong-collaborative-innovatio"
+    "c:hkust"
    ]
   },
   {
@@ -30441,7 +30185,7 @@
    ],
    "fi": [
     "c:university-of-oxford",
-    "c:pi-atafarms-ai"
+    "c:pinatafarms-ai"
    ],
    "ci": [
     "c:university-of-oxford"
@@ -30733,11 +30477,11 @@
    ],
    "fi": [
     "c:ku-leuven",
-    "c:the-hong-kong-polytechnic-university",
-    "c:the-university-of-melbourne"
+    "c:hong-kong-polytechnic-university",
+    "c:university-of-melbourne"
    ],
    "ci": [
-    "c:the-hong-kong-polytechnic-university"
+    "c:hong-kong-polytechnic-university"
    ]
   },
   {
@@ -30772,11 +30516,11 @@
     "Chang Wen Chen"
    ],
    "fi": [
-    "c:the-hong-kong-polytechnic-university",
+    "c:hong-kong-polytechnic-university",
     "c:centre-for-artificial-intelligence-and-robotics-"
    ],
    "ci": [
-    "c:the-hong-kong-polytechnic-university"
+    "c:hong-kong-polytechnic-university"
    ]
   },
   {
@@ -30990,10 +30734,10 @@
     "Vincent Lepetit"
    ],
    "fi": [
-    "c:cole-des-ponts-paristech"
+    "c:ecole-des-ponts-paristech"
    ],
    "ci": [
-    "c:cole-des-ponts-paristech"
+    "c:ecole-des-ponts-paristech"
    ]
   },
   {
@@ -31047,10 +30791,10 @@
     "Rongjun Qin"
    ],
    "fi": [
-    "c:the-ohio-state-university"
+    "c:ohio-state-university"
    ],
    "ci": [
-    "c:the-ohio-state-university"
+    "c:ohio-state-university"
    ]
   },
   {
@@ -31086,10 +30830,10 @@
     "Jerome Revaud"
    ],
    "fi": [
-    "c:naver-labs-europe"
+    "c:naver"
    ],
    "ci": [
-    "c:naver-labs-europe"
+    "c:naver"
    ]
   },
   {
@@ -31182,10 +30926,10 @@
     "Fisher Yu"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -31455,11 +31199,11 @@
     "Lin Wang"
    ],
    "fi": [
-    "c:hong-kong-university-of-science-and-technology-g"
+    "c:hkust-guangzhou"
    ],
    "ci": [
     "c:hkust",
-    "c:hong-kong-university-of-science-and-technology-g"
+    "c:hkust-guangzhou"
    ]
   },
   {
@@ -32291,11 +32035,11 @@
     "Stéphane Lathuilière"
    ],
    "fi": [
-    "c:t-l-com-paris",
+    "c:telecom-paris",
     "c:atos"
    ],
    "ci": [
-    "c:t-l-com-paris"
+    "c:telecom-paris"
    ]
   },
   {
@@ -32836,11 +32580,11 @@
     "Xiaoguang Han"
    ],
    "fi": [
-    "c:the-chinese-university-of-hong-kong-shenzhen"
+    "c:chinese-university-of-hong-kong-shenzhen"
    ],
    "ci": [
-    "c:the-chinese-university-of-hong-kong-shenzhen",
-    "c:the-future-network-of-intelligence-institute-cuh"
+    "c:chinese-university-of-hong-kong-shenzhen",
+    "c:future-network-of-intelligence-institute-cuhk-sh"
    ]
   },
   {
@@ -33048,10 +32792,10 @@
     "Vibhav Gogate"
    ],
    "fi": [
-    "c:the-university-of-texas-at-dallas"
+    "c:university-of-texas-at-dallas"
    ],
    "ci": [
-    "c:the-university-of-texas-at-dallas"
+    "c:university-of-texas-at-dallas"
    ]
   },
   {
@@ -33201,10 +32945,10 @@
     "Stéphane Lathuilière"
    ],
    "fi": [
-    "c:t-l-com-paris"
+    "c:telecom-paris"
    ],
    "ci": [
-    "c:t-l-com-paris"
+    "c:telecom-paris"
    ]
   },
   {
@@ -33718,10 +33462,10 @@
     "Tiago Pimentel"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:eth-z-rich",
+    "c:eth-zurich",
     "c:university-of-cambridge"
    ]
   },
@@ -33738,10 +33482,10 @@
     "Ryan Cotterell"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -33834,10 +33578,10 @@
    ],
    "fi": [
     "c:university-of-cambridge",
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -33988,10 +33732,10 @@
     "Hendrik P. A. Lensch"
    ],
    "fi": [
-    "c:university-of-t-bingen"
+    "c:university-of-tubingen"
    ],
    "ci": [
-    "c:university-of-t-bingen"
+    "c:university-of-tubingen"
    ]
   },
   {
@@ -34010,7 +33754,7 @@
     "c:tsinghua-university"
    ],
    "ci": [
-    "c:universit-de-montr-al"
+    "c:universite-de-montreal"
    ]
   },
   {
@@ -34491,7 +34235,7 @@
     "Dirk Hovy"
    ],
    "fi": [
-    "c:instituto-de-telecomunica-es"
+    "c:instituto-de-telecomunicacoes"
    ],
    "ci": [
     "c:bocconi-university"
@@ -34839,7 +34583,7 @@
     "Laura Leal-Taixe"
    ],
    "fi": [
-    "c:instituto-superior-t"
+    "c:instituto-superior-te"
    ],
    "ci": [
     "c:technical-university-of-munich"
@@ -34972,10 +34716,10 @@
     "Kaiming He"
    ],
    "fi": [
-    "c:facebook-ai-research-fair"
+    "c:meta"
    ],
    "ci": [
-    "c:facebook-ai-research-fair"
+    "c:meta"
    ]
   },
   {
@@ -35181,10 +34925,10 @@
     "Radu Timofte"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -35238,10 +34982,10 @@
     "Xian-Sheng Hua"
    ],
    "fi": [
-    "c:damo-academy"
+    "c:alibaba"
    ],
    "ci": [
-    "c:damo-academy"
+    "c:alibaba"
    ]
   },
   {
@@ -35314,10 +35058,10 @@
     "Luc Van Gool"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -35485,10 +35229,10 @@
     "Lior Wolf"
    ],
    "fi": [
-    "c:the-school-of-computer-science"
+    "c:school-of-computer-science"
    ],
    "ci": [
-    "c:the-school-of-computer-science"
+    "c:school-of-computer-science"
    ]
   },
   {
@@ -35637,10 +35381,10 @@
     "Yedid Hoshen"
    ],
    "fi": [
-    "c:the-hebrew-university-of-jerusalem"
+    "c:hebrew-university-of-jerusalem"
    ],
    "ci": [
-    "c:the-hebrew-university-of-jerusalem"
+    "c:hebrew-university-of-jerusalem"
    ]
   },
   {
@@ -35656,10 +35400,10 @@
     "Chang Wen Chen"
    ],
    "fi": [
-    "c:the-chinese-university-of-hongkong"
+    "c:chinese-university-of-hongkong"
    ],
    "ci": [
-    "c:the-hong-kong-polytechnic-university"
+    "c:hong-kong-polytechnic-university"
    ]
   },
   {
@@ -35732,10 +35476,10 @@
     "Cordelia Schmid"
    ],
    "fi": [
-    "c:inria-paris"
+    "c:inria"
    ],
    "ci": [
-    "c:inria-paris"
+    "c:inria"
    ]
   },
   {
@@ -35827,10 +35571,10 @@
     "Siyu Tang"
    ],
    "fi": [
-    "c:eth-z"
+    "c:eth-zu"
    ],
    "ci": [
-    "c:eth-z"
+    "c:eth-zu"
    ]
   },
   {
@@ -36020,7 +35764,7 @@
     "c:institute-for-computer-graphics-and-vision"
    ],
    "ci": [
-    "c:universit"
+    "c:universite"
    ]
   },
   {
@@ -36074,7 +35818,7 @@
     "Richard Newcombe"
    ],
    "fi": [
-    "c:the-university-of-adelaide"
+    "c:university-of-adelaide"
    ],
    "ci": [
     "c:facebook-reality-labs-research"
@@ -36207,10 +35951,10 @@
     "Marc Pollefeys"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -36628,7 +36372,7 @@
     "c:zhejiang-university"
    ],
    "ci": [
-    "c:huawei-noah"
+    "c:huawei"
    ]
   },
   {
@@ -36796,10 +36540,10 @@
     "Luc Van Gool"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -36853,7 +36597,7 @@
     "Deepak Pathak"
    ],
    "fi": [
-    "c:facebook-ai-research-fair"
+    "c:meta"
    ],
    "ci": [
     "c:carnegie-mellon-university"
@@ -37157,10 +36901,10 @@
     "Minfeng Xu"
    ],
    "fi": [
-    "c:damo-academy"
+    "c:alibaba"
    ],
    "ci": [
-    "c:damo-academy"
+    "c:alibaba"
    ]
   },
   {
@@ -37214,10 +36958,10 @@
     "Jean-François Lalonde"
    ],
    "fi": [
-    "c:universit"
+    "c:universite"
    ],
    "ci": [
-    "c:universit"
+    "c:universite"
    ]
   },
   {
@@ -37309,7 +37053,7 @@
     "Lasse Hansen"
    ],
    "fi": [
-    "c:university-of-l"
+    "c:university-of-lu"
    ],
    "ci": [
     "c:echoscout-gmbh-germany"
@@ -37464,7 +37208,7 @@
     "c:xi-an-jiaotong-university"
    ],
    "ci": [
-    "c:eth-z"
+    "c:eth-zu"
    ]
   },
   {
@@ -37556,10 +37300,10 @@
     "Zhenguo Li"
    ],
    "fi": [
-    "c:huawei-noah"
+    "c:huawei"
    ],
    "ci": [
-    "c:huawei-noah"
+    "c:huawei"
    ]
   },
   {
@@ -37670,10 +37414,10 @@
     "Siyu Tang"
    ],
    "fi": [
-    "c:eth-z"
+    "c:eth-zu"
    ],
    "ci": [
-    "c:eth-z"
+    "c:eth-zu"
    ]
   },
   {
@@ -37996,7 +37740,7 @@
     "c:seoul-national-university"
    ],
    "ci": [
-    "c:aws-ai-labs"
+    "c:amazon"
    ]
   },
   {
@@ -38069,10 +37813,10 @@
     "Ming-Hsuan Yang"
    ],
    "fi": [
-    "c:the-university-of-california"
+    "c:university-of-california"
    ],
    "ci": [
-    "c:the-university-of-california"
+    "c:university-of-california"
    ]
   },
   {
@@ -38186,7 +37930,7 @@
     "c:beijing-jiaotong-university"
    ],
    "ci": [
-    "c:damo-academy"
+    "c:alibaba"
    ]
   },
   {
@@ -38297,10 +38041,10 @@
     "David Jacobs"
    ],
    "fi": [
-    "c:university-of-maryland-college-park"
+    "c:university-of-maryland"
    ],
    "ci": [
-    "c:university-of-maryland-college-park"
+    "c:university-of-maryland"
    ]
   },
   {
@@ -38794,7 +38538,7 @@
     "c:san-luis-obispo"
    ],
    "ci": [
-    "c:eth-z"
+    "c:eth-zu"
    ]
   },
   {
@@ -38924,10 +38668,10 @@
     "Siyu Tang"
    ],
    "fi": [
-    "c:eth-z"
+    "c:eth-zu"
    ],
    "ci": [
-    "c:eth-z"
+    "c:eth-zu"
    ]
   },
   {
@@ -38962,10 +38706,10 @@
     "Ying-Cong Chen"
    ],
    "fi": [
-    "c:hkust-gz"
+    "c:hkust-guangzhou"
    ],
    "ci": [
-    "c:hkust-gz"
+    "c:hkust-guangzhou"
    ]
   },
   {
@@ -39114,7 +38858,7 @@
     "Yu Qiao"
    ],
    "fi": [
-    "c:the-australian-national-university"
+    "c:australian-national-university"
    ],
    "ci": [
     "c:shanghai-ai-laboratory"
@@ -39323,10 +39067,10 @@
     "Xueming Qian"
    ],
    "fi": [
-    "c:an-jiaotong-university"
+    "c:xi-an-jiaotong-university"
    ],
    "ci": [
-    "c:an-jiaotong-university"
+    "c:xi-an-jiaotong-university"
    ]
   },
   {
@@ -39440,7 +39184,7 @@
     "c:dalian-university-of-technology"
    ],
    "ci": [
-    "c:damo-academy"
+    "c:alibaba"
    ]
   },
   {
@@ -40028,7 +39772,7 @@
     "Lin Wang"
    ],
    "fi": [
-    "c:hkust-gz"
+    "c:hkust-guangzhou"
    ],
    "ci": [
     "c:nanyang-technological-university"
@@ -40066,10 +39810,10 @@
     "Peter Kontschieder"
    ],
    "fi": [
-    "c:meta-reality-labs-z"
+    "c:meta-reality-labs-zu"
    ],
    "ci": [
-    "c:meta-reality-labs-z"
+    "c:meta-reality-labs-zu"
    ]
   },
   {
@@ -40446,7 +40190,7 @@
     "Dan Zhang"
    ],
    "fi": [
-    "c:university-of-t"
+    "c:university-of-tu"
    ],
    "ci": [
     "c:bosch-center-for-artificial-intelligence"
@@ -40465,10 +40209,10 @@
     "Radu Timofte"
    ],
    "fi": [
-    "c:university-of-w"
+    "c:university-of-wu"
    ],
    "ci": [
-    "c:university-of-w"
+    "c:university-of-wu"
    ]
   },
   {
@@ -40541,10 +40285,10 @@
     "Siyu Tang"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -40693,10 +40437,10 @@
     "Simone Schaub-Meyer"
    ],
    "fi": [
-    "c:technical-university-of-darmstadt"
+    "c:tu-darmstadt"
    ],
    "ci": [
-    "c:technical-university-of-darmstadt"
+    "c:tu-darmstadt"
    ]
   },
   {
@@ -40769,7 +40513,7 @@
     "Noam Koenigstein"
    ],
    "fi": [
-    "c:the-open-university"
+    "c:open-university"
    ],
    "ci": [
     "c:tel-aviv-university"
@@ -40826,7 +40570,7 @@
     "Francis Engelmann"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
     "c:stanford-university"
@@ -41052,11 +40796,11 @@
     "Patrick Gallinari"
    ],
    "fi": [
-    "c:sorbonne-universit"
+    "c:sorbonne-universite"
    ],
    "ci": [
     "c:criteo-france",
-    "c:sorbonne-universit"
+    "c:sorbonne-universite"
    ]
   },
   {
@@ -41073,7 +40817,7 @@
    ],
    "fi": [],
    "ci": [
-    "c:university-of-montreal"
+    "c:universite-de-montreal"
    ]
   },
   {
@@ -41146,10 +40890,10 @@
     "Siddhartha Mishra"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -41521,10 +41265,10 @@
     "Aaron Courville"
    ],
    "fi": [
-    "c:universit-de-montr-al"
+    "c:universite-de-montreal"
    ],
    "ci": [
-    "c:universit-de-montr-al"
+    "c:universite-de-montreal"
    ]
   },
   {
@@ -41636,7 +41380,7 @@
     "c:stanford-university"
    ],
    "ci": [
-    "c:university-of-wisconsin-madison"
+    "c:university-of-wisconsinmadison"
    ]
   },
   {
@@ -41747,10 +41491,10 @@
     "Andreas Krause"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -41769,7 +41513,7 @@
     "c:ucla"
    ],
    "ci": [
-    "c:amazon-germany"
+    "c:amazon"
    ]
   },
   {
@@ -42188,10 +41932,10 @@
    ],
    "fi": [
     "c:google",
-    "c:university-of-montreal"
+    "c:universite-de-montreal"
    ],
    "ci": [
-    "c:university-of-montreal"
+    "c:universite-de-montreal"
    ]
   },
   {
@@ -42226,7 +41970,7 @@
     "Quanshi Zhang"
    ],
    "fi": [
-    "c:shanghai-jiaotong-university"
+    "c:shanghai-jiao-tong-university"
    ],
    "ci": [
     "c:shanghai-jiao-tong-university"
@@ -42340,7 +42084,7 @@
     "c:university-of-antwerp"
    ],
    "ci": [
-    "c:pontificia-universidad-cat-lica"
+    "c:pontificia-universidad-catolica"
    ]
   },
   {
@@ -42394,10 +42138,10 @@
     "Christian Wolf"
    ],
    "fi": [
-    "c:naver-labs-europe"
+    "c:naver"
    ],
    "ci": [
-    "c:naver-labs-europe"
+    "c:naver"
    ]
   },
   {
@@ -42565,7 +42309,7 @@
     "Jesse Engel"
    ],
    "fi": [
-    "c:universit-de-montr-al"
+    "c:universite-de-montreal"
    ],
    "ci": [
     "c:google"
@@ -42604,7 +42348,7 @@
     "Suvrit Sra"
    ],
    "fi": [
-    "c:korea-advanced-institute-of-science-technology",
+    "c:kaist",
     "c:mit"
    ],
    "ci": [
@@ -42663,7 +42407,7 @@
     "Jian Tang"
    ],
    "fi": [
-    "c:university-of-montreal"
+    "c:universite-de-montreal"
    ],
    "ci": [
     "c:hec-montreal"
@@ -42869,7 +42613,7 @@
     "c:shanghai-jiao-tong-university"
    ],
    "ci": [
-    "c:shanghai-jiaotong-university"
+    "c:shanghai-jiao-tong-university"
    ]
   },
   {
@@ -42885,10 +42629,10 @@
     "Andre Martins"
    ],
    "fi": [
-    "c:instituto-superior-t-cnico"
+    "c:instituto-superior-tecnico"
    ],
    "ci": [
-    "c:instituto-superior-t-cnico",
+    "c:instituto-superior-tecnico",
     "c:unbabel"
    ]
   },
@@ -42909,7 +42653,7 @@
    ],
    "ci": [
     "c:google",
-    "c:the-hebrew-university-of-jerusalem"
+    "c:hebrew-university-of-jerusalem"
    ]
   },
   {
@@ -43268,10 +43012,10 @@
     "Torsten Hoefler"
    ],
    "fi": [
-    "c:ethz-eth-zurich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:swiss-federal-institute-of-technology"
+    "c:eth-zurich"
    ]
   },
   {
@@ -43347,7 +43091,7 @@
     "Junchi Yan"
    ],
    "fi": [
-    "c:shanghai-jiaotong-university"
+    "c:shanghai-jiao-tong-university"
    ],
    "ci": [
     "c:shanghai-jiao-tong-university"
@@ -43869,7 +43613,7 @@
     "Jian Tang"
    ],
    "fi": [
-    "c:universit-de-montr-al"
+    "c:universite-de-montreal"
    ],
    "ci": [
     "c:hec-montreal"
@@ -44063,10 +43807,10 @@
     "Ilija Bogunovic"
    ],
    "fi": [
-    "c:ethz-eth-zurich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:swiss-federal-institute-of-technology",
+    "c:eth-zurich",
     "c:university-college-london"
    ]
   },
@@ -44301,11 +44045,10 @@
    ],
    "fi": [
     "c:meta",
-    "c:universit-de-montr-al"
+    "c:universite-de-montreal"
    ],
    "ci": [
-    "c:universit-de-montr-al",
-    "c:university-of-montreal"
+    "c:universite-de-montreal"
    ]
   },
   {
@@ -44568,7 +44311,7 @@
    ],
    "fi": [
     "c:microsoft",
-    "c:university-of-illinois"
+    "c:uiuc"
    ],
    "ci": [
     "c:harvard-university"
@@ -44680,10 +44423,10 @@
     "Josif Grabocka"
    ],
    "fi": [
-    "c:albert-ludwigs-universit-t-freiburg"
+    "c:albert-ludwigs-universitat-freiburg"
    ],
    "ci": [
-    "c:universit-t-freiburg",
+    "c:universitat-freiburg",
     "c:university-of-technology-nuremberg"
    ]
   },
@@ -44947,7 +44690,7 @@
     "Nikolay Malkin"
    ],
    "fi": [
-    "c:montreal-institute-for-learning-algorithms"
+    "c:mila"
    ],
    "ci": []
   },
@@ -44964,10 +44707,10 @@
     "Daniel Cremers"
    ],
    "fi": [
-    "c:technische-universit-t-m-nchen"
+    "c:technical-university-of-munich"
    ],
    "ci": [
-    "c:technical-university-munich"
+    "c:technical-university-of-munich"
    ]
   },
   {
@@ -45157,11 +44900,11 @@
     "Seungryong Kim"
    ],
    "fi": [
-    "c:korea-advanced-institute-of-science-technology",
+    "c:kaist",
     "c:korea-university"
    ],
    "ci": [
-    "c:korea-advanced-institute-of-science-technology",
+    "c:kaist",
     "c:korea-university"
    ]
   },
@@ -45370,7 +45113,7 @@
     "Bernhard Schölkopf"
    ],
    "fi": [
-    "c:university-of-montreal"
+    "c:universite-de-montreal"
    ],
    "ci": []
   },
@@ -45407,7 +45150,7 @@
     "Vinicius C. Azevedo"
    ],
    "fi": [
-    "c:ethz-eth-zurich"
+    "c:eth-zurich"
    ],
    "ci": [
     "c:disney-research"
@@ -45740,7 +45483,7 @@
    ],
    "fi": [
     "c:alibaba",
-    "c:shanghai-jiaotong-university"
+    "c:shanghai-jiao-tong-university"
    ],
    "ci": [
     "c:shanghai-jiao-tong-university"
@@ -45818,10 +45561,10 @@
    ],
    "fi": [
     "c:mila",
-    "c:universit-de-montr-al"
+    "c:universite-de-montreal"
    ],
    "ci": [
-    "c:cole-polytechnique-de-montr-al"
+    "c:ecole-polytechnique-de-montreal"
    ]
   },
   {
@@ -45882,7 +45625,7 @@
    ],
    "ci": [
     "c:idsia",
-    "c:king-abdullah-university-of-science-and-technolo",
+    "c:kaust",
     "c:nnaisense",
     "c:universita-della-svizzera-italiana"
    ]
@@ -45900,7 +45643,7 @@
     "George Karypis"
    ],
    "fi": [
-    "c:university-of-illinois"
+    "c:uiuc"
    ],
    "ci": [
     "c:amazon",
@@ -45938,7 +45681,7 @@
    ],
    "fi": [
     "c:mines-paristech",
-    "c:cole-polytechnique"
+    "c:ecole-polytechnique"
    ],
    "ci": [
     "c:ecole-polytechnique"
@@ -46186,12 +45929,12 @@
     "Wieland Brendel"
    ],
    "fi": [
-    "c:eberhard-karls-universit-t-t-bingen",
+    "c:eberhard-karls-universitat-tubingen",
     "c:max-planck-institute-for-intelligent-systems",
-    "c:ellis-institute-t-bingen"
+    "c:ellis-institute-tubingen"
    ],
    "ci": [
-    "c:ellis-institute-t-bingen"
+    "c:ellis-institute-tubingen"
    ]
   },
   {
@@ -46224,7 +45967,7 @@
     "Josif Grabocka"
    ],
    "fi": [
-    "c:universit-t-freiburg"
+    "c:universitat-freiburg"
    ],
    "ci": [
     "c:university-of-technology-nuremberg"
@@ -46360,7 +46103,7 @@
     "c:uiuc"
    ],
    "ci": [
-    "c:university-of-illinois"
+    "c:uiuc"
    ]
   },
   {
@@ -46494,7 +46237,7 @@
     "Paul F Jaeger"
    ],
    "fi": [
-    "c:ruprecht-karls-universit-t-heidelberg",
+    "c:ruprecht-karls-universitat-heidelberg",
     "c:deutsches-krebsforschungszentrum"
    ],
    "ci": [
@@ -46611,7 +46354,7 @@
     "Leo Schwinn"
    ],
    "fi": [
-    "c:technische-universit-t-m-nchen"
+    "c:technical-university-of-munich"
    ],
    "ci": [
     "c:technical-university-of-munich"
@@ -46688,11 +46431,11 @@
     "Alexandre Allauzen"
    ],
    "fi": [
-    "c:universit-paris-dauphine-psl"
+    "c:universite-paris-dauphine-psl"
    ],
    "ci": [
-    "c:ecole-sup-rieure-de-physique-et-de-chimie-indust",
-    "c:universit-paris-dauphine"
+    "c:ecole-superieure-de-physique-et-de-chimie-indust",
+    "c:universite-paris-dauphine"
    ]
   },
   {
@@ -46727,11 +46470,10 @@
     "Aaron Courville"
    ],
    "fi": [
-    "c:universit-de-montr-al"
+    "c:universite-de-montreal"
    ],
    "ci": [
-    "c:universit-de-montr-al",
-    "c:university-of-montreal"
+    "c:universite-de-montreal"
    ]
   },
   {
@@ -46788,7 +46530,7 @@
     "c:georgia-tech"
    ],
    "ci": [
-    "c:korea-advanced-institute-of-science-technology"
+    "c:kaist"
    ]
   },
   {
@@ -46805,7 +46547,7 @@
    ],
    "fi": [
     "c:inc",
-    "c:eberhard-karls-universit-t-t-bingen"
+    "c:eberhard-karls-universitat-tubingen"
    ],
    "ci": [
     "c:university-of-amsterdam"
@@ -46826,7 +46568,7 @@
    "fi": [
     "c:princeton-university",
     "c:new-york-university",
-    "c:swiss-federal-institute-of-technology"
+    "c:eth-zurich"
    ],
    "ci": [
     "c:google",
@@ -47136,7 +46878,7 @@
     "c:mit"
    ],
    "ci": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -47193,7 +46935,7 @@
     "c:department-of-computer-science-ethz-eth-zurich"
    ],
    "ci": [
-    "c:ethz-eth-zurich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -47228,10 +46970,10 @@
     "Fanny Yang"
    ],
    "fi": [
-    "c:ethz-eth-zurich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:swiss-federal-institute-of-technology"
+    "c:eth-zurich"
    ]
   },
   {
@@ -47247,7 +46989,7 @@
     "David Klindt"
    ],
    "fi": [
-    "c:eberhard-karls-universit-t-t-bingen"
+    "c:eberhard-karls-universitat-tubingen"
    ],
    "ci": [
     "c:cold-spring-harbor-laboratory"
@@ -47596,7 +47338,7 @@
     "Wenqi Shao"
    ],
    "fi": [
-    "c:shanghai-jiaotong-university"
+    "c:shanghai-jiao-tong-university"
    ],
    "ci": [
     "c:shanghai-ai-laboratory"
@@ -47653,10 +47395,10 @@
     "Andrea Agazzi"
    ],
    "fi": [
-    "c:universit-t-bern"
+    "c:universitat-bern"
    ],
    "ci": [
-    "c:universit-t-bern"
+    "c:universitat-bern"
    ]
   },
   {
@@ -47845,7 +47587,7 @@
    "ci": [
     "c:college-of-computing",
     "c:georgia-tech",
-    "c:university-of-illinois"
+    "c:uiuc"
    ]
   },
   {
@@ -48130,7 +47872,7 @@
     "c:independent-mats"
    ],
    "ci": [
-    "c:montreal-institute-for-learning-algorithms"
+    "c:mila"
    ]
   },
   {
@@ -48146,7 +47888,7 @@
     "Dong Yu"
    ],
    "fi": [
-    "c:university-of-illinois"
+    "c:uiuc"
    ],
    "ci": [
     "c:tencent"
@@ -48185,7 +47927,7 @@
    ],
    "fi": [
     "c:apple",
-    "c:swiss-federal-institute-of-technology"
+    "c:eth-zurich"
    ],
    "ci": [
     "c:meta"
@@ -48262,11 +48004,11 @@
     "Minjoon Seo"
    ],
    "fi": [
-    "c:korea-advanced-institute-of-science-technology"
+    "c:kaist"
    ],
    "ci": [
     "c:config-intelligence",
-    "c:korea-advanced-institute-of-science-technology"
+    "c:kaist"
    ]
   },
   {
@@ -48383,7 +48125,7 @@
     "c:korea-university"
    ],
    "ci": [
-    "c:korea-advanced-institute-of-science-technology"
+    "c:kaist"
    ]
   },
   {
@@ -48399,10 +48141,10 @@
     "Nils Thuerey"
    ],
    "fi": [
-    "c:technische-universit-t-m-nchen"
+    "c:technical-university-of-munich"
    ],
    "ci": [
-    "c:technical-university-munich"
+    "c:technical-university-of-munich"
    ]
   },
   {
@@ -48440,7 +48182,7 @@
     "c:google"
    ],
    "ci": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -48460,7 +48202,7 @@
    ],
    "ci": [
     "c:baylor-college-of-medicine",
-    "c:university-g-ttingen",
+    "c:university-gottingen",
     "c:university-of-tuebingen"
    ]
   },
@@ -48513,11 +48255,11 @@
     "Mathias Niepert"
    ],
    "fi": [
-    "c:universit-t-stuttgart"
+    "c:universitat-stuttgart"
    ],
    "ci": [
     "c:nec",
-    "c:universit-t-stuttgart"
+    "c:universitat-stuttgart"
    ]
   },
   {
@@ -48553,7 +48295,7 @@
    ],
    "fi": [
     "c:max-planck-institute-for-intelligent-systems",
-    "c:ethz-eth-zurich"
+    "c:eth-zurich"
    ],
    "ci": [
     "c:max-planck-institute-for-intelligent-systems"
@@ -48724,10 +48466,10 @@
     "Yadan Luo"
    ],
    "fi": [
-    "c:the-university-of-queensland"
+    "c:university-of-queensland"
    ],
    "ci": [
-    "c:the-university-of-queensland"
+    "c:university-of-queensland"
    ]
   },
   {
@@ -48881,7 +48623,7 @@
     "c:jacobs-university-bremen"
    ],
    "ci": [
-    "c:universit-de-montr-al"
+    "c:universite-de-montreal"
    ]
   },
   {
@@ -48917,7 +48659,7 @@
     "Songyou Peng"
    ],
    "fi": [
-    "c:ethz-eth-zurich"
+    "c:eth-zurich"
    ],
    "ci": [
     "c:google"
@@ -49115,7 +48857,7 @@
     "c:shanghai-jiao-tong-university"
    ],
    "ci": [
-    "c:shanghai-jiaotong-university"
+    "c:shanghai-jiao-tong-university"
    ]
   },
   {
@@ -49131,10 +48873,10 @@
     "Fahad Shahbaz Khan"
    ],
    "fi": [
-    "c:technische-universit-t-m-nchen"
+    "c:technical-university-of-munich"
    ],
    "ci": [
-    "c:link-ping-university",
+    "c:linkoping-university",
     "c:mohamed-bin-zayed-university-of-artificial-intel"
    ]
   },
@@ -49171,7 +48913,7 @@
    ],
    "fi": [
     "c:max-planck-institute-for-intelligent-systems",
-    "c:ellis-institute-t-bingen",
+    "c:ellis-institute-tubingen",
     "c:mit"
    ],
    "ci": [
@@ -49231,7 +48973,7 @@
     "Andrei Barbu"
    ],
    "fi": [
-    "c:california-institute-of-technology"
+    "c:caltech"
    ],
    "ci": [
     "c:amazon",
@@ -49580,7 +49322,7 @@
     "c:university-of-oxford"
    ],
    "ci": [
-    "c:ethz-eth-zurich",
+    "c:eth-zurich",
     "c:university-of-edinburgh"
    ]
   },
@@ -49997,7 +49739,7 @@
     "Jaehyung Kim"
    ],
    "fi": [
-    "c:korea-advanced-institute-of-science-technology"
+    "c:kaist"
    ],
    "ci": [
     "c:yonsei-university"
@@ -50056,7 +49798,7 @@
     "c:kaist"
    ],
    "ci": [
-    "c:korea-advanced-institute-of-science-technology"
+    "c:kaist"
    ]
   },
   {
@@ -50076,7 +49818,7 @@
     "c:university-of-waterloo"
    ],
    "ci": [
-    "c:the-university-of-british-columbia"
+    "c:university-of-british-columbia"
    ]
   },
   {
@@ -50267,7 +50009,7 @@
     "c:stanford-university"
    ],
    "ci": [
-    "c:epfl-epf-lausanne"
+    "c:epfl"
    ]
   },
   {
@@ -50360,10 +50102,10 @@
     "Laixi Shi"
    ],
    "fi": [
-    "c:california-institute-of-technology"
+    "c:caltech"
    ],
    "ci": [
-    "c:california-institute-of-technology",
+    "c:caltech",
     "c:johns-hopkins-university"
    ]
   },
@@ -50498,7 +50240,7 @@
     "Thomas Brox"
    ],
    "fi": [
-    "c:albert-ludwigs-universit-t-freiburg"
+    "c:albert-ludwigs-universitat-freiburg"
    ],
    "ci": [
     "c:university-of-freiburg"
@@ -50577,7 +50319,7 @@
     "Jimmy Olsson"
    ],
    "fi": [
-    "c:cole-polytechnique"
+    "c:ecole-polytechnique"
    ],
    "ci": [
     "c:kth-royal-institute-of-technology"
@@ -50884,7 +50626,7 @@
    ],
    "fi": [
     "c:max-planck-institute",
-    "c:ethz-eth-zurich"
+    "c:eth-zurich"
    ],
    "ci": [
     "c:kumo",
@@ -51019,7 +50761,7 @@
     "Ievgen Redko"
    ],
    "fi": [
-    "c:t-l-com-paris"
+    "c:telecom-paris"
    ],
    "ci": [
     "c:schneider-electric"
@@ -51080,7 +50822,7 @@
     "c:institut-d-etudes-politiques-de-paris-sciences-p"
    ],
    "ci": [
-    "c:technical-university-of-applied-sciences-w-rzbur"
+    "c:technical-university-of-applied-sciences-wurzbur"
    ]
   },
   {
@@ -51135,10 +50877,10 @@
     "Haojie Ren"
    ],
    "fi": [
-    "c:shanghai-jiaotong-university"
+    "c:shanghai-jiao-tong-university"
    ],
    "ci": [
-    "c:shanghai-jiaotong-university"
+    "c:shanghai-jiao-tong-university"
    ]
   },
   {
@@ -51397,8 +51139,8 @@
     "c:hong-kong-polytechnic-university"
    ],
    "ci": [
-    "c:ellis-institute-t-bingen",
-    "c:max-planck-institute-t-bingen-ai-center"
+    "c:ellis-institute-tubingen",
+    "c:max-planck-institute-tubingen-ai-center"
    ]
   },
   {
@@ -51511,10 +51253,10 @@
     "Van-Tam Nguyen"
    ],
    "fi": [
-    "c:t-l-com-paris"
+    "c:telecom-paris"
    ],
    "ci": [
-    "c:t-l-com-paris"
+    "c:telecom-paris"
    ]
   },
   {
@@ -51646,7 +51388,7 @@
    ],
    "fi": [
     "c:institute-of-science-and-technology",
-    "c:epfl-epf-lausanne"
+    "c:epfl"
    ],
    "ci": [
     "c:institute-of-science-and-technology"
@@ -51802,10 +51544,10 @@
     "Felix Dietrich"
    ],
    "fi": [
-    "c:technische-universit-t-m-nchen"
+    "c:technical-university-of-munich"
    ],
    "ci": [
-    "c:technical-university-munich"
+    "c:technical-university-of-munich"
    ]
   },
   {
@@ -51859,7 +51601,7 @@
     "Ashok Vardhan Makkuva"
    ],
    "fi": [
-    "c:epfl-epf-lausanne"
+    "c:epfl"
    ],
    "ci": []
   },
@@ -51991,7 +51733,7 @@
     "Peter Wonka"
    ],
    "fi": [
-    "c:king-abdullah-university-of-science-and-technolo"
+    "c:kaust"
    ],
    "ci": [
     "c:kaust",
@@ -52052,7 +51794,7 @@
    ],
    "fi": [
     "c:meta",
-    "c:sorbonne-universit-facult-des-sciences-paris-vi"
+    "c:sorbonne-universite-faculte-des-sciences-paris-v"
    ],
    "ci": [
     "c:meta"
@@ -52205,11 +51947,11 @@
     "Jürgen Schmidhuber"
    ],
    "fi": [
-    "c:king-abdullah-university-of-science-and-technolo"
+    "c:kaust"
    ],
    "ci": [
     "c:idsia",
-    "c:king-abdullah-university-of-science-and-technolo",
+    "c:kaust",
     "c:nnaisense",
     "c:universita-della-svizzera-italiana"
    ]
@@ -52416,7 +52158,7 @@
     "He He"
    ],
    "fi": [
-    "c:ludwig-maximilians-universit-t-m-nchen"
+    "c:lmu-munich"
    ],
    "ci": [
     "c:new-york-university"
@@ -52471,10 +52213,10 @@
     "Martin Vechev"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:ethz-eth-zurich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -52626,7 +52368,7 @@
    ],
    "fi": [],
    "ci": [
-    "c:shanghai-jiaotong-university"
+    "c:shanghai-jiao-tong-university"
    ]
   },
   {
@@ -52676,7 +52418,7 @@
     "Mao Yang"
    ],
    "fi": [
-    "c:shanghai-jiaotong-university"
+    "c:shanghai-jiao-tong-university"
    ],
    "ci": [
     "c:peking-university"
@@ -52922,7 +52664,7 @@
     "Rui Wang"
    ],
    "fi": [
-    "c:shanghai-jiaotong-university"
+    "c:shanghai-jiao-tong-university"
    ],
    "ci": [
     "c:shanghai-jiao-tong-university"
@@ -53171,7 +52913,7 @@
     "c:ecole-nationale-de-la-statistique-et-de-l-admini"
    ],
    "ci": [
-    "c:universit-de-toulouse"
+    "c:universite-de-toulouse"
    ]
   },
   {
@@ -53283,10 +53025,10 @@
     "Andreas Krause"
    ],
    "fi": [
-    "c:ethz-eth-zurich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -53416,10 +53158,10 @@
     "Caglar Gulcehre"
    ],
    "fi": [
-    "c:epfl-epf-lausanne"
+    "c:epfl"
    ],
    "ci": [
-    "c:epfl-epf-lausanne",
+    "c:epfl",
     "c:microsoft"
    ]
   },
@@ -53454,10 +53196,10 @@
    ],
    "fi": [
     "c:ibm",
-    "c:ethz-eth-zurich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:ethz-eth-zurich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -53621,7 +53363,7 @@
     "Xiaolin Huang"
    ],
    "fi": [
-    "c:shanghai-jiaotong-university"
+    "c:shanghai-jiao-tong-university"
    ],
    "ci": [
     "c:shanghai-jiao-tong-university"
@@ -53640,7 +53382,7 @@
     "Sung-eui Yoon"
    ],
    "fi": [
-    "c:korea-advanced-institute-of-science-technology"
+    "c:kaist"
    ],
    "ci": [
     "c:kaist"
@@ -53719,7 +53461,7 @@
     "c:ohio-state-university"
    ],
    "ci": [
-    "c:the-ohio-state-university"
+    "c:ohio-state-university"
    ]
   },
   {
@@ -53757,7 +53499,7 @@
     "c:uiuc"
    ],
    "ci": [
-    "c:university-of-illinois"
+    "c:uiuc"
    ]
   },
   {
@@ -53792,7 +53534,7 @@
     "Heinz Koeppl"
    ],
    "fi": [
-    "c:technische-universit-t-darmstadt"
+    "c:technische-universitat-darmstadt"
    ],
    "ci": [
     "c:tu-darmstadt"
@@ -53831,7 +53573,7 @@
    ],
    "fi": [
     "c:kookmin-university",
-    "c:the-university-of-british-columbia"
+    "c:university-of-british-columbia"
    ],
    "ci": [
     "c:university-of-british-columbia"
@@ -53892,7 +53634,7 @@
    ],
    "ci": [
     "c:lg-corporation",
-    "c:university-of-illinois"
+    "c:uiuc"
    ]
   },
   {
@@ -53948,7 +53690,7 @@
     "Florent Krzakala"
    ],
    "fi": [
-    "c:ecole-normale-sup-rieure-ecole-normale-sup-rieur"
+    "c:ecole-normale-superieure-ecole-normale-superieur"
    ],
    "ci": [
     "c:epfl"
@@ -54060,11 +53802,11 @@
     "Anthony Widjaja Lin"
    ],
    "fi": [
-    "c:rheinland-pf-lzische-technische-universit-t"
+    "c:rheinland-pfalzische-technische-universitat"
    ],
    "ci": [
     "c:mpi-sws",
-    "c:universit-t-kaiserslautern"
+    "c:universitat-kaiserslautern"
    ]
   },
   {
@@ -54118,7 +53860,7 @@
     "Alexandre Alahi"
    ],
    "fi": [
-    "c:epfl-epf-lausanne"
+    "c:epfl"
    ],
    "ci": [
     "c:epfl"
@@ -54342,10 +54084,10 @@
     "Konrad Schindler"
    ],
    "fi": [
-    "c:ethz-eth-zurich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:swiss-federal-institute-of-technology"
+    "c:eth-zurich"
    ]
   },
   {
@@ -54569,11 +54311,11 @@
     "Anthony Widjaja Lin"
    ],
    "fi": [
-    "c:universit-t-kaiserslautern"
+    "c:universitat-kaiserslautern"
    ],
    "ci": [
     "c:mpi-sws",
-    "c:universit-t-kaiserslautern"
+    "c:universitat-kaiserslautern"
    ]
   },
   {
@@ -54798,7 +54540,7 @@
    ],
    "fi": [],
    "ci": [
-    "c:universit-de-montr-al"
+    "c:universite-de-montreal"
    ]
   },
   {
@@ -54873,10 +54615,10 @@
     "Martin Vechev"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:ethz-eth-zurich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -54988,7 +54730,7 @@
     "c:genentech"
    ],
    "ci": [
-    "c:university-of-illinois"
+    "c:uiuc"
    ]
   },
   {
@@ -55081,10 +54823,10 @@
     "Mohamed-Slim Alouini"
    ],
    "fi": [
-    "c:king-abdullah-university-of-science-and-technolo"
+    "c:kaust"
    ],
    "ci": [
-    "c:king-abdullah-university-of-science-and-technolo"
+    "c:kaust"
    ]
   },
   {
@@ -55508,7 +55250,7 @@
     "c:nvidia"
    ],
    "ci": [
-    "c:california-institute-of-technology",
+    "c:caltech",
     "c:nvidia"
    ]
   },
@@ -55717,11 +55459,11 @@
     "Eric Moulines"
    ],
    "fi": [
-    "c:cole-polytechnique",
+    "c:ecole-polytechnique",
     "c:lagrange-mathematics-and-computing-research-cent"
    ],
    "ci": [
-    "c:cole-polytechnique"
+    "c:ecole-polytechnique"
    ]
   },
   {
@@ -56432,7 +56174,7 @@
    ],
    "ci": [
     "c:cnrs",
-    "c:cole-normale-sup-rieure"
+    "c:ecole-normale-superieure"
    ]
   },
   {
@@ -56525,11 +56267,11 @@
    ],
    "fi": [
     "c:mila",
-    "c:university-of-montreal"
+    "c:universite-de-montreal"
    ],
    "ci": [
     "c:cifar",
-    "c:hec-montr-al",
+    "c:hec-montreal",
     "c:mila"
    ]
   },
@@ -56760,10 +56502,10 @@
     "Cornelia Caragea"
    ],
    "fi": [
-    "c:university-of-illinois-at-chicago"
+    "c:university-of-illinois-chicago"
    ],
    "ci": [
-    "c:university-of-illinois-at-chicago"
+    "c:university-of-illinois-chicago"
    ]
   },
   {
@@ -57111,7 +56853,7 @@
     "Yuhei Umeda"
    ],
    "fi": [
-    "c:universit-c-te-d-azur",
+    "c:universite-cote-d-azur",
     "c:inria"
    ],
    "ci": [
@@ -57151,11 +56893,11 @@
    ],
    "fi": [
     "c:mila",
-    "c:university-of-montreal"
+    "c:universite-de-montreal"
    ],
    "ci": [
     "c:mila",
-    "c:university-of-montreal"
+    "c:universite-de-montreal"
    ]
   },
   {
@@ -57190,10 +56932,10 @@
     "Peter Richtárik"
    ],
    "fi": [
-    "c:king-abdullah-university-of-science-and-technolo"
+    "c:kaust"
    ],
    "ci": [
-    "c:king-abdullah-university-of-science-and-technolo"
+    "c:kaust"
    ]
   },
   {
@@ -57480,7 +57222,7 @@
     "c:university-of-montpellier"
    ],
    "ci": [
-    "c:t-l-com-paris"
+    "c:telecom-paris"
    ]
   },
   {
@@ -57669,7 +57411,7 @@
     "Viet Anh Nguyen"
    ],
    "fi": [
-    "c:cole-polytechnique-f-d-rale-de-lausanne"
+    "c:epfl"
    ],
    "ci": [
     "c:stanford-university",
@@ -57920,10 +57662,10 @@
     "Volkan Cevher"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:cole-polytechnique-f-d-rale-de-lausanne"
+    "c:epfl"
    ]
   },
   {
@@ -58017,7 +57759,7 @@
    ],
    "fi": [
     "c:university-of-pennsylvania",
-    "c:universidad-polit-cnica-de-madrid"
+    "c:universidad-politecnica-de-madrid"
    ],
    "ci": [
     "c:university-of-pennsylvania"
@@ -58292,12 +58034,12 @@
     "Alexandre Allauzen"
    ],
    "fi": [
-    "c:universit-paris-dauphine",
+    "c:universite-paris-dauphine",
     "c:meta"
    ],
    "ci": [
     "c:espci-paris",
-    "c:universit-paris-dauphine"
+    "c:universite-paris-dauphine"
    ]
   },
   {
@@ -58546,10 +58288,10 @@
     "Jia Liu"
    ],
    "fi": [
-    "c:the-ohio-state-university"
+    "c:ohio-state-university"
    ],
    "ci": [
-    "c:the-ohio-state-university"
+    "c:ohio-state-university"
    ]
   },
   {
@@ -59256,10 +58998,10 @@
     "Thomas Hofmann"
    ],
    "fi": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -59524,7 +59266,7 @@
     "Adrian Weller"
    ],
    "fi": [
-    "c:university-of-maryland-college-park",
+    "c:university-of-maryland",
     "c:max-planck-institute-for-software-systems"
    ],
    "ci": [
@@ -59871,11 +59613,11 @@
     "Pan Kessel"
    ],
    "fi": [
-    "c:technische-universit-t-berlin"
+    "c:technische-universitat-berlin"
    ],
    "ci": [
     "c:berlin-institute-for-the-foundations-of-learning",
-    "c:technische-universit-t-berlin"
+    "c:technische-universitat-berlin"
    ]
   },
   {
@@ -59913,7 +59655,7 @@
     "c:university-of-cagliari"
    ],
    "ci": [
-    "c:university-of-t-bingen"
+    "c:university-of-tubingen"
    ]
   },
   {
@@ -59929,7 +59671,7 @@
     "Jacob R. Gardner"
    ],
    "fi": [
-    "c:university-of-t-bingen",
+    "c:university-of-tubingen",
     "c:max-planck-institute-for-intelligent-systems",
     "c:columbia-university"
    ],
@@ -60162,7 +59904,7 @@
     "Francesco Locatello"
    ],
    "fi": [
-    "c:cole-polytechnique-f-d-rale-de-lausanne"
+    "c:epfl"
    ],
    "ci": [
     "c:amazon"
@@ -60491,11 +60233,11 @@
    ],
    "fi": [
     "c:epfl",
-    "c:universit-grenoble-alpes"
+    "c:universite-grenoble-alpes"
    ],
    "ci": [
     "c:criteo",
-    "c:universit-grenoble-alpes"
+    "c:universite-grenoble-alpes"
    ]
   },
   {
@@ -60711,7 +60453,7 @@
     "c:aarhus-university"
    ],
    "ci": [
-    "c:georg-august-universit-t-g-ttingen"
+    "c:georg-august-universitat-gottingen"
    ]
   },
   {
@@ -61204,7 +60946,6 @@
     "Jong Chul Ye"
    ],
    "fi": [
-    "c:korea-advanced-institute-of-science-technology",
     "c:kaist"
    ],
    "ci": [
@@ -61304,7 +61045,7 @@
    ],
    "ci": [
     "c:brown-university",
-    "c:universit-de-toulouse"
+    "c:universite-de-toulouse"
    ]
   },
   {
@@ -61683,7 +61424,7 @@
     "c:epfl"
    ],
    "ci": [
-    "c:epfl-epf-lausanne"
+    "c:epfl"
    ]
   },
   {
@@ -61699,7 +61440,7 @@
     "Daniel Durstewitz"
    ],
    "fi": [
-    "c:ruprecht-karls-universit-t-heidelberg"
+    "c:ruprecht-karls-universitat-heidelberg"
    ],
    "ci": [
     "c:heidelberg-university"
@@ -61927,7 +61668,7 @@
     "Kee-Eung Kim"
    ],
    "fi": [
-    "c:korea-advanced-institute-of-science-technology"
+    "c:kaist"
    ],
    "ci": [
     "c:kaist"
@@ -61968,7 +61709,7 @@
    ],
    "fi": [],
    "ci": [
-    "c:university-of-montreal"
+    "c:universite-de-montreal"
    ]
   },
   {
@@ -61987,7 +61728,7 @@
     "c:johns-hopkins-university"
    ],
    "ci": [
-    "c:california-institute-of-technology",
+    "c:caltech",
     "c:johns-hopkins-university",
     "c:university-of-illinois-chicago"
    ]
@@ -62043,7 +61784,7 @@
    ],
    "fi": [
     "c:autodesk",
-    "c:universit-de-montr-al"
+    "c:universite-de-montreal"
    ],
    "ci": []
   },
@@ -62443,7 +62184,7 @@
     "c:univ-grenoble-alpes"
    ],
    "ci": [
-    "c:universit-grenoble-alpes"
+    "c:universite-grenoble-alpes"
    ]
   },
   {
@@ -62481,7 +62222,7 @@
     "Jian Tang"
    ],
    "fi": [
-    "c:montreal-institute-for-learning-algorithms"
+    "c:mila"
    ],
    "ci": [
     "c:hec-montreal"
@@ -62503,7 +62244,7 @@
     "c:max-planck-institute"
    ],
    "ci": [
-    "c:ellis-institute-t-bingen",
+    "c:ellis-institute-tubingen",
     "c:max-planck-institute-for-intelligent-systems"
    ]
   },
@@ -62696,7 +62437,7 @@
    ],
    "fi": [
     "c:max-planck-institute-for-intelligent-systems",
-    "c:swiss-federal-institute-of-technology"
+    "c:eth-zurich"
    ],
    "ci": [
     "c:google"
@@ -62826,7 +62567,7 @@
     "Martin Jaggi"
    ],
    "fi": [
-    "c:epfl-epf-lausanne"
+    "c:epfl"
    ],
    "ci": [
     "c:epfl"
@@ -62886,7 +62627,7 @@
    ],
    "ci": [
     "c:amazon",
-    "c:epfl-epf-lausanne"
+    "c:epfl"
    ]
   },
   {
@@ -62906,7 +62647,7 @@
    ],
    "ci": [
     "c:helmholtz-ai",
-    "c:technische-universit-t-m-nchen"
+    "c:technical-university-of-munich"
    ]
   },
   {
@@ -62983,7 +62724,7 @@
    "fi": [],
    "ci": [
     "c:meta",
-    "c:the-university-of-warwick"
+    "c:university-of-warwick"
    ]
   },
   {
@@ -63060,7 +62801,7 @@
     "c:nvidia"
    ],
    "ci": [
-    "c:california-institute-of-technology"
+    "c:caltech"
    ]
   },
   {
@@ -63271,10 +63012,10 @@
    ],
    "fi": [
     "c:copenhagen-university",
-    "c:the-university-of-melbourne"
+    "c:university-of-melbourne"
    ],
    "ci": [
-    "c:the-university-of-melbourne"
+    "c:university-of-melbourne"
    ]
   },
   {
@@ -63309,10 +63050,10 @@
     "Chulhee Yun"
    ],
    "fi": [
-    "c:korea-advanced-institute-of-science-technology"
+    "c:kaist"
    ],
    "ci": [
-    "c:korea-advanced-institute-of-science-technology"
+    "c:kaist"
    ]
   },
   {
@@ -63402,7 +63143,7 @@
     "Woo Chang Kim"
    ],
    "fi": [
-    "c:korea-advanced-institute-of-science-technology"
+    "c:kaist"
    ],
    "ci": [
     "c:kaist"
@@ -63422,7 +63163,7 @@
    ],
    "fi": [
     "c:google",
-    "c:swiss-federal-institute-of-technology"
+    "c:eth-zurich"
    ],
    "ci": [
     "c:google"
@@ -63753,10 +63494,10 @@
     "Michele Magno"
    ],
    "fi": [
-    "c:ethz-eth-zurich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:ethz-eth-zurich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -63772,7 +63513,7 @@
     "Ryo Inokuchi"
    ],
    "fi": [
-    "c:mizuho-dl-financial-technology",
+    "c:mizuhodl-financial-technology",
     "c:university-of-tokyo"
    ],
    "ci": []
@@ -63864,7 +63605,7 @@
     "Clément Hongler"
    ],
    "fi": [
-    "c:epfl-epf-lausanne"
+    "c:epfl"
    ],
    "ci": [
     "c:epfl"
@@ -64018,7 +63759,7 @@
    "fi": [
     "c:genentech",
     "c:stanford-university",
-    "c:the-hebrew-university-of-jerusalem"
+    "c:hebrew-university-of-jerusalem"
    ],
    "ci": [
     "c:apple",
@@ -64097,7 +63838,7 @@
     "Ethan Perez"
    ],
    "fi": [
-    "c:university-college-london-university-of-london"
+    "c:university-college-london"
    ],
    "ci": [
     "c:anthropic",
@@ -64231,7 +63972,7 @@
    ],
    "fi": [],
    "ci": [
-    "c:the-education-university-of-hong-kong",
+    "c:education-university-of-hong-kong",
     "c:university-of-technology-sydney"
    ]
   },
@@ -64288,12 +64029,12 @@
    ],
    "fi": [
     "c:university-of-oxford",
-    "c:the-alan-turing-institute",
+    "c:alan-turing-institute",
     "c:university-of-oslo"
    ],
    "ci": [
     "c:chalmers-university",
-    "c:universit-de-neuch-tel",
+    "c:universite-de-neuchatel",
     "c:university-of-oslo"
    ]
   },
@@ -64386,11 +64127,11 @@
     "Stephan Günnemann"
    ],
    "fi": [
-    "c:technische-universit-t-m-nchen",
+    "c:technical-university-of-munich",
     "c:valence-labs-powered-by-recursion"
    ],
    "ci": [
-    "c:technical-university-munich"
+    "c:technical-university-of-munich"
    ]
   },
   {
@@ -64503,11 +64244,11 @@
    ],
    "fi": [
     "c:meta",
-    "c:king-abdullah-university-of-science-and-technolo"
+    "c:kaust"
    ],
    "ci": [
     "c:idsia",
-    "c:king-abdullah-university-of-science-and-technolo",
+    "c:kaust",
     "c:nnaisense",
     "c:universita-della-svizzera-italiana"
    ]
@@ -64526,7 +64267,7 @@
    ],
    "fi": [
     "c:meta",
-    "c:california-institute-of-technology"
+    "c:caltech"
    ],
    "ci": [
     "c:meta"
@@ -64738,7 +64479,7 @@
     "Daniel M. Roy"
    ],
    "fi": [
-    "c:university-of-illinois-at-chicago",
+    "c:university-of-illinois-chicago",
     "c:toyota-technological-institute-at-chicago",
     "c:ben-gurion-university-of-the-negev",
     "c:tel-aviv-university"
@@ -64838,11 +64579,11 @@
     "Jürgen Schmidhuber"
    ],
    "fi": [
-    "c:the-swiss-ai-lab-idsia"
+    "c:swiss-ai-lab-idsia"
    ],
    "ci": [
     "c:idsia",
-    "c:king-abdullah-university-of-science-and-technolo",
+    "c:kaust",
     "c:nnaisense",
     "c:universita-della-svizzera-italiana"
    ]
@@ -64904,7 +64645,7 @@
    ],
    "ci": [
     "c:concordia-university",
-    "c:universite-laval-universit-laval"
+    "c:universite-laval-universite-laval"
    ]
   },
   {
@@ -65195,7 +64936,7 @@
     "c:google"
    ],
    "ci": [
-    "c:universit-t-freiburg"
+    "c:universitat-freiburg"
    ]
   },
   {
@@ -65396,7 +65137,7 @@
     "Nicholas Carlini"
    ],
    "fi": [
-    "c:ethz-eth-zurich"
+    "c:eth-zurich"
    ],
    "ci": [
     "c:google"
@@ -65435,7 +65176,7 @@
     "Paulina Sierak"
    ],
    "fi": [
-    "c:ludwig-maximilians-universit-t-m-nchen"
+    "c:lmu-munich"
    ],
    "ci": []
   },
@@ -65638,10 +65379,10 @@
     "Colin Jones"
    ],
    "fi": [
-    "c:epfl-epf-lausanne"
+    "c:epfl"
    ],
    "ci": [
-    "c:epfl-epf-lausanne"
+    "c:epfl"
    ]
   },
   {
@@ -65695,10 +65436,10 @@
     "Markus Bläser"
    ],
    "fi": [
-    "c:universit-t-des-saarlandes"
+    "c:universitat-des-saarlandes"
    ],
    "ci": [
-    "c:universit-t-des-saarlandes"
+    "c:universitat-des-saarlandes"
    ]
   },
   {
@@ -65850,7 +65591,7 @@
    ],
    "fi": [],
    "ci": [
-    "c:university-of-t-bingen"
+    "c:university-of-tubingen"
    ]
   },
   {
@@ -65986,7 +65727,7 @@
    ],
    "ci": [
     "c:black-forest-labs",
-    "c:ludwig-maximilians-universit-t-m-nchen",
+    "c:lmu-munich",
     "c:stability-ai"
    ]
   },
@@ -66004,7 +65745,7 @@
    ],
    "fi": [
     "c:xai",
-    "c:california-institute-of-technology",
+    "c:caltech",
     "c:google-deepmind"
    ],
    "ci": [
@@ -66024,7 +65765,7 @@
     "Jose A. Lozano"
    ],
    "fi": [
-    "c:universidad-del-pa-s-vasco"
+    "c:universidad-del-pais-vasco"
    ],
    "ci": [
     "c:basque-center-for-applied-mathematics"
@@ -66104,7 +65845,7 @@
     "c:google"
    ],
    "ci": [
-    "c:ethz-eth-zurich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -66121,10 +65862,10 @@
    ],
    "fi": [
     "c:shanghai-academy-of-artificial-intelligence-for-",
-    "c:eth-z-rich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:eth-z-rich",
+    "c:eth-zurich",
     "c:ku-leuven",
     "c:sofia-un-st-kliment-ohridski"
    ]
@@ -66164,10 +65905,10 @@
     "Yisong Yue"
    ],
    "fi": [
-    "c:california-institute-of-technology"
+    "c:caltech"
    ],
    "ci": [
-    "c:california-institute-of-technology"
+    "c:caltech"
    ]
   },
   {
@@ -66260,7 +66001,7 @@
     "Thibaut Vidal"
    ],
    "fi": [
-    "c:universit-de-montr-al"
+    "c:universite-de-montreal"
    ],
    "ci": [
     "c:polytechnique-montreal"
@@ -66437,7 +66178,7 @@
     "Peter Ochs"
    ],
    "fi": [
-    "c:eberhard-karls-universit-t-t-bingen"
+    "c:eberhard-karls-universitat-tubingen"
    ],
    "ci": []
   },
@@ -66532,10 +66273,10 @@
    ],
    "fi": [
     "c:carnegie-mellon-university",
-    "c:instituto-superior-t-cnico"
+    "c:instituto-superior-tecnico"
    ],
    "ci": [
-    "c:instituto-superior-t-cnico",
+    "c:instituto-superior-tecnico",
     "c:unbabel"
    ]
   },
@@ -66710,7 +66451,7 @@
     "c:google"
    ],
    "ci": [
-    "c:ethz-eth-zurich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -66842,7 +66583,7 @@
    ],
    "fi": [
     "c:hkust",
-    "c:shanghai-jiaotong-university"
+    "c:shanghai-jiao-tong-university"
    ],
    "ci": [
     "c:hkust"
@@ -66916,7 +66657,7 @@
     "Xinbing Wang"
    ],
    "fi": [
-    "c:shanghai-jiaotong-university"
+    "c:shanghai-jiao-tong-university"
    ],
    "ci": [
     "c:shanghai-jiao-tong-university"
@@ -66955,7 +66696,7 @@
     "Pascal Frossard"
    ],
    "fi": [
-    "c:epfl-epf-lausanne"
+    "c:epfl"
    ],
    "ci": []
   },
@@ -67107,7 +66848,7 @@
     "Anna Korba"
    ],
    "fi": [
-    "c:cole-polytechnique",
+    "c:ecole-polytechnique",
     "c:ecole-nationale-de-la-statistique-et-de-l-admini"
    ],
    "ci": [
@@ -67165,7 +66906,7 @@
     "Da Wei Zheng"
    ],
    "fi": [
-    "c:universit-t-vienna"
+    "c:universitat-vienna"
    ],
    "ci": [
     "c:uiuc"
@@ -67340,7 +67081,7 @@
     "c:northeastern-university"
    ],
    "ci": [
-    "c:technische-universit-t-m-nchen"
+    "c:technical-university-of-munich"
    ]
   },
   {
@@ -67777,7 +67518,7 @@
     "Sebastian Pokutta"
    ],
    "fi": [
-    "c:technische-universit-t-berlin"
+    "c:technische-universitat-berlin"
    ],
    "ci": [
     "c:tu-berlin",
@@ -68161,13 +67902,13 @@
     "Jakob Runge"
    ],
    "fi": [
-    "c:ethz-eth-zurich"
+    "c:eth-zurich"
    ],
    "ci": [
     "c:german-aerospace-center",
-    "c:technische-universit-t-berlin",
-    "c:technische-universit-t-dresden",
-    "c:universit-t-potsdam"
+    "c:technische-universitat-berlin",
+    "c:technische-universitat-dresden",
+    "c:universitat-potsdam"
    ]
   },
   {
@@ -68281,10 +68022,10 @@
     "Andrew M Saxe"
    ],
    "fi": [
-    "c:university-college-london-university-of-london"
+    "c:university-college-london"
    ],
    "ci": [
-    "c:university-college-london-university-of-london"
+    "c:university-college-london"
    ]
   },
   {
@@ -68357,7 +68098,7 @@
     "Juan Carlos Perdomo"
    ],
    "fi": [
-    "c:ludwig-maximilians-universit-t-m-nchen"
+    "c:lmu-munich"
    ],
    "ci": [
     "c:harvard-university",
@@ -68377,10 +68118,10 @@
     "Michele Ceriotti"
    ],
    "fi": [
-    "c:epfl-epf-lausanne"
+    "c:epfl"
    ],
    "ci": [
-    "c:epfl-epf-lausanne"
+    "c:epfl"
    ]
   },
   {
@@ -68397,7 +68138,7 @@
    ],
    "fi": [
     "c:uc-berkeley",
-    "c:technische-universit-t-m-nchen"
+    "c:technical-university-of-munich"
    ],
    "ci": [
     "c:university-of-british-columbia",
@@ -68455,7 +68196,7 @@
     "Gabriel Peyré"
    ],
    "fi": [
-    "c:ecole-normale-sup-rieure-de-paris"
+    "c:ecole-normale-superieure-de-paris"
    ],
    "ci": [
     "c:cnrs",
@@ -68728,7 +68469,7 @@
     "Phil Hackemann"
    ],
    "fi": [
-    "c:ludwig-maximilian-university-of-munich",
+    "c:lmu-munich",
     "c:munich-center-for-machine-learning"
    ],
    "ci": []
@@ -68937,7 +68678,7 @@
     "Alekh Agarwal"
    ],
    "fi": [
-    "c:university-of-illinois"
+    "c:uiuc"
    ],
    "ci": [
     "c:google",
@@ -68977,7 +68718,7 @@
     "Adrien Taylor"
    ],
    "fi": [
-    "c:inria-paris"
+    "c:inria"
    ],
    "ci": [
     "c:inria"
@@ -69040,7 +68781,7 @@
    "ci": [
     "c:google",
     "c:mcgill-university",
-    "c:universit-de-montr-al"
+    "c:universite-de-montreal"
    ]
   },
   {
@@ -69117,9 +68858,9 @@
     "c:king-abdullah-university-of-science-and-technolo"
    ],
    "ci": [
-    "c:ethz-eth-zurich",
+    "c:eth-zurich",
     "c:kaust",
-    "c:technical-university-munich"
+    "c:technical-university-of-munich"
    ]
   },
   {
@@ -69455,7 +69196,7 @@
     "Yaron Lipman"
    ],
    "fi": [
-    "c:weizmann-institute"
+    "c:weizmann-institute-of-science"
    ],
    "ci": []
   },
@@ -69514,7 +69255,7 @@
     "c:princeton-university"
    ],
    "ci": [
-    "c:cole-normale-sup-rieure",
+    "c:ecole-normale-superieure",
     "c:inria"
    ]
   },
@@ -69584,7 +69325,7 @@
     "Wieland Brendel"
    ],
    "fi": [
-    "c:university-of-t-bingen",
+    "c:university-of-tubingen",
     "c:meta"
    ],
    "ci": [
@@ -69758,7 +69499,7 @@
     "Andreas Geiger"
    ],
    "fi": [
-    "c:eth-z-rich",
+    "c:eth-zurich",
     "c:max-planck-institute-for-intelligent-systems",
     "c:meta"
    ],
@@ -69782,7 +69523,7 @@
     "c:university-of-cambridge"
    ],
    "ci": [
-    "c:swiss-federal-institute-of-technology"
+    "c:eth-zurich"
    ]
   },
   {
@@ -70085,7 +69826,7 @@
     "c:laion"
    ],
    "ci": [
-    "c:j-lich-supercomputing-centre",
+    "c:julich-supercomputing-centre",
     "c:laion"
    ]
   },
@@ -70105,7 +69846,7 @@
     "c:nvidia"
    ],
    "ci": [
-    "c:california-institute-of-technology",
+    "c:caltech",
     "c:nvidia"
    ]
   },
@@ -70296,7 +70037,7 @@
     "Gabriel Peyré"
    ],
    "fi": [
-    "c:ecole-normale-sup-rieure-de-paris"
+    "c:ecole-normale-superieure-de-paris"
    ],
    "ci": [
     "c:cnrs",
@@ -70317,11 +70058,11 @@
    ],
    "fi": [
     "c:samsung",
-    "c:university-of-montreal"
+    "c:universite-de-montreal"
    ],
    "ci": [
     "c:samsung",
-    "c:university-of-montreal"
+    "c:universite-de-montreal"
    ]
   },
   {
@@ -70379,7 +70120,7 @@
    ],
    "fi": [
     "c:microsoft",
-    "c:university-of-illinois"
+    "c:uiuc"
    ],
    "ci": [
     "c:microsoft"
@@ -70420,7 +70161,7 @@
     "c:saarland-university"
    ],
    "ci": [
-    "c:universit-t-des-saarlandes"
+    "c:universitat-des-saarlandes"
    ]
   },
   {
@@ -70440,7 +70181,7 @@
    ],
    "ci": [
     "c:german-research-center-for-ai",
-    "c:the-hessian-center-for-ai",
+    "c:hessian-center-for-ai",
     "c:tu-darmstadt"
    ]
   },
@@ -71265,7 +71006,7 @@
     "c:google"
    ],
    "ci": [
-    "c:ethz-eth-zurich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -71530,7 +71271,7 @@
     "Pierre-Luc Bacon"
    ],
    "fi": [
-    "c:university-of-montreal",
+    "c:universite-de-montreal",
     "c:mila"
    ],
    "ci": []
@@ -71921,10 +71662,10 @@
     "Yoshua Bengio"
    ],
    "fi": [
-    "c:universit-de-montr-al"
+    "c:universite-de-montreal"
    ],
    "ci": [
-    "c:universit-de-montr-al"
+    "c:universite-de-montreal"
    ]
   },
   {
@@ -72131,10 +71872,10 @@
     "Florian Dorfler"
    ],
    "fi": [
-    "c:ethz-eth-zurich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:swiss-federal-institute-of-technology"
+    "c:eth-zurich"
    ]
   },
   {
@@ -72248,7 +71989,7 @@
     "Guoqi Li"
    ],
    "fi": [
-    "c:the-hong-kong-polytechnic-university"
+    "c:hong-kong-polytechnic-university"
    ],
    "ci": [
     "c:chinese-academy-of-sciences"
@@ -72267,10 +72008,10 @@
     "Stephan Günnemann"
    ],
    "fi": [
-    "c:technical-university-munich"
+    "c:technical-university-of-munich"
    ],
    "ci": [
-    "c:technical-university-munich"
+    "c:technical-university-of-munich"
    ]
   },
   {
@@ -72384,7 +72125,7 @@
     "c:max-planck-institute-for-intelligent-systems"
    ],
    "ci": [
-    "c:ellis-institute-t-bingen",
+    "c:ellis-institute-tubingen",
     "c:max-planck-institute-for-intelligent-systems"
    ]
   },
@@ -72437,7 +72178,7 @@
     "Zakaria Mhammedi"
    ],
    "fi": [
-    "c:university-of-illinois"
+    "c:uiuc"
    ],
    "ci": [
     "c:research"
@@ -72740,7 +72481,7 @@
     "Gitta Kutyniok"
    ],
    "fi": [
-    "c:ludwig-maximilians-universit-t-m-nchen"
+    "c:lmu-munich"
    ],
    "ci": [
     "c:lmu-munich"
@@ -72820,7 +72561,7 @@
     "c:uiuc"
    ],
    "ci": [
-    "c:university-of-illinois"
+    "c:uiuc"
    ]
   },
   {
@@ -72857,10 +72598,10 @@
     "Andrea Agazzi"
    ],
    "fi": [
-    "c:universit-t-bern"
+    "c:universitat-bern"
    ],
    "ci": [
-    "c:universit-t-bern"
+    "c:universitat-bern"
    ]
   },
   {
@@ -73126,10 +72867,10 @@
    ],
    "fi": [
     "c:max-planck-institute",
-    "c:technische-universit-t-berlin"
+    "c:technische-universitat-berlin"
    ],
    "ci": [
-    "c:freie-universit-t-berlin",
+    "c:freie-universitat-berlin",
     "c:university-of-twente"
    ]
   },
@@ -73147,7 +72888,7 @@
    ],
    "fi": [
     "c:aalto-university",
-    "c:technische-universit-t-wien"
+    "c:technische-universitat-wien"
    ],
    "ci": []
   },
@@ -73333,7 +73074,7 @@
     "Tao Luo"
    ],
    "fi": [
-    "c:shanghai-jiaotong-university"
+    "c:shanghai-jiao-tong-university"
    ],
    "ci": []
   },
@@ -73392,7 +73133,7 @@
    ],
    "ci": [
     "c:amazon",
-    "c:epfl-epf-lausanne"
+    "c:epfl"
    ]
   },
   {
@@ -73408,10 +73149,10 @@
     "Valentina Boeva"
    ],
    "fi": [
-    "c:ethz-eth-zurich"
+    "c:eth-zurich"
    ],
    "ci": [
-    "c:ethz-eth-zurich"
+    "c:eth-zurich"
    ]
   },
   {
@@ -73484,7 +73225,7 @@
     "Wei Shen"
    ],
    "fi": [
-    "c:shanghai-jiaotong-university"
+    "c:shanghai-jiao-tong-university"
    ],
    "ci": [
     "c:shanghai-jiao-tong-university"
@@ -73522,10 +73263,10 @@
     "Begüm Demir"
    ],
    "fi": [
-    "c:technische-universit-t-berlin"
+    "c:technische-universitat-berlin"
    ],
    "ci": [
-    "c:technische-universit-t-berlin"
+    "c:technische-universitat-berlin"
    ]
   },
   {
@@ -73658,11 +73399,11 @@
     "Mathias Niepert"
    ],
    "fi": [
-    "c:universit-t-stuttgart"
+    "c:universitat-stuttgart"
    ],
    "ci": [
     "c:nec",
-    "c:universit-t-stuttgart"
+    "c:universitat-stuttgart"
    ]
   },
   {
@@ -73736,11 +73477,11 @@
     "Margret Keuper"
    ],
    "fi": [
-    "c:universit-t-mannheim"
+    "c:universitat-mannheim"
    ],
    "ci": [
     "c:max-planck-institute-for-informatics",
-    "c:universit-t-mannheim"
+    "c:universitat-mannheim"
    ]
   },
   {
@@ -73834,7 +73575,7 @@
     "c:inria"
    ],
    "ci": [
-    "c:universit-jean-monnet"
+    "c:universite-jean-monnet"
    ]
   },
   {
@@ -74189,7 +73930,7 @@
     "Stephanie C.Y. Chan"
    ],
    "fi": [
-    "c:ethz-eth-zurich"
+    "c:eth-zurich"
    ],
    "ci": [
     "c:google-deepmind"
@@ -74211,7 +73952,7 @@
     "c:huawei"
    ],
    "ci": [
-    "c:universit-gustave-eiffel"
+    "c:universite-gustave-eiffel"
    ]
   },
   {
@@ -74265,7 +74006,7 @@
     "Marc Mezard"
    ],
    "fi": [
-    "c:cole-normale-sup-rieure"
+    "c:ecole-normale-superieure"
    ],
    "ci": [
     "c:bocconi-university"
@@ -74284,8 +74025,8 @@
     "Marc Mezard"
    ],
    "fi": [
-    "c:universit-paris-saclay",
-    "c:ecole-normale-sup-rieure-de-paris"
+    "c:universite-paris-saclay",
+    "c:ecole-normale-superieure-de-paris"
    ],
    "ci": [
     "c:bocconi-university"

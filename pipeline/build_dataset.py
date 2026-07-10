@@ -18,6 +18,7 @@ import html
 import json
 import re
 import sys
+import unicodedata
 from collections import Counter
 
 from common import DATA_DIR, ENRICH_DIR, SITE_DIR, load_json, dump_json, paper_key
@@ -91,20 +92,55 @@ ALIASES = {
 
 
 def norm_inst(name: str) -> str:
-    n = html.unescape(name).lower()
+    n = html.unescape(name)
+    n = unicodedata.normalize("NFKD", n).encode("ascii", "ignore").decode("ascii")
+    n = n.lower()
     n = re.sub(r"[^a-z0-9 ]+", " ", n)
     n = re.sub(r"\s+", " ", n).strip()
+    n = re.sub(r"^the ", "", n)
     return n
 
 
 # alias keys must live in norm_inst space or they never match
 ALIASES = {norm_inst(k): v for k, v in ALIASES.items()}
-ALIASES.update({
-    "meta reality labs zurich": "Meta",
-    "meta reality labs z rich": "Meta",
-    "facebook ai research fair meta": "Meta",
-    "meta israel": "Meta",
-})
+ALIASES.update({norm_inst(k): v for k, v in {
+    "meta reality labs zurich": "Meta", "meta israel": "Meta",
+    "facebook ai research fair meta": "Meta", "facebook ai research fair": "Meta",
+    "california institute of technology": "Caltech",
+    "epfl epf lausanne": "EPFL",
+    "ethz eth zurich": "ETH Zürich", "eth z": "ETH Zürich",
+    "swiss federal institute of technology": "ETH Zürich",
+    "korea advanced institute of science technology": "KAIST",
+    "king abdullah university of science and technology": "KAUST",
+    "shanghai jiaotong university": "Shanghai Jiao Tong University",
+    "an jiaotong university": "Xi'an Jiaotong University",
+    "technical university munich": "Technical University of Munich",
+    "technische universitat munchen": "Technical University of Munich",
+    "technical university of darmstadt": "TU Darmstadt",
+    "university of t": "University of Tübingen",
+    "ludwig maximilian university of munich": "LMU Munich",
+    "ludwig maximilians universitat munchen": "LMU Munich",
+    "weizmann institute": "Weizmann Institute of Science",
+    "university of montreal": "Université de Montréal",
+    "montreal institute for learning algorithms": "Mila",
+    "university college london university of london": "University College London",
+    "university college": "University College London",
+    "inria paris": "Inria",
+    "university of maryland college park": "University of Maryland",
+    "huawei noah": "Huawei",
+    "amazon germany": "Amazon", "aws ai labs": "Amazon",
+    "cohere for ai": "Cohere",
+    "prior allen institute for ai": "Allen Institute for AI",
+    "naver cloud ai": "NAVER", "naver labs europe": "NAVER",
+    "damo academy": "Alibaba",
+    "hkust gz": "HKUST (Guangzhou)",
+    "hong kong university of science and technology guangzhou": "HKUST (Guangzhou)",
+    "hkust shenzhen hong kong collaborative innovation research institute": "HKUST",
+    "university of illinois": "UIUC",
+    "university of illinois at chicago": "University of Illinois Chicago",
+    "usc information sciences institute": "University of Southern California",
+    "ecole normale superieure": "École Normale Supérieure",
+}.items()})
 
 
 def main():
