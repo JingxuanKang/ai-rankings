@@ -129,6 +129,11 @@ table.people > tbody > tr.odd > td { background: #f9f9f9; }
   .col-left, .col-right { flex: 1 1 100%; max-width: 100%; width: 100%; }
   .full-link { position: static; display: block; margin-bottom: 6px; }
 }
+.btn-group { display: inline-flex; vertical-align: middle; border: 1px solid #ccc; border-radius: 4px; overflow: hidden; }
+.sbtn { font: inherit; font-size: 13px; padding: 3px 12px; background: #fff; color: #333; border: none; cursor: pointer; }
+.sbtn + .sbtn { border-left: 1px solid #ccc; }
+.sbtn:hover:not(.on) { background: #f5f5f5; }
+.sbtn.on { background: #eef4fa; color: #337ab7; font-weight: 600; }
 </style>
 </head>
 <body>
@@ -139,7 +144,7 @@ table.people > tbody > tr.odd > td { background: #f9f9f9; }
     <p class="subtitle">&hellip; the CSRankings way: awards-only, first/corresponding-author credit, 2021&ndash;2026</p>
   </div>
 
-  <p class="rank-line">Rank <a href="#" id="scope" role="button" aria-label="Click to switch sector filter" title="click to switch: academic → industry → all">academic</a> institutions in <select id="country" aria-label="Filter by country"></select> by <b>awards</b> from 2021&ndash;2026</p>
+  <p class="rank-line">Rank <span class="btn-group" id="scope" role="radiogroup" aria-label="sector filter"><button type="button" data-v="academia" class="sbtn on">academic</button><button type="button" data-v="industry" class="sbtn">industry</button><button type="button" data-v="all" class="sbtn">all</button></span> institutions in <select id="country" aria-label="Filter by country"></select> by <b>awards</b> from 2021&ndash;2026</p>
 
   <div class="row">
     <div class="col-left">
@@ -437,10 +442,11 @@ function buildCountry() {
   });
   sel.addEventListener('change', function () { state.country = sel.value; resetAndRender(); });
   $('scope').addEventListener('click', function (e) {
-    e.preventDefault();
-    var next = { academia: 'industry', industry: 'all', all: 'academia' };
-    state.scope = next[state.scope];
-    $('scope').textContent = state.scope === 'academia' ? 'academic' : state.scope === 'industry' ? 'industry' : 'all';
+    var b = e.target.closest('button');
+    if (!b) return;
+    state.scope = b.getAttribute('data-v');
+    var btns = $('scope').querySelectorAll('button');
+    for (var i = 0; i < btns.length; i++) btns[i].className = 'sbtn' + (btns[i] === b ? ' on' : '');
     resetAndRender();
   });
 }
