@@ -68,7 +68,9 @@ view mirrors CSRankings' classic expandable-table layout.
 - Institution names are canonicalized across sources (diacritic folding, alias table,
   campus disambiguation).
 
-**Known caveats.** The last-author-as-corresponding convention is an approximation; a small
+**Known caveats.** ACL and EMNLP contribute award tiers only — *ACL venues treat oral vs
+poster as a presentation format rather than a distinction and publish no oral lists.
+The last-author-as-corresponding convention is an approximation; a small
 tail of institutions with unresolved countries is grouped as "Unknown". TPAMI is deliberately
 absent (journals have no oral/best-paper mechanism; the PAMI community's test-of-time prize —
 the Longuet-Higgins — is awarded at CVPR, which is covered). AAAI/IJCAI are excluded for low

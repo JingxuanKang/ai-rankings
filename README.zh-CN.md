@@ -38,7 +38,7 @@
 - 单位解析三路层叠：① OpenReview 作者档案（带任职起止年份，精确到"工作那年在哪"）；② Crossref 署名记录；③ 论文 PDF 首页批量提取 + 抽检；全部 test-of-time 与 best-paper 级条目逐篇人工核验。
 - 机构名跨源归一（变音符折叠、别名表、校区消歧）。
 
-**已知局限。** 末位作者代位通讯是近似；少量国别不明的机构归入 "Unknown"。TPAMI 有意不收（期刊没有 oral/best paper 机制，PAMI 社区的 test-of-time 即 Longuet-Higgins 奖颁于 CVPR，已覆盖）；AAAI/IJCAI 因信号密度低排除。
+**已知局限。** ACL/EMNLP 只计奖项层——\*ACL 系会议把 oral/poster 视为报告形式而非质量分层，且从不发布 oral 名单。末位作者代位通讯是近似；少量国别不明的机构归入 "Unknown"。TPAMI 有意不收（期刊没有 oral/best paper 机制，PAMI 社区的 test-of-time 即 Longuet-Higgins 奖颁于 CVPR，已覆盖）；AAAI/IJCAI 因信号密度低排除。
 
 ## 致谢与许可
 
