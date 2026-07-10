@@ -508,6 +508,46 @@ function openDossier(instId) {
     return chip;
   }));
 
+  // the people — CSRankings-style: credited 1st/corresponding authors here,
+  // ranked by weighted score; the tier chips above filter this list too
+  const people = new Map();
+  for (const { ev } of r.events) {
+    if (dossierTier && ev.award !== dossierTier) continue;
+    const names = new Set();
+    if (ev.fi.includes(instId) && ev.fa) names.add(ev.fa);
+    if (ev.ci.includes(instId)) for (const n of ev.ca || []) if (n) names.add(n);
+    for (const n of names) {
+      let p = people.get(n);
+      if (!p) people.set(n, p = { name: n, score: 0, counts: {} });
+      p.score += state.weights[ev.award];
+      p.counts[ev.award] = (p.counts[ev.award] || 0) + 1;
+    }
+  }
+  const plist = [...people.values()].sort((a, b) => b.score - a.score);
+  const peopleEl = $('dossier-people');
+  const renderPeople = limit => {
+    peopleEl.replaceChildren(...plist.slice(0, limit).map(p => {
+      const row = ttEl('person-row', '');
+      const counts = ttEl('p-counts', '', 'span');
+      for (const t of TIERS) {
+        if (!p.counts[t.id]) continue;
+        const pc = ttEl('pc', '', 'span');
+        const dot = ttEl('tier-dot', '', 'span'); dot.style.background = t.color;
+        pc.append(dot, document.createTextNode(p.counts[t.id] + '×'));
+        pc.title = t.label;
+        counts.append(pc);
+      }
+      row.append(ttEl('p-name', p.name, 'span'), counts, ttEl('p-score', fmt(p.score), 'span'));
+      return row;
+    }));
+    if (plist.length > limit) {
+      const more = ttEl('people-more', `show all ${plist.length} people`, 'button');
+      more.addEventListener('click', () => renderPeople(Infinity));
+      peopleEl.append(more);
+    }
+  };
+  renderPeople(12);
+
   // sparkline: score by year (current axis), gold columns
   const spark = d3.select('#dossier-spark');
   spark.selectAll('*').remove();
