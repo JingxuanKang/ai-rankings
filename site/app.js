@@ -30,7 +30,7 @@ const state = {
   attr: 'both',          // both | first | corr
   lens: 'alltime',       // alltime | now
   halflife: 5,
-  industry: true,
+  scope: 'all',          // all | academia | industry (industry = type 'company')
   venues: new Set(VENUES),
   weights: Object.fromEntries(TIERS.map(t => [t.id, t.w])),
   view: 'chart',
@@ -83,8 +83,10 @@ function contribs(ev) {
     if (fi.length && ci.length) { add(fi, 0.5); add(ci, 0.5); }
     else add(fi.length ? fi : ci, 1);
   }
-  if (!state.industry) for (const id of m.keys())
-    if ((INSTS[id] || {}).type === 'company') m.delete(id);
+  if (state.scope !== 'all') for (const id of m.keys()) {
+    const isCompany = (INSTS[id] || {}).type === 'company';
+    if (state.scope === 'academia' ? isCompany : !isCompany) m.delete(id);
+  }
   return m;
 }
 
@@ -603,14 +605,11 @@ function initControls() {
     $('board-table-wrap').hidden = state.view !== 'table';
   });
 
+  bindSeg('seg-scope', 'scope');
+
   $('halflife').addEventListener('input', e => {
     state.halflife = +e.target.value;
     $('halflife-out').textContent = state.halflife;
-    rerender();
-  });
-  $('toggle-industry').addEventListener('change', e => {
-    state.industry = e.target.checked;
-    $('industry-text').textContent = state.industry ? 'included' : 'excluded';
     rerender();
   });
 
@@ -685,7 +684,7 @@ function rerender() {
       `${lastRes.papersInView.toLocaleString()} honored papers in view · credit: ` +
       ({ both: 'first + corresponding (50/50)', first: 'first author', corr: 'corresponding author' })[state.attr] +
       ` · ${state.lens === 'now' ? `present-day lens, ${state.halflife}y half-life on age of work` : 'all-time lens'}` +
-      ` · industry ${state.industry ? 'included' : 'excluded'}`;
+      ` · ${({ all: 'academia + industry', academia: 'academia only (incl. gov / nonprofit labs)', industry: 'industry only' })[state.scope]}`;
     if (state.selected) openDossier(state.selected);
   });
 }

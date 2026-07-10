@@ -50,13 +50,13 @@
         <input type="range" id="halflife" min="2" max="15" value="5" step="1" aria-label="decay half-life in years">
       </label>
     </div>
-    <div class="dock-group">
-      <span class="dock-label">Industry</span>
-      <label class="switch">
-        <input type="checkbox" id="toggle-industry" checked>
-        <span class="track"><span class="thumb"></span></span>
-        <span class="switch-text" id="industry-text">included</span>
-      </label>
+    <div class="dock-group" role="radiogroup" aria-label="institution scope">
+      <span class="dock-label">Scope</span>
+      <div class="seg" id="seg-scope">
+        <button data-v="all" class="on">All</button>
+        <button data-v="academia">Academia</button>
+        <button data-v="industry">Industry</button>
+      </div>
     </div>
     <div class="dock-group dock-venues" role="group" aria-label="venue filter">
       <span class="dock-label">Venues</span>
