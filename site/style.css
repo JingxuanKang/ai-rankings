@@ -54,6 +54,9 @@ h4 { font-size: 12px; text-transform: uppercase; letter-spacing: .12em; color: v
 a { color: var(--ink-2); }
 a:hover { color: var(--accent); }
 
+.top-links { position: absolute; top: 16px; right: 20px; display: flex; gap: 10px; z-index: 50; }
+.top-links .theme-btn { text-decoration: none; background: var(--plane); }
+
 /* ── masthead ───────────────────────────────────────────────────────────── */
 .masthead { max-width: 1060px; margin: 0 auto; padding: 84px 24px 48px; text-align: center; }
 .wordmark-block { display: flex; align-items: center; gap: 22px; justify-content: center; }
