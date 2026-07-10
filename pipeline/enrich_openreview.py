@@ -30,6 +30,8 @@ API1 = "https://api.openreview.net"
 
 # venue-years resolvable through OpenReview; True = api1 (fetchable here)
 VENUEIDS = {
+    **{("ICLR", y): (f"ICLR.cc/{y}/conference", True) for y in range(2013, 2017)},
+    **{("ICLR", y): (f"ICLR.cc/{y}/Conference", True) for y in range(2017, 2021)},
     ("ICLR", 2021): ("ICLR.cc/2021/Conference", True),
     ("ICLR", 2022): ("ICLR.cc/2022/Conference", True),
     ("ICLR", 2023): ("ICLR.cc/2023/Conference", False),

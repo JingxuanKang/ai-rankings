@@ -247,9 +247,11 @@ def main():
     print(f"homepages: {len(homepages)} names ({n_extra} from web search)")
 
     resolved = sum(1 for ev in events if ev["fi"] or ev["ci"])
+    ya_min = min(ev["ya"] for ev in events)
+    ya_max = max(ev["ya"] for ev in events)
     dataset = {
         "generated": datetime.date.today().isoformat(),
-        "window": "award events 2021 – mid-2026",
+        "window": f"award events {ya_min} – {ya_max}",
         "stats": {
             "papers": len(events),
             "resolved": resolved,
