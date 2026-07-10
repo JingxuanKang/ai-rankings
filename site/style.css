@@ -1,14 +1,14 @@
 /* ── Signal Rank · ceremony-dark design tokens ─────────────────────────── */
 :root {
-  --plane:        #0b0b0e;   /* page */
-  --surface:      #131318;   /* cards / chart surface */
-  --surface-2:    #1a1a21;   /* raised */
-  --ink:          #f4f2e9;
-  --ink-2:        #b5b2a3;
-  --ink-muted:    #807d72;
-  --grid:         #232329;
-  --baseline:     #34343c;
-  --ring:         rgba(255,255,255,0.08);
+  --plane:        #0d1626;   /* page: deep scholar navy */
+  --surface:      #152238;   /* cards / chart surface */
+  --surface-2:    #1d2c47;   /* raised */
+  --ink:          #e9eef6;
+  --ink-2:        #b6c2d4;
+  --ink-muted:    #8294ac;
+  --grid:         #22314d;
+  --baseline:     #33476e;
+  --ring:         rgba(255,255,255,0.09);
   /* two-family tier palette: scarce gold (prizes) + quiet ink-blue (selection).
      validated: CVD worst-pair 14.7, chroma & contrast pass; bright-gold lightness
      is a deliberate prestige-luminance encoding (legend + labels + table as relief) */
@@ -16,29 +16,29 @@
   --tier-best:    #dfa93f;
   --tier-hm:      #7fa5e3;
   --tier-oral:    #4a6cb2;
-  --accent:       #dfa93f;
-  --de-emph:      #3f3f47;
+  --accent:       #7fb3e8;
+  --de-emph:      #3a4c6e;
   --serif: Georgia, 'Times New Roman', serif;
   --sans: system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
 /* light theme — gold #94600a/#c08a14 + ink-blue #3c62a8/#6f93d4 on #faf8f2 (validated) */
 :root[data-theme="light"] {
-  --plane:        #faf8f2;
-  --surface:      #ffffff;
-  --surface-2:    #f1eee1;
-  --ink:          #17150f;
-  --ink-2:        #46423a;
-  --ink-muted:    #6e6a5c;
-  --grid:         #e3ded0;
-  --baseline:     #c6bfae;
-  --ring:         rgba(23,21,15,0.12);
+  --plane:        #ffffff;
+  --surface:      #f9f9f9;   /* bootstrap stripe gray */
+  --surface-2:    #eef3f8;
+  --ink:          #333333;
+  --ink-2:        #555555;
+  --ink-muted:    #777777;
+  --grid:         #e8e8e8;
+  --baseline:     #d5d5d5;
+  --ring:         rgba(0,0,0,0.09);
   --tier-tot:     #94600a;
   --tier-best:    #c08a14;
   --tier-hm:      #3c62a8;
   --tier-oral:    #6f93d4;
-  --accent:       #94600a;
-  --de-emph:      #cfc9ba;
+  --accent:       #337ab7;
+  --de-emph:      #dde3ea;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -58,24 +58,24 @@ a:hover { color: var(--accent); }
 .masthead { max-width: 1060px; margin: 0 auto; padding: 84px 24px 48px; text-align: center; }
 .wordmark-block { display: flex; align-items: center; gap: 22px; justify-content: center; }
 .wordmark-rule { flex: 1; max-width: 190px; height: 1px;
-  background: linear-gradient(90deg, transparent, var(--tier-best)); }
-.wordmark-rule:last-child { background: linear-gradient(90deg, var(--tier-best), transparent); }
+  background: linear-gradient(90deg, transparent, var(--accent)); }
+.wordmark-rule:last-child { background: linear-gradient(90deg, var(--accent), transparent); }
 .wordmark {
   font-family: var(--serif); font-weight: 500; font-size: clamp(44px, 7vw, 76px);
   letter-spacing: .04em;
-  background: linear-gradient(175deg, #fff2c8 20%, var(--tier-best) 60%, #a87d28);
+  background: linear-gradient(175deg, #cfe3f7 15%, #7fb3e8 60%, #4a7fb8);
   -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
   text-wrap: nowrap;
 }
 :root[data-theme="light"] .wordmark {
-  background: linear-gradient(175deg, #c08a14 5%, #94600a 55%, #5c3a02);
+  background: linear-gradient(175deg, #4a90cd 5%, #337ab7 55%, #23527c);
   -webkit-background-clip: text; background-clip: text;
 }
 .manifesto {
   font-family: var(--serif); font-size: clamp(17px, 2.2vw, 21px); color: var(--ink-2);
   max-width: 640px; margin: 26px auto 0; line-height: 1.6;
 }
-.manifesto .gold { color: var(--tier-tot); }
+.manifesto .gold { color: var(--accent); }
 .manifesto em { color: var(--ink); }
 
 .kpi-row { display: flex; justify-content: center; gap: clamp(28px, 6vw, 72px); margin-top: 46px; flex-wrap: wrap; }
@@ -99,7 +99,7 @@ a:hover { color: var(--accent); }
 .seg { display: inline-flex; border: 1px solid var(--baseline); border-radius: 7px; overflow: hidden; }
 .seg button { padding: 5px 12px; font-size: 13px; color: var(--ink-2); }
 .seg button + button { border-left: 1px solid var(--baseline); }
-.seg button.on { background: var(--surface-2); color: var(--tier-tot); }
+.seg button.on { background: var(--surface-2); color: var(--accent); }
 .seg button:hover:not(.on) { color: var(--ink); }
 .seg-sm button { padding: 3px 10px; font-size: 12px; }
 
@@ -150,7 +150,7 @@ a:hover { color: var(--accent); }
   font-size: 12px; padding: 3px 10px; border: 1px solid var(--baseline); border-radius: 20px;
   color: var(--ink-muted);
 }
-.chips button.on { color: var(--ink); border-color: var(--tier-best); background: var(--surface-2); }
+.chips button.on { color: var(--ink); border-color: var(--accent); background: var(--surface-2); }
 .chips button:hover { color: var(--ink); }
 
 .halflife { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--ink-2); margin-left: 12px; }
@@ -165,7 +165,7 @@ a:hover { color: var(--accent); }
 
 .tier-filters { display: flex; gap: 6px; flex-wrap: wrap; }
 .tier-filters .tier-chip { font-size: 12px; padding: 3px 9px; opacity: .45; }
-.tier-filters .tier-chip.on { opacity: 1; border-color: var(--tier-best); }
+.tier-filters .tier-chip.on { opacity: 1; border-color: var(--accent); }
 .tier-filters .tier-chip b { font-variant-numeric: tabular-nums; }
 
 .weights { position: relative; margin-left: auto; }
@@ -174,7 +174,7 @@ a:hover { color: var(--accent); }
   border: 1px solid var(--baseline); padding: 5px 12px; border-radius: 7px;
 }
 .weights summary::-webkit-details-marker { display: none; }
-.weights[open] summary { color: var(--tier-tot); background: var(--surface-2); }
+.weights[open] summary { color: var(--accent); background: var(--surface-2); }
 .weights-pop {
   position: absolute; right: 0; top: calc(100% + 8px); z-index: 50;
   background: var(--surface-2); border: 1px solid var(--baseline); border-radius: 10px;
@@ -208,18 +208,19 @@ a:hover { color: var(--accent); }
 .podium-card:hover { transform: translateY(-3px); border-color: var(--tier-hm); }
 .podium-card.p1 {
   padding-top: 34px; padding-bottom: 30px;
-  background: linear-gradient(180deg, #1c1a12, var(--surface) 65%);
-  border-color: color-mix(in srgb, var(--tier-best) 45%, transparent);
-  box-shadow: 0 0 60px rgba(230,174,61,.10);
+  background: linear-gradient(180deg, #1b3050, var(--surface) 65%);
+  border-color: color-mix(in srgb, var(--accent) 45%, transparent);
+  box-shadow: 0 0 60px rgba(127,179,232,.10);
 }
 :root[data-theme="light"] .podium-card.p1 {
-  background: linear-gradient(180deg, #faf3df, var(--surface) 65%);
-  box-shadow: 0 10px 40px rgba(147,101,10,.14);
+  background: linear-gradient(180deg, #d9edf7, #ffffff 65%);
+  border-color: #bce8f1;
+  box-shadow: 0 10px 40px rgba(51,122,183,.14);
 }
-:root[data-theme="light"] .dossier { box-shadow: -20px 0 60px rgba(28,26,20,.18); }
-:root[data-theme="light"] .scrim { background: rgba(40,36,26,.28); }
-:root[data-theme="light"] .weights-pop { box-shadow: 0 12px 40px rgba(28,26,20,.16); }
-:root[data-theme="light"] .tooltip { box-shadow: 0 10px 30px rgba(28,26,20,.16); }
+:root[data-theme="light"] .dossier { box-shadow: -20px 0 60px rgba(0,0,0,.15); }
+:root[data-theme="light"] .scrim { background: rgba(0,0,0,.30); }
+:root[data-theme="light"] .weights-pop { box-shadow: 0 12px 40px rgba(0,0,0,.14); }
+:root[data-theme="light"] .tooltip { box-shadow: 0 10px 30px rgba(0,0,0,.14); }
 :root[data-theme="light"] .switch input:checked + .track .thumb { background: #fff; }
 
 .theme-btn {
@@ -227,7 +228,7 @@ a:hover { color: var(--accent); }
   padding: 5px 12px; border-radius: 7px;
 }
 .theme-btn:hover { color: var(--ink); }
-.podium-medal { font-size: 13px; letter-spacing: .3em; text-transform: uppercase; color: var(--tier-best); }
+.podium-medal { font-size: 13px; letter-spacing: .3em; text-transform: uppercase; color: var(--accent); }
 .podium-card.p2 .podium-medal, .podium-card.p3 .podium-medal { color: var(--ink-muted); }
 .podium-name { font-family: var(--serif); font-size: 21px; margin: 8px 0 2px; line-height: 1.25; }
 .podium-card.p1 .podium-name { font-size: 26px; }
@@ -247,7 +248,7 @@ a:hover { color: var(--accent); }
 }
 .board-row:hover { background: var(--surface); }
 .board-rank { text-align: right; color: var(--ink-muted); font-variant-numeric: tabular-nums; font-size: 13px; }
-.board-rank.medal { color: var(--tier-best); font-weight: 700; }
+.board-rank.medal { color: var(--accent); font-weight: 700; }
 .board-name { display: flex; align-items: center; gap: 8px; min-width: 0; }
 .board-name .nm { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 14px; }
 .type-tag {
@@ -308,13 +309,13 @@ a:hover { color: var(--accent); }
 }
 @keyframes slide-in { from { transform: translateX(40px); opacity: 0; } }
 .dossier-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
-.dossier-rank { font-size: 12px; letter-spacing: .25em; text-transform: uppercase; color: var(--tier-best); }
+.dossier-rank { font-size: 12px; letter-spacing: .25em; text-transform: uppercase; color: var(--accent); }
 .dossier h3 { font-family: var(--serif); font-size: 27px; font-weight: 500; line-height: 1.2; margin-top: 4px; }
 .dossier-meta { color: var(--ink-muted); font-size: 12.5px; margin-top: 4px; }
 .dossier-close { font-size: 26px; color: var(--ink-muted); line-height: 1; padding: 2px 8px; }
 .dossier-close:hover { color: var(--ink); }
 .dossier-score { margin: 18px 0 6px; display: flex; align-items: baseline; gap: 10px; }
-.dossier-score span:first-child { font-size: 44px; font-weight: 650; color: var(--tier-tot); }
+.dossier-score span:first-child { font-size: 44px; font-weight: 650; color: var(--ink); }
 .dossier-score-label { font-size: 12px; text-transform: uppercase; letter-spacing: .12em; color: var(--ink-muted); }
 .dossier-tiers { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 22px; }
 .tier-chip {
@@ -323,7 +324,7 @@ a:hover { color: var(--accent); }
   cursor: pointer;
 }
 .tier-chip:hover { border-color: var(--ink-muted); }
-.tier-chip.active { border-color: var(--tier-best); color: var(--ink); box-shadow: 0 0 0 1px var(--tier-best); }
+.tier-chip.active { border-color: var(--accent); color: var(--ink); box-shadow: 0 0 0 1px var(--accent); }
 .tier-chip b { color: var(--ink); font-variant-numeric: tabular-nums; }
 .tier-dot { width: 9px; height: 9px; border-radius: 50%; flex: none; }
 .dossier h4 { margin: 20px 0 8px; }
