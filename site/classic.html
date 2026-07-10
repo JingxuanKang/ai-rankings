@@ -139,7 +139,7 @@ table.people > tbody > tr.odd > td { background: #f9f9f9; }
     <p class="subtitle">&hellip; the CSRankings way: awards-only, first/corresponding-author credit, 2021&ndash;2026</p>
   </div>
 
-  <p class="rank-line">Rank institutions in <select id="country" aria-label="Filter by country"></select> by <b>awards</b> from 2021&ndash;2026</p>
+  <p class="rank-line">Rank <select id="scope" aria-label="Filter by sector"><option value="all">all</option><option value="academia">academic</option><option value="industry">industry</option></select> institutions in <select id="country" aria-label="Filter by country"></select> by <b>awards</b> from 2021&ndash;2026</p>
 
   <div class="row">
     <div class="col-left">
@@ -191,6 +191,7 @@ if (!DATA || !DATA.events || !DATA.events.length) {
 
 var INSTS = DATA.institutions;
 var EVENTS = DATA.events;
+var HOMEPAGES = DATA.homepages || {};
 
 /* ── constants ────────────────────────────────────────────────────────── */
 var TIERS = [
@@ -231,6 +232,7 @@ EVENTS.forEach(function (e) {
 var state = {
   tiers: new Set(TIERS.map(function (t) { return t.id; })),
   venues: new Set(ALL_VENUES),
+  scope: 'all',          // all | academia | industry (industry = type 'company')
   country: 'all',
   limit: 50
 };
@@ -239,6 +241,12 @@ var state = {
 var $ = function (id) { return document.getElementById(id); };
 function mk(tag, cls) { var e = document.createElement(tag); if (cls) e.className = cls; return e; }
 function fmt1(n) { return (Math.round(n * 10) / 10).toFixed(1); }
+/* real homepage (from OpenReview profiles) when known, else Scholar search */
+function personUrl(name) {
+  var hp = HOMEPAGES[name];
+  if (hp && /^https?:\/\//i.test(hp)) return hp;
+  return 'https://scholar.google.com/scholar?q=' + encodeURIComponent('"' + name + '"');
+}
 function flagOf(cc) {
   if (!cc || cc.length !== 2) return '';
   return String.fromCodePoint(
@@ -259,6 +267,13 @@ function contribs(ev) {
   var fi = ev.fi || [], ci = ev.ci || [];
   if (fi.length && ci.length) { add(fi, 0.5); add(ci, 0.5); }
   else add(fi.length ? fi : ci, 1);
+  if (state.scope !== 'all') {
+    var skeys = Array.from(m.keys());
+    for (var s = 0; s < skeys.length; s++) {
+      var isCompany = (INSTS[skeys[s]] || {}).type === 'company';
+      if (state.scope === 'academia' ? isCompany : !isCompany) m.delete(skeys[s]);
+    }
+  }
   if (state.country !== 'all') {
     var keys = Array.from(m.keys());
     for (var k = 0; k < keys.length; k++) {
@@ -421,6 +436,7 @@ function buildCountry() {
     sel.append(opt);
   });
   sel.addEventListener('change', function () { state.country = sel.value; resetAndRender(); });
+  $('scope').addEventListener('change', function () { state.scope = $('scope').value; resetAndRender(); });
 }
 
 /* ── render ───────────────────────────────────────────────────────────── */
@@ -438,7 +454,7 @@ function buildPeople(rec) {
     var nc = mk('td');
     var a = mk('a');
     a.textContent = p.name;
-    a.href = 'https://scholar.google.com/scholar?q=' + encodeURIComponent('"' + p.name + '"');
+    a.href = personUrl(p.name);
     a.target = '_blank'; a.rel = 'noopener';
     nc.append(a); tr.append(nc);
     TIERS.forEach(function (t2) {
@@ -495,7 +511,8 @@ function render() {
   var sm = $('show-more');
   sm.style.display = ranking.length > n ? '' : 'none';
 
-  var summary = ranking.length + (ranking.length === 1 ? ' institution' : ' institutions');
+  var scopeWord = state.scope === 'academia' ? 'academic ' : state.scope === 'industry' ? 'industry ' : '';
+  var summary = ranking.length + ' ' + scopeWord + (ranking.length === 1 ? 'institution' : 'institutions');
   if (state.country !== 'all') summary += ' in ' + (COUNTRY_NAMES[state.country] || state.country);
   $('summary').textContent = summary;
 }

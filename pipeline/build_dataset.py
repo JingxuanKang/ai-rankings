@@ -223,6 +223,29 @@ def main():
             unresolved[e["award"]] += 1
         events.append(ev)
 
+    # people homepages: OpenReview profiles first, web-searched extras as fallback
+    homepages = {}
+    for extra in sorted((DATA_DIR / "or_cache").glob("homepages_extra_*.json")):
+        try:
+            for k, v in load_json(extra).items():
+                if isinstance(v, str) and v.startswith("http"):
+                    homepages[k] = v
+        except Exception as ex:
+            print(f"skip {extra.name}: {ex}")
+    n_extra = len(homepages)
+    pj = DATA_DIR / "or_cache" / "profiles.jsonl"
+    if pj.exists():
+        with open(pj) as f:
+            for line in f:
+                c = json.loads(line).get("content", {})
+                hp = c.get("homepage")
+                if not hp or not isinstance(hp, str) or not hp.startswith("http"):
+                    continue
+                for nm in c.get("names") or []:
+                    if nm.get("fullname"):
+                        homepages[nm["fullname"]] = hp
+    print(f"homepages: {len(homepages)} names ({n_extra} from web search)")
+
     resolved = sum(1 for ev in events if ev["fi"] or ev["ci"])
     dataset = {
         "generated": datetime.date.today().isoformat(),
@@ -234,6 +257,7 @@ def main():
             "unresolved_by_award": dict(unresolved),
         },
         "institutions": institutions,
+        "homepages": homepages,
         "events": events,
     }
     dump_json(dataset, SITE_DIR / "data.json")

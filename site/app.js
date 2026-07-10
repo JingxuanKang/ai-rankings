@@ -540,7 +540,14 @@ function openDossier(instId) {
         pc.title = t.label;
         counts.append(pc);
       }
-      row.append(ttEl('p-name', p.name, 'span'), counts, ttEl('p-score', fmt(p.score), 'span'));
+      const nameEl = ttEl('p-name', '', 'span');
+      const hp = (DATA.homepages || {})[p.name];
+      if (hp) {
+        const a = document.createElement('a');
+        a.href = hp; a.target = '_blank'; a.rel = 'noopener'; a.textContent = p.name;
+        nameEl.append(a);
+      } else nameEl.textContent = p.name;
+      row.append(nameEl, counts, ttEl('p-score', fmt(p.score), 'span'));
       return row;
     }));
     if (plist.length > limit) {
