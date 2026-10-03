@@ -1,11 +1,11 @@
-// Capture dark-theme screenshots of the live site for the promo.
+// Capture light-theme screenshots of the live site for the promo.
 import { chromium } from 'playwright';
 const URL = 'https://airankings.jingxuan.uk/';
-const OUT = new globalThis.URL('../public/shots/', import.meta.url).pathname;
+const OUT = new globalThis.URL('../shots/', import.meta.url).pathname;
 const b = await chromium.launch();
 const p = await b.newPage({ viewport: { width: 1440, height: 900 }, deviceScaleFactor: 2,
   reducedMotion: 'reduce' });
-await p.addInitScript(() => localStorage.setItem('sr-theme', 'dark'));
+await p.addInitScript(() => localStorage.setItem('sr-theme', 'light'));
 await p.goto(URL, { waitUntil: 'networkidle' });
 await p.waitForTimeout(1500);
 const settle = () => p.waitForTimeout(1200);

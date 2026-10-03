@@ -5,16 +5,10 @@
   "scripts": {
     "shots": "node scripts/shots.mjs",
     "data": "python3 scripts/build_data.py",
-    "studio": "remotion studio src/index.ts",
-    "render": "remotion render src/index.ts Promo out/ai-rankings-promo-remotion.mp4 --codec h264 --crf 18"
+    "music": "python3 scripts/music.py out/music-raw.wav && ffmpeg -v error -y -i out/music-raw.wav -af loudnorm=I=-16:TP=-1.5:LRA=9 -ar 44100 out/music.wav",
+    "render": "node scripts/render-html.mjs"
   },
   "dependencies": {
-    "@remotion/cli": "^4.0.532",
-    "@types/react": "^19.3.0",
-    "playwright": "^1.63.0",
-    "react": "^19.3.0",
-    "react-dom": "^19.3.0",
-    "remotion": "^4.0.532",
-    "typescript": "^7.0.2"
+    "playwright": "^1.63.0"
   }
 }

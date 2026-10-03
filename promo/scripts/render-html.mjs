@@ -11,7 +11,7 @@ const opt = (k, d) => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] :
 const FPS = +opt('--fps', 30);
 const WORKERS = +opt('--workers', 6);
 const stills = opt('--stills');
-const NAME = 'ai-rankings-promo-html';
+const NAME = "ai-rankings-promo";
 const out = path.join(ROOT, 'out');
 const url = 'file://' + path.join(ROOT, 'html', 'index.html') + '?render';
 

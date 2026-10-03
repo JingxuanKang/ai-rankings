@@ -1,15 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
 <meta charset="utf-8">
 <title>AI Rankings Promo</title>
 <style>
   :root {
-    --plane: #0d1626; --surface: #152238; --surface-2: #1d2c47;
-    --ink: #e9eef6; --ink-2: #b6c2d4; --muted: #8294ac; --grid: #22314d; --baseline: #33476e;
-    --tot: #ffd76a; --best: #dfa93f; --hm: #7fa5e3; --oral: #4a6cb2; --accent: #7fb3e8;
-    --serif: Georgia, 'Times New Roman', serif;
-    --sans: system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+    /* site light theme (../site/style.css) on a warm paper plane */
+    --plane: #faf8f2; --surface: #ffffff; --surface-2: #f1eee6;
+    --ink: #2b2b2b; --ink-2: #555555; --muted: #8a8678; --grid: #e9e4d8; --baseline: #d8d2c3;
+    --tot: #94600a; --best: #c08a14; --hm: #3c62a8; --oral: #6f93d4; --accent: #337ab7;
+    --serif: Georgia, 'Songti SC', serif;
+    --sans: -apple-system, 'PingFang SC', 'Helvetica Neue', sans-serif;
     --mono: 'SF Mono', Menlo, monospace;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -19,23 +20,23 @@
     background: var(--plane); color: var(--ink); font-family: var(--sans); transform-origin: center; }
   .scene { position: absolute; inset: 0; opacity: 0; visibility: hidden; }
   .glow { position: absolute; inset: 0; background:
-    radial-gradient(1200px 700px at 50% 35%, rgba(127,179,232,0.10), transparent 70%),
-    radial-gradient(900px 500px at 50% 110%, rgba(255,215,106,0.06), transparent 70%); }
+    radial-gradient(1200px 700px at 50% 35%, rgba(51,122,183,0.06), transparent 70%),
+    radial-gradient(900px 500px at 50% 110%, rgba(192,138,20,0.07), transparent 70%); }
   [data-at] { opacity: 0; }
-  .kicker { font-family: var(--sans); font-size: 22px; letter-spacing: .28em; text-transform: uppercase;
+  .kicker { font-family: var(--sans); font-size: 26px; letter-spacing: .3em;
     color: var(--accent); font-weight: 600; }
-  .headline { font-family: var(--serif); font-size: 76px; color: var(--ink); line-height: 1.18; letter-spacing: .01em; }
+  .headline { font-family: var(--serif); font-size: 76px; color: var(--ink); line-height: 1.3; letter-spacing: .04em; font-weight: 600; }
   .center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center;
     justify-content: center; text-align: center; }
 
   /* hook */
   .cell { position: absolute; width: 18px; height: 22px; border-radius: 2px; background: var(--baseline); }
-  #strike { height: 3px; background: var(--tot); border-radius: 2px; box-shadow: 0 0 24px var(--tot); }
+  #strike { height: 4px; background: var(--best); border-radius: 2px; }
 
   /* podium */
   .tier { display: flex; align-items: center; height: 92px; border-bottom: 1px solid var(--grid); }
   .tier .dot { width: 22px; height: 22px; border-radius: 11px; margin-right: 30px; flex: none; }
-  .tier .lab { font-family: var(--serif); font-size: 46px; width: 540px; flex: none; }
+  .tier .lab { font-family: var(--serif); font-size: 46px; width: 540px; flex: none; letter-spacing: .04em; }
   .tier .mul { font-family: var(--mono); font-size: 40px; width: 160px; flex: none; }
   .tier .bar { height: 14px; border-radius: 7px; opacity: .9; }
   .tier .cnt { font-family: var(--mono); font-size: 28px; color: var(--muted); white-space: nowrap; width: 240px;
@@ -43,21 +44,21 @@
 
   /* stats */
   .stat .v { font-size: 104px; font-weight: 600; font-variant-numeric: tabular-nums; letter-spacing: -.01em; }
-  .stat .l { font-size: 22px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-top: 10px; }
+  .stat .l { font-size: 28px; letter-spacing: .2em; color: var(--muted); margin-top: 12px; }
   .chip { font-size: 28px; color: var(--ink-2); padding: 10px 26px; border-radius: 30px;
     border: 1.5px solid var(--baseline); background: var(--surface); }
 
   /* race */
   .row { position: absolute; left: 160px; height: 50px; display: flex; align-items: center; }
   .row .rk { width: 54px; font-family: var(--mono); font-size: 24px; }
-  .row .nm { width: 466px; font-size: 28px; white-space: nowrap; }
+  .row .nm { width: 466px; font-size: 28px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-right: 16px; }
   .row .bars { height: 34px; border-radius: 4px; overflow: hidden; display: flex; }
   .row .bars i { display: block; height: 100%; border-right: 2px solid var(--plane); }
   .row .sc { margin-left: 16px; font-family: var(--mono); font-size: 24px; color: var(--ink-2); }
 
   /* browser frame around real site screenshots */
   .win { position: absolute; left: 300px; top: 188px; width: 1320px; border-radius: 16px; overflow: hidden;
-    background: var(--surface); border: 1px solid var(--baseline); box-shadow: 0 40px 120px rgba(0,0,0,.55); }
+    background: var(--surface); border: 1px solid var(--baseline); box-shadow: 0 40px 100px -30px rgba(70,55,20,.35); }
   .win .bar { height: 46px; display: flex; align-items: center; padding: 0 18px; gap: 9px;
     background: var(--surface-2); border-bottom: 1px solid var(--grid); }
   .win .bar span { width: 13px; height: 13px; border-radius: 7px; }
@@ -66,11 +67,11 @@
   .win .view { position: relative; height: 780px; overflow: hidden; background: var(--plane); }
   .win .view img { position: absolute; left: 0; top: 0; width: 100%; opacity: 0; }
   .cap { position: absolute; left: 0; right: 0; top: 54px; text-align: center; opacity: 0; }
-  .cap .t { font-family: var(--serif); font-size: 48px; margin-top: 10px; }
+  .cap .t { font-family: var(--serif); font-size: 48px; margin-top: 10px; font-weight: 600; letter-spacing: .03em; }
 
   /* end */
   .wordmark { font-family: var(--serif); font-size: 150px; letter-spacing: .04em; white-space: nowrap; padding: 0 6px;
-    background: linear-gradient(175deg, #cfe3f7 15%, #7fb3e8 60%, #4a7fb8);
+    background: linear-gradient(175deg, #4a90cd 5%, #337ab7 55%, #23527c);
     -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 </style>
 </head>
@@ -81,9 +82,9 @@
   <section class="scene" data-from="0" data-to="5">
     <div id="cells" style="position:absolute; inset:0"></div>
     <div class="center">
-      <div class="kicker" data-at="8" style="color:var(--muted)">more submissions · more acceptances · more papers</div>
+      <div class="kicker" data-at="8" style="color:var(--muted)">投稿更多 · 接收更多 · 论文更多</div>
       <div style="height:34px"></div>
-      <div class="headline" data-at="78" style="font-size:92px">Paper counts stopped<br>meaning anything.</div>
+      <div class="headline" data-at="78" style="font-size:92px">论文数量，<br>已经说明不了什么。</div>
       <div style="height:30px"></div>
       <div id="strike"></div>
     </div>
@@ -93,15 +94,15 @@
   <section class="scene" data-from="5" data-to="12">
     <div class="glow"></div>
     <div style="position:absolute; inset:0; padding:110px 220px">
-      <div class="kicker" data-at="4" style="color:var(--tot)">only the podium counts</div>
+      <div class="kicker" data-at="4" style="color:var(--tot)">只看领奖台</div>
       <div style="height:22px"></div>
-      <div class="headline" data-at="10">What still means something<br>is the podium.</div>
+      <div class="headline" data-at="10">真正还有分量的，<br>是领奖台。</div>
       <div style="height:60px"></div>
       <div id="tiers"></div>
       <div class="tier" data-at="120" style="border:none">
         <div class="dot" style="border:2px solid var(--muted)"></div>
-        <div class="lab" style="color:var(--muted)">Regular acceptance</div>
-        <div style="font-family:var(--mono); font-size:40px; color:var(--muted)">× 0 <span style="font-size:26px">— by design</span></div>
+        <div class="lab" style="color:var(--muted)">普通接收</div>
+        <div style="font-family:var(--mono); font-size:40px; color:var(--muted)">× 0 <span style="font-size:26px; font-family:var(--sans)">— 有意为之</span></div>
       </div>
     </div>
   </section>
@@ -110,33 +111,33 @@
   <section class="scene" data-from="12" data-to="20">
     <div class="glow"></div>
     <div style="position:absolute; inset:0; padding:100px 220px">
-      <div class="kicker" data-at="4">who gets credit</div>
+      <div class="kicker" data-at="4">功劳归谁</div>
       <div style="height:22px"></div>
-      <div class="headline" data-at="10" style="font-size:70px">Credit goes where the work was <i>done</i>.</div>
+      <div class="headline" data-at="10" style="font-size:70px">功劳，记给<span style="color:var(--tot)">做出工作</span>的机构。</div>
       <div data-at="24" style="font-size:28px; color:var(--ink-2); margin-top:22px; line-height:1.5">
-        First and corresponding authors&rsquo; institutions, as printed on the paper at publication time.</div>
+        按论文发表时署名上印的单位，记给第一作者和通讯作者。</div>
     </div>
     <svg width="1920" height="1080" style="position:absolute; left:0; top:0">
-      <line x1="300" x2="1620" y1="640" y2="640" stroke="#33476e" stroke-width="2"/>
-      <path id="arc" d="M 360 640 Q 960 310 1560 640" fill="none" stroke="#ffd76a" stroke-width="3" opacity=".9"/>
-      <circle id="dot0" cx="360" cy="640" r="0" fill="#4a6cb2"/>
-      <circle id="dot1" cx="1560" cy="640" r="0" fill="#ffd76a"/>
+      <line x1="300" x2="1620" y1="640" y2="640" stroke="#d8d2c3" stroke-width="2"/>
+      <path id="arc" d="M 360 640 Q 960 310 1560 640" fill="none" stroke="#c08a14" stroke-width="3" opacity=".9"/>
+      <circle id="dot0" cx="360" cy="640" r="0" fill="#3c62a8"/>
+      <circle id="dot1" cx="1560" cy="640" r="0" fill="#c08a14"/>
     </svg>
     <div data-at="44" style="position:absolute; left:180px; top:674px; width:360px; text-align:center">
       <div style="font-family:var(--mono); font-size:40px">2016</div>
-      <div style="font-size:22px; color:var(--muted); margin-top:6px">work published · CVPR</div>
+      <div style="font-size:26px; color:var(--muted); margin-top:6px">发表于 CVPR</div>
     </div>
     <div data-at="128" style="position:absolute; left:1360px; top:674px; width:400px; text-align:center">
       <div style="font-family:var(--mono); font-size:40px; color:var(--tot)">2026</div>
-      <div style="font-size:22px; color:var(--muted); margin-top:6px">Test of Time award</div>
+      <div style="font-size:26px; color:var(--muted); margin-top:6px">获时间检验奖</div>
     </div>
     <div data-at="80" style="position:absolute; left:0; right:0; top:430px; text-align:center;
-      font-family:var(--serif); font-size:38px; font-style:italic">Deep Residual Learning for Image Recognition</div>
+      font-family:var(--serif); font-size:38px"><i>Deep Residual Learning for Image Recognition</i><span style="font-size:30px; color:var(--muted)">（ResNet）</span></div>
     <div style="position:absolute; left:0; right:0; top:860px; display:flex; justify-content:center">
       <div data-at="156" style="display:flex; align-items:center; gap:22px; padding:20px 40px; border-radius:14px;
         background:var(--surface); border:1px solid var(--baseline); font-size:30px; color:var(--ink-2)">
-        credited to <b style="color:var(--ink); font-family:var(--serif); font-size:36px; font-weight:500">Microsoft, 2016</b>
-        <span style="color:var(--muted)">— not to wherever its authors work today</span>
+        记给 <b style="color:var(--ink); font-family:var(--serif); font-size:36px; font-weight:600">2016 年的 Microsoft</b>
+        <span style="color:var(--muted)">— 而不是作者今天所在的单位</span>
       </div>
     </div>
   </section>
@@ -148,7 +149,7 @@
       <div id="stats" style="display:flex; gap:120px"></div>
       <div id="venues" style="display:flex; gap:18px; margin-top:90px"></div>
       <div data-at="100" style="font-size:24px; color:var(--muted); margin-top:56px">
-        every entry sourced from OpenReview, official award pages, ACL Anthology and CVF</div>
+        每一条都有出处：OpenReview、会议官方获奖页、ACL Anthology、CVF</div>
     </div>
   </section>
 
@@ -156,13 +157,13 @@
   <section class="scene" data-from="25.5" data-to="38.5">
     <div class="glow"></div>
     <div style="position:absolute; inset:0; padding:90px 160px">
-      <div class="kicker" data-at="4">the board · academia · all-time lens</div>
+      <div class="kicker" data-at="4">排行榜 · 学界 · 全时段</div>
       <div style="height:18px"></div>
-      <div class="headline" data-at="10" style="font-size:60px">Fifteen years of podiums, accumulated.</div>
+      <div class="headline" data-at="10" style="font-size:60px">十五年的领奖台，逐年累计。</div>
       <div id="legend" data-at="20" style="display:flex; gap:34px; margin-top:20px"></div>
     </div>
     <div id="year" style="position:absolute; right:150px; top:760px; font-family:var(--serif); font-size:210px;
-      color:var(--surface-2); font-variant-numeric:tabular-nums"></div>
+      color:#ebe6da; font-variant-numeric:tabular-nums"></div>
     <div id="rows"></div>
   </section>
 
@@ -186,8 +187,8 @@
         <div class="wordmark" id="wordmark">AI Rankings</div>
         <div id="ruleR" style="height:1.5px; background:linear-gradient(90deg, var(--accent), transparent)"></div>
       </div>
-      <div data-at="30" style="font-family:var(--serif); font-size:52px; color:var(--tot); font-style:italic; margin-top:12px">
-        Only the podium counts.</div>
+      <div data-at="30" style="font-family:var(--serif); font-size:56px; color:var(--tot); margin-top:16px; letter-spacing:.12em; font-weight:600">
+        只看领奖台。</div>
       <div data-at="56" style="font-family:var(--mono); font-size:40px; margin-top:70px; padding:18px 44px;
         border-radius:14px; border:1.5px solid var(--baseline); background:var(--surface)">airankings.jingxuan.uk</div>
     </div>
@@ -215,12 +216,12 @@ const flag = cc => cc && cc.length === 2
   ? String.fromCodePoint(...[...cc.toUpperCase()].map(c => 0x1F1A5 + c.charCodeAt(0))) : '';
 const el = (tag, css, html) => { const e = document.createElement(tag); if (css) e.style.cssText = css; if (html !== undefined) e.innerHTML = html; return e; };
 
-const C = { tot: '#ffd76a', best: '#dfa93f', hm: '#7fa5e3', oral: '#4a6cb2', muted: '#8294ac', plane: '#0d1626' };
+const C = { tot: '#94600a', best: '#c08a14', hm: '#3c62a8', oral: '#6f93d4', muted: '#8a8678', plane: '#faf8f2' };
 const TIERS = [
-  { id: 'test_of_time', label: 'Test of Time', w: 10, color: C.tot },
-  { id: 'best_paper', label: 'Best Paper', w: 8, color: C.best },
-  { id: 'honorable_mention', label: 'Honorable Mention', w: 3, color: C.hm },
-  { id: 'oral', label: 'Oral', w: 1, color: C.oral },
+  { id: 'test_of_time', label: '时间检验奖', w: 10, color: C.tot },
+  { id: 'best_paper', label: '最佳论文', w: 8, color: C.best },
+  { id: 'honorable_mention', label: '荣誉提名', w: 3, color: C.hm },
+  { id: 'oral', label: 'Oral 报告', w: 1, color: C.oral },
 ];
 
 /* ── build static DOM ───────────────────────────────────────────────────── */
@@ -233,12 +234,12 @@ for (let i = 0; i < COLS * ROWS; i++) {
 }
 const tierRows = TIERS.map((t, i) => {
   const r = el('div'); r.className = 'tier';
-  r.innerHTML = `<div class="dot" style="background:${t.color};${i < 2 ? `box-shadow:0 0 22px ${t.color}` : ''}"></div>
+  r.innerHTML = `<div class="dot" style="background:${t.color}"></div>
     <div class="lab">${t.label}</div><div class="mul" style="color:${t.color}">× ${t.w}</div>
     <div class="bar" style="background:${t.color}"></div><div class="cnt"></div>`;
   $('tiers').append(r); return r;
 });
-const STATS = [['papers', 'honored papers'], ['institutions', 'institutions credited'], ['venues', 'venues'], ['window', 'award window']];
+const STATS = [['papers', '篇获奖论文'], ['institutions', '家获记功机构'], ['venues', '个顶会'], ['window', '颁奖年份']];
 const statEls = STATS.map(([k, l], i) => {
   const s = el('div', 'text-align:center'); s.className = 'stat'; s.dataset.at = 4 + i * 6;
   s.innerHTML = `<div class="v"></div><div class="l">${l}</div>`; $('stats').append(s); return s.firstChild;
@@ -261,18 +262,18 @@ function browser(parent, shots, captions) {
   const w = el('div', '', `<div class="bar"><span style="background:#ff5f57"></span><span style="background:#febc2e"></span>
     <span style="background:#28c840"></span><div class="url"><div>airankings.jingxuan.uk</div></div></div><div class="view"></div>`);
   w.className = 'win'; parent.append(w);
-  shots.forEach(s => { const im = el('img'); im.src = '../public/shots/' + s; w.querySelector('.view').append(im); });
+  shots.forEach(s => { const im = el('img'); im.src = '../shots/' + s; w.querySelector('.view').append(im); });
   return { caps: [...parent.querySelectorAll('.cap')], imgs: [...w.querySelectorAll('img')] };
 }
 const CTRL = browser($('controls'), ['board.png', 'board-now.png', 'board-industry.png', 'dossier.png'], [
-  ['all-time lens', 'Who built the canon.'],
-  ['present-day lens', 'Who is strong now — awards decay with the age of the work.'],
-  ['academia · industry · all', 'Switch the field of play.'],
-  ['dossier', 'Open any lab: its people, its history, every award.']]);
+  ['全时段视角', '谁奠定了经典。'],
+  ['当下视角', '谁现在最强：奖项随工作年龄衰减。'],
+  ['学界 · 业界 · 全部', '一键切换赛场。'],
+  ['机构档案', '点开任一机构：成员、历年得分、每一项奖。']]);
 const EXPL = browser($('explore'), ['map.png', 'canon.png', 'nations.png'], [
-  ['the map', 'One map, everyone competes.'],
-  ['the canon', 'Every point of light is one honored paper.'],
-  ['nations', 'Credit rolled up by country and region.']]);
+  ['地图', '一张图，所有机构同场竞争。'],
+  ['经典', '每一个光点，是一篇获奖论文。'],
+  ['国家与地区', '按国家和地区汇总记功。']]);
 
 const scenes = [...document.querySelectorAll('.scene')];
 const risers = [...document.querySelectorAll('[data-at]')];
@@ -324,7 +325,7 @@ function render(t) {
     const p = lerpKeys(f, 40 + i * 14, 66 + i * 14, 0, 1, ease);
     r.style.opacity = p;
     r.children[3].style.width = 46 * TIERS[i].w * p + 'px';
-    r.children[4].textContent = fmtInt(D.tierCounts[TIERS[i].id] * p) + ' papers';
+    r.children[4].textContent = fmtInt(D.tierCounts[TIERS[i].id] * p) + ' 篇';
   });
 
   // 3 · credit
