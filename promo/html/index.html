@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AI Rankings Promo</title>
+<style>
+  :root {
+    --plane: #0d1626; --surface: #152238; --surface-2: #1d2c47;
+    --ink: #e9eef6; --ink-2: #b6c2d4; --muted: #8294ac; --grid: #22314d; --baseline: #33476e;
+    --tot: #ffd76a; --best: #dfa93f; --hm: #7fa5e3; --oral: #4a6cb2; --accent: #7fb3e8;
+    --serif: Georgia, 'Times New Roman', serif;
+    --sans: system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+    --mono: 'SF Mono', Menlo, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #000; }
+  body { display: flex; align-items: center; justify-content: center; min-height: 100vh; overflow: hidden; }
+  .stage { position: relative; width: 1920px; height: 1080px; overflow: hidden; flex: none;
+    background: var(--plane); color: var(--ink); font-family: var(--sans); transform-origin: center; }
+  .scene { position: absolute; inset: 0; opacity: 0; visibility: hidden; }
+  .glow { position: absolute; inset: 0; background:
+    radial-gradient(1200px 700px at 50% 35%, rgba(127,179,232,0.10), transparent 70%),
+    radial-gradient(900px 500px at 50% 110%, rgba(255,215,106,0.06), transparent 70%); }
+  [data-at] { opacity: 0; }
+  .kicker { font-family: var(--sans); font-size: 22px; letter-spacing: .28em; text-transform: uppercase;
+    color: var(--accent); font-weight: 600; }
+  .headline { font-family: var(--serif); font-size: 76px; color: var(--ink); line-height: 1.18; letter-spacing: .01em; }
+  .center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center;
+    justify-content: center; text-align: center; }
+
+  /* hook */
+  .cell { position: absolute; width: 18px; height: 22px; border-radius: 2px; background: var(--baseline); }
+  #strike { height: 3px; background: var(--tot); border-radius: 2px; box-shadow: 0 0 24px var(--tot); }
+
+  /* podium */
+  .tier { display: flex; align-items: center; height: 92px; border-bottom: 1px solid var(--grid); }
+  .tier .dot { width: 22px; height: 22px; border-radius: 11px; margin-right: 30px; flex: none; }
+  .tier .lab { font-family: var(--serif); font-size: 46px; width: 540px; flex: none; }
+  .tier .mul { font-family: var(--mono); font-size: 40px; width: 160px; flex: none; }
+  .tier .bar { height: 14px; border-radius: 7px; opacity: .9; }
+  .tier .cnt { font-family: var(--mono); font-size: 28px; color: var(--muted); white-space: nowrap; width: 240px;
+    text-align: right; margin-left: auto; }
+
+  /* stats */
+  .stat .v { font-size: 104px; font-weight: 600; font-variant-numeric: tabular-nums; letter-spacing: -.01em; }
+  .stat .l { font-size: 22px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-top: 10px; }
+  .chip { font-size: 28px; color: var(--ink-2); padding: 10px 26px; border-radius: 30px;
+    border: 1.5px solid var(--baseline); background: var(--surface); }
+
+  /* race */
+  .row { position: absolute; left: 160px; height: 50px; display: flex; align-items: center; }
+  .row .rk { width: 54px; font-family: var(--mono); font-size: 24px; }
+  .row .nm { width: 466px; font-size: 28px; white-space: nowrap; }
+  .row .bars { height: 34px; border-radius: 4px; overflow: hidden; display: flex; }
+  .row .bars i { display: block; height: 100%; border-right: 2px solid var(--plane); }
+  .row .sc { margin-left: 16px; font-family: var(--mono); font-size: 24px; color: var(--ink-2); }
+
+  /* browser frame around real site screenshots */
+  .win { position: absolute; left: 300px; top: 188px; width: 1320px; border-radius: 16px; overflow: hidden;
+    background: var(--surface); border: 1px solid var(--baseline); box-shadow: 0 40px 120px rgba(0,0,0,.55); }
+  .win .bar { height: 46px; display: flex; align-items: center; padding: 0 18px; gap: 9px;
+    background: var(--surface-2); border-bottom: 1px solid var(--grid); }
+  .win .bar span { width: 13px; height: 13px; border-radius: 7px; }
+  .win .url { flex: 1; display: flex; justify-content: center; }
+  .win .url div { font-size: 18px; color: var(--ink-2); background: var(--plane); padding: 6px 60px; border-radius: 8px; }
+  .win .view { position: relative; height: 780px; overflow: hidden; background: var(--plane); }
+  .win .view img { position: absolute; left: 0; top: 0; width: 100%; opacity: 0; }
+  .cap { position: absolute; left: 0; right: 0; top: 54px; text-align: center; opacity: 0; }
+  .cap .t { font-family: var(--serif); font-size: 48px; margin-top: 10px; }
+
+  /* end */
+  .wordmark { font-family: var(--serif); font-size: 150px; letter-spacing: .04em; white-space: nowrap; padding: 0 6px;
+    background: linear-gradient(175deg, #cfe3f7 15%, #7fb3e8 60%, #4a7fb8);
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+</style>
+</head>
+<body>
+<div class="stage" id="stage">
+
+  <!-- 1 · hook -->
+  <section class="scene" data-from="0" data-to="5">
+    <div id="cells" style="position:absolute; inset:0"></div>
+    <div class="center">
+      <div class="kicker" data-at="8" style="color:var(--muted)">more submissions · more acceptances · more papers</div>
+      <div style="height:34px"></div>
+      <div class="headline" data-at="78" style="font-size:92px">Paper counts stopped<br>meaning anything.</div>
+      <div style="height:30px"></div>
+      <div id="strike"></div>
+    </div>
+  </section>
+
+  <!-- 2 · podium -->
+  <section class="scene" data-from="5" data-to="12">
+    <div class="glow"></div>
+    <div style="position:absolute; inset:0; padding:110px 220px">
+      <div class="kicker" data-at="4" style="color:var(--tot)">only the podium counts</div>
+      <div style="height:22px"></div>
+      <div class="headline" data-at="10">What still means something<br>is the podium.</div>
+      <div style="height:60px"></div>
+      <div id="tiers"></div>
+      <div class="tier" data-at="120" style="border:none">
+        <div class="dot" style="border:2px solid var(--muted)"></div>
+        <div class="lab" style="color:var(--muted)">Regular acceptance</div>
+        <div style="font-family:var(--mono); font-size:40px; color:var(--muted)">× 0 <span style="font-size:26px">— by design</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · credit -->
+  <section class="scene" data-from="12" data-to="20">
+    <div class="glow"></div>
+    <div style="position:absolute; inset:0; padding:100px 220px">
+      <div class="kicker" data-at="4">who gets credit</div>
+      <div style="height:22px"></div>
+      <div class="headline" data-at="10" style="font-size:70px">Credit goes where the work was <i>done</i>.</div>
+      <div data-at="24" style="font-size:28px; color:var(--ink-2); margin-top:22px; line-height:1.5">
+        First and corresponding authors&rsquo; institutions, as printed on the paper at publication time.</div>
+    </div>
+    <svg width="1920" height="1080" style="position:absolute; left:0; top:0">
+      <line x1="300" x2="1620" y1="640" y2="640" stroke="#33476e" stroke-width="2"/>
+      <path id="arc" d="M 360 640 Q 960 310 1560 640" fill="none" stroke="#ffd76a" stroke-width="3" opacity=".9"/>
+      <circle id="dot0" cx="360" cy="640" r="0" fill="#4a6cb2"/>
+      <circle id="dot1" cx="1560" cy="640" r="0" fill="#ffd76a"/>
+    </svg>
+    <div data-at="44" style="position:absolute; left:180px; top:674px; width:360px; text-align:center">
+      <div style="font-family:var(--mono); font-size:40px">2016</div>
+      <div style="font-size:22px; color:var(--muted); margin-top:6px">work published · CVPR</div>
+    </div>
+    <div data-at="128" style="position:absolute; left:1360px; top:674px; width:400px; text-align:center">
+      <div style="font-family:var(--mono); font-size:40px; color:var(--tot)">2026</div>
+      <div style="font-size:22px; color:var(--muted); margin-top:6px">Test of Time award</div>
+    </div>
+    <div data-at="80" style="position:absolute; left:0; right:0; top:430px; text-align:center;
+      font-family:var(--serif); font-size:38px; font-style:italic">Deep Residual Learning for Image Recognition</div>
+    <div style="position:absolute; left:0; right:0; top:860px; display:flex; justify-content:center">
+      <div data-at="156" style="display:flex; align-items:center; gap:22px; padding:20px 40px; border-radius:14px;
+        background:var(--surface); border:1px solid var(--baseline); font-size:30px; color:var(--ink-2)">
+        credited to <b style="color:var(--ink); font-family:var(--serif); font-size:36px; font-weight:500">Microsoft, 2016</b>
+        <span style="color:var(--muted)">— not to wherever its authors work today</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · stats -->
+  <section class="scene" data-from="20" data-to="25.5">
+    <div class="glow"></div>
+    <div class="center">
+      <div id="stats" style="display:flex; gap:120px"></div>
+      <div id="venues" style="display:flex; gap:18px; margin-top:90px"></div>
+      <div data-at="100" style="font-size:24px; color:var(--muted); margin-top:56px">
+        every entry sourced from OpenReview, official award pages, ACL Anthology and CVF</div>
+    </div>
+  </section>
+
+  <!-- 5 · race -->
+  <section class="scene" data-from="25.5" data-to="38.5">
+    <div class="glow"></div>
+    <div style="position:absolute; inset:0; padding:90px 160px">
+      <div class="kicker" data-at="4">the board · academia · all-time lens</div>
+      <div style="height:18px"></div>
+      <div class="headline" data-at="10" style="font-size:60px">Fifteen years of podiums, accumulated.</div>
+      <div id="legend" data-at="20" style="display:flex; gap:34px; margin-top:20px"></div>
+    </div>
+    <div id="year" style="position:absolute; right:150px; top:760px; font-family:var(--serif); font-size:210px;
+      color:var(--surface-2); font-variant-numeric:tabular-nums"></div>
+    <div id="rows"></div>
+  </section>
+
+  <!-- 6 · live controls -->
+  <section class="scene" data-from="38.5" data-to="54.5" id="controls">
+    <div class="glow"></div>
+  </section>
+
+  <!-- 7 · explore -->
+  <section class="scene" data-from="54.5" data-to="64.5" id="explore">
+    <div class="glow"></div>
+  </section>
+
+  <!-- 8 · end -->
+  <section class="scene" data-from="64.5" data-to="71.5">
+    <div class="glow"></div>
+    <div class="center">
+      <div id="trophy" style="font-size:90px">🏆</div>
+      <div style="display:flex; align-items:center; gap:34px; margin-top:10px">
+        <div id="ruleL" style="height:1.5px; background:linear-gradient(90deg, transparent, var(--accent))"></div>
+        <div class="wordmark" id="wordmark">AI Rankings</div>
+        <div id="ruleR" style="height:1.5px; background:linear-gradient(90deg, var(--accent), transparent)"></div>
+      </div>
+      <div data-at="30" style="font-family:var(--serif); font-size:52px; color:var(--tot); font-style:italic; margin-top:12px">
+        Only the podium counts.</div>
+      <div data-at="56" style="font-family:var(--mono); font-size:40px; margin-top:70px; padding:18px 44px;
+        border-radius:14px; border:1.5px solid var(--baseline); background:var(--surface)">airankings.jingxuan.uk</div>
+    </div>
+  </section>
+</div>
+
+<script src="data.js"></script>
+<script>
+const D = window.PROMO;
+const FPS = 30, DURATION = 71.5, FADE = 14 / FPS;
+const $ = id => document.getElementById(id);
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+// cubic-bezier(0.22, 1, 0.36, 1), solved by bisection on x
+const ease = x => {
+  const bz = (p1, p2, s) => 3 * p1 * s * (1 - s) ** 2 + 3 * p2 * s * s * (1 - s) + s ** 3;
+  let lo = 0, hi = 1;
+  for (let i = 0; i < 24; i++) { const m = (lo + hi) / 2; bz(0.22, 0.36, m) < x ? lo = m : hi = m; }
+  return bz(1, 1, (lo + hi) / 2);
+};
+const easeOutCubic = x => 1 - (1 - x) ** 3;
+const easeInQuad = x => x * x;
+const lerpKeys = (f, f0, f1, v0, v1, e = x => x) => v0 + (v1 - v0) * e(clamp((f - f0) / (f1 - f0)));
+const fmtInt = n => Math.round(n).toLocaleString('en-US');
+const flag = cc => cc && cc.length === 2
+  ? String.fromCodePoint(...[...cc.toUpperCase()].map(c => 0x1F1A5 + c.charCodeAt(0))) : '';
+const el = (tag, css, html) => { const e = document.createElement(tag); if (css) e.style.cssText = css; if (html !== undefined) e.innerHTML = html; return e; };
+
+const C = { tot: '#ffd76a', best: '#dfa93f', hm: '#7fa5e3', oral: '#4a6cb2', muted: '#8294ac', plane: '#0d1626' };
+const TIERS = [
+  { id: 'test_of_time', label: 'Test of Time', w: 10, color: C.tot },
+  { id: 'best_paper', label: 'Best Paper', w: 8, color: C.best },
+  { id: 'honorable_mention', label: 'Honorable Mention', w: 3, color: C.hm },
+  { id: 'oral', label: 'Oral', w: 1, color: C.oral },
+];
+
+/* ── build static DOM ───────────────────────────────────────────────────── */
+const COLS = 64, ROWS = 30, cells = [];
+for (let i = 0; i < COLS * ROWS; i++) {
+  const c = el('div'); c.className = 'cell';
+  c.style.left = 60 + (i % COLS) * 28.2 + 'px'; c.style.top = 120 + Math.floor(i / COLS) * 28.2 + 'px';
+  c.dataset.order = (i * 7919) % (COLS * ROWS);
+  $('cells').append(c); cells.push(c);
+}
+const tierRows = TIERS.map((t, i) => {
+  const r = el('div'); r.className = 'tier';
+  r.innerHTML = `<div class="dot" style="background:${t.color};${i < 2 ? `box-shadow:0 0 22px ${t.color}` : ''}"></div>
+    <div class="lab">${t.label}</div><div class="mul" style="color:${t.color}">× ${t.w}</div>
+    <div class="bar" style="background:${t.color}"></div><div class="cnt"></div>`;
+  $('tiers').append(r); return r;
+});
+const STATS = [['papers', 'honored papers'], ['institutions', 'institutions credited'], ['venues', 'venues'], ['window', 'award window']];
+const statEls = STATS.map(([k, l], i) => {
+  const s = el('div', 'text-align:center'); s.className = 'stat'; s.dataset.at = 4 + i * 6;
+  s.innerHTML = `<div class="v"></div><div class="l">${l}</div>`; $('stats').append(s); return s.firstChild;
+});
+['NeurIPS', 'ICML', 'ICLR', 'CVPR', 'ICCV', 'ECCV', 'ACL', 'EMNLP'].forEach((v, i) => {
+  const c = el('div', '', v); c.className = 'chip'; c.dataset.at = 60 + i * 5; $('venues').append(c);
+});
+TIERS.forEach(t => $('legend').append(el('div', 'display:flex; align-items:center; gap:10px; font-size:22px; color:var(--ink-2)',
+  `<div style="width:16px; height:16px; border-radius:3px; background:${t.color}"></div>${t.label} × ${t.w}`)));
+const raceRows = Object.keys(D.names).map(id => {
+  const r = el('div'); r.className = 'row';
+  r.innerHTML = `<div class="rk"></div><div class="nm">${flag(D.countries[id])}&nbsp; ${D.names[id]}</div>
+    <div class="bars">${TIERS.map(t => `<i style="background:${t.color}"></i>`).join('')}</div><div class="sc"></div>`;
+  $('rows').append(r); return { id, r, rk: r.children[0], segs: [...r.children[2].children], sc: r.children[3] };
+});
+function browser(parent, shots, captions) {
+  captions.forEach(([k, t]) => {
+    const c = el('div', '', `<div class="kicker">${k}</div><div class="t">${t}</div>`); c.className = 'cap'; parent.append(c);
+  });
+  const w = el('div', '', `<div class="bar"><span style="background:#ff5f57"></span><span style="background:#febc2e"></span>
+    <span style="background:#28c840"></span><div class="url"><div>airankings.jingxuan.uk</div></div></div><div class="view"></div>`);
+  w.className = 'win'; parent.append(w);
+  shots.forEach(s => { const im = el('img'); im.src = '../public/shots/' + s; w.querySelector('.view').append(im); });
+  return { caps: [...parent.querySelectorAll('.cap')], imgs: [...w.querySelectorAll('img')] };
+}
+const CTRL = browser($('controls'), ['board.png', 'board-now.png', 'board-industry.png', 'dossier.png'], [
+  ['all-time lens', 'Who built the canon.'],
+  ['present-day lens', 'Who is strong now — awards decay with the age of the work.'],
+  ['academia · industry · all', 'Switch the field of play.'],
+  ['dossier', 'Open any lab: its people, its history, every award.']]);
+const EXPL = browser($('explore'), ['map.png', 'canon.png', 'nations.png'], [
+  ['the map', 'One map, everyone competes.'],
+  ['the canon', 'Every point of light is one honored paper.'],
+  ['nations', 'Credit rolled up by country and region.']]);
+
+const scenes = [...document.querySelectorAll('.scene')];
+const risers = [...document.querySelectorAll('[data-at]')];
+const ARC_LEN = 1400;
+$('arc').setAttribute('stroke-dasharray', ARC_LEN);
+
+/* ── per-frame render: t in seconds → deterministic frame ──────────────── */
+function window4(f, from, dur) { // fade in 12, hold, fade out 12 (frames)
+  return clamp((f - from) / 12) * clamp((from + dur + 12 - f) / 12);
+}
+function slides(f, D_, { caps, imgs }, opts) {
+  imgs.forEach((im, i) => {
+    const from = i * D_, dur = D_ - 12;
+    const p = clamp((f - from) / (dur + 12));
+    const o = opts[i] || {};
+    const s = 1 + (o.zoom ?? 0.04) * p, y = (o.pan ?? 0) * ease(p);
+    im.style.opacity = window4(f, from, dur);
+    im.style.transformOrigin = o.origin || '50% 0%';
+    im.style.transform = `translateY(${-y}%) scale(${s})`;
+    const c = caps[i];
+    c.style.opacity = window4(f, from, dur);
+    c.style.transform = `translateY(${16 * (1 - ease(clamp((f - from) / 16)))}px)`;
+  });
+}
+
+function render(t) {
+  for (const s of scenes) {
+    const a = +s.dataset.from, b = +s.dataset.to;
+    const o = clamp((t - a) / FADE) * clamp((b - t) / FADE);
+    s.style.opacity = o; s.style.visibility = o > 0 ? 'visible' : 'hidden';
+  }
+  for (const r of risers) {
+    const s = r.closest('.scene'), f = (t - +s.dataset.from) * FPS;
+    const p = ease(clamp((f - +r.dataset.at) / 18));
+    r.style.opacity = p; r.style.transform = `translateY(${(1 - p) * 24}px)`;
+  }
+  const local = from => (t - from) * FPS;
+
+  // 1 · hook
+  let f = local(0);
+  const shown = lerpKeys(f, 0, 80, 0, COLS * ROWS, easeInQuad);
+  const dim = lerpKeys(f, 70, 100, 1, 0.18);
+  for (const c of cells) c.style.opacity = c.dataset.order <= shown ? 0.55 * dim : 0;
+  $('strike').style.width = 760 * lerpKeys(f, 104, 124, 0, 1, ease) + 'px';
+
+  // 2 · podium
+  f = local(5);
+  tierRows.forEach((r, i) => {
+    const p = lerpKeys(f, 40 + i * 14, 66 + i * 14, 0, 1, ease);
+    r.style.opacity = p;
+    r.children[3].style.width = 46 * TIERS[i].w * p + 'px';
+    r.children[4].textContent = fmtInt(D.tierCounts[TIERS[i].id] * p) + ' papers';
+  });
+
+  // 3 · credit
+  f = local(12);
+  $('arc').setAttribute('stroke-dashoffset', ARC_LEN * (1 - lerpKeys(f, 70, 130, 0, 1, ease)));
+  $('dot0').setAttribute('r', lerpKeys(f, 40, 58, 0, 13));
+  $('dot1').setAttribute('r', lerpKeys(f, 125, 140, 0, 16));
+
+  // 4 · stats
+  f = local(20);
+  const k = lerpKeys(f, 10, 60, 0, 1, easeOutCubic);
+  statEls[0].textContent = fmtInt(D.stats.papers * k);
+  statEls[1].textContent = fmtInt(D.stats.institutions * k);
+  statEls[2].textContent = Math.round(8 * k);
+  statEls[3].textContent = D.stats.window.replace(' – ', '–');
+
+  // 5 · race
+  f = local(25.5);
+  const R = D.race, START = 40, STEP = 20, TOPN = 10, ROW = 64, TOP = 300, BARW = 1060;
+  const ti = clamp((f - START) / STEP, 0, R.length - 1);
+  const i0 = Math.floor(ti), i1 = Math.min(R.length - 1, i0 + 1), a = ease(ti - i0);
+  const rankOf = fr => { const o = Object.entries(fr.scores).sort((x, y) => y[1] - x[1]).map(([id]) => id);
+    return id => { const r = o.indexOf(id); return r < 0 ? 14 : r; }; };
+  const r0 = rankOf(R[i0]), r1 = rankOf(R[i1]);
+  const score = id => (R[i0].scores[id] ?? 0) * (1 - a) + (R[i1].scores[id] ?? 0) * a;
+  const max = Math.max(1, ...raceRows.map(x => score(x.id)));
+  $('year').textContent = Math.round(R[i0].year + (R[i1].year - R[i0].year) * a);
+  const intro = clamp((f - (START - 20)) / 20);
+  for (const x of raceRows) {
+    const rk = r0(x.id) * (1 - a) + r1(x.id) * a;
+    if (rk > TOPN + 0.5) { x.r.style.display = 'none'; continue; }
+    x.r.style.display = 'flex';
+    x.r.style.top = TOP + rk * ROW + 'px';
+    x.r.style.opacity = clamp((TOPN - rk) / 1) * intro;
+    x.rk.textContent = Math.round(rk) + 1;
+    x.rk.style.color = rk < 2.5 ? C.tot : C.muted;
+    x.segs.forEach((s, j) => {
+      const v = (R[i0].tiers[x.id]?.[j] ?? 0) * (1 - a) + (R[i1].tiers[x.id]?.[j] ?? 0) * a;
+      s.style.width = v / max * BARW + 'px';
+    });
+    x.sc.textContent = Math.round(score(x.id));
+  }
+
+  // 6 · controls, 7 · explore
+  slides(local(38.5), 114, CTRL, [{}, {}, {}, { origin: '100% 0%' }]);
+  slides(local(54.5), 100, EXPL, [{ zoom: 0.05, pan: 6, origin: '50% 30%' },
+    { zoom: 0.05, origin: '50% 30%' }, { zoom: 0.05, origin: '50% 30%' }]);
+
+  // 8 · end
+  f = local(64.5);
+  const sp = easeOutCubic(clamp((f - 6) / 22));
+  $('trophy').style.opacity = sp; $('trophy').style.transform = `scale(${0.8 + 0.2 * sp})`;
+  $('wordmark').style.opacity = sp;
+  const rule = lerpKeys(f, 10, 50, 0, 240, ease) + 'px';
+  $('ruleL').style.width = rule; $('ruleR').style.width = rule;
+}
+
+window.__render = render;
+window.__duration = DURATION;
+
+// fit to window for preview; ?t=12.3 freezes a frame; ?render skips playback
+function fit() {
+  const s = Math.min(innerWidth / 1920, innerHeight / 1080);
+  $('stage').style.transform = `scale(${s})`;
+}
+const q = new URLSearchParams(location.search);
+if (!q.has('render')) {
+  fit(); addEventListener('resize', fit);
+  if (q.has('t')) render(+q.get('t'));
+  else { const t0 = performance.now(); const loop = () => { render(((performance.now() - t0) / 1000) % DURATION); requestAnimationFrame(loop); }; loop(); }
+}
+</script>
+</body>
+</html>
