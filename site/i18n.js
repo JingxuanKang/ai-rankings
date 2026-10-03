@@ -1,6 +1,6 @@
 /* UI strings for AI Rankings. English is the source copy.
-   Institution names, people, paper titles, venue codes and other data
-   proper nouns are not in this catalog — callers leave them as-is. */
+   People, paper titles and venue codes stay as stored. Institution names
+   use the Chinese map in inst-zh.js when the UI language is Chinese. */
 (function () {
   'use strict';
 
@@ -464,10 +464,18 @@
     setLang(btn.getAttribute('data-lang'));
   });
 
+  function instName(name) {
+    if (name == null || name === '') return name || '';
+    if (lang !== 'zh') return name;
+    const table = window.SR_INST_ZH || {};
+    return table[name] || table[String(name).trim()] || name;
+  }
+
   window.SR_I18N = {
     t,
     setLang,
     apply,
+    instName,
     get lang() { return lang; },
   };
 

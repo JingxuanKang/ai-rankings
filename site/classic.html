@@ -204,6 +204,7 @@ table.people > tbody > tr.odd > td { background: #f9f9f9; }
   </div>
 </div>
 
+<script src="inst-zh.js"></script>
 <script src="i18n.js"></script>
 <script src="data.js"></script>
 <script>
@@ -211,6 +212,10 @@ table.people > tbody > tr.odd > td { background: #f9f9f9; }
 'use strict';
 
 var tx = window.SR_I18N ? window.SR_I18N.t : function (k) { return k; };
+function showInst(name) {
+  if (!name) return name || '';
+  return (window.SR_I18N && window.SR_I18N.instName) ? window.SR_I18N.instName(name) : name;
+}
 
 var DATA = window.SIGNAL_DATA;
 if (!DATA || !DATA.events || !DATA.events.length) {
@@ -555,7 +560,7 @@ function render() {
     var c0 = mk('td', 'num rank-cell'); c0.textContent = String(i + 1);
     var c1 = mk('td', 'name-cell');
     var tri = mk('span', 'tri'); tri.textContent = '►';           /* ► */
-    var nm = mk('span', 'iname'); nm.textContent = inst.name || r.id;
+    var nm = mk('span', 'iname'); nm.textContent = showInst(inst.name || r.id);
     var flag = mk('span', 'flag');
     var fl = flagOf(inst.country); flag.textContent = fl ? ' ' + fl : '';
     c1.append(tri, nm, flag);

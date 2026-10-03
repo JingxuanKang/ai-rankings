@@ -5,6 +5,10 @@
 
 const i18n = window.SR_I18N;
 const tr = i18n ? i18n.t : (k => k);
+function showInst(name) {
+  if (!name) return name || '';
+  return i18n && i18n.instName ? i18n.instName(name) : name;
+}
 
 const DATA = window.SIGNAL_DATA;
 if (!DATA || !DATA.events || !DATA.events.length) {
@@ -197,7 +201,7 @@ function renderPodium(ranking) {
     card.append(
       ttEl('laurel', idx === 0 ? '🏆' : idx === 1 ? '🥈' : '🥉'),
       ttEl('podium-medal', tr('medal.' + medals[idx])),
-      ttEl('podium-name', inst.name),
+      ttEl('podium-name', showInst(inst.name)),
       ttEl('podium-score', fmt(r.total)),
       ttEl('podium-breakdown',
         TIERS.map(tier => r.counts[tier.id] ? tierCountPhrase(tier, r.counts[tier.id]) : '')
@@ -241,7 +245,7 @@ function renderBoard(res) {
     rankEl.textContent = r.rank;
     rankEl.className = 'board-rank' + (r.rank <= 3 ? ' medal' : '');
     const nameEl = row.children[1];
-    nameEl.replaceChildren(ttEl('nm', `${flagOf(inst.country)} ${inst.name}`.trim(), 'span'));
+    nameEl.replaceChildren(ttEl('nm', `${flagOf(inst.country)} ${showInst(inst.name)}`.trim(), 'span'));
     const tag = typeTag(inst.type);
     if (tag) nameEl.append(ttEl('type-tag', tag, 'span'));
     const stack = row.children[2].firstChild;
@@ -270,7 +274,7 @@ function boardTip(e, instId) {
   if (!r) return;
   const inst = INSTS[instId] || { name: instId };
   showTip(e.clientX, e.clientY, box => {
-    box.append(ttEl('tt-value', tr('tip.pts', { n: fmt(r.total) })), ttEl('tt-label', inst.name));
+    box.append(ttEl('tt-value', tr('tip.pts', { n: fmt(r.total) })), ttEl('tt-label', showInst(inst.name)));
     for (const tier of TIERS) {
       if (!r.counts[tier.id]) continue;
       const rowEl = ttEl('tt-row', '');
@@ -294,7 +298,7 @@ function renderBoardTable(ranking) {
   for (const r of ranking.slice(0, 100)) {
     const inst = INSTS[r.id] || { name: r.id, type: '', country: '' };
     const tr = document.createElement('tr');
-    for (const cell of [r.rank, `${inst.name}${inst.country ? ' (' + inst.country + ')' : ''}`,
+    for (const cell of [r.rank, `${showInst(inst.name)}${inst.country ? ' (' + inst.country + ')' : ''}`,
       typeCell(inst.type), fmt(r.total),
       ...TIERS.map(t => r.counts[t.id] || 0)])
       tr.append(ttEl('', String(cell), 'td'));
@@ -407,7 +411,7 @@ canon.addEventListener('pointermove', e => {
       (ev.yw !== ev.ya ? ` — ${tr('canon.forWork', { year: ev.yw })}` : ''), 'span'));
     box.append(rowEl);
     const who = [ev.fa, ...(ev.ca || [])].filter(Boolean);
-    const insts = [...new Set([...ev.fi, ...ev.ci].map(i => (INSTS[i] || {}).name).filter(Boolean))];
+    const insts = [...new Set([...ev.fi, ...ev.ci].map(i => showInst((INSTS[i] || {}).name)).filter(Boolean))];
     if (who.length) box.append(ttEl('tt-label', who.join(' · ')));
     if (insts.length) box.append(ttEl('tt-label', insts.join(' · ')));
   });
@@ -480,7 +484,7 @@ function renderBump() {
       const yr = years[d3.leastIndex(years, a => Math.abs(x(a) - px))];
       const pt = d.pts.find(p => p.year === yr);
       showTip(e.clientX, e.clientY, box => {
-        box.append(ttEl('tt-value', d.name),
+        box.append(ttEl('tt-value', showInst(d.name)),
           ttEl('tt-label', pt
             ? tr('bump.after', { rank: pt.rank, year: yr })
             : tr('bump.finished', { rank: d.final })));
@@ -497,7 +501,7 @@ function renderBump() {
     .attr('class', 'bump-label')
     .attr('x', W - M.r + 14)
     .attr('y', d => Math.min(y(d.pts[d.pts.length - 1].rank), H - M.b) + 4)
-    .text(d => `#${d.final}  ${d.name}`)
+    .text(d => `#${d.final}  ${showInst(d.name)}`)
     .style('cursor', 'pointer')
     .on('pointerenter', (e, d) => hover(d.id, true))
     .on('pointerleave', (e, d) => hover(d.id, false))
@@ -514,7 +518,7 @@ function openDossier(instId) {
   const inst = INSTS[instId] || { name: instId, type: '', country: '' };
   if (!r) return;
   $('dossier-rank').textContent = tr('dossier.rank', { n: r.rank });
-  $('dossier-name').textContent = inst.name;
+  $('dossier-name').textContent = showInst(inst.name);
   $('dossier-meta').textContent = [
     typeCell(inst.type), inst.country,
     tr('dossier.papers', { n: r.events.length }),
@@ -803,7 +807,7 @@ function renderMap(res) {
     if (w >= 24 && h >= 12) {   // every readable cell carries its name
       const ink = lumOf(col.formatHex()) > 0.55 ? 'rgba(10,10,12,.88)' : '#fff';
       const fs = Math.max(7, Math.min(20, Math.sqrt(w * h) / 8));
-      const nm = ttEl('mc-name', leaf.data.name);
+      const nm = ttEl('mc-name', showInst(leaf.data.name));
       nm.style.fontSize = fs + 'px'; nm.style.color = ink;
       cell.append(nm);
       if (h >= 46 && w >= 46) {
@@ -837,7 +841,7 @@ $('map').addEventListener('pointermove', e => {
   const total = d3.sum(lastRes.ranking, r => r.total);
   showTip(e.clientX, e.clientY, box => {
     const cname = leaf.data.cc ? countryName(leaf.data.cc) : '—';
-    box.append(ttEl('tt-value', leaf.data.name),
+    box.append(ttEl('tt-value', showInst(leaf.data.name)),
       ttEl('tt-label', tr('map.tip', {
         place: `${flagOf(leaf.data.cc)} ${cname}`.trim(),
         pts: fmt(leaf.value),
@@ -919,8 +923,9 @@ function renderVs() {
     const flag = flagOf(ccByName.get(r.name) || '');
 
     // 左侧：名次. 国旗 名字
+    const school = (i18n && i18n.lang === 'zh') ? showInst(r.name) : r.short;
     svg.append('text').attr('x', xL).attr('y', yAt(i) + 4).attr('text-anchor', 'end')
-      .text(`${r.csr}. ${flag} ${r.short}`);
+      .text(`${r.csr}. ${flag} ${school}`);
 
     // 连线：线宽随落差，端点带表面环圆点
     const wpx = Math.max(1.6, Math.min(4.2, 1.4 + Math.abs(delta) / 28));
@@ -945,7 +950,7 @@ function renderVs() {
     const lbl = svg.append('text').attr('x', bx + bw + 8).attr('y', yAt(j) + 4);
     lbl.append('tspan').attr('class', 'vs-rank').attr('style', 'font-weight:700')
       .text(r.ours ? `#${r.ours} ` : '— ');
-    lbl.append('tspan').text(` ${flag} ${r.short}`);
+    lbl.append('tspan').text(` ${flag} ${(i18n && i18n.lang === 'zh') ? showInst(r.name) : r.short}`);
   }
 }
 
