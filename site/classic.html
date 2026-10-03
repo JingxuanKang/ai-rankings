@@ -210,14 +210,14 @@ table.people > tbody > tr.odd > td { background: #f9f9f9; }
 (function () {
 'use strict';
 
-var tr = window.SR_I18N ? window.SR_I18N.t : function (k) { return k; };
+var tx = window.SR_I18N ? window.SR_I18N.t : function (k) { return k; };
 
 var DATA = window.SIGNAL_DATA;
 if (!DATA || !DATA.events || !DATA.events.length) {
   document.body.replaceChildren();
   var msg = document.createElement('p');
   msg.style.cssText = 'padding:80px;text-align:center;color:#999';
-  msg.textContent = tr('empty.data');
+  msg.textContent = tx('empty.data');
   document.body.appendChild(msg);
   return;
 }
@@ -379,7 +379,7 @@ function buildTiers() {
       else state.tiers.delete(t.id);
       resetAndRender();
     });
-    var lab = mk('label'); lab.htmlFor = cb.id; lab.textContent = tr('tier.' + t.id);
+    var lab = mk('label'); lab.htmlFor = cb.id; lab.textContent = tx('tier.' + t.id);
     lab.setAttribute('data-i18n', 'tier.' + t.id);
     var cnt = mk('span', 'count'); cnt.textContent = String(tierCount[t.id] || 0);
     row.append(cb, lab, cnt); tl.append(row);
@@ -410,13 +410,13 @@ function buildVenues() {
   VENUE_GROUPS.forEach(function (g) {
     var gh = mk('div', 'grp-head');
     var glab = mk('span');
-    glab.textContent = tr(g.key);
+    glab.textContent = tx(g.key);
     glab.setAttribute('data-i18n', g.key);
     gh.append(glab);
     var tog = mk('span', 'toggle');
-    var on = mk('a'); on.href = '#'; on.textContent = tr('classic.on');
+    var on = mk('a'); on.href = '#'; on.textContent = tx('classic.on');
     on.setAttribute('data-i18n', 'classic.on');
-    var off = mk('a'); off.href = '#'; off.textContent = tr('classic.off');
+    var off = mk('a'); off.href = '#'; off.textContent = tx('classic.off');
     off.setAttribute('data-i18n', 'classic.off');
     on.addEventListener('click', function (e) {
       e.preventDefault();
@@ -469,7 +469,7 @@ function buildCountry() {
   }
   var sorted = Array.from(byC.entries()).sort(function (a, b) { return b[1] - a[1]; });
   var sel = $('country');
-  var all = mk('option'); all.value = 'all'; all.textContent = tr('country.all');
+  var all = mk('option'); all.value = 'all'; all.textContent = tx('country.all');
   all.setAttribute('data-i18n', 'country.all');
   sel.append(all);
   sorted.forEach(function (pair) {
@@ -520,7 +520,7 @@ function buildPeople(rec) {
     ['classic.col.oral', true],
     ['classic.col.score', true]
   ].forEach(function (col) {
-    var th = mk('th'); th.textContent = tr(col[0]); if (col[1]) th.className = 'num'; htr.append(th);
+    var th = mk('th'); th.textContent = tx(col[0]); if (col[1]) th.className = 'num'; htr.append(th);
   });
   thead.append(htr); t.append(thead);
   var tb = mk('tbody');
@@ -586,12 +586,12 @@ function render() {
   var sm = $('show-more');
   sm.style.display = ranking.length > n ? '' : 'none';
 
-  var scopeWord = tr('classic.scopeWord.' + state.scope);
-  var summary = tr(ranking.length === 1 ? 'classic.summary.one' : 'classic.summary.many', {
+  var scopeWord = tx('classic.scopeWord.' + state.scope);
+  var summary = tx(ranking.length === 1 ? 'classic.summary.one' : 'classic.summary.many', {
     n: ranking.length, scope: scopeWord
   });
   if (state.country !== 'all') {
-    summary = tr('classic.summary.in', { base: summary, country: countryLabel(state.country) });
+    summary = tx('classic.summary.in', { base: summary, country: countryLabel(state.country) });
   }
   $('summary').textContent = summary;
 }
@@ -611,7 +611,7 @@ function refreshCountryLabels() {
   if (!sel) return;
   for (var i = 0; i < sel.options.length; i++) {
     var o = sel.options[i];
-    if (o.value === 'all') { o.textContent = tr('country.all'); continue; }
+    if (o.value === 'all') { o.textContent = tx('country.all'); continue; }
     var flag = flagOf(o.value);
     o.textContent = (flag ? flag + ' ' : '') + countryLabel(o.value);
   }
