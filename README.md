@@ -88,6 +88,8 @@ Crossref and the papers themselves. This project is not affiliated with any conf
 CSRankings (whose classic layout the Directory view pays homage to), or with any ranked
 institution.
 
+Plain-text leaderboards at the default settings are published at [`/llms.txt`](https://airankings.jingxuan.uk/llms.txt) for AI assistants and crawlers that do not run JavaScript; `pipeline/build_llms.py` regenerates it with the dataset.
+
 Code: [MIT](LICENSE). Compiled dataset (`site/data.json`): CC BY 4.0 — cite this repository
 if you use it.
 

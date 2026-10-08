@@ -21,6 +21,7 @@ import sys
 import unicodedata
 from collections import Counter
 
+import build_llms
 from common import DATA_DIR, ENRICH_DIR, SITE_DIR, load_json, dump_json, paper_key
 
 # Cross-source canonicalization: enrichment sources key institutions three ways
@@ -272,6 +273,7 @@ def main():
           f"({resolved/max(len(events),1):.1%}), institutions: {len(institutions)}")
     print(f"unresolved by award tier: {dict(unresolved)}")
     print(f"wrote {SITE_DIR / 'data.json'} and data.js")
+    build_llms.main()
 
 
 if __name__ == "__main__":

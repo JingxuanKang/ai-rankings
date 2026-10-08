@@ -46,6 +46,8 @@
 
 排名基于公开的会议荣誉信息汇编；奖项归各会议及其程序委员会所有；署名数据来自 OpenReview、Crossref 与论文本身。本项目与任何会议、CSRankings（Directory 视图向其经典布局致敬）或任何被排名机构均无关联。
 
+默认设置下的纯文本排行榜发布在 [`/llms.txt`](https://airankings.jingxuan.uk/llms.txt)，供不执行 JavaScript 的 AI 助手和爬虫读取；`pipeline/build_llms.py` 随数据集一起重新生成它。
+
 代码：[MIT](LICENSE)。数据集（`site/data.json`）：CC BY 4.0——使用请引用本仓库。
 
 ## 友情链接

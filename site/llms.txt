@@ -1,0 +1,305 @@
+# AI Rankings
+
+> An awards-only ranking of AI research institutions. It counts only orals, best papers (incl. outstanding papers), honorable mentions and test-of-time awards at NeurIPS, ICML, ICLR, CVPR, ICCV, ECCV, ACL, EMNLP. Regular acceptances score zero. Credit goes to the first and corresponding authors' institutions as printed on the paper at publication time.
+
+Data snapshot: 2026-07-10. 6,476 honored papers, award events 2012 – 2026 (test-of-time awards cover work from 1987), 97.8% affiliation-resolved, 1,552 institutions. Built by Jingxuan Kang. Code MIT, dataset CC BY 4.0.
+
+Scoring used in the tables below (the site defaults): Test of Time = 10, Best / Outstanding Paper = 8, Honorable Mention / Award Candidate = 3, Oral = 1. Each paper splits credit 50/50 between the first author's and the corresponding author's institutions (last author when no corresponding author is flagged); multiple affiliations split equally. The all-time lens credits the year the work was done. The present-day lens halves an award's weight every 5 years of the work's age (reference year 2026). Columns ToT/Best/HM/Oral count honored papers with any credit to that institution. On the live site every weight, filter and lens is adjustable.
+
+## Pages
+
+- [Interactive ranking](https://airankings.jingxuan.uk/): leaderboard, treemap, institution dossiers with people and award records
+- [Directory view](https://airankings.jingxuan.uk/classic.html): CSRankings-style expandable table
+- [Dataset JSON](https://airankings.jingxuan.uk/data.json): every honored paper with venue, years, award tier, authors and institution ids
+- [Methodology and caveats](https://raw.githubusercontent.com/JingxuanKang/ai-rankings/master/README.md)
+- [Source code](https://github.com/JingxuanKang/ai-rankings)
+
+## Top 50 academic institutions, all-time
+
+| Rank | Institution | Country | Score | ToT | Best | HM | Oral |
+|---:|---|---|---:|---:|---:|---:|---:|
+| 1 | Stanford University | US | 436.3 | 6 | 29 | 21 | 208 |
+| 2 | Carnegie Mellon University | US | 318.2 | 5 | 15 | 22 | 181 |
+| 3 | UC Berkeley | US | 312.4 | 10 | 12 | 10 | 171 |
+| 4 | MIT | US | 240.0 | 4 | 11 | 8 | 163 |
+| 5 | University of Washington | US | 200.4 | 6 | 14 | 19 | 61 |
+| 6 | ETH Zürich | CH | 147.5 | 2 | 6 | 9 | 123 |
+| 7 | University of Oxford | GB | 143.9 | 4 | 4 | 9 | 94 |
+| 8 | Princeton University | US | 139.4 | 3 | 8 | 8 | 70 |
+| 9 | Tsinghua University | CN | 134.6 | 0 | 4 | 10 | 123 |
+| 10 | Cornell University | US | 119.4 | 3 | 9 | 5 | 51 |
+| 11 | Peking University | CN | 117.2 | 0 | 7 | 5 | 90 |
+| 12 | University of Toronto | CA | 112.2 | 4 | 9 | 6 | 66 |
+| 13 | Georgia Tech | US | 108.0 | 0 | 8 | 8 | 60 |
+| 14 | Inria | FR | 107.1 | 7 | 4 | 2 | 76 |
+| 15 | Columbia University | US | 96.7 | 1 | 5 | 4 | 49 |
+| 16 | University of Cambridge | GB | 86.4 | 1 | 6 | 8 | 44 |
+| 17 | UC San Diego | US | 76.8 | 0 | 3 | 5 | 61 |
+| 18 | EPFL | CH | 76.8 | 1 | 1 | 4 | 60 |
+| 19 | New York University | US | 75.8 | 2 | 3 | 7 | 50 |
+| 20 | Harvard University | US | 70.2 | 2 | 3 | 6 | 39 |
+| 21 | Chinese University of Hong Kong | HK | 69.8 | 0 | 0 | 3 | 90 |
+| 22 | National University of Singapore | SG | 68.6 | 0 | 2 | 1 | 68 |
+| 23 | UIUC | US | 67.1 | 2 | 1 | 2 | 59 |
+| 24 | UT Austin | US | 67.0 | 0 | 0 | 7 | 68 |
+| 25 | Allen Institute for AI | US | 66.1 | 1 | 7 | 11 | 20 |
+| 26 | Nanyang Technological University | SG | 65.2 | 0 | 0 | 8 | 72 |
+| 27 | Shanghai Jiao Tong University | CN | 64.4 | 0 | 1 | 5 | 68 |
+| 28 | KAIST | KR | 61.0 | 0 | 1 | 4 | 58 |
+| 29 | University College London | GB | 60.6 | 1 | 4 | 4 | 47 |
+| 30 | University of Wisconsin-Madison | US | 60.4 | 1 | 2 | 1 | 38 |
+| 31 | UCLA | US | 59.3 | 0 | 2 | 3 | 55 |
+| 32 | University of Amsterdam | NL | 59.2 | 2 | 2 | 5 | 29 |
+| 33 | Technion - Israel Institute of Technology | IL | 57.4 | 0 | 4 | 2 | 37 |
+| 34 | Johns Hopkins University | US | 57.1 | 0 | 2 | 6 | 37 |
+| 35 | University of Southern California | US | 56.7 | 2 | 0 | 5 | 36 |
+| 36 | Technical University of Munich | DE | 56.3 | 1 | 1 | 3 | 57 |
+| 37 | Université de Montréal | CA | 55.9 | 2 | 4 | 0 | 36 |
+| 38 | University of Michigan | US | 55.5 | 0 | 5 | 4 | 33 |
+| 39 | Zhejiang University | CN | 54.0 | 0 | 0 | 9 | 59 |
+| 40 | Chinese Academy of Sciences | CN | 53.5 | 0 | 2 | 4 | 67 |
+| 41 | University of Maryland | US | 53.5 | 1 | 3 | 0 | 35 |
+| 42 | Imperial College London | GB | 52.7 | 1 | 1 | 2 | 48 |
+| 43 | Max Planck Institute for Intelligent Systems | DE | 52.6 | 2 | 2 | 2 | 51 |
+| 44 | University of Science and Technology of China | CN | 52.2 | 1 | 1 | 4 | 52 |
+| 45 | University of Edinburgh | GB | 50.2 | 1 | 1 | 7 | 26 |
+| 46 | University of Pennsylvania | US | 48.2 | 1 | 1 | 1 | 34 |
+| 47 | University of British Columbia | CA | 45.0 | 1 | 3 | 2 | 18 |
+| 48 | University of Hong Kong | HK | 43.4 | 0 | 0 | 5 | 40 |
+| 49 | Fudan University | CN | 40.8 | 0 | 1 | 8 | 23 |
+| 50 | Seoul National University | KR | 40.5 | 0 | 0 | 2 | 43 |
+
+## Top 50 academic institutions, present-day lens (5-year half-life)
+
+| Rank | Institution | Country | Score | ToT | Best | HM | Oral |
+|---:|---|---|---:|---:|---:|---:|---:|
+| 1 | Stanford University | US | 196.9 | 6 | 29 | 21 | 208 |
+| 2 | Carnegie Mellon University | US | 149.4 | 5 | 15 | 22 | 181 |
+| 3 | UC Berkeley | US | 107.9 | 10 | 12 | 10 | 171 |
+| 4 | MIT | US | 105.5 | 4 | 11 | 8 | 163 |
+| 5 | Tsinghua University | CN | 90.8 | 0 | 4 | 10 | 123 |
+| 6 | University of Washington | US | 80.4 | 6 | 14 | 19 | 61 |
+| 7 | ETH Zürich | CH | 76.7 | 2 | 6 | 9 | 123 |
+| 8 | Peking University | CN | 74.9 | 0 | 7 | 5 | 90 |
+| 9 | Princeton University | US | 73.5 | 3 | 8 | 8 | 70 |
+| 10 | University of Oxford | GB | 59.1 | 4 | 4 | 9 | 94 |
+| 11 | Georgia Tech | US | 58.5 | 0 | 8 | 8 | 60 |
+| 12 | Columbia University | US | 47.2 | 1 | 5 | 4 | 49 |
+| 13 | University of Toronto | CA | 46.1 | 4 | 9 | 6 | 66 |
+| 14 | Shanghai Jiao Tong University | CN | 45.8 | 0 | 1 | 5 | 68 |
+| 15 | Nanyang Technological University | SG | 45.5 | 0 | 0 | 8 | 72 |
+| 16 | Cornell University | US | 45.1 | 3 | 9 | 5 | 51 |
+| 17 | National University of Singapore | SG | 43.7 | 0 | 2 | 1 | 68 |
+| 18 | Allen Institute for AI | US | 43.2 | 1 | 7 | 11 | 20 |
+| 19 | New York University | US | 38.4 | 2 | 3 | 7 | 50 |
+| 20 | KAIST | KR | 37.8 | 0 | 1 | 4 | 58 |
+| 21 | EPFL | CH | 37.7 | 1 | 1 | 4 | 60 |
+| 22 | UT Austin | US | 36.9 | 0 | 0 | 7 | 68 |
+| 23 | Zhejiang University | CN | 36.8 | 0 | 0 | 9 | 59 |
+| 24 | University of Cambridge | GB | 36.8 | 1 | 6 | 8 | 44 |
+| 25 | UC San Diego | US | 36.6 | 0 | 3 | 5 | 61 |
+| 26 | Chinese University of Hong Kong | HK | 34.2 | 0 | 0 | 3 | 90 |
+| 27 | University of Science and Technology of China | CN | 33.8 | 1 | 1 | 4 | 52 |
+| 28 | UIUC | US | 32.6 | 2 | 1 | 2 | 59 |
+| 29 | Harvard University | US | 32.2 | 2 | 3 | 6 | 39 |
+| 30 | University of Michigan | US | 32.0 | 0 | 5 | 4 | 33 |
+| 31 | Technion - Israel Institute of Technology | IL | 31.1 | 0 | 4 | 2 | 37 |
+| 32 | University of Hong Kong | HK | 30.7 | 0 | 0 | 5 | 40 |
+| 33 | Shanghai AI Laboratory | CN | 30.4 | 0 | 2 | 8 | 28 |
+| 34 | Chinese Academy of Sciences | CN | 30.0 | 0 | 2 | 4 | 67 |
+| 35 | Inria | FR | 29.5 | 7 | 4 | 2 | 76 |
+| 36 | UCLA | US | 29.5 | 0 | 2 | 3 | 55 |
+| 37 | University College London | GB | 28.8 | 1 | 4 | 4 | 47 |
+| 38 | University of Amsterdam | NL | 28.6 | 2 | 2 | 5 | 29 |
+| 39 | Fudan University | CN | 28.2 | 0 | 1 | 8 | 23 |
+| 40 | University of Maryland | US | 27.3 | 1 | 3 | 0 | 35 |
+| 41 | University of Wisconsin-Madison | US | 27.0 | 1 | 2 | 1 | 38 |
+| 42 | Johns Hopkins University | US | 26.6 | 0 | 2 | 6 | 37 |
+| 43 | Technical University of Munich | DE | 25.9 | 1 | 1 | 3 | 57 |
+| 44 | Imperial College London | GB | 25.2 | 1 | 1 | 2 | 48 |
+| 45 | Seoul National University | KR | 23.9 | 0 | 0 | 2 | 43 |
+| 46 | University of British Columbia | CA | 23.6 | 1 | 3 | 2 | 18 |
+| 47 | University of Edinburgh | GB | 23.5 | 1 | 1 | 7 | 26 |
+| 48 | University of Southern California | US | 22.8 | 2 | 0 | 5 | 36 |
+| 49 | Université de Montréal | CA | 22.8 | 2 | 4 | 0 | 36 |
+| 50 | Max Planck Institute for Intelligent Systems | DE | 22.8 | 2 | 2 | 2 | 51 |
+
+## Top 25 industry labs, all-time
+
+| Rank | Institution | Country | Score | ToT | Best | HM | Oral |
+|---:|---|---|---:|---:|---:|---:|---:|
+| 1 | Google | US | 461.5 | 8 | 29 | 17 | 330 |
+| 2 | Microsoft | US | 290.5 | 11 | 16 | 10 | 185 |
+| 3 | Meta | US | 258.4 | 2 | 14 | 28 | 195 |
+| 4 | Google DeepMind | GB | 139.2 | 3 | 9 | 6 | 74 |
+| 5 | NVIDIA | US | 101.0 | 0 | 5 | 14 | 79 |
+| 6 | Amazon | US | 65.4 | 0 | 5 | 4 | 65 |
+| 7 | Alibaba | CN | 39.2 | 0 | 2 | 3 | 34 |
+| 8 | IBM | US | 36.2 | 1 | 1 | 0 | 30 |
+| 9 | ByteDance | CN | 28.8 | 0 | 2 | 1 | 28 |
+| 10 | NEC Laboratories America | US | 28.5 | 2 | 1 | 0 | 9 |
+| 11 | Apple | US | 28.4 | 0 | 2 | 1 | 22 |
+| 12 | OpenAI | US | 26.9 | 0 | 3 | 2 | 17 |
+| 13 | Tencent | CN | 26.2 | 0 | 1 | 3 | 39 |
+| 14 | Huawei | CN | 24.9 | 0 | 2 | 1 | 24 |
+| 15 | Samsung | KR | 21.7 | 0 | 1 | 0 | 26 |
+| 16 | Naver | KR | 14.5 | 0 | 0 | 2 | 12 |
+| 17 | Cohere | CA | 11.0 | 0 | 1 | 1 | 0 |
+| 18 | NTT | JP | 10.5 | 0 | 1 | 0 | 3 |
+| 19 | Intel | US | 10.4 | 0 | 0 | 0 | 18 |
+| 20 | Comcast | US | 10.2 | 0 | 1 | 1 | 0 |
+| 21 | Xerox PARC | US | 10.0 | 1 | 0 | 0 | 0 |
+| 22 | Xerox Research Centre Europe | FR | 10.0 | 1 | 0 | 0 | 0 |
+| 23 | GE Corporate Research and Development | US | 10.0 | 1 | 0 | 0 | 0 |
+| 24 | Schlumberger Palo Alto Research | US | 10.0 | 1 | 0 | 0 | 0 |
+| 25 | Willow Garage | US | 10.0 | 1 | 0 | 0 | 0 |
+
+## Top 25 industry labs, present-day lens
+
+| Rank | Institution | Country | Score | ToT | Best | HM | Oral |
+|---:|---|---|---:|---:|---:|---:|---:|
+| 1 | Google | US | 224.2 | 8 | 29 | 17 | 330 |
+| 2 | Meta | US | 147.0 | 2 | 14 | 28 | 195 |
+| 3 | Microsoft | US | 109.4 | 11 | 16 | 10 | 185 |
+| 4 | NVIDIA | US | 65.8 | 0 | 5 | 14 | 79 |
+| 5 | Google DeepMind | GB | 60.1 | 3 | 9 | 6 | 74 |
+| 6 | Amazon | US | 42.7 | 0 | 5 | 4 | 65 |
+| 7 | Alibaba | CN | 27.2 | 0 | 2 | 3 | 34 |
+| 8 | ByteDance | CN | 20.5 | 0 | 2 | 1 | 28 |
+| 9 | Apple | US | 17.5 | 0 | 2 | 1 | 22 |
+| 10 | OpenAI | US | 15.5 | 0 | 3 | 2 | 17 |
+| 11 | IBM | US | 14.2 | 1 | 1 | 0 | 30 |
+| 12 | Tencent | CN | 14.1 | 0 | 1 | 3 | 39 |
+| 13 | Huawei | CN | 12.9 | 0 | 2 | 1 | 24 |
+| 14 | Samsung | KR | 11.6 | 0 | 1 | 0 | 26 |
+| 15 | Naver | KR | 9.5 | 0 | 0 | 2 | 12 |
+| 16 | Cohere | CA | 8.3 | 0 | 1 | 1 | 0 |
+| 17 | Oracle | US | 7.2 | 0 | 1 | 0 | 1 |
+| 18 | Comcast | US | 7.0 | 0 | 1 | 1 | 0 |
+| 19 | Hewlett Packard Labs | US | 7.0 | 0 | 1 | 0 | 0 |
+| 20 | Anthropic | US | 5.7 | 0 | 2 | 1 | 8 |
+| 21 | NEC Laboratories America | US | 4.9 | 2 | 1 | 0 | 9 |
+| 22 | Sony AI | JP | 4.6 | 0 | 1 | 1 | 0 |
+| 23 | Adobe | US | 4.2 | 0 | 0 | 1 | 16 |
+| 24 | Baidu | CN | 4.1 | 0 | 0 | 0 | 16 |
+| 25 | Salesforce | US | 4.0 | 0 | 1 | 1 | 5 |
+
+## Top 10 institutions at NeurIPS (academia and industry, all-time)
+
+| Rank | Institution | Country | Score | ToT | Best | HM | Oral |
+|---:|---|---|---:|---:|---:|---:|---:|
+| 1 | Google | US | 101.4 | 3 | 7 | 2 | 51 |
+| 2 | Stanford University | US | 75.8 | 0 | 8 | 2 | 33 |
+| 3 | Microsoft | US | 55.2 | 2 | 5 | 1 | 18 |
+| 4 | UC Berkeley | US | 48.8 | 0 | 4 | 0 | 22 |
+| 5 | Princeton University | US | 39.2 | 1 | 3 | 0 | 19 |
+| 6 | University of Washington | US | 38.6 | 0 | 5 | 0 | 9 |
+| 7 | MIT | US | 36.9 | 0 | 2 | 1 | 33 |
+| 8 | Carnegie Mellon University | US | 33.9 | 0 | 2 | 1 | 23 |
+| 9 | University of Toronto | CA | 22.4 | 1 | 2 | 1 | 7 |
+| 10 | University of Oxford | GB | 22.0 | 0 | 2 | 0 | 10 |
+
+## Top 10 institutions at ICML (academia and industry, all-time)
+
+| Rank | Institution | Country | Score | ToT | Best | HM | Oral |
+|---:|---|---|---:|---:|---:|---:|---:|
+| 1 | Google | US | 111.1 | 2 | 7 | 3 | 97 |
+| 2 | Stanford University | US | 104.7 | 1 | 7 | 3 | 65 |
+| 3 | Carnegie Mellon University | US | 91.7 | 5 | 3 | 2 | 47 |
+| 4 | UC Berkeley | US | 74.0 | 3 | 1 | 2 | 52 |
+| 5 | Google DeepMind | GB | 72.2 | 2 | 4 | 2 | 33 |
+| 6 | MIT | US | 63.2 | 0 | 6 | 1 | 42 |
+| 7 | Microsoft | US | 46.8 | 2 | 1 | 1 | 47 |
+| 8 | Harvard University | US | 38.0 | 1 | 3 | 1 | 16 |
+| 9 | Princeton University | US | 37.0 | 1 | 3 | 1 | 17 |
+| 10 | Meta | US | 35.9 | 0 | 1 | 3 | 42 |
+
+## Top 10 institutions at ICLR (academia and industry, all-time)
+
+| Rank | Institution | Country | Score | ToT | Best | HM | Oral |
+|---:|---|---|---:|---:|---:|---:|---:|
+| 1 | Google | US | 111.3 | 1 | 10 | 3 | 76 |
+| 2 | Stanford University | US | 58.2 | 0 | 4 | 3 | 44 |
+| 3 | Meta | US | 54.4 | 2 | 3 | 4 | 40 |
+| 4 | MIT | US | 44.2 | 0 | 2 | 0 | 43 |
+| 5 | Google DeepMind | GB | 36.1 | 1 | 2 | 1 | 20 |
+| 6 | UC Berkeley | US | 35.4 | 0 | 3 | 0 | 33 |
+| 7 | Tsinghua University | CN | 35.0 | 0 | 1 | 1 | 31 |
+| 8 | Université de Montréal | CA | 30.8 | 1 | 2 | 0 | 19 |
+| 9 | Carnegie Mellon University | US | 27.8 | 0 | 1 | 1 | 32 |
+| 10 | University of Amsterdam | NL | 25.8 | 2 | 1 | 0 | 8 |
+
+## Top 10 institutions at CVPR (academia and industry, all-time)
+
+| Rank | Institution | Country | Score | ToT | Best | HM | Oral |
+|---:|---|---|---:|---:|---:|---:|---:|
+| 1 | Google | US | 90.3 | 1 | 3 | 5 | 67 |
+| 2 | Microsoft | US | 76.2 | 2 | 3 | 1 | 62 |
+| 3 | UC Berkeley | US | 65.2 | 2 | 2 | 1 | 45 |
+| 4 | Meta | US | 58.0 | 0 | 2 | 7 | 56 |
+| 5 | University of Oxford | GB | 54.8 | 2 | 2 | 2 | 26 |
+| 6 | Carnegie Mellon University | US | 49.0 | 0 | 1 | 5 | 38 |
+| 7 | NVIDIA | US | 43.1 | 0 | 0 | 11 | 29 |
+| 8 | Stanford University | US | 42.5 | 0 | 2 | 2 | 39 |
+| 9 | ETH Zürich | CH | 41.8 | 0 | 1 | 2 | 42 |
+| 10 | Inria | FR | 38.8 | 2 | 0 | 1 | 25 |
+
+## Top 10 institutions at ICCV (academia and industry, all-time)
+
+| Rank | Institution | Country | Score | ToT | Best | HM | Oral |
+|---:|---|---|---:|---:|---:|---:|---:|
+| 1 | Microsoft | US | 59.2 | 4 | 2 | 0 | 16 |
+| 2 | UC Berkeley | US | 47.5 | 4 | 0 | 0 | 10 |
+| 3 | Carnegie Mellon University | US | 40.2 | 0 | 1 | 4 | 25 |
+| 4 | Meta | US | 38.8 | 0 | 2 | 3 | 22 |
+| 5 | MIT | US | 38.5 | 4 | 0 | 0 | 4 |
+| 6 | Stanford University | US | 34.8 | 2 | 1 | 0 | 17 |
+| 7 | ETH Zürich | CH | 24.2 | 0 | 1 | 1 | 19 |
+| 8 | University of Oxford | GB | 19.5 | 2 | 0 | 0 | 6 |
+| 9 | Google | US | 19.0 | 0 | 1 | 1 | 17 |
+| 10 | Inria | FR | 17.5 | 1 | 0 | 0 | 11 |
+
+## Top 10 institutions at ECCV (academia and industry, all-time)
+
+| Rank | Institution | Country | Score | ToT | Best | HM | Oral |
+|---:|---|---|---:|---:|---:|---:|---:|
+| 1 | Meta | US | 21.0 | 0 | 0 | 4 | 13 |
+| 2 | Technical University of Munich | DE | 19.2 | 1 | 1 | 0 | 12 |
+| 3 | ETH Zürich | CH | 17.6 | 2 | 0 | 0 | 10 |
+| 4 | Carnegie Mellon University | US | 14.5 | 0 | 0 | 1 | 16 |
+| 5 | Microsoft | US | 14.2 | 1 | 0 | 0 | 15 |
+| 6 | Google | US | 14.2 | 0 | 0 | 1 | 22 |
+| 7 | Columbia University | US | 13.0 | 0 | 1 | 1 | 2 |
+| 8 | EPFL | CH | 12.0 | 1 | 0 | 0 | 3 |
+| 9 | Princeton University | US | 11.8 | 0 | 1 | 1 | 2 |
+| 10 | Zhejiang University | CN | 11.8 | 0 | 0 | 2 | 16 |
+
+## Top 10 institutions at ACL (academia and industry, all-time)
+
+| Rank | Institution | Country | Score | ToT | Best | HM | Oral |
+|---:|---|---|---:|---:|---:|---:|---:|
+| 1 | Stanford University | US | 81.5 | 3 | 4 | 8 | 0 |
+| 2 | University of Washington | US | 64.5 | 2 | 4 | 13 | 0 |
+| 3 | Georgia Tech | US | 33.5 | 0 | 3 | 5 | 0 |
+| 4 | Carnegie Mellon University | US | 30.1 | 0 | 3 | 6 | 0 |
+| 5 | University of Edinburgh | GB | 28.2 | 1 | 1 | 5 | 0 |
+| 6 | Cornell University | US | 25.0 | 2 | 1 | 1 | 0 |
+| 7 | Allen Institute for AI | US | 24.5 | 0 | 3 | 4 | 0 |
+| 8 | University of Southern California | US | 23.0 | 2 | 0 | 1 | 0 |
+| 9 | Columbia University | US | 22.8 | 0 | 2 | 3 | 0 |
+| 10 | Saarland University | DE | 20.0 | 0 | 3 | 0 | 0 |
+
+## Top 10 institutions at EMNLP (academia and industry, all-time)
+
+| Rank | Institution | Country | Score | ToT | Best | HM | Oral |
+|---:|---|---|---:|---:|---:|---:|---:|
+| 1 | University of Cambridge | GB | 31.0 | 0 | 4 | 3 | 0 |
+| 2 | Carnegie Mellon University | US | 31.0 | 0 | 4 | 2 | 0 |
+| 3 | Stanford University | US | 30.0 | 0 | 3 | 2 | 0 |
+| 4 | Cornell University | US | 23.0 | 0 | 3 | 1 | 0 |
+| 5 | University of Washington | US | 21.8 | 0 | 3 | 3 | 0 |
+| 6 | Amazon | US | 20.5 | 0 | 2 | 2 | 0 |
+| 7 | UC Berkeley | US | 17.0 | 0 | 1 | 4 | 0 |
+| 8 | Meta | US | 16.0 | 0 | 3 | 0 | 0 |
+| 9 | MIT | US | 14.0 | 0 | 1 | 2 | 0 |
+| 10 | UT Austin | US | 12.0 | 0 | 0 | 4 | 0 |
