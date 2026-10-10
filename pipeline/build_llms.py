@@ -84,7 +84,7 @@ def main():
         "## Pages",
         "",
         f"- [Interactive ranking]({BASE}/): leaderboard, treemap, institution dossiers with people and award records",
-        f"- [Directory view]({BASE}/classic.html): CSRankings-style expandable table",
+        f"- [Directory view]({BASE}/classic): CSRankings-style expandable table",
         f"- [Dataset JSON]({BASE}/data.json): every honored paper with venue, years, award tier, authors and institution ids",
         "- [Methodology and caveats](https://raw.githubusercontent.com/JingxuanKang/ai-rankings/master/README.md)",
         "- [Source code](https://github.com/JingxuanKang/ai-rankings)",
@@ -112,7 +112,7 @@ def main():
                      table(scores(evs, insts, "all"), insts, 10), ""]
     (SITE_DIR / "llms.txt").write_text("\n".join(sections))
 
-    urls = ["/", "/classic.html", "/llms.txt"]
+    urls = ["/", "/classic", "/llms.txt"]
     (SITE_DIR / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'

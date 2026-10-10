@@ -9,7 +9,7 @@ Scoring used in the tables below (the site defaults): Test of Time = 10, Best / 
 ## Pages
 
 - [Interactive ranking](https://airankings.jingxuan.uk/): leaderboard, treemap, institution dossiers with people and award records
-- [Directory view](https://airankings.jingxuan.uk/classic.html): CSRankings-style expandable table
+- [Directory view](https://airankings.jingxuan.uk/classic): CSRankings-style expandable table
 - [Dataset JSON](https://airankings.jingxuan.uk/data.json): every honored paper with venue, years, award tier, authors and institution ids
 - [Methodology and caveats](https://raw.githubusercontent.com/JingxuanKang/ai-rankings/master/README.md)
 - [Source code](https://github.com/JingxuanKang/ai-rankings)
