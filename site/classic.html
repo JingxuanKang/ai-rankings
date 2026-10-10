@@ -1,7 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-title-key="classic.title">
 <head>
 <meta charset="utf-8">
+<script>
+/* Persist language before paint. Keep in sync with detectLang() in i18n.js. */
+(function () {
+  var lang = '';
+  try { lang = localStorage.getItem('sr-lang') || ''; } catch (e) {}
+  if (lang !== 'en' && lang !== 'zh') {
+    lang = 'en';
+    var list = navigator.languages || [navigator.language || ''];
+    for (var i = 0; i < list.length; i++) {
+      if (/^zh/i.test(String(list[i] || ''))) { lang = 'zh'; break; }
+    }
+  }
+  document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+  document.documentElement.dataset.lang = lang;
+})();
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AIRankings — classic</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏆</text></svg>">
@@ -11,7 +27,7 @@
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Noto Sans SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -32,7 +48,8 @@ b, strong { font-weight: 700; }
 }
 h1 { font-size: 36px; font-weight: 500; line-height: 1.1; margin: 0; }
 .subtitle { color: #777; font-size: 14px; margin: 8px 0 0; }
-.full-link { position: absolute; right: 0; top: 6px; font-size: 14px; }
+.header-tools { position: absolute; right: 0; top: 6px; display: flex; align-items: center; gap: 14px; }
+.full-link { font-size: 14px; }
 
 .rank-line { font-size: 16px; margin: 0 0 20px; }
 .rank-line select {
@@ -129,7 +146,7 @@ table.people > tbody > tr.odd > td { background: #f9f9f9; }
 @media (max-width: 768px) {
   .row { flex-direction: column; }
   .col-left, .col-right { flex: 1 1 100%; max-width: 100%; width: 100%; }
-  .full-link { position: static; display: block; margin-bottom: 6px; }
+  .header-tools { position: static; margin-bottom: 6px; }
 }
 .btn-group { display: inline-flex; vertical-align: middle; border: 1px solid #ccc; border-radius: 4px; overflow: hidden; }
 .sbtn { font: inherit; font-size: 13px; padding: 3px 12px; background: #fff; color: #333; border: none; cursor: pointer; }
@@ -141,24 +158,30 @@ table.people > tbody > tr.odd > td { background: #f9f9f9; }
 <body>
 <div class="container">
   <div class="page-header">
-    <a class="full-link" href="index.html">Full experience</a>
+    <div class="header-tools">
+      <span class="btn-group" id="lang-switch" role="radiogroup" aria-label="language" data-i18n-aria="lang.group">
+        <button type="button" class="sbtn" data-lang="en">EN</button>
+        <button type="button" class="sbtn" data-lang="zh">中文</button>
+      </span>
+      <a class="full-link" href="index.html" data-i18n="classic.full">Full experience</a>
+    </div>
     <h1>AIRankings</h1>
-    <p class="subtitle" id="subtitle">Awards-only rankings of AI institutions: orals, best papers and test-of-time prizes, credited to first and corresponding authors.</p>
+    <p class="subtitle" id="subtitle" data-i18n="classic.subtitle">Awards-only rankings of AI institutions: orals, best papers and test-of-time prizes, credited to first and corresponding authors.</p>
   </div>
 
-  <p class="rank-line">Rank <span class="btn-group" id="scope" role="radiogroup" aria-label="sector filter"><button type="button" data-v="academia" class="sbtn on">academic</button><button type="button" data-v="industry" class="sbtn">industry</button><button type="button" data-v="all" class="sbtn">all</button></span> institutions in <select id="country" aria-label="Filter by country/region"></select> by <b>awards</b> from <select id="yfrom" aria-label="from year"></select>&ndash;<select id="yto" aria-label="to year"></select></p>
+  <p class="rank-line"><span data-i18n="classic.rankLead">Rank </span><span class="btn-group" id="scope" role="radiogroup" aria-label="sector filter" data-i18n-aria="classic.sector"><button type="button" data-v="academia" class="sbtn on" data-i18n="classic.academic">academic</button><button type="button" data-v="industry" class="sbtn" data-i18n="classic.industry">industry</button><button type="button" data-v="all" class="sbtn" data-i18n="classic.all">all</button></span><span data-i18n="classic.rankMid"> institutions in </span><select id="country" aria-label="Filter by country/region" data-i18n-aria="classic.countryAria"></select><span data-i18n-html="classic.rankTail"> by <b>awards</b> from </span><select id="yfrom" aria-label="from year" data-i18n-aria="year.from"></select>&ndash;<select id="yto" aria-label="to year" data-i18n-aria="year.to"></select></p>
 
   <div class="row">
     <div class="col-left">
       <div class="panel">
         <div class="panel-heading">
-          <span>Award tiers</span>
-          <span class="toggle"><a href="#" id="tiers-on">on</a> | <a href="#" id="tiers-off">off</a></span>
+          <span data-i18n="classic.tiers">Award tiers</span>
+          <span class="toggle"><a href="#" id="tiers-on" data-i18n="classic.on">on</a> | <a href="#" id="tiers-off" data-i18n="classic.off">off</a></span>
         </div>
         <div class="panel-body" id="tier-list"></div>
       </div>
       <div class="panel">
-        <div class="panel-heading"><span>Venues</span></div>
+        <div class="panel-heading"><span data-i18n="classic.venues">Venues</span></div>
         <div class="panel-body" id="venue-list"></div>
       </div>
     </div>
@@ -169,29 +192,37 @@ table.people > tbody > tr.odd > td { background: #f9f9f9; }
         <thead>
           <tr>
             <th class="rank-cell">#</th>
-            <th>Institution</th>
-            <th class="num">Score</th>
-            <th class="num"># Papers</th>
+            <th data-i18n="table.inst">Institution</th>
+            <th class="num" data-i18n="table.score">Score</th>
+            <th class="num" data-i18n="classic.papers"># Papers</th>
           </tr>
         </thead>
         <tbody id="rank-body"></tbody>
       </table>
-      <a href="#" class="show-more" id="show-more">show more &#x25BE;</a>
+      <a href="#" class="show-more" id="show-more" data-i18n="classic.showMore">show more &#x25BE;</a>
     </div>
   </div>
 </div>
 
+<script src="inst-zh.js"></script>
+<script src="i18n.js"></script>
 <script src="data.js"></script>
 <script>
 (function () {
 'use strict';
 
+var tx = window.SR_I18N ? window.SR_I18N.t : function (k) { return k; };
+function showInst(name) {
+  if (!name) return name || '';
+  return (window.SR_I18N && window.SR_I18N.instName) ? window.SR_I18N.instName(name) : name;
+}
+
 var DATA = window.SIGNAL_DATA;
 if (!DATA || !DATA.events || !DATA.events.length) {
-  document.body.innerHTML = '';
+  document.body.replaceChildren();
   var msg = document.createElement('p');
   msg.style.cssText = 'padding:80px;text-align:center;color:#999';
-  msg.textContent = 'data.js is missing or empty — run the pipeline (see README).';
+  msg.textContent = tx('empty.data');
   document.body.appendChild(msg);
   return;
 }
@@ -209,9 +240,9 @@ var TIERS = [
 ];
 var WEIGHTS = { test_of_time: 10, best_paper: 8, honorable_mention: 3, oral: 1 };
 var VENUE_GROUPS = [
-  { label: 'Machine Learning', venues: ['NeurIPS', 'ICML', 'ICLR'] },
-  { label: 'Computer Vision',  venues: ['CVPR', 'ICCV', 'ECCV'] },
-  { label: 'NLP',              venues: ['ACL', 'EMNLP'] }
+  { key: 'classic.group.ml', venues: ['NeurIPS', 'ICML', 'ICLR'] },
+  { key: 'classic.group.cv', venues: ['CVPR', 'ICCV', 'ECCV'] },
+  { key: 'classic.group.nlp', venues: ['ACL', 'EMNLP'] }
 ];
 var ALL_VENUES = [];
 VENUE_GROUPS.forEach(function (g) { g.venues.forEach(function (v) { ALL_VENUES.push(v); }); });
@@ -353,7 +384,8 @@ function buildTiers() {
       else state.tiers.delete(t.id);
       resetAndRender();
     });
-    var lab = mk('label'); lab.htmlFor = cb.id; lab.textContent = t.label;
+    var lab = mk('label'); lab.htmlFor = cb.id; lab.textContent = tx('tier.' + t.id);
+    lab.setAttribute('data-i18n', 'tier.' + t.id);
     var cnt = mk('span', 'count'); cnt.textContent = String(tierCount[t.id] || 0);
     row.append(cb, lab, cnt); tl.append(row);
   });
@@ -382,10 +414,15 @@ function buildVenues() {
   var vl = $('venue-list');
   VENUE_GROUPS.forEach(function (g) {
     var gh = mk('div', 'grp-head');
-    gh.append(document.createTextNode(g.label));
+    var glab = mk('span');
+    glab.textContent = tx(g.key);
+    glab.setAttribute('data-i18n', g.key);
+    gh.append(glab);
     var tog = mk('span', 'toggle');
-    var on = mk('a'); on.href = '#'; on.textContent = 'on';
-    var off = mk('a'); off.href = '#'; off.textContent = 'off';
+    var on = mk('a'); on.href = '#'; on.textContent = tx('classic.on');
+    on.setAttribute('data-i18n', 'classic.on');
+    var off = mk('a'); off.href = '#'; off.textContent = tx('classic.off');
+    off.setAttribute('data-i18n', 'classic.off');
     on.addEventListener('click', function (e) {
       e.preventDefault();
       g.venues.forEach(function (v) { state.venues.add(v); $('v-' + v).checked = true; });
@@ -437,12 +474,14 @@ function buildCountry() {
   }
   var sorted = Array.from(byC.entries()).sort(function (a, b) { return b[1] - a[1]; });
   var sel = $('country');
-  var all = mk('option'); all.value = 'all'; all.textContent = 'All countries/regions'; sel.append(all);
+  var all = mk('option'); all.value = 'all'; all.textContent = tx('country.all');
+  all.setAttribute('data-i18n', 'country.all');
+  sel.append(all);
   sorted.forEach(function (pair) {
     var cc = pair[0];
     var opt = mk('option'); opt.value = cc;
     var flag = flagOf(cc);
-    opt.textContent = (flag ? flag + ' ' : '') + (COUNTRY_NAMES[cc] || cc);
+    opt.textContent = (flag ? flag + ' ' : '') + countryLabel(cc);
     sel.append(opt);
   });
   sel.addEventListener('change', function () { state.country = sel.value; resetAndRender(); });
@@ -478,8 +517,15 @@ function buildPeople(rec) {
   var wrap = mk('div', 'people-wrap');
   var t = mk('table', 'people');
   var thead = mk('thead'), htr = mk('tr');
-  ['Name', 'ToT', 'Best', 'HM', 'Oral', 'Score'].forEach(function (h) {
-    var th = mk('th'); th.textContent = h; if (h !== 'Name') th.className = 'num'; htr.append(th);
+  [
+    ['classic.col.name', false],
+    ['classic.col.tot', true],
+    ['classic.col.best', true],
+    ['classic.col.hm', true],
+    ['classic.col.oral', true],
+    ['classic.col.score', true]
+  ].forEach(function (col) {
+    var th = mk('th'); th.textContent = tx(col[0]); if (col[1]) th.className = 'num'; htr.append(th);
   });
   thead.append(htr); t.append(thead);
   var tb = mk('tbody');
@@ -514,7 +560,7 @@ function render() {
     var c0 = mk('td', 'num rank-cell'); c0.textContent = String(i + 1);
     var c1 = mk('td', 'name-cell');
     var tri = mk('span', 'tri'); tri.textContent = '►';           /* ► */
-    var nm = mk('span', 'iname'); nm.textContent = inst.name || r.id;
+    var nm = mk('span', 'iname'); nm.textContent = showInst(inst.name || r.id);
     var flag = mk('span', 'flag');
     var fl = flagOf(inst.country); flag.textContent = fl ? ' ' + fl : '';
     c1.append(tri, nm, flag);
@@ -545,10 +591,35 @@ function render() {
   var sm = $('show-more');
   sm.style.display = ranking.length > n ? '' : 'none';
 
-  var scopeWord = state.scope === 'academia' ? 'academic ' : state.scope === 'industry' ? 'industry ' : '';
-  var summary = ranking.length + ' ' + scopeWord + (ranking.length === 1 ? 'institution' : 'institutions');
-  if (state.country !== 'all') summary += ' in ' + (COUNTRY_NAMES[state.country] || state.country);
+  var scopeWord = tx('classic.scopeWord.' + state.scope);
+  var summary = tx(ranking.length === 1 ? 'classic.summary.one' : 'classic.summary.many', {
+    n: ranking.length, scope: scopeWord
+  });
+  if (state.country !== 'all') {
+    summary = tx('classic.summary.in', { base: summary, country: countryLabel(state.country) });
+  }
   $('summary').textContent = summary;
+}
+
+function countryLabel(cc) {
+  if (window.SR_I18N && window.SR_I18N.lang === 'zh') {
+    try {
+      if (!countryLabel.zh) countryLabel.zh = new Intl.DisplayNames(['zh-CN'], { type: 'region' });
+      return countryLabel.zh.of(cc) || COUNTRY_NAMES[cc] || cc;
+    } catch (e) { /* fall through */ }
+  }
+  return COUNTRY_NAMES[cc] || cc;
+}
+
+function refreshCountryLabels() {
+  var sel = $('country');
+  if (!sel) return;
+  for (var i = 0; i < sel.options.length; i++) {
+    var o = sel.options[i];
+    if (o.value === 'all') { o.textContent = tx('country.all'); continue; }
+    var flag = flagOf(o.value);
+    o.textContent = (flag ? flag + ' ' : '') + countryLabel(o.value);
+  }
 }
 
 function resetAndRender() { state.limit = 50; render(); }
@@ -562,6 +633,10 @@ buildTiers();
 buildVenues();
 buildCountry();
 render();
+document.addEventListener('sr-langchange', function () {
+  refreshCountryLabels();
+  render();
+});
 })();
 </script>
 </body>

@@ -3,10 +3,19 @@
 (function () {
 'use strict';
 
+const i18n = window.SR_I18N;
+const tr = i18n ? i18n.t : (k => k);
+function showInst(name) {
+  if (!name) return name || '';
+  return i18n && i18n.instName ? i18n.instName(name) : name;
+}
+
 const DATA = window.SIGNAL_DATA;
 if (!DATA || !DATA.events || !DATA.events.length) {
-  document.body.innerHTML = '<p style="padding:80px;text-align:center;color:#b5b2a3">' +
-    'data.js is missing or empty — run the pipeline (see README).</p>';
+  const msg = document.createElement('p');
+  msg.style.cssText = 'padding:80px;text-align:center;color:#b5b2a3';
+  msg.textContent = tr('empty.data');
+  document.body.replaceChildren(msg);
   return;
 }
 
@@ -24,8 +33,19 @@ const EVENTS = DATA.events;
 const REF_YEAR = Math.max(...EVENTS.map(e => e.ya));
 const MIN_YEAR = Math.min(...EVENTS.map(e => e.ya));
 const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
-const TYPE_TAG = { company: 'industry', government: 'gov lab', nonprofit: 'nonprofit',
-  facility: 'facility', healthcare: 'health', archive: 'archive', other: 'org', unknown: '' };
+const TYPE_KEY = { company: 'industry', government: 'gov', nonprofit: 'nonprofit',
+  facility: 'facility', healthcare: 'health', archive: 'archive', other: 'org' };
+function tierLabel(id) { return tr('tier.' + id); }
+function typeTag(type) {
+  const key = TYPE_KEY[type];
+  return key ? tr('type.' + key) : '';
+}
+function typeCell(type) { return typeTag(type) || tr('type.academia'); }
+function tierCountPhrase(tier, n) {
+  if (i18n && i18n.lang === 'zh') return n + ' 项' + tierLabel(tier.id);
+  const label = tier.label.toLowerCase();
+  return n + ' ' + label + (n > 1 && tier.id !== 'test_of_time' ? 's' : '');
+}
 
 const state = {
   attr: 'both',          // both | first | corr
@@ -58,7 +78,7 @@ function applyTheme(theme) {
   for (const t of TIERS) t.color = cssVar('--tier-' +
     ({ test_of_time: 'tot', best_paper: 'best', honorable_mention: 'hm', oral: 'oral' })[t.id]);
   const btn = $('theme-btn');
-  if (btn) btn.textContent = theme === 'light' ? '☾ Dark' : '☀ Light';
+  if (btn) btn.textContent = theme === 'light' ? tr('theme.dark') : tr('theme.light');
 }
 const fmt = n => n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, '') + 'k'
   : n >= 100 ? String(Math.round(n)) : (Math.round(n * 10) / 10).toString();
@@ -99,7 +119,7 @@ function contribs(ev) {
 
 function roleOf(ev, instId) {
   const f = ev.fi.includes(instId), c = ev.ci.includes(instId);
-  return f && c ? '1st + corr' : f ? '1st author' : c ? 'corresponding' : '';
+  return f && c ? tr('role.both') : f ? tr('role.first') : c ? tr('role.corr') : '';
 }
 
 /* full aggregation for current state (optionally overriding parts) */
@@ -180,11 +200,11 @@ function renderPodium(ranking) {
     card.className = 'podium-card p' + (idx + 1);
     card.append(
       ttEl('laurel', idx === 0 ? '🏆' : idx === 1 ? '🥈' : '🥉'),
-      ttEl('podium-medal', medals[idx]),
-      ttEl('podium-name', inst.name),
+      ttEl('podium-medal', tr('medal.' + medals[idx])),
+      ttEl('podium-name', showInst(inst.name)),
       ttEl('podium-score', fmt(r.total)),
       ttEl('podium-breakdown',
-        TIERS.map(t => r.counts[t.id] ? `${r.counts[t.id]} ${t.label.toLowerCase()}${r.counts[t.id] > 1 && t.id !== 'test_of_time' ? 's' : ''}` : '')
+        TIERS.map(tier => r.counts[tier.id] ? tierCountPhrase(tier, r.counts[tier.id]) : '')
           .filter(Boolean).join(' · ')),
     );
     card.addEventListener('click', () => openDossier(r.id));
@@ -225,8 +245,8 @@ function renderBoard(res) {
     rankEl.textContent = r.rank;
     rankEl.className = 'board-rank' + (r.rank <= 3 ? ' medal' : '');
     const nameEl = row.children[1];
-    nameEl.replaceChildren(ttEl('nm', `${flagOf(inst.country)} ${inst.name}`.trim(), 'span'));
-    const tag = TYPE_TAG[inst.type];
+    nameEl.replaceChildren(ttEl('nm', `${flagOf(inst.country)} ${showInst(inst.name)}`.trim(), 'span'));
+    const tag = typeTag(inst.type);
     if (tag) nameEl.append(ttEl('type-tag', tag, 'span'));
     const stack = row.children[2].firstChild;
     // leave room for the value label at the data end
@@ -244,7 +264,7 @@ function renderBoard(res) {
   for (const row of [...board.children]) if (!seen.has(row.dataset.inst)) row.remove();
   board.style.height = shown.length * ROW_H + 'px';
 
-  $('board-more').textContent = state.boardLimit <= 25 ? 'show top 50' : 'show top 25';
+  $('board-more').textContent = state.boardLimit <= 25 ? tr('board.more50') : tr('board.more25');
   renderBoardTable(ranking);
 }
 
@@ -254,15 +274,15 @@ function boardTip(e, instId) {
   if (!r) return;
   const inst = INSTS[instId] || { name: instId };
   showTip(e.clientX, e.clientY, box => {
-    box.append(ttEl('tt-value', fmt(r.total) + ' pts'), ttEl('tt-label', inst.name));
-    for (const t of TIERS) {
-      if (!r.counts[t.id]) continue;
+    box.append(ttEl('tt-value', tr('tip.pts', { n: fmt(r.total) })), ttEl('tt-label', showInst(inst.name)));
+    for (const tier of TIERS) {
+      if (!r.counts[tier.id]) continue;
       const rowEl = ttEl('tt-row', '');
-      const key = ttEl('tt-key', '', 'span'); key.style.background = t.color;
-      rowEl.append(key, ttEl('', `${t.label} × ${r.counts[t.id]} → ${fmt(r.byTier[t.id])}`, 'span'));
+      const key = ttEl('tt-key', '', 'span'); key.style.background = tier.color;
+      rowEl.append(key, ttEl('', `${tierLabel(tier.id)} × ${r.counts[tier.id]} → ${fmt(r.byTier[tier.id])}`, 'span'));
       box.append(rowEl);
     }
-    box.append(ttEl('tt-label', 'click for the record'));
+    box.append(ttEl('tt-label', tr('tip.click')));
   });
 }
 
@@ -271,15 +291,15 @@ function renderBoardTable(ranking) {
   const table = document.createElement('table');
   const thead = document.createElement('thead');
   const hr = document.createElement('tr');
-  for (const h of ['#', 'Institution', 'Type', 'Score', ...TIERS.map(t => t.label)])
+  for (const h of [tr('table.rank'), tr('table.inst'), tr('table.type'), tr('table.score'), ...TIERS.map(tier => tierLabel(tier.id))])
     hr.append(ttEl('', h, 'th'));
   thead.append(hr); table.append(thead);
   const tbody = document.createElement('tbody');
   for (const r of ranking.slice(0, 100)) {
     const inst = INSTS[r.id] || { name: r.id, type: '', country: '' };
     const tr = document.createElement('tr');
-    for (const cell of [r.rank, `${inst.name}${inst.country ? ' (' + inst.country + ')' : ''}`,
-      TYPE_TAG[inst.type] || 'academia', fmt(r.total),
+    for (const cell of [r.rank, `${showInst(inst.name)}${inst.country ? ' (' + inst.country + ')' : ''}`,
+      typeCell(inst.type), fmt(r.total),
       ...TIERS.map(t => r.counts[t.id] || 0)])
       tr.append(ttEl('', String(cell), 'td'));
     tr.addEventListener('click', () => openDossier(r.id));
@@ -387,11 +407,11 @@ canon.addEventListener('pointermove', e => {
     box.append(ttEl('tt-value', ev.title));
     const rowEl = ttEl('tt-row', '');
     const key = ttEl('tt-key', '', 'span'); key.style.background = t.color;
-    rowEl.append(key, ttEl('', `${t.label} · ${ev.venue} ${ev.ya}` +
-      (ev.yw !== ev.ya ? ` — for work of ${ev.yw}` : ''), 'span'));
+    rowEl.append(key, ttEl('', `${tierLabel(t.id)} · ${ev.venue} ${ev.ya}` +
+      (ev.yw !== ev.ya ? ` — ${tr('canon.forWork', { year: ev.yw })}` : ''), 'span'));
     box.append(rowEl);
     const who = [ev.fa, ...(ev.ca || [])].filter(Boolean);
-    const insts = [...new Set([...ev.fi, ...ev.ci].map(i => (INSTS[i] || {}).name).filter(Boolean))];
+    const insts = [...new Set([...ev.fi, ...ev.ci].map(i => showInst((INSTS[i] || {}).name)).filter(Boolean))];
     if (who.length) box.append(ttEl('tt-label', who.join(' · ')));
     if (insts.length) box.append(ttEl('tt-label', insts.join(' · ')));
   });
@@ -464,8 +484,10 @@ function renderBump() {
       const yr = years[d3.leastIndex(years, a => Math.abs(x(a) - px))];
       const pt = d.pts.find(p => p.year === yr);
       showTip(e.clientX, e.clientY, box => {
-        box.append(ttEl('tt-value', d.name),
-          ttEl('tt-label', pt ? `#${pt.rank} after ${yr} awards season` : `finished #${d.final}`));
+        box.append(ttEl('tt-value', showInst(d.name)),
+          ttEl('tt-label', pt
+            ? tr('bump.after', { rank: pt.rank, year: yr })
+            : tr('bump.finished', { rank: d.final })));
       });
     })
     .on('click', (e, d) => openDossier(d.id));
@@ -479,7 +501,7 @@ function renderBump() {
     .attr('class', 'bump-label')
     .attr('x', W - M.r + 14)
     .attr('y', d => Math.min(y(d.pts[d.pts.length - 1].rank), H - M.b) + 4)
-    .text(d => `#${d.final}  ${d.name}`)
+    .text(d => `#${d.final}  ${showInst(d.name)}`)
     .style('cursor', 'pointer')
     .on('pointerenter', (e, d) => hover(d.id, true))
     .on('pointerleave', (e, d) => hover(d.id, false))
@@ -495,11 +517,11 @@ function openDossier(instId) {
   const r = lastRes && lastRes.byInst.get(instId);
   const inst = INSTS[instId] || { name: instId, type: '', country: '' };
   if (!r) return;
-  $('dossier-rank').textContent = 'Nº ' + r.rank;
-  $('dossier-name').textContent = inst.name;
+  $('dossier-rank').textContent = tr('dossier.rank', { n: r.rank });
+  $('dossier-name').textContent = showInst(inst.name);
   $('dossier-meta').textContent = [
-    TYPE_TAG[inst.type] || 'academia', inst.country,
-    r.events.length + ' honored papers',
+    typeCell(inst.type), inst.country,
+    tr('dossier.papers', { n: r.events.length }),
   ].filter(Boolean).join(' · ');
   $('dossier-score').textContent = fmt(r.total);
 
@@ -508,7 +530,7 @@ function openDossier(instId) {
     chip.setAttribute('aria-pressed', String(dossierTier === t.id));
     const dot = ttEl('tier-dot', '', 'span'); dot.style.background = t.color;
     const b = document.createElement('b'); b.textContent = r.counts[t.id];
-    chip.append(dot, b, document.createTextNode(' ' + t.label));
+    chip.append(dot, b, document.createTextNode(' ' + tierLabel(t.id)));
     chip.addEventListener('click', () => {
       dossierTier = dossierTier === t.id ? null : t.id;
       openDossier(instId);
@@ -543,7 +565,7 @@ function openDossier(instId) {
         const pc = ttEl('pc', '', 'span');
         const dot = ttEl('tier-dot', '', 'span'); dot.style.background = t.color;
         pc.append(dot, document.createTextNode(p.counts[t.id] + '×'));
-        pc.title = t.label;
+        pc.title = tierLabel(t.id);
         counts.append(pc);
       }
       const nameEl = ttEl('p-name', '', 'span');
@@ -586,7 +608,7 @@ function openDossier(instId) {
       return row;
     }));
     if (plist.length > limit) {
-      const more = ttEl('people-more', `show all ${plist.length} people`, 'button');
+      const more = ttEl('people-more', tr('dossier.showAll', { n: plist.length }), 'button');
       more.addEventListener('click', () => renderPeople(Infinity));
       peopleEl.append(more);
     }
@@ -610,7 +632,7 @@ function openDossier(instId) {
         .attr('x', xs(yy)).attr('width', Math.min(xs.bandwidth(), 24))
         .attr('y', sh - pb - vs(v)).attr('height', Math.max(1, vs(v)))
         .attr('rx', 2).attr('fill', cssVar('--tier-best'))
-        .append('title').text(`${yy}: ${fmt(v)} pts`);
+        .append('title').text(tr('spark.title', { year: yy, n: fmt(v) }));
     }
     spark.append('text').attr('x', 0).attr('y', sh - 2)
       .attr('fill', cssVar('--ink-muted')).attr('font-size', 10).text(yMin);
@@ -647,8 +669,8 @@ function openDossier(instId) {
       title.append(a);
     } else title.textContent = ev.title;
     const meta = ttEl('aw-meta',
-      `${ev.venue} ${ev.ya} · ${TIER_BY_ID[ev.award].label}` +
-      (ev.yw !== ev.ya ? ` (work of ${ev.yw})` : '') +
+      `${ev.venue} ${ev.ya} · ${tierLabel(ev.award)}` +
+      (ev.yw !== ev.ya ? ` ${tr('dossier.workOf', { year: ev.yw })}` : '') +
       (ev.note ? ` · ${ev.note}` : ''));
     const role = roleOf(ev, instId);
     if (role) meta.append(ttEl('role-tag', role, 'span'));
@@ -670,7 +692,17 @@ $('scrim').addEventListener('click', closeDossier);
 addEventListener('keydown', e => { if (e.key === 'Escape') closeDossier(); });
 
 /* ── nations (medal-table by country) ──────────────────────────────────── */
-const REGION = (() => { try { return new Intl.DisplayNames(['en'], { type: 'region' }); } catch (e) { return null; } })();
+let REGION = null;
+function refreshRegionNames() {
+  const loc = i18n && i18n.lang === 'zh' ? ['zh-CN', 'zh'] : ['en'];
+  try { REGION = new Intl.DisplayNames(loc, { type: 'region' }); }
+  catch (e) { REGION = null; }
+}
+function countryName(cc) {
+  if (!cc) return '';
+  try { return (REGION && REGION.of(cc)) || cc; }
+  catch (e) { return cc; }
+}
 function renderNations(res) {
   const byC = new Map();
   for (const r of res.ranking) {
@@ -689,7 +721,7 @@ function renderNations(res) {
   const max = rows.length ? rows[0].total : 1;
   $('nations').replaceChildren(...rows.map((r, i) => {
     const row = ttEl('nation-row', '');
-    const name = REGION ? (REGION.of(r.cc) || r.cc) : r.cc;
+    const name = countryName(r.cc);
     const bar = ttEl('nation-bar', '');
     const stack = ttEl('nation-stack', '');
     stack.style.width = `calc((100% - 64px) * ${(r.total / max).toFixed(4)})`;
@@ -703,12 +735,12 @@ function renderNations(res) {
     bar.append(stack, ttEl('nation-score', fmt(r.total), 'span'));
     row.append(ttEl('nation-rank', String(i + 1)), ttEl('nation-name', `${flagOf(r.cc)} ${name}`), bar);
     row.addEventListener('pointermove', e => showTip(e.clientX, e.clientY, box => {
-      box.append(ttEl('tt-value', fmt(r.total) + ' pts'), ttEl('tt-label', `${name} · ${r.insts} institutions`));
-      for (const t of TIERS) {
-        if (!r.counts[t.id]) continue;
+      box.append(ttEl('tt-value', tr('tip.pts', { n: fmt(r.total) })), ttEl('tt-label', tr('nations.tip', { name, n: r.insts })));
+      for (const tier of TIERS) {
+        if (!r.counts[tier.id]) continue;
         const rowEl = ttEl('tt-row', '');
-        const key = ttEl('tt-key', '', 'span'); key.style.background = t.color;
-        rowEl.append(key, ttEl('', `${t.label} × ${r.counts[t.id]} → ${fmt(r.byTier[t.id])}`, 'span'));
+        const key = ttEl('tt-key', '', 'span'); key.style.background = tier.color;
+        rowEl.append(key, ttEl('', `${tierLabel(tier.id)} × ${r.counts[tier.id]} → ${fmt(r.byTier[tier.id])}`, 'span'));
         box.append(rowEl);
       }
     }));
@@ -719,15 +751,16 @@ function renderNations(res) {
 
 /* ── the map (treemap: country → institution, area = share of credit) ──── */
 const REGIONS = [
-  { id: 'us', label: 'United States', cc: new Set(['US']) },
-  { id: 'cn', label: 'China', cc: new Set(['CN']) },
-  { id: 'uk', label: 'United Kingdom', cc: new Set(['GB']) },
-  { id: 'eu', label: 'Europe', cc: new Set(['DE', 'FR', 'CH', 'NL', 'SE', 'DK', 'FI', 'NO',
+  { id: 'us', cc: new Set(['US']) },
+  { id: 'cn', cc: new Set(['CN']) },
+  { id: 'uk', cc: new Set(['GB']) },
+  { id: 'eu', cc: new Set(['DE', 'FR', 'CH', 'NL', 'SE', 'DK', 'FI', 'NO',
     'AT', 'BE', 'ES', 'PT', 'IT', 'IE', 'GR', 'CZ', 'PL', 'RU', 'HU', 'RO']) },
-  { id: 'ca', label: 'Canada', cc: new Set(['CA']) },
-  { id: 'as', label: 'Asia', cc: new Set(['JP', 'KR', 'SG', 'HK', 'TW', 'IN', 'SA', 'AE', 'IL']) },
-  { id: 'row', label: 'Rest of world', cc: null }, // catch-all
+  { id: 'ca', cc: new Set(['CA']) },
+  { id: 'as', cc: new Set(['JP', 'KR', 'SG', 'HK', 'TW', 'IN', 'SA', 'AE', 'IL']) },
+  { id: 'row', cc: null }, // catch-all
 ];
+function regionLabel(id) { return tr('region.' + id); }
 const regionOf = cc => (REGIONS.find(r => r.cc && r.cc.has(cc)) || REGIONS[REGIONS.length - 1]).id;
 const lumOf = hex => {
   const n = parseInt(hex.slice(1), 16);
@@ -774,7 +807,7 @@ function renderMap(res) {
     if (w >= 24 && h >= 12) {   // every readable cell carries its name
       const ink = lumOf(col.formatHex()) > 0.55 ? 'rgba(10,10,12,.88)' : '#fff';
       const fs = Math.max(7, Math.min(20, Math.sqrt(w * h) / 8));
-      const nm = ttEl('mc-name', leaf.data.name);
+      const nm = ttEl('mc-name', showInst(leaf.data.name));
       nm.style.fontSize = fs + 'px'; nm.style.color = ink;
       cell.append(nm);
       if (h >= 46 && w >= 46) {
@@ -796,28 +829,30 @@ function renderMap(res) {
   $('map-legend').replaceChildren(...REGIONS.filter(r => regTotals[r.id]).map(r => {
     const item = ttEl('legend-item', '', 'span');
     const sw = ttEl('legend-swatch', '', 'span'); sw.style.background = cssVar('--map-' + r.id);
-    item.append(sw, document.createTextNode(`${r.label} ${(regTotals[r.id] / total * 100).toFixed(0)}%`));
+    item.append(sw, document.createTextNode(`${regionLabel(r.id)} ${(regTotals[r.id] / total * 100).toFixed(0)}%`));
     return item;
   }));
-  $('map-sub').textContent =
-    `One map, everyone competes: area = share of all weighted credit in the current view, color = region. ` +
-    `Hover for the breakdown; click to open the dossier.` +
-    (hiddenN ? ` ${hiddenN} institutions below 0.12% share (together ${(hiddenV / total * 100).toFixed(1)}%) are not drawn.` : '');
+  $('map-sub').textContent = tr('map.sub') +
+    (hiddenN ? ' ' + tr('map.hidden', { n: hiddenN, pct: (hiddenV / total * 100).toFixed(1) }) : '');
 }
 $('map').addEventListener('pointermove', e => {
   const leaf = e.target.closest('.map-cell') && e.target.closest('.map-cell').__leaf;
   if (!leaf) { hideTip(); return; }
   const total = d3.sum(lastRes.ranking, r => r.total);
   showTip(e.clientX, e.clientY, box => {
-    const cname = leaf.data.cc ? (REGION ? (REGION.of(leaf.data.cc) || leaf.data.cc) : leaf.data.cc) : '—';
-    box.append(ttEl('tt-value', leaf.data.name),
-      ttEl('tt-label', `${flagOf(leaf.data.cc)} ${cname} · ${fmt(leaf.value)} pts · ${(leaf.value / total * 100).toFixed(2)}% of the field`));
+    const cname = leaf.data.cc ? countryName(leaf.data.cc) : '—';
+    box.append(ttEl('tt-value', showInst(leaf.data.name)),
+      ttEl('tt-label', tr('map.tip', {
+        place: `${flagOf(leaf.data.cc)} ${cname}`.trim(),
+        pts: fmt(leaf.value),
+        pct: (leaf.value / total * 100).toFixed(2),
+      })));
     const r = leaf.data.r;
-    if (r) for (const t of TIERS) {
-      if (!r.counts[t.id]) continue;
+    if (r) for (const tier of TIERS) {
+      if (!r.counts[tier.id]) continue;
       const rowEl = ttEl('tt-row', '');
-      const key = ttEl('tt-key', '', 'span'); key.style.background = t.color;
-      rowEl.append(key, ttEl('', `${t.label} × ${r.counts[t.id]}`, 'span'));
+      const key = ttEl('tt-key', '', 'span'); key.style.background = tier.color;
+      rowEl.append(key, ttEl('', `${tierLabel(tier.id)} × ${r.counts[tier.id]}`, 'span'));
       box.append(rowEl);
     }
   });
@@ -875,9 +910,9 @@ function renderVs() {
   for (const k in INSTS) ccByName.set(INSTS[k].name, INSTS[k].country);
 
   svg.append('text').attr('class', 'vs-head').attr('x', xL).attr('y', 18)
-    .attr('text-anchor', 'end').text('CSRankings — papers');
+    .attr('text-anchor', 'end').text(tr('vs.papers'));
   svg.append('text').attr('class', 'vs-head').attr('x', xR).attr('y', 18)
-    .text('AI Rankings — awards');
+    .text(tr('vs.awards'));
 
   const riseC = cssVar('--tier-best'), dropC = cssVar('--map-cn'), surfC = cssVar('--plane');
   for (const r of rows) {
@@ -888,8 +923,9 @@ function renderVs() {
     const flag = flagOf(ccByName.get(r.name) || '');
 
     // 左侧：名次. 国旗 名字
+    const school = (i18n && i18n.lang === 'zh') ? showInst(r.name) : r.short;
     svg.append('text').attr('x', xL).attr('y', yAt(i) + 4).attr('text-anchor', 'end')
-      .text(`${r.csr}. ${flag} ${r.short}`);
+      .text(`${r.csr}. ${flag} ${school}`);
 
     // 连线：线宽随落差，端点带表面环圆点
     const wpx = Math.max(1.6, Math.min(4.2, 1.4 + Math.abs(delta) / 28));
@@ -914,7 +950,7 @@ function renderVs() {
     const lbl = svg.append('text').attr('x', bx + bw + 8).attr('y', yAt(j) + 4);
     lbl.append('tspan').attr('class', 'vs-rank').attr('style', 'font-weight:700')
       .text(r.ours ? `#${r.ours} ` : '— ');
-    lbl.append('tspan').text(` ${flag} ${r.short}`);
+    lbl.append('tspan').text(` ${flag} ${(i18n && i18n.lang === 'zh') ? showInst(r.name) : r.short}`);
   }
 }
 
@@ -923,7 +959,7 @@ function initLegend() {
   $('tier-legend').replaceChildren(...TIERS.map(t => {
     const item = ttEl('legend-item', '', 'span');
     const sw = ttEl('legend-swatch', '', 'span'); sw.style.background = t.color;
-    item.append(sw, document.createTextNode(`${t.label} × ${state.weights[t.id]}`));
+    item.append(sw, document.createTextNode(`${tierLabel(t.id)} × ${state.weights[t.id]}`));
     return item;
   }));
 }
@@ -962,12 +998,13 @@ function initControls() {
   }
   const sel = $('country-select');
   const optAll = document.createElement('option');
-  optAll.value = 'all'; optAll.textContent = 'All countries/regions';
+  optAll.value = 'all'; optAll.textContent = tr('country.all');
+  optAll.setAttribute('data-i18n', 'country.all');
   sel.append(optAll);
   for (const [cc] of [...cTotals.entries()].sort((a, b) => b[1] - a[1])) {
     const o = document.createElement('option');
     o.value = cc;
-    o.textContent = `${flagOf(cc)} ${REGION ? (REGION.of(cc) || cc) : cc}`;
+    o.textContent = `${flagOf(cc)} ${countryName(cc)}`;
     sel.append(o);
   }
   sel.addEventListener('change', () => { state.country = sel.value; rerender(); });
@@ -1000,7 +1037,10 @@ function initControls() {
     chip.setAttribute('aria-pressed', 'true');
     const dot = ttEl('tier-dot', '', 'span'); dot.style.background = t.color;
     const b = document.createElement('b');
-    chip.append(dot, b, document.createTextNode(' ' + t.label));
+    const lab = document.createElement('span');
+    lab.textContent = tierLabel(t.id);
+    t._labelEl = lab;
+    chip.append(dot, b, document.createTextNode(' '), lab);
     chip.addEventListener('click', () => {
       if (state.tiers.has(t.id) && state.tiers.size === 1) return;
       state.tiers.has(t.id) ? state.tiers.delete(t.id) : state.tiers.add(t.id);
@@ -1034,10 +1074,13 @@ function initControls() {
     const nm = ttEl('wname', '', 'span');
     const dot = ttEl('tier-dot', '', 'span'); dot.style.background = t.color;
     t._dotEl = dot;
-    nm.append(dot, document.createTextNode(t.label));
+    const lab = document.createElement('span');
+    lab.textContent = tierLabel(t.id);
+    t._wlabelEl = lab;
+    nm.append(dot, lab);
     const input = document.createElement('input');
     input.type = 'range'; input.min = 0; input.max = t.max; input.step = t.step; input.value = t.w;
-    input.setAttribute('aria-label', t.label + ' weight');
+    input.setAttribute('aria-label', tr('weights.aria', { label: tierLabel(t.id) }));
     const out = document.createElement('output'); out.textContent = t.w;
     input.addEventListener('input', () => {
       state.weights[t.id] = +input.value;
@@ -1049,7 +1092,9 @@ function initControls() {
     t._input = input; t._out = out;
   }
   const reset = document.createElement('button');
-  reset.className = 'weights-reset'; reset.textContent = 'reset to defaults';
+  reset.className = 'weights-reset';
+  reset.textContent = tr('weights.reset');
+  reset.setAttribute('data-i18n', 'weights.reset');
   reset.addEventListener('click', () => {
     for (const t of TIERS) { state.weights[t.id] = t.w; t._input.value = t.w; t._out.textContent = t.w; }
     initLegend(); rerender();
@@ -1094,28 +1139,61 @@ function rerender() {
     renderCanon();
     renderBump();
     renderMap(lastRes);
-    $('board-sub').textContent =
-      `${lastRes.papersInView.toLocaleString()} honored papers in view · credit: ` +
-      ({ both: 'first + corresponding (50/50)', first: 'first author', corr: 'corresponding author' })[state.attr] +
-      ` · ${state.lens === 'now' ? `present-day lens, ${state.halflife}y half-life on age of work` : 'all-time lens'}` +
-      ` · ${({ all: 'academia + industry', academia: 'academia only (incl. gov / nonprofit labs)', industry: 'industry only' })[state.scope]}` +
-      ((state.fromYear || state.toYear) ? ` · awards ${state.fromYear ?? MIN_YEAR}–${state.toYear ?? REF_YEAR}` : '') +
-      (state.country !== 'all' ? ` · ${REGION ? (REGION.of(state.country) || state.country) : state.country} only` : '');
+    let boardSub = tr('board.sub', {
+      n: lastRes.papersInView.toLocaleString(),
+      credit: tr('credit.mode.' + state.attr),
+      lens: state.lens === 'now' ? tr('lens.mode.now', { y: state.halflife }) : tr('lens.mode.all'),
+      scope: tr('scope.mode.' + state.scope),
+    });
+    if (state.fromYear || state.toYear) {
+      boardSub += tr('board.years', { from: state.fromYear ?? MIN_YEAR, to: state.toYear ?? REF_YEAR });
+    }
+    if (state.country !== 'all') boardSub += tr('board.country', { name: countryName(state.country) });
+    $('board-sub').textContent = boardSub;
     if (state.selected) openDossier(state.selected);
   });
 }
 
 function initFootnotes() {
   const s = DATA.stats;
-  $('coverage-note').textContent =
-    `Coverage: ${s.papers.toLocaleString()} honored papers, affiliations resolved for ` +
-    `${s.resolved.toLocaleString()} (${Math.round(s.resolved / s.papers * 100)}%); ` +
-    `unresolved papers appear in the Canon but carry no institutional credit yet. ` +
-    `All test-of-time and best-paper affiliations are individually verified.`;
-  $('generated-note').textContent =
-    `Dataset generated ${DATA.generated} · award window ${DATA.window} · ` +
-    `honors from OpenReview, official award pages, ACL Anthology and CVF; affiliations via ` +
-    `OpenReview author histories, Crossref and manual verification.`;
+  $('coverage-note').textContent = tr('foot.coverage', {
+    papers: s.papers.toLocaleString(),
+    resolved: s.resolved.toLocaleString(),
+    pct: Math.round(s.resolved / s.papers * 100),
+  });
+  const windowLabel = (i18n && i18n.lang === 'zh')
+    ? String(DATA.window || '').replace(/^award events\s+/i, '')
+    : DATA.window;
+  $('generated-note').textContent = tr('foot.generated', {
+    date: DATA.generated,
+    window: windowLabel,
+  });
+}
+
+function refreshCountryOptions() {
+  const sel = $('country-select');
+  if (!sel) return;
+  for (const o of sel.options) {
+    if (o.value === 'all') o.textContent = tr('country.all');
+    else o.textContent = `${flagOf(o.value)} ${countryName(o.value)}`;
+  }
+}
+
+function onLangChange() {
+  refreshRegionNames();
+  applyTheme(document.documentElement.dataset.theme || 'light');
+  for (const tier of TIERS) {
+    const label = tierLabel(tier.id);
+    if (tier._labelEl) tier._labelEl.textContent = label;
+    if (tier._wlabelEl) tier._wlabelEl.textContent = label;
+    if (tier._input) tier._input.setAttribute('aria-label', tr('weights.aria', { label }));
+  }
+  refreshCountryOptions();
+  const more = $('board-more');
+  if (more) more.textContent = state.boardLimit <= 25 ? tr('board.more50') : tr('board.more25');
+  initLegend();
+  initFootnotes();
+  rerender();
 }
 
 let resizeT = null;
@@ -1126,6 +1204,8 @@ addEventListener('resize', () => {
 
 let savedTheme = 'light';
 try { savedTheme = localStorage.getItem('sr-theme') || 'light'; } catch (e) { /* file:// */ }
+refreshRegionNames();
+document.addEventListener('sr-langchange', onLangChange);
 applyTheme(savedTheme);
 initKPIs();
 initLegend();

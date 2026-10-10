@@ -1,13 +1,29 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" data-title-key="meta.title">
 <head>
 <meta charset="utf-8">
+<script>
+/* Persist language before paint. Keep in sync with detectLang() in i18n.js. */
+(function () {
+  var lang = '';
+  try { lang = localStorage.getItem('sr-lang') || ''; } catch (e) {}
+  if (lang !== 'en' && lang !== 'zh') {
+    lang = 'en';
+    var list = navigator.languages || [navigator.language || ''];
+    for (var i = 0; i < list.length; i++) {
+      if (/^zh/i.test(String(list[i] || ''))) { lang = 'zh'; break; }
+    }
+  }
+  document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+  document.documentElement.dataset.lang = lang;
+})();
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI Rankings — only the podium counts</title>
-<meta name="description" content="An awards-only ranking of AI institutions: orals, best papers and test-of-time awards, credited to first- and corresponding-author affiliations at publication time.">
+<meta name="description" content="An awards-only ranking of AI institutions: orals, best papers and test-of-time awards, credited to first- and corresponding-author affiliations at publication time." data-i18n-content="meta.description">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏆</text></svg>">
-<meta property="og:title" content="AI Rankings — only the podium counts">
-<meta property="og:description" content="Awards-only ranking of AI institutions: orals, best papers and test-of-time prizes, credited to first- and corresponding-author affiliations at publication time.">
+<meta property="og:title" content="AI Rankings — only the podium counts" data-i18n-content="meta.title">
+<meta property="og:description" content="Awards-only ranking of AI institutions: orals, best papers and test-of-time prizes, credited to first- and corresponding-author affiliations at publication time." data-i18n-content="meta.ogDescription">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#0d1626">
 <link rel="canonical" href="https://airankings.jingxuan.uk/">
@@ -32,8 +48,12 @@
 <body>
 
 <div class="top-links">
-  <a class="theme-btn" href="classic.html" title="CSRankings-style directory view">Directory</a>
-  <button class="theme-btn" id="theme-btn" aria-label="switch color theme">☾ Dark</button>
+  <div class="seg lang-switch" id="lang-switch" role="radiogroup" aria-label="language" data-i18n-aria="lang.group">
+    <button type="button" data-lang="en">EN</button>
+    <button type="button" data-lang="zh">中文</button>
+  </div>
+  <a class="theme-btn" href="classic.html" title="CSRankings-style directory view" data-i18n="nav.directory" data-i18n-title="nav.directoryTitle">Directory</a>
+  <button class="theme-btn" id="theme-btn" aria-label="switch color theme" data-i18n-aria="theme.switch">☾ Dark</button>
 </div>
 <header class="masthead">
   <div class="wordmark-block">
@@ -41,69 +61,69 @@
     <h1 class="wordmark">AI&nbsp;Rankings</h1>
     <div class="wordmark-rule"></div>
   </div>
-  <p class="manifesto">
+  <p class="manifesto" data-i18n-html="manifesto">
     Paper counts stopped meaning anything. What still means something is the podium —
     <span class="gold">orals</span>, <span class="gold">best papers</span>,
     <span class="gold">test-of-time awards</span> — credited to the first and corresponding
     authors&rsquo; institutions <em>at the time the work was done</em>.
   </p>
-  <div class="kpi-row" role="group" aria-label="dataset headline stats">
-    <div class="stat"><div class="stat-value" id="kpi-papers">—</div><div class="stat-label">honored papers</div></div>
-    <div class="stat"><div class="stat-value" id="kpi-insts">—</div><div class="stat-label">institutions credited</div></div>
-    <div class="stat"><div class="stat-value" id="kpi-venues">8</div><div class="stat-label">venues</div></div>
-    <div class="stat"><div class="stat-value stat-value-sm" id="kpi-window">—</div><div class="stat-label">award window</div></div>
+  <div class="kpi-row" role="group" aria-label="dataset headline stats" data-i18n-aria="kpi.group">
+    <div class="stat"><div class="stat-value" id="kpi-papers">—</div><div class="stat-label" data-i18n="kpi.papers">honored papers</div></div>
+    <div class="stat"><div class="stat-value" id="kpi-insts">—</div><div class="stat-label" data-i18n="kpi.insts">institutions credited</div></div>
+    <div class="stat"><div class="stat-value" id="kpi-venues">8</div><div class="stat-label" data-i18n="kpi.venues">venues</div></div>
+    <div class="stat"><div class="stat-value stat-value-sm" id="kpi-window">—</div><div class="stat-label" data-i18n="kpi.window">award window</div></div>
   </div>
 </header>
 
-<nav class="dock" id="dock" aria-label="ranking controls">
+<nav class="dock" id="dock" aria-label="ranking controls" data-i18n-aria="dock.controls">
   <div class="dock-inner">
-    <div class="dock-group" role="radiogroup" aria-label="attribution">
-      <span class="dock-label">Credit</span>
+    <div class="dock-group" role="radiogroup" aria-label="attribution" data-i18n-aria="dock.attr">
+      <span class="dock-label" data-i18n="dock.credit">Credit</span>
       <div class="seg" id="seg-attr">
-        <button data-v="both" class="on">1st + corr.</button>
-        <button data-v="first">1st author</button>
-        <button data-v="corr">Corresponding</button>
+        <button data-v="both" class="on" data-i18n="credit.both">1st + corr.</button>
+        <button data-v="first" data-i18n="credit.first">1st author</button>
+        <button data-v="corr" data-i18n="credit.corr">Corresponding</button>
       </div>
     </div>
-    <div class="dock-group" role="radiogroup" aria-label="lens">
-      <span class="dock-label">Lens</span>
+    <div class="dock-group" role="radiogroup" aria-label="lens" data-i18n-aria="dock.lensGroup">
+      <span class="dock-label" data-i18n="dock.lens">Lens</span>
       <div class="seg" id="seg-lens">
-        <button data-v="alltime" class="on">All-time</button>
-        <button data-v="now">Present-day</button>
+        <button data-v="alltime" class="on" data-i18n="lens.alltime">All-time</button>
+        <button data-v="now" data-i18n="lens.now">Present-day</button>
       </div>
       <label class="halflife" id="halflife-wrap" hidden>
-        half-life <output id="halflife-out">5</output>y
-        <input type="range" id="halflife" min="2" max="15" value="5" step="1" aria-label="decay half-life in years">
+        <span data-i18n="lens.halflife">half-life</span> <output id="halflife-out">5</output><span data-i18n="lens.yearSuffix">y</span>
+        <input type="range" id="halflife" min="2" max="15" value="5" step="1" aria-label="decay half-life in years" data-i18n-aria="lens.halflifeAria">
       </label>
     </div>
-    <div class="dock-group" role="group" aria-label="award year range">
-      <span class="dock-label">Years</span>
-      <select id="year-from" class="country-select" style="width:84px" aria-label="from year"></select>
+    <div class="dock-group" role="group" aria-label="award year range" data-i18n-aria="dock.yearRange">
+      <span class="dock-label" data-i18n="dock.years">Years</span>
+      <select id="year-from" class="country-select" style="width:84px" aria-label="from year" data-i18n-aria="year.from"></select>
       <span style="color:var(--ink-muted);font-size:12px;margin:0 5px">→</span>
-      <select id="year-to" class="country-select" style="width:84px" aria-label="to year"></select>
+      <select id="year-to" class="country-select" style="width:84px" aria-label="to year" data-i18n-aria="year.to"></select>
     </div>
-    <div class="dock-group" role="radiogroup" aria-label="institution scope">
-      <span class="dock-label">Scope</span>
+    <div class="dock-group" role="radiogroup" aria-label="institution scope" data-i18n-aria="dock.scopeGroup">
+      <span class="dock-label" data-i18n="dock.scope">Scope</span>
       <div class="seg" id="seg-scope">
-        <button data-v="academia" class="on">Academia</button>
-        <button data-v="industry">Industry</button>
-        <button data-v="all">All</button>
+        <button data-v="academia" class="on" data-i18n="scope.academia">Academia</button>
+        <button data-v="industry" data-i18n="scope.industry">Industry</button>
+        <button data-v="all" data-i18n="scope.all">All</button>
       </div>
     </div>
     <div class="dock-group">
-      <span class="dock-label">Country/Region</span>
-      <select id="country-select" class="country-select" aria-label="country/region filter"></select>
+      <span class="dock-label" data-i18n="dock.country">Country/Region</span>
+      <select id="country-select" class="country-select" aria-label="country/region filter" data-i18n-aria="country.filter"></select>
     </div>
-    <div class="dock-group dock-venues" role="group" aria-label="venue filter">
-      <span class="dock-label">Venues</span>
+    <div class="dock-group dock-venues" role="group" aria-label="venue filter" data-i18n-aria="dock.venueFilter">
+      <span class="dock-label" data-i18n="dock.venues">Venues</span>
       <div class="chips" id="venue-chips"></div>
     </div>
-    <div class="dock-group" role="group" aria-label="tier filter">
-      <span class="dock-label">Tiers</span>
+    <div class="dock-group" role="group" aria-label="tier filter" data-i18n-aria="dock.tierFilter">
+      <span class="dock-label" data-i18n="dock.tiers">Tiers</span>
       <div class="tier-filters" id="tier-filters"></div>
     </div>
     <details class="weights" id="weights">
-      <summary>Weights</summary>
+      <summary data-i18n="dock.weights">Weights</summary>
       <div class="weights-pop" id="weights-pop"></div>
     </details>
   </div>
@@ -111,60 +131,60 @@
 
 <main>
 
-<section class="section" id="podium-section" aria-label="top three institutions">
+<section class="section" id="podium-section" aria-label="top three institutions" data-i18n-aria="section.podium">
   <div class="podium" id="podium"></div>
 </section>
 
 <section class="section" id="board-section">
   <div class="section-head">
-    <h2>The Board</h2>
-    <div class="legend" id="tier-legend" aria-label="award tiers"></div>
+    <h2 data-i18n="section.board">The Board</h2>
+    <div class="legend" id="tier-legend" aria-label="award tiers" data-i18n-aria="legend.tiers"></div>
     <div class="seg seg-sm" id="seg-view">
-      <button data-v="chart" class="on">Chart</button>
-      <button data-v="table">Table</button>
+      <button data-v="chart" class="on" data-i18n="section.chart">Chart</button>
+      <button data-v="table" data-i18n="section.table">Table</button>
     </div>
   </div>
   <p class="section-sub" id="board-sub"></p>
   <div id="board" class="board"></div>
   <div id="board-table-wrap" class="table-wrap" hidden></div>
-  <button class="more-btn" id="board-more">show top 50</button>
+  <button class="more-btn" id="board-more" data-i18n="board.more50">show top 50</button>
 </section>
 
 <section class="section" id="map-section">
   <div class="section-head">
-    <h2>The Map</h2>
-    <div class="legend" id="map-legend" aria-label="regions"></div>
+    <h2 data-i18n="section.map">The Map</h2>
+    <div class="legend" id="map-legend" aria-label="regions" data-i18n-aria="legend.regions"></div>
   </div>
-  <p class="section-sub" id="map-sub">One map, everyone competes: area = share of all weighted credit
+  <p class="section-sub" id="map-sub" data-i18n="map.sub">One map, everyone competes: area = share of all weighted credit
   in the current view, color = region. Hover for the breakdown; click to open the dossier.</p>
   <div id="map" class="map"></div>
 </section>
 
 <section class="section" id="nations-section">
-  <div class="section-head"><h2>Nations</h2></div>
-  <p class="section-sub">Institutional credit rolled up by country/region. Institutions whose
+  <div class="section-head"><h2 data-i18n="section.nations">Nations</h2></div>
+  <p class="section-sub" data-i18n="nations.sub">Institutional credit rolled up by country/region. Institutions whose
   country/region could not be resolved are omitted.</p>
   <div id="nations" class="nations"></div>
 </section>
 
 <section class="section" id="vs-section">
-  <div class="section-head"><h2>vs CSRankings</h2></div>
-  <p class="section-sub">CSRankings, AI areas (AI · CV · ML · NLP), 2012–2026, world — its top 20 by
+  <div class="section-head"><h2 data-i18n="section.vs">vs CSRankings</h2></div>
+  <p class="section-sub" data-i18n-html="vs.sub">CSRankings, AI areas (AI · CV · ML · NLP), 2012–2026, world — its top 20 by
   <em>publication counting</em>, against the same schools ranked here by <em>awards only</em>
   (academia view, your current weights). Gold lines hold or climb; red lines fall.
   CSRankings snapshot: 2026-07-10.</p>
-  <div class="vs-wrap"><svg id="vs" role="img" aria-label="CSRankings versus AI Rankings slopegraph"></svg></div>
+  <div class="vs-wrap"><svg id="vs" role="img" aria-label="CSRankings versus AI Rankings slopegraph" data-i18n-aria="vs.aria"></svg></div>
 </section>
 
 <section class="section" id="canon-section">
   <div class="section-head">
-    <h2>The Canon</h2>
+    <h2 data-i18n="section.canon">The Canon</h2>
     <div class="seg seg-sm" id="seg-axis">
-      <button data-v="yw" class="on">year of work</button>
-      <button data-v="ya">year awarded</button>
+      <button data-v="yw" class="on" data-i18n="canon.yw">year of work</button>
+      <button data-v="ya" data-i18n="canon.ya">year awarded</button>
     </div>
   </div>
-  <p class="section-sub">Every point of light is one honored paper. On the <em>year-of-work</em> axis,
+  <p class="section-sub" data-i18n-html="canon.sub">Every point of light is one honored paper. On the <em>year-of-work</em> axis,
   test-of-time awards fall back to the year the work was actually done — the faint arcs are the
   ten-plus years between doing something great and the field admitting it.</p>
   <div class="canon-wrap">
@@ -174,31 +194,31 @@
 </section>
 
 <section class="section" id="paths-section">
-  <div class="section-head"><h2>Trajectories</h2></div>
-  <p class="section-sub">Cumulative rank as awards accrued over the last decade (by award year). Hover or tap a line.</p>
-  <div class="bump-wrap"><svg id="bump" role="img" aria-label="rank trajectories of leading institutions"></svg></div>
+  <div class="section-head"><h2 data-i18n="section.paths">Trajectories</h2></div>
+  <p class="section-sub" data-i18n="paths.sub">Cumulative rank as awards accrued over the last decade (by award year). Hover or tap a line.</p>
+  <div class="bump-wrap"><svg id="bump" role="img" aria-label="rank trajectories of leading institutions" data-i18n-aria="bump.aria"></svg></div>
 </section>
 
 </main>
 
-<aside class="dossier" id="dossier" aria-label="institution dossier" hidden>
+<aside class="dossier" id="dossier" aria-label="institution dossier" data-i18n-aria="dossier.aria" hidden>
   <div class="dossier-head">
     <div>
       <div class="dossier-rank" id="dossier-rank"></div>
       <h3 id="dossier-name"></h3>
       <div class="dossier-meta" id="dossier-meta"></div>
     </div>
-    <button class="dossier-close" id="dossier-close" aria-label="close">×</button>
+    <button class="dossier-close" id="dossier-close" aria-label="close" data-i18n-aria="dossier.close">×</button>
   </div>
-  <div class="dossier-score"><span id="dossier-score"></span><span class="dossier-score-label">weighted score</span></div>
+  <div class="dossier-score"><span id="dossier-score"></span><span class="dossier-score-label" data-i18n="dossier.score">weighted score</span></div>
   <div class="dossier-tiers" id="dossier-tiers"></div>
-  <h4>The people</h4>
+  <h4 data-i18n="dossier.people">The people</h4>
   <div class="dossier-people" id="dossier-people"></div>
-  <h4>Score by year</h4>
+  <h4 data-i18n="dossier.byYear">Score by year</h4>
   <svg id="dossier-spark" class="dossier-spark"></svg>
-  <h4>By venue</h4>
+  <h4 data-i18n="dossier.byVenue">By venue</h4>
   <div class="dossier-venues" id="dossier-venues"></div>
-  <h4>The record</h4>
+  <h4 data-i18n="dossier.record">The record</h4>
   <ol class="dossier-list" id="dossier-list"></ol>
 </aside>
 <div class="scrim" id="scrim" hidden></div>
@@ -206,45 +226,47 @@
 <div class="tooltip" id="tooltip" role="tooltip" hidden></div>
 
 <footer>
-  <h2>Method</h2>
+  <h2 data-i18n="method.title">Method</h2>
   <div class="method-grid">
     <div>
-      <h4>What counts</h4>
-      <p>Only papers the community itself singled out: conference orals, best-paper–tier awards
+      <h4 data-i18n="method.what">What counts</h4>
+      <p data-i18n="method.whatBody">Only papers the community itself singled out: conference orals, best-paper–tier awards
       (incl. outstanding papers), honorable mentions / award candidates, and test-of-time prizes at
       NeurIPS, ICML, ICLR, CVPR, ICCV, ECCV, ACL and EMNLP. Regular acceptances score zero, by design.
       ACL and EMNLP contribute award tiers only: *ACL venues treat oral vs poster as a presentation
       format, not a distinction, and publish no oral lists.</p>
     </div>
     <div>
-      <h4>Who gets credit</h4>
-      <p>The first author's and the corresponding author's institutions <em>at the time the work was
+      <h4 data-i18n="method.who">Who gets credit</h4>
+      <p data-i18n-html="method.whoBody">The first author's and the corresponding author's institutions <em>at the time the work was
       done</em> — resolved from OpenReview author histories (dated positions), Crossref authorship
       records and manually verified sources — so a test-of-time award for 2014 work credits the 2014
       lab, not the authors' current employers. Where no corresponding author is flagged, the last
       author stands in, per AI convention.</p>
     </div>
     <div>
-      <h4>Latency, modelled</h4>
-      <p>Every award event carries two timestamps: the year it was <em>granted</em> and the year the
+      <h4 data-i18n="method.latency">Latency, modelled</h4>
+      <p data-i18n-html="method.latencyBody">Every award event carries two timestamps: the year it was <em>granted</em> and the year the
       work was <em>done</em>. The all-time lens credits the year of work at full value; the present-day
       lens decays each event by the age of the work with a half-life you control — a ten-year-old
       triumph says less about a lab today than last year's does.</p>
     </div>
     <div>
-      <h4>Default weights</h4>
-      <p>Test of time 10 · best paper 8 · honorable mention 3 · oral 1 — adjustable live. Credit splits
+      <h4 data-i18n="method.weights">Default weights</h4>
+      <p data-i18n="method.weightsBody">Test of time 10 · best paper 8 · honorable mention 3 · oral 1 — adjustable live. Credit splits
       50 / 50 between first and corresponding institutions (full credit when they coincide), and equally
       across an author's multiple affiliations.</p>
     </div>
   </div>
   <p class="footnote" id="coverage-note"></p>
-  <p class="footnote">TPAMI is deliberately absent: journals have no oral / best-paper mechanism, and the PAMI
+  <p class="footnote" data-i18n="foot.tpami">TPAMI is deliberately absent: journals have no oral / best-paper mechanism, and the PAMI
   community's test-of-time prize (Longuet-Higgins) is awarded at CVPR, which is covered. AAAI / IJCAI are
   excluded for low signal density.</p>
   <p class="footnote" id="generated-note"></p>
 </footer>
 
+<script src="inst-zh.js"></script>
+<script src="i18n.js"></script>
 <script src="vendor/d3.v7.min.js"></script>
 <script src="data.js"></script>
 <script src="app.js"></script>
