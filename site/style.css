@@ -29,7 +29,7 @@
   --surface-2:    #eef3f8;
   --ink:          #333333;
   --ink-2:        #555555;
-  --ink-muted:    #777777;
+  --ink-muted:    #6b6b6b;   /* ≥4.5:1 on #fff and #f9f9f9 */
   --grid:         #e8e8e8;
   --baseline:     #d5d5d5;
   --ring:         rgba(0,0,0,0.09);
@@ -282,6 +282,18 @@ a:hover { color: var(--accent); }
 .table-wrap th:nth-child(2), .table-wrap td:nth-child(2) { text-align: left; }
 .table-wrap td { padding: 7px 12px; border-bottom: 1px solid var(--grid); text-align: right; font-variant-numeric: tabular-nums; }
 .table-wrap tr:hover td { background: var(--surface); cursor: pointer; }
+.table-wrap th button { font: inherit; letter-spacing: inherit; text-transform: inherit; color: inherit; padding: 2px 0; }
+.table-wrap th button:hover, .table-wrap th[aria-sort] button { color: var(--ink); }
+.table-wrap th[aria-sort="ascending"] button::after { content: "\00a0▲"; }
+.table-wrap th[aria-sort="descending"] button::after { content: "\00a0▼"; }
+.table-tools { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
+.table-tools[hidden] { display: none; }
+.table-search {
+  font: inherit; font-size: 13px; color: var(--ink); background: var(--plane);
+  border: 1px solid var(--baseline); border-radius: 6px; padding: 6px 10px; width: min(280px, 100%);
+}
+.table-search:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.table-count { color: var(--ink-muted); font-size: 12.5px; }
 
 /* ── canon ──────────────────────────────────────────────────────────────── */
 .canon-wrap { position: relative; margin-top: 20px; background: var(--surface);
@@ -292,6 +304,7 @@ a:hover { color: var(--accent); }
 
 /* ── bump ───────────────────────────────────────────────────────────────── */
 .bump-wrap { margin-top: 16px; overflow-x: auto; }
+.vs-wrap { overflow-x: auto; }
 #bump { display: block; }
 #bump .bump-line { fill: none; stroke: var(--de-emph); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: stroke .15s; }
 #bump .bump-line.hot { stroke: var(--tier-tot); }

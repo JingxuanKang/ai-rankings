@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AIRankings — classic</title>
+<meta name="description" content="Directory view of the awards-only AI institution ranking: orals, best papers and test-of-time prizes at eight AI venues, credited to first- and corresponding-author affiliations.">
+<link rel="canonical" href="https://airankings.jingxuan.uk/classic.html">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏆</text></svg>">
 
 <style>
@@ -129,6 +131,7 @@ table.people > tbody > tr.odd > td { background: #f9f9f9; }
 @media (max-width: 768px) {
   .row { flex-direction: column; }
   .col-left, .col-right { flex: 1 1 100%; max-width: 100%; width: 100%; }
+  .col-right { order: -1; }   /* phones: ranking first, filter panels below */
   .full-link { position: static; display: block; margin-bottom: 6px; }
 }
 .btn-group { display: inline-flex; vertical-align: middle; border: 1px solid #ccc; border-radius: 4px; overflow: hidden; }

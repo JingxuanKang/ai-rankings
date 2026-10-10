@@ -41,6 +41,8 @@ const state = {
   view: 'chart',
   axis: 'yw',            // canon x axis: yw | ya
   boardLimit: 25,
+  tableSort: { key: 'rank', dir: 1 },   // table view: column + direction (1 = asc)
+  tableQuery: '',                      // table view: name / country-code filter
   selected: null,        // inst id in dossier
 };
 
@@ -59,6 +61,8 @@ function applyTheme(theme) {
     ({ test_of_time: 'tot', best_paper: 'best', honorable_mention: 'hm', oral: 'oral' })[t.id]);
   const btn = $('theme-btn');
   if (btn) btn.textContent = theme === 'light' ? '☾ Dark' : '☀ Light';
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.content = cssVar('--plane');
 }
 const fmt = n => n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, '') + 'k'
   : n >= 100 ? String(Math.round(n)) : (Math.round(n * 10) / 10).toString();
@@ -266,16 +270,56 @@ function boardTip(e, instId) {
   });
 }
 
+const TABLE_LIMIT = 100;
+const TABLE_COLS = [
+  { key: 'rank', label: '#', num: true, val: r => r.rank },
+  { key: 'name', label: 'Institution', val: r => (INSTS[r.id] || { name: r.id }).name },
+  { key: 'type', label: 'Type', val: r => TYPE_TAG[(INSTS[r.id] || {}).type] || 'academia' },
+  { key: 'score', label: 'Score', num: true, desc: true, val: r => r.total },
+  ...TIERS.map(t => ({ key: t.id, label: t.label, num: true, desc: true, val: r => r.counts[t.id] || 0 })),
+];
 function renderBoardTable(ranking) {
   const wrap = $('board-table-wrap');
+  const { key, dir } = state.tableSort;
+  const col = TABLE_COLS.find(c => c.key === key) || TABLE_COLS[0];
+  const q = state.tableQuery.trim().toLowerCase();
+  let rows = ranking;
+  if (q) rows = rows.filter(r => {
+    const inst = INSTS[r.id] || { name: r.id, country: '' };
+    return inst.name.toLowerCase().includes(q) || (inst.country || '').toLowerCase() === q;
+  });
+  if (key !== 'rank' || dir !== 1) {
+    rows = [...rows].sort((a, b) => {
+      const va = col.val(a), vb = col.val(b);
+      const c = col.num ? va - vb : String(va).localeCompare(String(vb));
+      return c * dir || a.rank - b.rank;
+    });
+  }
+  const shown = rows.slice(0, TABLE_LIMIT);
+  $('board-table-count').textContent = q
+    ? `${rows.length.toLocaleString()} match${rows.length === 1 ? '' : 'es'}` +
+      (rows.length > TABLE_LIMIT ? ` · first ${TABLE_LIMIT} shown` : '')
+    : `${shown.length} of ${ranking.length.toLocaleString()} ranked institutions · click a column to sort`;
+
   const table = document.createElement('table');
   const thead = document.createElement('thead');
   const hr = document.createElement('tr');
-  for (const h of ['#', 'Institution', 'Type', 'Score', ...TIERS.map(t => t.label)])
-    hr.append(ttEl('', h, 'th'));
+  for (const c of TABLE_COLS) {
+    const th = ttEl('', '', 'th');
+    th.scope = 'col';
+    if (c.key === key) th.setAttribute('aria-sort', dir === 1 ? 'ascending' : 'descending');
+    const b = ttEl('', c.label, 'button');
+    b.type = 'button';
+    b.addEventListener('click', () => {
+      state.tableSort = c.key === key ? { key, dir: -dir } : { key: c.key, dir: c.desc ? -1 : 1 };
+      renderBoardTable(ranking);
+    });
+    th.append(b);
+    hr.append(th);
+  }
   thead.append(hr); table.append(thead);
   const tbody = document.createElement('tbody');
-  for (const r of ranking.slice(0, 100)) {
+  for (const r of shown) {
     const inst = INSTS[r.id] || { name: r.id, type: '', country: '' };
     const tr = document.createElement('tr');
     for (const cell of [r.rank, `${inst.name}${inst.country ? ' (' + inst.country + ')' : ''}`,
@@ -947,6 +991,11 @@ function initControls() {
     $('board').hidden = state.view !== 'chart';
     $('board-more').hidden = state.view !== 'chart';
     $('board-table-wrap').hidden = state.view !== 'table';
+    $('board-table-tools').hidden = state.view !== 'table';
+  });
+  $('board-search').addEventListener('input', e => {
+    state.tableQuery = e.target.value;
+    if (lastRes) renderBoardTable(lastRes.ranking);
   });
 
   bindSeg('seg-scope', 'scope');
@@ -1121,7 +1170,7 @@ function initFootnotes() {
 let resizeT = null;
 addEventListener('resize', () => {
   clearTimeout(resizeT);
-  resizeT = setTimeout(() => { renderCanon(); renderBump(); if (lastRes) renderMap(lastRes); }, 180);
+  resizeT = setTimeout(() => { renderCanon(); renderBump(); renderVs(); if (lastRes) renderMap(lastRes); }, 180);
 });
 
 let savedTheme = 'light';

@@ -145,7 +145,21 @@ ALIASES.update({norm_inst(k): v for k, v in {
 }.items()})
 
 
+def clean_url(u):
+    """Only a bare http(s) URL is a link; provenance notes must not leak into href."""
+    u = (u or "").strip()
+    if re.fullmatch(r"https?://\S+", u):
+        return u
+    if u:
+        print(f"drop non-URL source_url: {u[:80]}")
+    return ""
+
+
 def main():
+    if not (DATA_DIR / "or_cache").is_dir():
+        sys.exit("data/or_cache/ missing: people homepages come from it. "
+                 "Fetch it first (see data/or_cache.ARCHIVED.md); a rebuild without it "
+                 "would ship data.js with no homepages.")
     merged = load_json(DATA_DIR / "merged.json")["entries"]
 
     cache = {}
@@ -209,7 +223,7 @@ def main():
             "yw": e.get("year_work") or e["year_awarded"],
             "award": e["award"],
             "note": e.get("note", ""),
-            "url": e.get("source_url", ""),
+            "url": clean_url(e.get("source_url", "")),
         }
         if enr:
             ev["fa"] = enr["first_author"]["name"]

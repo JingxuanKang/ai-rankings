@@ -9,7 +9,14 @@
 <meta property="og:title" content="AI Rankings — only the podium counts">
 <meta property="og:description" content="Awards-only ranking of AI institutions: orals, best papers and test-of-time prizes, credited to first- and corresponding-author affiliations at publication time.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#0d1626">
+<meta property="og:site_name" content="AI Rankings">
+<meta property="og:url" content="https://airankings.jingxuan.uk/">
+<meta property="og:image" content="https://airankings.jingxuan.uk/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="AI Rankings: awards-only ranking of AI institutions">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="https://airankings.jingxuan.uk/">
 <link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt: rankings as plain text">
 <script type="application/ld+json">
@@ -126,6 +133,11 @@
   </div>
   <p class="section-sub" id="board-sub"></p>
   <div id="board" class="board"></div>
+  <div class="table-tools" id="board-table-tools" hidden>
+    <input type="search" id="board-search" class="table-search" placeholder="Find an institution or country code"
+      aria-label="find an institution in the table" autocomplete="off">
+    <span class="table-count" id="board-table-count" aria-live="polite"></span>
+  </div>
   <div id="board-table-wrap" class="table-wrap" hidden></div>
   <button class="more-btn" id="board-more">show top 50</button>
 </section>
